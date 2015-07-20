@@ -1,0 +1,182 @@
+bpipe.Runner	[1]	INFO	|10:38:26 Starting 
+bpipe.Runner	[1]	INFO	|10:38:26 OS: Linux (2.6.32-44-server) Java: 1.7.0_25 Vendor: Oracle Corporation 
+bpipe.Runner	[1]	INFO	|10:38:26 Initializing plugins ... 
+bpipe.Config	[1]	INFO	|10:38:26 No plugins directory found: /lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/from_with_filter_different_input/.bpipe/plugins 
+bpipe.Runner	[1]	INFO	|10:38:26 Reading user config ...  
+bpipe.Config	[1]	INFO	|10:38:26 No configuration file found in same dir as pipeline file 
+bpipe.Config	[1]	INFO	|10:38:26 No local configuration file found 
+bpipe.Utils	[10]	INFO	|10:38:27 Read config from /nfs/users/nfs_c/cgppipe/canpipe/software/bpipe_git/tests/from_with_filter_different_input/../../bin/../src/main/config/bpipe.config executed in 0.331 seconds 
+bpipe.Utils	[1]	INFO	|10:38:27 Read user config executed in 0.556 seconds 
+bpipe.Runner	[1]	INFO	|10:38:27 Loading tool database ...  
+bpipe.NotificationManager	[14]	INFO	|10:38:27 Configuring notifications 
+bpipe.ToolDatabase	[11]	INFO	|10:38:27 Loading tool database from user configuration 
+bpipe.NotificationManager	[14]	INFO	|10:38:27 Trying class name file for notification channel file 
+bpipe.Concurrency	[13]	INFO	|10:38:27 Creating thread pool with 32 threads to execute parallel pipelines 
+bpipe.Tool	[11]	INFO	|10:38:27 Configured meta data about tool samtools 
+bpipe.Tool	[11]	INFO	|10:38:27 Configured meta data about tool bwa 
+bpipe.Tool	[11]	INFO	|10:38:27 Configured meta data about tool bowtie 
+bpipe.Tool	[11]	INFO	|10:38:27 Configured meta data about tool fastqc 
+bpipe.Tool	[11]	INFO	|10:38:27 Configured meta data about tool coverageBed 
+bpipe.Tool	[11]	INFO	|10:38:27 Configured meta data about tool fastx_clipper 
+bpipe.Tool	[11]	INFO	|10:38:27 Configured meta data about tool convert2annovar.pl 
+bpipe.Runner	[1]	INFO	|10:38:27 No CLI parameters specified 
+bpipe.Tool	[11]	INFO	|10:38:27 Configured meta data about tool summarize_annovar.pl 
+bpipe.Tool	[11]	INFO	|10:38:27 Configured meta data about tool bowtie2 
+bpipe.Tool	[11]	INFO	|10:38:27 Configured meta data about tool GenomeAnalysisTK 
+bpipe.Tool	[11]	INFO	|10:38:27 Configured meta data about tool MarkDuplicates 
+bpipe.Tool	[11]	INFO	|10:38:27 Configured meta data about tool signalp 
+bpipe.Tool	[11]	INFO	|10:38:27 Configured meta data about tool variant_effect_predictor.pl 
+bpipe.Tool	[11]	INFO	|10:38:27 Configured meta data about tool igvtools 
+bpipe.Tool	[11]	INFO	|10:38:27 Configured meta data about tool ls 
+bpipe.NotificationManager	[14]	INFO	|10:38:27 Unable to create notification channel using class file: java.lang.ClassNotFoundException: file 
+bpipe.NotificationManager	[14]	INFO	|10:38:27 Trying class name bpipe.FILENotificationChannel for notification channel file 
+bpipe.NotificationManager	[14]	INFO	|10:38:27 Unable to create notification channel using class bpipe.FILENotificationChannel: java.lang.ClassNotFoundException: bpipe.FILENotificationChannel 
+bpipe.NotificationManager	[14]	INFO	|10:38:27 Trying class name bpipe.file for notification channel file 
+bpipe.NotificationManager	[14]	INFO	|10:38:27 Unable to create notification channel using class bpipe.file: java.lang.ClassNotFoundException: bpipe.file 
+bpipe.NotificationManager	[14]	INFO	|10:38:27 Trying class name bpipe.FileNotificationChannel for notification channel file 
+bpipe.NotificationManager	[14]	INFO	|10:38:27 Successfully created notification channel using class bpipe.FileNotificationChannel 
+bpipe.Runner	[1]	INFO	|10:38:27 Parsing script ...  
+bpipe.Runner	[1]	INFO	|10:38:27 Run ...  
+bpipe.Pipeline	[1]	INFO	|10:38:27 Running with input [test.bam, test.vcf] 
+bpipe.PipelineCategory	[1]	INFO	|10:38:27 Found closure variable hello 
+bpipe.Pipeline	[1]	WARNING	|10:38:27 Pipeline folder /nfs/users/nfs_c/cgppipe/bpipes could not be found 
+bpipe.Pipeline	[1]	INFO	|10:38:27 Loaded external reference: args 
+bpipe.Pipeline	[1]	INFO	|10:38:27 External reference args is overridden by local reference 
+bpipe.Pipeline	[1]	INFO	|10:38:27 Loaded external reference: hello 
+bpipe.Pipeline	[1]	INFO	|10:38:27 External reference hello is overridden by local reference 
+bpipe.Pipeline	[1]	INFO	|10:38:27 Running segment with inputs [test.bam, test.vcf] 
+bpipe.Dependencies	[1]	INFO	|10:38:27 Checking input (s) [test.bam, test.vcf] 
+bpipe.Utils	[1]	INFO	|10:38:27 Output folder scan (concurrency=5) executed in 0.003 seconds 
+bpipe.Dependencies	[1]	INFO	|10:38:27  Checking file test.bam 
+bpipe.Dependencies	[1]	INFO	|10:38:27  Checking file test.vcf 
+bpipe.ReportStatisticsListener	[1]	INFO	|10:38:27 Annotating stage start time hello 
+bpipe.PipelineStage	[1]	INFO	|10:38:27 Stage hello : INPUT=[test.bam, test.vcf] OUTPUT=test.bam.hello 
+bpipe.PipelineDelegate	[1]	INFO	|10:38:27 Setting or creating a delegate for context 1192156057 body 821175513/script1417775907350785740869 in thread 1 
+bpipe.PipelineDelegate	[1]	INFO	|10:38:27 Created new delegate bpipe.PipelineDelegate@7d2f2ae0 overriding type script1417775907350785740869 in thread 1 
+bpipe.PipelineContext	[1]	INFO	|10:38:27 From clause searching for inputs matching spec [bam] 
+bpipe.PipelineContext	[1]	INFO	|10:38:27 Input list to check:  [[test.bam, test.vcf], [test.bam, test.vcf]] 
+bpipe.PipelineContext	[1]	INFO	|10:38:27 Check test.bam ends with bam 
+bpipe.PipelineContext	[1]	INFO	|10:38:27 Check test.vcf ends with bam 
+bpipe.PipelineContext	[1]	INFO	|10:38:27 Matched : [test.bam] 
+bpipe.PipelineContext	[1]	INFO	|10:38:27 Checking [test.bam, test.vcf] vs bam Y 
+bpipe.PipelineContext	[1]	INFO	|10:38:27 Found inputs [test.bam] for spec [bam] 
+bpipe.FilterFileNameTransformer	[1]	INFO	|10:38:27 Filtering based on input test.bam 
+bpipe.FilterFileNameTransformer	[1]	INFO	|10:38:27 Filtering using [clean] produces outputs [test.clean.bam] 
+bpipe.PipelineContext	[1]	INFO	|10:38:27 Producing test.clean.bam from bpipe.PipelineContext@470edb99 
+bpipe.PipelineDelegate	[1]	INFO	|10:38:27 Setting or creating a delegate for context 1192156057 body 1773292198/script1417775907350785740869$_run_closure1_closure3 in thread 1 
+bpipe.PipelineDelegate	[1]	INFO	|10:38:27 Created new delegate bpipe.PipelineDelegate@3a6d125b overriding type script1417775907350785740869$_run_closure1_closure3 in thread 1 
+bpipe.PipelineContext	[1]	INFO	|10:38:27 Probing command using inputs [test.bam] 
+bpipe.PipelineInput	[1]	INFO	|10:38:27 Searching for missing Property: bam 
+bpipe.PipelineInput	[1]	INFO	|10:38:27 Resolving inputs matching pattern ^.*\.bam$ 
+bpipe.PipelineInput	[1]	INFO	|10:38:27 Checking outputs [test.bam] 
+bpipe.PipelineInput	[1]	INFO	|10:38:27 Found files with exts [bam$] : [[test.bam]] 
+bpipe.PipelineInput	[1]	INFO	|10:38:27 Adding resolved input test.bam 
+bpipe.PipelineInput	[1]	INFO	|10:38:27 Searching for missing Property: vcf 
+bpipe.PipelineInput	[1]	INFO	|10:38:27 Resolving inputs matching pattern ^.*\.vcf$ 
+bpipe.PipelineInput	[1]	INFO	|10:38:27 Checking outputs [test.bam] 
+bpipe.PipelineInput	[1]	INFO	|10:38:27 Checking outputs [test.bam] 
+bpipe.PipelineInput	[1]	INFO	|10:38:27 Checking outputs [test.bam, test.vcf] 
+bpipe.PipelineInput	[1]	INFO	|10:38:27 Found files with exts [vcf$] : [[test.vcf]] 
+bpipe.PipelineInput	[1]	INFO	|10:38:27 Adding resolved input test.vcf 
+bpipe.PipelineContext	[1]	INFO	|10:38:27 Using non-default output due to input property reference: test.bam from resolved inputs [test.bam, test.bam, test.vcf] 
+bpipe.FilterFileNameTransformer	[1]	INFO	|10:38:27 Filtering based on input test.bam 
+bpipe.FilterFileNameTransformer	[1]	INFO	|10:38:27 Filtering using [clean] produces outputs [test.clean.bam] 
+bpipe.PipelineOutput	[1]	INFO	|10:38:27 Allowing reference to output not produced by filter because it was available from a filtering of an alternative input 
+bpipe.PipelineOutput	[1]	INFO	|10:38:27 Recomputing filter on base input test.vcf to achieve match with output extension vcf 
+bpipe.FilterFileNameTransformer	[1]	INFO	|10:38:27 Filtering based on input test.vcf 
+bpipe.FilterFileNameTransformer	[1]	INFO	|10:38:27 Filtering using [clean] produces outputs [test.clean.vcf] 
+bpipe.PipelineOutput	[1]	INFO	|10:38:27 Selected output /lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/from_with_filter_different_input/test.clean.vcf with extension vcf from expected outputs [test.clean.bam] 
+bpipe.PipelineContext	[1]	INFO	|10:38:27 Tracking outputs referenced=[[]] inferred=[[/lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/from_with_filter_different_input/test.clean.vcf]] for command 
+              cat test.bam test.vcf > /lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/from_with_filter_different_input/test.clean.vcf
+         
+bpipe.ReportStatisticsListener	[1]	INFO	|10:38:27 Intercepted command check for command 
+              cat test.bam test.vcf > /lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/from_with_filter_different_input/test.clean.vcf
+         
+bpipe.PipelineContext	[1]	INFO	|10:38:27 Checking actual resolved inputs [test.bam, test.bam, test.vcf] 
+bpipe.PipelineContext	[1]	INFO	|10:38:27 Finished probe 
+bpipe.Utils	[1]	INFO	|10:38:27 ===== Check test.clean.bam ===== 
+bpipe.Utils	[1]	INFO	|10:38:27 file doesn't exist: test.clean.bam 
+bpipe.Utils	[1]	INFO	|10:38:27 ===== Check /lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/from_with_filter_different_input/test.clean.vcf ===== 
+bpipe.Utils	[1]	INFO	|10:38:27 file doesn't exist: /lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/from_with_filter_different_input/test.clean.vcf 
+bpipe.Dependencies	[1]	INFO	|10:38:27 Found these missing / older files: [test.clean.bam, /lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/from_with_filter_different_input/test.clean.vcf] 
+bpipe.Dependencies	[1]	INFO	|10:38:27 Some files are outdated : [test.clean.bam, test.clean.vcf] 
+bpipe.PipelineContext	[1]	INFO	|10:38:27 Not up to date because input inferred by probe of body newer than outputs 
+bpipe.PipelineDelegate	[1]	INFO	|10:38:27 Setting or creating a delegate for context 1192156057 body 1773292198/bpipe.PipelineDelegate in thread 1 
+bpipe.PipelineDelegate	[1]	INFO	|10:38:27 Existing delegate bpipe.PipelineDelegate@3a6d125b has type bpipe.PipelineDelegate in thread 1. Setting new context 1192156057 
+bpipe.PipelineContext	[1]	INFO	|10:38:27 Producing from inputs [test.bam] 
+bpipe.PipelineInput	[1]	INFO	|10:38:27 Searching for missing Property: bam 
+bpipe.PipelineInput	[1]	INFO	|10:38:27 Resolving inputs matching pattern ^.*\.bam$ 
+bpipe.PipelineInput	[1]	INFO	|10:38:27 Checking outputs [test.bam] 
+bpipe.PipelineInput	[1]	INFO	|10:38:27 Found files with exts [bam$] : [[test.bam]] 
+bpipe.PipelineInput	[1]	INFO	|10:38:27 Adding resolved input test.bam 
+bpipe.PipelineInput	[1]	INFO	|10:38:27 Searching for missing Property: vcf 
+bpipe.PipelineInput	[1]	INFO	|10:38:27 Resolving inputs matching pattern ^.*\.vcf$ 
+bpipe.PipelineInput	[1]	INFO	|10:38:27 Checking outputs [test.bam] 
+bpipe.PipelineInput	[1]	INFO	|10:38:27 Checking outputs [test.bam] 
+bpipe.PipelineInput	[1]	INFO	|10:38:27 Checking outputs [test.bam, test.vcf] 
+bpipe.PipelineInput	[1]	INFO	|10:38:27 Found files with exts [vcf$] : [[test.vcf]] 
+bpipe.PipelineInput	[1]	INFO	|10:38:27 Adding resolved input test.vcf 
+bpipe.PipelineContext	[1]	INFO	|10:38:27 Using non-default output due to input property reference: test.bam from resolved inputs [test.bam, test.bam, test.vcf] 
+bpipe.FilterFileNameTransformer	[1]	INFO	|10:38:27 Filtering based on input test.bam 
+bpipe.FilterFileNameTransformer	[1]	INFO	|10:38:27 Filtering using [clean] produces outputs [test.clean.bam] 
+bpipe.PipelineOutput	[1]	INFO	|10:38:27 Selected output /lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/from_with_filter_different_input/test.clean.vcf with extension vcf from expected outputs [/lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/from_with_filter_different_input/test.clean.vcf] 
+bpipe.PipelineContext	[1]	INFO	|10:38:27 Tracking outputs referenced=[[]] inferred=[[/lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/from_with_filter_different_input/test.clean.vcf]] for command 
+              cat test.bam test.vcf > /lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/from_with_filter_different_input/test.clean.vcf
+         
+bpipe.ReportStatisticsListener	[1]	INFO	|10:38:27 Intercepted command check for command 
+              cat test.bam test.vcf > /lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/from_with_filter_different_input/test.clean.vcf
+         
+bpipe.PipelineContext	[1]	INFO	|10:38:27 Checking actual resolved inputs [test.bam, test.bam, test.vcf] 
+bpipe.Utils	[1]	INFO	|10:38:27 ===== Check /lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/from_with_filter_different_input/test.clean.vcf ===== 
+bpipe.Utils	[1]	INFO	|10:38:27 file doesn't exist: /lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/from_with_filter_different_input/test.clean.vcf 
+bpipe.Dependencies	[1]	INFO	|10:38:27 Found these missing / older files: [/lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/from_with_filter_different_input/test.clean.vcf] 
+bpipe.Dependencies	[1]	INFO	|10:38:27 Some files are outdated : [test.clean.vcf] 
+bpipe.Command	[1]	INFO	|10:38:27 Checking for configuration for command cat 
+bpipe.Command	[1]	INFO	|10:38:27 Default command properties: [executor:local] 
+bpipe.CommandManager	[1]	INFO	|10:38:27 Using config [executor:local] for command 
+bpipe.CommandManager	[1]	INFO	|10:38:27 Created bpipe command id 1 
+bpipe.Concurrency	[1]	INFO	|10:38:27 Thread main requesting for 1 concurrency permit(s) type threads with 32 available 
+bpipe.Concurrency	[1]	INFO	|10:38:27 Thread main acquired resource threads in amount 1 
+bpipe.Command	[15]	INFO	|10:38:27 Command 1 changing state from null to RUNNING 
+bpipe.executor.ThrottledDelegatingCommandExecutor	[1]	INFO	|10:38:28 Waiting for command to complete before releasing 1 resources 
+bpipe.Command	[1]	INFO	|10:38:28 Command 1 changing state from RUNNING to COMPLETE 
+bpipe.executor.ThrottledDelegatingCommandExecutor	[1]	INFO	|10:38:28 Releasing 1 resources 
+bpipe.Concurrency	[1]	INFO	|10:38:28 Thread main releasing 1 threads 
+bpipe.executor.ThrottledDelegatingCommandExecutor	[1]	INFO	|10:38:28 Released 1 resources 
+bpipe.PipelineContext	[1]	INFO	|10:38:28 Adding outputs [/lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/from_with_filter_different_input/test.clean.vcf] as a result of produce 
+bpipe.PipelineStage	[1]	INFO	|10:38:28 Stage hello returned null as default inputs for next stage 
+bpipe.PipelineStage	[1]	INFO	|10:38:28 Inferring nextInputs from explicit output as [/lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/from_with_filter_different_input/test.clean.vcf] 
+bpipe.PipelineStage	[1]	INFO	|10:38:28 Setting next inputs [/lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/from_with_filter_different_input/test.clean.vcf] on stage 765695260, context 1192156057 in thread 1 
+bpipe.Dependencies	[1]	INFO	|10:38:28 Context 1192156057 for stage hello has resolved inputs [test.bam, test.vcf] 
+bpipe.Dependencies	[1]	INFO	|10:38:28 Saving output file details to file .bpipe/outputs/hello._lustre_scratch112_sanger_cgppipe_canPipe_software_bpipe_git_tests_from_with_filter_different_input_test.clean.vcf.properties for command cat test.bam test.vc... 
+bpipe.ReportStatisticsListener	[1]	INFO	|10:38:28 Annotating stage end time hello 
+bpipe.PipelineStage	[1]	INFO	|10:38:28 Checking files: [/lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/from_with_filter_different_input/test.clean.vcf] 
+bpipe.Dependencies	[1]	INFO	|10:38:28 Checking output (s) [/lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/from_with_filter_different_input/test.clean.vcf] 
+bpipe.Dependencies	[1]	INFO	|10:38:28  Checking file /lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/from_with_filter_different_input/test.clean.vcf 
+bpipe.Pipeline	[1]	INFO	|10:38:28 Pipeline segment  in thread 1 has finished normally 
+bpipe.Pipeline	[1]	INFO	|10:38:28 Finished running segment for inputs [test.bam, test.vcf] 
+bpipe.Pipeline	[1]	INFO	|10:38:28 adding stage hello from pipeline bpipe.Pipeline@69fb7b50 
+bpipe.Dependencies	[19]	INFO	|10:38:28 Reading property file .bpipe/outputs/hello._lustre_scratch112_sanger_cgppipe_canPipe_software_bpipe_git_tests_from_with_filter_different_input_test.clean.vcf.properties 
+bpipe.Utils	[1]	INFO	|10:38:28 Output folder scan (concurrency=5) executed in 0.019 seconds 
+bpipe.Dependencies	[1]	INFO	|10:38:28 External inputs: [[test.bam, test.vcf]] for outputs [/lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/from_with_filter_different_input/test.clean.vcf] 
+bpipe.Dependencies	[1]	INFO	|10:38:28 There are 1 output groups 
+bpipe.Dependencies	[1]	INFO	|10:38:28 Subtracting 1 remaining outputs from 1 total outputs 
+bpipe.Dependencies	[1]	INFO	|10:38:28 There are 0 remaining outputs 
+bpipe.Dependencies	[1]	INFO	|10:38:28  /lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/from_with_filter_different_input/test.clean.vcf / entry 2082419441  
+bpipe.Dependencies	[1]	INFO	|10:38:28 /lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/from_with_filter_different_input/test.clean.vcf is newer than input files 
+bpipe.Dependencies	[1]	INFO	|10:38:28 ====Finished Output Graph===== 
+bpipe.ReportGenerator	[1]	INFO	|10:38:28 Searching for template in /lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/src/main/html/bpipe 
+bpipe.ReportGenerator	[1]	INFO	|10:38:28 Generating report to /lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/from_with_filter_different_input/doc/index.html 
+bpipe.PipelineContext	[1]	INFO	|10:38:28 Using previously set output: [/lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/from_with_filter_different_input/test.clean.vcf] 
+bpipe.PipelineContext	[1]	INFO	|10:38:28 Using previously set output: [/lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/from_with_filter_different_input/test.clean.vcf] 
+bpipe.PipelineContext	[1]	INFO	|10:38:28 Using previously set output: [/lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/from_with_filter_different_input/test.clean.vcf] 
+bpipe.Dependencies	[20]	INFO	|10:38:28 Reading property file .bpipe/outputs/hello._lustre_scratch112_sanger_cgppipe_canPipe_software_bpipe_git_tests_from_with_filter_different_input_test.clean.vcf.properties 
+bpipe.Utils	[1]	INFO	|10:38:28 Output folder scan (concurrency=5) executed in 0.004 seconds 
+bpipe.Dependencies	[1]	INFO	|10:38:28 External inputs: [[test.bam, test.vcf]] for outputs [/lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/from_with_filter_different_input/test.clean.vcf] 
+bpipe.Dependencies	[1]	INFO	|10:38:28 There are 1 output groups 
+bpipe.Dependencies	[1]	INFO	|10:38:28 Subtracting 1 remaining outputs from 1 total outputs 
+bpipe.Dependencies	[1]	INFO	|10:38:28 There are 0 remaining outputs 
+bpipe.Dependencies	[1]	INFO	|10:38:28  /lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/from_with_filter_different_input/test.clean.vcf / entry 544996803  
+bpipe.Dependencies	[1]	INFO	|10:38:28 /lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/from_with_filter_different_input/test.clean.vcf is newer than input files 
+bpipe.Dependencies	[1]	INFO	|10:38:28 ====Finished Output Graph===== 
+bpipe.Pipeline	[1]	INFO	|10:38:28 Output is /lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/from_with_filter_different_input/test.clean.vcf 

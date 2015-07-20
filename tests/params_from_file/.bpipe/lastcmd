@@ -1,0 +1,1 @@
+/nfs/users/nfs_c/cgppipe/canpipe/software/bpipe_git/tests/params_from_file/../../bin/bpipe run -p@params.txt test.groovy

@@ -1,0 +1,57 @@
+
+####################################################################################################
+# Starting pipeline at Wed Nov 26 10:25:38 GMT 2014
+# Input files:  [s_1_1.txt, s_1_2.txt, s_2_1.txt, s_2_2.txt, s_3_1.txt, s_3_2.txt]
+# Output Log:  .bpipe/logs/18220.log
+# Stage align [1]
+# Stage align [2]
+# Stage align [3]
+cat s_1_1.txt s_1_2.txt > s_1_1.txt.align
+cat s_3_1.txt s_3_2.txt > s_3_1.txt.align
+cat s_2_1.txt s_2_2.txt > s_2_1.txt.align
+# Stage dedupe [1]
+# Stage dedupe [2]
+# Stage dedupe [3]
+cat s_2_1.txt.align > s_2_1.txt.foo.align
+cat s_1_1.txt.align > s_1_1.txt.foo.align
+cat s_3_1.txt.align > s_3_1.txt.foo.align
+# ################ Finished at Wed Nov 26 10:25:39 GMT 2014 Duration = 1.075 seconds #################
+
+
+####################################################################################################
+# Starting pipeline at Fri Dec 05 10:25:06 GMT 2014
+# Input files:  [s_1_1.txt, s_1_2.txt, s_2_1.txt, s_2_2.txt, s_3_1.txt, s_3_2.txt]
+# Output Log:  .bpipe/logs/1835.log
+# Stage align [2]
+# Stage align [1]
+# Stage align [3]
+cat s_2_1.txt s_2_2.txt > s_2_1.txt.align
+cat s_1_1.txt s_1_2.txt > s_1_1.txt.align
+cat s_3_1.txt s_3_2.txt > s_3_1.txt.align
+# Stage dedupe [1]
+# Stage dedupe [2]
+# Stage dedupe [3]
+cat s_3_1.txt.align > s_3_1.txt.foo.align
+cat s_2_1.txt.align > s_2_1.txt.foo.align
+cat s_1_1.txt.align > s_1_1.txt.foo.align
+# ################ Finished at Fri Dec 05 10:25:08 GMT 2014 Duration = 1.407 seconds #################
+
+
+####################################################################################################
+# Starting pipeline at Fri Dec 05 10:37:51 GMT 2014
+# Input files:  [s_1_1.txt, s_1_2.txt, s_2_1.txt, s_2_2.txt, s_3_1.txt, s_3_2.txt]
+# Output Log:  .bpipe/logs/20454.log
+# Stage align [2]
+# Stage align [1]
+# Stage align [3]
+cat s_2_1.txt s_2_2.txt > s_2_1.txt.align
+cat s_1_1.txt s_1_2.txt > s_1_1.txt.align
+cat s_3_1.txt s_3_2.txt > s_3_1.txt.align
+# Stage dedupe [2]
+# Stage dedupe [1]
+# Stage dedupe [3]
+cat s_1_1.txt.align > s_1_1.txt.foo.align
+cat s_2_1.txt.align > s_2_1.txt.foo.align
+cat s_3_1.txt.align > s_3_1.txt.foo.align
+# ################ Finished at Fri Dec 05 10:37:52 GMT 2014 Duration = 1.382 seconds #################
+

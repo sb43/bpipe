@@ -1,0 +1,16 @@
+
+####################################################################################################
+# Starting pipeline at Wed Nov 26 10:31:07 GMT 2014
+# Input files:  null
+# Output Log:  .bpipe/logs/26352.log
+# Stage hello
+# ################ Finished at Wed Nov 26 10:31:07 GMT 2014 Duration = 0.362 seconds #################
+
+
+####################################################################################################
+# Starting pipeline at Fri Dec 05 10:43:17 GMT 2014
+# Input files:  null
+# Output Log:  .bpipe/logs/28840.log
+# Stage hello
+# ################ Finished at Fri Dec 05 10:43:18 GMT 2014 Duration = 0.351 seconds #################
+

@@ -1,0 +1,252 @@
+bpipe.Runner	[1]	INFO	|10:38:29 Starting 
+bpipe.Runner	[1]	INFO	|10:38:29 OS: Linux (2.6.32-44-server) Java: 1.7.0_25 Vendor: Oracle Corporation 
+bpipe.Runner	[1]	INFO	|10:38:29 Initializing plugins ... 
+bpipe.Config	[1]	INFO	|10:38:29 No plugins directory found: /lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/filter_uses_correct_base_for_output/.bpipe/plugins 
+bpipe.Runner	[1]	INFO	|10:38:29 Reading user config ...  
+bpipe.Config	[1]	INFO	|10:38:29 No configuration file found in same dir as pipeline file 
+bpipe.Config	[1]	INFO	|10:38:29 No local configuration file found 
+bpipe.Utils	[10]	INFO	|10:38:30 Read config from /nfs/users/nfs_c/cgppipe/canpipe/software/bpipe_git/tests/filter_uses_correct_base_for_output/../../bin/../src/main/config/bpipe.config executed in 0.334 seconds 
+bpipe.Utils	[1]	INFO	|10:38:30 Read user config executed in 0.560 seconds 
+bpipe.Runner	[1]	INFO	|10:38:30 Loading tool database ...  
+bpipe.ToolDatabase	[11]	INFO	|10:38:30 Loading tool database from user configuration 
+bpipe.Concurrency	[13]	INFO	|10:38:30 Creating thread pool with 32 threads to execute parallel pipelines 
+bpipe.NotificationManager	[14]	INFO	|10:38:30 Configuring notifications 
+bpipe.Tool	[11]	INFO	|10:38:30 Configured meta data about tool samtools 
+bpipe.Tool	[11]	INFO	|10:38:30 Configured meta data about tool bwa 
+bpipe.NotificationManager	[14]	INFO	|10:38:30 Trying class name file for notification channel file 
+bpipe.Tool	[11]	INFO	|10:38:30 Configured meta data about tool bowtie 
+bpipe.Tool	[11]	INFO	|10:38:30 Configured meta data about tool fastqc 
+bpipe.Tool	[11]	INFO	|10:38:30 Configured meta data about tool coverageBed 
+bpipe.Tool	[11]	INFO	|10:38:30 Configured meta data about tool fastx_clipper 
+bpipe.Tool	[11]	INFO	|10:38:30 Configured meta data about tool convert2annovar.pl 
+bpipe.Tool	[11]	INFO	|10:38:30 Configured meta data about tool summarize_annovar.pl 
+bpipe.Tool	[11]	INFO	|10:38:30 Configured meta data about tool bowtie2 
+bpipe.Tool	[11]	INFO	|10:38:30 Configured meta data about tool GenomeAnalysisTK 
+bpipe.Tool	[11]	INFO	|10:38:30 Configured meta data about tool MarkDuplicates 
+bpipe.Tool	[11]	INFO	|10:38:30 Configured meta data about tool signalp 
+bpipe.Tool	[11]	INFO	|10:38:30 Configured meta data about tool variant_effect_predictor.pl 
+bpipe.Tool	[11]	INFO	|10:38:30 Configured meta data about tool igvtools 
+bpipe.Tool	[11]	INFO	|10:38:30 Configured meta data about tool ls 
+bpipe.Runner	[1]	INFO	|10:38:30 No CLI parameters specified 
+bpipe.NotificationManager	[14]	INFO	|10:38:30 Unable to create notification channel using class file: java.lang.ClassNotFoundException: file 
+bpipe.NotificationManager	[14]	INFO	|10:38:30 Trying class name bpipe.FILENotificationChannel for notification channel file 
+bpipe.NotificationManager	[14]	INFO	|10:38:30 Unable to create notification channel using class bpipe.FILENotificationChannel: java.lang.ClassNotFoundException: bpipe.FILENotificationChannel 
+bpipe.NotificationManager	[14]	INFO	|10:38:30 Trying class name bpipe.file for notification channel file 
+bpipe.NotificationManager	[14]	INFO	|10:38:30 Unable to create notification channel using class bpipe.file: java.lang.ClassNotFoundException: bpipe.file 
+bpipe.NotificationManager	[14]	INFO	|10:38:30 Trying class name bpipe.FileNotificationChannel for notification channel file 
+bpipe.NotificationManager	[14]	INFO	|10:38:30 Successfully created notification channel using class bpipe.FileNotificationChannel 
+bpipe.Runner	[1]	INFO	|10:38:30 Parsing script ...  
+bpipe.Runner	[1]	INFO	|10:38:30 Run ...  
+bpipe.Pipeline	[1]	INFO	|10:38:30 Running with input [foo.txt, test.bed] 
+bpipe.PipelineCategory	[1]	INFO	|10:38:30 Found closure variable hello 
+bpipe.Pipeline	[1]	WARNING	|10:38:30 Pipeline folder /nfs/users/nfs_c/cgppipe/bpipes could not be found 
+bpipe.Pipeline	[1]	INFO	|10:38:30 Loaded external reference: args 
+bpipe.Pipeline	[1]	INFO	|10:38:30 External reference args is overridden by local reference 
+bpipe.Pipeline	[1]	INFO	|10:38:30 Loaded external reference: hello 
+bpipe.Pipeline	[1]	INFO	|10:38:30 External reference hello is overridden by local reference 
+bpipe.Pipeline	[1]	INFO	|10:38:30 Running segment with inputs [foo.txt, test.bed] 
+bpipe.Dependencies	[1]	INFO	|10:38:30 Checking input (s) [foo.txt, test.bed] 
+bpipe.Utils	[1]	INFO	|10:38:30 Output folder scan (concurrency=5) executed in 0.003 seconds 
+bpipe.Dependencies	[1]	INFO	|10:38:30  Checking file foo.txt 
+bpipe.Dependencies	[1]	INFO	|10:38:30  Checking file test.bed 
+bpipe.ReportStatisticsListener	[1]	INFO	|10:38:30 Annotating stage start time hello 
+bpipe.PipelineStage	[1]	INFO	|10:38:30 Stage hello : INPUT=[foo.txt, test.bed] OUTPUT=foo.txt.hello 
+bpipe.PipelineDelegate	[1]	INFO	|10:38:30 Setting or creating a delegate for context 2141310141 body 1736079282/script1417775910481152170499 in thread 1 
+bpipe.PipelineDelegate	[1]	INFO	|10:38:30 Created new delegate bpipe.PipelineDelegate@543b11cd overriding type script1417775910481152170499 in thread 1 
+bpipe.FilterFileNameTransformer	[1]	INFO	|10:38:30 Filtering based on input foo.txt 
+bpipe.FilterFileNameTransformer	[1]	INFO	|10:38:30 Filtering using [hello] produces outputs [foo.hello.txt] 
+bpipe.PipelineContext	[1]	INFO	|10:38:30 Producing foo.hello.txt from bpipe.PipelineContext@7fa1ccbd 
+bpipe.PipelineDelegate	[1]	INFO	|10:38:30 Setting or creating a delegate for context 2141310141 body 28214086/script1417775910481152170499$_run_closure1 in thread 1 
+bpipe.PipelineDelegate	[1]	INFO	|10:38:30 Created new delegate bpipe.PipelineDelegate@3bc411d8 overriding type script1417775910481152170499$_run_closure1 in thread 1 
+bpipe.PipelineContext	[1]	INFO	|10:38:30 Probing command using inputs [foo.txt, test.bed] 
+bpipe.FilterFileNameTransformer	[1]	INFO	|10:38:30 Filtering based on input foo.txt 
+bpipe.FilterFileNameTransformer	[1]	INFO	|10:38:30 Filtering using [hello] produces outputs [foo.hello.txt] 
+bpipe.PipelineContext	[1]	INFO	|10:38:30 Producing foo.hello.txt from bpipe.PipelineContext@7fa1ccbd 
+bpipe.PipelineDelegate	[1]	INFO	|10:38:30 Setting or creating a delegate for context 2141310141 body 1082521599/script1417775910481152170499$_run_closure1_closure3 in thread 1 
+bpipe.PipelineDelegate	[1]	INFO	|10:38:30 Created new delegate bpipe.PipelineDelegate@187d9bc8 overriding type script1417775910481152170499$_run_closure1_closure3 in thread 1 
+bpipe.PipelineContext	[1]	INFO	|10:38:30 Probing command using inputs [foo.txt, test.bed] 
+bpipe.PipelineInput	[1]	INFO	|10:38:30 Searching for missing Property: txt 
+bpipe.PipelineInput	[1]	INFO	|10:38:30 Resolving inputs matching pattern ^.*\.txt$ 
+bpipe.PipelineInput	[1]	INFO	|10:38:30 Checking outputs [foo.txt, test.bed] 
+bpipe.PipelineInput	[1]	INFO	|10:38:30 Found files with exts [txt$] : [[foo.txt]] 
+bpipe.PipelineInput	[1]	INFO	|10:38:30 Adding resolved input foo.txt 
+bpipe.PipelineInput	[1]	INFO	|10:38:30 Searching for missing Property: bed 
+bpipe.PipelineInput	[1]	INFO	|10:38:30 Resolving inputs matching pattern ^.*\.bed$ 
+bpipe.PipelineInput	[1]	INFO	|10:38:30 Checking outputs [foo.txt, test.bed] 
+bpipe.PipelineInput	[1]	INFO	|10:38:30 Found files with exts [bed$] : [[test.bed]] 
+bpipe.PipelineInput	[1]	INFO	|10:38:30 Adding resolved input test.bed 
+bpipe.PipelineContext	[1]	INFO	|10:38:30 Using non-default output due to input property reference: foo.txt from resolved inputs [foo.txt, test.bed] 
+bpipe.FilterFileNameTransformer	[1]	INFO	|10:38:30 Filtering based on input foo.txt 
+bpipe.FilterFileNameTransformer	[1]	INFO	|10:38:30 Filtering using [hello] produces outputs [foo.hello.txt] 
+bpipe.PipelineOutput	[1]	INFO	|10:38:30 Allowing reference to output not produced by filter because it was available from a filtering of an alternative input 
+bpipe.PipelineOutput	[1]	INFO	|10:38:30 Recomputing filter on base input test.bed to achieve match with output extension bed 
+bpipe.FilterFileNameTransformer	[1]	INFO	|10:38:30 Filtering based on input test.bed 
+bpipe.FilterFileNameTransformer	[1]	INFO	|10:38:30 Filtering using [hello] produces outputs [test.hello.bed] 
+bpipe.PipelineOutput	[1]	INFO	|10:38:30 Selected output /lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/filter_uses_correct_base_for_output/test.hello.bed with extension bed from expected outputs [foo.hello.txt] 
+bpipe.PipelineContext	[1]	INFO	|10:38:30 Tracking outputs referenced=[[]] inferred=[[/lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/filter_uses_correct_base_for_output/test.hello.bed]] for command 
+            cat foo.txt test.bed > /lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/filter_uses_correct_base_for_output/test.hello.bed
+         
+bpipe.ReportStatisticsListener	[1]	INFO	|10:38:30 Intercepted command check for command 
+            cat foo.txt test.bed > /lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/filter_uses_correct_base_for_output/test.hello.bed
+         
+bpipe.PipelineContext	[1]	INFO	|10:38:30 Checking actual resolved inputs [foo.txt, test.bed] 
+bpipe.PipelineContext	[1]	INFO	|10:38:30 Finished probe 
+bpipe.Utils	[1]	INFO	|10:38:31 ===== Check foo.hello.txt ===== 
+bpipe.Utils	[1]	INFO	|10:38:31 file doesn't exist: foo.hello.txt 
+bpipe.Utils	[1]	INFO	|10:38:31 ===== Check /lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/filter_uses_correct_base_for_output/test.hello.bed ===== 
+bpipe.Utils	[1]	INFO	|10:38:31 file doesn't exist: /lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/filter_uses_correct_base_for_output/test.hello.bed 
+bpipe.Dependencies	[1]	INFO	|10:38:31 Found these missing / older files: [foo.hello.txt, /lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/filter_uses_correct_base_for_output/test.hello.bed] 
+bpipe.Dependencies	[1]	INFO	|10:38:31 Some files are outdated : [foo.hello.txt, test.hello.bed] 
+bpipe.PipelineContext	[1]	INFO	|10:38:31 Not up to date because input inferred by probe of body newer than outputs 
+bpipe.PipelineDelegate	[1]	INFO	|10:38:31 Setting or creating a delegate for context 2141310141 body 1082521599/bpipe.PipelineDelegate in thread 1 
+bpipe.PipelineDelegate	[1]	INFO	|10:38:31 Existing delegate bpipe.PipelineDelegate@187d9bc8 has type bpipe.PipelineDelegate in thread 1. Setting new context 2141310141 
+bpipe.PipelineContext	[1]	INFO	|10:38:31 Producing from inputs [foo.txt, test.bed] 
+bpipe.PipelineInput	[1]	INFO	|10:38:31 Searching for missing Property: txt 
+bpipe.PipelineInput	[1]	INFO	|10:38:31 Resolving inputs matching pattern ^.*\.txt$ 
+bpipe.PipelineInput	[1]	INFO	|10:38:31 Checking outputs [foo.txt, test.bed] 
+bpipe.PipelineInput	[1]	INFO	|10:38:31 Found files with exts [txt$] : [[foo.txt]] 
+bpipe.PipelineInput	[1]	INFO	|10:38:31 Adding resolved input foo.txt 
+bpipe.PipelineInput	[1]	INFO	|10:38:31 Searching for missing Property: bed 
+bpipe.PipelineInput	[1]	INFO	|10:38:31 Resolving inputs matching pattern ^.*\.bed$ 
+bpipe.PipelineInput	[1]	INFO	|10:38:31 Checking outputs [foo.txt, test.bed] 
+bpipe.PipelineInput	[1]	INFO	|10:38:31 Found files with exts [bed$] : [[test.bed]] 
+bpipe.PipelineInput	[1]	INFO	|10:38:31 Adding resolved input test.bed 
+bpipe.PipelineContext	[1]	INFO	|10:38:31 Using non-default output due to input property reference: foo.txt from resolved inputs [foo.txt, test.bed] 
+bpipe.FilterFileNameTransformer	[1]	INFO	|10:38:31 Filtering based on input foo.txt 
+bpipe.FilterFileNameTransformer	[1]	INFO	|10:38:31 Filtering using [hello] produces outputs [foo.hello.txt] 
+bpipe.PipelineOutput	[1]	INFO	|10:38:31 Selected output /lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/filter_uses_correct_base_for_output/test.hello.bed with extension bed from expected outputs [/lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/filter_uses_correct_base_for_output/test.hello.bed] 
+bpipe.PipelineContext	[1]	INFO	|10:38:31 Tracking outputs referenced=[[]] inferred=[[/lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/filter_uses_correct_base_for_output/test.hello.bed]] for command 
+            cat foo.txt test.bed > /lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/filter_uses_correct_base_for_output/test.hello.bed
+         
+bpipe.ReportStatisticsListener	[1]	INFO	|10:38:31 Intercepted command check for command 
+            cat foo.txt test.bed > /lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/filter_uses_correct_base_for_output/test.hello.bed
+         
+bpipe.PipelineContext	[1]	INFO	|10:38:31 Checking actual resolved inputs [foo.txt, test.bed] 
+bpipe.PipelineContext	[1]	INFO	|10:38:31 Adding outputs [/lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/filter_uses_correct_base_for_output/test.hello.bed] as a result of produce 
+bpipe.PipelineContext	[1]	INFO	|10:38:31 Finished probe 
+bpipe.Utils	[1]	INFO	|10:38:31 ===== Check foo.hello.txt ===== 
+bpipe.Utils	[1]	INFO	|10:38:31 file doesn't exist: foo.hello.txt 
+bpipe.Utils	[1]	INFO	|10:38:31 ===== Check /lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/filter_uses_correct_base_for_output/test.hello.bed ===== 
+bpipe.Utils	[1]	INFO	|10:38:31 file doesn't exist: /lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/filter_uses_correct_base_for_output/test.hello.bed 
+bpipe.Dependencies	[1]	INFO	|10:38:31 Found these missing / older files: [foo.hello.txt, /lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/filter_uses_correct_base_for_output/test.hello.bed] 
+bpipe.Dependencies	[1]	INFO	|10:38:31 Some files are outdated : [foo.hello.txt, test.hello.bed] 
+bpipe.PipelineContext	[1]	INFO	|10:38:31 Not up to date because input inferred by probe of body newer than outputs 
+bpipe.PipelineDelegate	[1]	INFO	|10:38:31 Setting or creating a delegate for context 2141310141 body 28214086/bpipe.PipelineDelegate in thread 1 
+bpipe.PipelineDelegate	[1]	INFO	|10:38:31 Existing delegate bpipe.PipelineDelegate@3bc411d8 has type bpipe.PipelineDelegate in thread 1. Setting new context 2141310141 
+bpipe.PipelineContext	[1]	INFO	|10:38:31 Producing from inputs [foo.txt, test.bed] 
+bpipe.FilterFileNameTransformer	[1]	INFO	|10:38:31 Filtering based on input foo.txt 
+bpipe.FilterFileNameTransformer	[1]	INFO	|10:38:31 Filtering using [hello] produces outputs [foo.hello.txt] 
+bpipe.PipelineContext	[1]	INFO	|10:38:31 Producing foo.hello.txt from bpipe.PipelineContext@7fa1ccbd 
+bpipe.PipelineDelegate	[1]	INFO	|10:38:31 Setting or creating a delegate for context 2141310141 body 1703283531/script1417775910481152170499$_run_closure1_closure3 in thread 1 
+bpipe.PipelineDelegate	[1]	INFO	|10:38:31 Created new delegate bpipe.PipelineDelegate@434f9cff overriding type script1417775910481152170499$_run_closure1_closure3 in thread 1 
+bpipe.PipelineContext	[1]	INFO	|10:38:31 Probing command using inputs [foo.txt, test.bed] 
+bpipe.PipelineInput	[1]	INFO	|10:38:31 Searching for missing Property: txt 
+bpipe.PipelineInput	[1]	INFO	|10:38:31 Resolving inputs matching pattern ^.*\.txt$ 
+bpipe.PipelineInput	[1]	INFO	|10:38:31 Checking outputs [foo.txt, test.bed] 
+bpipe.PipelineInput	[1]	INFO	|10:38:31 Found files with exts [txt$] : [[foo.txt]] 
+bpipe.PipelineInput	[1]	INFO	|10:38:31 Adding resolved input foo.txt 
+bpipe.PipelineInput	[1]	INFO	|10:38:31 Searching for missing Property: bed 
+bpipe.PipelineInput	[1]	INFO	|10:38:31 Resolving inputs matching pattern ^.*\.bed$ 
+bpipe.PipelineInput	[1]	INFO	|10:38:31 Checking outputs [foo.txt, test.bed] 
+bpipe.PipelineInput	[1]	INFO	|10:38:31 Found files with exts [bed$] : [[test.bed]] 
+bpipe.PipelineInput	[1]	INFO	|10:38:31 Adding resolved input test.bed 
+bpipe.PipelineContext	[1]	INFO	|10:38:31 Using non-default output due to input property reference: foo.txt from resolved inputs [foo.txt, test.bed] 
+bpipe.FilterFileNameTransformer	[1]	INFO	|10:38:31 Filtering based on input foo.txt 
+bpipe.FilterFileNameTransformer	[1]	INFO	|10:38:31 Filtering using [hello] produces outputs [foo.hello.txt] 
+bpipe.PipelineOutput	[1]	INFO	|10:38:31 Allowing reference to output not produced by filter because it was available from a filtering of an alternative input 
+bpipe.PipelineOutput	[1]	INFO	|10:38:31 Recomputing filter on base input test.bed to achieve match with output extension bed 
+bpipe.FilterFileNameTransformer	[1]	INFO	|10:38:31 Filtering based on input test.bed 
+bpipe.FilterFileNameTransformer	[1]	INFO	|10:38:31 Filtering using [hello] produces outputs [test.hello.bed] 
+bpipe.PipelineOutput	[1]	INFO	|10:38:31 Selected output /lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/filter_uses_correct_base_for_output/test.hello.bed with extension bed from expected outputs [foo.hello.txt] 
+bpipe.PipelineContext	[1]	INFO	|10:38:31 Tracking outputs referenced=[[]] inferred=[[/lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/filter_uses_correct_base_for_output/test.hello.bed]] for command 
+            cat foo.txt test.bed > /lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/filter_uses_correct_base_for_output/test.hello.bed
+         
+bpipe.ReportStatisticsListener	[1]	INFO	|10:38:31 Intercepted command check for command 
+            cat foo.txt test.bed > /lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/filter_uses_correct_base_for_output/test.hello.bed
+         
+bpipe.PipelineContext	[1]	INFO	|10:38:31 Checking actual resolved inputs [foo.txt, test.bed] 
+bpipe.PipelineContext	[1]	INFO	|10:38:31 Finished probe 
+bpipe.Utils	[1]	INFO	|10:38:31 ===== Check foo.hello.txt ===== 
+bpipe.Utils	[1]	INFO	|10:38:31 file doesn't exist: foo.hello.txt 
+bpipe.Dependencies	[1]	INFO	|10:38:31 Found these missing / older files: [foo.hello.txt] 
+bpipe.Dependencies	[1]	INFO	|10:38:31 Some files are outdated : [foo.hello.txt] 
+bpipe.PipelineContext	[1]	INFO	|10:38:31 Not up to date because input inferred by probe of body newer than outputs 
+bpipe.PipelineDelegate	[1]	INFO	|10:38:31 Setting or creating a delegate for context 2141310141 body 1703283531/bpipe.PipelineDelegate in thread 1 
+bpipe.PipelineDelegate	[1]	INFO	|10:38:31 Existing delegate bpipe.PipelineDelegate@434f9cff has type bpipe.PipelineDelegate in thread 1. Setting new context 2141310141 
+bpipe.PipelineContext	[1]	INFO	|10:38:31 Producing from inputs [foo.txt, test.bed] 
+bpipe.PipelineInput	[1]	INFO	|10:38:31 Searching for missing Property: txt 
+bpipe.PipelineInput	[1]	INFO	|10:38:31 Resolving inputs matching pattern ^.*\.txt$ 
+bpipe.PipelineInput	[1]	INFO	|10:38:31 Checking outputs [foo.txt, test.bed] 
+bpipe.PipelineInput	[1]	INFO	|10:38:31 Found files with exts [txt$] : [[foo.txt]] 
+bpipe.PipelineInput	[1]	INFO	|10:38:31 Adding resolved input foo.txt 
+bpipe.PipelineInput	[1]	INFO	|10:38:31 Searching for missing Property: bed 
+bpipe.PipelineInput	[1]	INFO	|10:38:31 Resolving inputs matching pattern ^.*\.bed$ 
+bpipe.PipelineInput	[1]	INFO	|10:38:31 Checking outputs [foo.txt, test.bed] 
+bpipe.PipelineInput	[1]	INFO	|10:38:31 Found files with exts [bed$] : [[test.bed]] 
+bpipe.PipelineInput	[1]	INFO	|10:38:31 Adding resolved input test.bed 
+bpipe.PipelineContext	[1]	INFO	|10:38:31 Using non-default output due to input property reference: foo.txt from resolved inputs [foo.txt, test.bed] 
+bpipe.FilterFileNameTransformer	[1]	INFO	|10:38:31 Filtering based on input foo.txt 
+bpipe.FilterFileNameTransformer	[1]	INFO	|10:38:31 Filtering using [hello] produces outputs [foo.hello.txt] 
+bpipe.PipelineOutput	[1]	INFO	|10:38:31 Selected output /lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/filter_uses_correct_base_for_output/test.hello.bed with extension bed from expected outputs [/lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/filter_uses_correct_base_for_output/test.hello.bed] 
+bpipe.PipelineContext	[1]	INFO	|10:38:31 Tracking outputs referenced=[[]] inferred=[[/lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/filter_uses_correct_base_for_output/test.hello.bed]] for command 
+            cat foo.txt test.bed > /lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/filter_uses_correct_base_for_output/test.hello.bed
+         
+bpipe.ReportStatisticsListener	[1]	INFO	|10:38:31 Intercepted command check for command 
+            cat foo.txt test.bed > /lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/filter_uses_correct_base_for_output/test.hello.bed
+         
+bpipe.PipelineContext	[1]	INFO	|10:38:31 Checking actual resolved inputs [foo.txt, test.bed] 
+bpipe.Utils	[1]	INFO	|10:38:31 ===== Check /lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/filter_uses_correct_base_for_output/test.hello.bed ===== 
+bpipe.Utils	[1]	INFO	|10:38:31 file doesn't exist: /lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/filter_uses_correct_base_for_output/test.hello.bed 
+bpipe.Dependencies	[1]	INFO	|10:38:31 Found these missing / older files: [/lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/filter_uses_correct_base_for_output/test.hello.bed] 
+bpipe.Dependencies	[1]	INFO	|10:38:31 Some files are outdated : [test.hello.bed] 
+bpipe.Command	[1]	INFO	|10:38:31 Checking for configuration for command cat 
+bpipe.Command	[1]	INFO	|10:38:31 Default command properties: [executor:local] 
+bpipe.CommandManager	[1]	INFO	|10:38:31 Using config [executor:local] for command 
+bpipe.CommandManager	[1]	INFO	|10:38:31 Created bpipe command id 2 
+bpipe.Concurrency	[1]	INFO	|10:38:31 Thread main requesting for 1 concurrency permit(s) type threads with 32 available 
+bpipe.Concurrency	[1]	INFO	|10:38:31 Thread main acquired resource threads in amount 1 
+bpipe.Command	[15]	INFO	|10:38:31 Command 2 changing state from null to RUNNING 
+bpipe.executor.ThrottledDelegatingCommandExecutor	[1]	INFO	|10:38:31 Waiting for command to complete before releasing 1 resources 
+bpipe.Command	[1]	INFO	|10:38:31 Command 2 changing state from RUNNING to COMPLETE 
+bpipe.executor.ThrottledDelegatingCommandExecutor	[1]	INFO	|10:38:31 Releasing 1 resources 
+bpipe.Concurrency	[1]	INFO	|10:38:31 Thread main releasing 1 threads 
+bpipe.executor.ThrottledDelegatingCommandExecutor	[1]	INFO	|10:38:31 Released 1 resources 
+bpipe.PipelineContext	[1]	INFO	|10:38:31 Adding outputs [/lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/filter_uses_correct_base_for_output/test.hello.bed] as a result of produce 
+bpipe.PipelineContext	[1]	INFO	|10:38:31 Adding outputs [/lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/filter_uses_correct_base_for_output/test.hello.bed] as a result of produce 
+bpipe.PipelineStage	[1]	INFO	|10:38:31 Stage hello returned null as default inputs for next stage 
+bpipe.PipelineStage	[1]	INFO	|10:38:31 Inferring nextInputs from explicit output as [/lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/filter_uses_correct_base_for_output/test.hello.bed] 
+bpipe.PipelineStage	[1]	INFO	|10:38:31 Setting next inputs [/lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/filter_uses_correct_base_for_output/test.hello.bed] on stage 2033500035, context 2141310141 in thread 1 
+bpipe.Dependencies	[1]	INFO	|10:38:31 Context 2141310141 for stage hello has resolved inputs [foo.txt, test.bed] 
+bpipe.Dependencies	[1]	INFO	|10:38:31 Saving output file details to file .bpipe/outputs/hello._lustre_scratch112_sanger_cgppipe_canPipe_software_bpipe_git_tests_filter_uses_correct_base_for_output_test.hello.bed.properties for command cat foo.txt test.bed... 
+bpipe.ReportStatisticsListener	[1]	INFO	|10:38:31 Annotating stage end time hello 
+bpipe.PipelineStage	[1]	INFO	|10:38:31 Checking files: [/lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/filter_uses_correct_base_for_output/test.hello.bed] 
+bpipe.Dependencies	[1]	INFO	|10:38:31 Checking output (s) [/lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/filter_uses_correct_base_for_output/test.hello.bed] 
+bpipe.Dependencies	[1]	INFO	|10:38:31  Checking file /lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/filter_uses_correct_base_for_output/test.hello.bed 
+bpipe.Pipeline	[1]	INFO	|10:38:31 Pipeline segment  in thread 1 has finished normally 
+bpipe.Pipeline	[1]	INFO	|10:38:31 Finished running segment for inputs [foo.txt, test.bed] 
+bpipe.Pipeline	[1]	INFO	|10:38:31 adding stage hello from pipeline bpipe.Pipeline@29736003 
+bpipe.Dependencies	[19]	INFO	|10:38:31 Reading property file .bpipe/outputs/hello._lustre_scratch112_sanger_cgppipe_canPipe_software_bpipe_git_tests_filter_uses_correct_base_for_output_test.hello.bed.properties 
+bpipe.Utils	[1]	INFO	|10:38:31 Output folder scan (concurrency=5) executed in 0.018 seconds 
+bpipe.Dependencies	[1]	INFO	|10:38:31 External inputs: [[foo.txt, test.bed]] for outputs [/lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/filter_uses_correct_base_for_output/test.hello.bed] 
+bpipe.Dependencies	[1]	INFO	|10:38:31 There are 1 output groups 
+bpipe.Dependencies	[1]	INFO	|10:38:31 Subtracting 1 remaining outputs from 1 total outputs 
+bpipe.Dependencies	[1]	INFO	|10:38:31 There are 0 remaining outputs 
+bpipe.Dependencies	[1]	INFO	|10:38:31  /lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/filter_uses_correct_base_for_output/test.hello.bed / entry 217054710  
+bpipe.Dependencies	[1]	INFO	|10:38:31 /lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/filter_uses_correct_base_for_output/test.hello.bed is newer than input files 
+bpipe.Dependencies	[1]	INFO	|10:38:31 ====Finished Output Graph===== 
+bpipe.ReportGenerator	[1]	INFO	|10:38:31 Searching for template in /lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/src/main/html/bpipe 
+bpipe.ReportGenerator	[1]	INFO	|10:38:31 Generating report to /lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/filter_uses_correct_base_for_output/doc/index.html 
+bpipe.PipelineContext	[1]	INFO	|10:38:31 Using previously set output: [/lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/filter_uses_correct_base_for_output/test.hello.bed] 
+bpipe.PipelineContext	[1]	INFO	|10:38:31 Using previously set output: [/lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/filter_uses_correct_base_for_output/test.hello.bed] 
+bpipe.PipelineContext	[1]	INFO	|10:38:31 Using previously set output: [/lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/filter_uses_correct_base_for_output/test.hello.bed] 
+bpipe.Dependencies	[20]	INFO	|10:38:31 Reading property file .bpipe/outputs/hello._lustre_scratch112_sanger_cgppipe_canPipe_software_bpipe_git_tests_filter_uses_correct_base_for_output_test.hello.bed.properties 
+bpipe.Utils	[1]	INFO	|10:38:31 Output folder scan (concurrency=5) executed in 0.006 seconds 
+bpipe.Dependencies	[1]	INFO	|10:38:31 External inputs: [[foo.txt, test.bed]] for outputs [/lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/filter_uses_correct_base_for_output/test.hello.bed] 
+bpipe.Dependencies	[1]	INFO	|10:38:31 There are 1 output groups 
+bpipe.Dependencies	[1]	INFO	|10:38:31 Subtracting 1 remaining outputs from 1 total outputs 
+bpipe.Dependencies	[1]	INFO	|10:38:31 There are 0 remaining outputs 
+bpipe.Dependencies	[1]	INFO	|10:38:31  /lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/filter_uses_correct_base_for_output/test.hello.bed / entry 794994886  
+bpipe.Dependencies	[1]	INFO	|10:38:31 /lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/filter_uses_correct_base_for_output/test.hello.bed is newer than input files 
+bpipe.Dependencies	[1]	INFO	|10:38:31 ====Finished Output Graph===== 
+bpipe.Pipeline	[1]	INFO	|10:38:31 Output is /lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/filter_uses_correct_base_for_output/test.hello.bed 
+bpipe.Runner	[9]	INFO	|10:38:31 Deleting job file /nfs/users/nfs_c/cgppipe/.bpipedb/jobs/21441 

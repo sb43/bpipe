@@ -1,0 +1,20 @@
+
+####################################################################################################
+# Starting pipeline at Wed Nov 26 10:34:18 GMT 2014
+# Input files:  null
+# Output Log:  .bpipe/logs/28492.log
+# Stage hello
+echo hello > test.txt
+# Stage world
+# ################ Finished at Wed Nov 26 10:34:18 GMT 2014 Duration = 0.456 seconds #################
+
+
+####################################################################################################
+# Starting pipeline at Fri Dec 05 10:46:26 GMT 2014
+# Input files:  null
+# Output Log:  .bpipe/logs/30987.log
+# Stage hello
+echo hello > test.txt
+# Stage world
+# ################ Finished at Fri Dec 05 10:46:26 GMT 2014 Duration = 0.465 seconds #################
+

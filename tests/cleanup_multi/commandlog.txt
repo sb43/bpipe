@@ -1,0 +1,18 @@
+
+####################################################################################################
+# Starting pipeline at Wed Nov 26 10:30:43 GMT 2014
+# Input files:  test.fastq
+# Output Log:  .bpipe/logs/25569.log
+# Stage hello
+touch test.csv; false
+# ################ Finished at Wed Nov 26 10:30:44 GMT 2014 Duration = 0.752 seconds #################
+
+
+####################################################################################################
+# Starting pipeline at Fri Dec 05 10:42:54 GMT 2014
+# Input files:  test.fastq
+# Output Log:  .bpipe/logs/28066.log
+# Stage hello
+touch test.csv; false
+# ################ Finished at Fri Dec 05 10:42:55 GMT 2014 Duration = 0.740 seconds #################
+

@@ -1,0 +1,1 @@
+22895	bpipe run -r test.groovy test.chr1.bam test.chr2.bam

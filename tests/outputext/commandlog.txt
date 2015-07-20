@@ -1,0 +1,48 @@
+
+####################################################################################################
+# Starting pipeline at Wed Nov 26 10:27:47 GMT 2014
+# Input files:  test.txt
+# Output Log:  .bpipe/logs/21339.log
+# Stage hello
+cp test.txt test.hello.csv
+# Stage world
+echo execute1; cp test.hello.csv test.hello.world.txt; cp test.hello.csv test.hello.world.xml
+echo execute2; cp test.hello.csv test.hello.world.tsv
+# Stage there
+echo execute3; touch test.foo; cp test.hello.world.txt test.bar
+# ################ Finished at Wed Nov 26 10:27:48 GMT 2014 Duration = 1.176 seconds #################
+
+
+####################################################################################################
+# Starting pipeline at Wed Nov 26 10:27:51 GMT 2014
+# Input files:  test.txt
+# Output Log:  .bpipe/logs/21439.log
+# Stage hello
+# Stage world
+# Stage there
+# ################ Finished at Wed Nov 26 10:27:52 GMT 2014 Duration = 0.668 seconds #################
+
+
+####################################################################################################
+# Starting pipeline at Fri Dec 05 10:40:01 GMT 2014
+# Input files:  test.txt
+# Output Log:  .bpipe/logs/23632.log
+# Stage hello
+cp test.txt test.hello.csv
+# Stage world
+echo execute1; cp test.hello.csv test.hello.world.txt; cp test.hello.csv test.hello.world.xml
+echo execute2; cp test.hello.csv test.hello.world.tsv
+# Stage there
+echo execute3; touch test.foo; cp test.hello.world.txt test.bar
+# ################ Finished at Fri Dec 05 10:40:02 GMT 2014 Duration = 1.216 seconds #################
+
+
+####################################################################################################
+# Starting pipeline at Fri Dec 05 10:40:05 GMT 2014
+# Input files:  test.txt
+# Output Log:  .bpipe/logs/23750.log
+# Stage hello
+# Stage world
+# Stage there
+# ################ Finished at Fri Dec 05 10:40:05 GMT 2014 Duration = 0.632 seconds #################
+

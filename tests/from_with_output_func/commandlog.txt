@@ -1,0 +1,44 @@
+
+####################################################################################################
+# Starting pipeline at Wed Nov 26 10:23:03 GMT 2014
+# Input files:  null
+# Output Log:  .bpipe/logs/13481.log
+# Stage hello
+touch test.csv;  touch test.xml
+# Stage world
+cp test.xml test.world.tsv
+# ################ Finished at Wed Nov 26 10:23:03 GMT 2014 Duration = 0.907 seconds #################
+
+
+####################################################################################################
+# Starting pipeline at Fri Dec 05 10:12:50 GMT 2014
+# Input files:  null
+# Output Log:  .bpipe/logs/21988.log
+# Stage hello
+touch test.csv;  touch test.xml
+# Stage world
+cp test.xml test.world.tsv
+# ################ Finished at Fri Dec 05 10:12:51 GMT 2014 Duration = 0.966 seconds #################
+
+
+####################################################################################################
+# Starting pipeline at Fri Dec 05 10:22:33 GMT 2014
+# Input files:  null
+# Output Log:  .bpipe/logs/29394.log
+# Stage hello
+touch test.csv;  touch test.xml
+# Stage world
+cp test.xml test.world.tsv
+# ################ Finished at Fri Dec 05 10:22:34 GMT 2014 Duration = 0.784 seconds #################
+
+
+####################################################################################################
+# Starting pipeline at Fri Dec 05 10:35:16 GMT 2014
+# Input files:  null
+# Output Log:  .bpipe/logs/15579.log
+# Stage hello
+touch test.csv;  touch test.xml
+# Stage world
+cp test.xml test.world.tsv
+# ################ Finished at Fri Dec 05 10:35:17 GMT 2014 Duration = 0.785 seconds #################
+

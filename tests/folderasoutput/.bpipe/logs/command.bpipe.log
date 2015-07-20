@@ -1,0 +1,25 @@
+bpipe.Runner	[1]	INFO	|10:42:17 Starting 
+bpipe.Runner	[1]	INFO	|10:42:17 OS: Linux (2.6.32-44-server) Java: 1.7.0_25 Vendor: Oracle Corporation 
+bpipe.Runner	[1]	INFO	|10:42:17 Initializing plugins ... 
+bpipe.Config	[1]	INFO	|10:42:17 No plugins directory found: /lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/folderasoutput/.bpipe/plugins 
+bpipe.Runner	[1]	INFO	|10:42:17 Showing dependency graph for [] 
+bpipe.Dependencies	[10]	INFO	|10:42:17 Reading property file .bpipe/outputs/folder.thefolder_output.csv.properties 
+bpipe.Dependencies	[11]	INFO	|10:42:17 Reading property file .bpipe/outputs/after.output.after.xml.properties 
+bpipe.Utils	[1]	INFO	|10:42:17 Output folder scan (concurrency=5) executed in 0.314 seconds 
+bpipe.Dependencies	[1]	INFO	|10:42:17 External inputs: [[test.txt]] for outputs [thefolder/output.csv] 
+bpipe.Dependencies	[1]	INFO	|10:42:17 There are 1 output groups 
+bpipe.Dependencies	[1]	INFO	|10:42:17 Subtracting 1 remaining outputs from 2 total outputs 
+bpipe.Dependencies	[1]	INFO	|10:42:17 External inputs: [[thefolder/output.csv]] for outputs [output.after.xml] 
+bpipe.Dependencies	[1]	INFO	|10:42:17 New entry for output.after.xml 
+bpipe.Dependencies	[1]	INFO	|10:42:17 Maxtimestamp for output.after.xml = 1417776135000 
+bpipe.Dependencies	[1]	INFO	|10:42:17 There are 1 output groups 
+bpipe.Dependencies	[1]	INFO	|10:42:17 Subtracting 1 remaining outputs from 1 total outputs 
+bpipe.Dependencies	[1]	INFO	|10:42:17 There are 0 remaining outputs 
+bpipe.Dependencies	[1]	INFO	|10:42:17 -- output.after.xml / entry 24198147 --- 
+bpipe.Dependencies	[1]	INFO	|10:42:17 Input thefolder/output.csv? true 
+bpipe.Dependencies	[1]	INFO	|10:42:17 output.after.xml is older than inputs [output.csv / 1417776135000 / 1417776135000 vs 1417776135000] 
+bpipe.Dependencies	[1]	INFO	|10:42:17 ====Finished Output Graph===== 
+bpipe.Dependencies	[1]	INFO	|10:42:17 There are 0 remaining outputs 
+bpipe.Dependencies	[1]	INFO	|10:42:17  thefolder/output.csv / entry 170484334  
+bpipe.Dependencies	[1]	INFO	|10:42:17 thefolder/output.csv is newer than input files 
+bpipe.Dependencies	[1]	INFO	|10:42:17 ====Finished Output Graph===== 

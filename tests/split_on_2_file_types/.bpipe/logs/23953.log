@@ -1,0 +1,14 @@
+[----]	====================================================================================================
+[----]	|                              Starting Pipeline at 2014-12-05 10:40                               |
+[----]	====================================================================================================
+[s2]	
+[s2]	===================================== Stage intersectBed [s2] ======================================
+[s1]	
+[s1]	===================================== Stage intersectBed [s1] ======================================
+
+======================================== Pipeline Finished =========================================
+MSG: Generated report /lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/split_on_2_file_types/doc/index.html
+[]	10:40:27 MSG:  Finished at Fri Dec 05 10:40:27 GMT 2014
+[]	10:40:27 MSG:  Outputs are: 
+[]			s1_macs_sort.macs.intersect.bed
+[]			s2_macs_sort.macs.intersect.bed

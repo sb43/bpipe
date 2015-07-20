@@ -1,0 +1,30 @@
+
+####################################################################################################
+# Starting pipeline at Wed Nov 26 10:28:28 GMT 2014
+# Input files:  [test.bed, test.bam]
+# Output Log:  .bpipe/logs/22010.log
+# Stage mars [2]
+# Stage hello [1]
+cp test.bed /lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/outputs_from_diff_parallel_stages/test.wide.bed
+cp test.bam test.extracted.bam
+# Stage world [1]
+cp /lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/outputs_from_diff_parallel_stages/test.wide.bed test.wide.fasta
+# Stage align
+cp test.extracted.bam test.extracted.align.sai
+# ################ Finished at Wed Nov 26 10:28:29 GMT 2014 Duration = 1.254 seconds #################
+
+
+####################################################################################################
+# Starting pipeline at Fri Dec 05 10:40:41 GMT 2014
+# Input files:  [test.bed, test.bam]
+# Output Log:  .bpipe/logs/24298.log
+# Stage mars [2]
+# Stage hello [1]
+cp test.bed /lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/outputs_from_diff_parallel_stages/test.wide.bed
+cp test.bam test.extracted.bam
+# Stage world [1]
+cp /lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/outputs_from_diff_parallel_stages/test.wide.bed test.wide.fasta
+# Stage align
+cp test.extracted.bam test.extracted.align.sai
+# ################ Finished at Fri Dec 05 10:40:43 GMT 2014 Duration = 1.583 seconds #################
+

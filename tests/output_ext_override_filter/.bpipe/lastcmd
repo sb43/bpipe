@@ -1,0 +1,1 @@
+/nfs/users/nfs_c/cgppipe/canpipe/software/bpipe_git/tests/output_ext_override_filter/../../bin/bpipe run -r test.groovy test.txt test.csv

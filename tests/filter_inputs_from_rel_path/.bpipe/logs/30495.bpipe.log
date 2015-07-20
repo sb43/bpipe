@@ -1,0 +1,163 @@
+bpipe.Runner	[1]	INFO	|10:46:06 Starting 
+bpipe.Runner	[1]	INFO	|10:46:06 OS: Linux (2.6.32-44-server) Java: 1.7.0_25 Vendor: Oracle Corporation 
+bpipe.Runner	[1]	INFO	|10:46:06 Initializing plugins ... 
+bpipe.Config	[1]	INFO	|10:46:06 No plugins directory found: /lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/filter_inputs_from_rel_path/.bpipe/plugins 
+bpipe.Runner	[1]	INFO	|10:46:06 Reading user config ...  
+bpipe.Config	[1]	INFO	|10:46:07 No configuration file found in same dir as pipeline file 
+bpipe.Config	[1]	INFO	|10:46:07 No local configuration file found 
+bpipe.Utils	[10]	INFO	|10:46:07 Read config from /nfs/users/nfs_c/cgppipe/canpipe/software/bpipe_git/tests/filter_inputs_from_rel_path/../../bin/../src/main/config/bpipe.config executed in 0.326 seconds 
+bpipe.Utils	[1]	INFO	|10:46:07 Read user config executed in 0.550 seconds 
+bpipe.Runner	[1]	INFO	|10:46:07 Loading tool database ...  
+bpipe.ToolDatabase	[11]	INFO	|10:46:07 Loading tool database from user configuration 
+bpipe.Concurrency	[13]	INFO	|10:46:07 Creating thread pool with 32 threads to execute parallel pipelines 
+bpipe.NotificationManager	[14]	INFO	|10:46:07 Configuring notifications 
+bpipe.NotificationManager	[14]	INFO	|10:46:07 Trying class name file for notification channel file 
+bpipe.Tool	[11]	INFO	|10:46:07 Configured meta data about tool samtools 
+bpipe.Tool	[11]	INFO	|10:46:07 Configured meta data about tool bwa 
+bpipe.Tool	[11]	INFO	|10:46:07 Configured meta data about tool bowtie 
+bpipe.Tool	[11]	INFO	|10:46:07 Configured meta data about tool fastqc 
+bpipe.Tool	[11]	INFO	|10:46:07 Configured meta data about tool coverageBed 
+bpipe.Tool	[11]	INFO	|10:46:07 Configured meta data about tool fastx_clipper 
+bpipe.Tool	[11]	INFO	|10:46:07 Configured meta data about tool convert2annovar.pl 
+bpipe.Tool	[11]	INFO	|10:46:07 Configured meta data about tool summarize_annovar.pl 
+bpipe.Tool	[11]	INFO	|10:46:07 Configured meta data about tool bowtie2 
+bpipe.Tool	[11]	INFO	|10:46:07 Configured meta data about tool GenomeAnalysisTK 
+bpipe.Tool	[11]	INFO	|10:46:07 Configured meta data about tool MarkDuplicates 
+bpipe.Tool	[11]	INFO	|10:46:07 Configured meta data about tool signalp 
+bpipe.Tool	[11]	INFO	|10:46:07 Configured meta data about tool variant_effect_predictor.pl 
+bpipe.Tool	[11]	INFO	|10:46:07 Configured meta data about tool igvtools 
+bpipe.Tool	[11]	INFO	|10:46:07 Configured meta data about tool ls 
+bpipe.Runner	[1]	INFO	|10:46:07 No CLI parameters specified 
+bpipe.NotificationManager	[14]	INFO	|10:46:07 Unable to create notification channel using class file: java.lang.ClassNotFoundException: file 
+bpipe.NotificationManager	[14]	INFO	|10:46:07 Trying class name bpipe.FILENotificationChannel for notification channel file 
+bpipe.NotificationManager	[14]	INFO	|10:46:07 Unable to create notification channel using class bpipe.FILENotificationChannel: java.lang.ClassNotFoundException: bpipe.FILENotificationChannel 
+bpipe.NotificationManager	[14]	INFO	|10:46:07 Trying class name bpipe.file for notification channel file 
+bpipe.NotificationManager	[14]	INFO	|10:46:07 Unable to create notification channel using class bpipe.file: java.lang.ClassNotFoundException: bpipe.file 
+bpipe.NotificationManager	[14]	INFO	|10:46:07 Trying class name bpipe.FileNotificationChannel for notification channel file 
+bpipe.NotificationManager	[14]	INFO	|10:46:07 Successfully created notification channel using class bpipe.FileNotificationChannel 
+bpipe.Runner	[1]	INFO	|10:46:07 Parsing script ...  
+bpipe.Runner	[1]	INFO	|10:46:07 Run ...  
+bpipe.Pipeline	[1]	INFO	|10:46:07 Running with input [../filter_inputs_from_rel_path/test.xml, ../filter_inputs_from_rel_path/test1.av, ../filter_inputs_from_rel_path/test2.av] 
+bpipe.PipelineCategory	[1]	INFO	|10:46:07 Found closure variable merge_av 
+bpipe.Pipeline	[1]	WARNING	|10:46:07 Pipeline folder /nfs/users/nfs_c/cgppipe/bpipes could not be found 
+bpipe.Pipeline	[1]	INFO	|10:46:07 Loaded external reference: args 
+bpipe.Pipeline	[1]	INFO	|10:46:07 External reference args is overridden by local reference 
+bpipe.Pipeline	[1]	INFO	|10:46:07 Loaded external reference: merge_av 
+bpipe.Pipeline	[1]	INFO	|10:46:07 External reference merge_av is overridden by local reference 
+bpipe.Pipeline	[1]	INFO	|10:46:08 Running segment with inputs [../filter_inputs_from_rel_path/test.xml, ../filter_inputs_from_rel_path/test1.av, ../filter_inputs_from_rel_path/test2.av] 
+bpipe.Dependencies	[1]	INFO	|10:46:08 Checking input (s) [../filter_inputs_from_rel_path/test.xml, ../filter_inputs_from_rel_path/test1.av, ../filter_inputs_from_rel_path/test2.av] 
+bpipe.Utils	[1]	INFO	|10:46:08 Output folder scan (concurrency=5) executed in 0.004 seconds 
+bpipe.Dependencies	[1]	INFO	|10:46:08  Checking file ../filter_inputs_from_rel_path/test.xml 
+bpipe.Dependencies	[1]	INFO	|10:46:08  Checking file ../filter_inputs_from_rel_path/test1.av 
+bpipe.Dependencies	[1]	INFO	|10:46:08  Checking file ../filter_inputs_from_rel_path/test2.av 
+bpipe.ReportStatisticsListener	[1]	INFO	|10:46:08 Annotating stage start time merge_av 
+bpipe.PipelineStage	[1]	INFO	|10:46:08 Stage merge_av : INPUT=[../filter_inputs_from_rel_path/test.xml, ../filter_inputs_from_rel_path/test1.av, ../filter_inputs_from_rel_path/test2.av] OUTPUT=test.xml.merge_av 
+bpipe.PipelineDelegate	[1]	INFO	|10:46:08 Setting or creating a delegate for context 1282531204 body 306532146/script14177763677322097082872 in thread 1 
+bpipe.PipelineDelegate	[1]	INFO	|10:46:08 Created new delegate bpipe.PipelineDelegate@14aad613 overriding type script14177763677322097082872 in thread 1 
+bpipe.FilterFileNameTransformer	[1]	INFO	|10:46:08 Filtering based on input ../filter_inputs_from_rel_path/test.xml 
+bpipe.FilterFileNameTransformer	[1]	INFO	|10:46:08 Filtering using [merge] produces outputs [../filter_inputs_from_rel_path/test.merge.xml] 
+bpipe.PipelineContext	[1]	INFO	|10:46:08 Producing test.merge.xml from bpipe.PipelineContext@4c71df84 
+bpipe.PipelineDelegate	[1]	INFO	|10:46:08 Setting or creating a delegate for context 1282531204 body 1802323276/script14177763677322097082872$_run_closure1 in thread 1 
+bpipe.PipelineDelegate	[1]	INFO	|10:46:08 Created new delegate bpipe.PipelineDelegate@1f3ae95d overriding type script14177763677322097082872$_run_closure1 in thread 1 
+bpipe.PipelineContext	[1]	INFO	|10:46:08 Probing command using inputs [../filter_inputs_from_rel_path/test.xml, ../filter_inputs_from_rel_path/test1.av, ../filter_inputs_from_rel_path/test2.av] 
+bpipe.PipelineInput	[1]	INFO	|10:46:08 Searching for missing Property: av 
+bpipe.PipelineInput	[1]	INFO	|10:46:08 Resolving inputs matching pattern ^.*\.av$ 
+bpipe.PipelineInput	[1]	INFO	|10:46:08 Checking outputs [../filter_inputs_from_rel_path/test.xml, ../filter_inputs_from_rel_path/test1.av, ../filter_inputs_from_rel_path/test2.av] 
+bpipe.PipelineInput	[1]	INFO	|10:46:08 Found files with exts [av$] : [[../filter_inputs_from_rel_path/test1.av, ../filter_inputs_from_rel_path/test2.av]] 
+bpipe.MultiPipelineInput	[1]	INFO	|10:46:08 My resolved inputs: -1731444160 child resolved inputs -1731444160 
+bpipe.PipelineContext	[1]	INFO	|10:46:08 Using non-default output due to input property reference: ../filter_inputs_from_rel_path/test1.av from resolved inputs [../filter_inputs_from_rel_path/test1.av, ../filter_inputs_from_rel_path/test2.av] 
+bpipe.FilterFileNameTransformer	[1]	INFO	|10:46:08 Filtering based on input ../filter_inputs_from_rel_path/test1.av 
+bpipe.FilterFileNameTransformer	[1]	INFO	|10:46:08 Filtering using [merge] produces outputs [../filter_inputs_from_rel_path/test1.merge.av] 
+bpipe.PipelineOutput	[1]	INFO	|10:46:08 Allowing reference to output not produced by filter because it was available from a filtering of an alternative input 
+bpipe.PipelineOutput	[1]	INFO	|10:46:08 Recomputing filter on base input ../filter_inputs_from_rel_path/test1.av to achieve match with output extension av 
+bpipe.FilterFileNameTransformer	[1]	INFO	|10:46:08 Filtering based on input ../filter_inputs_from_rel_path/test1.av 
+bpipe.FilterFileNameTransformer	[1]	INFO	|10:46:08 Filtering using [merge] produces outputs [../filter_inputs_from_rel_path/test1.merge.av] 
+bpipe.PipelineOutput	[1]	INFO	|10:46:08 Selected output /lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/filter_inputs_from_rel_path/test1.merge.av with extension av from expected outputs [test.merge.xml] 
+bpipe.PipelineContext	[1]	INFO	|10:46:08 Tracking outputs referenced=[[]] inferred=[[/lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/filter_inputs_from_rel_path/test1.merge.av]] for command                                                                                                         
+        cat ../filter_inputs_from_rel_path/test1.av ../filter_inputs_from_rel_path/test2.av > /lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/filter_inputs_from_rel_path/test1.merge.av
+     
+bpipe.ReportStatisticsListener	[1]	INFO	|10:46:08 Intercepted command check for command                                                                                                         
+        cat ../filter_inputs_from_rel_path/test1.av ../filter_inputs_from_rel_path/test2.av > /lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/filter_inputs_from_rel_path/test1.merge.av
+     
+bpipe.PipelineContext	[1]	INFO	|10:46:08 Checking actual resolved inputs [../filter_inputs_from_rel_path/test1.av, ../filter_inputs_from_rel_path/test2.av] 
+bpipe.PipelineContext	[1]	INFO	|10:46:08 Finished probe 
+bpipe.Utils	[1]	INFO	|10:46:08 ===== Check test.merge.xml ===== 
+bpipe.Utils	[1]	INFO	|10:46:08 file doesn't exist: test.merge.xml 
+bpipe.Utils	[1]	INFO	|10:46:08 ===== Check /lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/filter_inputs_from_rel_path/test1.merge.av ===== 
+bpipe.Utils	[1]	INFO	|10:46:08 file doesn't exist: /lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/filter_inputs_from_rel_path/test1.merge.av 
+bpipe.Dependencies	[1]	INFO	|10:46:08 Found these missing / older files: [test.merge.xml, /lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/filter_inputs_from_rel_path/test1.merge.av] 
+bpipe.Dependencies	[1]	INFO	|10:46:08 Some files are outdated : [test.merge.xml, test1.merge.av] 
+bpipe.PipelineContext	[1]	INFO	|10:46:08 Not up to date because input inferred by probe of body newer than outputs 
+bpipe.PipelineDelegate	[1]	INFO	|10:46:08 Setting or creating a delegate for context 1282531204 body 1802323276/bpipe.PipelineDelegate in thread 1 
+bpipe.PipelineDelegate	[1]	INFO	|10:46:08 Existing delegate bpipe.PipelineDelegate@1f3ae95d has type bpipe.PipelineDelegate in thread 1. Setting new context 1282531204 
+bpipe.PipelineContext	[1]	INFO	|10:46:08 Producing from inputs [../filter_inputs_from_rel_path/test.xml, ../filter_inputs_from_rel_path/test1.av, ../filter_inputs_from_rel_path/test2.av] 
+bpipe.PipelineInput	[1]	INFO	|10:46:08 Searching for missing Property: av 
+bpipe.PipelineInput	[1]	INFO	|10:46:08 Resolving inputs matching pattern ^.*\.av$ 
+bpipe.PipelineInput	[1]	INFO	|10:46:08 Checking outputs [../filter_inputs_from_rel_path/test.xml, ../filter_inputs_from_rel_path/test1.av, ../filter_inputs_from_rel_path/test2.av] 
+bpipe.PipelineInput	[1]	INFO	|10:46:08 Found files with exts [av$] : [[../filter_inputs_from_rel_path/test1.av, ../filter_inputs_from_rel_path/test2.av]] 
+bpipe.MultiPipelineInput	[1]	INFO	|10:46:08 My resolved inputs: -1731444160 child resolved inputs -1731444160 
+bpipe.PipelineContext	[1]	INFO	|10:46:08 Using non-default output due to input property reference: ../filter_inputs_from_rel_path/test1.av from resolved inputs [../filter_inputs_from_rel_path/test1.av, ../filter_inputs_from_rel_path/test2.av] 
+bpipe.FilterFileNameTransformer	[1]	INFO	|10:46:08 Filtering based on input ../filter_inputs_from_rel_path/test1.av 
+bpipe.FilterFileNameTransformer	[1]	INFO	|10:46:08 Filtering using [merge] produces outputs [../filter_inputs_from_rel_path/test1.merge.av] 
+bpipe.PipelineOutput	[1]	INFO	|10:46:08 Selected output /lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/filter_inputs_from_rel_path/test1.merge.av with extension av from expected outputs [/lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/filter_inputs_from_rel_path/test1.merge.av] 
+bpipe.PipelineContext	[1]	INFO	|10:46:08 Tracking outputs referenced=[[]] inferred=[[/lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/filter_inputs_from_rel_path/test1.merge.av]] for command                                                                                                         
+        cat ../filter_inputs_from_rel_path/test1.av ../filter_inputs_from_rel_path/test2.av > /lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/filter_inputs_from_rel_path/test1.merge.av
+     
+bpipe.ReportStatisticsListener	[1]	INFO	|10:46:08 Intercepted command check for command                                                                                                         
+        cat ../filter_inputs_from_rel_path/test1.av ../filter_inputs_from_rel_path/test2.av > /lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/filter_inputs_from_rel_path/test1.merge.av
+     
+bpipe.PipelineContext	[1]	INFO	|10:46:08 Checking actual resolved inputs [../filter_inputs_from_rel_path/test1.av, ../filter_inputs_from_rel_path/test2.av] 
+bpipe.Utils	[1]	INFO	|10:46:08 ===== Check /lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/filter_inputs_from_rel_path/test1.merge.av ===== 
+bpipe.Utils	[1]	INFO	|10:46:08 file doesn't exist: /lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/filter_inputs_from_rel_path/test1.merge.av 
+bpipe.Dependencies	[1]	INFO	|10:46:08 Found these missing / older files: [/lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/filter_inputs_from_rel_path/test1.merge.av] 
+bpipe.Dependencies	[1]	INFO	|10:46:08 Some files are outdated : [test1.merge.av] 
+bpipe.Command	[1]	INFO	|10:46:08 Checking for configuration for command cat 
+bpipe.Command	[1]	INFO	|10:46:08 Default command properties: [executor:local] 
+bpipe.CommandManager	[1]	INFO	|10:46:08 Using config [executor:local] for command 
+bpipe.CommandManager	[1]	INFO	|10:46:08 Created bpipe command id 1 
+bpipe.Concurrency	[1]	INFO	|10:46:08 Thread main requesting for 1 concurrency permit(s) type threads with 32 available 
+bpipe.Concurrency	[1]	INFO	|10:46:08 Thread main acquired resource threads in amount 1 
+bpipe.Command	[15]	INFO	|10:46:08 Command 1 changing state from null to RUNNING 
+bpipe.executor.ThrottledDelegatingCommandExecutor	[1]	INFO	|10:46:08 Waiting for command to complete before releasing 1 resources 
+bpipe.Command	[1]	INFO	|10:46:08 Command 1 changing state from RUNNING to COMPLETE 
+bpipe.executor.ThrottledDelegatingCommandExecutor	[1]	INFO	|10:46:08 Releasing 1 resources 
+bpipe.Concurrency	[1]	INFO	|10:46:08 Thread main releasing 1 threads 
+bpipe.executor.ThrottledDelegatingCommandExecutor	[1]	INFO	|10:46:08 Released 1 resources 
+bpipe.PipelineContext	[1]	INFO	|10:46:08 Adding outputs [/lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/filter_inputs_from_rel_path/test1.merge.av] as a result of produce 
+bpipe.PipelineStage	[1]	INFO	|10:46:08 Stage merge_av returned null as default inputs for next stage 
+bpipe.PipelineStage	[1]	INFO	|10:46:08 Inferring nextInputs from explicit output as [/lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/filter_inputs_from_rel_path/test1.merge.av] 
+bpipe.PipelineStage	[1]	INFO	|10:46:08 Setting next inputs [/lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/filter_inputs_from_rel_path/test1.merge.av] on stage 2032418547, context 1282531204 in thread 1 
+bpipe.Dependencies	[1]	INFO	|10:46:08 Context 1282531204 for stage merge_av has resolved inputs [../filter_inputs_from_rel_path/test1.av, ../filter_inputs_from_rel_path/test2.av] 
+bpipe.Dependencies	[1]	INFO	|10:46:08 Saving output file details to file .bpipe/outputs/merge_av._lustre_scratch112_sanger_cgppipe_canPipe_software_bpipe_git_tests_filter_inputs_from_rel_path_test1.merge.av.properties for command cat ../filter_inputs... 
+bpipe.ReportStatisticsListener	[1]	INFO	|10:46:08 Annotating stage end time merge_av 
+bpipe.PipelineStage	[1]	INFO	|10:46:08 Checking files: [/lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/filter_inputs_from_rel_path/test1.merge.av] 
+bpipe.Dependencies	[1]	INFO	|10:46:08 Checking output (s) [/lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/filter_inputs_from_rel_path/test1.merge.av] 
+bpipe.Dependencies	[1]	INFO	|10:46:08  Checking file /lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/filter_inputs_from_rel_path/test1.merge.av 
+bpipe.Pipeline	[1]	INFO	|10:46:08 Pipeline segment  in thread 1 has finished normally 
+bpipe.Pipeline	[1]	INFO	|10:46:08 Finished running segment for inputs [../filter_inputs_from_rel_path/test.xml, ../filter_inputs_from_rel_path/test1.av, ../filter_inputs_from_rel_path/test2.av] 
+bpipe.Pipeline	[1]	INFO	|10:46:08 adding stage merge_av from pipeline bpipe.Pipeline@6695c13b 
+bpipe.Dependencies	[19]	INFO	|10:46:08 Reading property file .bpipe/outputs/merge_av._lustre_scratch112_sanger_cgppipe_canPipe_software_bpipe_git_tests_filter_inputs_from_rel_path_test1.merge.av.properties 
+bpipe.Utils	[1]	INFO	|10:46:08 Output folder scan (concurrency=5) executed in 0.022 seconds 
+bpipe.Dependencies	[1]	INFO	|10:46:08 External inputs: [[../filter_inputs_from_rel_path/test1.av, ../filter_inputs_from_rel_path/test2.av]] for outputs [/lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/filter_inputs_from_rel_path/test1.merge.av] 
+bpipe.Dependencies	[1]	INFO	|10:46:08 There are 1 output groups 
+bpipe.Dependencies	[1]	INFO	|10:46:08 Subtracting 1 remaining outputs from 1 total outputs 
+bpipe.Dependencies	[1]	INFO	|10:46:08 There are 0 remaining outputs 
+bpipe.Dependencies	[1]	INFO	|10:46:08  /lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/filter_inputs_from_rel_path/test1.merge.av / entry 2056610413  
+bpipe.Dependencies	[1]	INFO	|10:46:08 /lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/filter_inputs_from_rel_path/test1.merge.av is newer than input files 
+bpipe.Dependencies	[1]	INFO	|10:46:08 ====Finished Output Graph===== 
+bpipe.ReportGenerator	[1]	INFO	|10:46:08 Searching for template in /lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/src/main/html/bpipe 
+bpipe.ReportGenerator	[1]	INFO	|10:46:08 Generating report to /lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/filter_inputs_from_rel_path/doc/index.html 
+bpipe.PipelineContext	[1]	INFO	|10:46:08 Using previously set output: [/lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/filter_inputs_from_rel_path/test1.merge.av] 
+bpipe.PipelineContext	[1]	INFO	|10:46:08 Using previously set output: [/lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/filter_inputs_from_rel_path/test1.merge.av] 
+bpipe.PipelineContext	[1]	INFO	|10:46:08 Using previously set output: [/lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/filter_inputs_from_rel_path/test1.merge.av] 
+bpipe.Dependencies	[20]	INFO	|10:46:08 Reading property file .bpipe/outputs/merge_av._lustre_scratch112_sanger_cgppipe_canPipe_software_bpipe_git_tests_filter_inputs_from_rel_path_test1.merge.av.properties 
+bpipe.Utils	[1]	INFO	|10:46:08 Output folder scan (concurrency=5) executed in 0.005 seconds 
+bpipe.Dependencies	[1]	INFO	|10:46:08 External inputs: [[../filter_inputs_from_rel_path/test1.av, ../filter_inputs_from_rel_path/test2.av]] for outputs [/lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/filter_inputs_from_rel_path/test1.merge.av] 
+bpipe.Dependencies	[1]	INFO	|10:46:08 There are 1 output groups 
+bpipe.Dependencies	[1]	INFO	|10:46:08 Subtracting 1 remaining outputs from 1 total outputs 
+bpipe.Dependencies	[1]	INFO	|10:46:08 There are 0 remaining outputs 
+bpipe.Dependencies	[1]	INFO	|10:46:08  /lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/filter_inputs_from_rel_path/test1.merge.av / entry 2074361709  
+bpipe.Dependencies	[1]	INFO	|10:46:08 /lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/filter_inputs_from_rel_path/test1.merge.av is newer than input files 
+bpipe.Dependencies	[1]	INFO	|10:46:08 ====Finished Output Graph===== 
+bpipe.Pipeline	[1]	INFO	|10:46:08 Output is /lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/filter_inputs_from_rel_path/test1.merge.av 
+bpipe.Runner	[9]	INFO	|10:46:08 Deleting job file /nfs/users/nfs_c/cgppipe/.bpipedb/jobs/30495 

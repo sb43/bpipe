@@ -1,0 +1,68 @@
+
+####################################################################################################
+# Starting pipeline at Wed Nov 26 10:23:14 GMT 2014
+# Input files:  [test.txt, test2.txt]
+# Output Log:  .bpipe/logs/13743.log
+# Stage hello [test2]
+# Stage hello [test]
+cat test2.txt > test2.hello.csv
+cat test.txt > test.hello.csv
+# Stage there [test2]
+# Stage there [test]
+cat test2.hello.csv > test2.hello.there.xml
+cat test.hello.csv > test.hello.there.xml
+# Stage world
+cat test.hello.csv test2.hello.csv > test.hello.world.txt
+# ################ Finished at Wed Nov 26 10:23:15 GMT 2014 Duration = 1.215 seconds #################
+
+
+####################################################################################################
+# Starting pipeline at Fri Dec 05 10:13:02 GMT 2014
+# Input files:  [test.txt, test2.txt]
+# Output Log:  .bpipe/logs/22248.log
+# Stage hello [test2]
+# Stage hello [test]
+cat test.txt > test.hello.csv
+cat test2.txt > test2.hello.csv
+# Stage there [test]
+# Stage there [test2]
+cat test.hello.csv > test.hello.there.xml
+cat test2.hello.csv > test2.hello.there.xml
+# Stage world
+cat test.hello.csv test2.hello.csv > test.hello.world.txt
+# ################ Finished at Fri Dec 05 10:13:03 GMT 2014 Duration = 1.255 seconds #################
+
+
+####################################################################################################
+# Starting pipeline at Fri Dec 05 10:22:42 GMT 2014
+# Input files:  [test.txt, test2.txt]
+# Output Log:  .bpipe/logs/29652.log
+# Stage hello [test2]
+# Stage hello [test]
+cat test2.txt > test2.hello.csv
+cat test.txt > test.hello.csv
+# Stage there [test]
+# Stage there [test2]
+cat test.hello.csv > test.hello.there.xml
+cat test2.hello.csv > test2.hello.there.xml
+# Stage world
+cat test.hello.csv test2.hello.csv > test.hello.world.txt
+# ################ Finished at Fri Dec 05 10:22:43 GMT 2014 Duration = 1.267 seconds #################
+
+
+####################################################################################################
+# Starting pipeline at Fri Dec 05 10:35:26 GMT 2014
+# Input files:  [test.txt, test2.txt]
+# Output Log:  .bpipe/logs/15838.log
+# Stage hello [test2]
+# Stage hello [test]
+cat test2.txt > test2.hello.csv
+cat test.txt > test.hello.csv
+# Stage there [test2]
+# Stage there [test]
+cat test2.hello.csv > test2.hello.there.xml
+cat test.hello.csv > test.hello.there.xml
+# Stage world
+cat test.hello.csv test2.hello.csv > test.hello.world.txt
+# ################ Finished at Fri Dec 05 10:35:27 GMT 2014 Duration = 1.209 seconds #################
+

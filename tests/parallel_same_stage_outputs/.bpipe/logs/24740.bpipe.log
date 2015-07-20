@@ -1,0 +1,379 @@
+bpipe.Runner	[1]	INFO	|10:40:56 Starting 
+bpipe.Runner	[1]	INFO	|10:40:56 OS: Linux (2.6.32-44-server) Java: 1.7.0_25 Vendor: Oracle Corporation 
+bpipe.Runner	[1]	INFO	|10:40:56 Initializing plugins ... 
+bpipe.Config	[1]	INFO	|10:40:56 No plugins directory found: /lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/parallel_same_stage_outputs/.bpipe/plugins 
+bpipe.Runner	[1]	INFO	|10:40:56 Reading user config ...  
+bpipe.Config	[1]	INFO	|10:40:56 No configuration file found in same dir as pipeline file 
+bpipe.Config	[1]	INFO	|10:40:56 No local configuration file found 
+bpipe.Utils	[10]	INFO	|10:40:56 Read config from /nfs/users/nfs_c/cgppipe/canpipe/software/bpipe_git/tests/parallel_same_stage_outputs/../../bin/../src/main/config/bpipe.config executed in 0.326 seconds 
+bpipe.Utils	[1]	INFO	|10:40:56 Read user config executed in 0.551 seconds 
+bpipe.Runner	[1]	INFO	|10:40:56 Maximum threads specified as 1 
+bpipe.Runner	[1]	INFO	|10:40:56 Loading tool database ...  
+bpipe.ToolDatabase	[11]	INFO	|10:40:57 Loading tool database from user configuration 
+bpipe.NotificationManager	[14]	INFO	|10:40:57 Configuring notifications 
+bpipe.Concurrency	[13]	INFO	|10:40:57 Creating thread pool with 1 threads to execute parallel pipelines 
+bpipe.NotificationManager	[14]	INFO	|10:40:57 Trying class name file for notification channel file 
+bpipe.Tool	[11]	INFO	|10:40:57 Configured meta data about tool samtools 
+bpipe.Tool	[11]	INFO	|10:40:57 Configured meta data about tool bwa 
+bpipe.Tool	[11]	INFO	|10:40:57 Configured meta data about tool bowtie 
+bpipe.Tool	[11]	INFO	|10:40:57 Configured meta data about tool fastqc 
+bpipe.Tool	[11]	INFO	|10:40:57 Configured meta data about tool coverageBed 
+bpipe.Tool	[11]	INFO	|10:40:57 Configured meta data about tool fastx_clipper 
+bpipe.Tool	[11]	INFO	|10:40:57 Configured meta data about tool convert2annovar.pl 
+bpipe.Runner	[1]	INFO	|10:40:57 No CLI parameters specified 
+bpipe.Tool	[11]	INFO	|10:40:57 Configured meta data about tool summarize_annovar.pl 
+bpipe.Tool	[11]	INFO	|10:40:57 Configured meta data about tool bowtie2 
+bpipe.Tool	[11]	INFO	|10:40:57 Configured meta data about tool GenomeAnalysisTK 
+bpipe.Tool	[11]	INFO	|10:40:57 Configured meta data about tool MarkDuplicates 
+bpipe.Tool	[11]	INFO	|10:40:57 Configured meta data about tool signalp 
+bpipe.Tool	[11]	INFO	|10:40:57 Configured meta data about tool variant_effect_predictor.pl 
+bpipe.Tool	[11]	INFO	|10:40:57 Configured meta data about tool igvtools 
+bpipe.Tool	[11]	INFO	|10:40:57 Configured meta data about tool ls 
+bpipe.NotificationManager	[14]	INFO	|10:40:57 Unable to create notification channel using class file: java.lang.ClassNotFoundException: file 
+bpipe.NotificationManager	[14]	INFO	|10:40:57 Trying class name bpipe.FILENotificationChannel for notification channel file 
+bpipe.NotificationManager	[14]	INFO	|10:40:57 Unable to create notification channel using class bpipe.FILENotificationChannel: java.lang.ClassNotFoundException: bpipe.FILENotificationChannel 
+bpipe.NotificationManager	[14]	INFO	|10:40:57 Trying class name bpipe.file for notification channel file 
+bpipe.NotificationManager	[14]	INFO	|10:40:57 Unable to create notification channel using class bpipe.file: java.lang.ClassNotFoundException: bpipe.file 
+bpipe.NotificationManager	[14]	INFO	|10:40:57 Trying class name bpipe.FileNotificationChannel for notification channel file 
+bpipe.NotificationManager	[14]	INFO	|10:40:57 Successfully created notification channel using class bpipe.FileNotificationChannel 
+bpipe.Runner	[1]	INFO	|10:40:57 Parsing script ...  
+bpipe.Runner	[1]	INFO	|10:40:57 Run ...  
+bpipe.Pipeline	[1]	INFO	|10:40:57 Running with input [s_1.txt] 
+bpipe.PipelineCategory	[1]	INFO	|10:40:57 Found closure variable how_are_you 
+bpipe.PipelineCategory	[1]	INFO	|10:40:57 Found closure variable take_me_to_your_leader 
+bpipe.PipelineCategory	[1]	INFO	|10:40:57 Found closure variable a 
+bpipe.PipelineCategory	[1]	INFO	|10:40:57 Found closure variable end 
+bpipe.Pipeline	[1]	WARNING	|10:40:57 Pipeline folder /nfs/users/nfs_c/cgppipe/bpipes could not be found 
+bpipe.Pipeline	[1]	INFO	|10:40:57 Loaded external reference: args 
+bpipe.Pipeline	[1]	INFO	|10:40:57 External reference args is overridden by local reference 
+bpipe.Pipeline	[1]	INFO	|10:40:57 Loaded external reference: how_are_you 
+bpipe.Pipeline	[1]	INFO	|10:40:57 External reference how_are_you is overridden by local reference 
+bpipe.Pipeline	[1]	INFO	|10:40:57 Loaded external reference: take_me_to_your_leader 
+bpipe.Pipeline	[1]	INFO	|10:40:57 External reference take_me_to_your_leader is overridden by local reference 
+bpipe.Pipeline	[1]	INFO	|10:40:57 Loaded external reference: a 
+bpipe.Pipeline	[1]	INFO	|10:40:57 External reference a is overridden by local reference 
+bpipe.Pipeline	[1]	INFO	|10:40:57 Loaded external reference: end 
+bpipe.Pipeline	[1]	INFO	|10:40:57 External reference end is overridden by local reference 
+bpipe.DefinePipelineCategory	[1]	INFO	|10:40:57 multiply on input null with pattern s_%.txt 
+bpipe.InputSplitter	[1]	INFO	|10:40:57 Found * pattern at [], hash at [] and % at [2] 
+bpipe.InputSplitter	[1]	INFO	|10:40:57 Sorted: [2] 
+bpipe.InputSplitter	[1]	INFO	|10:40:57 % groups are at [0] 
+bpipe.InputSplitter	[1]	INFO	|10:40:57 Result is [pattern:s_([^/]*?)\.txt, splits:[0]] 
+bpipe.DefinePipelineCategory	[1]	INFO	|10:40:57 Processing segment 156406827 
+bpipe.DefinePipelineCategory	[1]	INFO	|10:40:57 Processing segment 209557461 
+bpipe.PipelineCategory	[1]	INFO	|10:40:57 Joiners for pipeline 434883350 = [bpipe.PipelineCategory$_plus_closure1@47621ea5, bpipe.PipelineCategory$_plus_closure1@7aca073f] 
+bpipe.Pipeline	[1]	INFO	|10:40:57 Running segment with inputs s_1.txt 
+bpipe.Dependencies	[1]	INFO	|10:40:57 Checking input (s) s_1.txt 
+bpipe.Utils	[1]	INFO	|10:40:57 Output folder scan (concurrency=5) executed in 0.004 seconds 
+bpipe.Dependencies	[1]	INFO	|10:40:57  Checking file s_1.txt 
+bpipe.PipelineDelegate	[1]	INFO	|10:40:57 Setting or creating a delegate for context 398953023 body 759511627/java.lang.Class in thread 1 
+bpipe.PipelineDelegate	[1]	INFO	|10:40:57 Created new delegate bpipe.PipelineDelegate@351672ae overriding type java.lang.Class in thread 1 
+bpipe.Dependencies	[1]	INFO	|10:40:57 Checking input (s) s_1.txt 
+bpipe.Dependencies	[1]	INFO	|10:40:57  Checking file s_1.txt 
+bpipe.PipelineDelegate	[1]	INFO	|10:40:57 Setting or creating a delegate for context 1056142542 body 1635360939/java.lang.Class in thread 1 
+bpipe.PipelineDelegate	[1]	INFO	|10:40:57 Created new delegate bpipe.PipelineDelegate@1bf02cf8 overriding type java.lang.Class in thread 1 
+bpipe.PipelineCategory	[1]	INFO	|10:40:57 multiply on input s_1.txt with pattern s_%.txt 
+bpipe.InputSplitter	[1]	INFO	|10:40:57 Found * pattern at [], hash at [] and % at [2] 
+bpipe.InputSplitter	[1]	INFO	|10:40:57 Sorted: [2] 
+bpipe.InputSplitter	[1]	INFO	|10:40:57 % groups are at [0] 
+bpipe.InputSplitter	[1]	INFO	|10:40:57 Result is [pattern:s_([^/]*?)\.txt, splits:[0]] 
+bpipe.PipelineCategory	[1]	INFO	|10:40:57 Created pipeline stage 1481959839 for parallel block 
+bpipe.PipelineCategory	[1]	INFO	|10:40:57 Processing segment 1197612709 
+bpipe.PipelineCategory	[1]	INFO	|10:40:57 Creating pipeline to run parallel segment 1 with files [s_1.txt]. Branch filter = [] 
+bpipe.PipelineCategory	[1]	INFO	|10:40:57 Processing segment 2060060479 
+bpipe.PipelineCategory	[1]	INFO	|10:40:57 Creating pipeline to run parallel segment 1 with files [s_1.txt]. Branch filter = [] 
+bpipe.Concurrency	[1]	INFO	|10:40:57 Waiting for 2 parallel stages to complete (pool.active=2 pool.tasks=2) 
+bpipe.PipelineContext	[16]	INFO	|10:40:57 Setting output [s_1.txt] on context 1403496235 in thread 16 
+bpipe.PipelineContext	[15]	INFO	|10:40:57 Setting output [s_1.txt] on context 600842997 in thread 15 
+bpipe.PipelineContext	[16]	INFO	|10:40:57 Using previously set output: [s_1.txt] 
+bpipe.PipelineContext	[15]	INFO	|10:40:57 Using previously set output: [s_1.txt] 
+bpipe.PipelineCategory	[16]	INFO	|10:40:57 Adding dummy prior stage for thread 16 with outputs : s_1.txt 
+bpipe.PipelineCategory	[15]	INFO	|10:40:57 Adding dummy prior stage for thread 15 with outputs : s_1.txt 
+bpipe.Pipeline	[15]	INFO	|10:40:57 Running segment with inputs [s_1.txt] 
+bpipe.Pipeline	[16]	INFO	|10:40:57 Running segment with inputs [s_1.txt] 
+bpipe.Dependencies	[15]	INFO	|10:40:57 Checking input (s) [s_1.txt] 
+bpipe.Dependencies	[16]	INFO	|10:40:57 Checking input (s) [s_1.txt] 
+bpipe.Dependencies	[15]	INFO	|10:40:57  Checking file s_1.txt 
+bpipe.Dependencies	[16]	INFO	|10:40:57  Checking file s_1.txt 
+bpipe.PipelineDelegate	[15]	INFO	|10:40:57 Setting or creating a delegate for context 1405356727 body 1197612709/java.lang.Class in thread 15 
+bpipe.PipelineDelegate	[16]	INFO	|10:40:57 Setting or creating a delegate for context 1081885837 body 2060060479/java.lang.Class in thread 16 
+bpipe.PipelineDelegate	[15]	INFO	|10:40:57 Created new delegate bpipe.PipelineDelegate@1e78a60e overriding type java.lang.Class in thread 15 
+bpipe.PipelineDelegate	[16]	INFO	|10:40:57 Created new delegate bpipe.PipelineDelegate@2ddf0c3 overriding type java.lang.Class in thread 16 
+bpipe.Dependencies	[15]	INFO	|10:40:57 Checking input (s) [s_1.txt] 
+bpipe.Dependencies	[16]	INFO	|10:40:57 Checking input (s) [s_1.txt] 
+bpipe.Dependencies	[15]	INFO	|10:40:57  Checking file s_1.txt 
+bpipe.Dependencies	[16]	INFO	|10:40:57  Checking file s_1.txt 
+bpipe.PipelineStage	[15]	INFO	|10:40:57 Stage how_are_you [1] : INPUT=[s_1.txt] OUTPUT=s_1.txt.how_are_you 
+bpipe.PipelineStage	[16]	INFO	|10:40:57 Stage take_me_to_your_leader [1] : INPUT=[s_1.txt] OUTPUT=s_1.txt.take_me_to_your_leader 
+bpipe.PipelineDelegate	[15]	INFO	|10:40:57 Setting or creating a delegate for context 1876806354 body 536299494/script1417776057121513265754 in thread 15 
+bpipe.PipelineDelegate	[16]	INFO	|10:40:57 Setting or creating a delegate for context 1743446599 body 596729199/script1417776057121513265754 in thread 16 
+bpipe.PipelineDelegate	[15]	INFO	|10:40:57 Created new delegate bpipe.PipelineDelegate@1567ca08 overriding type script1417776057121513265754 in thread 15 
+bpipe.PipelineDelegate	[16]	INFO	|10:40:57 Created new delegate bpipe.PipelineDelegate@5c9c2f98 overriding type script1417776057121513265754 in thread 16 
+bpipe.PipelineContext	[15]	INFO	|10:40:57 No inputs resolved by input wrappers: outputs based on default s_1.txt.how_are_you 
+bpipe.PipelineContext	[16]	INFO	|10:40:57 No inputs resolved by input wrappers: outputs based on default s_1.txt.take_me_to_your_leader 
+bpipe.PipelineContext	[15]	INFO	|10:40:57 Tracking outputs referenced=[[]] inferred=[[s_1.txt.how_are_you]] for command sed 's/f/b/g' s_1.txt > s_1.txt.how_are_you 
+bpipe.PipelineContext	[16]	INFO	|10:40:57 Tracking outputs referenced=[[]] inferred=[[s_1.txt.take_me_to_your_leader]] for command sed 's/f/g/g' s_1.txt > s_1.txt.take_me_to_your_leader 
+bpipe.PipelineContext	[15]	INFO	|10:40:57 Checking actual resolved inputs [s_1.txt] 
+bpipe.PipelineContext	[16]	INFO	|10:40:57 Checking actual resolved inputs [s_1.txt] 
+bpipe.Utils	[15]	INFO	|10:40:57 ===== Check s_1.txt.how_are_you ===== 
+bpipe.Utils	[16]	INFO	|10:40:57 ===== Check s_1.txt.take_me_to_your_leader ===== 
+bpipe.Utils	[15]	INFO	|10:40:57 file doesn't exist: s_1.txt.how_are_you 
+bpipe.Utils	[16]	INFO	|10:40:57 file doesn't exist: s_1.txt.take_me_to_your_leader 
+bpipe.Dependencies	[15]	INFO	|10:40:57 Found these missing / older files: [s_1.txt.how_are_you] 
+bpipe.Dependencies	[16]	INFO	|10:40:57 Found these missing / older files: [s_1.txt.take_me_to_your_leader] 
+bpipe.Dependencies	[15]	INFO	|10:40:57 Some files are outdated : [s_1.txt.how_are_you] 
+bpipe.Dependencies	[16]	INFO	|10:40:57 Some files are outdated : [s_1.txt.take_me_to_your_leader] 
+bpipe.Command	[15]	INFO	|10:40:57 Checking for configuration for command sed 
+bpipe.Command	[16]	INFO	|10:40:57 Checking for configuration for command sed 
+bpipe.Command	[16]	INFO	|10:40:57 Default command properties: [executor:local] 
+bpipe.Command	[15]	INFO	|10:40:57 Default command properties: [executor:local] 
+bpipe.CommandManager	[15]	INFO	|10:40:57 Using config [executor:local] for command 
+bpipe.CommandManager	[16]	INFO	|10:40:57 Using config [executor:local] for command 
+bpipe.CommandManager	[15]	INFO	|10:40:57 Created bpipe command id 1 
+bpipe.CommandManager	[16]	INFO	|10:40:57 Created bpipe command id 2 
+bpipe.Concurrency	[16]	INFO	|10:40:57 Thread Thread-7 requesting for 1 concurrency permit(s) type threads with 1 available 
+bpipe.Concurrency	[15]	INFO	|10:40:57 Thread Thread-6 requesting for 1 concurrency permit(s) type threads with 1 available 
+bpipe.Concurrency	[16]	INFO	|10:40:57 Thread Thread-7 acquired resource threads in amount 1 
+bpipe.Command	[17]	INFO	|10:40:57 Command 2 changing state from null to RUNNING 
+bpipe.executor.ThrottledDelegatingCommandExecutor	[16]	INFO	|10:40:57 Waiting for command to complete before releasing 1 resources 
+bpipe.Command	[16]	INFO	|10:40:57 Command 2 changing state from RUNNING to COMPLETE 
+bpipe.executor.ThrottledDelegatingCommandExecutor	[16]	INFO	|10:40:57 Releasing 1 resources 
+bpipe.Concurrency	[16]	INFO	|10:40:57 Thread Thread-7 releasing 1 threads 
+bpipe.Concurrency	[15]	INFO	|10:40:57 Thread Thread-6 acquired resource threads in amount 1 
+bpipe.executor.ThrottledDelegatingCommandExecutor	[16]	INFO	|10:40:57 Released 1 resources 
+bpipe.Command	[21]	INFO	|10:40:57 Command 1 changing state from null to RUNNING 
+bpipe.PipelineStage	[16]	INFO	|10:40:57 Stage take_me_to_your_leader [1] returned null as default inputs for next stage 
+bpipe.PipelineStage	[16]	INFO	|10:40:57 Using inferred outputs [s_1.txt.take_me_to_your_leader] as outputs because no explicit outputs set 
+bpipe.PipelineStage	[16]	INFO	|10:40:57 Inferring nextInputs from explicit output as [s_1.txt.take_me_to_your_leader] 
+bpipe.PipelineStage	[16]	INFO	|10:40:57 Setting next inputs [s_1.txt.take_me_to_your_leader] on stage 758160617, context 1743446599 in thread 16 
+bpipe.Dependencies	[16]	INFO	|10:40:57 Context 1743446599 for stage take_me_to_your_leader has resolved inputs [s_1.txt] 
+bpipe.Dependencies	[16]	INFO	|10:40:57 Saving output file details to file .bpipe/outputs/take_me_to_your_leader.s_1.txt.take_me_to_your_leader.properties for command sed 's/f/g/g' s_1.tx... 
+bpipe.PipelineStage	[16]	INFO	|10:40:57 Checking files: [s_1.txt.take_me_to_your_leader] 
+bpipe.Dependencies	[16]	INFO	|10:40:57 Checking output (s) [s_1.txt.take_me_to_your_leader] 
+bpipe.Dependencies	[16]	INFO	|10:40:57  Checking file s_1.txt.take_me_to_your_leader 
+bpipe.Dependencies	[16]	INFO	|10:40:57 Checking input (s) [s_1.txt.take_me_to_your_leader] 
+bpipe.Dependencies	[16]	INFO	|10:40:57  Checking file s_1.txt.take_me_to_your_leader 
+bpipe.PipelineCategory	[16]	INFO	|10:40:57 Next inputs from stage = [s_1.txt.take_me_to_your_leader] 
+bpipe.PipelineCategory	[16]	INFO	|10:40:57 Checking inputs for next stage:  [s_1.txt.take_me_to_your_leader] 
+bpipe.Dependencies	[16]	INFO	|10:40:57 Checking input (s) [s_1.txt.take_me_to_your_leader] 
+bpipe.executor.ThrottledDelegatingCommandExecutor	[15]	INFO	|10:40:57 Waiting for command to complete before releasing 1 resources 
+bpipe.Dependencies	[16]	INFO	|10:40:57  Checking file s_1.txt.take_me_to_your_leader 
+bpipe.Command	[15]	INFO	|10:40:57 Command 1 changing state from RUNNING to COMPLETE 
+bpipe.Dependencies	[16]	INFO	|10:40:57 Checking input (s) [s_1.txt.take_me_to_your_leader] 
+bpipe.executor.ThrottledDelegatingCommandExecutor	[15]	INFO	|10:40:57 Releasing 1 resources 
+bpipe.Dependencies	[16]	INFO	|10:40:57  Checking file s_1.txt.take_me_to_your_leader 
+bpipe.Concurrency	[15]	INFO	|10:40:57 Thread Thread-6 releasing 1 threads 
+bpipe.executor.ThrottledDelegatingCommandExecutor	[15]	INFO	|10:40:57 Released 1 resources 
+bpipe.PipelineStage	[15]	INFO	|10:40:57 Stage how_are_you [1] returned null as default inputs for next stage 
+bpipe.PipelineStage	[16]	INFO	|10:40:57 Stage a [1] : INPUT=[s_1.txt.take_me_to_your_leader] OUTPUT=s_1.txt.take_me_to_your_leader.a 
+bpipe.PipelineDelegate	[16]	INFO	|10:40:57 Setting or creating a delegate for context 436792348 body 479016103/script1417776057121513265754 in thread 16 
+bpipe.PipelineStage	[15]	INFO	|10:40:57 Using inferred outputs [s_1.txt.how_are_you] as outputs because no explicit outputs set 
+bpipe.PipelineDelegate	[16]	INFO	|10:40:57 Created new delegate bpipe.PipelineDelegate@3fc52f9e overriding type script1417776057121513265754 in thread 16 
+bpipe.PipelineStage	[15]	INFO	|10:40:57 Inferring nextInputs from explicit output as [s_1.txt.how_are_you] 
+bpipe.PipelineContext	[16]	INFO	|10:40:57 No inputs resolved by input wrappers: outputs based on default s_1.txt.take_me_to_your_leader.a 
+bpipe.PipelineStage	[15]	INFO	|10:40:57 Setting next inputs [s_1.txt.how_are_you] on stage 716787399, context 1876806354 in thread 15 
+bpipe.PipelineContext	[16]	INFO	|10:40:57 Tracking outputs referenced=[[]] inferred=[[s_1.txt.take_me_to_your_leader.a]] for command cp s_1.txt.take_me_to_your_leader s_1.txt.take_me_to_your_leader.a 
+bpipe.PipelineContext	[16]	INFO	|10:40:57 Checking actual resolved inputs [s_1.txt.take_me_to_your_leader] 
+bpipe.Dependencies	[15]	INFO	|10:40:57 Context 1876806354 for stage how_are_you has resolved inputs [s_1.txt] 
+bpipe.Utils	[16]	INFO	|10:40:57 ===== Check s_1.txt.take_me_to_your_leader.a ===== 
+bpipe.Dependencies	[15]	INFO	|10:40:58 Saving output file details to file .bpipe/outputs/how_are_you.s_1.txt.how_are_you.properties for command sed 's/f/b/g' s_1.tx... 
+bpipe.Utils	[16]	INFO	|10:40:58 file doesn't exist: s_1.txt.take_me_to_your_leader.a 
+bpipe.Dependencies	[16]	INFO	|10:40:58 Found these missing / older files: [s_1.txt.take_me_to_your_leader.a] 
+bpipe.Dependencies	[16]	INFO	|10:40:58 Some files are outdated : [s_1.txt.take_me_to_your_leader.a] 
+bpipe.PipelineStage	[15]	INFO	|10:40:58 Checking files: [s_1.txt.how_are_you] 
+bpipe.Dependencies	[15]	INFO	|10:40:58 Checking output (s) [s_1.txt.how_are_you] 
+bpipe.Command	[16]	INFO	|10:40:58 Checking for configuration for command cp 
+bpipe.Dependencies	[15]	INFO	|10:40:58  Checking file s_1.txt.how_are_you 
+bpipe.Command	[16]	INFO	|10:40:58 Default command properties: [executor:local] 
+bpipe.Dependencies	[15]	INFO	|10:40:58 Checking input (s) [s_1.txt.how_are_you] 
+bpipe.CommandManager	[16]	INFO	|10:40:58 Using config [executor:local] for command 
+bpipe.Dependencies	[15]	INFO	|10:40:58  Checking file s_1.txt.how_are_you 
+bpipe.PipelineCategory	[15]	INFO	|10:40:58 Next inputs from stage = [s_1.txt.how_are_you] 
+bpipe.PipelineCategory	[15]	INFO	|10:40:58 Checking inputs for next stage:  [s_1.txt.how_are_you] 
+bpipe.Dependencies	[15]	INFO	|10:40:58 Checking input (s) [s_1.txt.how_are_you] 
+bpipe.CommandManager	[16]	INFO	|10:40:58 Created bpipe command id 3 
+bpipe.Dependencies	[15]	INFO	|10:40:58  Checking file s_1.txt.how_are_you 
+bpipe.Concurrency	[16]	INFO	|10:40:58 Thread Thread-7 requesting for 1 concurrency permit(s) type threads with 1 available 
+bpipe.Concurrency	[16]	INFO	|10:40:58 Thread Thread-7 acquired resource threads in amount 1 
+bpipe.Command	[24]	INFO	|10:40:58 Command 3 changing state from null to RUNNING 
+bpipe.Dependencies	[15]	INFO	|10:40:58 Checking input (s) [s_1.txt.how_are_you] 
+bpipe.Dependencies	[15]	INFO	|10:40:58  Checking file s_1.txt.how_are_you 
+bpipe.PipelineStage	[15]	INFO	|10:40:58 Stage a [1] : INPUT=[s_1.txt.how_are_you] OUTPUT=s_1.txt.how_are_you.a 
+bpipe.PipelineDelegate	[15]	INFO	|10:40:58 Setting or creating a delegate for context 708352791 body 479016103/bpipe.PipelineDelegate in thread 15 
+bpipe.PipelineDelegate	[15]	INFO	|10:40:58 Existing delegate bpipe.PipelineDelegate@3fc52f9e has type bpipe.PipelineDelegate in thread 15. Setting new context 708352791 
+bpipe.PipelineContext	[15]	INFO	|10:40:58 No inputs resolved by input wrappers: outputs based on default s_1.txt.how_are_you.a 
+bpipe.PipelineContext	[15]	INFO	|10:40:58 Tracking outputs referenced=[[]] inferred=[[s_1.txt.how_are_you.a]] for command cp s_1.txt.how_are_you s_1.txt.how_are_you.a 
+bpipe.PipelineContext	[15]	INFO	|10:40:58 Checking actual resolved inputs [s_1.txt.how_are_you] 
+bpipe.Utils	[15]	INFO	|10:40:58 ===== Check s_1.txt.how_are_you.a ===== 
+bpipe.Utils	[15]	INFO	|10:40:58 file doesn't exist: s_1.txt.how_are_you.a 
+bpipe.Dependencies	[15]	INFO	|10:40:58 Found these missing / older files: [s_1.txt.how_are_you.a] 
+bpipe.Dependencies	[15]	INFO	|10:40:58 Some files are outdated : [s_1.txt.how_are_you.a] 
+bpipe.Command	[15]	INFO	|10:40:58 Checking for configuration for command cp 
+bpipe.Command	[15]	INFO	|10:40:58 Default command properties: [executor:local] 
+bpipe.CommandManager	[15]	INFO	|10:40:58 Using config [executor:local] for command 
+bpipe.CommandManager	[15]	INFO	|10:40:58 Created bpipe command id 4 
+bpipe.Concurrency	[15]	INFO	|10:40:58 Thread Thread-6 requesting for 1 concurrency permit(s) type threads with 0 available 
+bpipe.executor.ThrottledDelegatingCommandExecutor	[16]	INFO	|10:40:58 Waiting for command to complete before releasing 1 resources 
+bpipe.Command	[16]	INFO	|10:40:58 Command 3 changing state from RUNNING to COMPLETE 
+bpipe.executor.ThrottledDelegatingCommandExecutor	[16]	INFO	|10:40:58 Releasing 1 resources 
+bpipe.Concurrency	[16]	INFO	|10:40:58 Thread Thread-7 releasing 1 threads 
+bpipe.Concurrency	[15]	INFO	|10:40:58 Thread Thread-6 acquired resource threads in amount 1 
+bpipe.executor.ThrottledDelegatingCommandExecutor	[16]	INFO	|10:40:58 Released 1 resources 
+bpipe.Command	[27]	INFO	|10:40:58 Command 4 changing state from null to RUNNING 
+bpipe.PipelineStage	[16]	INFO	|10:40:58 Stage a [1] returned null as default inputs for next stage 
+bpipe.PipelineStage	[16]	INFO	|10:40:58 Using inferred outputs [s_1.txt.take_me_to_your_leader.a] as outputs because no explicit outputs set 
+bpipe.PipelineStage	[16]	INFO	|10:40:58 Inferring nextInputs from explicit output as [s_1.txt.take_me_to_your_leader.a] 
+bpipe.PipelineStage	[16]	INFO	|10:40:58 Setting next inputs [s_1.txt.take_me_to_your_leader.a] on stage 452135988, context 436792348 in thread 16 
+bpipe.Dependencies	[16]	INFO	|10:40:58 Context 436792348 for stage a has resolved inputs [s_1.txt.take_me_to_your_leader] 
+bpipe.Dependencies	[16]	INFO	|10:40:58 Saving output file details to file .bpipe/outputs/a.s_1.txt.take_me_to_your_leader.a.properties for command cp s_1.txt.take_me_t... 
+bpipe.PipelineStage	[16]	INFO	|10:40:58 Checking files: [s_1.txt.take_me_to_your_leader.a] 
+bpipe.Dependencies	[16]	INFO	|10:40:58 Checking output (s) [s_1.txt.take_me_to_your_leader.a] 
+bpipe.Dependencies	[16]	INFO	|10:40:58  Checking file s_1.txt.take_me_to_your_leader.a 
+bpipe.PipelineContext	[16]	INFO	|10:40:58 Setting output [s_1.txt.take_me_to_your_leader.a] on context 1081885837 in thread 16 
+bpipe.PipelineStage	[16]	INFO	|10:40:58 Setting next inputs [s_1.txt.take_me_to_your_leader.a] on stage 69186564, context 1081885837 in thread 16 
+bpipe.PipelineStage	[16]	INFO	|10:40:58 Checking files: [s_1.txt.take_me_to_your_leader.a] 
+bpipe.Dependencies	[16]	INFO	|10:40:58 Checking output (s) [s_1.txt.take_me_to_your_leader.a] 
+bpipe.Dependencies	[16]	INFO	|10:40:58  Checking file s_1.txt.take_me_to_your_leader.a 
+bpipe.Pipeline	[16]	INFO	|10:40:58 Pipeline segment 1.2 in thread 16 has finished normally 
+bpipe.Pipeline	[16]	INFO	|10:40:58 Finished running segment for inputs [s_1.txt] 
+bpipe.Concurrency	[16]	INFO	|10:40:58 Decremented running count to 1 in thread Thread-7 
+bpipe.executor.ThrottledDelegatingCommandExecutor	[15]	INFO	|10:40:58 Waiting for command to complete before releasing 1 resources 
+bpipe.Command	[15]	INFO	|10:40:58 Command 4 changing state from RUNNING to COMPLETE 
+bpipe.executor.ThrottledDelegatingCommandExecutor	[15]	INFO	|10:40:58 Releasing 1 resources 
+bpipe.Concurrency	[15]	INFO	|10:40:58 Thread Thread-6 releasing 1 threads 
+bpipe.executor.ThrottledDelegatingCommandExecutor	[15]	INFO	|10:40:58 Released 1 resources 
+bpipe.PipelineStage	[15]	INFO	|10:40:58 Stage a [1] returned null as default inputs for next stage 
+bpipe.PipelineStage	[15]	INFO	|10:40:58 Using inferred outputs [s_1.txt.how_are_you.a] as outputs because no explicit outputs set 
+bpipe.PipelineStage	[15]	INFO	|10:40:58 Inferring nextInputs from explicit output as [s_1.txt.how_are_you.a] 
+bpipe.PipelineStage	[15]	INFO	|10:40:58 Setting next inputs [s_1.txt.how_are_you.a] on stage 1221849761, context 708352791 in thread 15 
+bpipe.Dependencies	[15]	INFO	|10:40:58 Context 708352791 for stage a has resolved inputs [s_1.txt.how_are_you] 
+bpipe.Dependencies	[15]	INFO	|10:40:58 Saving output file details to file .bpipe/outputs/a.s_1.txt.how_are_you.a.properties for command cp s_1.txt.how_are_y... 
+bpipe.PipelineStage	[15]	INFO	|10:40:58 Checking files: [s_1.txt.how_are_you.a] 
+bpipe.Dependencies	[15]	INFO	|10:40:58 Checking output (s) [s_1.txt.how_are_you.a] 
+bpipe.Dependencies	[15]	INFO	|10:40:58  Checking file s_1.txt.how_are_you.a 
+bpipe.PipelineContext	[15]	INFO	|10:40:58 Setting output [s_1.txt.how_are_you.a] on context 1405356727 in thread 15 
+bpipe.PipelineStage	[15]	INFO	|10:40:58 Setting next inputs [s_1.txt.how_are_you.a] on stage 1504718643, context 1405356727 in thread 15 
+bpipe.PipelineStage	[15]	INFO	|10:40:58 Checking files: [s_1.txt.how_are_you.a] 
+bpipe.Dependencies	[15]	INFO	|10:40:58 Checking output (s) [s_1.txt.how_are_you.a] 
+bpipe.Dependencies	[15]	INFO	|10:40:58  Checking file s_1.txt.how_are_you.a 
+bpipe.Pipeline	[15]	INFO	|10:40:58 Pipeline segment 1.1 in thread 15 has finished normally 
+bpipe.Pipeline	[15]	INFO	|10:40:58 Finished running segment for inputs [s_1.txt] 
+bpipe.Concurrency	[15]	INFO	|10:40:58 Decremented running count to 0 in thread Thread-6 
+bpipe.PipelineCategory	[1]	INFO	|10:40:58 Parent pipeline of concurent sections [663999959, 1522281101] is 434883350 
+bpipe.PipelineCategory	[1]	INFO	|10:40:58 Maximum child stage list length = 2 
+bpipe.PipelineCategory	[1]	INFO	|10:40:58 ###### Merging results of parallel split in parent branch  ##### 
+bpipe.PipelineCategory	[1]	INFO	|10:40:58 Grouping stages at index 0 [how_are_you, take_me_to_your_leader] for merging 
+bpipe.PipelineCategory	[1]	INFO	|10:40:58 Merged outputs are [s_1.txt.how_are_you] 
+bpipe.PipelineContext	[1]	INFO	|10:40:58 Setting output [s_1.txt.how_are_you] on context 554279358 in thread 1 
+bpipe.PipelineCategory	[1]	INFO	|10:40:58 Merged outputs are [s_1.txt.take_me_to_your_leader] 
+bpipe.PipelineContext	[1]	INFO	|10:40:58 Setting output [s_1.txt.take_me_to_your_leader] on context 2136592867 in thread 1 
+bpipe.PipelineCategory	[1]	INFO	|10:40:58 Grouping stages at index 1 [a, a] for merging 
+bpipe.PipelineCategory	[1]	INFO	|10:40:58 Parallel segment 1 contains 2 identical a stages - Merging outputs to single stage 
+bpipe.PipelineCategory	[1]	INFO	|10:40:58 Merged outputs are [s_1.txt.how_are_you.a, s_1.txt.take_me_to_your_leader.a] 
+bpipe.PipelineContext	[1]	INFO	|10:40:58 Setting output [s_1.txt.how_are_you.a, s_1.txt.take_me_to_your_leader.a] on context 1436977464 in thread 1 
+bpipe.PipelineCategory	[1]	INFO	|10:40:58 There are 2 stages from nested pipelines 
+bpipe.PipelineCategory	[1]	INFO	|10:40:58 There [bpipe.PipelineStage@48d3f2a1, bpipe.PipelineStage@1af30c34] parallel paths in final stage 
+bpipe.PipelineCategory	[1]	INFO	|10:40:58 Last merged outputs are [s_1.txt.how_are_you.a, s_1.txt.take_me_to_your_leader.a] 
+bpipe.PipelineContext	[1]	INFO	|10:40:58 Setting output [s_1.txt.how_are_you.a, s_1.txt.take_me_to_your_leader.a] on context 285605582 in thread 1 
+bpipe.PipelineCategory	[1]	INFO	|10:40:58 Merged stage name is a_bpipe_merge 
+bpipe.PipelineContext	[1]	INFO	|10:40:58 Setting output [s_1.txt.how_are_you.a, s_1.txt.take_me_to_your_leader.a] on context 1056142542 in thread 1 
+bpipe.PipelineStage	[1]	INFO	|10:40:58 Setting next inputs [s_1.txt.how_are_you.a, s_1.txt.take_me_to_your_leader.a] on stage 525696925, context 1056142542 in thread 1 
+bpipe.PipelineStage	[1]	INFO	|10:40:58 Checking files: [s_1.txt.how_are_you.a, s_1.txt.take_me_to_your_leader.a] 
+bpipe.Dependencies	[1]	INFO	|10:40:58 Checking output (s) [s_1.txt.how_are_you.a, s_1.txt.take_me_to_your_leader.a] 
+bpipe.Dependencies	[1]	INFO	|10:40:58  Checking file s_1.txt.how_are_you.a 
+bpipe.Dependencies	[1]	INFO	|10:40:58  Checking file s_1.txt.take_me_to_your_leader.a 
+bpipe.Dependencies	[1]	INFO	|10:40:58 Checking input (s) [s_1.txt.how_are_you.a, s_1.txt.take_me_to_your_leader.a] 
+bpipe.Dependencies	[1]	INFO	|10:40:58  Checking file s_1.txt.how_are_you.a 
+bpipe.Dependencies	[1]	INFO	|10:40:58  Checking file s_1.txt.take_me_to_your_leader.a 
+bpipe.PipelineCategory	[1]	INFO	|10:40:58 Next inputs from stage = [s_1.txt.how_are_you.a, s_1.txt.take_me_to_your_leader.a] 
+bpipe.PipelineCategory	[1]	INFO	|10:40:58 Checking inputs for next stage:  [s_1.txt.how_are_you.a, s_1.txt.take_me_to_your_leader.a] 
+bpipe.Dependencies	[1]	INFO	|10:40:58 Checking input (s) [s_1.txt.how_are_you.a, s_1.txt.take_me_to_your_leader.a] 
+bpipe.Dependencies	[1]	INFO	|10:40:58  Checking file s_1.txt.how_are_you.a 
+bpipe.Dependencies	[1]	INFO	|10:40:58  Checking file s_1.txt.take_me_to_your_leader.a 
+bpipe.Dependencies	[1]	INFO	|10:40:58 Checking input (s) [s_1.txt.how_are_you.a, s_1.txt.take_me_to_your_leader.a] 
+bpipe.Dependencies	[1]	INFO	|10:40:58  Checking file s_1.txt.how_are_you.a 
+bpipe.Dependencies	[1]	INFO	|10:40:58  Checking file s_1.txt.take_me_to_your_leader.a 
+bpipe.PipelineStage	[1]	INFO	|10:40:58 Stage end : INPUT=[s_1.txt.how_are_you.a, s_1.txt.take_me_to_your_leader.a] OUTPUT=s_1.txt.how_are_you.a.end 
+bpipe.PipelineDelegate	[1]	INFO	|10:40:58 Setting or creating a delegate for context 100197955 body 2054934165/script1417776057121513265754 in thread 1 
+bpipe.PipelineDelegate	[1]	INFO	|10:40:58 Created new delegate bpipe.PipelineDelegate@17d53bc5 overriding type script1417776057121513265754 in thread 1 
+bpipe.PipelineContext	[1]	INFO	|10:40:58 Using non-default output due to input property reference: s_1.txt.how_are_you.a from resolved inputs [s_1.txt.how_are_you.a, s_1.txt.take_me_to_your_leader.a] 
+bpipe.PipelineContext	[1]	INFO	|10:40:58 Tracking outputs referenced=[[]] inferred=[[s_1.txt.how_are_you.a.end]] for command cat s_1.txt.how_are_you.a s_1.txt.take_me_to_your_leader.a > s_1.txt.how_are_you.a.end 
+bpipe.PipelineContext	[1]	INFO	|10:40:58 Checking actual resolved inputs [s_1.txt.how_are_you.a, s_1.txt.take_me_to_your_leader.a] 
+bpipe.Utils	[1]	INFO	|10:40:58 ===== Check s_1.txt.how_are_you.a.end ===== 
+bpipe.Utils	[1]	INFO	|10:40:58 file doesn't exist: s_1.txt.how_are_you.a.end 
+bpipe.Dependencies	[1]	INFO	|10:40:58 Found these missing / older files: [s_1.txt.how_are_you.a.end] 
+bpipe.Dependencies	[1]	INFO	|10:40:58 Some files are outdated : [s_1.txt.how_are_you.a.end] 
+bpipe.Command	[1]	INFO	|10:40:58 Checking for configuration for command cat 
+bpipe.Command	[1]	INFO	|10:40:58 Default command properties: [executor:local] 
+bpipe.CommandManager	[1]	INFO	|10:40:58 Using config [executor:local] for command 
+bpipe.CommandManager	[1]	INFO	|10:40:58 Created bpipe command id 5 
+bpipe.Concurrency	[1]	INFO	|10:40:58 Thread main requesting for 1 concurrency permit(s) type threads with 1 available 
+bpipe.Concurrency	[1]	INFO	|10:40:58 Thread main acquired resource threads in amount 1 
+bpipe.Command	[30]	INFO	|10:40:58 Command 5 changing state from null to RUNNING 
+bpipe.executor.ThrottledDelegatingCommandExecutor	[1]	INFO	|10:40:58 Waiting for command to complete before releasing 1 resources 
+bpipe.Command	[1]	INFO	|10:40:58 Command 5 changing state from RUNNING to COMPLETE 
+bpipe.executor.ThrottledDelegatingCommandExecutor	[1]	INFO	|10:40:58 Releasing 1 resources 
+bpipe.Concurrency	[1]	INFO	|10:40:58 Thread main releasing 1 threads 
+bpipe.executor.ThrottledDelegatingCommandExecutor	[1]	INFO	|10:40:58 Released 1 resources 
+bpipe.PipelineStage	[1]	INFO	|10:40:58 Stage end returned null as default inputs for next stage 
+bpipe.PipelineStage	[1]	INFO	|10:40:58 Using inferred outputs [s_1.txt.how_are_you.a.end] as outputs because no explicit outputs set 
+bpipe.PipelineStage	[1]	INFO	|10:40:58 Inferring nextInputs from explicit output as [s_1.txt.how_are_you.a.end] 
+bpipe.PipelineStage	[1]	INFO	|10:40:58 Setting next inputs [s_1.txt.how_are_you.a.end] on stage 1799126532, context 100197955 in thread 1 
+bpipe.Dependencies	[1]	INFO	|10:40:58 Context 100197955 for stage end has resolved inputs [s_1.txt.how_are_you.a, s_1.txt.take_me_to_your_leader.a] 
+bpipe.Dependencies	[1]	INFO	|10:40:58 Saving output file details to file .bpipe/outputs/end.s_1.txt.how_are_you.a.end.properties for command cat s_1.txt.how_are_... 
+bpipe.PipelineStage	[1]	INFO	|10:40:58 Checking files: [s_1.txt.how_are_you.a.end] 
+bpipe.Dependencies	[1]	INFO	|10:40:58 Checking output (s) [s_1.txt.how_are_you.a.end] 
+bpipe.Dependencies	[1]	INFO	|10:40:58  Checking file s_1.txt.how_are_you.a.end 
+bpipe.PipelineContext	[1]	INFO	|10:40:58 Setting output [s_1.txt.how_are_you.a.end] on context 398953023 in thread 1 
+bpipe.PipelineStage	[1]	INFO	|10:40:58 Setting next inputs [s_1.txt.how_are_you.a.end] on stage 1892991282, context 398953023 in thread 1 
+bpipe.PipelineStage	[1]	INFO	|10:40:58 Checking files: [s_1.txt.how_are_you.a.end] 
+bpipe.Dependencies	[1]	INFO	|10:40:58 Checking output (s) [s_1.txt.how_are_you.a.end] 
+bpipe.Dependencies	[1]	INFO	|10:40:58  Checking file s_1.txt.how_are_you.a.end 
+bpipe.Pipeline	[1]	INFO	|10:40:58 Pipeline segment  in thread 1 has finished normally 
+bpipe.Pipeline	[1]	INFO	|10:40:58 Finished running segment for inputs s_1.txt 
+bpipe.Dependencies	[33]	INFO	|10:40:58 Reading property file .bpipe/outputs/a.s_1.txt.how_are_you.a.properties 
+bpipe.Dependencies	[37]	INFO	|10:40:58 Reading property file .bpipe/outputs/take_me_to_your_leader.s_1.txt.take_me_to_your_leader.properties 
+bpipe.Dependencies	[36]	INFO	|10:40:58 Reading property file .bpipe/outputs/a.s_1.txt.take_me_to_your_leader.a.properties 
+bpipe.Dependencies	[34]	INFO	|10:40:58 Reading property file .bpipe/outputs/end.s_1.txt.how_are_you.a.end.properties 
+bpipe.Dependencies	[35]	INFO	|10:40:58 Reading property file .bpipe/outputs/how_are_you.s_1.txt.how_are_you.properties 
+bpipe.Utils	[1]	INFO	|10:40:58 Output folder scan (concurrency=5) executed in 0.025 seconds 
+bpipe.Dependencies	[1]	INFO	|10:40:58 External inputs: [[s_1.txt], [s_1.txt]] for outputs [s_1.txt.how_are_you, s_1.txt.take_me_to_your_leader] 
+bpipe.Dependencies	[1]	INFO	|10:40:58 There are 1 output groups 
+bpipe.Dependencies	[1]	INFO	|10:40:58 Subtracting 2 remaining outputs from 5 total outputs 
+bpipe.Dependencies	[1]	INFO	|10:40:58 External inputs: [[s_1.txt.how_are_you], [s_1.txt.take_me_to_your_leader]] for outputs [s_1.txt.how_are_you.a, s_1.txt.take_me_to_your_leader.a] 
+bpipe.Dependencies	[1]	INFO	|10:40:58 New entry for s_1.txt.how_are_you.a 
+bpipe.Dependencies	[1]	INFO	|10:40:58 Maxtimestamp for s_1.txt.how_are_you.a = 1417776058000 
+bpipe.Dependencies	[1]	INFO	|10:40:58 New entry for s_1.txt.take_me_to_your_leader.a 
+bpipe.Dependencies	[1]	INFO	|10:40:58 Maxtimestamp for s_1.txt.take_me_to_your_leader.a = 1417776058000 
+bpipe.Dependencies	[1]	INFO	|10:40:58 There are 2 output groups 
+bpipe.Dependencies	[1]	INFO	|10:40:58 Subtracting 2 remaining outputs from 3 total outputs 
+bpipe.Dependencies	[1]	INFO	|10:40:58 External inputs: [[s_1.txt.how_are_you.a, s_1.txt.take_me_to_your_leader.a]] for outputs [s_1.txt.how_are_you.a.end] 
+bpipe.Dependencies	[1]	INFO	|10:40:58 New entry for s_1.txt.how_are_you.a.end 
+bpipe.Dependencies	[1]	INFO	|10:40:58 Maxtimestamp for s_1.txt.how_are_you.a.end = 1417776058000 
+bpipe.Dependencies	[1]	INFO	|10:40:58 There are 1 output groups 
+bpipe.Dependencies	[1]	INFO	|10:40:58 Subtracting 1 remaining outputs from 1 total outputs 
+bpipe.Dependencies	[1]	INFO	|10:40:58 There are 0 remaining outputs 
+bpipe.Dependencies	[1]	INFO	|10:40:58  s_1.txt.how_are_you.a.end / entry 698782006  
+bpipe.Dependencies	[1]	INFO	|10:40:58 Input s_1.txt.how_are_you.a? true 
+bpipe.Dependencies	[1]	INFO	|10:40:58 Input s_1.txt.take_me_to_your_leader.a? true 
+bpipe.Dependencies	[1]	INFO	|10:40:58 s_1.txt.how_are_you.a.end is older than inputs [s_1.txt.how_are_you.a / 1417776058000 / 1417776058000 vs 1417776058000, s_1.txt.take_me_to_your_leader.a / 1417776058000 / 1417776058000 vs 1417776058000] 
+bpipe.Dependencies	[1]	INFO	|10:40:58 ====Finished Output Graph===== 
+bpipe.Dependencies	[1]	INFO	|10:40:58 There are 0 remaining outputs 
+bpipe.Dependencies	[1]	INFO	|10:40:58 There are 0 remaining outputs 
+bpipe.Dependencies	[1]	INFO	|10:40:58  s_1.txt.how_are_you.a / entry 298710603  
+bpipe.Dependencies	[1]	INFO	|10:40:58 Input s_1.txt.how_are_you? true 
+bpipe.Dependencies	[1]	INFO	|10:40:58 Input s_1.txt.take_me_to_your_leader? false 
+bpipe.Dependencies	[1]	INFO	|10:40:58 s_1.txt.how_are_you.a is newer than input files 
+bpipe.Dependencies	[1]	INFO	|10:40:58  s_1.txt.take_me_to_your_leader.a / entry 1759821582  
+bpipe.Dependencies	[1]	INFO	|10:40:58 Input s_1.txt.how_are_you? false 
+bpipe.Dependencies	[1]	INFO	|10:40:58 Input s_1.txt.take_me_to_your_leader? true 
+bpipe.Dependencies	[1]	INFO	|10:40:58 s_1.txt.take_me_to_your_leader.a is newer than input files 
+bpipe.Dependencies	[1]	INFO	|10:40:58 ====Finished Output Graph===== 
+bpipe.Dependencies	[1]	INFO	|10:40:58 There are 0 remaining outputs 
+bpipe.Dependencies	[1]	INFO	|10:40:58  s_1.txt.how_are_you / entry 1015508695  
+bpipe.Dependencies	[1]	INFO	|10:40:58 s_1.txt.how_are_you is newer than input files 
+bpipe.Dependencies	[1]	INFO	|10:40:58  s_1.txt.take_me_to_your_leader / entry 1015508695  
+bpipe.Dependencies	[1]	INFO	|10:40:58 s_1.txt.take_me_to_your_leader is newer than input files 
+bpipe.Dependencies	[1]	INFO	|10:40:58 ====Finished Output Graph===== 
+bpipe.Pipeline	[1]	INFO	|10:40:58 Output is s_1.txt.how_are_you.a.end 
+bpipe.Runner	[9]	INFO	|10:40:58 Deleting job file /nfs/users/nfs_c/cgppipe/.bpipedb/jobs/24740 

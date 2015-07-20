@@ -1,0 +1,16 @@
+[----]	====================================================================================================
+[----]	|                              Starting Pipeline at 2014-12-05 10:33                               |
+[----]	====================================================================================================
+[]	
+[]	========================================= Stage align_bwa ==========================================
+[0.6]	execute cat
+
+======================================== Pipeline Finished =========================================
+MSG: Generated report /lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/multi_deps/doc/index.html
+[]	10:33:35 MSG:  Skipping command echo 'execute multi1'; gunzip ... due to inferred outputs [test1.sai] newer than inputs [test1.gz, test2.gz]
+[]	10:33:35 MSG:  Skipping command echo 'execute multi2'; gunzip ... due to inferred outputs [test1.sai, test2.sai] newer than inputs [test1.gz, test2.gz]
+[]	10:33:35 MSG:  Finished at Fri Dec 05 10:33:35 GMT 2014
+[]	10:33:36 MSG:  Outputs are: 
+[]			test1.bam
+[]			test1.sai (pre-existing)
+[]			test2.sai (pre-existing)

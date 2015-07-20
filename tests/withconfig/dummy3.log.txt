@@ -1,0 +1,1 @@
+(ls | wc) > .bpipe/commandtmp/2/2.out 2>  .bpipe/commandtmp/2/2.err

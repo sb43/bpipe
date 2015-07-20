@@ -1,0 +1,39 @@
+
+####################################################################################################
+# Starting pipeline at Wed Nov 26 10:26:04 GMT 2014
+# Input files:  null
+# Output Log:  .bpipe/logs/18845.log
+# Stage world [*]
+# Stage hello [*]
+echo world
+echo hello
+# Stage mars
+echo Mars
+# ################ Finished at Wed Nov 26 10:26:05 GMT 2014 Duration = 0.813 seconds #################
+
+
+####################################################################################################
+# Starting pipeline at Fri Dec 05 10:25:33 GMT 2014
+# Input files:  null
+# Output Log:  .bpipe/logs/2598.log
+# Stage hello [*]
+# Stage world [*]
+echo hello
+echo world
+# Stage mars
+echo Mars
+# ################ Finished at Fri Dec 05 10:25:34 GMT 2014 Duration = 0.833 seconds #################
+
+
+####################################################################################################
+# Starting pipeline at Fri Dec 05 10:38:18 GMT 2014
+# Input files:  null
+# Output Log:  .bpipe/logs/21111.log
+# Stage world [*]
+# Stage hello [*]
+echo hello
+echo world
+# Stage mars
+echo Mars
+# ################ Finished at Fri Dec 05 10:38:18 GMT 2014 Duration = 0.805 seconds #################
+

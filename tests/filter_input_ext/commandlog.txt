@@ -1,0 +1,22 @@
+
+####################################################################################################
+# Starting pipeline at Wed Nov 26 10:29:12 GMT 2014
+# Input files:  test.txt
+# Output Log:  .bpipe/logs/23122.log
+# Stage hello
+echo foo > test.vcf
+# Stage filter_with_ext
+cp test.vcf test.fix.vcf
+# ################ Finished at Wed Nov 26 10:29:13 GMT 2014 Duration = 0.896 seconds #################
+
+
+####################################################################################################
+# Starting pipeline at Fri Dec 05 10:41:27 GMT 2014
+# Input files:  test.txt
+# Output Log:  .bpipe/logs/25493.log
+# Stage hello
+echo foo > test.vcf
+# Stage filter_with_ext
+cp test.vcf test.fix.vcf
+# ################ Finished at Fri Dec 05 10:41:28 GMT 2014 Duration = 0.876 seconds #################
+

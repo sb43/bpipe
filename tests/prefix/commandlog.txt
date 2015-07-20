@@ -1,0 +1,48 @@
+
+####################################################################################################
+# Starting pipeline at Wed Nov 26 10:24:42 GMT 2014
+# Input files:  test.txt
+# Output Log:  .bpipe/logs/16777.log
+# Stage hello
+echo hello > test.txt.hello
+echo hello > test.txt.csv
+# Stage world
+cp test.txt test.txt.hello.txt.world
+# ################ Finished at Wed Nov 26 10:24:43 GMT 2014 Duration = 1.003 seconds #################
+
+
+####################################################################################################
+# Starting pipeline at Fri Dec 05 10:14:30 GMT 2014
+# Input files:  test.txt
+# Output Log:  .bpipe/logs/25443.log
+# Stage hello
+echo hello > test.txt.hello
+echo hello > test.txt.csv
+# Stage world
+cp test.txt test.txt.hello.txt.world
+# ################ Finished at Fri Dec 05 10:14:31 GMT 2014 Duration = 1.038 seconds #################
+
+
+####################################################################################################
+# Starting pipeline at Fri Dec 05 10:24:10 GMT 2014
+# Input files:  test.txt
+# Output Log:  .bpipe/logs/32728.log
+# Stage hello
+echo hello > test.txt.hello
+echo hello > test.txt.csv
+# Stage world
+cp test.txt test.txt.hello.txt.world
+# ################ Finished at Fri Dec 05 10:24:11 GMT 2014 Duration = 1.008 seconds #################
+
+
+####################################################################################################
+# Starting pipeline at Fri Dec 05 10:36:54 GMT 2014
+# Input files:  test.txt
+# Output Log:  .bpipe/logs/18994.log
+# Stage hello
+echo hello > test.txt.hello
+echo hello > test.txt.csv
+# Stage world
+cp test.txt test.txt.hello.txt.world
+# ################ Finished at Fri Dec 05 10:36:55 GMT 2014 Duration = 1.059 seconds #################
+

@@ -1,0 +1,292 @@
+bpipe.Runner	[1]	INFO	|10:41:09 Starting 
+bpipe.Runner	[1]	INFO	|10:41:09 OS: Linux (2.6.32-44-server) Java: 1.7.0_25 Vendor: Oracle Corporation 
+bpipe.Runner	[1]	INFO	|10:41:09 Initializing plugins ... 
+bpipe.Config	[1]	INFO	|10:41:09 No plugins directory found: /lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/split_2chars/.bpipe/plugins 
+bpipe.Runner	[1]	INFO	|10:41:09 Reading user config ...  
+bpipe.Config	[1]	INFO	|10:41:09 No configuration file found in same dir as pipeline file 
+bpipe.Config	[1]	INFO	|10:41:09 No local configuration file found 
+bpipe.Utils	[10]	INFO	|10:41:10 Read config from /nfs/users/nfs_c/cgppipe/canpipe/software/bpipe_git/tests/split_2chars/../../bin/../src/main/config/bpipe.config executed in 0.325 seconds 
+bpipe.Utils	[1]	INFO	|10:41:10 Read user config executed in 0.549 seconds 
+bpipe.Runner	[1]	INFO	|10:41:10 Loading tool database ...  
+bpipe.NotificationManager	[14]	INFO	|10:41:10 Configuring notifications 
+bpipe.ToolDatabase	[11]	INFO	|10:41:10 Loading tool database from user configuration 
+bpipe.NotificationManager	[14]	INFO	|10:41:10 Trying class name file for notification channel file 
+bpipe.Tool	[11]	INFO	|10:41:10 Configured meta data about tool samtools 
+bpipe.Concurrency	[13]	INFO	|10:41:10 Creating thread pool with 32 threads to execute parallel pipelines 
+bpipe.Tool	[11]	INFO	|10:41:10 Configured meta data about tool bwa 
+bpipe.Tool	[11]	INFO	|10:41:10 Configured meta data about tool bowtie 
+bpipe.Tool	[11]	INFO	|10:41:10 Configured meta data about tool fastqc 
+bpipe.Tool	[11]	INFO	|10:41:10 Configured meta data about tool coverageBed 
+bpipe.Tool	[11]	INFO	|10:41:10 Configured meta data about tool fastx_clipper 
+bpipe.Tool	[11]	INFO	|10:41:10 Configured meta data about tool convert2annovar.pl 
+bpipe.Tool	[11]	INFO	|10:41:10 Configured meta data about tool summarize_annovar.pl 
+bpipe.Tool	[11]	INFO	|10:41:10 Configured meta data about tool bowtie2 
+bpipe.Tool	[11]	INFO	|10:41:10 Configured meta data about tool GenomeAnalysisTK 
+bpipe.Tool	[11]	INFO	|10:41:10 Configured meta data about tool MarkDuplicates 
+bpipe.Tool	[11]	INFO	|10:41:10 Configured meta data about tool signalp 
+bpipe.Tool	[11]	INFO	|10:41:10 Configured meta data about tool variant_effect_predictor.pl 
+bpipe.Tool	[11]	INFO	|10:41:10 Configured meta data about tool igvtools 
+bpipe.Tool	[11]	INFO	|10:41:10 Configured meta data about tool ls 
+bpipe.Runner	[1]	INFO	|10:41:10 No CLI parameters specified 
+bpipe.NotificationManager	[14]	INFO	|10:41:10 Unable to create notification channel using class file: java.lang.ClassNotFoundException: file 
+bpipe.NotificationManager	[14]	INFO	|10:41:10 Trying class name bpipe.FILENotificationChannel for notification channel file 
+bpipe.NotificationManager	[14]	INFO	|10:41:10 Unable to create notification channel using class bpipe.FILENotificationChannel: java.lang.ClassNotFoundException: bpipe.FILENotificationChannel 
+bpipe.NotificationManager	[14]	INFO	|10:41:10 Trying class name bpipe.file for notification channel file 
+bpipe.NotificationManager	[14]	INFO	|10:41:10 Unable to create notification channel using class bpipe.file: java.lang.ClassNotFoundException: bpipe.file 
+bpipe.NotificationManager	[14]	INFO	|10:41:10 Trying class name bpipe.FileNotificationChannel for notification channel file 
+bpipe.NotificationManager	[14]	INFO	|10:41:10 Successfully created notification channel using class bpipe.FileNotificationChannel 
+bpipe.Runner	[1]	INFO	|10:41:10 Parsing script ...  
+bpipe.Runner	[1]	INFO	|10:41:10 Run ...  
+bpipe.Pipeline	[1]	INFO	|10:41:10 Running with input [11D_F_H14.txt, 11D_H14.txt, 11D_M_H14.txt] 
+bpipe.PipelineCategory	[1]	INFO	|10:41:10 Found closure variable hello 
+bpipe.Pipeline	[1]	WARNING	|10:41:10 Pipeline folder /nfs/users/nfs_c/cgppipe/bpipes could not be found 
+bpipe.Pipeline	[1]	INFO	|10:41:10 Loaded external reference: args 
+bpipe.Pipeline	[1]	INFO	|10:41:10 External reference args is overridden by local reference 
+bpipe.Pipeline	[1]	INFO	|10:41:10 Loaded external reference: hello 
+bpipe.Pipeline	[1]	INFO	|10:41:10 External reference hello is overridden by local reference 
+bpipe.DefinePipelineCategory	[1]	INFO	|10:41:10 multiply on input null with pattern %_H 
+bpipe.InputSplitter	[1]	INFO	|10:41:10 Found * pattern at [], hash at [] and % at [0] 
+bpipe.InputSplitter	[1]	INFO	|10:41:10 Sorted: [0] 
+bpipe.InputSplitter	[1]	INFO	|10:41:10 % groups are at [0] 
+bpipe.InputSplitter	[1]	INFO	|10:41:10 Result is [pattern:([^/]*?)_H, splits:[0]] 
+bpipe.DefinePipelineCategory	[1]	INFO	|10:41:10 Processing segment 596729199 
+bpipe.PipelineCategory	[1]	INFO	|10:41:10 Joiners for pipeline 520501213 = [] 
+bpipe.Pipeline	[1]	INFO	|10:41:10 Running segment with inputs [11D_F_H14.txt, 11D_H14.txt, 11D_M_H14.txt] 
+bpipe.Dependencies	[1]	INFO	|10:41:10 Checking input (s) [11D_F_H14.txt, 11D_H14.txt, 11D_M_H14.txt] 
+bpipe.Utils	[1]	INFO	|10:41:10 Output folder scan (concurrency=5) executed in 0.003 seconds 
+bpipe.Dependencies	[1]	INFO	|10:41:10  Checking file 11D_F_H14.txt 
+bpipe.Dependencies	[1]	INFO	|10:41:10  Checking file 11D_H14.txt 
+bpipe.Dependencies	[1]	INFO	|10:41:10  Checking file 11D_M_H14.txt 
+bpipe.PipelineDelegate	[1]	INFO	|10:41:10 Setting or creating a delegate for context 1428071924 body 1327587796/java.lang.Class in thread 1 
+bpipe.PipelineDelegate	[1]	INFO	|10:41:10 Created new delegate bpipe.PipelineDelegate@1ea1f562 overriding type java.lang.Class in thread 1 
+bpipe.PipelineCategory	[1]	INFO	|10:41:10 multiply on input [11D_F_H14.txt, 11D_H14.txt, 11D_M_H14.txt] with pattern %_H 
+bpipe.InputSplitter	[1]	INFO	|10:41:10 Found * pattern at [], hash at [] and % at [0] 
+bpipe.InputSplitter	[1]	INFO	|10:41:10 Sorted: [0] 
+bpipe.InputSplitter	[1]	INFO	|10:41:10 % groups are at [0] 
+bpipe.InputSplitter	[1]	INFO	|10:41:10 Result is [pattern:([^/]*?)_H, splits:[0]] 
+bpipe.PipelineCategory	[1]	INFO	|10:41:10 Created pipeline stage 1065360940 for parallel block 
+bpipe.PipelineCategory	[1]	INFO	|10:41:10 Processing segment 596729199 
+bpipe.PipelineCategory	[1]	INFO	|10:41:10 Creating pipeline to run parallel segment 11D_F with files [11D_F_H14.txt]. Branch filter = [] 
+bpipe.PipelineCategory	[1]	INFO	|10:41:10 Creating pipeline to run parallel segment 11D with files [11D_H14.txt]. Branch filter = [] 
+bpipe.PipelineCategory	[1]	INFO	|10:41:10 Creating pipeline to run parallel segment 11D_M with files [11D_M_H14.txt]. Branch filter = [] 
+bpipe.Concurrency	[1]	INFO	|10:41:10 Waiting for 3 parallel stages to complete (pool.active=3 pool.tasks=3) 
+bpipe.PipelineContext	[15]	INFO	|10:41:10 Setting output [11D_F_H14.txt] on context 1313002384 in thread 15 
+bpipe.PipelineContext	[17]	INFO	|10:41:10 Setting output [11D_M_H14.txt] on context 89111316 in thread 17 
+bpipe.PipelineContext	[16]	INFO	|10:41:10 Setting output [11D_H14.txt] on context 897786053 in thread 16 
+bpipe.PipelineContext	[15]	INFO	|10:41:10 Using previously set output: [11D_F_H14.txt] 
+bpipe.PipelineContext	[16]	INFO	|10:41:10 Using previously set output: [11D_H14.txt] 
+bpipe.PipelineContext	[17]	INFO	|10:41:10 Using previously set output: [11D_M_H14.txt] 
+bpipe.PipelineCategory	[16]	INFO	|10:41:10 Adding dummy prior stage for thread 16 with outputs : 11D_H14.txt 
+bpipe.PipelineCategory	[17]	INFO	|10:41:10 Adding dummy prior stage for thread 17 with outputs : 11D_M_H14.txt 
+bpipe.PipelineCategory	[15]	INFO	|10:41:10 Adding dummy prior stage for thread 15 with outputs : 11D_F_H14.txt 
+bpipe.Pipeline	[15]	INFO	|10:41:10 Running segment with inputs [11D_F_H14.txt] 
+bpipe.Pipeline	[17]	INFO	|10:41:10 Running segment with inputs [11D_M_H14.txt] 
+bpipe.Pipeline	[16]	INFO	|10:41:10 Running segment with inputs [11D_H14.txt] 
+bpipe.Dependencies	[15]	INFO	|10:41:10 Checking input (s) [11D_F_H14.txt] 
+bpipe.Dependencies	[17]	INFO	|10:41:10 Checking input (s) [11D_M_H14.txt] 
+bpipe.Dependencies	[16]	INFO	|10:41:10 Checking input (s) [11D_H14.txt] 
+bpipe.Dependencies	[15]	INFO	|10:41:10  Checking file 11D_F_H14.txt 
+bpipe.Dependencies	[17]	INFO	|10:41:10  Checking file 11D_M_H14.txt 
+bpipe.Dependencies	[16]	INFO	|10:41:10  Checking file 11D_H14.txt 
+bpipe.ReportStatisticsListener	[16]	INFO	|10:41:10 Annotating stage start time hello 
+bpipe.ReportStatisticsListener	[15]	INFO	|10:41:10 Annotating stage start time hello 
+bpipe.PipelineStage	[16]	INFO	|10:41:10 Stage hello [11D] : INPUT=[11D_H14.txt] OUTPUT=11D_H14.txt.hello 
+bpipe.ReportStatisticsListener	[17]	INFO	|10:41:10 Annotating stage start time hello 
+bpipe.PipelineStage	[15]	INFO	|10:41:10 Stage hello [11D_F] : INPUT=[11D_F_H14.txt] OUTPUT=11D_F_H14.txt.hello 
+bpipe.PipelineDelegate	[16]	INFO	|10:41:10 Setting or creating a delegate for context 268160554 body 596729199/script14177760704521457786762 in thread 16 
+bpipe.PipelineStage	[17]	INFO	|10:41:10 Stage hello [11D_M] : INPUT=[11D_M_H14.txt] OUTPUT=11D_M_H14.txt.hello 
+bpipe.PipelineDelegate	[16]	INFO	|10:41:10 Created new delegate bpipe.PipelineDelegate@5c9c2f98 overriding type script14177760704521457786762 in thread 16 
+bpipe.PipelineDelegate	[17]	INFO	|10:41:10 Setting or creating a delegate for context 301519784 body 596729199/bpipe.PipelineDelegate in thread 17 
+bpipe.PipelineDelegate	[17]	INFO	|10:41:10 Existing delegate bpipe.PipelineDelegate@5c9c2f98 has type bpipe.PipelineDelegate in thread 17. Setting new context 301519784 
+bpipe.PipelineDelegate	[15]	INFO	|10:41:10 Setting or creating a delegate for context 1202229297 body 596729199/bpipe.PipelineDelegate in thread 15 
+bpipe.PipelineDelegate	[15]	INFO	|10:41:10 Existing delegate bpipe.PipelineDelegate@5c9c2f98 has type bpipe.PipelineDelegate in thread 15. Setting new context 1202229297 
+bpipe.PipelineInput	[17]	INFO	|10:41:10 Searching for missing Property: txt 
+bpipe.PipelineInput	[15]	INFO	|10:41:10 Searching for missing Property: txt 
+bpipe.PipelineInput	[16]	INFO	|10:41:10 Searching for missing Property: txt 
+bpipe.PipelineInput	[16]	INFO	|10:41:10 Resolving inputs matching pattern ^.*\.txt$ 
+bpipe.PipelineInput	[17]	INFO	|10:41:10 Resolving inputs matching pattern ^.*\.txt$ 
+bpipe.PipelineInput	[15]	INFO	|10:41:10 Resolving inputs matching pattern ^.*\.txt$ 
+bpipe.PipelineInput	[16]	INFO	|10:41:10 Checking outputs [11D_H14.txt] 
+bpipe.PipelineInput	[17]	INFO	|10:41:10 Checking outputs [11D_M_H14.txt] 
+bpipe.PipelineInput	[15]	INFO	|10:41:10 Checking outputs [11D_F_H14.txt] 
+bpipe.PipelineInput	[17]	INFO	|10:41:10 Found files with exts [txt$] : [[11D_M_H14.txt]] 
+bpipe.PipelineInput	[15]	INFO	|10:41:10 Found files with exts [txt$] : [[11D_F_H14.txt]] 
+bpipe.PipelineInput	[16]	INFO	|10:41:10 Found files with exts [txt$] : [[11D_H14.txt]] 
+bpipe.MultiPipelineInput	[15]	INFO	|10:41:10 My resolved inputs: -1565724872 child resolved inputs -1565724872 
+bpipe.MultiPipelineInput	[16]	INFO	|10:41:10 My resolved inputs: 1742967665 child resolved inputs 1742967665 
+bpipe.MultiPipelineInput	[17]	INFO	|10:41:10 My resolved inputs: -1333004225 child resolved inputs -1333004225 
+bpipe.PipelineContext	[16]	INFO	|10:41:10 Using non-default output due to input property reference: 11D_H14.txt from resolved inputs [11D_H14.txt] 
+bpipe.PipelineContext	[15]	INFO	|10:41:10 Using non-default output due to input property reference: 11D_F_H14.txt from resolved inputs [11D_F_H14.txt] 
+bpipe.PipelineContext	[17]	INFO	|10:41:10 Using non-default output due to input property reference: 11D_M_H14.txt from resolved inputs [11D_M_H14.txt] 
+bpipe.PipelineOutput	[16]	INFO	|10:41:10 Replacing txt\.hello with hello.txt 
+bpipe.PipelineOutput	[17]	INFO	|10:41:10 Replacing txt\.hello with hello.txt 
+bpipe.PipelineOutput	[15]	INFO	|10:41:10 Replacing txt\.hello with hello.txt 
+bpipe.PipelineContext	[16]	INFO	|10:41:10 Tracking outputs referenced=[[]] inferred=[[11D_H14.hello.txt]] for command cat 11D_H14.txt > 11D_H14.hello.txt 
+bpipe.PipelineContext	[17]	INFO	|10:41:10 Tracking outputs referenced=[[]] inferred=[[11D_M_H14.hello.txt]] for command cat 11D_M_H14.txt > 11D_M_H14.hello.txt 
+bpipe.PipelineContext	[15]	INFO	|10:41:10 Tracking outputs referenced=[[]] inferred=[[11D_F_H14.hello.txt]] for command cat 11D_F_H14.txt > 11D_F_H14.hello.txt 
+bpipe.ReportStatisticsListener	[16]	INFO	|10:41:10 Intercepted command check for command cat 11D_H14.txt > 11D_H14.hello.txt 
+bpipe.PipelineContext	[16]	INFO	|10:41:10 Checking actual resolved inputs [11D_H14.txt] 
+bpipe.ReportStatisticsListener	[15]	INFO	|10:41:10 Intercepted command check for command cat 11D_F_H14.txt > 11D_F_H14.hello.txt 
+bpipe.PipelineContext	[15]	INFO	|10:41:10 Checking actual resolved inputs [11D_F_H14.txt] 
+bpipe.ReportStatisticsListener	[17]	INFO	|10:41:10 Intercepted command check for command cat 11D_M_H14.txt > 11D_M_H14.hello.txt 
+bpipe.Utils	[16]	INFO	|10:41:10 ===== Check 11D_H14.hello.txt ===== 
+bpipe.Utils	[15]	INFO	|10:41:10 ===== Check 11D_F_H14.hello.txt ===== 
+bpipe.Utils	[16]	INFO	|10:41:10 file doesn't exist: 11D_H14.hello.txt 
+bpipe.PipelineContext	[17]	INFO	|10:41:10 Checking actual resolved inputs [11D_M_H14.txt] 
+bpipe.Utils	[15]	INFO	|10:41:10 file doesn't exist: 11D_F_H14.hello.txt 
+bpipe.Dependencies	[16]	INFO	|10:41:10 Found these missing / older files: [11D_H14.hello.txt] 
+bpipe.Dependencies	[15]	INFO	|10:41:10 Found these missing / older files: [11D_F_H14.hello.txt] 
+bpipe.Utils	[17]	INFO	|10:41:10 ===== Check 11D_M_H14.hello.txt ===== 
+bpipe.Utils	[17]	INFO	|10:41:10 file doesn't exist: 11D_M_H14.hello.txt 
+bpipe.Dependencies	[17]	INFO	|10:41:10 Found these missing / older files: [11D_M_H14.hello.txt] 
+bpipe.Dependencies	[16]	INFO	|10:41:10 Some files are outdated : [11D_H14.hello.txt] 
+bpipe.Dependencies	[15]	INFO	|10:41:10 Some files are outdated : [11D_F_H14.hello.txt] 
+bpipe.Dependencies	[17]	INFO	|10:41:10 Some files are outdated : [11D_M_H14.hello.txt] 
+bpipe.Command	[16]	INFO	|10:41:10 Checking for configuration for command cat 
+bpipe.Command	[15]	INFO	|10:41:10 Checking for configuration for command cat 
+bpipe.Command	[17]	INFO	|10:41:10 Checking for configuration for command cat 
+bpipe.Command	[16]	INFO	|10:41:10 Default command properties: [executor:local] 
+bpipe.Command	[17]	INFO	|10:41:10 Default command properties: [executor:local] 
+bpipe.Command	[15]	INFO	|10:41:10 Default command properties: [executor:local] 
+bpipe.CommandManager	[16]	INFO	|10:41:11 Using config [executor:local] for command 
+bpipe.CommandManager	[15]	INFO	|10:41:11 Using config [executor:local] for command 
+bpipe.CommandManager	[17]	INFO	|10:41:11 Using config [executor:local] for command 
+bpipe.CommandManager	[16]	INFO	|10:41:11 Created bpipe command id 1 
+bpipe.CommandManager	[17]	INFO	|10:41:11 Created bpipe command id 2 
+bpipe.CommandManager	[15]	INFO	|10:41:11 Created bpipe command id 3 
+bpipe.Concurrency	[15]	INFO	|10:41:11 Thread Thread-6 requesting for 1 concurrency permit(s) type threads with 32 available 
+bpipe.Concurrency	[17]	INFO	|10:41:11 Thread Thread-8 requesting for 1 concurrency permit(s) type threads with 32 available 
+bpipe.Concurrency	[16]	INFO	|10:41:11 Thread Thread-7 requesting for 1 concurrency permit(s) type threads with 32 available 
+bpipe.Concurrency	[15]	INFO	|10:41:11 Thread Thread-6 acquired resource threads in amount 1 
+bpipe.Concurrency	[17]	INFO	|10:41:11 Thread Thread-8 acquired resource threads in amount 1 
+bpipe.Concurrency	[16]	INFO	|10:41:11 Thread Thread-7 acquired resource threads in amount 1 
+bpipe.Command	[18]	INFO	|10:41:11 Command 3 changing state from null to RUNNING 
+bpipe.Command	[19]	INFO	|10:41:11 Command 2 changing state from null to RUNNING 
+bpipe.Command	[20]	INFO	|10:41:11 Command 1 changing state from null to RUNNING 
+bpipe.executor.ThrottledDelegatingCommandExecutor	[15]	INFO	|10:41:11 Waiting for command to complete before releasing 1 resources 
+bpipe.executor.ThrottledDelegatingCommandExecutor	[16]	INFO	|10:41:11 Waiting for command to complete before releasing 1 resources 
+bpipe.executor.ThrottledDelegatingCommandExecutor	[17]	INFO	|10:41:11 Waiting for command to complete before releasing 1 resources 
+bpipe.Command	[15]	INFO	|10:41:11 Command 3 changing state from RUNNING to COMPLETE 
+bpipe.Command	[17]	INFO	|10:41:11 Command 2 changing state from RUNNING to COMPLETE 
+bpipe.Command	[16]	INFO	|10:41:11 Command 1 changing state from RUNNING to COMPLETE 
+bpipe.executor.ThrottledDelegatingCommandExecutor	[15]	INFO	|10:41:11 Releasing 1 resources 
+bpipe.executor.ThrottledDelegatingCommandExecutor	[17]	INFO	|10:41:11 Releasing 1 resources 
+bpipe.executor.ThrottledDelegatingCommandExecutor	[16]	INFO	|10:41:11 Releasing 1 resources 
+bpipe.Concurrency	[16]	INFO	|10:41:11 Thread Thread-7 releasing 1 threads 
+bpipe.Concurrency	[15]	INFO	|10:41:11 Thread Thread-6 releasing 1 threads 
+bpipe.Concurrency	[17]	INFO	|10:41:11 Thread Thread-8 releasing 1 threads 
+bpipe.executor.ThrottledDelegatingCommandExecutor	[16]	INFO	|10:41:11 Released 1 resources 
+bpipe.executor.ThrottledDelegatingCommandExecutor	[15]	INFO	|10:41:11 Released 1 resources 
+bpipe.executor.ThrottledDelegatingCommandExecutor	[17]	INFO	|10:41:11 Released 1 resources 
+bpipe.PipelineStage	[15]	INFO	|10:41:11 Stage hello [11D_F] returned null as default inputs for next stage 
+bpipe.PipelineStage	[16]	INFO	|10:41:11 Stage hello [11D] returned null as default inputs for next stage 
+bpipe.PipelineStage	[17]	INFO	|10:41:11 Stage hello [11D_M] returned null as default inputs for next stage 
+bpipe.PipelineStage	[16]	INFO	|10:41:11 Using inferred outputs [11D_H14.hello.txt] as outputs because no explicit outputs set 
+bpipe.PipelineStage	[17]	INFO	|10:41:11 Using inferred outputs [11D_M_H14.hello.txt] as outputs because no explicit outputs set 
+bpipe.PipelineStage	[15]	INFO	|10:41:11 Using inferred outputs [11D_F_H14.hello.txt] as outputs because no explicit outputs set 
+bpipe.PipelineStage	[16]	INFO	|10:41:11 Inferring nextInputs from explicit output as [11D_H14.hello.txt] 
+bpipe.PipelineStage	[17]	INFO	|10:41:11 Inferring nextInputs from explicit output as [11D_M_H14.hello.txt] 
+bpipe.PipelineStage	[15]	INFO	|10:41:11 Inferring nextInputs from explicit output as [11D_F_H14.hello.txt] 
+bpipe.PipelineStage	[16]	INFO	|10:41:11 Setting next inputs [11D_H14.hello.txt] on stage 329049819, context 268160554 in thread 16 
+bpipe.PipelineStage	[15]	INFO	|10:41:11 Setting next inputs [11D_F_H14.hello.txt] on stage 1080469493, context 1202229297 in thread 15 
+bpipe.PipelineStage	[17]	INFO	|10:41:11 Setting next inputs [11D_M_H14.hello.txt] on stage 1080469493, context 301519784 in thread 17 
+bpipe.Dependencies	[16]	INFO	|10:41:11 Context 268160554 for stage hello has resolved inputs [11D_H14.txt] 
+bpipe.Dependencies	[16]	INFO	|10:41:11 Saving output file details to file .bpipe/outputs/hello.11D_H14.hello.txt.properties for command cat 11D_H14.txt > 11... 
+bpipe.ReportStatisticsListener	[16]	INFO	|10:41:11 Annotating stage end time hello 
+bpipe.PipelineStage	[16]	INFO	|10:41:11 Checking files: [11D_H14.hello.txt] 
+bpipe.Dependencies	[16]	INFO	|10:41:11 Checking output (s) [11D_H14.hello.txt] 
+bpipe.Dependencies	[17]	INFO	|10:41:11 Context 301519784 for stage hello has resolved inputs [11D_M_H14.txt] 
+bpipe.Dependencies	[17]	INFO	|10:41:11 Saving output file details to file .bpipe/outputs/hello.11D_M_H14.hello.txt.properties for command cat 11D_M_H14.txt > ... 
+bpipe.ReportStatisticsListener	[17]	INFO	|10:41:11 Annotating stage end time hello 
+bpipe.PipelineStage	[17]	INFO	|10:41:11 Checking files: [11D_M_H14.hello.txt] 
+bpipe.Dependencies	[17]	INFO	|10:41:11 Checking output (s) [11D_M_H14.hello.txt] 
+bpipe.Dependencies	[15]	INFO	|10:41:11 Context 1202229297 for stage hello has resolved inputs [11D_F_H14.txt] 
+bpipe.Dependencies	[15]	INFO	|10:41:11 Saving output file details to file .bpipe/outputs/hello.11D_F_H14.hello.txt.properties for command cat 11D_F_H14.txt > ... 
+bpipe.Dependencies	[17]	INFO	|10:41:11  Checking file 11D_M_H14.hello.txt 
+bpipe.Dependencies	[16]	INFO	|10:41:11  Checking file 11D_H14.hello.txt 
+bpipe.ReportStatisticsListener	[15]	INFO	|10:41:11 Annotating stage end time hello 
+bpipe.Pipeline	[17]	INFO	|10:41:11 Pipeline segment 11D_M in thread 17 has finished normally 
+bpipe.Pipeline	[16]	INFO	|10:41:11 Pipeline segment 11D in thread 16 has finished normally 
+bpipe.PipelineStage	[15]	INFO	|10:41:11 Checking files: [11D_F_H14.hello.txt] 
+bpipe.Pipeline	[16]	INFO	|10:41:11 Finished running segment for inputs [11D_H14.txt] 
+bpipe.Pipeline	[17]	INFO	|10:41:11 Finished running segment for inputs [11D_M_H14.txt] 
+bpipe.Dependencies	[15]	INFO	|10:41:11 Checking output (s) [11D_F_H14.hello.txt] 
+bpipe.Dependencies	[15]	INFO	|10:41:11  Checking file 11D_F_H14.hello.txt 
+bpipe.Pipeline	[15]	INFO	|10:41:11 Pipeline segment 11D_F in thread 15 has finished normally 
+bpipe.Pipeline	[15]	INFO	|10:41:11 Finished running segment for inputs [11D_F_H14.txt] 
+bpipe.Concurrency	[16]	INFO	|10:41:11 Decremented running count to 2 in thread Thread-7 
+bpipe.Concurrency	[17]	INFO	|10:41:11 Decremented running count to 0 in thread Thread-8 
+bpipe.Concurrency	[15]	INFO	|10:41:11 Decremented running count to 1 in thread Thread-6 
+bpipe.PipelineCategory	[1]	INFO	|10:41:11 Parent pipeline of concurent sections [202485773, 1564289963, 1526601567] is 520501213 
+bpipe.PipelineCategory	[1]	INFO	|10:41:11 Maximum child stage list length = 1 
+bpipe.PipelineCategory	[1]	INFO	|10:41:11 ###### Merging results of parallel split in parent branch  ##### 
+bpipe.PipelineCategory	[1]	INFO	|10:41:11 Grouping stages at index 0 [hello, hello, hello] for merging 
+bpipe.PipelineCategory	[1]	INFO	|10:41:11 Parallel segment 0 contains 3 identical hello stages - Merging outputs to single stage 
+bpipe.PipelineCategory	[1]	INFO	|10:41:11 Merged outputs are [11D_F_H14.hello.txt, 11D_H14.hello.txt, 11D_M_H14.hello.txt] 
+bpipe.PipelineContext	[1]	INFO	|10:41:11 Setting output [11D_F_H14.hello.txt, 11D_H14.hello.txt, 11D_M_H14.hello.txt] on context 589974249 in thread 1 
+bpipe.PipelineCategory	[1]	INFO	|10:41:11 There are 1 stages from nested pipelines 
+bpipe.PipelineCategory	[1]	INFO	|10:41:11 There [bpipe.PipelineStage@4066a7f5, bpipe.PipelineStage@139ce6db, bpipe.PipelineStage@4066a7f5] parallel paths in final stage 
+bpipe.PipelineCategory	[1]	INFO	|10:41:11 Last merged outputs are [11D_F_H14.hello.txt, 11D_H14.hello.txt, 11D_M_H14.hello.txt] 
+bpipe.PipelineContext	[1]	INFO	|10:41:11 Setting output [11D_F_H14.hello.txt, 11D_H14.hello.txt, 11D_M_H14.hello.txt] on context 113185922 in thread 1 
+bpipe.PipelineCategory	[1]	INFO	|10:41:11 Merged stage name is hello_bpipe_merge 
+bpipe.PipelineContext	[1]	INFO	|10:41:11 Setting output [11D_F_H14.hello.txt, 11D_H14.hello.txt, 11D_M_H14.hello.txt] on context 1428071924 in thread 1 
+bpipe.PipelineStage	[1]	INFO	|10:41:11 Setting next inputs [11D_F_H14.hello.txt, 11D_H14.hello.txt, 11D_M_H14.hello.txt] on stage 441386552, context 1428071924 in thread 1 
+bpipe.PipelineStage	[1]	INFO	|10:41:11 Checking files: [11D_F_H14.hello.txt, 11D_H14.hello.txt, 11D_M_H14.hello.txt] 
+bpipe.Dependencies	[1]	INFO	|10:41:11 Checking output (s) [11D_F_H14.hello.txt, 11D_H14.hello.txt, 11D_M_H14.hello.txt] 
+bpipe.Dependencies	[1]	INFO	|10:41:11  Checking file 11D_F_H14.hello.txt 
+bpipe.Dependencies	[1]	INFO	|10:41:11  Checking file 11D_H14.hello.txt 
+bpipe.Dependencies	[1]	INFO	|10:41:11  Checking file 11D_M_H14.hello.txt 
+bpipe.Pipeline	[1]	INFO	|10:41:11 Pipeline segment  in thread 1 has finished normally 
+bpipe.Pipeline	[1]	INFO	|10:41:11 Finished running segment for inputs [11D_F_H14.txt, 11D_H14.txt, 11D_M_H14.txt] 
+bpipe.Pipeline	[1]	INFO	|10:41:11 adding stage hello from pipeline bpipe.Pipeline@c11b00d 
+bpipe.Pipeline	[1]	INFO	|10:41:11 adding stage hello from pipeline bpipe.Pipeline@5d3d2bab 
+bpipe.Pipeline	[1]	INFO	|10:41:11 adding stage hello from pipeline bpipe.Pipeline@5afe175f 
+bpipe.Dependencies	[30]	INFO	|10:41:11 Reading property file .bpipe/outputs/hello.11D_M_H14.hello.txt.properties 
+bpipe.Dependencies	[32]	INFO	|10:41:11 Reading property file .bpipe/outputs/hello.11D_H14.hello.txt.properties 
+bpipe.Dependencies	[31]	INFO	|10:41:11 Reading property file .bpipe/outputs/hello.11D_F_H14.hello.txt.properties 
+bpipe.Utils	[1]	INFO	|10:41:11 Output folder scan (concurrency=5) executed in 0.020 seconds 
+bpipe.Dependencies	[1]	INFO	|10:41:11 External inputs: [[11D_M_H14.txt], [11D_F_H14.txt], [11D_H14.txt]] for outputs [11D_M_H14.hello.txt, 11D_F_H14.hello.txt, 11D_H14.hello.txt] 
+bpipe.Dependencies	[1]	INFO	|10:41:11 There are 3 output groups 
+bpipe.Dependencies	[1]	INFO	|10:41:11 Subtracting 3 remaining outputs from 3 total outputs 
+bpipe.Dependencies	[1]	INFO	|10:41:11 There are 0 remaining outputs 
+bpipe.Dependencies	[1]	INFO	|10:41:11 There are 0 remaining outputs 
+bpipe.Dependencies	[1]	INFO	|10:41:11 There are 0 remaining outputs 
+bpipe.Dependencies	[1]	INFO	|10:41:11  11D_M_H14.hello.txt / entry 1116207895  
+bpipe.Dependencies	[1]	INFO	|10:41:11 11D_M_H14.hello.txt is newer than input files 
+bpipe.Dependencies	[1]	INFO	|10:41:11  11D_F_H14.hello.txt / entry 1281623938  
+bpipe.Dependencies	[1]	INFO	|10:41:11 11D_F_H14.hello.txt is newer than input files 
+bpipe.Dependencies	[1]	INFO	|10:41:11 - 11D_H14.hello.txt / entry 992546556 -- 
+bpipe.Dependencies	[1]	INFO	|10:41:11 11D_H14.hello.txt is newer than input files 
+bpipe.Dependencies	[1]	INFO	|10:41:11 ====Finished Output Graph===== 
+bpipe.ReportGenerator	[1]	INFO	|10:41:11 Searching for template in /lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/src/main/html/bpipe 
+bpipe.ReportGenerator	[1]	INFO	|10:41:11 Generating report to /lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/split_2chars/doc/index.html 
+bpipe.PipelineContext	[1]	INFO	|10:41:11 Using previously set output: [11D_F_H14.hello.txt] 
+bpipe.PipelineContext	[1]	INFO	|10:41:11 Using previously set output: [11D_F_H14.hello.txt] 
+bpipe.PipelineContext	[1]	INFO	|10:41:11 Using previously set output: [11D_F_H14.hello.txt] 
+bpipe.PipelineContext	[1]	INFO	|10:41:11 Using previously set output: [11D_H14.hello.txt] 
+bpipe.PipelineContext	[1]	INFO	|10:41:11 Using previously set output: [11D_H14.hello.txt] 
+bpipe.PipelineContext	[1]	INFO	|10:41:11 Using previously set output: [11D_H14.hello.txt] 
+bpipe.PipelineContext	[1]	INFO	|10:41:11 Using previously set output: [11D_M_H14.hello.txt] 
+bpipe.PipelineContext	[1]	INFO	|10:41:11 Using previously set output: [11D_M_H14.hello.txt] 
+bpipe.PipelineContext	[1]	INFO	|10:41:11 Using previously set output: [11D_M_H14.hello.txt] 
+bpipe.Dependencies	[33]	INFO	|10:41:12 Reading property file .bpipe/outputs/hello.11D_M_H14.hello.txt.properties 
+bpipe.Dependencies	[34]	INFO	|10:41:12 Reading property file .bpipe/outputs/hello.11D_F_H14.hello.txt.properties 
+bpipe.Dependencies	[35]	INFO	|10:41:12 Reading property file .bpipe/outputs/hello.11D_H14.hello.txt.properties 
+bpipe.Utils	[1]	INFO	|10:41:12 Output folder scan (concurrency=5) executed in 0.006 seconds 
+bpipe.Dependencies	[1]	INFO	|10:41:12 External inputs: [[11D_M_H14.txt], [11D_F_H14.txt], [11D_H14.txt]] for outputs [11D_M_H14.hello.txt, 11D_F_H14.hello.txt, 11D_H14.hello.txt] 
+bpipe.Dependencies	[1]	INFO	|10:41:12 There are 3 output groups 
+bpipe.Dependencies	[1]	INFO	|10:41:12 Subtracting 3 remaining outputs from 3 total outputs 
+bpipe.Dependencies	[1]	INFO	|10:41:12 There are 0 remaining outputs 
+bpipe.Dependencies	[1]	INFO	|10:41:12 There are 0 remaining outputs 
+bpipe.Dependencies	[1]	INFO	|10:41:12 There are 0 remaining outputs 
+bpipe.Dependencies	[1]	INFO	|10:41:12 - 11D_M_H14.hello.txt / entry 53820754 - 
+bpipe.Dependencies	[1]	INFO	|10:41:12 11D_M_H14.hello.txt is newer than input files 
+bpipe.Dependencies	[1]	INFO	|10:41:12  11D_F_H14.hello.txt / entry 474797091 - 
+bpipe.Dependencies	[1]	INFO	|10:41:12 11D_F_H14.hello.txt is newer than input files 
+bpipe.Dependencies	[1]	INFO	|10:41:12 - 11D_H14.hello.txt / entry 2012959832 - 
+bpipe.Dependencies	[1]	INFO	|10:41:12 11D_H14.hello.txt is newer than input files 
+bpipe.Dependencies	[1]	INFO	|10:41:12 ====Finished Output Graph===== 
+bpipe.Pipeline	[1]	INFO	|10:41:12 Outputs are: 
+		11D_M_H14.hello.txt
+		11D_F_H14.hello.txt
+		11D_H14.hello.txt 

@@ -1,0 +1,27 @@
+
+####################################################################################################
+# Starting pipeline at Wed Nov 26 10:26:07 GMT 2014
+# Input files:  null
+# Output Log:  .bpipe/logs/18977.log
+# Stage fastqc
+touch /lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/produce_glob_outputdir/ABC/test.fastqc.zip
+# ################ Finished at Wed Nov 26 10:26:08 GMT 2014 Duration = 0.550 seconds #################
+
+
+####################################################################################################
+# Starting pipeline at Fri Dec 05 10:25:36 GMT 2014
+# Input files:  null
+# Output Log:  .bpipe/logs/2680.log
+# Stage fastqc
+touch /lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/produce_glob_outputdir/ABC/test.fastqc.zip
+# ################ Finished at Fri Dec 05 10:25:37 GMT 2014 Duration = 0.639 seconds #################
+
+
+####################################################################################################
+# Starting pipeline at Fri Dec 05 10:38:21 GMT 2014
+# Input files:  null
+# Output Log:  .bpipe/logs/21206.log
+# Stage fastqc
+touch /lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/produce_glob_outputdir/ABC/test.fastqc.zip
+# ################ Finished at Fri Dec 05 10:38:21 GMT 2014 Duration = 0.501 seconds #################
+

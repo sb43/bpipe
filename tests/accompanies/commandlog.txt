@@ -1,0 +1,39 @@
+
+####################################################################################################
+# Starting pipeline at Wed Nov 26 10:26:20 GMT 2014
+# Input files:  test.fastq
+# Output Log:  .bpipe/logs/19286.log
+# Stage align
+cp test.fastq test.align.bam
+# Stage index
+cp test.align.bam test.align.bai
+# Stage filter_bam
+cp test.align.bam test.align.filter_bam.bam
+# ################ Finished at Wed Nov 26 10:26:21 GMT 2014 Duration = 1.154 seconds #################
+
+
+####################################################################################################
+# Starting pipeline at Fri Dec 05 10:25:49 GMT 2014
+# Input files:  test.fastq
+# Output Log:  .bpipe/logs/3015.log
+# Stage align
+cp test.fastq test.align.bam
+# Stage index
+cp test.align.bam test.align.bai
+# Stage filter_bam
+cp test.align.bam test.align.filter_bam.bam
+# ################ Finished at Fri Dec 05 10:25:50 GMT 2014 Duration = 1.207 seconds #################
+
+
+####################################################################################################
+# Starting pipeline at Fri Dec 05 10:38:33 GMT 2014
+# Input files:  test.fastq
+# Output Log:  .bpipe/logs/21519.log
+# Stage align
+cp test.fastq test.align.bam
+# Stage index
+cp test.align.bam test.align.bai
+# Stage filter_bam
+cp test.align.bam test.align.filter_bam.bam
+# ################ Finished at Fri Dec 05 10:38:34 GMT 2014 Duration = 1.096 seconds #################
+

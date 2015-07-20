@@ -1,0 +1,44 @@
+
+####################################################################################################
+# Starting pipeline at Wed Nov 26 10:24:36 GMT 2014
+# Input files:  [test1.txt, test2.txt]
+# Output Log:  .bpipe/logs/16604.log
+# Stage hello
+cat test1.txt > test1.merge.txt
+# Stage world
+cat test1.merge.txt > test1.merge.csv
+# ################ Finished at Wed Nov 26 10:24:37 GMT 2014 Duration = 0.931 seconds #################
+
+
+####################################################################################################
+# Starting pipeline at Fri Dec 05 10:14:23 GMT 2014
+# Input files:  [test1.txt, test2.txt]
+# Output Log:  .bpipe/logs/25269.log
+# Stage hello
+cat test1.txt > test1.merge.txt
+# Stage world
+cat test1.merge.txt > test1.merge.csv
+# ################ Finished at Fri Dec 05 10:14:24 GMT 2014 Duration = 0.938 seconds #################
+
+
+####################################################################################################
+# Starting pipeline at Fri Dec 05 10:24:03 GMT 2014
+# Input files:  [test1.txt, test2.txt]
+# Output Log:  .bpipe/logs/32566.log
+# Stage hello
+cat test1.txt > test1.merge.txt
+# Stage world
+cat test1.merge.txt > test1.merge.csv
+# ################ Finished at Fri Dec 05 10:24:04 GMT 2014 Duration = 0.927 seconds #################
+
+
+####################################################################################################
+# Starting pipeline at Fri Dec 05 10:36:47 GMT 2014
+# Input files:  [test1.txt, test2.txt]
+# Output Log:  .bpipe/logs/18760.log
+# Stage hello
+cat test1.txt > test1.merge.txt
+# Stage world
+cat test1.merge.txt > test1.merge.csv
+# ################ Finished at Fri Dec 05 10:36:48 GMT 2014 Duration = 0.926 seconds #################
+

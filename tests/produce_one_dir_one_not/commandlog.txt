@@ -1,0 +1,18 @@
+
+####################################################################################################
+# Starting pipeline at Wed Nov 26 10:29:15 GMT 2014
+# Input files:  null
+# Output Log:  .bpipe/logs/23214.log
+# Stage hello
+mkdir -p testoutput;  touch testoutput/test.html foo/test.csv
+# ################ Finished at Wed Nov 26 10:29:16 GMT 2014 Duration = 0.536 seconds #################
+
+
+####################################################################################################
+# Starting pipeline at Fri Dec 05 10:41:30 GMT 2014
+# Input files:  null
+# Output Log:  .bpipe/logs/25589.log
+# Stage hello
+mkdir -p testoutput;  touch testoutput/test.html foo/test.csv
+# ################ Finished at Fri Dec 05 10:41:30 GMT 2014 Duration = 0.564 seconds #################
+

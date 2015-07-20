@@ -1,0 +1,24 @@
+====================================================================================================
+|                              Starting Pipeline at 2014-12-05 10:39                               |
+====================================================================================================
+
+======================================== Stage hello [chr2] ========================================
+
+======================================== Stage hello [chr1] ========================================
+Using bam file test.chr1.bam
+Using bam file test.chr2.bam
+
+======================================== Stage world [chr2] ========================================
+
+======================================== Stage world [chr1] ========================================
+Using bam file test.chr2.bam
+Using bam file test.chr1.bam
+
+======================================== Pipeline Finished =========================================
+MSG: Generated report /lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/perchromosome_filterinputs/doc/index.html
+10:39:28 MSG:  Finished at Fri Dec 05 10:39:28 GMT 2014
+10:39:29 MSG:  Outputs are: 
+		test.chr2.hello.vcf
+		test.chr2.world.txt
+		test.chr1.hello.vcf
+		test.chr1.world.txt

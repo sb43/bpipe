@@ -1,0 +1,297 @@
+bpipe.Runner	[1]	INFO	|10:41:16 Starting 
+bpipe.Runner	[1]	INFO	|10:41:16 OS: Linux (2.6.32-44-server) Java: 1.7.0_25 Vendor: Oracle Corporation 
+bpipe.Runner	[1]	INFO	|10:41:16 Initializing plugins ... 
+bpipe.Config	[1]	INFO	|10:41:16 No plugins directory found: /lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/produce_multi/.bpipe/plugins 
+bpipe.Runner	[1]	INFO	|10:41:16 Reading user config ...  
+bpipe.Config	[1]	INFO	|10:41:16 No configuration file found in same dir as pipeline file 
+bpipe.Config	[1]	INFO	|10:41:16 No local configuration file found 
+bpipe.Utils	[10]	INFO	|10:41:17 Read config from /nfs/users/nfs_c/cgppipe/canpipe/software/bpipe_git/tests/produce_multi/../../bin/../src/main/config/bpipe.config executed in 0.333 seconds 
+bpipe.Utils	[1]	INFO	|10:41:17 Read user config executed in 0.566 seconds 
+bpipe.Runner	[1]	INFO	|10:41:17 Loading tool database ...  
+bpipe.ToolDatabase	[11]	INFO	|10:41:17 Loading tool database from user configuration 
+bpipe.NotificationManager	[14]	INFO	|10:41:17 Configuring notifications 
+bpipe.Concurrency	[13]	INFO	|10:41:17 Creating thread pool with 32 threads to execute parallel pipelines 
+bpipe.NotificationManager	[14]	INFO	|10:41:17 Trying class name file for notification channel file 
+bpipe.Tool	[11]	INFO	|10:41:17 Configured meta data about tool samtools 
+bpipe.Tool	[11]	INFO	|10:41:17 Configured meta data about tool bwa 
+bpipe.Tool	[11]	INFO	|10:41:17 Configured meta data about tool bowtie 
+bpipe.Tool	[11]	INFO	|10:41:17 Configured meta data about tool fastqc 
+bpipe.Tool	[11]	INFO	|10:41:17 Configured meta data about tool coverageBed 
+bpipe.Tool	[11]	INFO	|10:41:17 Configured meta data about tool fastx_clipper 
+bpipe.Tool	[11]	INFO	|10:41:17 Configured meta data about tool convert2annovar.pl 
+bpipe.Tool	[11]	INFO	|10:41:17 Configured meta data about tool summarize_annovar.pl 
+bpipe.Tool	[11]	INFO	|10:41:17 Configured meta data about tool bowtie2 
+bpipe.Tool	[11]	INFO	|10:41:17 Configured meta data about tool GenomeAnalysisTK 
+bpipe.Tool	[11]	INFO	|10:41:17 Configured meta data about tool MarkDuplicates 
+bpipe.Tool	[11]	INFO	|10:41:17 Configured meta data about tool signalp 
+bpipe.Tool	[11]	INFO	|10:41:17 Configured meta data about tool variant_effect_predictor.pl 
+bpipe.Runner	[1]	INFO	|10:41:17 No CLI parameters specified 
+bpipe.Tool	[11]	INFO	|10:41:17 Configured meta data about tool igvtools 
+bpipe.Tool	[11]	INFO	|10:41:17 Configured meta data about tool ls 
+bpipe.NotificationManager	[14]	INFO	|10:41:17 Unable to create notification channel using class file: java.lang.ClassNotFoundException: file 
+bpipe.NotificationManager	[14]	INFO	|10:41:17 Trying class name bpipe.FILENotificationChannel for notification channel file 
+bpipe.NotificationManager	[14]	INFO	|10:41:17 Unable to create notification channel using class bpipe.FILENotificationChannel: java.lang.ClassNotFoundException: bpipe.FILENotificationChannel 
+bpipe.NotificationManager	[14]	INFO	|10:41:17 Trying class name bpipe.file for notification channel file 
+bpipe.NotificationManager	[14]	INFO	|10:41:17 Unable to create notification channel using class bpipe.file: java.lang.ClassNotFoundException: bpipe.file 
+bpipe.NotificationManager	[14]	INFO	|10:41:17 Trying class name bpipe.FileNotificationChannel for notification channel file 
+bpipe.NotificationManager	[14]	INFO	|10:41:17 Successfully created notification channel using class bpipe.FileNotificationChannel 
+bpipe.Runner	[1]	INFO	|10:41:17 Parsing script ...  
+bpipe.Runner	[1]	INFO	|10:41:17 Run ...  
+bpipe.Pipeline	[1]	INFO	|10:41:17 Running with input [test.txt] 
+bpipe.PipelineCategory	[1]	INFO	|10:41:17 Found closure variable hello 
+bpipe.PipelineCategory	[1]	INFO	|10:41:17 Found closure variable world 
+bpipe.Pipeline	[1]	WARNING	|10:41:17 Pipeline folder /nfs/users/nfs_c/cgppipe/bpipes could not be found 
+bpipe.Pipeline	[1]	INFO	|10:41:17 Loaded external reference: args 
+bpipe.Pipeline	[1]	INFO	|10:41:17 External reference args is overridden by local reference 
+bpipe.Pipeline	[1]	INFO	|10:41:17 Loaded external reference: hello 
+bpipe.Pipeline	[1]	INFO	|10:41:17 External reference hello is overridden by local reference 
+bpipe.Pipeline	[1]	INFO	|10:41:17 Loaded external reference: world 
+bpipe.Pipeline	[1]	INFO	|10:41:17 External reference world is overridden by local reference 
+bpipe.Pipeline	[1]	INFO	|10:41:17 Running segment with inputs test.txt 
+bpipe.Dependencies	[1]	INFO	|10:41:17 Checking input (s) test.txt 
+bpipe.Utils	[1]	INFO	|10:41:17 Output folder scan (concurrency=5) executed in 0.004 seconds 
+bpipe.Dependencies	[1]	INFO	|10:41:17  Checking file test.txt 
+bpipe.PipelineDelegate	[1]	INFO	|10:41:17 Setting or creating a delegate for context 1194527894 body 1753182302/java.lang.Class in thread 1 
+bpipe.PipelineDelegate	[1]	INFO	|10:41:17 Created new delegate bpipe.PipelineDelegate@32b196b2 overriding type java.lang.Class in thread 1 
+bpipe.Dependencies	[1]	INFO	|10:41:17 Checking input (s) test.txt 
+bpipe.Dependencies	[1]	INFO	|10:41:18  Checking file test.txt 
+bpipe.ReportStatisticsListener	[1]	INFO	|10:41:18 Annotating stage start time hello 
+bpipe.PipelineStage	[1]	INFO	|10:41:18 Stage hello : INPUT=test.txt OUTPUT=test.txt.hello 
+bpipe.PipelineDelegate	[1]	INFO	|10:41:18 Setting or creating a delegate for context 98483427 body 527624866/script1417776077682508007900 in thread 1 
+bpipe.PipelineDelegate	[1]	INFO	|10:41:18 Created new delegate bpipe.PipelineDelegate@4b6b1a74 overriding type script1417776077682508007900 in thread 1 
+bpipe.PipelineContext	[1]	INFO	|10:41:18 Producing [foo.txt] from bpipe.PipelineContext@5debce3 
+bpipe.PipelineDelegate	[1]	INFO	|10:41:18 Setting or creating a delegate for context 98483427 body 1961586974/script1417776077682508007900$_run_closure1 in thread 1 
+bpipe.PipelineDelegate	[1]	INFO	|10:41:18 Created new delegate bpipe.PipelineDelegate@67bb66d9 overriding type script1417776077682508007900$_run_closure1 in thread 1 
+bpipe.PipelineContext	[1]	INFO	|10:41:18 Probing command using inputs test.txt 
+bpipe.PipelineContext	[1]	INFO	|10:41:18 Using previously set output: [foo.txt] 
+bpipe.PipelineContext	[1]	INFO	|10:41:18 Tracking outputs referenced=[[]] inferred=[[foo.txt]] for command cp test.txt foo.txt 
+bpipe.ReportStatisticsListener	[1]	INFO	|10:41:18 Intercepted command check for command cp test.txt foo.txt 
+bpipe.PipelineContext	[1]	INFO	|10:41:18 Checking actual resolved inputs [test.txt] 
+bpipe.PipelineContext	[1]	INFO	|10:41:18 Finished probe 
+bpipe.Utils	[1]	INFO	|10:41:18 ===== Check foo.txt ===== 
+bpipe.Utils	[1]	INFO	|10:41:18 file doesn't exist: foo.txt 
+bpipe.Utils	[1]	INFO	|10:41:18 ===== Check foo.txt ===== 
+bpipe.Utils	[1]	INFO	|10:41:18 file doesn't exist: foo.txt 
+bpipe.Dependencies	[1]	INFO	|10:41:18 Found these missing / older files: [foo.txt, foo.txt] 
+bpipe.Dependencies	[1]	INFO	|10:41:18 Some files are outdated : [foo.txt, foo.txt] 
+bpipe.PipelineContext	[1]	INFO	|10:41:18 Not up to date because input inferred by probe of body newer than outputs 
+bpipe.PipelineDelegate	[1]	INFO	|10:41:18 Setting or creating a delegate for context 98483427 body 1961586974/bpipe.PipelineDelegate in thread 1 
+bpipe.PipelineDelegate	[1]	INFO	|10:41:18 Existing delegate bpipe.PipelineDelegate@67bb66d9 has type bpipe.PipelineDelegate in thread 1. Setting new context 98483427 
+bpipe.PipelineContext	[1]	INFO	|10:41:18 Producing from inputs test.txt 
+bpipe.PipelineContext	[1]	INFO	|10:41:18 Using previously set output: [foo.txt] 
+bpipe.PipelineContext	[1]	INFO	|10:41:18 Tracking outputs referenced=[[]] inferred=[[foo.txt]] for command cp test.txt foo.txt 
+bpipe.ReportStatisticsListener	[1]	INFO	|10:41:18 Intercepted command check for command cp test.txt foo.txt 
+bpipe.PipelineContext	[1]	INFO	|10:41:18 Checking actual resolved inputs [test.txt] 
+bpipe.Utils	[1]	INFO	|10:41:18 ===== Check foo.txt ===== 
+bpipe.Utils	[1]	INFO	|10:41:18 file doesn't exist: foo.txt 
+bpipe.Utils	[1]	INFO	|10:41:18 ===== Check foo.txt ===== 
+bpipe.Utils	[1]	INFO	|10:41:18 file doesn't exist: foo.txt 
+bpipe.Dependencies	[1]	INFO	|10:41:18 Found these missing / older files: [foo.txt, foo.txt] 
+bpipe.Dependencies	[1]	INFO	|10:41:18 Some files are outdated : [foo.txt, foo.txt] 
+bpipe.Command	[1]	INFO	|10:41:18 Checking for configuration for command cp 
+bpipe.Command	[1]	INFO	|10:41:18 Default command properties: [executor:local] 
+bpipe.CommandManager	[1]	INFO	|10:41:18 Using config [executor:local] for command 
+bpipe.CommandManager	[1]	INFO	|10:41:18 Created bpipe command id 1 
+bpipe.Concurrency	[1]	INFO	|10:41:18 Thread main requesting for 1 concurrency permit(s) type threads with 32 available 
+bpipe.Concurrency	[1]	INFO	|10:41:18 Thread main acquired resource threads in amount 1 
+bpipe.Command	[15]	INFO	|10:41:18 Command 1 changing state from null to RUNNING 
+bpipe.executor.ThrottledDelegatingCommandExecutor	[1]	INFO	|10:41:18 Waiting for command to complete before releasing 1 resources 
+bpipe.Command	[1]	INFO	|10:41:18 Command 1 changing state from RUNNING to COMPLETE 
+bpipe.executor.ThrottledDelegatingCommandExecutor	[1]	INFO	|10:41:18 Releasing 1 resources 
+bpipe.Concurrency	[1]	INFO	|10:41:18 Thread main releasing 1 threads 
+bpipe.executor.ThrottledDelegatingCommandExecutor	[1]	INFO	|10:41:18 Released 1 resources 
+bpipe.PipelineContext	[1]	INFO	|10:41:18 Adding outputs [foo.txt] as a result of produce 
+bpipe.PipelineStage	[1]	INFO	|10:41:18 Stage hello returned null as default inputs for next stage 
+bpipe.PipelineStage	[1]	INFO	|10:41:18 Inferring nextInputs from explicit output as [foo.txt] 
+bpipe.PipelineStage	[1]	INFO	|10:41:18 Setting next inputs [foo.txt] on stage 1425345105, context 98483427 in thread 1 
+bpipe.Dependencies	[1]	INFO	|10:41:18 Context 98483427 for stage hello has resolved inputs [test.txt] 
+bpipe.Dependencies	[1]	INFO	|10:41:18 Saving output file details to file .bpipe/outputs/hello.foo.txt.properties for command cp test.txt foo.txt 
+bpipe.ReportStatisticsListener	[1]	INFO	|10:41:18 Annotating stage end time hello 
+bpipe.PipelineStage	[1]	INFO	|10:41:18 Checking files: [foo.txt] 
+bpipe.Dependencies	[1]	INFO	|10:41:18 Checking output (s) [foo.txt] 
+bpipe.Dependencies	[1]	INFO	|10:41:18  Checking file foo.txt 
+bpipe.Dependencies	[1]	INFO	|10:41:18 Checking input (s) [foo.txt] 
+bpipe.Dependencies	[1]	INFO	|10:41:18  Checking file foo.txt 
+bpipe.PipelineCategory	[1]	INFO	|10:41:18 Next inputs from stage = [foo.txt] 
+bpipe.PipelineCategory	[1]	INFO	|10:41:18 Checking inputs for next stage:  [foo.txt] 
+bpipe.Dependencies	[1]	INFO	|10:41:18 Checking input (s) [foo.txt] 
+bpipe.Dependencies	[1]	INFO	|10:41:18  Checking file foo.txt 
+bpipe.Dependencies	[1]	INFO	|10:41:18 Checking input (s) [foo.txt] 
+bpipe.Dependencies	[1]	INFO	|10:41:18  Checking file foo.txt 
+bpipe.ReportStatisticsListener	[1]	INFO	|10:41:18 Annotating stage start time world 
+bpipe.PipelineStage	[1]	INFO	|10:41:18 Stage world : INPUT=[foo.txt] OUTPUT=foo.txt.world 
+bpipe.PipelineDelegate	[1]	INFO	|10:41:18 Setting or creating a delegate for context 1125048577 body 831144399/script1417776077682508007900 in thread 1 
+bpipe.PipelineDelegate	[1]	INFO	|10:41:18 Created new delegate bpipe.PipelineDelegate@5d62b0c overriding type script1417776077682508007900 in thread 1 
+bpipe.PipelineContext	[1]	INFO	|10:41:18 Producing [world.txt, mars.txt] from bpipe.PipelineContext@430ee101 
+bpipe.PipelineDelegate	[1]	INFO	|10:41:18 Setting or creating a delegate for context 1125048577 body 1605662833/script1417776077682508007900$_run_closure2 in thread 1 
+bpipe.PipelineDelegate	[1]	INFO	|10:41:18 Created new delegate bpipe.PipelineDelegate@473bb93a overriding type script1417776077682508007900$_run_closure2 in thread 1 
+bpipe.PipelineContext	[1]	INFO	|10:41:18 Probing command using inputs [foo.txt] 
+bpipe.PipelineDelegate	[1]	INFO	|10:41:18 Output 1 reference resolved by PipelineDelegate 
+bpipe.PipelineContext	[1]	INFO	|10:41:18 Using previously set output: [world.txt, mars.txt] 
+bpipe.PipelineContext	[1]	INFO	|10:41:18 Query for output 0 base result = world.txt 
+bpipe.PipelineContext	[1]	INFO	|10:41:18 Tracking outputs referenced=[[]] inferred=[[world.txt]] for command cp foo.txt world.txt 
+bpipe.ReportStatisticsListener	[1]	INFO	|10:41:18 Intercepted command check for command cp foo.txt world.txt 
+bpipe.PipelineContext	[1]	INFO	|10:41:18 Checking actual resolved inputs [foo.txt] 
+bpipe.PipelineDelegate	[1]	INFO	|10:41:18 Output 2 reference resolved by PipelineDelegate 
+bpipe.PipelineContext	[1]	INFO	|10:41:18 Using previously set output: [world.txt, mars.txt] 
+bpipe.PipelineContext	[1]	INFO	|10:41:18 Query for output 1 base result = mars.txt 
+bpipe.PipelineContext	[1]	INFO	|10:41:18 Tracking outputs referenced=[[]] inferred=[[mars.txt]] for command cp foo.txt mars.txt 
+bpipe.ReportStatisticsListener	[1]	INFO	|10:41:18 Intercepted command check for command cp foo.txt mars.txt 
+bpipe.PipelineContext	[1]	INFO	|10:41:18 Checking actual resolved inputs [foo.txt] 
+bpipe.PipelineContext	[1]	INFO	|10:41:18 Finished probe 
+bpipe.Utils	[1]	INFO	|10:41:18 ===== Check world.txt ===== 
+bpipe.Utils	[1]	INFO	|10:41:18 file doesn't exist: world.txt 
+bpipe.Utils	[1]	INFO	|10:41:18 ===== Check mars.txt ===== 
+bpipe.Utils	[1]	INFO	|10:41:18 file doesn't exist: mars.txt 
+bpipe.Utils	[1]	INFO	|10:41:18 ===== Check world.txt ===== 
+bpipe.Utils	[1]	INFO	|10:41:18 file doesn't exist: world.txt 
+bpipe.Utils	[1]	INFO	|10:41:18 ===== Check mars.txt ===== 
+bpipe.Utils	[1]	INFO	|10:41:18 file doesn't exist: mars.txt 
+bpipe.Dependencies	[1]	INFO	|10:41:18 Found these missing / older files: [world.txt, mars.txt, world.txt, mars.txt] 
+bpipe.Dependencies	[1]	INFO	|10:41:18 Some files are outdated : [world.txt, mars.txt, world.txt, mars.txt] 
+bpipe.PipelineContext	[1]	INFO	|10:41:18 Not up to date because input inferred by probe of body newer than outputs 
+bpipe.PipelineDelegate	[1]	INFO	|10:41:18 Setting or creating a delegate for context 1125048577 body 1605662833/bpipe.PipelineDelegate in thread 1 
+bpipe.PipelineDelegate	[1]	INFO	|10:41:18 Existing delegate bpipe.PipelineDelegate@473bb93a has type bpipe.PipelineDelegate in thread 1. Setting new context 1125048577 
+bpipe.PipelineContext	[1]	INFO	|10:41:18 Producing from inputs [foo.txt] 
+bpipe.PipelineDelegate	[1]	INFO	|10:41:18 Output 1 reference resolved by PipelineDelegate 
+bpipe.PipelineContext	[1]	INFO	|10:41:18 Using previously set output: [world.txt, mars.txt] 
+bpipe.PipelineContext	[1]	INFO	|10:41:18 Query for output 0 base result = world.txt 
+bpipe.PipelineContext	[1]	INFO	|10:41:18 Tracking outputs referenced=[[]] inferred=[[world.txt]] for command cp foo.txt world.txt 
+bpipe.ReportStatisticsListener	[1]	INFO	|10:41:18 Intercepted command check for command cp foo.txt world.txt 
+bpipe.PipelineContext	[1]	INFO	|10:41:18 Checking actual resolved inputs [foo.txt] 
+bpipe.Utils	[1]	INFO	|10:41:18 ===== Check world.txt ===== 
+bpipe.Utils	[1]	INFO	|10:41:18 file doesn't exist: world.txt 
+bpipe.Utils	[1]	INFO	|10:41:18 ===== Check world.txt ===== 
+bpipe.Utils	[1]	INFO	|10:41:18 file doesn't exist: world.txt 
+bpipe.Utils	[1]	INFO	|10:41:18 ===== Check mars.txt ===== 
+bpipe.Utils	[1]	INFO	|10:41:18 file doesn't exist: mars.txt 
+bpipe.Dependencies	[1]	INFO	|10:41:18 Found these missing / older files: [world.txt, world.txt, mars.txt] 
+bpipe.Dependencies	[1]	INFO	|10:41:18 Some files are outdated : [world.txt, world.txt, mars.txt] 
+bpipe.Command	[1]	INFO	|10:41:18 Checking for configuration for command cp 
+bpipe.Command	[1]	INFO	|10:41:18 Default command properties: [executor:local] 
+bpipe.CommandManager	[1]	INFO	|10:41:18 Using config [executor:local] for command 
+bpipe.CommandManager	[1]	INFO	|10:41:18 Created bpipe command id 3 
+bpipe.Concurrency	[1]	INFO	|10:41:18 Thread main requesting for 1 concurrency permit(s) type threads with 32 available 
+bpipe.Concurrency	[1]	INFO	|10:41:18 Thread main acquired resource threads in amount 1 
+bpipe.Command	[19]	INFO	|10:41:18 Command 3 changing state from null to RUNNING 
+bpipe.executor.ThrottledDelegatingCommandExecutor	[1]	INFO	|10:41:18 Waiting for command to complete before releasing 1 resources 
+bpipe.Command	[1]	INFO	|10:41:18 Command 3 changing state from RUNNING to COMPLETE 
+bpipe.executor.ThrottledDelegatingCommandExecutor	[1]	INFO	|10:41:18 Releasing 1 resources 
+bpipe.Concurrency	[1]	INFO	|10:41:18 Thread main releasing 1 threads 
+bpipe.executor.ThrottledDelegatingCommandExecutor	[1]	INFO	|10:41:18 Released 1 resources 
+bpipe.PipelineDelegate	[1]	INFO	|10:41:18 Output 2 reference resolved by PipelineDelegate 
+bpipe.PipelineContext	[1]	INFO	|10:41:18 Using previously set output: [world.txt, mars.txt] 
+bpipe.PipelineContext	[1]	INFO	|10:41:18 Query for output 1 base result = mars.txt 
+bpipe.PipelineContext	[1]	INFO	|10:41:18 Tracking outputs referenced=[[]] inferred=[[mars.txt]] for command cp foo.txt mars.txt 
+bpipe.ReportStatisticsListener	[1]	INFO	|10:41:18 Intercepted command check for command cp foo.txt mars.txt 
+bpipe.PipelineContext	[1]	INFO	|10:41:18 Checking actual resolved inputs [foo.txt] 
+bpipe.Utils	[1]	INFO	|10:41:18 ===== Check mars.txt ===== 
+bpipe.Utils	[1]	INFO	|10:41:18 file doesn't exist: mars.txt 
+bpipe.Utils	[1]	INFO	|10:41:18 ===== Check world.txt ===== 
+bpipe.Utils	[1]	INFO	|10:41:18 Checking world.txt against inputs [foo.txt] 
+bpipe.Utils	[1]	INFO	|10:41:18 Check foo.txt : 1417776078000 >  world.txt : 1417776078000 
+bpipe.Utils	[1]	INFO	|10:41:18 ===== Check mars.txt ===== 
+bpipe.Utils	[1]	INFO	|10:41:18 file doesn't exist: mars.txt 
+bpipe.Dependencies	[1]	INFO	|10:41:18 Found these missing / older files: [mars.txt, mars.txt] 
+bpipe.Dependencies	[1]	INFO	|10:41:18 Some files are outdated : [mars.txt, mars.txt] 
+bpipe.Command	[1]	INFO	|10:41:18 Checking for configuration for command cp 
+bpipe.Command	[1]	INFO	|10:41:18 Default command properties: [executor:local] 
+bpipe.CommandManager	[1]	INFO	|10:41:18 Using config [executor:local] for command 
+bpipe.CommandManager	[1]	INFO	|10:41:18 Created bpipe command id 4 
+bpipe.Concurrency	[1]	INFO	|10:41:18 Thread main requesting for 1 concurrency permit(s) type threads with 32 available 
+bpipe.Concurrency	[1]	INFO	|10:41:18 Thread main acquired resource threads in amount 1 
+bpipe.Command	[22]	INFO	|10:41:18 Command 4 changing state from null to RUNNING 
+bpipe.executor.ThrottledDelegatingCommandExecutor	[1]	INFO	|10:41:18 Waiting for command to complete before releasing 1 resources 
+bpipe.Command	[1]	INFO	|10:41:18 Command 4 changing state from RUNNING to COMPLETE 
+bpipe.executor.ThrottledDelegatingCommandExecutor	[1]	INFO	|10:41:18 Releasing 1 resources 
+bpipe.Concurrency	[1]	INFO	|10:41:18 Thread main releasing 1 threads 
+bpipe.executor.ThrottledDelegatingCommandExecutor	[1]	INFO	|10:41:18 Released 1 resources 
+bpipe.PipelineContext	[1]	INFO	|10:41:18 Adding outputs [world.txt, mars.txt] as a result of produce 
+bpipe.PipelineStage	[1]	INFO	|10:41:18 Stage world returned null as default inputs for next stage 
+bpipe.PipelineStage	[1]	INFO	|10:41:18 Inferring nextInputs from explicit output as [world.txt, mars.txt] 
+bpipe.PipelineStage	[1]	INFO	|10:41:18 Setting next inputs [world.txt, mars.txt] on stage 1432774630, context 1125048577 in thread 1 
+bpipe.Dependencies	[1]	INFO	|10:41:18 Context 1125048577 for stage world has resolved inputs [foo.txt] 
+bpipe.Dependencies	[1]	INFO	|10:41:18 Saving output file details to file .bpipe/outputs/world.world.txt.properties for command cp foo.txt world.txt... 
+bpipe.Dependencies	[1]	INFO	|10:41:18 Context 1125048577 for stage world has resolved inputs [foo.txt] 
+bpipe.Dependencies	[1]	INFO	|10:41:18 Saving output file details to file .bpipe/outputs/world.mars.txt.properties for command cp foo.txt mars.txt 
+bpipe.ReportStatisticsListener	[1]	INFO	|10:41:18 Annotating stage end time world 
+bpipe.PipelineStage	[1]	INFO	|10:41:18 Checking files: [world.txt, mars.txt] 
+bpipe.Dependencies	[1]	INFO	|10:41:18 Checking output (s) [world.txt, mars.txt] 
+bpipe.Dependencies	[1]	INFO	|10:41:18  Checking file world.txt 
+bpipe.Dependencies	[1]	INFO	|10:41:18  Checking file mars.txt 
+bpipe.PipelineContext	[1]	INFO	|10:41:18 Setting output [world.txt, mars.txt] on context 1194527894 in thread 1 
+bpipe.PipelineStage	[1]	INFO	|10:41:18 Setting next inputs [world.txt, mars.txt] on stage 386041791, context 1194527894 in thread 1 
+bpipe.PipelineStage	[1]	INFO	|10:41:18 Checking files: [world.txt, mars.txt] 
+bpipe.Dependencies	[1]	INFO	|10:41:18 Checking output (s) [world.txt, mars.txt] 
+bpipe.Dependencies	[1]	INFO	|10:41:18  Checking file world.txt 
+bpipe.Dependencies	[1]	INFO	|10:41:18  Checking file mars.txt 
+bpipe.Pipeline	[1]	INFO	|10:41:18 Pipeline segment  in thread 1 has finished normally 
+bpipe.Pipeline	[1]	INFO	|10:41:18 Finished running segment for inputs test.txt 
+bpipe.Pipeline	[1]	INFO	|10:41:18 adding stage hello from pipeline bpipe.Pipeline@52b0cc28 
+bpipe.Pipeline	[1]	INFO	|10:41:18 adding stage world from pipeline bpipe.Pipeline@52b0cc28 
+bpipe.Dependencies	[25]	INFO	|10:41:18 Reading property file .bpipe/outputs/hello.foo.txt.properties 
+bpipe.Dependencies	[26]	INFO	|10:41:18 Reading property file .bpipe/outputs/world.world.txt.properties 
+bpipe.Dependencies	[27]	INFO	|10:41:18 Reading property file .bpipe/outputs/world.mars.txt.properties 
+bpipe.Utils	[1]	INFO	|10:41:18 Output folder scan (concurrency=5) executed in 0.023 seconds 
+bpipe.Dependencies	[1]	INFO	|10:41:18 External inputs: [[test.txt]] for outputs [foo.txt] 
+bpipe.Dependencies	[1]	INFO	|10:41:18 There are 1 output groups 
+bpipe.Dependencies	[1]	INFO	|10:41:18 Subtracting 1 remaining outputs from 3 total outputs 
+bpipe.Dependencies	[1]	INFO	|10:41:18 External inputs: [[foo.txt], [foo.txt]] for outputs [world.txt, mars.txt] 
+bpipe.Dependencies	[1]	INFO	|10:41:18 New entry for world.txt 
+bpipe.Dependencies	[1]	INFO	|10:41:18 Maxtimestamp for world.txt = 1417776078000 
+bpipe.Dependencies	[1]	INFO	|10:41:18 New entry for mars.txt 
+bpipe.Dependencies	[1]	INFO	|10:41:18 Maxtimestamp for mars.txt = 1417776078000 
+bpipe.Dependencies	[1]	INFO	|10:41:18 There are 2 output groups 
+bpipe.Dependencies	[1]	INFO	|10:41:18 Subtracting 2 remaining outputs from 2 total outputs 
+bpipe.Dependencies	[1]	INFO	|10:41:18 There are 0 remaining outputs 
+bpipe.Dependencies	[1]	INFO	|10:41:18 There are 0 remaining outputs 
+bpipe.Dependencies	[1]	INFO	|10:41:18 ----- world.txt / entry 1079327763 ----- 
+bpipe.Dependencies	[1]	INFO	|10:41:18 Input foo.txt? true 
+bpipe.Dependencies	[1]	INFO	|10:41:18 world.txt is older than inputs [foo.txt / 1417776078000 / 1417776078000 vs 1417776078000] 
+bpipe.Dependencies	[1]	INFO	|10:41:18 ------ mars.txt / entry 269661159 ------ 
+bpipe.Dependencies	[1]	INFO	|10:41:18 Input foo.txt? true 
+bpipe.Dependencies	[1]	INFO	|10:41:18 mars.txt is older than inputs [foo.txt / 1417776078000 / 1417776078000 vs 1417776078000] 
+bpipe.Dependencies	[1]	INFO	|10:41:18 ====Finished Output Graph===== 
+bpipe.Dependencies	[1]	INFO	|10:41:18 There are 0 remaining outputs 
+bpipe.Dependencies	[1]	INFO	|10:41:18 ------ foo.txt / entry 1004604143 ------ 
+bpipe.Dependencies	[1]	INFO	|10:41:18 foo.txt is newer than input files 
+bpipe.Dependencies	[1]	INFO	|10:41:18 ====Finished Output Graph===== 
+bpipe.ReportGenerator	[1]	INFO	|10:41:19 Searching for template in /lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/src/main/html/bpipe 
+bpipe.ReportGenerator	[1]	INFO	|10:41:19 Generating report to /lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/produce_multi/doc/index.html 
+bpipe.PipelineContext	[1]	INFO	|10:41:19 Using previously set output: [foo.txt] 
+bpipe.PipelineContext	[1]	INFO	|10:41:19 Using previously set output: [foo.txt] 
+bpipe.PipelineContext	[1]	INFO	|10:41:19 Using previously set output: [foo.txt] 
+bpipe.PipelineContext	[1]	INFO	|10:41:19 Using previously set output: [world.txt, mars.txt] 
+bpipe.PipelineContext	[1]	INFO	|10:41:19 Using previously set output: [world.txt, mars.txt] 
+bpipe.PipelineContext	[1]	INFO	|10:41:19 Using previously set output: [world.txt, mars.txt] 
+bpipe.Dependencies	[28]	INFO	|10:41:19 Reading property file .bpipe/outputs/hello.foo.txt.properties 
+bpipe.Dependencies	[30]	INFO	|10:41:19 Reading property file .bpipe/outputs/world.mars.txt.properties 
+bpipe.Dependencies	[29]	INFO	|10:41:19 Reading property file .bpipe/outputs/world.world.txt.properties 
+bpipe.Utils	[1]	INFO	|10:41:19 Output folder scan (concurrency=5) executed in 0.005 seconds 
+bpipe.Dependencies	[1]	INFO	|10:41:19 External inputs: [[test.txt]] for outputs [foo.txt] 
+bpipe.Dependencies	[1]	INFO	|10:41:19 There are 1 output groups 
+bpipe.Dependencies	[1]	INFO	|10:41:19 Subtracting 1 remaining outputs from 3 total outputs 
+bpipe.Dependencies	[1]	INFO	|10:41:19 External inputs: [[foo.txt], [foo.txt]] for outputs [world.txt, mars.txt] 
+bpipe.Dependencies	[1]	INFO	|10:41:19 New entry for world.txt 
+bpipe.Dependencies	[1]	INFO	|10:41:19 Maxtimestamp for world.txt = 1417776078000 
+bpipe.Dependencies	[1]	INFO	|10:41:19 New entry for mars.txt 
+bpipe.Dependencies	[1]	INFO	|10:41:19 Maxtimestamp for mars.txt = 1417776078000 
+bpipe.Dependencies	[1]	INFO	|10:41:19 There are 2 output groups 
+bpipe.Dependencies	[1]	INFO	|10:41:19 Subtracting 2 remaining outputs from 2 total outputs 
+bpipe.Dependencies	[1]	INFO	|10:41:19 There are 0 remaining outputs 
+bpipe.Dependencies	[1]	INFO	|10:41:19 There are 0 remaining outputs 
+bpipe.Dependencies	[1]	INFO	|10:41:19 ----- world.txt / entry 721130075 ------ 
+bpipe.Dependencies	[1]	INFO	|10:41:19 Input foo.txt? true 
+bpipe.Dependencies	[1]	INFO	|10:41:19 world.txt is older than inputs [foo.txt / 1417776078000 / 1417776078000 vs 1417776078000] 
+bpipe.Dependencies	[1]	INFO	|10:41:19 ----- mars.txt / entry 1427869341 ------ 
+bpipe.Dependencies	[1]	INFO	|10:41:19 Input foo.txt? true 
+bpipe.Dependencies	[1]	INFO	|10:41:19 mars.txt is older than inputs [foo.txt / 1417776078000 / 1417776078000 vs 1417776078000] 
+bpipe.Dependencies	[1]	INFO	|10:41:19 ====Finished Output Graph===== 
+bpipe.Dependencies	[1]	INFO	|10:41:19 There are 0 remaining outputs 
+bpipe.Dependencies	[1]	INFO	|10:41:19 ------- foo.txt / entry 70258962 ------- 
+bpipe.Dependencies	[1]	INFO	|10:41:19 foo.txt is newer than input files 
+bpipe.Dependencies	[1]	INFO	|10:41:19 ====Finished Output Graph===== 
+bpipe.Pipeline	[1]	INFO	|10:41:19 Outputs are: 
+		world.txt
+		mars.txt 
+bpipe.Runner	[9]	INFO	|10:41:19 Deleting job file /nfs/users/nfs_c/cgppipe/.bpipedb/jobs/25267 

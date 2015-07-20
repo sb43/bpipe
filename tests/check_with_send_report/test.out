@@ -1,0 +1,18 @@
+====================================================================================================
+|                              Starting Pipeline at 2014-12-05 10:35                               |
+====================================================================================================
+
+=========================================== Stage hello ============================================
+
+=========================================== Stage world ============================================
+The check failed!
+
+======================================== Stage send_report =========================================
+MSG: Generated report /lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/check_with_send_report/.bpipe/reports/16444/45329.checks.html
+
+======================================== Pipeline Finished =========================================
+
+WARNING: 1 check(s) failed. Use 'bpipe checks' to see details.
+
+MSG: Generated report /lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/check_with_send_report/doc/index.html
+10:36:01 MSG:  Finished at Fri Dec 05 10:36:01 GMT 2014

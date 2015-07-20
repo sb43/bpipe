@@ -1,0 +1,197 @@
+bpipe.Runner	[1]	INFO	|10:42:18 Starting 
+bpipe.Runner	[1]	INFO	|10:42:18 OS: Linux (2.6.32-44-server) Java: 1.7.0_25 Vendor: Oracle Corporation 
+bpipe.Runner	[1]	INFO	|10:42:18 Initializing plugins ... 
+bpipe.Config	[1]	INFO	|10:42:18 No plugins directory found: /lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/folderasoutput/.bpipe/plugins 
+bpipe.Runner	[1]	INFO	|10:42:18 Reading user config ...  
+bpipe.Config	[1]	INFO	|10:42:18 No configuration file found in same dir as pipeline file 
+bpipe.Config	[1]	INFO	|10:42:18 No local configuration file found 
+bpipe.Utils	[10]	INFO	|10:42:19 Read config from /nfs/users/nfs_c/cgppipe/canpipe/software/bpipe_git/tests/folderasoutput/../../bin/../src/main/config/bpipe.config executed in 0.328 seconds 
+bpipe.Utils	[1]	INFO	|10:42:19 Read user config executed in 0.560 seconds 
+bpipe.Runner	[1]	INFO	|10:42:19 Loading tool database ...  
+bpipe.ToolDatabase	[11]	INFO	|10:42:19 Loading tool database from user configuration 
+bpipe.NotificationManager	[14]	INFO	|10:42:19 Configuring notifications 
+bpipe.Concurrency	[13]	INFO	|10:42:19 Creating thread pool with 32 threads to execute parallel pipelines 
+bpipe.NotificationManager	[14]	INFO	|10:42:19 Trying class name file for notification channel file 
+bpipe.Tool	[11]	INFO	|10:42:19 Configured meta data about tool samtools 
+bpipe.Runner	[1]	INFO	|10:42:19 No CLI parameters specified 
+bpipe.Tool	[11]	INFO	|10:42:19 Configured meta data about tool bwa 
+bpipe.Tool	[11]	INFO	|10:42:19 Configured meta data about tool bowtie 
+bpipe.Tool	[11]	INFO	|10:42:19 Configured meta data about tool fastqc 
+bpipe.Tool	[11]	INFO	|10:42:19 Configured meta data about tool coverageBed 
+bpipe.Tool	[11]	INFO	|10:42:19 Configured meta data about tool fastx_clipper 
+bpipe.Tool	[11]	INFO	|10:42:19 Configured meta data about tool convert2annovar.pl 
+bpipe.Tool	[11]	INFO	|10:42:19 Configured meta data about tool summarize_annovar.pl 
+bpipe.Tool	[11]	INFO	|10:42:19 Configured meta data about tool bowtie2 
+bpipe.Tool	[11]	INFO	|10:42:19 Configured meta data about tool GenomeAnalysisTK 
+bpipe.Tool	[11]	INFO	|10:42:19 Configured meta data about tool MarkDuplicates 
+bpipe.Tool	[11]	INFO	|10:42:19 Configured meta data about tool signalp 
+bpipe.Tool	[11]	INFO	|10:42:19 Configured meta data about tool variant_effect_predictor.pl 
+bpipe.Tool	[11]	INFO	|10:42:19 Configured meta data about tool igvtools 
+bpipe.Tool	[11]	INFO	|10:42:19 Configured meta data about tool ls 
+bpipe.NotificationManager	[14]	INFO	|10:42:19 Unable to create notification channel using class file: java.lang.ClassNotFoundException: file 
+bpipe.NotificationManager	[14]	INFO	|10:42:19 Trying class name bpipe.FILENotificationChannel for notification channel file 
+bpipe.NotificationManager	[14]	INFO	|10:42:19 Unable to create notification channel using class bpipe.FILENotificationChannel: java.lang.ClassNotFoundException: bpipe.FILENotificationChannel 
+bpipe.NotificationManager	[14]	INFO	|10:42:19 Trying class name bpipe.file for notification channel file 
+bpipe.NotificationManager	[14]	INFO	|10:42:19 Unable to create notification channel using class bpipe.file: java.lang.ClassNotFoundException: bpipe.file 
+bpipe.NotificationManager	[14]	INFO	|10:42:19 Trying class name bpipe.FileNotificationChannel for notification channel file 
+bpipe.NotificationManager	[14]	INFO	|10:42:19 Successfully created notification channel using class bpipe.FileNotificationChannel 
+bpipe.Runner	[1]	INFO	|10:42:19 Parsing script ...  
+bpipe.Runner	[1]	INFO	|10:42:19 Run ...  
+bpipe.Pipeline	[1]	INFO	|10:42:19 Running with input [test.txt] 
+bpipe.PipelineCategory	[1]	INFO	|10:42:19 Found closure variable folder 
+bpipe.PipelineCategory	[1]	INFO	|10:42:19 Found closure variable after 
+bpipe.Pipeline	[1]	WARNING	|10:42:19 Pipeline folder /nfs/users/nfs_c/cgppipe/bpipes could not be found 
+bpipe.Pipeline	[1]	INFO	|10:42:19 Loaded external reference: args 
+bpipe.Pipeline	[1]	INFO	|10:42:19 External reference args is overridden by local reference 
+bpipe.Pipeline	[1]	INFO	|10:42:19 Loaded external reference: folder 
+bpipe.Pipeline	[1]	INFO	|10:42:19 External reference folder is overridden by local reference 
+bpipe.Pipeline	[1]	INFO	|10:42:19 Loaded external reference: after 
+bpipe.Pipeline	[1]	INFO	|10:42:19 External reference after is overridden by local reference 
+bpipe.Pipeline	[1]	INFO	|10:42:19 Running segment with inputs test.txt 
+bpipe.Dependencies	[1]	INFO	|10:42:19 Checking input (s) test.txt 
+bpipe.Dependencies	[15]	INFO	|10:42:19 Reading property file .bpipe/outputs/folder.thefolder_output.csv.properties 
+bpipe.Dependencies	[16]	INFO	|10:42:19 Reading property file .bpipe/outputs/after.output.after.xml.properties 
+bpipe.Utils	[1]	INFO	|10:42:19 Output folder scan (concurrency=5) executed in 0.034 seconds 
+bpipe.Dependencies	[1]	INFO	|10:42:19 External inputs: [[test.txt]] for outputs [thefolder/output.csv] 
+bpipe.Dependencies	[1]	INFO	|10:42:19 There are 1 output groups 
+bpipe.Dependencies	[1]	INFO	|10:42:19 Subtracting 1 remaining outputs from 2 total outputs 
+bpipe.Dependencies	[1]	INFO	|10:42:19 External inputs: [[thefolder/output.csv]] for outputs [output.after.xml] 
+bpipe.Dependencies	[1]	INFO	|10:42:19 New entry for output.after.xml 
+bpipe.Dependencies	[1]	INFO	|10:42:19 Maxtimestamp for output.after.xml = 1417776135000 
+bpipe.Dependencies	[1]	INFO	|10:42:19 There are 1 output groups 
+bpipe.Dependencies	[1]	INFO	|10:42:19 Subtracting 1 remaining outputs from 1 total outputs 
+bpipe.Dependencies	[1]	INFO	|10:42:19 There are 0 remaining outputs 
+bpipe.Dependencies	[1]	INFO	|10:42:19 -- output.after.xml / entry 520671934 -- 
+bpipe.Dependencies	[1]	INFO	|10:42:19 Input thefolder/output.csv? true 
+bpipe.Dependencies	[1]	INFO	|10:42:19 output.after.xml is older than inputs [output.csv / 1417776135000 / 1417776135000 vs 1417776135000] 
+bpipe.Dependencies	[1]	INFO	|10:42:19 ====Finished Output Graph===== 
+bpipe.Dependencies	[1]	INFO	|10:42:19 There are 0 remaining outputs 
+bpipe.Dependencies	[1]	INFO	|10:42:19  thefolder/output.csv / entry 1961586974  
+bpipe.Dependencies	[1]	INFO	|10:42:19 thefolder/output.csv is newer than input files 
+bpipe.Dependencies	[1]	INFO	|10:42:19 ====Finished Output Graph===== 
+bpipe.Dependencies	[1]	INFO	|10:42:19  Checking file test.txt 
+bpipe.PipelineDelegate	[1]	INFO	|10:42:19 Setting or creating a delegate for context 232544921 body 2109733354/java.lang.Class in thread 1 
+bpipe.PipelineDelegate	[1]	INFO	|10:42:19 Created new delegate bpipe.PipelineDelegate@4e708fc0 overriding type java.lang.Class in thread 1 
+bpipe.Dependencies	[1]	INFO	|10:42:19 Checking input (s) test.txt 
+bpipe.Dependencies	[1]	INFO	|10:42:19  Checking file test.txt 
+bpipe.ReportStatisticsListener	[1]	INFO	|10:42:19 Annotating stage start time folder 
+bpipe.PipelineStage	[1]	INFO	|10:42:19 Stage folder : INPUT=test.txt OUTPUT=test.txt.folder 
+bpipe.PipelineDelegate	[1]	INFO	|10:42:19 Setting or creating a delegate for context 1872596737 body 1446500101/script14177761394041913550116 in thread 1 
+bpipe.PipelineDelegate	[1]	INFO	|10:42:19 Created new delegate bpipe.PipelineDelegate@66b03915 overriding type script14177761394041913550116 in thread 1 
+bpipe.PipelineContext	[1]	INFO	|10:42:19 Producing [thefolder/*] from bpipe.PipelineContext@6f9d8f01 
+bpipe.PipelineContext	[1]	INFO	|10:42:19 Files matching glob thefolder/* = [thefolder/output.csv] 
+bpipe.PipelineDelegate	[1]	INFO	|10:42:19 Setting or creating a delegate for context 1872596737 body 986980525/script14177761394041913550116$_run_closure1 in thread 1 
+bpipe.PipelineDelegate	[1]	INFO	|10:42:19 Created new delegate bpipe.PipelineDelegate@1974eeb0 overriding type script14177761394041913550116$_run_closure1 in thread 1 
+bpipe.PipelineContext	[1]	INFO	|10:42:19 Probing command using inputs test.txt 
+bpipe.PipelineContext	[1]	INFO	|10:42:19 Tracking outputs referenced=[[]] inferred=[[]] for command echo execute1; mkdir thefolder; cp test.txt thefolder/output.csv 
+bpipe.ReportStatisticsListener	[1]	INFO	|10:42:19 Intercepted command check for command echo execute1; mkdir thefolder; cp test.txt thefolder/output.csv 
+bpipe.PipelineContext	[1]	INFO	|10:42:19 Checking actual resolved inputs [test.txt] 
+bpipe.PipelineContext	[1]	INFO	|10:42:19 Finished probe 
+bpipe.Utils	[1]	INFO	|10:42:19 ===== Check thefolder/output.csv ===== 
+bpipe.Utils	[1]	INFO	|10:42:19 Checking thefolder/output.csv against inputs [test.txt] 
+bpipe.Utils	[1]	INFO	|10:42:19 Check test.txt : 1416995052000 >  thefolder/output.csv : 1417776135000 
+bpipe.Dependencies	[1]	INFO	|10:42:19 No missing / older files from inputs: [thefolder/output.csv] are up to date 
+bpipe.PipelineContext	[1]	INFO	|10:42:19 Skipping produce body 
+bpipe.PipelineContext	[1]	INFO	|10:42:19 Found outputs for glob thefolder/*: [[thefolder/output.csv]] 
+bpipe.PipelineStage	[1]	INFO	|10:42:19 Stage folder returned null as default inputs for next stage 
+bpipe.PipelineStage	[1]	INFO	|10:42:19 Inferring nextInputs from explicit output as [thefolder/output.csv] 
+bpipe.PipelineStage	[1]	INFO	|10:42:19 Setting next inputs [thefolder/output.csv] on stage 80760831, context 1872596737 in thread 1 
+bpipe.Dependencies	[1]	INFO	|10:42:19 Reading property file .bpipe/outputs/folder.thefolder_output.csv.properties 
+bpipe.Dependencies	[1]	INFO	|10:42:19 Context 1872596737 for stage folder has resolved inputs [test.txt] 
+bpipe.Dependencies	[1]	INFO	|10:42:19 Saving output file details to file .bpipe/outputs/folder.thefolder_output.csv.properties for command <produce> 
+bpipe.ReportStatisticsListener	[1]	INFO	|10:42:19 Annotating stage end time folder 
+bpipe.PipelineStage	[1]	INFO	|10:42:19 Checking files: [thefolder/output.csv] 
+bpipe.Dependencies	[1]	INFO	|10:42:20 Checking output (s) [thefolder/output.csv] 
+bpipe.Dependencies	[1]	INFO	|10:42:20  Checking file thefolder/output.csv 
+bpipe.Dependencies	[1]	INFO	|10:42:20 Checking input (s) [thefolder/output.csv] 
+bpipe.Dependencies	[1]	INFO	|10:42:20  Checking file thefolder/output.csv 
+bpipe.PipelineCategory	[1]	INFO	|10:42:20 Next inputs from stage = [thefolder/output.csv] 
+bpipe.PipelineCategory	[1]	INFO	|10:42:20 Checking inputs for next stage:  [thefolder/output.csv] 
+bpipe.Dependencies	[1]	INFO	|10:42:20 Checking input (s) [thefolder/output.csv] 
+bpipe.Dependencies	[1]	INFO	|10:42:20  Checking file thefolder/output.csv 
+bpipe.Dependencies	[1]	INFO	|10:42:20 Checking input (s) [thefolder/output.csv] 
+bpipe.Dependencies	[1]	INFO	|10:42:20  Checking file thefolder/output.csv 
+bpipe.ReportStatisticsListener	[1]	INFO	|10:42:20 Annotating stage start time after 
+bpipe.PipelineStage	[1]	INFO	|10:42:20 Stage after : INPUT=[thefolder/output.csv] OUTPUT=output.csv.after 
+bpipe.PipelineDelegate	[1]	INFO	|10:42:20 Setting or creating a delegate for context 685237857 body 1812313467/script14177761394041913550116 in thread 1 
+bpipe.PipelineDelegate	[1]	INFO	|10:42:20 Created new delegate bpipe.PipelineDelegate@5bfefcd4 overriding type script14177761394041913550116 in thread 1 
+bpipe.PipelineInput	[1]	INFO	|10:42:20 Searching for missing Property: csv 
+bpipe.PipelineInput	[1]	INFO	|10:42:20 Resolving inputs matching pattern ^.*\.csv$ 
+bpipe.PipelineInput	[1]	INFO	|10:42:20 Checking outputs [thefolder/output.csv] 
+bpipe.PipelineInput	[1]	INFO	|10:42:20 Found files with exts [csv$] : [[thefolder/output.csv]] 
+bpipe.PipelineInput	[1]	INFO	|10:42:20 Adding resolved input thefolder/output.csv 
+bpipe.PipelineContext	[1]	INFO	|10:42:20 Using non-default output due to input property reference: thefolder/output.csv from resolved inputs [thefolder/output.csv] 
+bpipe.PipelineContext	[1]	INFO	|10:42:20 Tracking outputs referenced=[[]] inferred=[[output.after.xml]] for command echo execute2; cp thefolder/output.csv output.after.xml 
+bpipe.ReportStatisticsListener	[1]	INFO	|10:42:20 Intercepted command check for command echo execute2; cp thefolder/output.csv output.after.xml 
+bpipe.PipelineContext	[1]	INFO	|10:42:20 Checking actual resolved inputs [thefolder/output.csv] 
+bpipe.Utils	[1]	INFO	|10:42:20 ===== Check output.after.xml ===== 
+bpipe.Utils	[1]	INFO	|10:42:20 Checking output.after.xml against inputs [thefolder/output.csv] 
+bpipe.Utils	[1]	INFO	|10:42:20 Check thefolder/output.csv : 1417776135000 >  output.after.xml : 1417776135000 
+bpipe.Dependencies	[1]	INFO	|10:42:20 No missing / older files from inputs: [output.after.xml] are up to date 
+bpipe.PipelineContext	[1]	INFO	|10:42:20 Skipping command echo execute2; cp thefolder/ou... due to inferred outputs [output.after.xml] newer than inputs [thefolder/output.csv] 
+bpipe.PipelineStage	[1]	INFO	|10:42:20 Stage after returned null as default inputs for next stage 
+bpipe.PipelineStage	[1]	INFO	|10:42:20 Using inferred outputs [output.after.xml] as outputs because no explicit outputs set 
+bpipe.PipelineStage	[1]	INFO	|10:42:20 Inferring nextInputs from explicit output as [output.after.xml] 
+bpipe.PipelineStage	[1]	INFO	|10:42:20 Setting next inputs [output.after.xml] on stage 1655825856, context 685237857 in thread 1 
+bpipe.ReportStatisticsListener	[1]	INFO	|10:42:20 Annotating stage end time after 
+bpipe.PipelineStage	[1]	INFO	|10:42:20 Checking files: [output.after.xml] 
+bpipe.Dependencies	[1]	INFO	|10:42:20 Checking output (s) [output.after.xml] 
+bpipe.Dependencies	[1]	INFO	|10:42:20  Checking file output.after.xml 
+bpipe.PipelineContext	[1]	INFO	|10:42:20 Setting output [output.after.xml] on context 232544921 in thread 1 
+bpipe.PipelineStage	[1]	INFO	|10:42:20 Setting next inputs [output.after.xml] on stage 1961818587, context 232544921 in thread 1 
+bpipe.PipelineStage	[1]	INFO	|10:42:20 Checking files: [output.after.xml] 
+bpipe.Dependencies	[1]	INFO	|10:42:20 Checking output (s) [output.after.xml] 
+bpipe.Dependencies	[1]	INFO	|10:42:20  Checking file output.after.xml 
+bpipe.Pipeline	[1]	INFO	|10:42:20 Pipeline segment  in thread 1 has finished normally 
+bpipe.Pipeline	[1]	INFO	|10:42:20 Finished running segment for inputs test.txt 
+bpipe.Pipeline	[1]	INFO	|10:42:20 adding stage folder from pipeline bpipe.Pipeline@2a85e6b1 
+bpipe.Pipeline	[1]	INFO	|10:42:20 adding stage after from pipeline bpipe.Pipeline@2a85e6b1 
+bpipe.Dependencies	[18]	INFO	|10:42:20 Reading property file .bpipe/outputs/after.output.after.xml.properties 
+bpipe.Dependencies	[17]	INFO	|10:42:20 Reading property file .bpipe/outputs/folder.thefolder_output.csv.properties 
+bpipe.Utils	[1]	INFO	|10:42:20 Output folder scan (concurrency=5) executed in 0.007 seconds 
+bpipe.Dependencies	[1]	INFO	|10:42:20 External inputs: [[test.txt]] for outputs [thefolder/output.csv] 
+bpipe.Dependencies	[1]	INFO	|10:42:20 There are 1 output groups 
+bpipe.Dependencies	[1]	INFO	|10:42:20 Subtracting 1 remaining outputs from 2 total outputs 
+bpipe.Dependencies	[1]	INFO	|10:42:20 External inputs: [[thefolder/output.csv]] for outputs [output.after.xml] 
+bpipe.Dependencies	[1]	INFO	|10:42:20 New entry for output.after.xml 
+bpipe.Dependencies	[1]	INFO	|10:42:20 Maxtimestamp for output.after.xml = 1417776135000 
+bpipe.Dependencies	[1]	INFO	|10:42:20 There are 1 output groups 
+bpipe.Dependencies	[1]	INFO	|10:42:20 Subtracting 1 remaining outputs from 1 total outputs 
+bpipe.Dependencies	[1]	INFO	|10:42:20 There are 0 remaining outputs 
+bpipe.Dependencies	[1]	INFO	|10:42:20 -- output.after.xml / entry 436478131 -- 
+bpipe.Dependencies	[1]	INFO	|10:42:20 Input thefolder/output.csv? true 
+bpipe.Dependencies	[1]	INFO	|10:42:20 output.after.xml is older than inputs [output.csv / 1417776135000 / 1417776135000 vs 1417776135000] 
+bpipe.Dependencies	[1]	INFO	|10:42:20 ====Finished Output Graph===== 
+bpipe.Dependencies	[1]	INFO	|10:42:20 There are 0 remaining outputs 
+bpipe.Dependencies	[1]	INFO	|10:42:20  thefolder/output.csv / entry 83809565 - 
+bpipe.Dependencies	[1]	INFO	|10:42:20 thefolder/output.csv is newer than input files 
+bpipe.Dependencies	[1]	INFO	|10:42:20 ====Finished Output Graph===== 
+bpipe.ReportGenerator	[1]	INFO	|10:42:20 Searching for template in /lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/src/main/html/bpipe 
+bpipe.ReportGenerator	[1]	INFO	|10:42:20 Generating report to /lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/folderasoutput/doc/index.html 
+bpipe.PipelineContext	[1]	INFO	|10:42:20 Using previously set output: [thefolder/output.csv] 
+bpipe.PipelineContext	[1]	INFO	|10:42:20 Using previously set output: [thefolder/output.csv] 
+bpipe.PipelineContext	[1]	INFO	|10:42:20 Using previously set output: [thefolder/output.csv] 
+bpipe.PipelineContext	[1]	INFO	|10:42:20 Using previously set output: [output.after.xml] 
+bpipe.PipelineContext	[1]	INFO	|10:42:20 Using previously set output: [output.after.xml] 
+bpipe.PipelineContext	[1]	INFO	|10:42:20 Using previously set output: [output.after.xml] 
+bpipe.Dependencies	[19]	INFO	|10:42:20 Reading property file .bpipe/outputs/folder.thefolder_output.csv.properties 
+bpipe.Dependencies	[20]	INFO	|10:42:20 Reading property file .bpipe/outputs/after.output.after.xml.properties 
+bpipe.Utils	[1]	INFO	|10:42:20 Output folder scan (concurrency=5) executed in 0.007 seconds 
+bpipe.Dependencies	[1]	INFO	|10:42:20 External inputs: [[test.txt]] for outputs [thefolder/output.csv] 
+bpipe.Dependencies	[1]	INFO	|10:42:20 There are 1 output groups 
+bpipe.Dependencies	[1]	INFO	|10:42:20 Subtracting 1 remaining outputs from 2 total outputs 
+bpipe.Dependencies	[1]	INFO	|10:42:20 External inputs: [[thefolder/output.csv]] for outputs [output.after.xml] 
+bpipe.Dependencies	[1]	INFO	|10:42:20 New entry for output.after.xml 
+bpipe.Dependencies	[1]	INFO	|10:42:20 Maxtimestamp for output.after.xml = 1417776135000 
+bpipe.Dependencies	[1]	INFO	|10:42:20 There are 1 output groups 
+bpipe.Dependencies	[1]	INFO	|10:42:20 Subtracting 1 remaining outputs from 1 total outputs 
+bpipe.Dependencies	[1]	INFO	|10:42:20 There are 0 remaining outputs 
+bpipe.Dependencies	[1]	INFO	|10:42:20 -- output.after.xml / entry 925175531 -- 
+bpipe.Dependencies	[1]	INFO	|10:42:20 Input thefolder/output.csv? true 
+bpipe.Dependencies	[1]	INFO	|10:42:20 output.after.xml is older than inputs [output.csv / 1417776135000 / 1417776135000 vs 1417776135000] 
+bpipe.Dependencies	[1]	INFO	|10:42:20 ====Finished Output Graph===== 
+bpipe.Dependencies	[1]	INFO	|10:42:20 There are 0 remaining outputs 
+bpipe.Dependencies	[1]	INFO	|10:42:20  thefolder/output.csv / entry 1643545237  
+bpipe.Dependencies	[1]	INFO	|10:42:20 thefolder/output.csv is newer than input files 
+bpipe.Dependencies	[1]	INFO	|10:42:20 ====Finished Output Graph===== 
+bpipe.Pipeline	[1]	INFO	|10:42:20 Output is output.after.xml (pre-existing) 

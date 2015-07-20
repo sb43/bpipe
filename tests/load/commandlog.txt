@@ -1,0 +1,18 @@
+
+####################################################################################################
+# Starting pipeline at Wed Nov 26 10:29:21 GMT 2014
+# Input files:  null
+# Output Log:  .bpipe/logs/23357.log
+# Stage child_stage
+echo child stage
+# ################ Finished at Wed Nov 26 10:29:22 GMT 2014 Duration = 0.383 seconds #################
+
+
+####################################################################################################
+# Starting pipeline at Fri Dec 05 10:41:36 GMT 2014
+# Input files:  null
+# Output Log:  .bpipe/logs/25750.log
+# Stage child_stage
+echo child stage
+# ################ Finished at Fri Dec 05 10:41:36 GMT 2014 Duration = 0.379 seconds #################
+

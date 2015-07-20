@@ -1,0 +1,9 @@
+
+####################################################################################################
+# Starting pipeline at Fri Dec 05 10:35:30 GMT 2014
+# Input files:  [test.groovy, test.bam]
+# Output Log:  .bpipe/logs/15958.log
+# Stage align
+cat test.bam test.bam > test.align.bam
+# ################ Finished at Fri Dec 05 10:35:31 GMT 2014 Duration = 0.612 seconds #################
+

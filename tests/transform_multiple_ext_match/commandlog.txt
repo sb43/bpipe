@@ -1,0 +1,26 @@
+
+####################################################################################################
+# Starting pipeline at Wed Nov 26 10:34:21 GMT 2014
+# Input files:  test.txt
+# Output Log:  .bpipe/logs/28576.log
+# Stage hello
+cp test.txt hello.txt
+# Stage there
+cp hello.txt hello.there.txt; echo there >>  hello.there.txt
+# Stage world
+cp hello.txt fubar.csv
+# ################ Finished at Wed Nov 26 10:34:22 GMT 2014 Duration = 1.140 seconds #################
+
+
+####################################################################################################
+# Starting pipeline at Fri Dec 05 10:46:29 GMT 2014
+# Input files:  test.txt
+# Output Log:  .bpipe/logs/31059.log
+# Stage hello
+cp test.txt hello.txt
+# Stage there
+cp hello.txt hello.there.txt; echo there >>  hello.there.txt
+# Stage world
+cp hello.txt fubar.csv
+# ################ Finished at Fri Dec 05 10:46:30 GMT 2014 Duration = 1.085 seconds #################
+

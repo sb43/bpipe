@@ -1,0 +1,10 @@
+[----]	====================================================================================================
+[----]	|                              Starting Pipeline at 2014-12-05 10:43                               |
+[----]	====================================================================================================
+[]	
+[]	=========================================== Stage hello ============================================
+
+======================================== Pipeline Finished =========================================
+MSG: Generated report /lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/check/doc/index.html
+[]	10:43:01 MSG:  Skipping command false because outputs [.bpipe/checks/all.hello.properties] already exist (no inputs referenced)
+[]	10:43:01 MSG:  Finished at Fri Dec 05 10:43:01 GMT 2014

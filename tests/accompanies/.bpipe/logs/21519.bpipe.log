@@ -1,0 +1,311 @@
+bpipe.Runner	[1]	INFO	|10:38:32 Starting 
+bpipe.Runner	[1]	INFO	|10:38:32 OS: Linux (2.6.32-44-server) Java: 1.7.0_25 Vendor: Oracle Corporation 
+bpipe.Runner	[1]	INFO	|10:38:32 Initializing plugins ... 
+bpipe.Config	[1]	INFO	|10:38:32 No plugins directory found: /lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/accompanies/.bpipe/plugins 
+bpipe.Runner	[1]	INFO	|10:38:32 Reading user config ...  
+bpipe.Config	[1]	INFO	|10:38:32 No configuration file found in same dir as pipeline file 
+bpipe.Config	[1]	INFO	|10:38:32 No local configuration file found 
+bpipe.Utils	[10]	INFO	|10:38:33 Read config from /nfs/users/nfs_c/cgppipe/canpipe/software/bpipe_git/tests/accompanies/../../bin/../src/main/config/bpipe.config executed in 0.336 seconds 
+bpipe.Utils	[1]	INFO	|10:38:33 Read user config executed in 0.568 seconds 
+bpipe.Runner	[1]	INFO	|10:38:33 Loading tool database ...  
+bpipe.ToolDatabase	[11]	INFO	|10:38:33 Loading tool database from user configuration 
+bpipe.NotificationManager	[14]	INFO	|10:38:33 Configuring notifications 
+bpipe.Concurrency	[13]	INFO	|10:38:33 Creating thread pool with 32 threads to execute parallel pipelines 
+bpipe.Tool	[11]	INFO	|10:38:33 Configured meta data about tool samtools 
+bpipe.NotificationManager	[14]	INFO	|10:38:33 Trying class name file for notification channel file 
+bpipe.Tool	[11]	INFO	|10:38:33 Configured meta data about tool bwa 
+bpipe.Tool	[11]	INFO	|10:38:33 Configured meta data about tool bowtie 
+bpipe.Tool	[11]	INFO	|10:38:33 Configured meta data about tool fastqc 
+bpipe.Tool	[11]	INFO	|10:38:33 Configured meta data about tool coverageBed 
+bpipe.Tool	[11]	INFO	|10:38:33 Configured meta data about tool fastx_clipper 
+bpipe.Tool	[11]	INFO	|10:38:33 Configured meta data about tool convert2annovar.pl 
+bpipe.Tool	[11]	INFO	|10:38:33 Configured meta data about tool summarize_annovar.pl 
+bpipe.Tool	[11]	INFO	|10:38:33 Configured meta data about tool bowtie2 
+bpipe.Tool	[11]	INFO	|10:38:33 Configured meta data about tool GenomeAnalysisTK 
+bpipe.Tool	[11]	INFO	|10:38:33 Configured meta data about tool MarkDuplicates 
+bpipe.Tool	[11]	INFO	|10:38:33 Configured meta data about tool signalp 
+bpipe.Runner	[1]	INFO	|10:38:33 No CLI parameters specified 
+bpipe.Tool	[11]	INFO	|10:38:33 Configured meta data about tool variant_effect_predictor.pl 
+bpipe.Tool	[11]	INFO	|10:38:33 Configured meta data about tool igvtools 
+bpipe.Tool	[11]	INFO	|10:38:33 Configured meta data about tool ls 
+bpipe.NotificationManager	[14]	INFO	|10:38:33 Unable to create notification channel using class file: java.lang.ClassNotFoundException: file 
+bpipe.NotificationManager	[14]	INFO	|10:38:33 Trying class name bpipe.FILENotificationChannel for notification channel file 
+bpipe.NotificationManager	[14]	INFO	|10:38:33 Unable to create notification channel using class bpipe.FILENotificationChannel: java.lang.ClassNotFoundException: bpipe.FILENotificationChannel 
+bpipe.NotificationManager	[14]	INFO	|10:38:33 Trying class name bpipe.file for notification channel file 
+bpipe.NotificationManager	[14]	INFO	|10:38:33 Unable to create notification channel using class bpipe.file: java.lang.ClassNotFoundException: bpipe.file 
+bpipe.NotificationManager	[14]	INFO	|10:38:33 Trying class name bpipe.FileNotificationChannel for notification channel file 
+bpipe.NotificationManager	[14]	INFO	|10:38:33 Successfully created notification channel using class bpipe.FileNotificationChannel 
+bpipe.Runner	[1]	INFO	|10:38:33 Parsing script ...  
+bpipe.Runner	[1]	INFO	|10:38:33 Run ...  
+bpipe.Pipeline	[1]	INFO	|10:38:33 Running with input [test.fastq] 
+bpipe.PipelineCategory	[1]	INFO	|10:38:33 Found closure variable align 
+bpipe.PipelineCategory	[1]	INFO	|10:38:33 Found closure variable index 
+bpipe.PipelineCategory	[1]	INFO	|10:38:33 Found closure variable filter_bam 
+bpipe.Pipeline	[1]	WARNING	|10:38:33 Pipeline folder /nfs/users/nfs_c/cgppipe/bpipes could not be found 
+bpipe.Pipeline	[1]	INFO	|10:38:33 Loaded external reference: args 
+bpipe.Pipeline	[1]	INFO	|10:38:33 External reference args is overridden by local reference 
+bpipe.Pipeline	[1]	INFO	|10:38:33 Loaded external reference: align 
+bpipe.Pipeline	[1]	INFO	|10:38:33 External reference align is overridden by local reference 
+bpipe.Pipeline	[1]	INFO	|10:38:33 Loaded external reference: index 
+bpipe.Pipeline	[1]	INFO	|10:38:33 External reference index is overridden by local reference 
+bpipe.Pipeline	[1]	INFO	|10:38:33 Loaded external reference: filter_bam 
+bpipe.Pipeline	[1]	INFO	|10:38:33 External reference filter_bam is overridden by local reference 
+bpipe.Pipeline	[1]	INFO	|10:38:33 Running segment with inputs test.fastq 
+bpipe.Dependencies	[1]	INFO	|10:38:33 Checking input (s) test.fastq 
+bpipe.Utils	[1]	INFO	|10:38:33 Output folder scan (concurrency=5) executed in 0.006 seconds 
+bpipe.Dependencies	[1]	INFO	|10:38:33  Checking file test.fastq 
+bpipe.PipelineDelegate	[1]	INFO	|10:38:33 Setting or creating a delegate for context 271784628 body 186525627/java.lang.Class in thread 1 
+bpipe.PipelineDelegate	[1]	INFO	|10:38:33 Created new delegate bpipe.PipelineDelegate@7fa1ccbd overriding type java.lang.Class in thread 1 
+bpipe.Dependencies	[1]	INFO	|10:38:33 Checking input (s) test.fastq 
+bpipe.Dependencies	[1]	INFO	|10:38:33  Checking file test.fastq 
+bpipe.PipelineDelegate	[1]	INFO	|10:38:33 Setting or creating a delegate for context 2056242457 body 1960127275/java.lang.Class in thread 1 
+bpipe.PipelineDelegate	[1]	INFO	|10:38:33 Created new delegate bpipe.PipelineDelegate@15b7025c overriding type java.lang.Class in thread 1 
+bpipe.Dependencies	[1]	INFO	|10:38:34 Checking input (s) test.fastq 
+bpipe.Dependencies	[1]	INFO	|10:38:34  Checking file test.fastq 
+bpipe.ReportStatisticsListener	[1]	INFO	|10:38:34 Annotating stage start time align 
+bpipe.PipelineStage	[1]	INFO	|10:38:34 Stage align : INPUT=test.fastq OUTPUT=test.fastq.align 
+bpipe.PipelineDelegate	[1]	INFO	|10:38:34 Setting or creating a delegate for context 1397974846 body 542941222/script14177759135681672933518 in thread 1 
+bpipe.PipelineDelegate	[1]	INFO	|10:38:34 Created new delegate bpipe.PipelineDelegate@89f422f overriding type script14177759135681672933518 in thread 1 
+bpipe.PipelineInput	[1]	INFO	|10:38:34 Searching for missing Property: fastq 
+bpipe.PipelineInput	[1]	INFO	|10:38:34 Resolving inputs matching pattern ^.*\.fastq$ 
+bpipe.PipelineInput	[1]	INFO	|10:38:34 Checking outputs [test.fastq] 
+bpipe.PipelineInput	[1]	INFO	|10:38:34 Found files with exts [fastq$] : [[test.fastq]] 
+bpipe.PipelineInput	[1]	INFO	|10:38:34 Adding resolved input test.fastq 
+bpipe.PipelineContext	[1]	INFO	|10:38:34 Using non-default output due to input property reference: test.fastq from resolved inputs [test.fastq] 
+bpipe.PipelineContext	[1]	INFO	|10:38:34 Tracking outputs referenced=[[]] inferred=[[test.align.bam]] for command cp test.fastq test.align.bam 
+bpipe.ReportStatisticsListener	[1]	INFO	|10:38:34 Intercepted command check for command cp test.fastq test.align.bam 
+bpipe.PipelineContext	[1]	INFO	|10:38:34 Checking actual resolved inputs [test.fastq] 
+bpipe.Utils	[1]	INFO	|10:38:34 ===== Check test.align.bam ===== 
+bpipe.Utils	[1]	INFO	|10:38:34 file doesn't exist: test.align.bam 
+bpipe.Dependencies	[1]	INFO	|10:38:34 Found these missing / older files: [test.align.bam] 
+bpipe.Dependencies	[1]	INFO	|10:38:34 Some files are outdated : [test.align.bam] 
+bpipe.Command	[1]	INFO	|10:38:34 Checking for configuration for command cp 
+bpipe.Command	[1]	INFO	|10:38:34 Default command properties: [executor:local] 
+bpipe.CommandManager	[1]	INFO	|10:38:34 Using config [executor:local] for command 
+bpipe.CommandManager	[1]	INFO	|10:38:34 Created bpipe command id 1 
+bpipe.Concurrency	[1]	INFO	|10:38:34 Thread main requesting for 1 concurrency permit(s) type threads with 32 available 
+bpipe.Concurrency	[1]	INFO	|10:38:34 Thread main acquired resource threads in amount 1 
+bpipe.Command	[15]	INFO	|10:38:34 Command 1 changing state from null to RUNNING 
+bpipe.executor.ThrottledDelegatingCommandExecutor	[1]	INFO	|10:38:34 Waiting for command to complete before releasing 1 resources 
+bpipe.Command	[1]	INFO	|10:38:34 Command 1 changing state from RUNNING to COMPLETE 
+bpipe.executor.ThrottledDelegatingCommandExecutor	[1]	INFO	|10:38:34 Releasing 1 resources 
+bpipe.Concurrency	[1]	INFO	|10:38:34 Thread main releasing 1 threads 
+bpipe.executor.ThrottledDelegatingCommandExecutor	[1]	INFO	|10:38:34 Released 1 resources 
+bpipe.PipelineStage	[1]	INFO	|10:38:34 Stage align returned null as default inputs for next stage 
+bpipe.PipelineStage	[1]	INFO	|10:38:34 Using inferred outputs [test.align.bam] as outputs because no explicit outputs set 
+bpipe.PipelineStage	[1]	INFO	|10:38:34 Inferring nextInputs from explicit output as [test.align.bam] 
+bpipe.PipelineStage	[1]	INFO	|10:38:34 Setting next inputs [test.align.bam] on stage 139259914, context 1397974846 in thread 1 
+bpipe.Dependencies	[1]	INFO	|10:38:34 Context 1397974846 for stage align has resolved inputs [test.fastq] 
+bpipe.Dependencies	[1]	INFO	|10:38:34 Saving output file details to file .bpipe/outputs/align.test.align.bam.properties for command cp test.fastq test.a... 
+bpipe.ReportStatisticsListener	[1]	INFO	|10:38:34 Annotating stage end time align 
+bpipe.PipelineStage	[1]	INFO	|10:38:34 Checking files: [test.align.bam] 
+bpipe.Dependencies	[1]	INFO	|10:38:34 Checking output (s) [test.align.bam] 
+bpipe.Dependencies	[1]	INFO	|10:38:34  Checking file test.align.bam 
+bpipe.Dependencies	[1]	INFO	|10:38:34 Checking input (s) [test.align.bam] 
+bpipe.Dependencies	[1]	INFO	|10:38:34  Checking file test.align.bam 
+bpipe.PipelineCategory	[1]	INFO	|10:38:34 Next inputs from stage = [test.align.bam] 
+bpipe.PipelineCategory	[1]	INFO	|10:38:34 Checking inputs for next stage:  [test.align.bam] 
+bpipe.Dependencies	[1]	INFO	|10:38:34 Checking input (s) [test.align.bam] 
+bpipe.Dependencies	[1]	INFO	|10:38:34  Checking file test.align.bam 
+bpipe.Dependencies	[1]	INFO	|10:38:34 Checking input (s) [test.align.bam] 
+bpipe.Dependencies	[1]	INFO	|10:38:34  Checking file test.align.bam 
+bpipe.ReportStatisticsListener	[1]	INFO	|10:38:34 Annotating stage start time index 
+bpipe.PipelineStage	[1]	INFO	|10:38:34 Stage index : INPUT=[test.align.bam] OUTPUT=test.align.bam.index 
+bpipe.PipelineDelegate	[1]	INFO	|10:38:34 Setting or creating a delegate for context 204761089 body 1029972034/script14177759135681672933518 in thread 1 
+bpipe.PipelineDelegate	[1]	INFO	|10:38:34 Created new delegate bpipe.PipelineDelegate@44981fe9 overriding type script14177759135681672933518 in thread 1 
+bpipe.TransformOperation	[1]	INFO	|10:38:34 Transform using [bai] produces outputs [test.align.bai] 
+bpipe.PipelineContext	[1]	INFO	|10:38:34 Input test.align.bam matches accompanier pattern ^.*bam$ 
+bpipe.PipelineContext	[1]	INFO	|10:38:34 Producing test.align.bai from bpipe.PipelineContext@c346801 
+bpipe.PipelineDelegate	[1]	INFO	|10:38:34 Setting or creating a delegate for context 204761089 body 1286226195/script14177759135681672933518$_run_closure2_closure5 in thread 1 
+bpipe.PipelineDelegate	[1]	INFO	|10:38:34 Created new delegate bpipe.PipelineDelegate@5efd28f7 overriding type script14177759135681672933518$_run_closure2_closure5 in thread 1 
+bpipe.PipelineContext	[1]	INFO	|10:38:34 Probing command using inputs [test.align.bam] 
+bpipe.PipelineInput	[1]	INFO	|10:38:34 Searching for missing Property: bam 
+bpipe.PipelineInput	[1]	INFO	|10:38:34 Resolving inputs matching pattern ^.*\.bam$ 
+bpipe.PipelineInput	[1]	INFO	|10:38:34 Checking outputs [test.align.bam] 
+bpipe.PipelineInput	[1]	INFO	|10:38:34 Found files with exts [bam$] : [[test.align.bam]] 
+bpipe.PipelineInput	[1]	INFO	|10:38:34 Adding resolved input test.align.bam 
+bpipe.PipelineContext	[1]	INFO	|10:38:34 Using previously set output: [test.align.bai] 
+bpipe.PipelineOutput	[1]	INFO	|10:38:34 Selected output test.align.bai with extension bai from expected outputs [test.align.bai] 
+bpipe.PipelineContext	[1]	INFO	|10:38:34 Tracking outputs referenced=[[]] inferred=[[test.align.bai]] for command cp test.align.bam test.align.bai 
+bpipe.ReportStatisticsListener	[1]	INFO	|10:38:34 Intercepted command check for command cp test.align.bam test.align.bai 
+bpipe.PipelineContext	[1]	INFO	|10:38:34 Checking actual resolved inputs [test.align.bam] 
+bpipe.PipelineContext	[1]	INFO	|10:38:34 Finished probe 
+bpipe.Utils	[1]	INFO	|10:38:34 ===== Check test.align.bai ===== 
+bpipe.Utils	[1]	INFO	|10:38:34 file doesn't exist: test.align.bai 
+bpipe.Utils	[1]	INFO	|10:38:34 ===== Check test.align.bai ===== 
+bpipe.Utils	[1]	INFO	|10:38:34 file doesn't exist: test.align.bai 
+bpipe.Dependencies	[1]	INFO	|10:38:34 Found these missing / older files: [test.align.bai, test.align.bai] 
+bpipe.Dependencies	[1]	INFO	|10:38:34 Some files are outdated : [test.align.bai, test.align.bai] 
+bpipe.PipelineContext	[1]	INFO	|10:38:34 Not up to date because input inferred by probe of body newer than outputs 
+bpipe.PipelineDelegate	[1]	INFO	|10:38:34 Setting or creating a delegate for context 204761089 body 1286226195/bpipe.PipelineDelegate in thread 1 
+bpipe.PipelineDelegate	[1]	INFO	|10:38:34 Existing delegate bpipe.PipelineDelegate@5efd28f7 has type bpipe.PipelineDelegate in thread 1. Setting new context 204761089 
+bpipe.PipelineContext	[1]	INFO	|10:38:34 Producing from inputs [test.align.bam] 
+bpipe.PipelineInput	[1]	INFO	|10:38:34 Searching for missing Property: bam 
+bpipe.PipelineInput	[1]	INFO	|10:38:34 Resolving inputs matching pattern ^.*\.bam$ 
+bpipe.PipelineInput	[1]	INFO	|10:38:34 Checking outputs [test.align.bam] 
+bpipe.PipelineInput	[1]	INFO	|10:38:34 Found files with exts [bam$] : [[test.align.bam]] 
+bpipe.PipelineInput	[1]	INFO	|10:38:34 Adding resolved input test.align.bam 
+bpipe.PipelineContext	[1]	INFO	|10:38:34 Using previously set output: [test.align.bai] 
+bpipe.PipelineOutput	[1]	INFO	|10:38:34 Selected output test.align.bai with extension bai from expected outputs [test.align.bai] 
+bpipe.PipelineContext	[1]	INFO	|10:38:34 Tracking outputs referenced=[[]] inferred=[[test.align.bai]] for command cp test.align.bam test.align.bai 
+bpipe.ReportStatisticsListener	[1]	INFO	|10:38:34 Intercepted command check for command cp test.align.bam test.align.bai 
+bpipe.PipelineContext	[1]	INFO	|10:38:34 Checking actual resolved inputs [test.align.bam] 
+bpipe.Utils	[1]	INFO	|10:38:34 ===== Check test.align.bai ===== 
+bpipe.Utils	[1]	INFO	|10:38:34 file doesn't exist: test.align.bai 
+bpipe.Dependencies	[1]	INFO	|10:38:34 Found these missing / older files: [test.align.bai] 
+bpipe.Dependencies	[1]	INFO	|10:38:34 Some files are outdated : [test.align.bai] 
+bpipe.Command	[1]	INFO	|10:38:34 Checking for configuration for command cp 
+bpipe.Command	[1]	INFO	|10:38:34 Default command properties: [executor:local] 
+bpipe.CommandManager	[1]	INFO	|10:38:34 Using config [executor:local] for command 
+bpipe.CommandManager	[1]	INFO	|10:38:34 Created bpipe command id 2 
+bpipe.Concurrency	[1]	INFO	|10:38:34 Thread main requesting for 1 concurrency permit(s) type threads with 32 available 
+bpipe.Concurrency	[1]	INFO	|10:38:34 Thread main acquired resource threads in amount 1 
+bpipe.Command	[19]	INFO	|10:38:34 Command 2 changing state from null to RUNNING 
+bpipe.executor.ThrottledDelegatingCommandExecutor	[1]	INFO	|10:38:34 Waiting for command to complete before releasing 1 resources 
+bpipe.Command	[1]	INFO	|10:38:34 Command 2 changing state from RUNNING to COMPLETE 
+bpipe.executor.ThrottledDelegatingCommandExecutor	[1]	INFO	|10:38:34 Releasing 1 resources 
+bpipe.Concurrency	[1]	INFO	|10:38:34 Thread main releasing 1 threads 
+bpipe.executor.ThrottledDelegatingCommandExecutor	[1]	INFO	|10:38:34 Released 1 resources 
+bpipe.PipelineContext	[1]	INFO	|10:38:34 Adding outputs [test.align.bai] as a result of produce 
+bpipe.PipelineContext	[1]	INFO	|10:38:34 Found accompanying outputs : [test.align.bai] 
+bpipe.PipelineContext	[1]	INFO	|10:38:34 Inputs [test.align.bam] are accompanied by [test.align.bam] (only first will be used) 
+bpipe.PipelineStage	[1]	INFO	|10:38:34 Stage index returned [test.align.bam] as default inputs for next stage 
+bpipe.PipelineStage	[1]	INFO	|10:38:34 Setting next inputs [test.align.bam] on stage 1718310938, context 204761089 in thread 1 
+bpipe.Dependencies	[1]	INFO	|10:38:34 Context 204761089 for stage index has resolved inputs [test.align.bam] 
+bpipe.Dependencies	[1]	INFO	|10:38:34 Saving output file details to file .bpipe/outputs/index.test.align.bai.properties for command cp test.align.bam te... 
+bpipe.ReportStatisticsListener	[1]	INFO	|10:38:34 Annotating stage end time index 
+bpipe.PipelineStage	[1]	INFO	|10:38:34 Checking files: [test.align.bai] 
+bpipe.Dependencies	[1]	INFO	|10:38:34 Checking output (s) [test.align.bai] 
+bpipe.Dependencies	[1]	INFO	|10:38:34  Checking file test.align.bai 
+bpipe.PipelineContext	[1]	INFO	|10:38:34 Setting output [test.align.bam] on context 2056242457 in thread 1 
+bpipe.PipelineStage	[1]	INFO	|10:38:34 Setting next inputs [test.align.bam] on stage 1075124819, context 2056242457 in thread 1 
+bpipe.PipelineStage	[1]	INFO	|10:38:34 Checking files: [test.align.bam] 
+bpipe.Dependencies	[1]	INFO	|10:38:34 Checking output (s) [test.align.bam] 
+bpipe.Dependencies	[1]	INFO	|10:38:34  Checking file test.align.bam 
+bpipe.Dependencies	[1]	INFO	|10:38:34 Checking input (s) [test.align.bam] 
+bpipe.Dependencies	[1]	INFO	|10:38:34  Checking file test.align.bam 
+bpipe.PipelineCategory	[1]	INFO	|10:38:34 Next inputs from stage = [test.align.bam] 
+bpipe.PipelineCategory	[1]	INFO	|10:38:34 Checking inputs for next stage:  [test.align.bam] 
+bpipe.Dependencies	[1]	INFO	|10:38:34 Checking input (s) [test.align.bam] 
+bpipe.Dependencies	[1]	INFO	|10:38:34  Checking file test.align.bam 
+bpipe.Dependencies	[1]	INFO	|10:38:34 Checking input (s) [test.align.bam] 
+bpipe.Dependencies	[1]	INFO	|10:38:34  Checking file test.align.bam 
+bpipe.ReportStatisticsListener	[1]	INFO	|10:38:34 Annotating stage start time filter_bam 
+bpipe.PipelineStage	[1]	INFO	|10:38:34 Stage filter_bam : INPUT=[test.align.bam] OUTPUT=test.align.bam.filter_bam 
+bpipe.PipelineDelegate	[1]	INFO	|10:38:34 Setting or creating a delegate for context 799804962 body 555102051/script14177759135681672933518 in thread 1 
+bpipe.PipelineDelegate	[1]	INFO	|10:38:34 Created new delegate bpipe.PipelineDelegate@aa45c8 overriding type script14177759135681672933518 in thread 1 
+bpipe.PipelineInput	[1]	INFO	|10:38:34 Searching for missing Property: bam 
+bpipe.PipelineInput	[1]	INFO	|10:38:34 Resolving inputs matching pattern ^.*\.bam$ 
+bpipe.PipelineInput	[1]	INFO	|10:38:34 Checking outputs [test.align.bam] 
+bpipe.PipelineInput	[1]	INFO	|10:38:34 Found files with exts [bam$] : [[test.align.bam]] 
+bpipe.PipelineInput	[1]	INFO	|10:38:34 Adding resolved input test.align.bam 
+bpipe.PipelineContext	[1]	INFO	|10:38:34 Using non-default output due to input property reference: test.align.bam from resolved inputs [test.align.bam] 
+bpipe.PipelineOutput	[1]	INFO	|10:38:34 Replacing bam\.filter_bam with filter_bam.bam 
+bpipe.PipelineContext	[1]	INFO	|10:38:34 Tracking outputs referenced=[[]] inferred=[[test.align.filter_bam.bam]] for command cp test.align.bam test.align.filter_bam.bam 
+bpipe.ReportStatisticsListener	[1]	INFO	|10:38:34 Intercepted command check for command cp test.align.bam test.align.filter_bam.bam 
+bpipe.PipelineContext	[1]	INFO	|10:38:34 Checking actual resolved inputs [test.align.bam] 
+bpipe.Utils	[1]	INFO	|10:38:34 ===== Check test.align.filter_bam.bam ===== 
+bpipe.Utils	[1]	INFO	|10:38:34 file doesn't exist: test.align.filter_bam.bam 
+bpipe.Dependencies	[1]	INFO	|10:38:34 Found these missing / older files: [test.align.filter_bam.bam] 
+bpipe.Dependencies	[1]	INFO	|10:38:34 Some files are outdated : [test.align.filter_bam.bam] 
+bpipe.Command	[1]	INFO	|10:38:34 Checking for configuration for command cp 
+bpipe.Command	[1]	INFO	|10:38:34 Default command properties: [executor:local] 
+bpipe.CommandManager	[1]	INFO	|10:38:34 Using config [executor:local] for command 
+bpipe.CommandManager	[1]	INFO	|10:38:34 Created bpipe command id 4 
+bpipe.Concurrency	[1]	INFO	|10:38:34 Thread main requesting for 1 concurrency permit(s) type threads with 32 available 
+bpipe.Concurrency	[1]	INFO	|10:38:34 Thread main acquired resource threads in amount 1 
+bpipe.Command	[22]	INFO	|10:38:34 Command 4 changing state from null to RUNNING 
+bpipe.executor.ThrottledDelegatingCommandExecutor	[1]	INFO	|10:38:34 Waiting for command to complete before releasing 1 resources 
+bpipe.Command	[1]	INFO	|10:38:34 Command 4 changing state from RUNNING to COMPLETE 
+bpipe.executor.ThrottledDelegatingCommandExecutor	[1]	INFO	|10:38:34 Releasing 1 resources 
+bpipe.Concurrency	[1]	INFO	|10:38:34 Thread main releasing 1 threads 
+bpipe.executor.ThrottledDelegatingCommandExecutor	[1]	INFO	|10:38:34 Released 1 resources 
+bpipe.PipelineStage	[1]	INFO	|10:38:34 Stage filter_bam returned null as default inputs for next stage 
+bpipe.PipelineStage	[1]	INFO	|10:38:34 Using inferred outputs [test.align.filter_bam.bam] as outputs because no explicit outputs set 
+bpipe.PipelineStage	[1]	INFO	|10:38:34 Inferring nextInputs from explicit output as [test.align.filter_bam.bam] 
+bpipe.PipelineStage	[1]	INFO	|10:38:34 Setting next inputs [test.align.filter_bam.bam] on stage 1340798262, context 799804962 in thread 1 
+bpipe.Dependencies	[1]	INFO	|10:38:34 Context 799804962 for stage filter_bam has resolved inputs [test.align.bam] 
+bpipe.Dependencies	[1]	INFO	|10:38:34 Saving output file details to file .bpipe/outputs/filter_bam.test.align.filter_bam.bam.properties for command cp test.align.bam te... 
+bpipe.ReportStatisticsListener	[1]	INFO	|10:38:34 Annotating stage end time filter_bam 
+bpipe.PipelineStage	[1]	INFO	|10:38:34 Checking files: [test.align.filter_bam.bam] 
+bpipe.Dependencies	[1]	INFO	|10:38:34 Checking output (s) [test.align.filter_bam.bam] 
+bpipe.Dependencies	[1]	INFO	|10:38:34  Checking file test.align.filter_bam.bam 
+bpipe.PipelineContext	[1]	INFO	|10:38:34 Setting output [test.align.filter_bam.bam] on context 271784628 in thread 1 
+bpipe.PipelineStage	[1]	INFO	|10:38:34 Setting next inputs [test.align.filter_bam.bam] on stage 2086909334, context 271784628 in thread 1 
+bpipe.PipelineStage	[1]	INFO	|10:38:34 Checking files: [test.align.filter_bam.bam] 
+bpipe.Dependencies	[1]	INFO	|10:38:34 Checking output (s) [test.align.filter_bam.bam] 
+bpipe.Dependencies	[1]	INFO	|10:38:34  Checking file test.align.filter_bam.bam 
+bpipe.Pipeline	[1]	INFO	|10:38:34 Pipeline segment  in thread 1 has finished normally 
+bpipe.Pipeline	[1]	INFO	|10:38:34 Finished running segment for inputs test.fastq 
+bpipe.Pipeline	[1]	INFO	|10:38:34 adding stage align from pipeline bpipe.Pipeline@481dcfa2 
+bpipe.Pipeline	[1]	INFO	|10:38:34 adding stage index from pipeline bpipe.Pipeline@481dcfa2 
+bpipe.Pipeline	[1]	INFO	|10:38:34 adding stage filter_bam from pipeline bpipe.Pipeline@481dcfa2 
+bpipe.Dependencies	[25]	INFO	|10:38:34 Reading property file .bpipe/outputs/index.test.align.bai.properties 
+bpipe.Dependencies	[27]	INFO	|10:38:34 Reading property file .bpipe/outputs/filter_bam.test.align.filter_bam.bam.properties 
+bpipe.Dependencies	[26]	INFO	|10:38:34 Reading property file .bpipe/outputs/align.test.align.bam.properties 
+bpipe.Utils	[1]	INFO	|10:38:34 Output folder scan (concurrency=5) executed in 0.023 seconds 
+bpipe.Dependencies	[1]	INFO	|10:38:34 External inputs: [[test.fastq]] for outputs [test.align.bam] 
+bpipe.Dependencies	[1]	INFO	|10:38:34 There are 1 output groups 
+bpipe.Dependencies	[1]	INFO	|10:38:34 Subtracting 1 remaining outputs from 3 total outputs 
+bpipe.Dependencies	[1]	INFO	|10:38:34 External inputs: [[test.align.bam], [test.align.bam]] for outputs [test.align.bai, test.align.filter_bam.bam] 
+bpipe.Dependencies	[1]	INFO	|10:38:34 New entry for test.align.bai 
+bpipe.Dependencies	[1]	INFO	|10:38:34 Maxtimestamp for test.align.bai = 1417775914000 
+bpipe.Dependencies	[1]	INFO	|10:38:34 New entry for test.align.filter_bam.bam 
+bpipe.Dependencies	[1]	INFO	|10:38:34 Maxtimestamp for test.align.filter_bam.bam = 1417775914000 
+bpipe.Dependencies	[1]	INFO	|10:38:34 There are 2 output groups 
+bpipe.Dependencies	[1]	INFO	|10:38:34 Subtracting 2 remaining outputs from 2 total outputs 
+bpipe.Dependencies	[1]	INFO	|10:38:34 There are 0 remaining outputs 
+bpipe.Dependencies	[1]	INFO	|10:38:34 There are 0 remaining outputs 
+bpipe.Dependencies	[1]	INFO	|10:38:34 --- test.align.bai / entry 652913216 --- 
+bpipe.Dependencies	[1]	INFO	|10:38:34 Input test.align.bam? true 
+bpipe.Dependencies	[1]	INFO	|10:38:34 test.align.bai is older than inputs [test.align.bam / 1417775914000 / 1417775914000 vs 1417775914000] 
+bpipe.Dependencies	[1]	INFO	|10:38:34  test.align.filter_bam.bam / entry 2044455168  
+bpipe.Dependencies	[1]	INFO	|10:38:34 Input test.align.bam? true 
+bpipe.Dependencies	[1]	INFO	|10:38:34 test.align.filter_bam.bam is older than inputs [test.align.bam / 1417775914000 / 1417775914000 vs 1417775914000] 
+bpipe.Dependencies	[1]	INFO	|10:38:34 ====Finished Output Graph===== 
+bpipe.Dependencies	[1]	INFO	|10:38:34 There are 0 remaining outputs 
+bpipe.Dependencies	[1]	INFO	|10:38:34 -- test.align.bam / entry 1419656576 --- 
+bpipe.Dependencies	[1]	INFO	|10:38:34 test.align.bam is newer than input files 
+bpipe.Dependencies	[1]	INFO	|10:38:34 ====Finished Output Graph===== 
+bpipe.ReportGenerator	[1]	INFO	|10:38:35 Searching for template in /lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/src/main/html/bpipe 
+bpipe.ReportGenerator	[1]	INFO	|10:38:35 Generating report to /lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/accompanies/doc/index.html 
+bpipe.PipelineContext	[1]	INFO	|10:38:35 Using previously set output: [test.align.bam] 
+bpipe.PipelineContext	[1]	INFO	|10:38:35 Using previously set output: [test.align.bam] 
+bpipe.PipelineContext	[1]	INFO	|10:38:35 Using previously set output: [test.align.bam] 
+bpipe.PipelineContext	[1]	INFO	|10:38:35 Using previously set output: [test.align.bai] 
+bpipe.PipelineContext	[1]	INFO	|10:38:35 Using previously set output: [test.align.bai] 
+bpipe.PipelineContext	[1]	INFO	|10:38:35 Using previously set output: [test.align.bai] 
+bpipe.PipelineContext	[1]	INFO	|10:38:35 Using previously set output: [test.align.filter_bam.bam] 
+bpipe.PipelineContext	[1]	INFO	|10:38:35 Using previously set output: [test.align.filter_bam.bam] 
+bpipe.PipelineContext	[1]	INFO	|10:38:35 Using previously set output: [test.align.filter_bam.bam] 
+bpipe.Dependencies	[28]	INFO	|10:38:35 Reading property file .bpipe/outputs/index.test.align.bai.properties 
+bpipe.Dependencies	[30]	INFO	|10:38:35 Reading property file .bpipe/outputs/filter_bam.test.align.filter_bam.bam.properties 
+bpipe.Dependencies	[29]	INFO	|10:38:35 Reading property file .bpipe/outputs/align.test.align.bam.properties 
+bpipe.Utils	[1]	INFO	|10:38:35 Output folder scan (concurrency=5) executed in 0.006 seconds 
+bpipe.Dependencies	[1]	INFO	|10:38:35 External inputs: [[test.fastq]] for outputs [test.align.bam] 
+bpipe.Dependencies	[1]	INFO	|10:38:35 There are 1 output groups 
+bpipe.Dependencies	[1]	INFO	|10:38:35 Subtracting 1 remaining outputs from 3 total outputs 
+bpipe.Dependencies	[1]	INFO	|10:38:35 External inputs: [[test.align.bam], [test.align.bam]] for outputs [test.align.bai, test.align.filter_bam.bam] 
+bpipe.Dependencies	[1]	INFO	|10:38:35 New entry for test.align.bai 
+bpipe.Dependencies	[1]	INFO	|10:38:35 Maxtimestamp for test.align.bai = 1417775914000 
+bpipe.Dependencies	[1]	INFO	|10:38:35 New entry for test.align.filter_bam.bam 
+bpipe.Dependencies	[1]	INFO	|10:38:35 Maxtimestamp for test.align.filter_bam.bam = 1417775914000 
+bpipe.Dependencies	[1]	INFO	|10:38:35 There are 2 output groups 
+bpipe.Dependencies	[1]	INFO	|10:38:35 Subtracting 2 remaining outputs from 2 total outputs 
+bpipe.Dependencies	[1]	INFO	|10:38:35 There are 0 remaining outputs 
+bpipe.Dependencies	[1]	INFO	|10:38:35 There are 0 remaining outputs 
+bpipe.Dependencies	[1]	INFO	|10:38:35 --- test.align.bai / entry 86823881 ---- 
+bpipe.Dependencies	[1]	INFO	|10:38:35 Input test.align.bam? true 
+bpipe.Dependencies	[1]	INFO	|10:38:35 test.align.bai is older than inputs [test.align.bam / 1417775914000 / 1417775914000 vs 1417775914000] 
+bpipe.Dependencies	[1]	INFO	|10:38:35  test.align.filter_bam.bam / entry 1239588171  
+bpipe.Dependencies	[1]	INFO	|10:38:35 Input test.align.bam? true 
+bpipe.Dependencies	[1]	INFO	|10:38:35 test.align.filter_bam.bam is older than inputs [test.align.bam / 1417775914000 / 1417775914000 vs 1417775914000] 
+bpipe.Dependencies	[1]	INFO	|10:38:35 ====Finished Output Graph===== 
+bpipe.Dependencies	[1]	INFO	|10:38:35 There are 0 remaining outputs 
+bpipe.Dependencies	[1]	INFO	|10:38:35 -- test.align.bam / entry 1019530450 --- 
+bpipe.Dependencies	[1]	INFO	|10:38:35 test.align.bam is newer than input files 
+bpipe.Dependencies	[1]	INFO	|10:38:35 ====Finished Output Graph===== 
+bpipe.Pipeline	[1]	INFO	|10:38:35 Outputs are: 
+		test.align.bai
+		test.align.filter_bam.bam 
+bpipe.Runner	[9]	INFO	|10:38:35 Deleting job file /nfs/users/nfs_c/cgppipe/.bpipedb/jobs/21519 

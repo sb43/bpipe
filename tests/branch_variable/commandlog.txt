@@ -1,0 +1,30 @@
+
+####################################################################################################
+# Starting pipeline at Wed Nov 26 10:35:35 GMT 2014
+# Input files:  [test.txt, test_1.xsl, test_2.xsl]
+# Output Log:  .bpipe/logs/30347.log
+# Stage hello
+cp test.txt test.hello.csv
+# Stage world
+echo bar | cat - test.hello.csv > test.hello.world.tsv
+# Stage there [all]
+echo bar | cat - test.hello.world.tsv > test.hello.world.there.xml
+# Stage greetings [2]
+# Stage greetings [1]
+# ################ Finished at Wed Nov 26 10:35:36 GMT 2014 Duration = 1.780 seconds #################
+
+
+####################################################################################################
+# Starting pipeline at Fri Dec 05 10:47:46 GMT 2014
+# Input files:  [test.txt, test_1.xsl, test_2.xsl]
+# Output Log:  .bpipe/logs/333.log
+# Stage hello
+cp test.txt test.hello.csv
+# Stage world
+echo bar | cat - test.hello.csv > test.hello.world.tsv
+# Stage there [all]
+echo bar | cat - test.hello.world.tsv > test.hello.world.there.xml
+# Stage greetings [1]
+# Stage greetings [2]
+# ################ Finished at Fri Dec 05 10:47:48 GMT 2014 Duration = 1.763 seconds #################
+

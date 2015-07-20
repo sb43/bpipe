@@ -1,0 +1,20 @@
+
+####################################################################################################
+# Starting pipeline at Wed Nov 26 10:27:21 GMT 2014
+# Input files:  null
+# Output Log:  .bpipe/logs/20811.log
+# Stage async_stuff
+sleep 5; echo foo > foo.txt
+sleep 7; echo bar > bar.txt; false
+# ################ Finished at Wed Nov 26 10:27:29 GMT 2014 Duration = 8.310 seconds #################
+
+
+####################################################################################################
+# Starting pipeline at Fri Dec 05 10:39:34 GMT 2014
+# Input files:  null
+# Output Log:  .bpipe/logs/23101.log
+# Stage async_stuff
+sleep 5; echo foo > foo.txt
+sleep 7; echo bar > bar.txt; false
+# ################ Finished at Fri Dec 05 10:39:42 GMT 2014 Duration = 8.315 seconds #################
+

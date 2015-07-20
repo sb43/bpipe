@@ -1,0 +1,27 @@
+
+####################################################################################################
+# Starting pipeline at Wed Nov 26 10:26:26 GMT 2014
+# Input files:  s_1.txt
+# Output Log:  .bpipe/logs/19419.log
+# Stage hello [1]
+# Stage hello [1]
+# ################ Finished at Wed Nov 26 10:26:27 GMT 2014 Duration = 0.654 seconds #################
+
+
+####################################################################################################
+# Starting pipeline at Fri Dec 05 10:25:55 GMT 2014
+# Input files:  s_1.txt
+# Output Log:  .bpipe/logs/3143.log
+# Stage hello [1]
+# Stage hello [1]
+# ################ Finished at Fri Dec 05 10:25:56 GMT 2014 Duration = 0.699 seconds #################
+
+
+####################################################################################################
+# Starting pipeline at Fri Dec 05 10:38:39 GMT 2014
+# Input files:  s_1.txt
+# Output Log:  .bpipe/logs/21674.log
+# Stage hello [1]
+# Stage hello [1]
+# ################ Finished at Fri Dec 05 10:38:40 GMT 2014 Duration = 0.663 seconds #################
+

@@ -1,0 +1,1 @@
+/nfs/users/nfs_c/cgppipe/canpipe/software/bpipe_git/tests/split_regex_pattern/../../bin/bpipe run -r test.groovy test_bar.txt test_foo.txt

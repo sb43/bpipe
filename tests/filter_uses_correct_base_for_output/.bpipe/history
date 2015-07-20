@@ -1,0 +1,1 @@
+21441	bpipe run -r test.groovy foo.txt test.bed

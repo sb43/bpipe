@@ -1,0 +1,226 @@
+============== ./multi_deps ================
+
+ERROR: No HTML report was generated for test. All tests are expected to generate a report.
+
+
+FAILED
+
+============== ./pipeline_require ================
+
+ERROR: Failed to find expected error message when parameter not specified
+
+
+FAILED
+
+============== ./persample2 ================
+
+ERROR: No HTML report was generated for test. All tests are expected to generate a report.
+
+
+FAILED
+
+============== ./withconfig ================
+
+ERROR: No HTML report was generated for test. All tests are expected to generate a report.
+
+
+FAILED
+
+============== ./transform_one_to_two ================
+
+ERROR: No HTML report was generated for test. All tests are expected to generate a report.
+
+
+FAILED
+
+============== ./persamplenofiles ================
+
+ERROR: No HTML report was generated for test. All tests are expected to generate a report.
+
+
+FAILED
+
+============== ./filter_multiple_ext_match ================
+
+ERROR: No HTML report was generated for test. All tests are expected to generate a report.
+
+
+FAILED
+
+============== ./from_multiple_types ================
+
+ERROR: No HTML report was generated for test. All tests are expected to generate a report.
+
+
+FAILED
+
+============== ./produce ================
+
+ERROR: No HTML report was generated for test. All tests are expected to generate a report.
+
+
+FAILED
+
+============== ./cleanup ================
+
+ERROR: No HTML report was generated for test. All tests are expected to generate a report.
+
+
+FAILED
+
+============== ./backtick ================
+
+ERROR: No HTML report was generated for test. All tests are expected to generate a report.
+
+
+FAILED
+
+============== ./single_input_with_number ================
+
+ERROR: No HTML report was generated for test. All tests are expected to generate a report.
+
+
+FAILED
+
+============== ./externalstages ================
+Using BPIPE_LIB=/nfs/users/nfs_c/cgppipe/canpipe/software/bpipe_git/tests/externalstages/bpipes
+
+ERROR: No HTML report was generated for test. All tests are expected to generate a report.
+
+
+FAILED
+
+============== ./multi_input_split ================
+
+ERROR: No HTML report was generated for test. All tests are expected to generate a report.
+
+
+FAILED
+
+============== ./inputextmulti ================
+
+ERROR: No HTML report was generated for test. All tests are expected to generate a report.
+
+
+FAILED
+
+============== ./from_with_output_func ================
+
+ERROR: No HTML report was generated for test. All tests are expected to generate a report.
+
+
+FAILED
+
+============== ./per_generic_list ================
+
+ERROR: No HTML report was generated for test. All tests are expected to generate a report.
+
+
+FAILED
+
+============== ./output_directly_as_string ================
+
+ERROR: No HTML report was generated for test. All tests are expected to generate a report.
+
+
+FAILED
+
+============== ./output_from_prior_nested_stage ================
+
+ERROR: No HTML report was generated for test. All tests are expected to generate a report.
+
+
+FAILED
+
+============== ./output_input_not_same ================
+
+ERROR: No HTML report was generated for test. All tests are expected to generate a report.
+
+
+FAILED
+
+============== ./produce_wildcard_with_explicit_outputdir ================
+
+ERROR: Failed to find expected file output_dir/test1.foo
+
+
+FAILED
+
+============== ./branch_variable_as_param ================
+
+ERROR: No HTML report was generated for test. All tests are expected to generate a report.
+
+
+FAILED
+
+============== ./nested_parallel ================
+
+ERROR: No HTML report was generated for test. All tests are expected to generate a report.
+
+
+FAILED
+
+============== ./check_with_send_report ================
+
+ERROR: No HTML report was generated for test. All tests are expected to generate a report.
+
+
+FAILED
+
+============== ./huge_nested_parallel ================
+
+ERROR: No HTML report was generated for test. All tests are expected to generate a report.
+
+
+FAILED
+
+============== ./outputext2 ================
+
+ERROR: No HTML report was generated for test. All tests are expected to generate a report.
+
+
+FAILED
+
+============== ./multi_computed ================
+
+ERROR: No HTML report was generated for test. All tests are expected to generate a report.
+
+
+FAILED
+
+============== ./filter_multi ================
+
+ERROR: No HTML report was generated for test. All tests are expected to generate a report.
+
+
+FAILED
+
+============== ./simple ================
+
+ERROR: No HTML report was generated for test. All tests are expected to generate a report.
+
+
+FAILED
+
+============== ./from_filter_chain ================
+
+ERROR: No HTML report was generated for test. All tests are expected to generate a report.
+
+
+FAILED
+
+============== ./filter ================
+
+ERROR: No HTML report was generated for test. All tests are expected to generate a report.
+
+
+FAILED
+
+============== ./prefix ================
+
+ERROR: No HTML report was generated for test. All tests are expected to generate a report.
+
+
+FAILED
+
+============== ./from_downstream_in_parallel ================

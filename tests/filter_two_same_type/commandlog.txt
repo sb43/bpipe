@@ -1,0 +1,27 @@
+
+####################################################################################################
+# Starting pipeline at Wed Nov 26 10:26:45 GMT 2014
+# Input files:  [test1.txt, test2.txt]
+# Output Log:  .bpipe/logs/19868.log
+# Stage hello
+cp test1.txt test1.foo.txt;  cp test2.txt test2.foo.txt
+# ################ Finished at Wed Nov 26 10:26:45 GMT 2014 Duration = 0.648 seconds #################
+
+
+####################################################################################################
+# Starting pipeline at Fri Dec 05 10:26:14 GMT 2014
+# Input files:  [test1.txt, test2.txt]
+# Output Log:  .bpipe/logs/3611.log
+# Stage hello
+cp test1.txt test1.foo.txt;  cp test2.txt test2.foo.txt
+# ################ Finished at Fri Dec 05 10:26:14 GMT 2014 Duration = 0.753 seconds #################
+
+
+####################################################################################################
+# Starting pipeline at Fri Dec 05 10:38:58 GMT 2014
+# Input files:  [test1.txt, test2.txt]
+# Output Log:  .bpipe/logs/22139.log
+# Stage hello
+cp test1.txt test1.foo.txt;  cp test2.txt test2.foo.txt
+# ################ Finished at Fri Dec 05 10:38:59 GMT 2014 Duration = 0.635 seconds #################
+

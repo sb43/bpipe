@@ -1,0 +1,1 @@
+27546	bpipe run -r test.groovy MUW09_C0R8HACXX_ATCACG_L001_R1.fastq.merge.dedupe.merge.reorder.rg.recal.chr14.realign.vcf MUW09_C0R8HACXX_ATCACG_L001_R1.fastq.merge.dedupe.merge.reorder.rg.recal.chr14.realign.bam

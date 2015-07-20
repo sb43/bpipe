@@ -1,0 +1,43 @@
+bpipe.Runner	[1]	INFO	|10:38:36 Starting 
+bpipe.Runner	[1]	INFO	|10:38:36 OS: Linux (2.6.32-44-server) Java: 1.7.0_25 Vendor: Oracle Corporation 
+bpipe.Runner	[1]	INFO	|10:38:36 Initializing plugins ... 
+bpipe.Config	[1]	INFO	|10:38:36 No plugins directory found: /lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/accompanies/.bpipe/plugins 
+bpipe.Config	[1]	INFO	|10:38:36 No local configuration file found 
+bpipe.Utils	[10]	INFO	|10:38:37 Read config from /nfs/users/nfs_c/cgppipe/canpipe/software/bpipe_git/tests/accompanies/../../bin/../src/main/config/bpipe.config executed in 0.383 seconds 
+bpipe.Dependencies	[1]	INFO	|10:38:37 Executing cleanup with arguments [] 
+bpipe.Dependencies	[11]	INFO	|10:38:37 Reading property file .bpipe/outputs/index.test.align.bai.properties 
+bpipe.Dependencies	[13]	INFO	|10:38:37 Reading property file .bpipe/outputs/filter_bam.test.align.filter_bam.bam.properties 
+bpipe.Dependencies	[12]	INFO	|10:38:37 Reading property file .bpipe/outputs/align.test.align.bam.properties 
+bpipe.Utils	[1]	INFO	|10:38:37 Output folder scan (concurrency=5) executed in 0.070 seconds 
+bpipe.Dependencies	[14]	INFO	|10:38:37 External inputs: [[test.fastq]] for outputs [test.align.bam] 
+bpipe.Dependencies	[14]	INFO	|10:38:37 There are 1 output groups 
+bpipe.Dependencies	[14]	INFO	|10:38:37 Subtracting 1 remaining outputs from 3 total outputs 
+bpipe.Dependencies	[14]	INFO	|10:38:37 External inputs: [[test.align.bam], [test.align.bam]] for outputs [test.align.bai, test.align.filter_bam.bam] 
+bpipe.Dependencies	[14]	INFO	|10:38:37 New entry for test.align.bai 
+bpipe.Dependencies	[14]	INFO	|10:38:37 Maxtimestamp for test.align.bai = 1417775914000 
+bpipe.Dependencies	[14]	INFO	|10:38:37 New entry for test.align.filter_bam.bam 
+bpipe.Dependencies	[14]	INFO	|10:38:37 Maxtimestamp for test.align.filter_bam.bam = 1417775914000 
+bpipe.Dependencies	[14]	INFO	|10:38:37 There are 2 output groups 
+bpipe.Dependencies	[14]	INFO	|10:38:37 Subtracting 2 remaining outputs from 2 total outputs 
+bpipe.Dependencies	[14]	INFO	|10:38:37 There are 0 remaining outputs 
+bpipe.Dependencies	[14]	INFO	|10:38:37 There are 0 remaining outputs 
+bpipe.Dependencies	[14]	INFO	|10:38:37 --- test.align.bai / entry 454912770 --- 
+bpipe.Dependencies	[14]	INFO	|10:38:37 Input test.align.bam? true 
+bpipe.Dependencies	[14]	INFO	|10:38:37 test.align.bai is older than inputs [test.align.bam / 1417775914000 / 1417775914000 vs 1417775914000] 
+bpipe.Dependencies	[14]	INFO	|10:38:37  test.align.filter_bam.bam / entry 269990269  
+bpipe.Dependencies	[14]	INFO	|10:38:37 Input test.align.bam? true 
+bpipe.Dependencies	[14]	INFO	|10:38:37 test.align.filter_bam.bam is older than inputs [test.align.bam / 1417775914000 / 1417775914000 vs 1417775914000] 
+bpipe.Dependencies	[14]	INFO	|10:38:37 ====Finished Output Graph===== 
+bpipe.Dependencies	[14]	INFO	|10:38:37 There are 0 remaining outputs 
+bpipe.Dependencies	[14]	INFO	|10:38:37 --- test.align.bam / entry 735642194 --- 
+bpipe.Dependencies	[14]	INFO	|10:38:37 test.align.bam is newer than input files 
+bpipe.Dependencies	[14]	INFO	|10:38:37 ====Finished Output Graph===== 
+bpipe.Dependencies	[1]	INFO	|10:38:38 
+Output graph is: 
+
+test.fastq => 
+          test.align.bam => 
+                        test.align.bai
+                        test.align.filter_bam.bam 
+bpipe.Dependencies	[1]	INFO	|10:38:38 Saving output file details to file .bpipe/outputs/align.test.align.bam.properties for command cp test.fastq test.a... 
+bpipe.Dependencies	[1]	INFO	|10:38:38 Saving output file details to file .bpipe/outputs/index.test.align.bai.properties for command cp test.align.bam te... 

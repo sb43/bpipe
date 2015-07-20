@@ -1,0 +1,18 @@
+
+======================================== out/test.hello.csv ========================================
+
+
+test.txt => 
+        test.hello.csv
+
+Created:             Fri Dec 05 10:46:22 GMT 2014
+Pipeline Stage:      hello
+Pending Time:        0.048 seconds
+Running Time:        0.117 seconds
+Inputs used:         test.txt
+Command:             cp test.txt out/test.hello.csv
+Preserved:           no
+Intermediate output: no
+
+
+====================================================================================================

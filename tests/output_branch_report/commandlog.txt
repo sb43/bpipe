@@ -1,0 +1,48 @@
+
+####################################################################################################
+# Starting pipeline at Wed Nov 26 10:27:43 GMT 2014
+# Input files:  test.txt
+# Output Log:  .bpipe/logs/21197.log
+# Stage hello [frog]
+# Stage hello [cat]
+# Stage hello [frog]
+# Stage hello [cat]
+cp test.txt test.frog.bar.hello.csv
+cp test.txt test.cat.bar.hello.csv
+cp test.txt test.frog.foo.hello.csv
+cp test.txt test.cat.foo.hello.csv
+# Stage world [frog]
+# Stage world [cat]
+# Stage world [cat]
+# Stage world [frog]
+cp test.frog.foo.hello.csv test.frog.foo.hello.world.xml
+cp test.cat.foo.hello.csv test.cat.foo.hello.world.xml
+cp test.cat.bar.hello.csv test.cat.bar.hello.world.xml
+cp test.frog.bar.hello.csv test.frog.bar.hello.world.xml
+# Stage make_report
+# ################ Finished at Wed Nov 26 10:27:45 GMT 2014 Duration = 1.611 seconds #################
+
+
+####################################################################################################
+# Starting pipeline at Fri Dec 05 10:39:56 GMT 2014
+# Input files:  test.txt
+# Output Log:  .bpipe/logs/23504.log
+# Stage hello [cat]
+# Stage hello [frog]
+# Stage hello [cat]
+# Stage hello [frog]
+cp test.txt test.frog.bar.hello.csv
+cp test.txt test.frog.foo.hello.csv
+cp test.txt test.cat.bar.hello.csv
+cp test.txt test.cat.foo.hello.csv
+# Stage world [frog]
+# Stage world [cat]
+# Stage world [frog]
+# Stage world [cat]
+cp test.frog.foo.hello.csv test.frog.foo.hello.world.xml
+cp test.cat.bar.hello.csv test.cat.bar.hello.world.xml
+cp test.frog.bar.hello.csv test.frog.bar.hello.world.xml
+cp test.cat.foo.hello.csv test.cat.foo.hello.world.xml
+# Stage make_report
+# ################ Finished at Fri Dec 05 10:39:58 GMT 2014 Duration = 1.736 seconds #################
+

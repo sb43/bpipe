@@ -1,0 +1,186 @@
+bpipe.Runner	[1]	INFO	|10:33:46 Starting 
+bpipe.Runner	[1]	INFO	|10:33:46 OS: Linux (2.6.32-44-server) Java: 1.7.0_25 Vendor: Oracle Corporation 
+bpipe.Runner	[1]	INFO	|10:33:46 Initializing plugins ... 
+bpipe.Config	[1]	INFO	|10:33:46 No plugins directory found: /lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/persample2/.bpipe/plugins 
+bpipe.Runner	[1]	INFO	|10:33:46 Reading user config ...  
+bpipe.Config	[1]	INFO	|10:33:46 No configuration file found in same dir as pipeline file 
+bpipe.Config	[1]	INFO	|10:33:46 No local configuration file found 
+bpipe.Utils	[10]	INFO	|10:33:46 Read config from /nfs/users/nfs_c/cgppipe/canpipe/software/bpipe_git/tests/persample2/../../bin/../src/main/config/bpipe.config executed in 0.326 seconds 
+bpipe.Utils	[1]	INFO	|10:33:46 Read user config executed in 0.554 seconds 
+bpipe.Runner	[1]	INFO	|10:33:46 Loading tool database ...  
+bpipe.ToolDatabase	[11]	INFO	|10:33:47 Loading tool database from user configuration 
+bpipe.NotificationManager	[14]	INFO	|10:33:47 Configuring notifications 
+bpipe.Concurrency	[13]	INFO	|10:33:47 Creating thread pool with 32 threads to execute parallel pipelines 
+bpipe.Tool	[11]	INFO	|10:33:47 Configured meta data about tool samtools 
+bpipe.NotificationManager	[14]	INFO	|10:33:47 Trying class name file for notification channel file 
+bpipe.Tool	[11]	INFO	|10:33:47 Configured meta data about tool bwa 
+bpipe.Tool	[11]	INFO	|10:33:47 Configured meta data about tool bowtie 
+bpipe.Tool	[11]	INFO	|10:33:47 Configured meta data about tool fastqc 
+bpipe.Tool	[11]	INFO	|10:33:47 Configured meta data about tool coverageBed 
+bpipe.Tool	[11]	INFO	|10:33:47 Configured meta data about tool fastx_clipper 
+bpipe.Tool	[11]	INFO	|10:33:47 Configured meta data about tool convert2annovar.pl 
+bpipe.Tool	[11]	INFO	|10:33:47 Configured meta data about tool summarize_annovar.pl 
+bpipe.Tool	[11]	INFO	|10:33:47 Configured meta data about tool bowtie2 
+bpipe.Tool	[11]	INFO	|10:33:47 Configured meta data about tool GenomeAnalysisTK 
+bpipe.Tool	[11]	INFO	|10:33:47 Configured meta data about tool MarkDuplicates 
+bpipe.Tool	[11]	INFO	|10:33:47 Configured meta data about tool signalp 
+bpipe.Tool	[11]	INFO	|10:33:47 Configured meta data about tool variant_effect_predictor.pl 
+bpipe.Tool	[11]	INFO	|10:33:47 Configured meta data about tool igvtools 
+bpipe.Tool	[11]	INFO	|10:33:47 Configured meta data about tool ls 
+bpipe.Runner	[1]	INFO	|10:33:47 No CLI parameters specified 
+bpipe.NotificationManager	[14]	INFO	|10:33:47 Unable to create notification channel using class file: java.lang.ClassNotFoundException: file 
+bpipe.NotificationManager	[14]	INFO	|10:33:47 Trying class name bpipe.FILENotificationChannel for notification channel file 
+bpipe.NotificationManager	[14]	INFO	|10:33:47 Unable to create notification channel using class bpipe.FILENotificationChannel: java.lang.ClassNotFoundException: bpipe.FILENotificationChannel 
+bpipe.NotificationManager	[14]	INFO	|10:33:47 Trying class name bpipe.file for notification channel file 
+bpipe.NotificationManager	[14]	INFO	|10:33:47 Unable to create notification channel using class bpipe.file: java.lang.ClassNotFoundException: bpipe.file 
+bpipe.NotificationManager	[14]	INFO	|10:33:47 Trying class name bpipe.FileNotificationChannel for notification channel file 
+bpipe.NotificationManager	[14]	INFO	|10:33:47 Successfully created notification channel using class bpipe.FileNotificationChannel 
+bpipe.Runner	[1]	INFO	|10:33:47 Parsing script ...  
+bpipe.Runner	[1]	INFO	|10:33:47 Run ...  
+bpipe.Pipeline	[1]	INFO	|10:33:47 Running with input [SureSelect_Capture_11MG2107_AD0AN0ACXX_GATCAG_L002_R1.fastq, SureSelect_Capture_11MG2107_AD0AN0ACXX_GATCAG_L002_R2.fastq, SureSelect_Capture_11MG2108_AD0AN0ACXX_TAGCTT_L002_R1.fastq, SureSelect_Capture_11MG2108_AD0AN0ACXX_TAGCTT_L002_R2.fastq] 
+bpipe.PipelineCategory	[1]	INFO	|10:33:47 Found closure variable echo 
+bpipe.Pipeline	[1]	WARNING	|10:33:47 Pipeline folder /nfs/users/nfs_c/cgppipe/bpipes could not be found 
+bpipe.Pipeline	[1]	INFO	|10:33:47 Loaded external reference: args 
+bpipe.Pipeline	[1]	INFO	|10:33:47 External reference args is overridden by local reference 
+bpipe.Pipeline	[1]	INFO	|10:33:47 Loaded external reference: echo 
+bpipe.Pipeline	[1]	INFO	|10:33:47 External reference echo is overridden by local reference 
+bpipe.DefinePipelineCategory	[1]	INFO	|10:33:47 multiply on input null with pattern CXX_%_*.fastq 
+bpipe.InputSplitter	[1]	INFO	|10:33:47 Found * pattern at [6], hash at [] and % at [4] 
+bpipe.InputSplitter	[1]	INFO	|10:33:47 Sorted: [4, 6] 
+bpipe.InputSplitter	[1]	INFO	|10:33:47 % groups are at [0] 
+bpipe.InputSplitter	[1]	INFO	|10:33:47 Result is [pattern:CXX_([^/]*?)_([^/]*?)\.fastq, splits:[0]] 
+bpipe.DefinePipelineCategory	[1]	INFO	|10:33:47 Processing segment 1812313467 
+bpipe.PipelineCategory	[1]	INFO	|10:33:47 Joiners for pipeline 174513202 = [] 
+bpipe.Pipeline	[1]	INFO	|10:33:47 Running segment with inputs [SureSelect_Capture_11MG2107_AD0AN0ACXX_GATCAG_L002_R1.fastq, SureSelect_Capture_11MG2107_AD0AN0ACXX_GATCAG_L002_R2.fastq, SureSelect_Capture_11MG2108_AD0AN0ACXX_TAGCTT_L002_R1.fastq, SureSelect_Capture_11MG2108_AD0AN0ACXX_TAGCTT_L002_R2.fastq] 
+bpipe.Dependencies	[1]	INFO	|10:33:47 Checking input (s) [SureSelect_Capture_11MG2107_AD0AN0ACXX_GATCAG_L002_R1.fastq, SureSelect_Capture_11MG2107_AD0AN0ACXX_GATCAG_L002_R2.fastq, SureSelect_Capture_11MG2108_AD0AN0ACXX_TAGCTT_L002_R1.fastq, SureSelect_Capture_11MG2108_AD0AN0ACXX_TAGCTT_L002_R2.fastq] 
+bpipe.Utils	[1]	INFO	|10:33:47 Output folder scan (concurrency=5) executed in 0.004 seconds 
+bpipe.Dependencies	[1]	INFO	|10:33:47  Checking file SureSelect_Capture_11MG2107_AD0AN0ACXX_GATCAG_L002_R1.fastq 
+bpipe.Dependencies	[1]	INFO	|10:33:47  Checking file SureSelect_Capture_11MG2107_AD0AN0ACXX_GATCAG_L002_R2.fastq 
+bpipe.Dependencies	[1]	INFO	|10:33:47  Checking file SureSelect_Capture_11MG2108_AD0AN0ACXX_TAGCTT_L002_R1.fastq 
+bpipe.Dependencies	[1]	INFO	|10:33:47  Checking file SureSelect_Capture_11MG2108_AD0AN0ACXX_TAGCTT_L002_R2.fastq 
+bpipe.PipelineDelegate	[1]	INFO	|10:33:47 Setting or creating a delegate for context 1269727191 body 759898898/java.lang.Class in thread 1 
+bpipe.PipelineDelegate	[1]	INFO	|10:33:47 Created new delegate bpipe.PipelineDelegate@2d453a4b overriding type java.lang.Class in thread 1 
+bpipe.PipelineCategory	[1]	INFO	|10:33:47 multiply on input [SureSelect_Capture_11MG2107_AD0AN0ACXX_GATCAG_L002_R1.fastq, SureSelect_Capture_11MG2107_AD0AN0ACXX_GATCAG_L002_R2.fastq, SureSelect_Capture_11MG2108_AD0AN0ACXX_TAGCTT_L002_R1.fastq, SureSelect_Capture_11MG2108_AD0AN0ACXX_TAGCTT_L002_R2.fastq] with pattern CXX_%_*.fastq 
+bpipe.InputSplitter	[1]	INFO	|10:33:47 Found * pattern at [6], hash at [] and % at [4] 
+bpipe.InputSplitter	[1]	INFO	|10:33:47 Sorted: [4, 6] 
+bpipe.InputSplitter	[1]	INFO	|10:33:47 % groups are at [0] 
+bpipe.InputSplitter	[1]	INFO	|10:33:47 Result is [pattern:CXX_([^/]*?)_([^/]*?)\.fastq, splits:[0]] 
+bpipe.PipelineCategory	[1]	INFO	|10:33:47 Created pipeline stage 1642765541 for parallel block 
+bpipe.PipelineCategory	[1]	INFO	|10:33:47 Processing segment 1812313467 
+bpipe.PipelineCategory	[1]	INFO	|10:33:47 Creating pipeline to run parallel segment GATCAG with files [SureSelect_Capture_11MG2107_AD0AN0ACXX_GATCAG_L002_R1.fastq, SureSelect_Capture_11MG2107_AD0AN0ACXX_GATCAG_L002_R2.fastq]. Branch filter = [] 
+bpipe.PipelineCategory	[1]	INFO	|10:33:47 Creating pipeline to run parallel segment TAGCTT with files [SureSelect_Capture_11MG2108_AD0AN0ACXX_TAGCTT_L002_R1.fastq, SureSelect_Capture_11MG2108_AD0AN0ACXX_TAGCTT_L002_R2.fastq]. Branch filter = [] 
+bpipe.Concurrency	[1]	INFO	|10:33:47 Waiting for 2 parallel stages to complete (pool.active=2 pool.tasks=2) 
+bpipe.PipelineContext	[16]	INFO	|10:33:47 Setting output [SureSelect_Capture_11MG2108_AD0AN0ACXX_TAGCTT_L002_R1.fastq, SureSelect_Capture_11MG2108_AD0AN0ACXX_TAGCTT_L002_R2.fastq] on context 657351832 in thread 16 
+bpipe.PipelineContext	[15]	INFO	|10:33:47 Setting output [SureSelect_Capture_11MG2107_AD0AN0ACXX_GATCAG_L002_R1.fastq, SureSelect_Capture_11MG2107_AD0AN0ACXX_GATCAG_L002_R2.fastq] on context 1456360256 in thread 15 
+bpipe.PipelineContext	[16]	INFO	|10:33:47 Using previously set output: [SureSelect_Capture_11MG2108_AD0AN0ACXX_TAGCTT_L002_R1.fastq, SureSelect_Capture_11MG2108_AD0AN0ACXX_TAGCTT_L002_R2.fastq] 
+bpipe.PipelineContext	[15]	INFO	|10:33:47 Using previously set output: [SureSelect_Capture_11MG2107_AD0AN0ACXX_GATCAG_L002_R1.fastq, SureSelect_Capture_11MG2107_AD0AN0ACXX_GATCAG_L002_R2.fastq] 
+bpipe.PipelineCategory	[16]	INFO	|10:33:47 Adding dummy prior stage for thread 16 with outputs : SureSelect_Capture_11MG2108_AD0AN0ACXX_TAGCTT_L002_R1.fastq 
+bpipe.PipelineCategory	[15]	INFO	|10:33:47 Adding dummy prior stage for thread 15 with outputs : SureSelect_Capture_11MG2107_AD0AN0ACXX_GATCAG_L002_R1.fastq 
+bpipe.Pipeline	[16]	INFO	|10:33:47 Running segment with inputs [SureSelect_Capture_11MG2108_AD0AN0ACXX_TAGCTT_L002_R1.fastq, SureSelect_Capture_11MG2108_AD0AN0ACXX_TAGCTT_L002_R2.fastq] 
+bpipe.Pipeline	[15]	INFO	|10:33:47 Running segment with inputs [SureSelect_Capture_11MG2107_AD0AN0ACXX_GATCAG_L002_R1.fastq, SureSelect_Capture_11MG2107_AD0AN0ACXX_GATCAG_L002_R2.fastq] 
+bpipe.Dependencies	[16]	INFO	|10:33:47 Checking input (s) [SureSelect_Capture_11MG2108_AD0AN0ACXX_TAGCTT_L002_R1.fastq, SureSelect_Capture_11MG2108_AD0AN0ACXX_TAGCTT_L002_R2.fastq] 
+bpipe.Dependencies	[15]	INFO	|10:33:47 Checking input (s) [SureSelect_Capture_11MG2107_AD0AN0ACXX_GATCAG_L002_R1.fastq, SureSelect_Capture_11MG2107_AD0AN0ACXX_GATCAG_L002_R2.fastq] 
+bpipe.Dependencies	[16]	INFO	|10:33:47  Checking file SureSelect_Capture_11MG2108_AD0AN0ACXX_TAGCTT_L002_R1.fastq 
+bpipe.Dependencies	[15]	INFO	|10:33:47  Checking file SureSelect_Capture_11MG2107_AD0AN0ACXX_GATCAG_L002_R1.fastq 
+bpipe.Dependencies	[16]	INFO	|10:33:47  Checking file SureSelect_Capture_11MG2108_AD0AN0ACXX_TAGCTT_L002_R2.fastq 
+bpipe.Dependencies	[15]	INFO	|10:33:47  Checking file SureSelect_Capture_11MG2107_AD0AN0ACXX_GATCAG_L002_R2.fastq 
+bpipe.ReportStatisticsListener	[16]	INFO	|10:33:47 Annotating stage start time echo 
+bpipe.ReportStatisticsListener	[15]	INFO	|10:33:47 Annotating stage start time echo 
+bpipe.PipelineStage	[16]	INFO	|10:33:47 Stage echo [TAGCTT] : INPUT=[SureSelect_Capture_11MG2108_AD0AN0ACXX_TAGCTT_L002_R1.fastq, SureSelect_Capture_11MG2108_AD0AN0ACXX_TAGCTT_L002_R2.fastq] OUTPUT=SureSelect_Capture_11MG2108_AD0AN0ACXX_TAGCTT_L002_R1.fastq.echo 
+bpipe.PipelineStage	[15]	INFO	|10:33:47 Stage echo [GATCAG] : INPUT=[SureSelect_Capture_11MG2107_AD0AN0ACXX_GATCAG_L002_R1.fastq, SureSelect_Capture_11MG2107_AD0AN0ACXX_GATCAG_L002_R2.fastq] OUTPUT=SureSelect_Capture_11MG2107_AD0AN0ACXX_GATCAG_L002_R1.fastq.echo 
+bpipe.PipelineDelegate	[16]	INFO	|10:33:47 Setting or creating a delegate for context 899471952 body 1812313467/script14177756270971605839376 in thread 16 
+bpipe.PipelineDelegate	[16]	INFO	|10:33:47 Created new delegate bpipe.PipelineDelegate@4cc0d5af overriding type script14177756270971605839376 in thread 16 
+bpipe.PipelineDelegate	[15]	INFO	|10:33:47 Setting or creating a delegate for context 135068551 body 1812313467/bpipe.PipelineDelegate in thread 15 
+bpipe.PipelineDelegate	[15]	INFO	|10:33:47 Existing delegate bpipe.PipelineDelegate@4cc0d5af has type bpipe.PipelineDelegate in thread 15. Setting new context 135068551 
+bpipe.PipelineContext	[16]	INFO	|10:33:47 Tracking outputs referenced=[[]] inferred=[[]] for command echo SureSelect_Capture_11MG2108_AD0AN0ACXX_TAGCTT_L002_R1.fastq SureSelect_Capture_11MG2108_AD0AN0ACXX_TAGCTT_L002_R2.fastq 
+bpipe.PipelineContext	[15]	INFO	|10:33:47 Tracking outputs referenced=[[]] inferred=[[]] for command echo SureSelect_Capture_11MG2107_AD0AN0ACXX_GATCAG_L002_R1.fastq SureSelect_Capture_11MG2107_AD0AN0ACXX_GATCAG_L002_R2.fastq 
+bpipe.ReportStatisticsListener	[16]	INFO	|10:33:47 Intercepted command check for command echo SureSelect_Capture_11MG2108_AD0AN0ACXX_TAGCTT_L002_R1.fastq SureSelect_Capture_11MG2108_AD0AN0ACXX_TAGCTT_L002_R2.fastq 
+bpipe.PipelineContext	[16]	INFO	|10:33:47 Checking actual resolved inputs [SureSelect_Capture_11MG2108_AD0AN0ACXX_TAGCTT_L002_R1.fastq, SureSelect_Capture_11MG2108_AD0AN0ACXX_TAGCTT_L002_R2.fastq] 
+bpipe.ReportStatisticsListener	[15]	INFO	|10:33:47 Intercepted command check for command echo SureSelect_Capture_11MG2107_AD0AN0ACXX_GATCAG_L002_R1.fastq SureSelect_Capture_11MG2107_AD0AN0ACXX_GATCAG_L002_R2.fastq 
+bpipe.PipelineContext	[15]	INFO	|10:33:47 Checking actual resolved inputs [SureSelect_Capture_11MG2107_AD0AN0ACXX_GATCAG_L002_R1.fastq, SureSelect_Capture_11MG2107_AD0AN0ACXX_GATCAG_L002_R2.fastq] 
+bpipe.Command	[16]	INFO	|10:33:47 Checking for configuration for command echo 
+bpipe.Command	[15]	INFO	|10:33:47 Checking for configuration for command echo 
+bpipe.Command	[16]	INFO	|10:33:47 Default command properties: [executor:local] 
+bpipe.Command	[15]	INFO	|10:33:47 Default command properties: [executor:local] 
+bpipe.CommandManager	[16]	INFO	|10:33:47 Using config [executor:local] for command 
+bpipe.CommandManager	[15]	INFO	|10:33:47 Using config [executor:local] for command 
+bpipe.CommandManager	[16]	INFO	|10:33:47 Created bpipe command id 1 
+bpipe.CommandManager	[15]	INFO	|10:33:47 Created bpipe command id 2 
+bpipe.Concurrency	[16]	INFO	|10:33:47 Thread Thread-7 requesting for 1 concurrency permit(s) type threads with 32 available 
+bpipe.Concurrency	[15]	INFO	|10:33:47 Thread Thread-6 requesting for 1 concurrency permit(s) type threads with 32 available 
+bpipe.Concurrency	[16]	INFO	|10:33:47 Thread Thread-7 acquired resource threads in amount 1 
+bpipe.Concurrency	[15]	INFO	|10:33:47 Thread Thread-6 acquired resource threads in amount 1 
+bpipe.Command	[18]	INFO	|10:33:47 Command 2 changing state from null to RUNNING 
+bpipe.Command	[17]	INFO	|10:33:47 Command 1 changing state from null to RUNNING 
+bpipe.executor.ThrottledDelegatingCommandExecutor	[16]	INFO	|10:33:47 Waiting for command to complete before releasing 1 resources 
+bpipe.executor.ThrottledDelegatingCommandExecutor	[15]	INFO	|10:33:47 Waiting for command to complete before releasing 1 resources 
+bpipe.Command	[16]	INFO	|10:33:47 Command 1 changing state from RUNNING to COMPLETE 
+bpipe.Command	[15]	INFO	|10:33:47 Command 2 changing state from RUNNING to COMPLETE 
+bpipe.executor.ThrottledDelegatingCommandExecutor	[16]	INFO	|10:33:47 Releasing 1 resources 
+bpipe.executor.ThrottledDelegatingCommandExecutor	[15]	INFO	|10:33:47 Releasing 1 resources 
+bpipe.Concurrency	[15]	INFO	|10:33:47 Thread Thread-6 releasing 1 threads 
+bpipe.Concurrency	[16]	INFO	|10:33:47 Thread Thread-7 releasing 1 threads 
+bpipe.executor.ThrottledDelegatingCommandExecutor	[15]	INFO	|10:33:47 Released 1 resources 
+bpipe.executor.ThrottledDelegatingCommandExecutor	[16]	INFO	|10:33:47 Released 1 resources 
+bpipe.PipelineStage	[16]	INFO	|10:33:47 Stage echo [TAGCTT] returned null as default inputs for next stage 
+bpipe.PipelineStage	[15]	INFO	|10:33:47 Stage echo [GATCAG] returned null as default inputs for next stage 
+bpipe.PipelineStage	[16]	INFO	|10:33:47 Removing inferred outputs matching [\.bai$, \.log$] 
+bpipe.PipelineStage	[15]	INFO	|10:33:47 Removing inferred outputs matching [\.bai$, \.log$] 
+bpipe.PipelineStage	[16]	INFO	|10:33:47 Inferring nextInputs from inputs bpipe.PipelineContext@359cda50.@input 
+bpipe.PipelineStage	[15]	INFO	|10:33:47 Inferring nextInputs from inputs bpipe.PipelineContext@80cfb87.@input 
+bpipe.PipelineContext	[16]	INFO	|10:33:47 Setting output [SureSelect_Capture_11MG2108_AD0AN0ACXX_TAGCTT_L002_R1.fastq, SureSelect_Capture_11MG2108_AD0AN0ACXX_TAGCTT_L002_R2.fastq] on context 899471952 in thread 16 
+bpipe.PipelineContext	[15]	INFO	|10:33:47 Setting output [SureSelect_Capture_11MG2107_AD0AN0ACXX_GATCAG_L002_R1.fastq, SureSelect_Capture_11MG2107_AD0AN0ACXX_GATCAG_L002_R2.fastq] on context 135068551 in thread 15 
+bpipe.PipelineStage	[16]	INFO	|10:33:47 Setting next inputs [SureSelect_Capture_11MG2108_AD0AN0ACXX_TAGCTT_L002_R1.fastq, SureSelect_Capture_11MG2108_AD0AN0ACXX_TAGCTT_L002_R2.fastq] on stage 1065903454, context 899471952 in thread 16 
+bpipe.PipelineStage	[15]	INFO	|10:33:47 Setting next inputs [SureSelect_Capture_11MG2107_AD0AN0ACXX_GATCAG_L002_R1.fastq, SureSelect_Capture_11MG2107_AD0AN0ACXX_GATCAG_L002_R2.fastq] on stage 1531845492, context 135068551 in thread 15 
+bpipe.ReportStatisticsListener	[16]	INFO	|10:33:47 Annotating stage end time echo 
+bpipe.PipelineStage	[16]	INFO	|10:33:47 Checking files: [SureSelect_Capture_11MG2108_AD0AN0ACXX_TAGCTT_L002_R1.fastq, SureSelect_Capture_11MG2108_AD0AN0ACXX_TAGCTT_L002_R2.fastq] 
+bpipe.ReportStatisticsListener	[15]	INFO	|10:33:47 Annotating stage end time echo 
+bpipe.Dependencies	[16]	INFO	|10:33:47 Checking output (s) [SureSelect_Capture_11MG2108_AD0AN0ACXX_TAGCTT_L002_R1.fastq, SureSelect_Capture_11MG2108_AD0AN0ACXX_TAGCTT_L002_R2.fastq] 
+bpipe.PipelineStage	[15]	INFO	|10:33:47 Checking files: [SureSelect_Capture_11MG2107_AD0AN0ACXX_GATCAG_L002_R1.fastq, SureSelect_Capture_11MG2107_AD0AN0ACXX_GATCAG_L002_R2.fastq] 
+bpipe.Dependencies	[16]	INFO	|10:33:47  Checking file SureSelect_Capture_11MG2108_AD0AN0ACXX_TAGCTT_L002_R1.fastq 
+bpipe.Dependencies	[15]	INFO	|10:33:47 Checking output (s) [SureSelect_Capture_11MG2107_AD0AN0ACXX_GATCAG_L002_R1.fastq, SureSelect_Capture_11MG2107_AD0AN0ACXX_GATCAG_L002_R2.fastq] 
+bpipe.Dependencies	[16]	INFO	|10:33:47  Checking file SureSelect_Capture_11MG2108_AD0AN0ACXX_TAGCTT_L002_R2.fastq 
+bpipe.Dependencies	[15]	INFO	|10:33:47  Checking file SureSelect_Capture_11MG2107_AD0AN0ACXX_GATCAG_L002_R1.fastq 
+bpipe.Pipeline	[16]	INFO	|10:33:47 Pipeline segment TAGCTT in thread 16 has finished normally 
+bpipe.Dependencies	[15]	INFO	|10:33:47  Checking file SureSelect_Capture_11MG2107_AD0AN0ACXX_GATCAG_L002_R2.fastq 
+bpipe.Pipeline	[16]	INFO	|10:33:47 Finished running segment for inputs [SureSelect_Capture_11MG2108_AD0AN0ACXX_TAGCTT_L002_R1.fastq, SureSelect_Capture_11MG2108_AD0AN0ACXX_TAGCTT_L002_R2.fastq] 
+bpipe.Pipeline	[15]	INFO	|10:33:47 Pipeline segment GATCAG in thread 15 has finished normally 
+bpipe.Pipeline	[15]	INFO	|10:33:47 Finished running segment for inputs [SureSelect_Capture_11MG2107_AD0AN0ACXX_GATCAG_L002_R1.fastq, SureSelect_Capture_11MG2107_AD0AN0ACXX_GATCAG_L002_R2.fastq] 
+bpipe.Concurrency	[16]	INFO	|10:33:47 Decremented running count to 0 in thread Thread-7 
+bpipe.Concurrency	[15]	INFO	|10:33:47 Decremented running count to 1 in thread Thread-6 
+bpipe.PipelineCategory	[1]	INFO	|10:33:47 Parent pipeline of concurent sections [1702849603, 278714052] is 174513202 
+bpipe.PipelineCategory	[1]	INFO	|10:33:47 Maximum child stage list length = 1 
+bpipe.PipelineCategory	[1]	INFO	|10:33:47 ###### Merging results of parallel split in parent branch  ##### 
+bpipe.PipelineCategory	[1]	INFO	|10:33:47 Grouping stages at index 0 [echo, echo] for merging 
+bpipe.PipelineCategory	[1]	INFO	|10:33:47 Parallel segment 0 contains 2 identical echo stages - Merging outputs to single stage 
+bpipe.PipelineCategory	[1]	INFO	|10:33:47 Merged outputs are [SureSelect_Capture_11MG2107_AD0AN0ACXX_GATCAG_L002_R1.fastq, SureSelect_Capture_11MG2107_AD0AN0ACXX_GATCAG_L002_R2.fastq, SureSelect_Capture_11MG2108_AD0AN0ACXX_TAGCTT_L002_R1.fastq, SureSelect_Capture_11MG2108_AD0AN0ACXX_TAGCTT_L002_R2.fastq] 
+bpipe.PipelineContext	[1]	INFO	|10:33:47 Setting output [SureSelect_Capture_11MG2107_AD0AN0ACXX_GATCAG_L002_R1.fastq, SureSelect_Capture_11MG2107_AD0AN0ACXX_GATCAG_L002_R2.fastq, SureSelect_Capture_11MG2108_AD0AN0ACXX_TAGCTT_L002_R1.fastq, SureSelect_Capture_11MG2108_AD0AN0ACXX_TAGCTT_L002_R2.fastq] on context 149470822 in thread 1 
+bpipe.PipelineCategory	[1]	INFO	|10:33:47 There are 1 stages from nested pipelines 
+bpipe.PipelineCategory	[1]	INFO	|10:33:47 There [bpipe.PipelineStage@5b4e1b74, bpipe.PipelineStage@3f88655e] parallel paths in final stage 
+bpipe.PipelineCategory	[1]	INFO	|10:33:47 Last merged outputs are [SureSelect_Capture_11MG2107_AD0AN0ACXX_GATCAG_L002_R1.fastq, SureSelect_Capture_11MG2107_AD0AN0ACXX_GATCAG_L002_R2.fastq, SureSelect_Capture_11MG2108_AD0AN0ACXX_TAGCTT_L002_R1.fastq, SureSelect_Capture_11MG2108_AD0AN0ACXX_TAGCTT_L002_R2.fastq] 
+bpipe.PipelineContext	[1]	INFO	|10:33:47 Setting output [SureSelect_Capture_11MG2107_AD0AN0ACXX_GATCAG_L002_R1.fastq, SureSelect_Capture_11MG2107_AD0AN0ACXX_GATCAG_L002_R2.fastq, SureSelect_Capture_11MG2108_AD0AN0ACXX_TAGCTT_L002_R1.fastq, SureSelect_Capture_11MG2108_AD0AN0ACXX_TAGCTT_L002_R2.fastq] on context 905694125 in thread 1 
+bpipe.PipelineCategory	[1]	INFO	|10:33:47 Merged stage name is echo_bpipe_merge 
+bpipe.PipelineContext	[1]	INFO	|10:33:47 Setting output [SureSelect_Capture_11MG2107_AD0AN0ACXX_GATCAG_L002_R1.fastq, SureSelect_Capture_11MG2107_AD0AN0ACXX_GATCAG_L002_R2.fastq, SureSelect_Capture_11MG2108_AD0AN0ACXX_TAGCTT_L002_R1.fastq, SureSelect_Capture_11MG2108_AD0AN0ACXX_TAGCTT_L002_R2.fastq] on context 1269727191 in thread 1 
+bpipe.PipelineStage	[1]	INFO	|10:33:47 Setting next inputs [SureSelect_Capture_11MG2107_AD0AN0ACXX_GATCAG_L002_R1.fastq, SureSelect_Capture_11MG2107_AD0AN0ACXX_GATCAG_L002_R2.fastq, SureSelect_Capture_11MG2108_AD0AN0ACXX_TAGCTT_L002_R1.fastq, SureSelect_Capture_11MG2108_AD0AN0ACXX_TAGCTT_L002_R2.fastq] on stage 690974606, context 1269727191 in thread 1 
+bpipe.PipelineStage	[1]	INFO	|10:33:47 Checking files: [SureSelect_Capture_11MG2107_AD0AN0ACXX_GATCAG_L002_R1.fastq, SureSelect_Capture_11MG2107_AD0AN0ACXX_GATCAG_L002_R2.fastq, SureSelect_Capture_11MG2108_AD0AN0ACXX_TAGCTT_L002_R1.fastq, SureSelect_Capture_11MG2108_AD0AN0ACXX_TAGCTT_L002_R2.fastq] 
+bpipe.Dependencies	[1]	INFO	|10:33:47 Checking output (s) [SureSelect_Capture_11MG2107_AD0AN0ACXX_GATCAG_L002_R1.fastq, SureSelect_Capture_11MG2107_AD0AN0ACXX_GATCAG_L002_R2.fastq, SureSelect_Capture_11MG2108_AD0AN0ACXX_TAGCTT_L002_R1.fastq, SureSelect_Capture_11MG2108_AD0AN0ACXX_TAGCTT_L002_R2.fastq] 
+bpipe.Dependencies	[1]	INFO	|10:33:47  Checking file SureSelect_Capture_11MG2107_AD0AN0ACXX_GATCAG_L002_R1.fastq 
+bpipe.Dependencies	[1]	INFO	|10:33:47  Checking file SureSelect_Capture_11MG2107_AD0AN0ACXX_GATCAG_L002_R2.fastq 
+bpipe.Dependencies	[1]	INFO	|10:33:47  Checking file SureSelect_Capture_11MG2108_AD0AN0ACXX_TAGCTT_L002_R1.fastq 
+bpipe.Dependencies	[1]	INFO	|10:33:47  Checking file SureSelect_Capture_11MG2108_AD0AN0ACXX_TAGCTT_L002_R2.fastq 
+bpipe.Pipeline	[1]	INFO	|10:33:47 Pipeline segment  in thread 1 has finished normally 
+bpipe.Pipeline	[1]	INFO	|10:33:47 Finished running segment for inputs [SureSelect_Capture_11MG2107_AD0AN0ACXX_GATCAG_L002_R1.fastq, SureSelect_Capture_11MG2107_AD0AN0ACXX_GATCAG_L002_R2.fastq, SureSelect_Capture_11MG2108_AD0AN0ACXX_TAGCTT_L002_R1.fastq, SureSelect_Capture_11MG2108_AD0AN0ACXX_TAGCTT_L002_R2.fastq] 
+bpipe.Pipeline	[1]	INFO	|10:33:47 adding stage echo from pipeline bpipe.Pipeline@657f6c43 
+bpipe.Pipeline	[1]	INFO	|10:33:47 adding stage echo from pipeline bpipe.Pipeline@109cd6c4 
+bpipe.Utils	[1]	INFO	|10:33:47 Output folder scan (concurrency=5) executed in 0.001 seconds 
+bpipe.ReportGenerator	[1]	INFO	|10:33:47 Searching for template in /lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/src/main/html/bpipe 
+bpipe.ReportGenerator	[1]	INFO	|10:33:47 Generating report to /lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/persample2/doc/index.html 
+bpipe.PipelineContext	[1]	INFO	|10:33:48 Using previously set output: [SureSelect_Capture_11MG2107_AD0AN0ACXX_GATCAG_L002_R1.fastq, SureSelect_Capture_11MG2107_AD0AN0ACXX_GATCAG_L002_R2.fastq] 
+bpipe.PipelineContext	[1]	INFO	|10:33:48 Using previously set output: [SureSelect_Capture_11MG2107_AD0AN0ACXX_GATCAG_L002_R1.fastq, SureSelect_Capture_11MG2107_AD0AN0ACXX_GATCAG_L002_R2.fastq] 
+bpipe.PipelineContext	[1]	INFO	|10:33:48 Using previously set output: [SureSelect_Capture_11MG2107_AD0AN0ACXX_GATCAG_L002_R1.fastq, SureSelect_Capture_11MG2107_AD0AN0ACXX_GATCAG_L002_R2.fastq] 
+bpipe.PipelineContext	[1]	INFO	|10:33:48 Using previously set output: [SureSelect_Capture_11MG2108_AD0AN0ACXX_TAGCTT_L002_R1.fastq, SureSelect_Capture_11MG2108_AD0AN0ACXX_TAGCTT_L002_R2.fastq] 
+bpipe.PipelineContext	[1]	INFO	|10:33:48 Using previously set output: [SureSelect_Capture_11MG2108_AD0AN0ACXX_TAGCTT_L002_R1.fastq, SureSelect_Capture_11MG2108_AD0AN0ACXX_TAGCTT_L002_R2.fastq] 
+bpipe.PipelineContext	[1]	INFO	|10:33:48 Using previously set output: [SureSelect_Capture_11MG2108_AD0AN0ACXX_TAGCTT_L002_R1.fastq, SureSelect_Capture_11MG2108_AD0AN0ACXX_TAGCTT_L002_R2.fastq] 
+bpipe.Utils	[1]	INFO	|10:33:48 Output folder scan (concurrency=5) executed in 0.002 seconds 
+bpipe.Pipeline	[1]	INFO	|10:33:48 No tracked output files from this run 
+bpipe.Runner	[9]	INFO	|10:33:48 Deleting job file /nfs/users/nfs_c/cgppipe/.bpipedb/jobs/13957 

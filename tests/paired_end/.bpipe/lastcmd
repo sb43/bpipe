@@ -1,0 +1,1 @@
+/nfs/users/nfs_c/cgppipe/canpipe/software/bpipe_git/tests/paired_end/../../bin/bpipe run -r test.groovy test1.fastq test2.fastq ref.fa

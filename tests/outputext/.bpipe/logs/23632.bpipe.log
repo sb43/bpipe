@@ -1,0 +1,399 @@
+bpipe.Runner	[1]	INFO	|10:40:00 Starting 
+bpipe.Runner	[1]	INFO	|10:40:00 OS: Linux (2.6.32-44-server) Java: 1.7.0_25 Vendor: Oracle Corporation 
+bpipe.Runner	[1]	INFO	|10:40:00 Initializing plugins ... 
+bpipe.Config	[1]	INFO	|10:40:00 No plugins directory found: /lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/outputext/.bpipe/plugins 
+bpipe.Runner	[1]	INFO	|10:40:00 Reading user config ...  
+bpipe.Config	[1]	INFO	|10:40:00 No configuration file found in same dir as pipeline file 
+bpipe.Config	[1]	INFO	|10:40:00 No local configuration file found 
+bpipe.Utils	[10]	INFO	|10:40:00 Read config from /nfs/users/nfs_c/cgppipe/canpipe/software/bpipe_git/tests/outputext/../../bin/../src/main/config/bpipe.config executed in 0.326 seconds 
+bpipe.Utils	[1]	INFO	|10:40:00 Read user config executed in 0.552 seconds 
+bpipe.Runner	[1]	INFO	|10:40:00 Loading tool database ...  
+bpipe.ToolDatabase	[11]	INFO	|10:40:00 Loading tool database from user configuration 
+bpipe.NotificationManager	[14]	INFO	|10:40:00 Configuring notifications 
+bpipe.Concurrency	[13]	INFO	|10:40:00 Creating thread pool with 32 threads to execute parallel pipelines 
+bpipe.NotificationManager	[14]	INFO	|10:40:00 Trying class name file for notification channel file 
+bpipe.Tool	[11]	INFO	|10:40:00 Configured meta data about tool samtools 
+bpipe.Tool	[11]	INFO	|10:40:00 Configured meta data about tool bwa 
+bpipe.Tool	[11]	INFO	|10:40:00 Configured meta data about tool bowtie 
+bpipe.Tool	[11]	INFO	|10:40:00 Configured meta data about tool fastqc 
+bpipe.Tool	[11]	INFO	|10:40:00 Configured meta data about tool coverageBed 
+bpipe.Tool	[11]	INFO	|10:40:00 Configured meta data about tool fastx_clipper 
+bpipe.Tool	[11]	INFO	|10:40:00 Configured meta data about tool convert2annovar.pl 
+bpipe.Tool	[11]	INFO	|10:40:00 Configured meta data about tool summarize_annovar.pl 
+bpipe.Tool	[11]	INFO	|10:40:00 Configured meta data about tool bowtie2 
+bpipe.Tool	[11]	INFO	|10:40:00 Configured meta data about tool GenomeAnalysisTK 
+bpipe.Tool	[11]	INFO	|10:40:00 Configured meta data about tool MarkDuplicates 
+bpipe.Tool	[11]	INFO	|10:40:00 Configured meta data about tool signalp 
+bpipe.Tool	[11]	INFO	|10:40:00 Configured meta data about tool variant_effect_predictor.pl 
+bpipe.Tool	[11]	INFO	|10:40:00 Configured meta data about tool igvtools 
+bpipe.Tool	[11]	INFO	|10:40:00 Configured meta data about tool ls 
+bpipe.Runner	[1]	INFO	|10:40:00 No CLI parameters specified 
+bpipe.NotificationManager	[14]	INFO	|10:40:00 Unable to create notification channel using class file: java.lang.ClassNotFoundException: file 
+bpipe.NotificationManager	[14]	INFO	|10:40:00 Trying class name bpipe.FILENotificationChannel for notification channel file 
+bpipe.NotificationManager	[14]	INFO	|10:40:00 Unable to create notification channel using class bpipe.FILENotificationChannel: java.lang.ClassNotFoundException: bpipe.FILENotificationChannel 
+bpipe.NotificationManager	[14]	INFO	|10:40:00 Trying class name bpipe.file for notification channel file 
+bpipe.NotificationManager	[14]	INFO	|10:40:00 Unable to create notification channel using class bpipe.file: java.lang.ClassNotFoundException: bpipe.file 
+bpipe.NotificationManager	[14]	INFO	|10:40:00 Trying class name bpipe.FileNotificationChannel for notification channel file 
+bpipe.NotificationManager	[14]	INFO	|10:40:00 Successfully created notification channel using class bpipe.FileNotificationChannel 
+bpipe.Runner	[1]	INFO	|10:40:00 Parsing script ...  
+bpipe.Runner	[1]	INFO	|10:40:01 Run ...  
+bpipe.Pipeline	[1]	INFO	|10:40:01 Running with input [test.txt] 
+bpipe.PipelineCategory	[1]	INFO	|10:40:01 Found closure variable hello 
+bpipe.PipelineCategory	[1]	INFO	|10:40:01 Found closure variable world 
+bpipe.PipelineCategory	[1]	INFO	|10:40:01 Found closure variable there 
+bpipe.Pipeline	[1]	WARNING	|10:40:01 Pipeline folder /nfs/users/nfs_c/cgppipe/bpipes could not be found 
+bpipe.Pipeline	[1]	INFO	|10:40:01 Loaded external reference: args 
+bpipe.Pipeline	[1]	INFO	|10:40:01 External reference args is overridden by local reference 
+bpipe.Pipeline	[1]	INFO	|10:40:01 Loaded external reference: hello 
+bpipe.Pipeline	[1]	INFO	|10:40:01 External reference hello is overridden by local reference 
+bpipe.Pipeline	[1]	INFO	|10:40:01 Loaded external reference: world 
+bpipe.Pipeline	[1]	INFO	|10:40:01 External reference world is overridden by local reference 
+bpipe.Pipeline	[1]	INFO	|10:40:01 Loaded external reference: there 
+bpipe.Pipeline	[1]	INFO	|10:40:01 External reference there is overridden by local reference 
+bpipe.Pipeline	[1]	INFO	|10:40:01 Running segment with inputs test.txt 
+bpipe.Dependencies	[1]	INFO	|10:40:01 Checking input (s) test.txt 
+bpipe.Utils	[1]	INFO	|10:40:01 Output folder scan (concurrency=5) executed in 0.003 seconds 
+bpipe.Dependencies	[1]	INFO	|10:40:01  Checking file test.txt 
+bpipe.PipelineDelegate	[1]	INFO	|10:40:01 Setting or creating a delegate for context 1538558983 body 710233754/java.lang.Class in thread 1 
+bpipe.PipelineDelegate	[1]	INFO	|10:40:01 Created new delegate bpipe.PipelineDelegate@6056deff overriding type java.lang.Class in thread 1 
+bpipe.Dependencies	[1]	INFO	|10:40:01 Checking input (s) test.txt 
+bpipe.Dependencies	[1]	INFO	|10:40:01  Checking file test.txt 
+bpipe.PipelineDelegate	[1]	INFO	|10:40:01 Setting or creating a delegate for context 430493066 body 424553519/java.lang.Class in thread 1 
+bpipe.PipelineDelegate	[1]	INFO	|10:40:01 Created new delegate bpipe.PipelineDelegate@5b36cea3 overriding type java.lang.Class in thread 1 
+bpipe.Dependencies	[1]	INFO	|10:40:01 Checking input (s) test.txt 
+bpipe.Dependencies	[1]	INFO	|10:40:01  Checking file test.txt 
+bpipe.ReportStatisticsListener	[1]	INFO	|10:40:01 Annotating stage start time hello 
+bpipe.PipelineStage	[1]	INFO	|10:40:01 Stage hello : INPUT=test.txt OUTPUT=test.txt.hello 
+bpipe.PipelineDelegate	[1]	INFO	|10:40:01 Setting or creating a delegate for context 454183357 body 1505127599/script14177760008981552421923 in thread 1 
+bpipe.PipelineDelegate	[1]	INFO	|10:40:01 Created new delegate bpipe.PipelineDelegate@4da7252d overriding type script14177760008981552421923 in thread 1 
+bpipe.PipelineContext	[1]	INFO	|10:40:01 No inputs resolved by input wrappers: outputs based on default test.txt.hello 
+bpipe.PipelineContext	[1]	INFO	|10:40:01 Tracking outputs referenced=[[]] inferred=[[test.hello.csv]] for command cp test.txt test.hello.csv 
+bpipe.ReportStatisticsListener	[1]	INFO	|10:40:01 Intercepted command check for command cp test.txt test.hello.csv 
+bpipe.PipelineContext	[1]	INFO	|10:40:01 Checking actual resolved inputs [test.txt] 
+bpipe.Utils	[1]	INFO	|10:40:01 ===== Check test.hello.csv ===== 
+bpipe.Utils	[1]	INFO	|10:40:01 file doesn't exist: test.hello.csv 
+bpipe.Dependencies	[1]	INFO	|10:40:01 Found these missing / older files: [test.hello.csv] 
+bpipe.Dependencies	[1]	INFO	|10:40:01 Some files are outdated : [test.hello.csv] 
+bpipe.Command	[1]	INFO	|10:40:01 Checking for configuration for command cp 
+bpipe.Command	[1]	INFO	|10:40:01 Default command properties: [executor:local] 
+bpipe.CommandManager	[1]	INFO	|10:40:01 Using config [executor:local] for command 
+bpipe.CommandManager	[1]	INFO	|10:40:01 Created bpipe command id 1 
+bpipe.Concurrency	[1]	INFO	|10:40:01 Thread main requesting for 1 concurrency permit(s) type threads with 32 available 
+bpipe.Concurrency	[1]	INFO	|10:40:01 Thread main acquired resource threads in amount 1 
+bpipe.Command	[15]	INFO	|10:40:01 Command 1 changing state from null to RUNNING 
+bpipe.executor.ThrottledDelegatingCommandExecutor	[1]	INFO	|10:40:01 Waiting for command to complete before releasing 1 resources 
+bpipe.Command	[1]	INFO	|10:40:01 Command 1 changing state from RUNNING to COMPLETE 
+bpipe.executor.ThrottledDelegatingCommandExecutor	[1]	INFO	|10:40:01 Releasing 1 resources 
+bpipe.Concurrency	[1]	INFO	|10:40:01 Thread main releasing 1 threads 
+bpipe.executor.ThrottledDelegatingCommandExecutor	[1]	INFO	|10:40:01 Released 1 resources 
+bpipe.PipelineStage	[1]	INFO	|10:40:01 Stage hello returned null as default inputs for next stage 
+bpipe.PipelineStage	[1]	INFO	|10:40:01 Using inferred outputs [test.hello.csv] as outputs because no explicit outputs set 
+bpipe.PipelineStage	[1]	INFO	|10:40:01 Inferring nextInputs from explicit output as [test.hello.csv] 
+bpipe.PipelineStage	[1]	INFO	|10:40:01 Setting next inputs [test.hello.csv] on stage 1619214174, context 454183357 in thread 1 
+bpipe.Dependencies	[1]	INFO	|10:40:01 Context 454183357 for stage hello has resolved inputs [test.txt] 
+bpipe.Dependencies	[1]	INFO	|10:40:01 Saving output file details to file .bpipe/outputs/hello.test.hello.csv.properties for command cp test.txt test.hel... 
+bpipe.ReportStatisticsListener	[1]	INFO	|10:40:01 Annotating stage end time hello 
+bpipe.PipelineStage	[1]	INFO	|10:40:01 Checking files: [test.hello.csv] 
+bpipe.Dependencies	[1]	INFO	|10:40:01 Checking output (s) [test.hello.csv] 
+bpipe.Dependencies	[1]	INFO	|10:40:01  Checking file test.hello.csv 
+bpipe.Dependencies	[1]	INFO	|10:40:01 Checking input (s) [test.hello.csv] 
+bpipe.Dependencies	[1]	INFO	|10:40:01  Checking file test.hello.csv 
+bpipe.PipelineCategory	[1]	INFO	|10:40:01 Next inputs from stage = [test.hello.csv] 
+bpipe.PipelineCategory	[1]	INFO	|10:40:01 Checking inputs for next stage:  [test.hello.csv] 
+bpipe.Dependencies	[1]	INFO	|10:40:01 Checking input (s) [test.hello.csv] 
+bpipe.Dependencies	[1]	INFO	|10:40:01  Checking file test.hello.csv 
+bpipe.Dependencies	[1]	INFO	|10:40:01 Checking input (s) [test.hello.csv] 
+bpipe.Dependencies	[1]	INFO	|10:40:01  Checking file test.hello.csv 
+bpipe.ReportStatisticsListener	[1]	INFO	|10:40:01 Annotating stage start time world 
+bpipe.PipelineStage	[1]	INFO	|10:40:01 Stage world : INPUT=[test.hello.csv] OUTPUT=test.hello.csv.world 
+bpipe.PipelineDelegate	[1]	INFO	|10:40:01 Setting or creating a delegate for context 1657638431 body 1469678380/script14177760008981552421923 in thread 1 
+bpipe.PipelineDelegate	[1]	INFO	|10:40:01 Created new delegate bpipe.PipelineDelegate@252dc7e6 overriding type script14177760008981552421923 in thread 1 
+bpipe.PipelineContext	[1]	INFO	|10:40:01 No inputs resolved by input wrappers: outputs based on default test.hello.csv.world 
+bpipe.PipelineContext	[1]	INFO	|10:40:01 No inputs resolved by input wrappers: outputs based on default test.hello.csv.world 
+bpipe.PipelineContext	[1]	INFO	|10:40:01 Using non-default output due to input property reference: test.hello.csv from resolved inputs [test.hello.csv] 
+bpipe.PipelineContext	[1]	INFO	|10:40:01 Using non-default output due to input property reference: test.hello.csv from resolved inputs [test.hello.csv] 
+bpipe.PipelineContext	[1]	INFO	|10:40:01 Tracking outputs referenced=[[]] inferred=[[test.hello.world.txt, test.hello.world.xml]] for command echo execute1; cp test.hello.csv test.hello.world.txt; cp test.hello.csv test.hello.world.xml 
+bpipe.ReportStatisticsListener	[1]	INFO	|10:40:01 Intercepted command check for command echo execute1; cp test.hello.csv test.hello.world.txt; cp test.hello.csv test.hello.world.xml 
+bpipe.PipelineContext	[1]	INFO	|10:40:01 Checking actual resolved inputs [test.hello.csv] 
+bpipe.Utils	[1]	INFO	|10:40:01 ===== Check test.hello.world.txt ===== 
+bpipe.Utils	[1]	INFO	|10:40:01 file doesn't exist: test.hello.world.txt 
+bpipe.Utils	[1]	INFO	|10:40:01 ===== Check test.hello.world.xml ===== 
+bpipe.Utils	[1]	INFO	|10:40:01 file doesn't exist: test.hello.world.xml 
+bpipe.Dependencies	[1]	INFO	|10:40:01 Found these missing / older files: [test.hello.world.txt, test.hello.world.xml] 
+bpipe.Dependencies	[1]	INFO	|10:40:01 Some files are outdated : [test.hello.world.txt, test.hello.world.xml] 
+bpipe.Command	[1]	INFO	|10:40:01 Checking for configuration for command echo 
+bpipe.Command	[1]	INFO	|10:40:01 Default command properties: [executor:local] 
+bpipe.CommandManager	[1]	INFO	|10:40:01 Using config [executor:local] for command 
+bpipe.CommandManager	[1]	INFO	|10:40:01 Created bpipe command id 2 
+bpipe.Concurrency	[1]	INFO	|10:40:01 Thread main requesting for 1 concurrency permit(s) type threads with 32 available 
+bpipe.Concurrency	[1]	INFO	|10:40:01 Thread main acquired resource threads in amount 1 
+bpipe.Command	[19]	INFO	|10:40:01 Command 2 changing state from null to RUNNING 
+bpipe.executor.ThrottledDelegatingCommandExecutor	[1]	INFO	|10:40:01 Waiting for command to complete before releasing 1 resources 
+bpipe.Command	[1]	INFO	|10:40:01 Command 2 changing state from RUNNING to COMPLETE 
+bpipe.executor.ThrottledDelegatingCommandExecutor	[1]	INFO	|10:40:01 Releasing 1 resources 
+bpipe.Concurrency	[1]	INFO	|10:40:01 Thread main releasing 1 threads 
+bpipe.executor.ThrottledDelegatingCommandExecutor	[1]	INFO	|10:40:01 Released 1 resources 
+bpipe.PipelineContext	[1]	INFO	|10:40:01 Using non-default output due to input property reference: test.hello.csv from resolved inputs [test.hello.csv] 
+bpipe.PipelineContext	[1]	INFO	|10:40:01 Using non-default output due to input property reference: test.hello.csv from resolved inputs [test.hello.csv] 
+bpipe.PipelineContext	[1]	INFO	|10:40:01 Tracking outputs referenced=[[]] inferred=[[test.hello.world.tsv]] for command echo execute2; cp test.hello.csv test.hello.world.tsv 
+bpipe.ReportStatisticsListener	[1]	INFO	|10:40:01 Intercepted command check for command echo execute2; cp test.hello.csv test.hello.world.tsv 
+bpipe.PipelineContext	[1]	INFO	|10:40:01 Checking actual resolved inputs [test.hello.csv] 
+bpipe.Utils	[1]	INFO	|10:40:01 ===== Check test.hello.world.tsv ===== 
+bpipe.Utils	[1]	INFO	|10:40:01 file doesn't exist: test.hello.world.tsv 
+bpipe.Dependencies	[1]	INFO	|10:40:01 Found these missing / older files: [test.hello.world.tsv] 
+bpipe.Dependencies	[1]	INFO	|10:40:01 Some files are outdated : [test.hello.world.tsv] 
+bpipe.Command	[1]	INFO	|10:40:01 Checking for configuration for command echo 
+bpipe.Command	[1]	INFO	|10:40:01 Default command properties: [executor:local] 
+bpipe.CommandManager	[1]	INFO	|10:40:01 Using config [executor:local] for command 
+bpipe.CommandManager	[1]	INFO	|10:40:01 Created bpipe command id 3 
+bpipe.Concurrency	[1]	INFO	|10:40:01 Thread main requesting for 1 concurrency permit(s) type threads with 32 available 
+bpipe.Concurrency	[1]	INFO	|10:40:01 Thread main acquired resource threads in amount 1 
+bpipe.Command	[22]	INFO	|10:40:01 Command 3 changing state from null to RUNNING 
+bpipe.executor.ThrottledDelegatingCommandExecutor	[1]	INFO	|10:40:01 Waiting for command to complete before releasing 1 resources 
+bpipe.Command	[1]	INFO	|10:40:01 Command 3 changing state from RUNNING to COMPLETE 
+bpipe.executor.ThrottledDelegatingCommandExecutor	[1]	INFO	|10:40:01 Releasing 1 resources 
+bpipe.Concurrency	[1]	INFO	|10:40:01 Thread main releasing 1 threads 
+bpipe.executor.ThrottledDelegatingCommandExecutor	[1]	INFO	|10:40:01 Released 1 resources 
+bpipe.PipelineStage	[1]	INFO	|10:40:01 Stage world returned null as default inputs for next stage 
+bpipe.PipelineStage	[1]	INFO	|10:40:01 Using inferred outputs [test.hello.world.txt, test.hello.world.xml, test.hello.world.tsv] as outputs because no explicit outputs set 
+bpipe.PipelineStage	[1]	INFO	|10:40:01 Inferring nextInputs from explicit output as [test.hello.world.txt, test.hello.world.xml, test.hello.world.tsv] 
+bpipe.PipelineStage	[1]	INFO	|10:40:01 Setting next inputs [test.hello.world.txt, test.hello.world.xml, test.hello.world.tsv] on stage 983787684, context 1657638431 in thread 1 
+bpipe.Dependencies	[1]	INFO	|10:40:01 Context 1657638431 for stage world has resolved inputs [test.hello.csv] 
+bpipe.Dependencies	[1]	INFO	|10:40:01 Saving output file details to file .bpipe/outputs/world.test.hello.world.txt.properties for command echo execute1; cp te... 
+bpipe.Dependencies	[1]	INFO	|10:40:02 Context 1657638431 for stage world has resolved inputs [test.hello.csv] 
+bpipe.Dependencies	[1]	INFO	|10:40:02 Saving output file details to file .bpipe/outputs/world.test.hello.world.xml.properties for command echo execute1; cp te... 
+bpipe.Dependencies	[1]	INFO	|10:40:02 Context 1657638431 for stage world has resolved inputs [test.hello.csv] 
+bpipe.Dependencies	[1]	INFO	|10:40:02 Saving output file details to file .bpipe/outputs/world.test.hello.world.tsv.properties for command echo execute2; cp te... 
+bpipe.ReportStatisticsListener	[1]	INFO	|10:40:02 Annotating stage end time world 
+bpipe.PipelineStage	[1]	INFO	|10:40:02 Checking files: [test.hello.world.txt, test.hello.world.xml, test.hello.world.tsv] 
+bpipe.Dependencies	[1]	INFO	|10:40:02 Checking output (s) [test.hello.world.txt, test.hello.world.xml, test.hello.world.tsv] 
+bpipe.Dependencies	[1]	INFO	|10:40:02  Checking file test.hello.world.txt 
+bpipe.Dependencies	[1]	INFO	|10:40:02  Checking file test.hello.world.xml 
+bpipe.Dependencies	[1]	INFO	|10:40:02  Checking file test.hello.world.tsv 
+bpipe.PipelineContext	[1]	INFO	|10:40:02 Setting output [test.hello.world.txt, test.hello.world.xml, test.hello.world.tsv] on context 430493066 in thread 1 
+bpipe.PipelineStage	[1]	INFO	|10:40:02 Setting next inputs [test.hello.world.txt, test.hello.world.xml, test.hello.world.tsv] on stage 721860497, context 430493066 in thread 1 
+bpipe.PipelineStage	[1]	INFO	|10:40:02 Checking files: [test.hello.world.txt, test.hello.world.xml, test.hello.world.tsv] 
+bpipe.Dependencies	[1]	INFO	|10:40:02 Checking output (s) [test.hello.world.txt, test.hello.world.xml, test.hello.world.tsv] 
+bpipe.Dependencies	[1]	INFO	|10:40:02  Checking file test.hello.world.txt 
+bpipe.Dependencies	[1]	INFO	|10:40:02  Checking file test.hello.world.xml 
+bpipe.Dependencies	[1]	INFO	|10:40:02  Checking file test.hello.world.tsv 
+bpipe.Dependencies	[1]	INFO	|10:40:02 Checking input (s) [test.hello.world.txt, test.hello.world.xml, test.hello.world.tsv] 
+bpipe.Dependencies	[1]	INFO	|10:40:02  Checking file test.hello.world.txt 
+bpipe.Dependencies	[1]	INFO	|10:40:02  Checking file test.hello.world.xml 
+bpipe.Dependencies	[1]	INFO	|10:40:02  Checking file test.hello.world.tsv 
+bpipe.PipelineCategory	[1]	INFO	|10:40:02 Next inputs from stage = [test.hello.world.txt, test.hello.world.xml, test.hello.world.tsv] 
+bpipe.PipelineCategory	[1]	INFO	|10:40:02 Checking inputs for next stage:  [test.hello.world.txt, test.hello.world.xml, test.hello.world.tsv] 
+bpipe.Dependencies	[1]	INFO	|10:40:02 Checking input (s) [test.hello.world.txt, test.hello.world.xml, test.hello.world.tsv] 
+bpipe.Dependencies	[1]	INFO	|10:40:02  Checking file test.hello.world.txt 
+bpipe.Dependencies	[1]	INFO	|10:40:02  Checking file test.hello.world.xml 
+bpipe.Dependencies	[1]	INFO	|10:40:02  Checking file test.hello.world.tsv 
+bpipe.Dependencies	[1]	INFO	|10:40:02 Checking input (s) [test.hello.world.txt, test.hello.world.xml, test.hello.world.tsv] 
+bpipe.Dependencies	[1]	INFO	|10:40:02  Checking file test.hello.world.txt 
+bpipe.Dependencies	[1]	INFO	|10:40:02  Checking file test.hello.world.xml 
+bpipe.Dependencies	[1]	INFO	|10:40:02  Checking file test.hello.world.tsv 
+bpipe.ReportStatisticsListener	[1]	INFO	|10:40:02 Annotating stage start time there 
+bpipe.PipelineStage	[1]	INFO	|10:40:02 Stage there : INPUT=[test.hello.world.txt, test.hello.world.xml, test.hello.world.tsv] OUTPUT=test.hello.world.txt.there 
+bpipe.PipelineDelegate	[1]	INFO	|10:40:02 Setting or creating a delegate for context 27148040 body 527624866/script14177760008981552421923 in thread 1 
+bpipe.PipelineDelegate	[1]	INFO	|10:40:02 Created new delegate bpipe.PipelineDelegate@3c3c270c overriding type script14177760008981552421923 in thread 1 
+bpipe.PipelineContext	[1]	INFO	|10:40:02 Producing [test.foo, test.bar] from bpipe.PipelineContext@19e3f08 
+bpipe.PipelineDelegate	[1]	INFO	|10:40:02 Setting or creating a delegate for context 27148040 body 314721801/script14177760008981552421923$_run_closure3 in thread 1 
+bpipe.PipelineDelegate	[1]	INFO	|10:40:02 Created new delegate bpipe.PipelineDelegate@461f79b5 overriding type script14177760008981552421923$_run_closure3 in thread 1 
+bpipe.PipelineContext	[1]	INFO	|10:40:02 Probing command using inputs [test.hello.world.txt, test.hello.world.xml, test.hello.world.tsv] 
+bpipe.PipelineContext	[1]	INFO	|10:40:02 Using previously set output: [test.foo, test.bar] 
+bpipe.PipelineOutput	[1]	INFO	|10:40:02 Selected output test.foo with extension foo from expected outputs [test.foo, test.bar] 
+bpipe.PipelineContext	[1]	INFO	|10:40:02 Using previously set output: [test.foo, test.bar] 
+bpipe.PipelineOutput	[1]	INFO	|10:40:02 Selected output test.bar with extension bar from expected outputs [test.foo, test.bar] 
+bpipe.PipelineContext	[1]	INFO	|10:40:02 Tracking outputs referenced=[[]] inferred=[[test.foo, test.bar]] for command echo execute3; touch test.foo; cp test.hello.world.txt test.bar 
+bpipe.ReportStatisticsListener	[1]	INFO	|10:40:02 Intercepted command check for command echo execute3; touch test.foo; cp test.hello.world.txt test.bar 
+bpipe.PipelineContext	[1]	INFO	|10:40:02 Checking actual resolved inputs [test.hello.world.txt] 
+bpipe.PipelineContext	[1]	INFO	|10:40:02 Finished probe 
+bpipe.Utils	[1]	INFO	|10:40:02 ===== Check test.foo ===== 
+bpipe.Utils	[1]	INFO	|10:40:02 Checking test.foo against inputs [test.hello.world.txt, test.hello.world.xml, test.hello.world.tsv] 
+bpipe.Utils	[1]	INFO	|10:40:02 Check test.hello.world.txt : 1417776001000 >  test.foo : 1416997668000 
+bpipe.Utils	[1]	INFO	|10:40:02 ===== Check test.bar ===== 
+bpipe.Utils	[1]	INFO	|10:40:02 file doesn't exist: test.bar 
+bpipe.Utils	[1]	INFO	|10:40:02 ===== Check test.foo ===== 
+bpipe.Utils	[1]	INFO	|10:40:02 Checking test.foo against inputs [test.hello.world.txt, test.hello.world.xml, test.hello.world.tsv] 
+bpipe.Utils	[1]	INFO	|10:40:02 Check test.hello.world.txt : 1417776001000 >  test.foo : 1416997668000 
+bpipe.Utils	[1]	INFO	|10:40:02 ===== Check test.bar ===== 
+bpipe.Utils	[1]	INFO	|10:40:02 file doesn't exist: test.bar 
+bpipe.Dependencies	[1]	INFO	|10:40:02 Not up to date because these files exist and are older than inputs: [test.foo, test.foo] 
+bpipe.PipelineContext	[1]	INFO	|10:40:02 Not up to date because input inferred by probe of body newer than outputs 
+bpipe.PipelineDelegate	[1]	INFO	|10:40:02 Setting or creating a delegate for context 27148040 body 314721801/bpipe.PipelineDelegate in thread 1 
+bpipe.PipelineDelegate	[1]	INFO	|10:40:02 Existing delegate bpipe.PipelineDelegate@461f79b5 has type bpipe.PipelineDelegate in thread 1. Setting new context 27148040 
+bpipe.PipelineContext	[1]	INFO	|10:40:02 Producing from inputs [test.hello.world.txt, test.hello.world.xml, test.hello.world.tsv] 
+bpipe.PipelineContext	[1]	INFO	|10:40:02 Using previously set output: [test.foo, test.bar] 
+bpipe.PipelineOutput	[1]	INFO	|10:40:02 Selected output test.foo with extension foo from expected outputs [test.foo, test.bar] 
+bpipe.PipelineContext	[1]	INFO	|10:40:02 Using previously set output: [test.foo, test.bar] 
+bpipe.PipelineOutput	[1]	INFO	|10:40:02 Selected output test.bar with extension bar from expected outputs [test.foo, test.bar] 
+bpipe.PipelineContext	[1]	INFO	|10:40:02 Tracking outputs referenced=[[]] inferred=[[test.foo, test.bar]] for command echo execute3; touch test.foo; cp test.hello.world.txt test.bar 
+bpipe.ReportStatisticsListener	[1]	INFO	|10:40:02 Intercepted command check for command echo execute3; touch test.foo; cp test.hello.world.txt test.bar 
+bpipe.PipelineContext	[1]	INFO	|10:40:02 Checking actual resolved inputs [test.hello.world.txt] 
+bpipe.Utils	[1]	INFO	|10:40:02 ===== Check test.foo ===== 
+bpipe.Utils	[1]	INFO	|10:40:02 Checking test.foo against inputs [test.hello.world.txt] 
+bpipe.Utils	[1]	INFO	|10:40:02 Check test.hello.world.txt : 1417776001000 >  test.foo : 1416997668000 
+bpipe.Utils	[1]	INFO	|10:40:02 ===== Check test.bar ===== 
+bpipe.Utils	[1]	INFO	|10:40:02 file doesn't exist: test.bar 
+bpipe.Utils	[1]	INFO	|10:40:02 ===== Check test.foo ===== 
+bpipe.Utils	[1]	INFO	|10:40:02 Checking test.foo against inputs [test.hello.world.txt] 
+bpipe.Utils	[1]	INFO	|10:40:02 Check test.hello.world.txt : 1417776001000 >  test.foo : 1416997668000 
+bpipe.Utils	[1]	INFO	|10:40:02 ===== Check test.bar ===== 
+bpipe.Utils	[1]	INFO	|10:40:02 file doesn't exist: test.bar 
+bpipe.Dependencies	[1]	INFO	|10:40:02 Not up to date because these files exist and are older than inputs: [test.foo, test.foo] 
+bpipe.Command	[1]	INFO	|10:40:02 Checking for configuration for command echo 
+bpipe.Command	[1]	INFO	|10:40:02 Default command properties: [executor:local] 
+bpipe.CommandManager	[1]	INFO	|10:40:02 Using config [executor:local] for command 
+bpipe.CommandManager	[1]	INFO	|10:40:02 Created bpipe command id 4 
+bpipe.Concurrency	[1]	INFO	|10:40:02 Thread main requesting for 1 concurrency permit(s) type threads with 32 available 
+bpipe.Concurrency	[1]	INFO	|10:40:02 Thread main acquired resource threads in amount 1 
+bpipe.Command	[25]	INFO	|10:40:02 Command 4 changing state from null to RUNNING 
+bpipe.executor.ThrottledDelegatingCommandExecutor	[1]	INFO	|10:40:02 Waiting for command to complete before releasing 1 resources 
+bpipe.Command	[1]	INFO	|10:40:02 Command 4 changing state from RUNNING to COMPLETE 
+bpipe.executor.ThrottledDelegatingCommandExecutor	[1]	INFO	|10:40:02 Releasing 1 resources 
+bpipe.Concurrency	[1]	INFO	|10:40:02 Thread main releasing 1 threads 
+bpipe.executor.ThrottledDelegatingCommandExecutor	[1]	INFO	|10:40:02 Released 1 resources 
+bpipe.PipelineContext	[1]	INFO	|10:40:02 Adding outputs [test.foo, test.bar] as a result of produce 
+bpipe.PipelineStage	[1]	INFO	|10:40:02 Stage there returned null as default inputs for next stage 
+bpipe.PipelineStage	[1]	INFO	|10:40:02 Inferring nextInputs from explicit output as [test.foo, test.bar] 
+bpipe.PipelineStage	[1]	INFO	|10:40:02 Setting next inputs [test.foo, test.bar] on stage 199535055, context 27148040 in thread 1 
+bpipe.Dependencies	[1]	INFO	|10:40:02 Context 27148040 for stage there has resolved inputs [test.hello.world.txt] 
+bpipe.Dependencies	[1]	INFO	|10:40:02 Saving output file details to file .bpipe/outputs/there.test.foo.properties for command echo execute3; touch... 
+bpipe.Dependencies	[1]	INFO	|10:40:02 Context 27148040 for stage there has resolved inputs [test.hello.world.txt] 
+bpipe.Dependencies	[1]	INFO	|10:40:02 Saving output file details to file .bpipe/outputs/there.test.bar.properties for command echo execute3; touch... 
+bpipe.ReportStatisticsListener	[1]	INFO	|10:40:02 Annotating stage end time there 
+bpipe.PipelineStage	[1]	INFO	|10:40:02 Checking files: [test.foo, test.bar] 
+bpipe.Dependencies	[1]	INFO	|10:40:02 Checking output (s) [test.foo, test.bar] 
+bpipe.Dependencies	[1]	INFO	|10:40:02  Checking file test.foo 
+bpipe.Dependencies	[1]	INFO	|10:40:02  Checking file test.bar 
+bpipe.PipelineContext	[1]	INFO	|10:40:02 Setting output [test.foo, test.bar] on context 1538558983 in thread 1 
+bpipe.PipelineStage	[1]	INFO	|10:40:02 Setting next inputs [test.foo, test.bar] on stage 1503046850, context 1538558983 in thread 1 
+bpipe.PipelineStage	[1]	INFO	|10:40:02 Checking files: [test.foo, test.bar] 
+bpipe.Dependencies	[1]	INFO	|10:40:02 Checking output (s) [test.foo, test.bar] 
+bpipe.Dependencies	[1]	INFO	|10:40:02  Checking file test.foo 
+bpipe.Dependencies	[1]	INFO	|10:40:02  Checking file test.bar 
+bpipe.Pipeline	[1]	INFO	|10:40:02 Pipeline segment  in thread 1 has finished normally 
+bpipe.Pipeline	[1]	INFO	|10:40:02 Finished running segment for inputs test.txt 
+bpipe.Pipeline	[1]	INFO	|10:40:02 adding stage hello from pipeline bpipe.Pipeline@38ee1abe 
+bpipe.Pipeline	[1]	INFO	|10:40:02 adding stage world from pipeline bpipe.Pipeline@38ee1abe 
+bpipe.Pipeline	[1]	INFO	|10:40:02 adding stage there from pipeline bpipe.Pipeline@38ee1abe 
+bpipe.Dependencies	[28]	INFO	|10:40:02 Reading property file .bpipe/outputs/hello.test.hello.csv.properties 
+bpipe.Dependencies	[29]	INFO	|10:40:02 Reading property file .bpipe/outputs/world.test.hello.world.xml.properties 
+bpipe.Dependencies	[32]	INFO	|10:40:02 Reading property file .bpipe/outputs/world.test.hello.world.tsv.properties 
+bpipe.Dependencies	[30]	INFO	|10:40:02 Reading property file .bpipe/outputs/there.test.foo.properties 
+bpipe.Dependencies	[31]	INFO	|10:40:02 Reading property file .bpipe/outputs/there.test.bar.properties 
+bpipe.Dependencies	[32]	INFO	|10:40:02 Reading property file .bpipe/outputs/world.test.hello.world.txt.properties 
+bpipe.Utils	[1]	INFO	|10:40:02 Output folder scan (concurrency=5) executed in 0.038 seconds 
+bpipe.Dependencies	[1]	INFO	|10:40:02 External inputs: [[test.txt]] for outputs [test.hello.csv] 
+bpipe.Dependencies	[1]	INFO	|10:40:02 There are 1 output groups 
+bpipe.Dependencies	[1]	INFO	|10:40:02 Subtracting 1 remaining outputs from 6 total outputs 
+bpipe.Dependencies	[1]	INFO	|10:40:02 External inputs: [[test.hello.csv], [test.hello.csv], [test.hello.csv]] for outputs [test.hello.world.tsv, test.hello.world.txt, test.hello.world.xml] 
+bpipe.Dependencies	[1]	INFO	|10:40:02 New entry for test.hello.world.tsv 
+bpipe.Dependencies	[1]	INFO	|10:40:02 Maxtimestamp for test.hello.world.tsv = 1417776001000 
+bpipe.Dependencies	[1]	INFO	|10:40:02 New entry for test.hello.world.txt 
+bpipe.Dependencies	[1]	INFO	|10:40:02 Maxtimestamp for test.hello.world.txt = 1417776001000 
+bpipe.Dependencies	[1]	INFO	|10:40:02 New entry for test.hello.world.xml 
+bpipe.Dependencies	[1]	INFO	|10:40:02 Maxtimestamp for test.hello.world.xml = 1417776001000 
+bpipe.Dependencies	[1]	INFO	|10:40:02 There are 3 output groups 
+bpipe.Dependencies	[1]	INFO	|10:40:02 Subtracting 3 remaining outputs from 5 total outputs 
+bpipe.Dependencies	[1]	INFO	|10:40:02 External inputs: [[test.hello.world.txt], [test.hello.world.txt]] for outputs [test.foo, test.bar] 
+bpipe.Dependencies	[1]	INFO	|10:40:02 New entry for test.foo 
+bpipe.Dependencies	[1]	INFO	|10:40:02 Maxtimestamp for test.foo = 1417776002000 
+bpipe.Dependencies	[1]	INFO	|10:40:02 New entry for test.bar 
+bpipe.Dependencies	[1]	INFO	|10:40:02 Maxtimestamp for test.bar = 1417776002000 
+bpipe.Dependencies	[1]	INFO	|10:40:02 There are 2 output groups 
+bpipe.Dependencies	[1]	INFO	|10:40:02 Subtracting 2 remaining outputs from 2 total outputs 
+bpipe.Dependencies	[1]	INFO	|10:40:02 There are 0 remaining outputs 
+bpipe.Dependencies	[1]	INFO	|10:40:02 There are 0 remaining outputs 
+bpipe.Dependencies	[1]	INFO	|10:40:02 ------- test.foo / entry 1355857 ------- 
+bpipe.Dependencies	[1]	INFO	|10:40:02 Input test.hello.world.txt? true 
+bpipe.Dependencies	[1]	INFO	|10:40:02 test.foo is newer than input files 
+bpipe.Dependencies	[1]	INFO	|10:40:02 ------ test.bar / entry 404190678 ------ 
+bpipe.Dependencies	[1]	INFO	|10:40:02 Input test.hello.world.txt? true 
+bpipe.Dependencies	[1]	INFO	|10:40:02 test.bar is newer than input files 
+bpipe.Dependencies	[1]	INFO	|10:40:02 ====Finished Output Graph===== 
+bpipe.Dependencies	[1]	INFO	|10:40:02 There are 0 remaining outputs 
+bpipe.Dependencies	[1]	INFO	|10:40:02 There are 0 remaining outputs 
+bpipe.Dependencies	[1]	INFO	|10:40:02 There are 0 remaining outputs 
+bpipe.Dependencies	[1]	INFO	|10:40:02  test.hello.world.tsv / entry 1027396825  
+bpipe.Dependencies	[1]	INFO	|10:40:02 Input test.hello.csv? true 
+bpipe.Dependencies	[1]	INFO	|10:40:02 test.hello.world.tsv is older than inputs [test.hello.csv / 1417776001000 / 1417776001000 vs 1417776001000] 
+bpipe.Dependencies	[1]	INFO	|10:40:02  test.hello.world.txt / entry 389304154  
+bpipe.Dependencies	[1]	INFO	|10:40:02 Input test.hello.csv? true 
+bpipe.Dependencies	[1]	INFO	|10:40:02 test.hello.world.txt is older than inputs [test.hello.csv / 1417776001000 / 1417776001000 vs 1417776001000] 
+bpipe.Dependencies	[1]	INFO	|10:40:02  test.hello.world.xml / entry 1535525612  
+bpipe.Dependencies	[1]	INFO	|10:40:02 Input test.hello.csv? true 
+bpipe.Dependencies	[1]	INFO	|10:40:02 test.hello.world.xml is older than inputs [test.hello.csv / 1417776001000 / 1417776001000 vs 1417776001000] 
+bpipe.Dependencies	[1]	INFO	|10:40:02 ====Finished Output Graph===== 
+bpipe.Dependencies	[1]	INFO	|10:40:02 There are 0 remaining outputs 
+bpipe.Dependencies	[1]	INFO	|10:40:02 -- test.hello.csv / entry 1267974885 --- 
+bpipe.Dependencies	[1]	INFO	|10:40:02 test.hello.csv is newer than input files 
+bpipe.Dependencies	[1]	INFO	|10:40:02 ====Finished Output Graph===== 
+bpipe.ReportGenerator	[1]	INFO	|10:40:02 Searching for template in /lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/src/main/html/bpipe 
+bpipe.ReportGenerator	[1]	INFO	|10:40:02 Generating report to /lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/outputext/doc/index.html 
+bpipe.PipelineContext	[1]	INFO	|10:40:02 Using previously set output: [test.hello.csv] 
+bpipe.PipelineContext	[1]	INFO	|10:40:02 Using previously set output: [test.hello.csv] 
+bpipe.PipelineContext	[1]	INFO	|10:40:02 Using previously set output: [test.hello.csv] 
+bpipe.PipelineContext	[1]	INFO	|10:40:02 Using previously set output: [test.hello.world.txt, test.hello.world.xml, test.hello.world.tsv] 
+bpipe.PipelineContext	[1]	INFO	|10:40:02 Using previously set output: [test.hello.world.txt, test.hello.world.xml, test.hello.world.tsv] 
+bpipe.PipelineContext	[1]	INFO	|10:40:02 Using previously set output: [test.hello.world.txt, test.hello.world.xml, test.hello.world.tsv] 
+bpipe.PipelineContext	[1]	INFO	|10:40:02 Using previously set output: [test.foo, test.bar] 
+bpipe.PipelineContext	[1]	INFO	|10:40:02 Using previously set output: [test.foo, test.bar] 
+bpipe.PipelineContext	[1]	INFO	|10:40:02 Using previously set output: [test.foo, test.bar] 
+bpipe.Dependencies	[33]	INFO	|10:40:02 Reading property file .bpipe/outputs/hello.test.hello.csv.properties 
+bpipe.Dependencies	[37]	INFO	|10:40:02 Reading property file .bpipe/outputs/world.test.hello.world.txt.properties 
+bpipe.Dependencies	[35]	INFO	|10:40:02 Reading property file .bpipe/outputs/world.test.hello.world.tsv.properties 
+bpipe.Dependencies	[36]	INFO	|10:40:02 Reading property file .bpipe/outputs/there.test.foo.properties 
+bpipe.Dependencies	[34]	INFO	|10:40:02 Reading property file .bpipe/outputs/world.test.hello.world.xml.properties 
+bpipe.Dependencies	[37]	INFO	|10:40:02 Reading property file .bpipe/outputs/there.test.bar.properties 
+bpipe.Utils	[1]	INFO	|10:40:02 Output folder scan (concurrency=5) executed in 0.009 seconds 
+bpipe.Dependencies	[1]	INFO	|10:40:02 External inputs: [[test.txt]] for outputs [test.hello.csv] 
+bpipe.Dependencies	[1]	INFO	|10:40:02 There are 1 output groups 
+bpipe.Dependencies	[1]	INFO	|10:40:02 Subtracting 1 remaining outputs from 6 total outputs 
+bpipe.Dependencies	[1]	INFO	|10:40:02 External inputs: [[test.hello.csv], [test.hello.csv], [test.hello.csv]] for outputs [test.hello.world.tsv, test.hello.world.txt, test.hello.world.xml] 
+bpipe.Dependencies	[1]	INFO	|10:40:02 New entry for test.hello.world.tsv 
+bpipe.Dependencies	[1]	INFO	|10:40:02 Maxtimestamp for test.hello.world.tsv = 1417776001000 
+bpipe.Dependencies	[1]	INFO	|10:40:02 New entry for test.hello.world.txt 
+bpipe.Dependencies	[1]	INFO	|10:40:02 Maxtimestamp for test.hello.world.txt = 1417776001000 
+bpipe.Dependencies	[1]	INFO	|10:40:02 New entry for test.hello.world.xml 
+bpipe.Dependencies	[1]	INFO	|10:40:02 Maxtimestamp for test.hello.world.xml = 1417776001000 
+bpipe.Dependencies	[1]	INFO	|10:40:02 There are 3 output groups 
+bpipe.Dependencies	[1]	INFO	|10:40:02 Subtracting 3 remaining outputs from 5 total outputs 
+bpipe.Dependencies	[1]	INFO	|10:40:02 External inputs: [[test.hello.world.txt], [test.hello.world.txt]] for outputs [test.foo, test.bar] 
+bpipe.Dependencies	[1]	INFO	|10:40:02 New entry for test.foo 
+bpipe.Dependencies	[1]	INFO	|10:40:02 Maxtimestamp for test.foo = 1417776002000 
+bpipe.Dependencies	[1]	INFO	|10:40:02 New entry for test.bar 
+bpipe.Dependencies	[1]	INFO	|10:40:02 Maxtimestamp for test.bar = 1417776002000 
+bpipe.Dependencies	[1]	INFO	|10:40:02 There are 2 output groups 
+bpipe.Dependencies	[1]	INFO	|10:40:02 Subtracting 2 remaining outputs from 2 total outputs 
+bpipe.Dependencies	[1]	INFO	|10:40:02 There are 0 remaining outputs 
+bpipe.Dependencies	[1]	INFO	|10:40:02 There are 0 remaining outputs 
+bpipe.Dependencies	[1]	INFO	|10:40:02 ----- test.foo / entry 1592606983 ------ 
+bpipe.Dependencies	[1]	INFO	|10:40:02 Input test.hello.world.txt? true 
+bpipe.Dependencies	[1]	INFO	|10:40:02 test.foo is newer than input files 
+bpipe.Dependencies	[1]	INFO	|10:40:02 ------ test.bar / entry 709387073 ------ 
+bpipe.Dependencies	[1]	INFO	|10:40:02 Input test.hello.world.txt? true 
+bpipe.Dependencies	[1]	INFO	|10:40:02 test.bar is newer than input files 
+bpipe.Dependencies	[1]	INFO	|10:40:02 ====Finished Output Graph===== 
+bpipe.Dependencies	[1]	INFO	|10:40:02 There are 0 remaining outputs 
+bpipe.Dependencies	[1]	INFO	|10:40:02 There are 0 remaining outputs 
+bpipe.Dependencies	[1]	INFO	|10:40:02 There are 0 remaining outputs 
+bpipe.Dependencies	[1]	INFO	|10:40:02  test.hello.world.tsv / entry 1836434720  
+bpipe.Dependencies	[1]	INFO	|10:40:02 Input test.hello.csv? true 
+bpipe.Dependencies	[1]	INFO	|10:40:02 test.hello.world.tsv is older than inputs [test.hello.csv / 1417776001000 / 1417776001000 vs 1417776001000] 
+bpipe.Dependencies	[1]	INFO	|10:40:02  test.hello.world.txt / entry 1323364356  
+bpipe.Dependencies	[1]	INFO	|10:40:02 Input test.hello.csv? true 
+bpipe.Dependencies	[1]	INFO	|10:40:02 test.hello.world.txt is older than inputs [test.hello.csv / 1417776001000 / 1417776001000 vs 1417776001000] 
+bpipe.Dependencies	[1]	INFO	|10:40:02  test.hello.world.xml / entry 296599313  
+bpipe.Dependencies	[1]	INFO	|10:40:02 Input test.hello.csv? true 
+bpipe.Dependencies	[1]	INFO	|10:40:02 test.hello.world.xml is older than inputs [test.hello.csv / 1417776001000 / 1417776001000 vs 1417776001000] 
+bpipe.Dependencies	[1]	INFO	|10:40:02 ====Finished Output Graph===== 
+bpipe.Dependencies	[1]	INFO	|10:40:02 There are 0 remaining outputs 
+bpipe.Dependencies	[1]	INFO	|10:40:02 --- test.hello.csv / entry 635108904 --- 
+bpipe.Dependencies	[1]	INFO	|10:40:02 test.hello.csv is newer than input files 
+bpipe.Dependencies	[1]	INFO	|10:40:02 ====Finished Output Graph===== 
+bpipe.Pipeline	[1]	INFO	|10:40:02 Outputs are: 
+		test.hello.world.tsv
+		test.foo
+		test.bar
+		test.hello.world.xml 
+bpipe.Runner	[9]	INFO	|10:40:02 Deleting job file /nfs/users/nfs_c/cgppipe/.bpipedb/jobs/23632 

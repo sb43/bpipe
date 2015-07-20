@@ -1,0 +1,18 @@
+
+####################################################################################################
+# Starting pipeline at Wed Nov 26 10:33:57 GMT 2014
+# Input files:  [../filter_inputs_from_rel_path/test.xml, ../filter_inputs_from_rel_path/test1.av, ../filter_inputs_from_rel_path/test2.av]
+# Output Log:  .bpipe/logs/28007.log
+# Stage merge_av
+cat ../filter_inputs_from_rel_path/test1.av ../filter_inputs_from_rel_path/test2.av > /lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/filter_inputs_from_rel_path/test1.merge.av
+# ################ Finished at Wed Nov 26 10:33:58 GMT 2014 Duration = 0.649 seconds #################
+
+
+####################################################################################################
+# Starting pipeline at Fri Dec 05 10:46:07 GMT 2014
+# Input files:  [../filter_inputs_from_rel_path/test.xml, ../filter_inputs_from_rel_path/test1.av, ../filter_inputs_from_rel_path/test2.av]
+# Output Log:  .bpipe/logs/30495.log
+# Stage merge_av
+cat ../filter_inputs_from_rel_path/test1.av ../filter_inputs_from_rel_path/test2.av > /lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/filter_inputs_from_rel_path/test1.merge.av
+# ################ Finished at Fri Dec 05 10:46:08 GMT 2014 Duration = 0.648 seconds #################
+

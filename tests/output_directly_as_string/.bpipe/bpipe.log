@@ -1,0 +1,74 @@
+bpipe.Runner	[1]	INFO	|10:35:22 Starting 
+bpipe.Runner	[1]	INFO	|10:35:22 OS: Linux (2.6.32-44-server) Java: 1.7.0_25 Vendor: Oracle Corporation 
+bpipe.Runner	[1]	INFO	|10:35:22 Initializing plugins ... 
+bpipe.Config	[1]	INFO	|10:35:22 No plugins directory found: /lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/output_directly_as_string/.bpipe/plugins 
+bpipe.Runner	[1]	INFO	|10:35:22 Reading user config ...  
+bpipe.Config	[1]	INFO	|10:35:22 No configuration file found in same dir as pipeline file 
+bpipe.Config	[1]	INFO	|10:35:22 No local configuration file found 
+bpipe.Utils	[10]	INFO	|10:35:23 Read config from /nfs/users/nfs_c/cgppipe/canpipe/software/bpipe_git/tests/output_directly_as_string/../../bin/../src/main/config/bpipe.config executed in 0.320 seconds 
+bpipe.Utils	[1]	INFO	|10:35:23 Read user config executed in 0.548 seconds 
+bpipe.Runner	[1]	INFO	|10:35:23 Loading tool database ...  
+bpipe.NotificationManager	[14]	INFO	|10:35:23 Configuring notifications 
+bpipe.Concurrency	[13]	INFO	|10:35:23 Creating thread pool with 32 threads to execute parallel pipelines 
+bpipe.ToolDatabase	[11]	INFO	|10:35:23 Loading tool database from user configuration 
+bpipe.NotificationManager	[14]	INFO	|10:35:23 Trying class name file for notification channel file 
+bpipe.Tool	[11]	INFO	|10:35:23 Configured meta data about tool samtools 
+bpipe.Tool	[11]	INFO	|10:35:23 Configured meta data about tool bwa 
+bpipe.Tool	[11]	INFO	|10:35:23 Configured meta data about tool bowtie 
+bpipe.Tool	[11]	INFO	|10:35:23 Configured meta data about tool fastqc 
+bpipe.Tool	[11]	INFO	|10:35:23 Configured meta data about tool coverageBed 
+bpipe.Runner	[1]	INFO	|10:35:23 No CLI parameters specified 
+bpipe.Tool	[11]	INFO	|10:35:23 Configured meta data about tool fastx_clipper 
+bpipe.Tool	[11]	INFO	|10:35:23 Configured meta data about tool convert2annovar.pl 
+bpipe.Tool	[11]	INFO	|10:35:23 Configured meta data about tool summarize_annovar.pl 
+bpipe.Tool	[11]	INFO	|10:35:23 Configured meta data about tool bowtie2 
+bpipe.Tool	[11]	INFO	|10:35:23 Configured meta data about tool GenomeAnalysisTK 
+bpipe.Tool	[11]	INFO	|10:35:23 Configured meta data about tool MarkDuplicates 
+bpipe.Tool	[11]	INFO	|10:35:23 Configured meta data about tool signalp 
+bpipe.Tool	[11]	INFO	|10:35:23 Configured meta data about tool variant_effect_predictor.pl 
+bpipe.Tool	[11]	INFO	|10:35:23 Configured meta data about tool igvtools 
+bpipe.Tool	[11]	INFO	|10:35:23 Configured meta data about tool ls 
+bpipe.NotificationManager	[14]	INFO	|10:35:23 Unable to create notification channel using class file: java.lang.ClassNotFoundException: file 
+bpipe.NotificationManager	[14]	INFO	|10:35:23 Trying class name bpipe.FILENotificationChannel for notification channel file 
+bpipe.NotificationManager	[14]	INFO	|10:35:23 Unable to create notification channel using class bpipe.FILENotificationChannel: java.lang.ClassNotFoundException: bpipe.FILENotificationChannel 
+bpipe.NotificationManager	[14]	INFO	|10:35:23 Trying class name bpipe.file for notification channel file 
+bpipe.NotificationManager	[14]	INFO	|10:35:23 Unable to create notification channel using class bpipe.file: java.lang.ClassNotFoundException: bpipe.file 
+bpipe.NotificationManager	[14]	INFO	|10:35:23 Trying class name bpipe.FileNotificationChannel for notification channel file 
+bpipe.NotificationManager	[14]	INFO	|10:35:23 Successfully created notification channel using class bpipe.FileNotificationChannel 
+bpipe.Runner	[1]	INFO	|10:35:23 Parsing script ...  
+bpipe.Runner	[1]	INFO	|10:35:23 Run ...  
+bpipe.Pipeline	[1]	INFO	|10:35:23 Running with input [test.txt] 
+bpipe.PipelineCategory	[1]	INFO	|10:35:23 Found closure variable hello 
+bpipe.Pipeline	[1]	WARNING	|10:35:23 Pipeline folder /nfs/users/nfs_c/cgppipe/bpipes could not be found 
+bpipe.Pipeline	[1]	INFO	|10:35:23 Loaded external reference: args 
+bpipe.Pipeline	[1]	INFO	|10:35:23 External reference args is overridden by local reference 
+bpipe.Pipeline	[1]	INFO	|10:35:23 Loaded external reference: hello 
+bpipe.Pipeline	[1]	INFO	|10:35:23 External reference hello is overridden by local reference 
+bpipe.Pipeline	[1]	INFO	|10:35:23 Running segment with inputs test.txt 
+bpipe.Dependencies	[1]	INFO	|10:35:23 Checking input (s) test.txt 
+bpipe.Utils	[1]	INFO	|10:35:23 Output folder scan (concurrency=5) executed in 0.003 seconds 
+bpipe.Dependencies	[1]	INFO	|10:35:23  Checking file test.txt 
+bpipe.ReportStatisticsListener	[1]	INFO	|10:35:23 Annotating stage start time hello 
+bpipe.PipelineStage	[1]	INFO	|10:35:23 Stage hello : INPUT=test.txt OUTPUT=test.txt.hello 
+bpipe.PipelineDelegate	[1]	INFO	|10:35:23 Setting or creating a delegate for context 575522460 body 324125544/script14177757232551732256670 in thread 1 
+bpipe.PipelineDelegate	[1]	INFO	|10:35:23 Created new delegate bpipe.PipelineDelegate@5bb48c07 overriding type script14177757232551732256670 in thread 1 
+bpipe.PipelineContext	[1]	INFO	|10:35:23 Using non-default output due to input property reference: test.txt from resolved inputs [test.txt] 
+bpipe.PipelineStage	[1]	INFO	|10:35:23 Stage hello returned null as default inputs for next stage 
+bpipe.PipelineStage	[1]	INFO	|10:35:23 Using inferred outputs [test.txt.hello] as outputs because no explicit outputs set 
+bpipe.PipelineStage	[1]	INFO	|10:35:23 Inferring nextInputs from explicit output as [test.txt.hello] 
+bpipe.PipelineStage	[1]	INFO	|10:35:23 Setting next inputs [test.txt.hello] on stage 1698578064, context 575522460 in thread 1 
+bpipe.ReportStatisticsListener	[1]	INFO	|10:35:23 Annotating stage end time hello 
+bpipe.PipelineStage	[1]	INFO	|10:35:23 Checking files: [test.txt.hello] 
+bpipe.Dependencies	[1]	INFO	|10:35:23 Checking output (s) [test.txt.hello] 
+bpipe.Dependencies	[1]	INFO	|10:35:23  Checking file test.txt.hello 
+bpipe.Pipeline	[1]	INFO	|10:35:23 Pipeline segment  in thread 1 has finished normally 
+bpipe.Pipeline	[1]	INFO	|10:35:23 Finished running segment for inputs test.txt 
+bpipe.Pipeline	[1]	INFO	|10:35:23 adding stage hello from pipeline bpipe.Pipeline@17af4daa 
+bpipe.Utils	[1]	INFO	|10:35:23 Output folder scan (concurrency=5) executed in 0.002 seconds 
+bpipe.ReportGenerator	[1]	INFO	|10:35:23 Searching for template in /lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/src/main/html/bpipe 
+bpipe.ReportGenerator	[1]	INFO	|10:35:23 Generating report to /lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/output_directly_as_string/doc/index.html 
+bpipe.PipelineContext	[1]	INFO	|10:35:23 Using previously set output: [test.txt.hello] 
+bpipe.PipelineContext	[1]	INFO	|10:35:23 Using previously set output: [test.txt.hello] 
+bpipe.PipelineContext	[1]	INFO	|10:35:23 Using previously set output: [test.txt.hello] 
+bpipe.Utils	[1]	INFO	|10:35:23 Output folder scan (concurrency=5) executed in 0.002 seconds 
+bpipe.Pipeline	[1]	INFO	|10:35:24 No tracked output files from this run 

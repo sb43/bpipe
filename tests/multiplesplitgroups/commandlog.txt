@@ -1,0 +1,44 @@
+
+####################################################################################################
+# Starting pipeline at Wed Nov 26 10:25:15 GMT 2014
+# Input files:  [s_1_ignore_a_1.txt, s_1_ignore_a_2.txt, s_1_ignore_b_1.txt, s_1_ignore_b_2.txt, s_2_ignore_a_1.txt, s_2_ignore_a_2.txt, s_2_ignore_b_1.txt, s_2_ignore_b_2.txt]
+# Output Log:  .bpipe/logs/17631.log
+# Stage hello [1]
+# Stage hello [2]
+# Stage hello [2]
+# Stage hello [1]
+# ################ Finished at Wed Nov 26 10:25:16 GMT 2014 Duration = 0.696 seconds #################
+
+
+####################################################################################################
+# Starting pipeline at Fri Dec 05 10:15:06 GMT 2014
+# Input files:  [s_1_ignore_a_1.txt, s_1_ignore_a_2.txt, s_1_ignore_b_1.txt, s_1_ignore_b_2.txt, s_2_ignore_a_1.txt, s_2_ignore_a_2.txt, s_2_ignore_b_1.txt, s_2_ignore_b_2.txt]
+# Output Log:  .bpipe/logs/26363.log
+# Stage hello [2]
+# Stage hello [1]
+# Stage hello [2]
+# Stage hello [1]
+# ################ Finished at Fri Dec 05 10:15:06 GMT 2014 Duration = 0.730 seconds #################
+
+
+####################################################################################################
+# Starting pipeline at Fri Dec 05 10:24:43 GMT 2014
+# Input files:  [s_1_ignore_a_1.txt, s_1_ignore_a_2.txt, s_1_ignore_b_1.txt, s_1_ignore_b_2.txt, s_2_ignore_a_1.txt, s_2_ignore_a_2.txt, s_2_ignore_b_1.txt, s_2_ignore_b_2.txt]
+# Output Log:  .bpipe/logs/1228.log
+# Stage hello [2]
+# Stage hello [1]
+# Stage hello [2]
+# Stage hello [1]
+# ################ Finished at Fri Dec 05 10:24:44 GMT 2014 Duration = 0.692 seconds #################
+
+
+####################################################################################################
+# Starting pipeline at Fri Dec 05 10:37:28 GMT 2014
+# Input files:  [s_1_ignore_a_1.txt, s_1_ignore_a_2.txt, s_1_ignore_b_1.txt, s_1_ignore_b_2.txt, s_2_ignore_a_1.txt, s_2_ignore_a_2.txt, s_2_ignore_b_1.txt, s_2_ignore_b_2.txt]
+# Output Log:  .bpipe/logs/19852.log
+# Stage hello [1]
+# Stage hello [1]
+# Stage hello [2]
+# Stage hello [2]
+# ################ Finished at Fri Dec 05 10:37:29 GMT 2014 Duration = 0.671 seconds #################
+

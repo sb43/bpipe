@@ -1,0 +1,1 @@
+/nfs/users/nfs_c/cgppipe/canpipe/software/bpipe_git/tests/persample/../../bin/bpipe run -r test.groovy s_1_1.txt s_1_2.txt s_2_1.txt s_2_2.txt

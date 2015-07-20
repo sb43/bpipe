@@ -1,0 +1,104 @@
+
+####################################################################################################
+# Starting pipeline at Wed Nov 26 10:24:52 GMT 2014
+# Input files:  null
+# Output Log:  .bpipe/logs/17034.log
+# Stage hello
+echo "Running";              touch world.txt;              touch hello.txt
+# ################ Finished at Wed Nov 26 10:24:53 GMT 2014 Duration = 0.557 seconds #################
+
+
+####################################################################################################
+# Starting pipeline at Wed Nov 26 10:24:55 GMT 2014
+# Input files:  null
+# Output Log:  .bpipe/logs/17126.log
+# Stage hello
+echo "Running";              touch world.txt;              touch hello.txt
+# ################ Finished at Wed Nov 26 10:24:56 GMT 2014 Duration = 0.627 seconds #################
+
+
+####################################################################################################
+# Starting pipeline at Wed Nov 26 10:24:59 GMT 2014
+# Input files:  null
+# Output Log:  .bpipe/logs/17221.log
+# Stage hello
+# ################ Finished at Wed Nov 26 10:24:59 GMT 2014 Duration = 0.408 seconds #################
+
+
+####################################################################################################
+# Starting pipeline at Fri Dec 05 10:14:42 GMT 2014
+# Input files:  null
+# Output Log:  .bpipe/logs/25732.log
+# Stage hello
+echo "Running";              touch world.txt;              touch hello.txt
+# ################ Finished at Fri Dec 05 10:14:42 GMT 2014 Duration = 0.619 seconds #################
+
+
+####################################################################################################
+# Starting pipeline at Fri Dec 05 10:14:45 GMT 2014
+# Input files:  null
+# Output Log:  .bpipe/logs/25848.log
+# Stage hello
+echo "Running";              touch world.txt;              touch hello.txt
+# ################ Finished at Fri Dec 05 10:14:45 GMT 2014 Duration = 0.548 seconds #################
+
+
+####################################################################################################
+# Starting pipeline at Fri Dec 05 10:14:48 GMT 2014
+# Input files:  null
+# Output Log:  .bpipe/logs/25940.log
+# Stage hello
+# ################ Finished at Fri Dec 05 10:14:48 GMT 2014 Duration = 0.292 seconds #################
+
+
+####################################################################################################
+# Starting pipeline at Fri Dec 05 10:24:21 GMT 2014
+# Input files:  null
+# Output Log:  .bpipe/logs/582.log
+# Stage hello
+echo "Running";              touch world.txt;              touch hello.txt
+# ################ Finished at Fri Dec 05 10:24:21 GMT 2014 Duration = 0.508 seconds #################
+
+
+####################################################################################################
+# Starting pipeline at Fri Dec 05 10:24:24 GMT 2014
+# Input files:  null
+# Output Log:  .bpipe/logs/667.log
+# Stage hello
+echo "Running";              touch world.txt;              touch hello.txt
+# ################ Finished at Fri Dec 05 10:24:24 GMT 2014 Duration = 0.594 seconds #################
+
+
+####################################################################################################
+# Starting pipeline at Fri Dec 05 10:24:27 GMT 2014
+# Input files:  null
+# Output Log:  .bpipe/logs/747.log
+# Stage hello
+# ################ Finished at Fri Dec 05 10:24:27 GMT 2014 Duration = 0.286 seconds #################
+
+
+####################################################################################################
+# Starting pipeline at Fri Dec 05 10:37:06 GMT 2014
+# Input files:  null
+# Output Log:  .bpipe/logs/19271.log
+# Stage hello
+echo "Running";              touch world.txt;              touch hello.txt
+# ################ Finished at Fri Dec 05 10:37:06 GMT 2014 Duration = 0.483 seconds #################
+
+
+####################################################################################################
+# Starting pipeline at Fri Dec 05 10:37:09 GMT 2014
+# Input files:  null
+# Output Log:  .bpipe/logs/19351.log
+# Stage hello
+echo "Running";              touch world.txt;              touch hello.txt
+# ################ Finished at Fri Dec 05 10:37:09 GMT 2014 Duration = 0.549 seconds #################
+
+
+####################################################################################################
+# Starting pipeline at Fri Dec 05 10:37:12 GMT 2014
+# Input files:  null
+# Output Log:  .bpipe/logs/19434.log
+# Stage hello
+# ################ Finished at Fri Dec 05 10:37:12 GMT 2014 Duration = 0.287 seconds #################
+

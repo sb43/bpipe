@@ -1,0 +1,1 @@
+21674	bpipe run -r test.groovy s_1.txt

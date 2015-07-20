@@ -1,0 +1,124 @@
+bpipe.Runner	[1]	INFO	|10:38:47 Starting 
+bpipe.Runner	[1]	INFO	|10:38:47 OS: Linux (2.6.32-44-server) Java: 1.7.0_25 Vendor: Oracle Corporation 
+bpipe.Runner	[1]	INFO	|10:38:47 Initializing plugins ... 
+bpipe.Config	[1]	INFO	|10:38:47 No plugins directory found: /lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/branch_variable_override_default_param/.bpipe/plugins 
+bpipe.Runner	[1]	INFO	|10:38:47 Reading user config ...  
+bpipe.Config	[1]	INFO	|10:38:47 No configuration file found in same dir as pipeline file 
+bpipe.Config	[1]	INFO	|10:38:47 No local configuration file found 
+bpipe.Utils	[10]	INFO	|10:38:47 Read config from /nfs/users/nfs_c/cgppipe/canpipe/software/bpipe_git/tests/branch_variable_override_default_param/../../bin/../src/main/config/bpipe.config executed in 0.331 seconds 
+bpipe.Utils	[1]	INFO	|10:38:47 Read user config executed in 0.558 seconds 
+bpipe.Runner	[1]	INFO	|10:38:47 Loading tool database ...  
+bpipe.ToolDatabase	[11]	INFO	|10:38:47 Loading tool database from user configuration 
+bpipe.Concurrency	[13]	INFO	|10:38:47 Creating thread pool with 32 threads to execute parallel pipelines 
+bpipe.NotificationManager	[14]	INFO	|10:38:47 Configuring notifications 
+bpipe.Tool	[11]	INFO	|10:38:47 Configured meta data about tool samtools 
+bpipe.NotificationManager	[14]	INFO	|10:38:47 Trying class name file for notification channel file 
+bpipe.Tool	[11]	INFO	|10:38:47 Configured meta data about tool bwa 
+bpipe.Tool	[11]	INFO	|10:38:47 Configured meta data about tool bowtie 
+bpipe.Tool	[11]	INFO	|10:38:47 Configured meta data about tool fastqc 
+bpipe.Tool	[11]	INFO	|10:38:47 Configured meta data about tool coverageBed 
+bpipe.Tool	[11]	INFO	|10:38:47 Configured meta data about tool fastx_clipper 
+bpipe.Tool	[11]	INFO	|10:38:47 Configured meta data about tool convert2annovar.pl 
+bpipe.Tool	[11]	INFO	|10:38:47 Configured meta data about tool summarize_annovar.pl 
+bpipe.Tool	[11]	INFO	|10:38:47 Configured meta data about tool bowtie2 
+bpipe.Tool	[11]	INFO	|10:38:47 Configured meta data about tool GenomeAnalysisTK 
+bpipe.Tool	[11]	INFO	|10:38:47 Configured meta data about tool MarkDuplicates 
+bpipe.Tool	[11]	INFO	|10:38:47 Configured meta data about tool signalp 
+bpipe.Tool	[11]	INFO	|10:38:47 Configured meta data about tool variant_effect_predictor.pl 
+bpipe.Tool	[11]	INFO	|10:38:47 Configured meta data about tool igvtools 
+bpipe.Tool	[11]	INFO	|10:38:47 Configured meta data about tool ls 
+bpipe.Runner	[1]	INFO	|10:38:47 No CLI parameters specified 
+bpipe.NotificationManager	[14]	INFO	|10:38:48 Unable to create notification channel using class file: java.lang.ClassNotFoundException: file 
+bpipe.NotificationManager	[14]	INFO	|10:38:48 Trying class name bpipe.FILENotificationChannel for notification channel file 
+bpipe.NotificationManager	[14]	INFO	|10:38:48 Unable to create notification channel using class bpipe.FILENotificationChannel: java.lang.ClassNotFoundException: bpipe.FILENotificationChannel 
+bpipe.NotificationManager	[14]	INFO	|10:38:48 Trying class name bpipe.file for notification channel file 
+bpipe.NotificationManager	[14]	INFO	|10:38:48 Unable to create notification channel using class bpipe.file: java.lang.ClassNotFoundException: bpipe.file 
+bpipe.NotificationManager	[14]	INFO	|10:38:48 Trying class name bpipe.FileNotificationChannel for notification channel file 
+bpipe.NotificationManager	[14]	INFO	|10:38:48 Successfully created notification channel using class bpipe.FileNotificationChannel 
+bpipe.Runner	[1]	INFO	|10:38:48 Parsing script ...  
+bpipe.Runner	[1]	INFO	|10:38:48 Run ...  
+bpipe.Pipeline	[1]	INFO	|10:38:48 Running with input null 
+bpipe.PipelineCategory	[1]	INFO	|10:38:48 Found closure variable hello 
+bpipe.PipelineCategory	[1]	INFO	|10:38:48 Found closure variable world 
+bpipe.Pipeline	[1]	WARNING	|10:38:48 Pipeline folder /nfs/users/nfs_c/cgppipe/bpipes could not be found 
+bpipe.Pipeline	[1]	INFO	|10:38:48 Loaded external reference: args 
+bpipe.Pipeline	[1]	INFO	|10:38:48 External reference args is overridden by local reference 
+bpipe.Pipeline	[1]	INFO	|10:38:48 Loaded external reference: hello 
+bpipe.Pipeline	[1]	INFO	|10:38:48 External reference hello is overridden by local reference 
+bpipe.Pipeline	[1]	INFO	|10:38:48 Loaded external reference: world 
+bpipe.Pipeline	[1]	INFO	|10:38:48 External reference world is overridden by local reference 
+bpipe.Pipeline	[1]	INFO	|10:38:48 Running segment with inputs null 
+bpipe.Dependencies	[1]	INFO	|10:38:48 Checking input (s) null 
+bpipe.Utils	[1]	INFO	|10:38:48 Output folder scan (concurrency=5) executed in 0.003 seconds 
+bpipe.PipelineDelegate	[1]	INFO	|10:38:48 Setting or creating a delegate for context 1845243403 body 1194527894/java.lang.Class in thread 1 
+bpipe.PipelineDelegate	[1]	INFO	|10:38:48 Created new delegate bpipe.PipelineDelegate@28e67788 overriding type java.lang.Class in thread 1 
+bpipe.Dependencies	[1]	INFO	|10:38:48 Checking input (s) null 
+bpipe.ReportStatisticsListener	[1]	INFO	|10:38:48 Annotating stage start time hello 
+bpipe.PipelineStage	[1]	INFO	|10:38:48 Stage hello : INPUT=null OUTPUT=hello 
+bpipe.PipelineDelegate	[1]	INFO	|10:38:48 Setting or creating a delegate for context 204920650 body 1505127599/script14177759280711933841244 in thread 1 
+bpipe.PipelineDelegate	[1]	INFO	|10:38:48 Created new delegate bpipe.PipelineDelegate@64704189 overriding type script14177759280711933841244 in thread 1 
+bpipe.PipelineStage	[1]	INFO	|10:38:48 Stage hello returned null as default inputs for next stage 
+bpipe.PipelineStage	[1]	INFO	|10:38:48 Removing inferred outputs matching [\.bai$, \.log$] 
+bpipe.PipelineStage	[1]	INFO	|10:38:48 Inferring nextInputs from inputs bpipe.PipelineContext@c36d74a.@input 
+bpipe.PipelineContext	[1]	INFO	|10:38:48 Setting output null on context 204920650 in thread 1 
+bpipe.PipelineStage	[1]	INFO	|10:38:48 Setting next inputs null on stage 696065419, context 204920650 in thread 1 
+bpipe.ReportStatisticsListener	[1]	INFO	|10:38:48 Annotating stage end time hello 
+bpipe.PipelineStage	[1]	INFO	|10:38:48 Checking files: null 
+bpipe.Dependencies	[1]	INFO	|10:38:48 Checking output (s) null 
+bpipe.Dependencies	[1]	INFO	|10:38:48 Checking input (s) null 
+bpipe.PipelineCategory	[1]	INFO	|10:38:48 Next inputs from stage = null 
+bpipe.PipelineCategory	[1]	INFO	|10:38:48 Checking inputs for next stage:  null 
+bpipe.Dependencies	[1]	INFO	|10:38:48 Checking input (s) null 
+bpipe.Dependencies	[1]	INFO	|10:38:48 Checking input (s) null 
+bpipe.ReportStatisticsListener	[1]	INFO	|10:38:48 Annotating stage start time world 
+bpipe.PipelineStage	[1]	INFO	|10:38:48 Stage world : INPUT=null OUTPUT=world 
+bpipe.PipelineDelegate	[1]	INFO	|10:38:48 Setting or creating a delegate for context 759511627 body 1469678380/script14177759280711933841244 in thread 1 
+bpipe.PipelineDelegate	[1]	INFO	|10:38:48 Created new delegate bpipe.PipelineDelegate@50aaaf66 overriding type script14177759280711933841244 in thread 1 
+bpipe.PipelineContext	[1]	INFO	|10:38:48 Tracking outputs referenced=[[]] inferred=[[]] for command 
+        echo foo=fubar
+     
+bpipe.ReportStatisticsListener	[1]	INFO	|10:38:48 Intercepted command check for command 
+        echo foo=fubar
+     
+bpipe.PipelineContext	[1]	INFO	|10:38:48 Checking actual resolved inputs [] 
+bpipe.Command	[1]	INFO	|10:38:48 Checking for configuration for command echo 
+bpipe.Command	[1]	INFO	|10:38:48 Default command properties: [executor:local] 
+bpipe.CommandManager	[1]	INFO	|10:38:48 Using config [executor:local] for command 
+bpipe.CommandManager	[1]	INFO	|10:38:48 Created bpipe command id 1 
+bpipe.Concurrency	[1]	INFO	|10:38:48 Thread main requesting for 1 concurrency permit(s) type threads with 32 available 
+bpipe.Concurrency	[1]	INFO	|10:38:48 Thread main acquired resource threads in amount 1 
+bpipe.Command	[15]	INFO	|10:38:48 Command 1 changing state from null to RUNNING 
+bpipe.executor.ThrottledDelegatingCommandExecutor	[1]	INFO	|10:38:48 Waiting for command to complete before releasing 1 resources 
+bpipe.Command	[1]	INFO	|10:38:48 Command 1 changing state from RUNNING to COMPLETE 
+bpipe.executor.ThrottledDelegatingCommandExecutor	[1]	INFO	|10:38:48 Releasing 1 resources 
+bpipe.Concurrency	[1]	INFO	|10:38:48 Thread main releasing 1 threads 
+bpipe.executor.ThrottledDelegatingCommandExecutor	[1]	INFO	|10:38:48 Released 1 resources 
+bpipe.PipelineStage	[1]	INFO	|10:38:48 Stage world returned null as default inputs for next stage 
+bpipe.PipelineStage	[1]	INFO	|10:38:48 Removing inferred outputs matching [\.bai$, \.log$] 
+bpipe.PipelineStage	[1]	INFO	|10:38:48 Inferring nextInputs from inputs bpipe.PipelineContext@2d453a4b.@input 
+bpipe.PipelineContext	[1]	INFO	|10:38:48 Setting output null on context 759511627 in thread 1 
+bpipe.PipelineStage	[1]	INFO	|10:38:48 Setting next inputs null on stage 2115856113, context 759511627 in thread 1 
+bpipe.ReportStatisticsListener	[1]	INFO	|10:38:48 Annotating stage end time world 
+bpipe.PipelineStage	[1]	INFO	|10:38:48 Checking files: null 
+bpipe.Dependencies	[1]	INFO	|10:38:48 Checking output (s) null 
+bpipe.PipelineContext	[1]	INFO	|10:38:48 No inputs resolved by input wrappers: outputs based on default [] 
+bpipe.PipelineContext	[1]	INFO	|10:38:48 Setting output null on context 1845243403 in thread 1 
+bpipe.PipelineStage	[1]	INFO	|10:38:48 Setting next inputs null on stage 1450192188, context 1845243403 in thread 1 
+bpipe.PipelineStage	[1]	INFO	|10:38:48 Checking files: null 
+bpipe.Dependencies	[1]	INFO	|10:38:48 Checking output (s) null 
+bpipe.Pipeline	[1]	INFO	|10:38:48 Pipeline segment  in thread 1 has finished normally 
+bpipe.Pipeline	[1]	INFO	|10:38:48 Finished running segment for inputs null 
+bpipe.Pipeline	[1]	INFO	|10:38:48 adding stage hello from pipeline bpipe.Pipeline@1b7d8bfa 
+bpipe.Pipeline	[1]	INFO	|10:38:48 adding stage world from pipeline bpipe.Pipeline@1b7d8bfa 
+bpipe.Utils	[1]	INFO	|10:38:48 Output folder scan (concurrency=5) executed in 0.001 seconds 
+bpipe.ReportGenerator	[1]	INFO	|10:38:48 Searching for template in /lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/src/main/html/bpipe 
+bpipe.ReportGenerator	[1]	INFO	|10:38:48 Generating report to /lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/branch_variable_override_default_param/doc/index.html 
+bpipe.PipelineContext	[1]	INFO	|10:38:49 No inputs resolved by input wrappers: outputs based on default [] 
+bpipe.PipelineContext	[1]	INFO	|10:38:49 No inputs resolved by input wrappers: outputs based on default [] 
+bpipe.PipelineContext	[1]	INFO	|10:38:49 No inputs resolved by input wrappers: outputs based on default [] 
+bpipe.PipelineContext	[1]	INFO	|10:38:49 No inputs resolved by input wrappers: outputs based on default [] 
+bpipe.PipelineContext	[1]	INFO	|10:38:49 No inputs resolved by input wrappers: outputs based on default [] 
+bpipe.PipelineContext	[1]	INFO	|10:38:49 No inputs resolved by input wrappers: outputs based on default [] 
+bpipe.Utils	[1]	INFO	|10:38:49 Output folder scan (concurrency=5) executed in 0.003 seconds 
+bpipe.Pipeline	[1]	INFO	|10:38:49 No tracked output files from this run 
+bpipe.Runner	[9]	INFO	|10:38:49 Deleting job file /nfs/users/nfs_c/cgppipe/.bpipedb/jobs/21873 

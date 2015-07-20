@@ -1,0 +1,13 @@
+
+####################################################################################################
+# Starting pipeline at Fri Dec 05 10:35:39 GMT 2014
+# Input files:  null
+# Output Log:  .bpipe/logs/16205.log
+# Stage set_sample [foo]
+# Stage set_sample [bar]
+# Stage hello [foo]
+# Stage hello [bar]
+echo foo > hello.foo.txt
+echo bar > hello.bar.txt
+# ################ Finished at Fri Dec 05 10:35:40 GMT 2014 Duration = 0.983 seconds #################
+

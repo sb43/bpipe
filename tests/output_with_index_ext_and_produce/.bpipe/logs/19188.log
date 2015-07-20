@@ -1,0 +1,12 @@
+[----]	====================================================================================================
+[----]	|                              Starting Pipeline at 2014-12-05 10:37                               |
+[----]	====================================================================================================
+[]	
+[]	=========================================== Stage hello ============================================
+Pipeline failed! (2) 
+
+Expected output file test1.csv could not be found
+
+
+======================================== Pipeline Finished =========================================
+MSG: Generated report /lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/output_with_index_ext_and_produce/doc/index.html

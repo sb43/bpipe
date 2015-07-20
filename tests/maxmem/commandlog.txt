@@ -1,0 +1,22 @@
+
+####################################################################################################
+# Starting pipeline at Wed Nov 26 10:29:47 GMT 2014
+# Input files:  null
+# Output Log:  .bpipe/logs/24426.log
+# Stage hello [foo]
+# Stage hello [bar]
+echo Hello; sleep 5; echo World
+echo Hello; sleep 5; echo World
+# ################ Finished at Wed Nov 26 10:29:58 GMT 2014 Duration = 10.808 seconds ################
+
+
+####################################################################################################
+# Starting pipeline at Fri Dec 05 10:42:02 GMT 2014
+# Input files:  null
+# Output Log:  .bpipe/logs/26850.log
+# Stage hello [foo]
+# Stage hello [bar]
+echo Hello; sleep 5; echo World
+echo Hello; sleep 5; echo World
+# ################ Finished at Fri Dec 05 10:42:12 GMT 2014 Duration = 10.521 seconds ################
+

@@ -1,0 +1,12 @@
+
+####################################################################################################
+# Starting pipeline at Fri Dec 05 10:37:22 GMT 2014
+# Input files:  null
+# Output Log:  .bpipe/logs/19699.log
+# Stage hello
+echo hello > hello
+# Stage world
+echo world > world_dir/hello.txt
+echo mars > mars_dir/hello.txt
+# ################ Finished at Fri Dec 05 10:37:23 GMT 2014 Duration = 0.941 seconds #################
+

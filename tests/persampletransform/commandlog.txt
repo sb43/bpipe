@@ -1,0 +1,18 @@
+
+####################################################################################################
+# Starting pipeline at Wed Nov 26 10:31:02 GMT 2014
+# Input files:  [s_1_1.txt, s_1_2.txt, s_2_1.txt, s_2_2.txt]
+# Output Log:  .bpipe/logs/26279.log
+# Stage align [chr1]
+cat s_1_1.txt s_1_2.txt s_2_1.txt s_2_2.txt > s_1_1.chr1.bam
+# ################ Finished at Wed Nov 26 10:31:03 GMT 2014 Duration = 0.999 seconds #################
+
+
+####################################################################################################
+# Starting pipeline at Fri Dec 05 10:43:13 GMT 2014
+# Input files:  [s_1_1.txt, s_1_2.txt, s_2_1.txt, s_2_2.txt]
+# Output Log:  .bpipe/logs/28755.log
+# Stage align [chr1]
+cat s_1_1.txt s_1_2.txt s_2_1.txt s_2_2.txt > s_1_1.chr1.bam
+# ################ Finished at Fri Dec 05 10:43:14 GMT 2014 Duration = 1.083 seconds #################
+

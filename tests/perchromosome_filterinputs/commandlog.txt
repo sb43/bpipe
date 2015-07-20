@@ -1,0 +1,19 @@
+
+####################################################################################################
+# Starting pipeline at Fri Dec 05 10:39:27 GMT 2014
+# Input files:  [test.chr1.bam, test.chr2.bam]
+# Output Log:  .bpipe/logs/22895.log
+# Stage hello [chr2]
+# Stage hello [chr1]
+echo "Using bam file test.chr2.bam"
+echo "Using bam file test.chr1.bam"
+cat test.chr1.bam > test.chr1.hello.vcf
+cat test.chr2.bam > test.chr2.hello.vcf
+# Stage world [chr2]
+# Stage world [chr1]
+echo "Using bam file test.chr2.bam"
+echo "Using bam file test.chr1.bam"
+cat test.chr2.bam > test.chr2.world.txt
+cat test.chr1.bam > test.chr1.world.txt
+# ################ Finished at Fri Dec 05 10:39:28 GMT 2014 Duration = 1.368 seconds #################
+

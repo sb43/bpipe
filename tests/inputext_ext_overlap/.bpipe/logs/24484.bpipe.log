@@ -1,0 +1,68 @@
+bpipe.Runner	[1]	INFO	|10:40:47 Starting 
+bpipe.Runner	[1]	INFO	|10:40:47 OS: Linux (2.6.32-44-server) Java: 1.7.0_25 Vendor: Oracle Corporation 
+bpipe.Runner	[1]	INFO	|10:40:47 Initializing plugins ... 
+bpipe.Config	[1]	INFO	|10:40:47 No plugins directory found: /lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/inputext_ext_overlap/.bpipe/plugins 
+bpipe.Runner	[1]	INFO	|10:40:48 Reading user config ...  
+bpipe.Config	[1]	INFO	|10:40:48 No configuration file found in same dir as pipeline file 
+bpipe.Config	[1]	INFO	|10:40:48 No local configuration file found 
+bpipe.Utils	[10]	INFO	|10:40:48 Read config from /nfs/users/nfs_c/cgppipe/canpipe/software/bpipe_git/tests/inputext_ext_overlap/../../bin/../src/main/config/bpipe.config executed in 0.332 seconds 
+bpipe.Utils	[1]	INFO	|10:40:48 Read user config executed in 0.561 seconds 
+bpipe.Runner	[1]	INFO	|10:40:48 Loading tool database ...  
+bpipe.NotificationManager	[14]	INFO	|10:40:48 Configuring notifications 
+bpipe.Concurrency	[13]	INFO	|10:40:48 Creating thread pool with 32 threads to execute parallel pipelines 
+bpipe.ToolDatabase	[11]	INFO	|10:40:48 Loading tool database from user configuration 
+bpipe.NotificationManager	[14]	INFO	|10:40:48 Trying class name file for notification channel file 
+bpipe.Tool	[11]	INFO	|10:40:48 Configured meta data about tool samtools 
+bpipe.Tool	[11]	INFO	|10:40:48 Configured meta data about tool bwa 
+bpipe.Tool	[11]	INFO	|10:40:48 Configured meta data about tool bowtie 
+bpipe.Tool	[11]	INFO	|10:40:48 Configured meta data about tool fastqc 
+bpipe.Tool	[11]	INFO	|10:40:48 Configured meta data about tool coverageBed 
+bpipe.Tool	[11]	INFO	|10:40:48 Configured meta data about tool fastx_clipper 
+bpipe.Tool	[11]	INFO	|10:40:48 Configured meta data about tool convert2annovar.pl 
+bpipe.Tool	[11]	INFO	|10:40:48 Configured meta data about tool summarize_annovar.pl 
+bpipe.Tool	[11]	INFO	|10:40:48 Configured meta data about tool bowtie2 
+bpipe.Tool	[11]	INFO	|10:40:48 Configured meta data about tool GenomeAnalysisTK 
+bpipe.Tool	[11]	INFO	|10:40:48 Configured meta data about tool MarkDuplicates 
+bpipe.Tool	[11]	INFO	|10:40:48 Configured meta data about tool signalp 
+bpipe.Tool	[11]	INFO	|10:40:48 Configured meta data about tool variant_effect_predictor.pl 
+bpipe.Runner	[1]	INFO	|10:40:48 No CLI parameters specified 
+bpipe.Tool	[11]	INFO	|10:40:48 Configured meta data about tool igvtools 
+bpipe.Tool	[11]	INFO	|10:40:48 Configured meta data about tool ls 
+bpipe.NotificationManager	[14]	INFO	|10:40:48 Unable to create notification channel using class file: java.lang.ClassNotFoundException: file 
+bpipe.NotificationManager	[14]	INFO	|10:40:48 Trying class name bpipe.FILENotificationChannel for notification channel file 
+bpipe.NotificationManager	[14]	INFO	|10:40:48 Unable to create notification channel using class bpipe.FILENotificationChannel: java.lang.ClassNotFoundException: bpipe.FILENotificationChannel 
+bpipe.NotificationManager	[14]	INFO	|10:40:48 Trying class name bpipe.file for notification channel file 
+bpipe.NotificationManager	[14]	INFO	|10:40:48 Unable to create notification channel using class bpipe.file: java.lang.ClassNotFoundException: bpipe.file 
+bpipe.NotificationManager	[14]	INFO	|10:40:48 Trying class name bpipe.FileNotificationChannel for notification channel file 
+bpipe.NotificationManager	[14]	INFO	|10:40:48 Successfully created notification channel using class bpipe.FileNotificationChannel 
+bpipe.Runner	[1]	INFO	|10:40:48 Parsing script ...  
+bpipe.Runner	[1]	INFO	|10:40:48 Run ...  
+bpipe.Pipeline	[1]	INFO	|10:40:48 Running with input [test.xcnv] 
+bpipe.PipelineCategory	[1]	INFO	|10:40:48 Found closure variable hello 
+bpipe.Pipeline	[1]	WARNING	|10:40:48 Pipeline folder /nfs/users/nfs_c/cgppipe/bpipes could not be found 
+bpipe.Pipeline	[1]	INFO	|10:40:48 Loaded external reference: args 
+bpipe.Pipeline	[1]	INFO	|10:40:48 External reference args is overridden by local reference 
+bpipe.Pipeline	[1]	INFO	|10:40:48 Loaded external reference: hello 
+bpipe.Pipeline	[1]	INFO	|10:40:48 External reference hello is overridden by local reference 
+bpipe.Pipeline	[1]	INFO	|10:40:48 Running segment with inputs test.xcnv 
+bpipe.Dependencies	[1]	INFO	|10:40:48 Checking input (s) test.xcnv 
+bpipe.Utils	[1]	INFO	|10:40:48 Output folder scan (concurrency=5) executed in 0.004 seconds 
+bpipe.Dependencies	[1]	INFO	|10:40:48  Checking file test.xcnv 
+bpipe.PipelineStage	[1]	INFO	|10:40:49 Stage hello : INPUT=test.xcnv OUTPUT=test.xcnv.hello 
+bpipe.PipelineDelegate	[1]	INFO	|10:40:49 Setting or creating a delegate for context 1901949916 body 209007005/script14177760487571761479264 in thread 1 
+bpipe.PipelineDelegate	[1]	INFO	|10:40:49 Created new delegate bpipe.PipelineDelegate@55a71fa6 overriding type script14177760487571761479264 in thread 1 
+bpipe.PipelineInput	[1]	INFO	|10:40:49 Searching for missing Property: cnv 
+bpipe.PipelineInput	[1]	INFO	|10:40:49 Resolving inputs matching pattern ^.*\.cnv$ 
+bpipe.PipelineInput	[1]	INFO	|10:40:49 Checking outputs [test.xcnv] 
+bpipe.PipelineInput	[1]	INFO	|10:40:49 Checking outputs [test.xcnv] 
+bpipe.PipelineInput	[1]	INFO	|10:40:49 Checking outputs [test.xcnv] 
+bpipe.PipelineInput	[1]	INFO	|10:40:49 No input resolved for property cnv: returning child PipelineInput for possible double extension resolution 
+bpipe.PipelineContext	[1]	INFO	|10:40:49 No inputs resolved by input wrappers: outputs based on default test.xcnv.hello 
+bpipe.PipelineStage	[1]	INFO	|10:40:49 Retaining pre-existing files [./test.groovy, ./cleanup.sh, ./run.sh, ./test.out, ./test.xcnv] from outputs 
+bpipe.PipelineStage	[1]	INFO	|10:40:49 Using inferred outputs [test.hello.csv] as outputs because no explicit outputs set 
+bpipe.PipelineStage	[1]	INFO	|10:40:49 Cleaning up: [test.hello.csv] 
+bpipe.Pipeline	[1]	INFO	|10:40:49 Pipeline segment failed (2): Unable to locate one or more specified inputs from pipeline with the following extension(s):
+
+            cnv 
+bpipe.Pipeline	[1]	INFO	|10:40:49 Finished running segment for inputs test.xcnv 
+bpipe.Runner	[9]	INFO	|10:40:49 Deleting job file /nfs/users/nfs_c/cgppipe/.bpipedb/jobs/24484 

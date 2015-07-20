@@ -1,0 +1,1 @@
+/nfs/users/nfs_c/cgppipe/canpipe/software/bpipe_git/tests/input_double_ext_matching_output/../../bin/bpipe run -r test.groovy test.foo.csv

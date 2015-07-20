@@ -1,0 +1,23 @@
+[----]	====================================================================================================
+[----]	|                              Starting Pipeline at 2014-12-05 10:40                               |
+[----]	====================================================================================================
+[]	
+[]	=========================================== Stage hello ============================================
+[]	
+[]	=========================================== Stage world ============================================
+test.hello.csv => test.hello.world.txt, test.hello.world.xml
+[0.2]	execute1
+test.hello.csv => test.hello.world.tsv
+[0.3]	execute2
+[]	
+[]	=========================================== Stage there ============================================
+[0.4]	execute3
+
+======================================== Pipeline Finished =========================================
+MSG: Generated report /lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/outputext/doc/index.html
+[]	10:40:02 MSG:  Finished at Fri Dec 05 10:40:02 GMT 2014
+[]	10:40:02 MSG:  Outputs are: 
+[]			test.hello.world.tsv
+[]			test.foo
+[]			test.bar
+[]			test.hello.world.xml

@@ -1,0 +1,28 @@
+
+
+####################################################################################################
+# Starting pipeline at Wed Nov 26 10:33:22 GMT 2014
+# Input files:  null
+# Output Log:  .bpipe/logs/27028.log
+# Stage world
+echo world > test.world.txt
+# Stage there
+echo there > test.there.txt
+# Stage buddy
+echo buddy > test.buddy.txt
+# ################ Finished at Wed Nov 26 10:33:23 GMT 2014 Duration = 0.941 seconds #################
+
+
+
+####################################################################################################
+# Starting pipeline at Fri Dec 05 10:45:32 GMT 2014
+# Input files:  null
+# Output Log:  .bpipe/logs/29534.log
+# Stage world
+echo world > test.world.txt
+# Stage there
+echo there > test.there.txt
+# Stage buddy
+echo buddy > test.buddy.txt
+# ################ Finished at Fri Dec 05 10:45:33 GMT 2014 Duration = 0.897 seconds #################
+

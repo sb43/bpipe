@@ -1,0 +1,39 @@
+
+####################################################################################################
+# Starting pipeline at Wed Nov 26 10:26:41 GMT 2014
+# Input files:  test.txt
+# Output Log:  .bpipe/logs/19771.log
+# Stage hello
+cp test.txt test.hello.vcf
+# Stage there
+cp test.hello.vcf test.hello.there.csv
+# Stage world
+cp test.hello.vcf variants/test.hello.vep.vcf
+# ################ Finished at Wed Nov 26 10:26:42 GMT 2014 Duration = 1.020 seconds #################
+
+
+####################################################################################################
+# Starting pipeline at Fri Dec 05 10:26:10 GMT 2014
+# Input files:  test.txt
+# Output Log:  .bpipe/logs/3508.log
+# Stage hello
+cp test.txt test.hello.vcf
+# Stage there
+cp test.hello.vcf test.hello.there.csv
+# Stage world
+cp test.hello.vcf variants/test.hello.vep.vcf
+# ################ Finished at Fri Dec 05 10:26:11 GMT 2014 Duration = 1.051 seconds #################
+
+
+####################################################################################################
+# Starting pipeline at Fri Dec 05 10:38:54 GMT 2014
+# Input files:  test.txt
+# Output Log:  .bpipe/logs/22041.log
+# Stage hello
+cp test.txt test.hello.vcf
+# Stage there
+cp test.hello.vcf test.hello.there.csv
+# Stage world
+cp test.hello.vcf variants/test.hello.vep.vcf
+# ################ Finished at Fri Dec 05 10:38:55 GMT 2014 Duration = 1.029 seconds #################
+

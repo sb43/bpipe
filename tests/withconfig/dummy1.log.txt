@@ -1,0 +1,2 @@
+(for i in 1 2 3;  do echo "Hello World $i"; sleep 2; done) > .bpipe/commandtmp/1/1.out 2>  .bpipe/commandtmp/1/1.err
+(false) > .bpipe/commandtmp/5/5.out 2>  .bpipe/commandtmp/5/5.err

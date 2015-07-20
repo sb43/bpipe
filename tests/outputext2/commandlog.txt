@@ -1,0 +1,36 @@
+
+####################################################################################################
+# Starting pipeline at Wed Nov 26 10:24:19 GMT 2014
+# Input files:  null
+# Output Log:  .bpipe/logs/16253.log
+# Stage check
+echo foo > check.txt
+# ################ Finished at Wed Nov 26 10:24:19 GMT 2014 Duration = 0.459 seconds #################
+
+
+####################################################################################################
+# Starting pipeline at Fri Dec 05 10:14:07 GMT 2014
+# Input files:  null
+# Output Log:  .bpipe/logs/24903.log
+# Stage check
+echo foo > check.txt
+# ################ Finished at Fri Dec 05 10:14:08 GMT 2014 Duration = 0.552 seconds #################
+
+
+####################################################################################################
+# Starting pipeline at Fri Dec 05 10:23:48 GMT 2014
+# Input files:  null
+# Output Log:  .bpipe/logs/32205.log
+# Stage check
+echo foo > check.txt
+# ################ Finished at Fri Dec 05 10:23:48 GMT 2014 Duration = 0.465 seconds #################
+
+
+####################################################################################################
+# Starting pipeline at Fri Dec 05 10:36:32 GMT 2014
+# Input files:  null
+# Output Log:  .bpipe/logs/18403.log
+# Stage check
+echo foo > check.txt
+# ################ Finished at Fri Dec 05 10:36:32 GMT 2014 Duration = 0.472 seconds #################
+

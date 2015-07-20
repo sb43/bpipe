@@ -1,0 +1,2 @@
+31168	bpipe run -r test.groovy
+31235	bpipe run -r test.groovy test.csv test.txt

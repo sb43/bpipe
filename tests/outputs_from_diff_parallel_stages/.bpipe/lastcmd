@@ -1,0 +1,1 @@
+/nfs/users/nfs_c/cgppipe/canpipe/software/bpipe_git/tests/outputs_from_diff_parallel_stages/../../bin/bpipe run -r test.groovy test.bed test.bam

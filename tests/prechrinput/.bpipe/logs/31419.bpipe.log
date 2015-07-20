@@ -1,0 +1,307 @@
+bpipe.Runner	[1]	INFO	|10:46:43 Starting 
+bpipe.Runner	[1]	INFO	|10:46:43 OS: Linux (2.6.32-44-server) Java: 1.7.0_25 Vendor: Oracle Corporation 
+bpipe.Runner	[1]	INFO	|10:46:43 Initializing plugins ... 
+bpipe.Config	[1]	INFO	|10:46:43 No plugins directory found: /lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/prechrinput/.bpipe/plugins 
+bpipe.Runner	[1]	INFO	|10:46:43 Reading user config ...  
+bpipe.Config	[1]	INFO	|10:46:43 No configuration file found in same dir as pipeline file 
+bpipe.Config	[1]	INFO	|10:46:43 No local configuration file found 
+bpipe.Utils	[10]	INFO	|10:46:43 Read config from /nfs/users/nfs_c/cgppipe/canpipe/software/bpipe_git/tests/prechrinput/../../bin/../src/main/config/bpipe.config executed in 0.322 seconds 
+bpipe.Utils	[1]	INFO	|10:46:43 Read user config executed in 0.545 seconds 
+bpipe.Runner	[1]	INFO	|10:46:43 Loading tool database ...  
+bpipe.ToolDatabase	[11]	INFO	|10:46:43 Loading tool database from user configuration 
+bpipe.NotificationManager	[14]	INFO	|10:46:43 Configuring notifications 
+bpipe.Concurrency	[13]	INFO	|10:46:43 Creating thread pool with 32 threads to execute parallel pipelines 
+bpipe.Tool	[11]	INFO	|10:46:43 Configured meta data about tool samtools 
+bpipe.NotificationManager	[14]	INFO	|10:46:43 Trying class name file for notification channel file 
+bpipe.Tool	[11]	INFO	|10:46:43 Configured meta data about tool bwa 
+bpipe.Tool	[11]	INFO	|10:46:43 Configured meta data about tool bowtie 
+bpipe.Tool	[11]	INFO	|10:46:43 Configured meta data about tool fastqc 
+bpipe.Tool	[11]	INFO	|10:46:43 Configured meta data about tool coverageBed 
+bpipe.Tool	[11]	INFO	|10:46:43 Configured meta data about tool fastx_clipper 
+bpipe.Tool	[11]	INFO	|10:46:43 Configured meta data about tool convert2annovar.pl 
+bpipe.Tool	[11]	INFO	|10:46:43 Configured meta data about tool summarize_annovar.pl 
+bpipe.Tool	[11]	INFO	|10:46:43 Configured meta data about tool bowtie2 
+bpipe.Tool	[11]	INFO	|10:46:43 Configured meta data about tool GenomeAnalysisTK 
+bpipe.Tool	[11]	INFO	|10:46:43 Configured meta data about tool MarkDuplicates 
+bpipe.Tool	[11]	INFO	|10:46:43 Configured meta data about tool signalp 
+bpipe.Tool	[11]	INFO	|10:46:43 Configured meta data about tool variant_effect_predictor.pl 
+bpipe.Tool	[11]	INFO	|10:46:43 Configured meta data about tool igvtools 
+bpipe.Tool	[11]	INFO	|10:46:43 Configured meta data about tool ls 
+bpipe.Runner	[1]	INFO	|10:46:43 No CLI parameters specified 
+bpipe.NotificationManager	[14]	INFO	|10:46:43 Unable to create notification channel using class file: java.lang.ClassNotFoundException: file 
+bpipe.NotificationManager	[14]	INFO	|10:46:43 Trying class name bpipe.FILENotificationChannel for notification channel file 
+bpipe.NotificationManager	[14]	INFO	|10:46:43 Unable to create notification channel using class bpipe.FILENotificationChannel: java.lang.ClassNotFoundException: bpipe.FILENotificationChannel 
+bpipe.NotificationManager	[14]	INFO	|10:46:43 Trying class name bpipe.file for notification channel file 
+bpipe.NotificationManager	[14]	INFO	|10:46:43 Unable to create notification channel using class bpipe.file: java.lang.ClassNotFoundException: bpipe.file 
+bpipe.NotificationManager	[14]	INFO	|10:46:43 Trying class name bpipe.FileNotificationChannel for notification channel file 
+bpipe.NotificationManager	[14]	INFO	|10:46:43 Successfully created notification channel using class bpipe.FileNotificationChannel 
+bpipe.Runner	[1]	INFO	|10:46:43 Parsing script ...  
+bpipe.Runner	[1]	INFO	|10:46:43 Run ...  
+bpipe.Pipeline	[1]	INFO	|10:46:43 Running with input [test.chr10.txt, test.chr11.txt, test.chr12.txt, test.chr1.txt, test.chr2.txt, test.chr3.txt] 
+bpipe.PipelineCategory	[1]	INFO	|10:46:43 Found closure variable hello 
+bpipe.Pipeline	[1]	WARNING	|10:46:43 Pipeline folder /nfs/users/nfs_c/cgppipe/bpipes could not be found 
+bpipe.Pipeline	[1]	INFO	|10:46:44 Loaded external reference: args 
+bpipe.Pipeline	[1]	INFO	|10:46:44 External reference args is overridden by local reference 
+bpipe.Pipeline	[1]	INFO	|10:46:44 Loaded external reference: hello 
+bpipe.Pipeline	[1]	INFO	|10:46:44 External reference hello is overridden by local reference 
+bpipe.DefinePipelineCategory	[1]	INFO	|10:46:44 multiply on input null with pattern * 
+bpipe.InputSplitter	[1]	INFO	|10:46:44 Found * pattern at [0], hash at [] and % at [] 
+bpipe.InputSplitter	[1]	INFO	|10:46:44 Sorted: [0] 
+bpipe.InputSplitter	[1]	INFO	|10:46:44 % groups are at [] 
+bpipe.InputSplitter	[1]	INFO	|10:46:44 Result is [pattern:([^/]*), splits:[]] 
+bpipe.DefinePipelineCategory	[1]	INFO	|10:46:44 Processing segment 528420682 
+bpipe.PipelineCategory	[1]	INFO	|10:46:44 Joiners for pipeline 16189702 = [] 
+bpipe.Pipeline	[1]	INFO	|10:46:44 Running segment with inputs [test.chr10.txt, test.chr11.txt, test.chr12.txt, test.chr1.txt, test.chr2.txt, test.chr3.txt] 
+bpipe.Dependencies	[1]	INFO	|10:46:44 Checking input (s) [test.chr10.txt, test.chr11.txt, test.chr12.txt, test.chr1.txt, test.chr2.txt, test.chr3.txt] 
+bpipe.Utils	[1]	INFO	|10:46:44 Output folder scan (concurrency=5) executed in 0.004 seconds 
+bpipe.Dependencies	[1]	INFO	|10:46:44  Checking file test.chr10.txt 
+bpipe.Dependencies	[1]	INFO	|10:46:44  Checking file test.chr11.txt 
+bpipe.Dependencies	[1]	INFO	|10:46:44  Checking file test.chr12.txt 
+bpipe.Dependencies	[1]	INFO	|10:46:44  Checking file test.chr1.txt 
+bpipe.Dependencies	[1]	INFO	|10:46:44  Checking file test.chr2.txt 
+bpipe.Dependencies	[1]	INFO	|10:46:44  Checking file test.chr3.txt 
+bpipe.PipelineDelegate	[1]	INFO	|10:46:44 Setting or creating a delegate for context 1981014027 body 316288701/java.lang.Class in thread 1 
+bpipe.PipelineDelegate	[1]	INFO	|10:46:44 Created new delegate bpipe.PipelineDelegate@d003626 overriding type java.lang.Class in thread 1 
+bpipe.PipelineCategory	[1]	INFO	|10:46:44 multiply on input [test.chr10.txt, test.chr11.txt, test.chr12.txt, test.chr1.txt, test.chr2.txt, test.chr3.txt] on set [bpipe.Chr@484ebeae, bpipe.Chr@29c8b698, bpipe.Chr@6c0b652b, bpipe.Chr@601f2177, bpipe.Chr@1bce3cee] 
+bpipe.PipelineCategory	[1]	INFO	|10:46:44 Processing segment 528420682 
+bpipe.PipelineCategory	[1]	INFO	|10:46:44 Creating pipeline to run on branch bpipe.Chr@484ebeae 
+bpipe.PipelineCategory	[1]	INFO	|10:46:44 Creating pipeline to run on branch bpipe.Chr@29c8b698 
+bpipe.PipelineCategory	[1]	INFO	|10:46:44 Creating pipeline to run on branch bpipe.Chr@6c0b652b 
+bpipe.PipelineCategory	[1]	INFO	|10:46:44 Creating pipeline to run on branch bpipe.Chr@601f2177 
+bpipe.PipelineCategory	[1]	INFO	|10:46:44 Creating pipeline to run on branch bpipe.Chr@1bce3cee 
+bpipe.Concurrency	[1]	INFO	|10:46:44 Waiting for 5 parallel stages to complete (pool.active=5 pool.tasks=5) 
+bpipe.PipelineCategory	[17]	INFO	|10:46:44 Filtering child pipeline inputs on name chr3 
+bpipe.PipelineCategory	[15]	INFO	|10:46:44 Filtering child pipeline inputs on name chr1 
+bpipe.PipelineCategory	[18]	INFO	|10:46:44 Filtering child pipeline inputs on name chr4 
+bpipe.PipelineCategory	[16]	INFO	|10:46:44 Filtering child pipeline inputs on name chr2 
+bpipe.PipelineCategory	[19]	INFO	|10:46:44 Filtering child pipeline inputs on name chr5 
+bpipe.PipelineContext	[17]	INFO	|10:46:44 Setting output [test.chr3.txt] on context 250627958 in thread 17 
+bpipe.PipelineContext	[16]	INFO	|10:46:44 Setting output [test.chr2.txt] on context 1088658339 in thread 16 
+bpipe.PipelineContext	[15]	INFO	|10:46:44 Setting output [test.chr1.txt] on context 520031133 in thread 15 
+bpipe.PipelineContext	[16]	INFO	|10:46:44 Using previously set output: [test.chr2.txt] 
+bpipe.PipelineContext	[17]	INFO	|10:46:44 Using previously set output: [test.chr3.txt] 
+bpipe.PipelineContext	[15]	INFO	|10:46:44 Using previously set output: [test.chr1.txt] 
+bpipe.Concurrency	[18]	INFO	|10:46:44 Decremented running count to 4 in thread Thread-9 
+bpipe.Concurrency	[19]	INFO	|10:46:44 Decremented running count to 3 in thread Thread-10 
+bpipe.PipelineCategory	[15]	INFO	|10:46:44 Adding dummy prior stage for thread 15 with outputs : test.chr1.txt 
+bpipe.PipelineCategory	[16]	INFO	|10:46:44 Adding dummy prior stage for thread 16 with outputs : test.chr2.txt 
+bpipe.PipelineCategory	[17]	INFO	|10:46:44 Adding dummy prior stage for thread 17 with outputs : test.chr3.txt 
+bpipe.Pipeline	[16]	INFO	|10:46:44 Running segment with inputs [test.chr2.txt] 
+bpipe.Pipeline	[17]	INFO	|10:46:44 Running segment with inputs [test.chr3.txt] 
+bpipe.Pipeline	[15]	INFO	|10:46:44 Running segment with inputs [test.chr1.txt] 
+bpipe.Dependencies	[16]	INFO	|10:46:44 Checking input (s) [test.chr2.txt] 
+bpipe.Dependencies	[17]	INFO	|10:46:44 Checking input (s) [test.chr3.txt] 
+bpipe.Dependencies	[15]	INFO	|10:46:44 Checking input (s) [test.chr1.txt] 
+bpipe.Dependencies	[16]	INFO	|10:46:44  Checking file test.chr2.txt 
+bpipe.Dependencies	[17]	INFO	|10:46:44  Checking file test.chr3.txt 
+bpipe.Dependencies	[15]	INFO	|10:46:44  Checking file test.chr1.txt 
+bpipe.ReportStatisticsListener	[16]	INFO	|10:46:44 Annotating stage start time hello 
+bpipe.ReportStatisticsListener	[15]	INFO	|10:46:44 Annotating stage start time hello 
+bpipe.ReportStatisticsListener	[17]	INFO	|10:46:44 Annotating stage start time hello 
+bpipe.PipelineStage	[15]	INFO	|10:46:44 Stage hello [chr1] : INPUT=[test.chr1.txt] OUTPUT=test.chr1.txt.hello 
+bpipe.PipelineStage	[16]	INFO	|10:46:44 Stage hello [chr2] : INPUT=[test.chr2.txt] OUTPUT=test.chr2.txt.hello 
+bpipe.PipelineStage	[17]	INFO	|10:46:44 Stage hello [chr3] : INPUT=[test.chr3.txt] OUTPUT=test.chr3.txt.hello 
+bpipe.PipelineDelegate	[15]	INFO	|10:46:44 Setting or creating a delegate for context 785908008 body 528420682/script1417776403870930793290 in thread 15 
+bpipe.PipelineDelegate	[15]	INFO	|10:46:44 Created new delegate bpipe.PipelineDelegate@6734011e overriding type script1417776403870930793290 in thread 15 
+bpipe.PipelineDelegate	[17]	INFO	|10:46:44 Setting or creating a delegate for context 120950145 body 528420682/bpipe.PipelineDelegate in thread 17 
+bpipe.PipelineDelegate	[17]	INFO	|10:46:44 Existing delegate bpipe.PipelineDelegate@6734011e has type bpipe.PipelineDelegate in thread 17. Setting new context 120950145 
+bpipe.PipelineDelegate	[16]	INFO	|10:46:44 Setting or creating a delegate for context 688919510 body 528420682/bpipe.PipelineDelegate in thread 16 
+bpipe.PipelineDelegate	[16]	INFO	|10:46:44 Existing delegate bpipe.PipelineDelegate@6734011e has type bpipe.PipelineDelegate in thread 16. Setting new context 688919510 
+bpipe.PipelineInput	[15]	INFO	|10:46:44 Searching for missing Property: txt 
+bpipe.PipelineInput	[16]	INFO	|10:46:44 Searching for missing Property: txt 
+bpipe.PipelineInput	[17]	INFO	|10:46:44 Searching for missing Property: txt 
+bpipe.PipelineInput	[15]	INFO	|10:46:44 Resolving inputs matching pattern ^.*\.txt$ 
+bpipe.PipelineInput	[17]	INFO	|10:46:44 Resolving inputs matching pattern ^.*\.txt$ 
+bpipe.PipelineInput	[15]	INFO	|10:46:44 Checking outputs [test.chr1.txt] 
+bpipe.PipelineInput	[16]	INFO	|10:46:44 Resolving inputs matching pattern ^.*\.txt$ 
+bpipe.PipelineInput	[17]	INFO	|10:46:44 Checking outputs [test.chr3.txt] 
+bpipe.PipelineInput	[16]	INFO	|10:46:44 Checking outputs [test.chr2.txt] 
+bpipe.PipelineInput	[16]	INFO	|10:46:44 Found files with exts [txt$] : [[test.chr2.txt]] 
+bpipe.PipelineInput	[17]	INFO	|10:46:44 Found files with exts [txt$] : [[test.chr3.txt]] 
+bpipe.PipelineInput	[15]	INFO	|10:46:44 Found files with exts [txt$] : [[test.chr1.txt]] 
+bpipe.PipelineInput	[16]	INFO	|10:46:44 Adding resolved input test.chr2.txt 
+bpipe.PipelineInput	[17]	INFO	|10:46:44 Adding resolved input test.chr3.txt 
+bpipe.PipelineInput	[15]	INFO	|10:46:44 Adding resolved input test.chr1.txt 
+bpipe.PipelineContext	[17]	INFO	|10:46:44 Using non-default output due to input property reference: test.chr3.txt from resolved inputs [test.chr3.txt] 
+bpipe.PipelineContext	[16]	INFO	|10:46:44 Using non-default output due to input property reference: test.chr2.txt from resolved inputs [test.chr2.txt] 
+bpipe.PipelineContext	[15]	INFO	|10:46:44 Using non-default output due to input property reference: test.chr1.txt from resolved inputs [test.chr1.txt] 
+bpipe.PipelineContext	[17]	INFO	|10:46:44 Tracking outputs referenced=[[]] inferred=[[test.chr3.hello.csv]] for command cp test.chr3.txt test.chr3.hello.csv 
+bpipe.PipelineContext	[16]	INFO	|10:46:44 Tracking outputs referenced=[[]] inferred=[[test.chr2.hello.csv]] for command cp test.chr2.txt test.chr2.hello.csv 
+bpipe.PipelineContext	[15]	INFO	|10:46:44 Tracking outputs referenced=[[]] inferred=[[test.chr1.hello.csv]] for command cp test.chr1.txt test.chr1.hello.csv 
+bpipe.ReportStatisticsListener	[15]	INFO	|10:46:44 Intercepted command check for command cp test.chr1.txt test.chr1.hello.csv 
+bpipe.PipelineContext	[15]	INFO	|10:46:44 Checking actual resolved inputs [test.chr1.txt] 
+bpipe.ReportStatisticsListener	[17]	INFO	|10:46:44 Intercepted command check for command cp test.chr3.txt test.chr3.hello.csv 
+bpipe.PipelineContext	[17]	INFO	|10:46:44 Checking actual resolved inputs [test.chr3.txt] 
+bpipe.ReportStatisticsListener	[16]	INFO	|10:46:44 Intercepted command check for command cp test.chr2.txt test.chr2.hello.csv 
+bpipe.Utils	[15]	INFO	|10:46:44 ===== Check test.chr1.hello.csv ===== 
+bpipe.Utils	[17]	INFO	|10:46:44 ===== Check test.chr3.hello.csv ===== 
+bpipe.PipelineContext	[16]	INFO	|10:46:44 Checking actual resolved inputs [test.chr2.txt] 
+bpipe.Utils	[15]	INFO	|10:46:44 file doesn't exist: test.chr1.hello.csv 
+bpipe.Utils	[17]	INFO	|10:46:44 file doesn't exist: test.chr3.hello.csv 
+bpipe.Utils	[16]	INFO	|10:46:44 ===== Check test.chr2.hello.csv ===== 
+bpipe.Dependencies	[15]	INFO	|10:46:44 Found these missing / older files: [test.chr1.hello.csv] 
+bpipe.Utils	[16]	INFO	|10:46:44 file doesn't exist: test.chr2.hello.csv 
+bpipe.Dependencies	[17]	INFO	|10:46:44 Found these missing / older files: [test.chr3.hello.csv] 
+bpipe.Dependencies	[16]	INFO	|10:46:44 Found these missing / older files: [test.chr2.hello.csv] 
+bpipe.Dependencies	[15]	INFO	|10:46:44 Some files are outdated : [test.chr1.hello.csv] 
+bpipe.Dependencies	[16]	INFO	|10:46:44 Some files are outdated : [test.chr2.hello.csv] 
+bpipe.Dependencies	[17]	INFO	|10:46:44 Some files are outdated : [test.chr3.hello.csv] 
+bpipe.Command	[15]	INFO	|10:46:44 Checking for configuration for command cp 
+bpipe.Command	[16]	INFO	|10:46:44 Checking for configuration for command cp 
+bpipe.Command	[17]	INFO	|10:46:44 Checking for configuration for command cp 
+bpipe.Command	[16]	INFO	|10:46:44 Default command properties: [executor:local] 
+bpipe.Command	[17]	INFO	|10:46:44 Default command properties: [executor:local] 
+bpipe.Command	[15]	INFO	|10:46:44 Default command properties: [executor:local] 
+bpipe.CommandManager	[17]	INFO	|10:46:44 Using config [executor:local] for command 
+bpipe.CommandManager	[15]	INFO	|10:46:44 Using config [executor:local] for command 
+bpipe.CommandManager	[16]	INFO	|10:46:44 Using config [executor:local] for command 
+bpipe.CommandManager	[16]	INFO	|10:46:44 Created bpipe command id 1 
+bpipe.CommandManager	[17]	INFO	|10:46:44 Created bpipe command id 2 
+bpipe.CommandManager	[15]	INFO	|10:46:44 Created bpipe command id 3 
+bpipe.Concurrency	[16]	INFO	|10:46:44 Thread Thread-7 requesting for 1 concurrency permit(s) type threads with 32 available 
+bpipe.Concurrency	[17]	INFO	|10:46:44 Thread Thread-8 requesting for 1 concurrency permit(s) type threads with 32 available 
+bpipe.Concurrency	[15]	INFO	|10:46:44 Thread Thread-6 requesting for 1 concurrency permit(s) type threads with 32 available 
+bpipe.Concurrency	[16]	INFO	|10:46:44 Thread Thread-7 acquired resource threads in amount 1 
+bpipe.Concurrency	[17]	INFO	|10:46:44 Thread Thread-8 acquired resource threads in amount 1 
+bpipe.Concurrency	[15]	INFO	|10:46:44 Thread Thread-6 acquired resource threads in amount 1 
+bpipe.Command	[20]	INFO	|10:46:44 Command 1 changing state from null to RUNNING 
+bpipe.Command	[21]	INFO	|10:46:44 Command 2 changing state from null to RUNNING 
+bpipe.Command	[22]	INFO	|10:46:44 Command 3 changing state from null to RUNNING 
+bpipe.executor.ThrottledDelegatingCommandExecutor	[15]	INFO	|10:46:44 Waiting for command to complete before releasing 1 resources 
+bpipe.executor.ThrottledDelegatingCommandExecutor	[16]	INFO	|10:46:44 Waiting for command to complete before releasing 1 resources 
+bpipe.executor.ThrottledDelegatingCommandExecutor	[17]	INFO	|10:46:44 Waiting for command to complete before releasing 1 resources 
+bpipe.Command	[15]	INFO	|10:46:44 Command 3 changing state from RUNNING to COMPLETE 
+bpipe.Command	[17]	INFO	|10:46:44 Command 2 changing state from RUNNING to COMPLETE 
+bpipe.Command	[16]	INFO	|10:46:44 Command 1 changing state from RUNNING to COMPLETE 
+bpipe.executor.ThrottledDelegatingCommandExecutor	[15]	INFO	|10:46:44 Releasing 1 resources 
+bpipe.executor.ThrottledDelegatingCommandExecutor	[17]	INFO	|10:46:44 Releasing 1 resources 
+bpipe.executor.ThrottledDelegatingCommandExecutor	[16]	INFO	|10:46:44 Releasing 1 resources 
+bpipe.Concurrency	[17]	INFO	|10:46:44 Thread Thread-8 releasing 1 threads 
+bpipe.Concurrency	[15]	INFO	|10:46:44 Thread Thread-6 releasing 1 threads 
+bpipe.Concurrency	[16]	INFO	|10:46:44 Thread Thread-7 releasing 1 threads 
+bpipe.executor.ThrottledDelegatingCommandExecutor	[17]	INFO	|10:46:44 Released 1 resources 
+bpipe.executor.ThrottledDelegatingCommandExecutor	[15]	INFO	|10:46:44 Released 1 resources 
+bpipe.executor.ThrottledDelegatingCommandExecutor	[16]	INFO	|10:46:44 Released 1 resources 
+bpipe.PipelineStage	[15]	INFO	|10:46:44 Stage hello [chr1] returned null as default inputs for next stage 
+bpipe.PipelineStage	[17]	INFO	|10:46:44 Stage hello [chr3] returned null as default inputs for next stage 
+bpipe.PipelineStage	[16]	INFO	|10:46:44 Stage hello [chr2] returned null as default inputs for next stage 
+bpipe.PipelineStage	[15]	INFO	|10:46:44 Using inferred outputs [test.chr1.hello.csv] as outputs because no explicit outputs set 
+bpipe.PipelineStage	[16]	INFO	|10:46:44 Using inferred outputs [test.chr2.hello.csv] as outputs because no explicit outputs set 
+bpipe.PipelineStage	[17]	INFO	|10:46:44 Using inferred outputs [test.chr3.hello.csv] as outputs because no explicit outputs set 
+bpipe.PipelineStage	[15]	INFO	|10:46:44 Inferring nextInputs from explicit output as [test.chr1.hello.csv] 
+bpipe.PipelineStage	[16]	INFO	|10:46:44 Inferring nextInputs from explicit output as [test.chr2.hello.csv] 
+bpipe.PipelineStage	[17]	INFO	|10:46:44 Inferring nextInputs from explicit output as [test.chr3.hello.csv] 
+bpipe.PipelineStage	[17]	INFO	|10:46:44 Setting next inputs [test.chr3.hello.csv] on stage 56595043, context 120950145 in thread 17 
+bpipe.PipelineStage	[16]	INFO	|10:46:44 Setting next inputs [test.chr2.hello.csv] on stage 882660417, context 688919510 in thread 16 
+bpipe.PipelineStage	[15]	INFO	|10:46:44 Setting next inputs [test.chr1.hello.csv] on stage 2005115727, context 785908008 in thread 15 
+bpipe.Dependencies	[15]	INFO	|10:46:44 Context 785908008 for stage hello has resolved inputs [test.chr1.txt] 
+bpipe.Dependencies	[15]	INFO	|10:46:44 Saving output file details to file .bpipe/outputs/hello.test.chr1.hello.csv.properties for command cp test.chr1.txt tes... 
+bpipe.ReportStatisticsListener	[15]	INFO	|10:46:44 Annotating stage end time hello 
+bpipe.PipelineStage	[15]	INFO	|10:46:44 Checking files: [test.chr1.hello.csv] 
+bpipe.Dependencies	[15]	INFO	|10:46:44 Checking output (s) [test.chr1.hello.csv] 
+bpipe.Dependencies	[16]	INFO	|10:46:44 Context 688919510 for stage hello has resolved inputs [test.chr2.txt] 
+bpipe.Dependencies	[16]	INFO	|10:46:44 Saving output file details to file .bpipe/outputs/hello.test.chr2.hello.csv.properties for command cp test.chr2.txt tes... 
+bpipe.ReportStatisticsListener	[16]	INFO	|10:46:44 Annotating stage end time hello 
+bpipe.PipelineStage	[16]	INFO	|10:46:44 Checking files: [test.chr2.hello.csv] 
+bpipe.Dependencies	[16]	INFO	|10:46:44 Checking output (s) [test.chr2.hello.csv] 
+bpipe.Dependencies	[17]	INFO	|10:46:44 Context 120950145 for stage hello has resolved inputs [test.chr3.txt] 
+bpipe.Dependencies	[17]	INFO	|10:46:44 Saving output file details to file .bpipe/outputs/hello.test.chr3.hello.csv.properties for command cp test.chr3.txt tes... 
+bpipe.Dependencies	[16]	INFO	|10:46:44  Checking file test.chr2.hello.csv 
+bpipe.Dependencies	[15]	INFO	|10:46:44  Checking file test.chr1.hello.csv 
+bpipe.ReportStatisticsListener	[17]	INFO	|10:46:44 Annotating stage end time hello 
+bpipe.Pipeline	[16]	INFO	|10:46:44 Pipeline segment chr2 in thread 16 has finished normally 
+bpipe.Pipeline	[15]	INFO	|10:46:44 Pipeline segment chr1 in thread 15 has finished normally 
+bpipe.Pipeline	[16]	INFO	|10:46:44 Finished running segment for inputs [test.chr2.txt] 
+bpipe.PipelineStage	[17]	INFO	|10:46:44 Checking files: [test.chr3.hello.csv] 
+bpipe.Pipeline	[15]	INFO	|10:46:44 Finished running segment for inputs [test.chr1.txt] 
+bpipe.Dependencies	[17]	INFO	|10:46:44 Checking output (s) [test.chr3.hello.csv] 
+bpipe.Concurrency	[16]	INFO	|10:46:44 Decremented running count to 2 in thread Thread-7 
+bpipe.Concurrency	[15]	INFO	|10:46:44 Decremented running count to 1 in thread Thread-6 
+bpipe.Dependencies	[17]	INFO	|10:46:44  Checking file test.chr3.hello.csv 
+bpipe.Pipeline	[17]	INFO	|10:46:44 Pipeline segment chr3 in thread 17 has finished normally 
+bpipe.Pipeline	[17]	INFO	|10:46:44 Finished running segment for inputs [test.chr3.txt] 
+bpipe.Concurrency	[17]	INFO	|10:46:44 Decremented running count to 0 in thread Thread-8 
+bpipe.PipelineCategory	[1]	INFO	|10:46:44 Parent pipeline of concurent sections [2046936610, 175579330, 319268332, 1528705718, 1268689542] is 16189702 
+bpipe.PipelineCategory	[1]	INFO	|10:46:44 Maximum child stage list length = 2 
+bpipe.PipelineCategory	[1]	INFO	|10:46:44 ###### Merging results of parallel split in parent branch  ##### 
+bpipe.PipelineCategory	[1]	INFO	|10:46:44 Grouping stages at index 0 [Nested pipeline segment: bpipe.Chr@484ebeae, Nested pipeline segment: bpipe.Chr@29c8b698, Nested pipeline segment: bpipe.Chr@6c0b652b, null, null] for merging 
+bpipe.PipelineCategory	[1]	INFO	|10:46:44 Merged outputs are [test.chr1.txt] 
+bpipe.PipelineContext	[1]	INFO	|10:46:44 Setting output [test.chr1.txt] on context 78459946 in thread 1 
+bpipe.PipelineCategory	[1]	INFO	|10:46:44 Merged outputs are [test.chr2.txt] 
+bpipe.PipelineContext	[1]	INFO	|10:46:44 Setting output [test.chr2.txt] on context 121353164 in thread 1 
+bpipe.PipelineCategory	[1]	INFO	|10:46:44 Merged outputs are [test.chr3.txt] 
+bpipe.PipelineContext	[1]	INFO	|10:46:44 Setting output [test.chr3.txt] on context 1620646345 in thread 1 
+bpipe.PipelineCategory	[1]	INFO	|10:46:44 Grouping stages at index 1 [hello, hello, hello, null, null] for merging 
+bpipe.PipelineCategory	[1]	INFO	|10:46:44 Parallel segment 1 contains 3 identical hello stages - Merging outputs to single stage 
+bpipe.PipelineCategory	[1]	INFO	|10:46:44 Merged outputs are [test.chr1.hello.csv, test.chr2.hello.csv, test.chr3.hello.csv] 
+bpipe.PipelineContext	[1]	INFO	|10:46:44 Setting output [test.chr1.hello.csv, test.chr2.hello.csv, test.chr3.hello.csv] on context 687054485 in thread 1 
+bpipe.PipelineCategory	[1]	INFO	|10:46:44 There are 2 stages from nested pipelines 
+bpipe.PipelineCategory	[1]	INFO	|10:46:44 There [bpipe.PipelineStage@7783a34f, bpipe.PipelineStage@349c5441, bpipe.PipelineStage@35f9263, null, null] parallel paths in final stage 
+bpipe.PipelineCategory	[1]	INFO	|10:46:44 Last merged outputs are [test.chr1.hello.csv, test.chr2.hello.csv, test.chr3.hello.csv] 
+bpipe.PipelineContext	[1]	INFO	|10:46:45 Setting output [test.chr1.hello.csv, test.chr2.hello.csv, test.chr3.hello.csv] on context 1340263703 in thread 1 
+bpipe.PipelineCategory	[1]	INFO	|10:46:45 Merged stage name is hello_null_null_bpipe_merge 
+bpipe.PipelineContext	[1]	INFO	|10:46:45 Setting output [test.chr1.hello.csv, test.chr2.hello.csv, test.chr3.hello.csv] on context 1981014027 in thread 1 
+bpipe.PipelineStage	[1]	INFO	|10:46:45 Setting next inputs [test.chr1.hello.csv, test.chr2.hello.csv, test.chr3.hello.csv] on stage 1892893660, context 1981014027 in thread 1 
+bpipe.PipelineStage	[1]	INFO	|10:46:45 Checking files: [test.chr1.hello.csv, test.chr2.hello.csv, test.chr3.hello.csv] 
+bpipe.Dependencies	[1]	INFO	|10:46:45 Checking output (s) [test.chr1.hello.csv, test.chr2.hello.csv, test.chr3.hello.csv] 
+bpipe.Dependencies	[1]	INFO	|10:46:45  Checking file test.chr1.hello.csv 
+bpipe.Dependencies	[1]	INFO	|10:46:45  Checking file test.chr2.hello.csv 
+bpipe.Dependencies	[1]	INFO	|10:46:45  Checking file test.chr3.hello.csv 
+bpipe.Pipeline	[1]	INFO	|10:46:45 Pipeline segment  in thread 1 has finished normally 
+bpipe.Pipeline	[1]	INFO	|10:46:45 Finished running segment for inputs [test.chr10.txt, test.chr11.txt, test.chr12.txt, test.chr1.txt, test.chr2.txt, test.chr3.txt] 
+bpipe.Pipeline	[1]	INFO	|10:46:45 adding stage Nested pipeline segment: bpipe.Chr@484ebeae from pipeline bpipe.Pipeline@7a01c622 
+bpipe.Pipeline	[1]	INFO	|10:46:45 adding stage hello from pipeline bpipe.Pipeline@7a01c622 
+bpipe.Pipeline	[1]	INFO	|10:46:45 adding stage Nested pipeline segment: bpipe.Chr@29c8b698 from pipeline bpipe.Pipeline@a7720c2 
+bpipe.Pipeline	[1]	INFO	|10:46:45 adding stage hello from pipeline bpipe.Pipeline@a7720c2 
+bpipe.Pipeline	[1]	INFO	|10:46:45 adding stage Nested pipeline segment: bpipe.Chr@6c0b652b from pipeline bpipe.Pipeline@1307a5ec 
+bpipe.Pipeline	[1]	INFO	|10:46:45 adding stage hello from pipeline bpipe.Pipeline@1307a5ec 
+bpipe.Dependencies	[32]	INFO	|10:46:45 Reading property file .bpipe/outputs/hello.test.chr2.hello.csv.properties 
+bpipe.Dependencies	[34]	INFO	|10:46:45 Reading property file .bpipe/outputs/hello.test.chr3.hello.csv.properties 
+bpipe.Dependencies	[33]	INFO	|10:46:45 Reading property file .bpipe/outputs/hello.test.chr1.hello.csv.properties 
+bpipe.Utils	[1]	INFO	|10:46:45 Output folder scan (concurrency=5) executed in 0.025 seconds 
+bpipe.Dependencies	[1]	INFO	|10:46:45 External inputs: [[test.chr2.txt], [test.chr1.txt], [test.chr3.txt]] for outputs [test.chr2.hello.csv, test.chr1.hello.csv, test.chr3.hello.csv] 
+bpipe.Dependencies	[1]	INFO	|10:46:45 There are 3 output groups 
+bpipe.Dependencies	[1]	INFO	|10:46:45 Subtracting 3 remaining outputs from 3 total outputs 
+bpipe.Dependencies	[1]	INFO	|10:46:45 There are 0 remaining outputs 
+bpipe.Dependencies	[1]	INFO	|10:46:45 There are 0 remaining outputs 
+bpipe.Dependencies	[1]	INFO	|10:46:45 There are 0 remaining outputs 
+bpipe.Dependencies	[1]	INFO	|10:46:45  test.chr2.hello.csv / entry 1617848410  
+bpipe.Dependencies	[1]	INFO	|10:46:45 test.chr2.hello.csv is newer than input files 
+bpipe.Dependencies	[1]	INFO	|10:46:45  test.chr1.hello.csv / entry 2034462631  
+bpipe.Dependencies	[1]	INFO	|10:46:45 test.chr1.hello.csv is newer than input files 
+bpipe.Dependencies	[1]	INFO	|10:46:45  test.chr3.hello.csv / entry 978811683 - 
+bpipe.Dependencies	[1]	INFO	|10:46:45 test.chr3.hello.csv is newer than input files 
+bpipe.Dependencies	[1]	INFO	|10:46:45 ====Finished Output Graph===== 
+bpipe.ReportGenerator	[1]	INFO	|10:46:45 Searching for template in /lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/src/main/html/bpipe 
+bpipe.ReportGenerator	[1]	INFO	|10:46:45 Generating report to /lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/prechrinput/doc/index.html 
+bpipe.PipelineContext	[1]	INFO	|10:46:45 Using previously set output: [test.chr1.hello.csv] 
+bpipe.PipelineContext	[1]	INFO	|10:46:45 Using previously set output: [test.chr1.hello.csv] 
+bpipe.PipelineContext	[1]	INFO	|10:46:45 Using previously set output: [test.chr1.hello.csv] 
+bpipe.PipelineContext	[1]	INFO	|10:46:45 Using previously set output: [test.chr2.hello.csv] 
+bpipe.PipelineContext	[1]	INFO	|10:46:45 Using previously set output: [test.chr2.hello.csv] 
+bpipe.PipelineContext	[1]	INFO	|10:46:45 Using previously set output: [test.chr2.hello.csv] 
+bpipe.PipelineContext	[1]	INFO	|10:46:45 Using previously set output: [test.chr3.hello.csv] 
+bpipe.PipelineContext	[1]	INFO	|10:46:45 Using previously set output: [test.chr3.hello.csv] 
+bpipe.PipelineContext	[1]	INFO	|10:46:45 Using previously set output: [test.chr3.hello.csv] 
+bpipe.Dependencies	[35]	INFO	|10:46:45 Reading property file .bpipe/outputs/hello.test.chr2.hello.csv.properties 
+bpipe.Dependencies	[37]	INFO	|10:46:45 Reading property file .bpipe/outputs/hello.test.chr3.hello.csv.properties 
+bpipe.Dependencies	[36]	INFO	|10:46:45 Reading property file .bpipe/outputs/hello.test.chr1.hello.csv.properties 
+bpipe.Utils	[1]	INFO	|10:46:45 Output folder scan (concurrency=5) executed in 0.006 seconds 
+bpipe.Dependencies	[1]	INFO	|10:46:45 External inputs: [[test.chr2.txt], [test.chr1.txt], [test.chr3.txt]] for outputs [test.chr2.hello.csv, test.chr1.hello.csv, test.chr3.hello.csv] 
+bpipe.Dependencies	[1]	INFO	|10:46:45 There are 3 output groups 
+bpipe.Dependencies	[1]	INFO	|10:46:45 Subtracting 3 remaining outputs from 3 total outputs 
+bpipe.Dependencies	[1]	INFO	|10:46:45 There are 0 remaining outputs 
+bpipe.Dependencies	[1]	INFO	|10:46:45 There are 0 remaining outputs 
+bpipe.Dependencies	[1]	INFO	|10:46:45 There are 0 remaining outputs 
+bpipe.Dependencies	[1]	INFO	|10:46:45  test.chr2.hello.csv / entry 1408069153  
+bpipe.Dependencies	[1]	INFO	|10:46:45 test.chr2.hello.csv is newer than input files 
+bpipe.Dependencies	[1]	INFO	|10:46:45  test.chr1.hello.csv / entry 148464531 - 
+bpipe.Dependencies	[1]	INFO	|10:46:45 test.chr1.hello.csv is newer than input files 
+bpipe.Dependencies	[1]	INFO	|10:46:45  test.chr3.hello.csv / entry 2014858350  
+bpipe.Dependencies	[1]	INFO	|10:46:45 test.chr3.hello.csv is newer than input files 
+bpipe.Dependencies	[1]	INFO	|10:46:45 ====Finished Output Graph===== 
+bpipe.Pipeline	[1]	INFO	|10:46:45 Outputs are: 
+		test.chr2.hello.csv
+		test.chr1.hello.csv
+		test.chr3.hello.csv 
+bpipe.Runner	[9]	INFO	|10:46:45 Deleting job file /nfs/users/nfs_c/cgppipe/.bpipedb/jobs/31419 

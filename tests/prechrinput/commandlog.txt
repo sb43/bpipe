@@ -1,0 +1,26 @@
+
+####################################################################################################
+# Starting pipeline at Wed Nov 26 10:34:35 GMT 2014
+# Input files:  [test.chr10.txt, test.chr11.txt, test.chr12.txt, test.chr1.txt, test.chr2.txt, test.chr3.txt]
+# Output Log:  .bpipe/logs/28911.log
+# Stage hello [chr3]
+# Stage hello [chr1]
+# Stage hello [chr2]
+cp test.chr1.txt test.chr1.hello.csv
+cp test.chr2.txt test.chr2.hello.csv
+cp test.chr3.txt test.chr3.hello.csv
+# ################ Finished at Wed Nov 26 10:34:36 GMT 2014 Duration = 0.987 seconds #################
+
+
+####################################################################################################
+# Starting pipeline at Fri Dec 05 10:46:44 GMT 2014
+# Input files:  [test.chr10.txt, test.chr11.txt, test.chr12.txt, test.chr1.txt, test.chr2.txt, test.chr3.txt]
+# Output Log:  .bpipe/logs/31419.log
+# Stage hello [chr2]
+# Stage hello [chr3]
+# Stage hello [chr1]
+cp test.chr1.txt test.chr1.hello.csv
+cp test.chr2.txt test.chr2.hello.csv
+cp test.chr3.txt test.chr3.hello.csv
+# ################ Finished at Fri Dec 05 10:46:45 GMT 2014 Duration = 1.034 seconds #################
+

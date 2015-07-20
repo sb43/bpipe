@@ -1,0 +1,10 @@
+====================================================================================================
+|                              Starting Pipeline at 2014-12-05 10:45                               |
+====================================================================================================
+
+======================================== Stage hello [bar] =========================================
+
+======================================== Pipeline Finished =========================================
+MSG: Generated report /lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/branch_input_before_original/doc/index.html
+10:45:37 MSG:  Finished at Fri Dec 05 10:45:37 GMT 2014
+10:45:37 MSG:  Output is bar.hello.xml

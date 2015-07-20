@@ -1,0 +1,53 @@
+[----]	====================================================================================================
+[----]	|                              Starting Pipeline at 2014-12-05 10:47                               |
+[----]	====================================================================================================
+[]	
+[]	=========================================== Stage hello ============================================
+[0.1]	hello
+[]	
+[]	=========================================== Stage world ============================================
+=========================================== Bpipe Error ============================================
+
+An error occurred executing your pipeline:
+
+                          Cannot invoke method toInteger() on null object                           
+
+
+Please see the details below for more information.
+
+========================================== Error Details ===========================================
+
+java.lang.NullPointerException: Cannot invoke method toInteger() on null object
+	at world.groovy$_run_closure1.doCall(world.groovy.groovy:5)
+	at bpipe.PipelineStage.invokeMethod(PipelineStage.groovy)
+	at bpipe.PipelineStage$_runBody_closure4.doCall(PipelineStage.groovy:292)
+	at bpipe.PipelineStage$_runBody_closure4.doCall(PipelineStage.groovy)
+	at bpipe.PipelineStage.runBody(PipelineStage.groovy:291)
+	at bpipe.PipelineStage.this$2$runBody(PipelineStage.groovy)
+	at bpipe.PipelineStage.run(PipelineStage.groovy:220)
+	at bpipe.PipelineCategory$_plus_closure1.doCall(PipelineCategory.groovy:145)
+	at bpipe.PipelineStage.invokeMethod(PipelineStage.groovy)
+	at bpipe.PipelineStage$_runBody_closure4.doCall(PipelineStage.groovy:292)
+	at bpipe.PipelineStage$_runBody_closure4.doCall(PipelineStage.groovy)
+	at bpipe.PipelineStage.runBody(PipelineStage.groovy:291)
+	at bpipe.PipelineStage.this$2$runBody(PipelineStage.groovy)
+	at bpipe.PipelineStage.run(PipelineStage.groovy:220)
+	at bpipe.Pipeline.runSegment(Pipeline.groovy:513)
+	at bpipe.Pipeline$_execute_closure8.doCall(Pipeline.groovy:664)
+	at bpipe.Pipeline$_execute_closure8.doCall(Pipeline.groovy)
+	at bpipe.Pipeline.execute(Pipeline.groovy:627)
+	at bpipe.Pipeline.execute(Pipeline.groovy)
+	at bpipe.Pipeline.this$2$execute(Pipeline.groovy)
+	at bpipe.Pipeline$this$2$execute$1.call(Unknown Source)
+	at bpipe.Pipeline.run(Pipeline.groovy:475)
+	at bpipe.Pipeline$run.callStatic(Unknown Source)
+	at bpipe.Pipeline.run(Pipeline.groovy:435)
+	at test.groovy.run(test.groovy.groovy:5)
+	at test.groovy$run.call(Unknown Source)
+	at bpipe.Runner.main(Runner.groovy:375)
+
+
+====================================================================================================
+
+More details about why this error occurred may be available in the full log file .bpipe/bpipe.log
+

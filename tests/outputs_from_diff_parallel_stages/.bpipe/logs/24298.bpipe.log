@@ -1,0 +1,502 @@
+bpipe.Runner	[1]	INFO	|10:40:40 Starting 
+bpipe.Runner	[1]	INFO	|10:40:40 OS: Linux (2.6.32-44-server) Java: 1.7.0_25 Vendor: Oracle Corporation 
+bpipe.Runner	[1]	INFO	|10:40:40 Initializing plugins ... 
+bpipe.Config	[1]	INFO	|10:40:40 No plugins directory found: /lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/outputs_from_diff_parallel_stages/.bpipe/plugins 
+bpipe.Runner	[1]	INFO	|10:40:40 Reading user config ...  
+bpipe.Config	[1]	INFO	|10:40:40 No configuration file found in same dir as pipeline file 
+bpipe.Config	[1]	INFO	|10:40:40 No local configuration file found 
+bpipe.Utils	[10]	INFO	|10:40:41 Read config from /nfs/users/nfs_c/cgppipe/canpipe/software/bpipe_git/tests/outputs_from_diff_parallel_stages/../../bin/../src/main/config/bpipe.config executed in 0.330 seconds 
+bpipe.Utils	[1]	INFO	|10:40:41 Read user config executed in 0.559 seconds 
+bpipe.Runner	[1]	INFO	|10:40:41 Loading tool database ...  
+bpipe.ToolDatabase	[11]	INFO	|10:40:41 Loading tool database from user configuration 
+bpipe.Concurrency	[13]	INFO	|10:40:41 Creating thread pool with 32 threads to execute parallel pipelines 
+bpipe.NotificationManager	[14]	INFO	|10:40:41 Configuring notifications 
+bpipe.NotificationManager	[14]	INFO	|10:40:41 Trying class name file for notification channel file 
+bpipe.Tool	[11]	INFO	|10:40:41 Configured meta data about tool samtools 
+bpipe.Tool	[11]	INFO	|10:40:41 Configured meta data about tool bwa 
+bpipe.Tool	[11]	INFO	|10:40:41 Configured meta data about tool bowtie 
+bpipe.Tool	[11]	INFO	|10:40:41 Configured meta data about tool fastqc 
+bpipe.Tool	[11]	INFO	|10:40:41 Configured meta data about tool coverageBed 
+bpipe.Tool	[11]	INFO	|10:40:41 Configured meta data about tool fastx_clipper 
+bpipe.Tool	[11]	INFO	|10:40:41 Configured meta data about tool convert2annovar.pl 
+bpipe.Tool	[11]	INFO	|10:40:41 Configured meta data about tool summarize_annovar.pl 
+bpipe.Tool	[11]	INFO	|10:40:41 Configured meta data about tool bowtie2 
+bpipe.Tool	[11]	INFO	|10:40:41 Configured meta data about tool GenomeAnalysisTK 
+bpipe.Tool	[11]	INFO	|10:40:41 Configured meta data about tool MarkDuplicates 
+bpipe.Tool	[11]	INFO	|10:40:41 Configured meta data about tool signalp 
+bpipe.Tool	[11]	INFO	|10:40:41 Configured meta data about tool variant_effect_predictor.pl 
+bpipe.Tool	[11]	INFO	|10:40:41 Configured meta data about tool igvtools 
+bpipe.Tool	[11]	INFO	|10:40:41 Configured meta data about tool ls 
+bpipe.Runner	[1]	INFO	|10:40:41 No CLI parameters specified 
+bpipe.NotificationManager	[14]	INFO	|10:40:41 Unable to create notification channel using class file: java.lang.ClassNotFoundException: file 
+bpipe.NotificationManager	[14]	INFO	|10:40:41 Trying class name bpipe.FILENotificationChannel for notification channel file 
+bpipe.NotificationManager	[14]	INFO	|10:40:41 Unable to create notification channel using class bpipe.FILENotificationChannel: java.lang.ClassNotFoundException: bpipe.FILENotificationChannel 
+bpipe.NotificationManager	[14]	INFO	|10:40:41 Trying class name bpipe.file for notification channel file 
+bpipe.NotificationManager	[14]	INFO	|10:40:41 Unable to create notification channel using class bpipe.file: java.lang.ClassNotFoundException: bpipe.file 
+bpipe.NotificationManager	[14]	INFO	|10:40:41 Trying class name bpipe.FileNotificationChannel for notification channel file 
+bpipe.NotificationManager	[14]	INFO	|10:40:41 Successfully created notification channel using class bpipe.FileNotificationChannel 
+bpipe.Runner	[1]	INFO	|10:40:41 Parsing script ...  
+bpipe.Runner	[1]	INFO	|10:40:41 Run ...  
+bpipe.Pipeline	[1]	INFO	|10:40:41 Running with input [test.bed, test.bam] 
+bpipe.PipelineCategory	[1]	INFO	|10:40:41 Found closure variable hello 
+bpipe.PipelineCategory	[1]	INFO	|10:40:41 Found closure variable world 
+bpipe.PipelineCategory	[1]	INFO	|10:40:41 Found closure variable mars 
+bpipe.PipelineCategory	[1]	INFO	|10:40:41 Found closure variable align 
+bpipe.Pipeline	[1]	WARNING	|10:40:41 Pipeline folder /nfs/users/nfs_c/cgppipe/bpipes could not be found 
+bpipe.Pipeline	[1]	INFO	|10:40:41 Loaded external reference: args 
+bpipe.Pipeline	[1]	INFO	|10:40:41 External reference args is overridden by local reference 
+bpipe.Pipeline	[1]	INFO	|10:40:41 Loaded external reference: hello 
+bpipe.Pipeline	[1]	INFO	|10:40:41 External reference hello is overridden by local reference 
+bpipe.Pipeline	[1]	INFO	|10:40:41 Loaded external reference: world 
+bpipe.Pipeline	[1]	INFO	|10:40:41 External reference world is overridden by local reference 
+bpipe.Pipeline	[1]	INFO	|10:40:41 Loaded external reference: mars 
+bpipe.Pipeline	[1]	INFO	|10:40:41 External reference mars is overridden by local reference 
+bpipe.Pipeline	[1]	INFO	|10:40:41 Loaded external reference: align 
+bpipe.Pipeline	[1]	INFO	|10:40:41 External reference align is overridden by local reference 
+bpipe.Pipeline	[1]	INFO	|10:40:41 Constructed pipeline is list: [bpipe.PipelineCategory$_plus_closure1@7a89c626, script14177760415542053239257$_run_closure3@78fa5f28, LB:[align]] 
+bpipe.Pipeline	[1]	INFO	|10:40:41 Found list bouncer at 2: bouncing it out .... 
+bpipe.Pipeline	[1]	INFO	|10:40:41 Constructed pipeline after bouncing is : [bpipe.PipelineCategory$_plus_closure1@7a89c626, script14177760415542053239257$_run_closure3@78fa5f28] 
+bpipe.PipelineCategory	[1]	INFO	|10:40:41 Joiners for pipeline 1784251020 = [bpipe.PipelineCategory$_plus_closure1@7a89c626] 
+bpipe.Pipeline	[1]	INFO	|10:40:41 Running segment with inputs [test.bed, test.bam] 
+bpipe.Dependencies	[1]	INFO	|10:40:41 Checking input (s) [test.bed, test.bam] 
+bpipe.Utils	[1]	INFO	|10:40:41 Output folder scan (concurrency=5) executed in 0.003 seconds 
+bpipe.Dependencies	[1]	INFO	|10:40:41  Checking file test.bed 
+bpipe.Dependencies	[1]	INFO	|10:40:41  Checking file test.bam 
+bpipe.PipelineDelegate	[1]	INFO	|10:40:41 Setting or creating a delegate for context 1782088844 body 612776399/java.lang.Class in thread 1 
+bpipe.PipelineDelegate	[1]	INFO	|10:40:41 Created new delegate bpipe.PipelineDelegate@1a86b899 overriding type java.lang.Class in thread 1 
+bpipe.Dependencies	[1]	INFO	|10:40:41 Checking input (s) [test.bed, test.bam] 
+bpipe.Dependencies	[1]	INFO	|10:40:41  Checking file test.bed 
+bpipe.Dependencies	[1]	INFO	|10:40:41  Checking file test.bam 
+bpipe.PipelineDelegate	[1]	INFO	|10:40:41 Setting or creating a delegate for context 1570232927 body 478266106/java.lang.Class in thread 1 
+bpipe.PipelineDelegate	[1]	INFO	|10:40:41 Created new delegate bpipe.PipelineDelegate@b27b9b5 overriding type java.lang.Class in thread 1 
+bpipe.PipelineCategory	[1]	INFO	|10:40:41 multiply on input [test.bed, test.bam] with pattern * 
+bpipe.InputSplitter	[1]	INFO	|10:40:41 Found * pattern at [0], hash at [] and % at [] 
+bpipe.InputSplitter	[1]	INFO	|10:40:41 Sorted: [0] 
+bpipe.InputSplitter	[1]	INFO	|10:40:41 % groups are at [] 
+bpipe.InputSplitter	[1]	INFO	|10:40:42 Result is [pattern:([^/]*), splits:[]] 
+bpipe.PipelineCategory	[1]	INFO	|10:40:42 Created pipeline stage 506503666 for parallel block 
+bpipe.PipelineCategory	[1]	INFO	|10:40:42 Processing segment 2055849510 
+bpipe.PipelineCategory	[1]	INFO	|10:40:42 Creating pipeline to run parallel segment all with files [test.bam, test.bed]. Branch filter = [] 
+bpipe.PipelineCategory	[1]	INFO	|10:40:42 Processing segment 2029674280 
+bpipe.PipelineCategory	[1]	INFO	|10:40:42 Creating pipeline to run parallel segment all with files [test.bam, test.bed]. Branch filter = [] 
+bpipe.Concurrency	[1]	INFO	|10:40:42 Waiting for 2 parallel stages to complete (pool.active=2 pool.tasks=2) 
+bpipe.PipelineContext	[16]	INFO	|10:40:42 Setting output [test.bam, test.bed] on context 1133781306 in thread 16 
+bpipe.PipelineContext	[15]	INFO	|10:40:42 Setting output [test.bam, test.bed] on context 840010111 in thread 15 
+bpipe.PipelineContext	[16]	INFO	|10:40:42 Using previously set output: [test.bam, test.bed] 
+bpipe.PipelineContext	[15]	INFO	|10:40:42 Using previously set output: [test.bam, test.bed] 
+bpipe.PipelineCategory	[16]	INFO	|10:40:42 Adding dummy prior stage for thread 16 with outputs : test.bam 
+bpipe.PipelineCategory	[15]	INFO	|10:40:42 Adding dummy prior stage for thread 15 with outputs : test.bam 
+bpipe.Pipeline	[16]	INFO	|10:40:42 Running segment with inputs [test.bam, test.bed] 
+bpipe.Pipeline	[15]	INFO	|10:40:42 Running segment with inputs [test.bam, test.bed] 
+bpipe.Dependencies	[16]	INFO	|10:40:42 Checking input (s) [test.bam, test.bed] 
+bpipe.Dependencies	[15]	INFO	|10:40:42 Checking input (s) [test.bam, test.bed] 
+bpipe.Dependencies	[16]	INFO	|10:40:42  Checking file test.bam 
+bpipe.Dependencies	[15]	INFO	|10:40:42  Checking file test.bam 
+bpipe.Dependencies	[16]	INFO	|10:40:42  Checking file test.bed 
+bpipe.Dependencies	[15]	INFO	|10:40:42  Checking file test.bed 
+bpipe.PipelineDelegate	[15]	INFO	|10:40:42 Setting or creating a delegate for context 564625385 body 2055849510/java.lang.Class in thread 15 
+bpipe.PipelineDelegate	[15]	INFO	|10:40:42 Created new delegate bpipe.PipelineDelegate@45697ab0 overriding type java.lang.Class in thread 15 
+bpipe.ReportStatisticsListener	[16]	INFO	|10:40:42 Annotating stage start time mars 
+bpipe.Dependencies	[15]	INFO	|10:40:42 Checking input (s) [test.bam, test.bed] 
+bpipe.Dependencies	[15]	INFO	|10:40:42  Checking file test.bam 
+bpipe.PipelineStage	[16]	INFO	|10:40:42 Stage mars [2] : INPUT=[test.bam, test.bed] OUTPUT=test.bam.mars 
+bpipe.Dependencies	[15]	INFO	|10:40:42  Checking file test.bed 
+bpipe.PipelineDelegate	[16]	INFO	|10:40:42 Setting or creating a delegate for context 703635618 body 2029674280/script14177760415542053239257 in thread 16 
+bpipe.PipelineDelegate	[16]	INFO	|10:40:42 Created new delegate bpipe.PipelineDelegate@6c63a873 overriding type script14177760415542053239257 in thread 16 
+bpipe.ReportStatisticsListener	[15]	INFO	|10:40:42 Annotating stage start time hello 
+bpipe.PipelineStage	[15]	INFO	|10:40:42 Stage hello [1] : INPUT=[test.bam, test.bed] OUTPUT=test.bam.hello 
+bpipe.PipelineDelegate	[15]	INFO	|10:40:42 Setting or creating a delegate for context 1629561723 body 900891339/script14177760415542053239257 in thread 15 
+bpipe.PipelineDelegate	[15]	INFO	|10:40:42 Created new delegate bpipe.PipelineDelegate@7840e96c overriding type script14177760415542053239257 in thread 15 
+bpipe.FilterFileNameTransformer	[16]	INFO	|10:40:42 Filtering based on input test.bam 
+bpipe.FilterFileNameTransformer	[15]	INFO	|10:40:42 Filtering based on input test.bam 
+bpipe.FilterFileNameTransformer	[16]	INFO	|10:40:42 Filtering using [extracted] produces outputs [test.extracted.bam] 
+bpipe.FilterFileNameTransformer	[15]	INFO	|10:40:42 Filtering using [wide] produces outputs [test.wide.bam] 
+bpipe.PipelineContext	[16]	INFO	|10:40:42 Producing test.extracted.bam from bpipe.PipelineContext@29f0a0a2 
+bpipe.PipelineContext	[15]	INFO	|10:40:42 Producing test.wide.bam from bpipe.PipelineContext@6121237b 
+bpipe.PipelineDelegate	[16]	INFO	|10:40:42 Setting or creating a delegate for context 703635618 body 1485797638/script14177760415542053239257$_run_closure3 in thread 16 
+bpipe.PipelineDelegate	[15]	INFO	|10:40:42 Setting or creating a delegate for context 1629561723 body 861054550/script14177760415542053239257$_run_closure1 in thread 15 
+bpipe.PipelineDelegate	[16]	INFO	|10:40:42 Created new delegate bpipe.PipelineDelegate@6c1826dc overriding type script14177760415542053239257$_run_closure3 in thread 16 
+bpipe.PipelineDelegate	[15]	INFO	|10:40:42 Created new delegate bpipe.PipelineDelegate@259f6cf5 overriding type script14177760415542053239257$_run_closure1 in thread 15 
+bpipe.PipelineContext	[16]	INFO	|10:40:42 Probing command using inputs [test.bam, test.bed] 
+bpipe.PipelineContext	[15]	INFO	|10:40:42 Probing command using inputs [test.bam, test.bed] 
+bpipe.PipelineContext	[15]	INFO	|10:40:42 No inputs resolved by input wrappers: outputs based on default test.bam.hello 
+bpipe.PipelineInput	[16]	INFO	|10:40:42 Searching for missing Property: bam 
+bpipe.PipelineOutput	[15]	INFO	|10:40:42 Allowing reference to output not produced by filter because it was available from a filtering of an alternative input 
+bpipe.PipelineOutput	[15]	INFO	|10:40:42 Selected output /lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/outputs_from_diff_parallel_stages/test.wide.bed with extension bed from expected outputs [test.wide.bam] 
+bpipe.PipelineInput	[16]	INFO	|10:40:42 Resolving inputs matching pattern ^.*\.bam$ 
+bpipe.PipelineContext	[15]	INFO	|10:40:42 Tracking outputs referenced=[[]] inferred=[[/lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/outputs_from_diff_parallel_stages/test.wide.bed]] for command 
+        cp test.bed /lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/outputs_from_diff_parallel_stages/test.wide.bed 
+     
+bpipe.PipelineInput	[16]	INFO	|10:40:42 Checking outputs [test.bam, test.bed] 
+bpipe.PipelineInput	[16]	INFO	|10:40:42 Found files with exts [bam$] : [[test.bam]] 
+bpipe.PipelineInput	[16]	INFO	|10:40:42 Adding resolved input test.bam 
+bpipe.ReportStatisticsListener	[15]	INFO	|10:40:42 Intercepted command check for command 
+        cp test.bed /lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/outputs_from_diff_parallel_stages/test.wide.bed 
+     
+bpipe.PipelineContext	[15]	INFO	|10:40:42 Checking actual resolved inputs [] 
+bpipe.PipelineContext	[16]	INFO	|10:40:42 Using non-default output due to input property reference: test.bam from resolved inputs [test.bam] 
+bpipe.FilterFileNameTransformer	[16]	INFO	|10:40:42 Filtering based on input test.bam 
+bpipe.PipelineContext	[15]	INFO	|10:40:42 Finished probe 
+bpipe.FilterFileNameTransformer	[16]	INFO	|10:40:42 Filtering using [extracted] produces outputs [test.extracted.bam] 
+bpipe.PipelineOutput	[16]	INFO	|10:40:42 Selected output test.extracted.bam with extension bam from expected outputs [test.extracted.bam] 
+bpipe.PipelineContext	[16]	INFO	|10:40:42 Tracking outputs referenced=[[]] inferred=[[test.extracted.bam]] for command 
+        cp test.bam test.extracted.bam
+     
+bpipe.Utils	[15]	INFO	|10:40:42 ===== Check test.wide.bam ===== 
+bpipe.ReportStatisticsListener	[16]	INFO	|10:40:42 Intercepted command check for command 
+        cp test.bam test.extracted.bam
+     
+bpipe.Utils	[15]	INFO	|10:40:42 file doesn't exist: test.wide.bam 
+bpipe.Utils	[15]	INFO	|10:40:42 ===== Check /lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/outputs_from_diff_parallel_stages/test.wide.bed ===== 
+bpipe.PipelineContext	[16]	INFO	|10:40:42 Checking actual resolved inputs [test.bam] 
+bpipe.Utils	[15]	INFO	|10:40:42 file doesn't exist: /lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/outputs_from_diff_parallel_stages/test.wide.bed 
+bpipe.PipelineContext	[16]	INFO	|10:40:42 Finished probe 
+bpipe.Dependencies	[15]	INFO	|10:40:42 Found these missing / older files: [test.wide.bam, /lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/outputs_from_diff_parallel_stages/test.wide.bed] 
+bpipe.Utils	[16]	INFO	|10:40:42 ===== Check test.extracted.bam ===== 
+bpipe.Utils	[16]	INFO	|10:40:42 file doesn't exist: test.extracted.bam 
+bpipe.Utils	[16]	INFO	|10:40:42 ===== Check test.extracted.bam ===== 
+bpipe.Dependencies	[15]	INFO	|10:40:42 Some files are outdated : [test.wide.bam, test.wide.bed] 
+bpipe.Utils	[16]	INFO	|10:40:42 file doesn't exist: test.extracted.bam 
+bpipe.PipelineContext	[15]	INFO	|10:40:42 Not up to date because input inferred by probe of body newer than outputs 
+bpipe.Dependencies	[16]	INFO	|10:40:42 Found these missing / older files: [test.extracted.bam, test.extracted.bam] 
+bpipe.Dependencies	[16]	INFO	|10:40:42 Some files are outdated : [test.extracted.bam, test.extracted.bam] 
+bpipe.PipelineContext	[16]	INFO	|10:40:42 Not up to date because input inferred by probe of body newer than outputs 
+bpipe.PipelineDelegate	[15]	INFO	|10:40:42 Setting or creating a delegate for context 1629561723 body 861054550/bpipe.PipelineDelegate in thread 15 
+bpipe.PipelineDelegate	[15]	INFO	|10:40:42 Existing delegate bpipe.PipelineDelegate@259f6cf5 has type bpipe.PipelineDelegate in thread 15. Setting new context 1629561723 
+bpipe.PipelineDelegate	[16]	INFO	|10:40:42 Setting or creating a delegate for context 703635618 body 1485797638/bpipe.PipelineDelegate in thread 16 
+bpipe.PipelineContext	[15]	INFO	|10:40:42 Producing from inputs [test.bam, test.bed] 
+bpipe.PipelineDelegate	[16]	INFO	|10:40:42 Existing delegate bpipe.PipelineDelegate@6c1826dc has type bpipe.PipelineDelegate in thread 16. Setting new context 703635618 
+bpipe.PipelineContext	[15]	INFO	|10:40:42 No inputs resolved by input wrappers: outputs based on default test.bam.hello 
+bpipe.PipelineContext	[16]	INFO	|10:40:42 Producing from inputs [test.bam, test.bed] 
+bpipe.PipelineOutput	[15]	INFO	|10:40:42 Selected output /lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/outputs_from_diff_parallel_stages/test.wide.bed with extension bed from expected outputs [/lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/outputs_from_diff_parallel_stages/test.wide.bed] 
+bpipe.PipelineInput	[16]	INFO	|10:40:42 Searching for missing Property: bam 
+bpipe.PipelineContext	[15]	INFO	|10:40:42 Tracking outputs referenced=[[]] inferred=[[/lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/outputs_from_diff_parallel_stages/test.wide.bed]] for command 
+        cp test.bed /lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/outputs_from_diff_parallel_stages/test.wide.bed 
+     
+bpipe.PipelineInput	[16]	INFO	|10:40:42 Resolving inputs matching pattern ^.*\.bam$ 
+bpipe.PipelineInput	[16]	INFO	|10:40:42 Checking outputs [test.bam, test.bed] 
+bpipe.ReportStatisticsListener	[15]	INFO	|10:40:42 Intercepted command check for command 
+        cp test.bed /lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/outputs_from_diff_parallel_stages/test.wide.bed 
+     
+bpipe.PipelineInput	[16]	INFO	|10:40:42 Found files with exts [bam$] : [[test.bam]] 
+bpipe.PipelineContext	[15]	INFO	|10:40:42 Checking actual resolved inputs [] 
+bpipe.PipelineInput	[16]	INFO	|10:40:42 Adding resolved input test.bam 
+bpipe.PipelineContext	[16]	INFO	|10:40:42 Using non-default output due to input property reference: test.bam from resolved inputs [test.bam] 
+bpipe.FilterFileNameTransformer	[16]	INFO	|10:40:42 Filtering based on input test.bam 
+bpipe.FilterFileNameTransformer	[16]	INFO	|10:40:42 Filtering using [extracted] produces outputs [test.extracted.bam] 
+bpipe.Command	[15]	INFO	|10:40:42 Checking for configuration for command cp 
+bpipe.PipelineOutput	[16]	INFO	|10:40:42 Selected output test.extracted.bam with extension bam from expected outputs [test.extracted.bam] 
+bpipe.Command	[15]	INFO	|10:40:42 Default command properties: [executor:local] 
+bpipe.PipelineContext	[16]	INFO	|10:40:42 Tracking outputs referenced=[[]] inferred=[[test.extracted.bam]] for command 
+        cp test.bam test.extracted.bam
+     
+bpipe.ReportStatisticsListener	[16]	INFO	|10:40:42 Intercepted command check for command 
+        cp test.bam test.extracted.bam
+     
+bpipe.CommandManager	[15]	INFO	|10:40:42 Using config [executor:local] for command 
+bpipe.PipelineContext	[16]	INFO	|10:40:42 Checking actual resolved inputs [test.bam] 
+bpipe.Utils	[16]	INFO	|10:40:42 ===== Check test.extracted.bam ===== 
+bpipe.Utils	[16]	INFO	|10:40:42 file doesn't exist: test.extracted.bam 
+bpipe.Dependencies	[16]	INFO	|10:40:42 Found these missing / older files: [test.extracted.bam] 
+bpipe.Dependencies	[16]	INFO	|10:40:42 Some files are outdated : [test.extracted.bam] 
+bpipe.Command	[16]	INFO	|10:40:42 Checking for configuration for command cp 
+bpipe.Command	[16]	INFO	|10:40:42 Default command properties: [executor:local] 
+bpipe.CommandManager	[16]	INFO	|10:40:42 Using config [executor:local] for command 
+bpipe.CommandManager	[15]	INFO	|10:40:42 Created bpipe command id 1 
+bpipe.CommandManager	[16]	INFO	|10:40:42 Created bpipe command id 2 
+bpipe.Concurrency	[15]	INFO	|10:40:42 Thread Thread-6 requesting for 1 concurrency permit(s) type threads with 32 available 
+bpipe.Concurrency	[16]	INFO	|10:40:42 Thread Thread-7 requesting for 1 concurrency permit(s) type threads with 32 available 
+bpipe.Concurrency	[15]	INFO	|10:40:42 Thread Thread-6 acquired resource threads in amount 1 
+bpipe.Concurrency	[16]	INFO	|10:40:42 Thread Thread-7 acquired resource threads in amount 1 
+bpipe.Command	[18]	INFO	|10:40:42 Command 2 changing state from null to RUNNING 
+bpipe.Command	[17]	INFO	|10:40:42 Command 1 changing state from null to RUNNING 
+bpipe.executor.ThrottledDelegatingCommandExecutor	[16]	INFO	|10:40:42 Waiting for command to complete before releasing 1 resources 
+bpipe.executor.ThrottledDelegatingCommandExecutor	[15]	INFO	|10:40:42 Waiting for command to complete before releasing 1 resources 
+bpipe.Command	[16]	INFO	|10:40:42 Command 2 changing state from RUNNING to COMPLETE 
+bpipe.Command	[15]	INFO	|10:40:42 Command 1 changing state from RUNNING to COMPLETE 
+bpipe.executor.ThrottledDelegatingCommandExecutor	[16]	INFO	|10:40:42 Releasing 1 resources 
+bpipe.executor.ThrottledDelegatingCommandExecutor	[15]	INFO	|10:40:42 Releasing 1 resources 
+bpipe.Concurrency	[16]	INFO	|10:40:42 Thread Thread-7 releasing 1 threads 
+bpipe.Concurrency	[15]	INFO	|10:40:42 Thread Thread-6 releasing 1 threads 
+bpipe.executor.ThrottledDelegatingCommandExecutor	[16]	INFO	|10:40:42 Released 1 resources 
+bpipe.executor.ThrottledDelegatingCommandExecutor	[15]	INFO	|10:40:42 Released 1 resources 
+bpipe.PipelineContext	[16]	INFO	|10:40:42 Adding outputs [test.extracted.bam] as a result of produce 
+bpipe.PipelineContext	[15]	INFO	|10:40:42 Adding outputs [/lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/outputs_from_diff_parallel_stages/test.wide.bed] as a result of produce 
+bpipe.PipelineStage	[15]	INFO	|10:40:42 Stage hello [1] returned null as default inputs for next stage 
+bpipe.PipelineStage	[16]	INFO	|10:40:42 Stage mars [2] returned null as default inputs for next stage 
+bpipe.PipelineStage	[15]	INFO	|10:40:42 Inferring nextInputs from explicit output as [/lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/outputs_from_diff_parallel_stages/test.wide.bed] 
+bpipe.PipelineStage	[16]	INFO	|10:40:42 Inferring nextInputs from explicit output as [test.extracted.bam] 
+bpipe.PipelineStage	[16]	INFO	|10:40:42 Setting next inputs [test.extracted.bam] on stage 186421919, context 703635618 in thread 16 
+bpipe.PipelineStage	[15]	INFO	|10:40:42 Setting next inputs [/lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/outputs_from_diff_parallel_stages/test.wide.bed] on stage 991275335, context 1629561723 in thread 15 
+bpipe.Dependencies	[15]	INFO	|10:40:42 Context 1629561723 for stage hello has resolved inputs [test.bam, test.bed] 
+bpipe.Dependencies	[15]	INFO	|10:40:42 Saving output file details to file .bpipe/outputs/hello._lustre_scratch112_sanger_cgppipe_canPipe_software_bpipe_git_tests_outputs_from_diff_parallel_stages_test.wide.bed.properties for command cp test.bed /lustre/... 
+bpipe.ReportStatisticsListener	[15]	INFO	|10:40:42 Annotating stage end time hello 
+bpipe.PipelineStage	[15]	INFO	|10:40:42 Checking files: [/lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/outputs_from_diff_parallel_stages/test.wide.bed] 
+bpipe.Dependencies	[15]	INFO	|10:40:42 Checking output (s) [/lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/outputs_from_diff_parallel_stages/test.wide.bed] 
+bpipe.Dependencies	[16]	INFO	|10:40:42 Context 703635618 for stage mars has resolved inputs [test.bam] 
+bpipe.Dependencies	[16]	INFO	|10:40:42 Saving output file details to file .bpipe/outputs/mars.test.extracted.bam.properties for command cp test.bam test.ext... 
+bpipe.Dependencies	[15]	INFO	|10:40:42  Checking file /lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/outputs_from_diff_parallel_stages/test.wide.bed 
+bpipe.ReportStatisticsListener	[16]	INFO	|10:40:42 Annotating stage end time mars 
+bpipe.Dependencies	[15]	INFO	|10:40:42 Checking input (s) [/lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/outputs_from_diff_parallel_stages/test.wide.bed] 
+bpipe.PipelineStage	[16]	INFO	|10:40:42 Checking files: [test.extracted.bam] 
+bpipe.Dependencies	[15]	INFO	|10:40:42  Checking file /lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/outputs_from_diff_parallel_stages/test.wide.bed 
+bpipe.Dependencies	[16]	INFO	|10:40:42 Checking output (s) [test.extracted.bam] 
+bpipe.PipelineCategory	[15]	INFO	|10:40:42 Next inputs from stage = [/lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/outputs_from_diff_parallel_stages/test.wide.bed] 
+bpipe.Dependencies	[16]	INFO	|10:40:42  Checking file test.extracted.bam 
+bpipe.PipelineCategory	[15]	INFO	|10:40:42 Checking inputs for next stage:  [/lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/outputs_from_diff_parallel_stages/test.wide.bed] 
+bpipe.Pipeline	[16]	INFO	|10:40:42 Pipeline segment 2 in thread 16 has finished normally 
+bpipe.Dependencies	[15]	INFO	|10:40:42 Checking input (s) [/lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/outputs_from_diff_parallel_stages/test.wide.bed] 
+bpipe.Pipeline	[16]	INFO	|10:40:42 Finished running segment for inputs [test.bam, test.bed] 
+bpipe.Dependencies	[15]	INFO	|10:40:42  Checking file /lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/outputs_from_diff_parallel_stages/test.wide.bed 
+bpipe.Dependencies	[15]	INFO	|10:40:42 Checking input (s) [/lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/outputs_from_diff_parallel_stages/test.wide.bed] 
+bpipe.Concurrency	[16]	INFO	|10:40:42 Decremented running count to 1 in thread Thread-7 
+bpipe.Dependencies	[15]	INFO	|10:40:42  Checking file /lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/outputs_from_diff_parallel_stages/test.wide.bed 
+bpipe.ReportStatisticsListener	[15]	INFO	|10:40:42 Annotating stage start time world 
+bpipe.PipelineStage	[15]	INFO	|10:40:42 Stage world [1] : INPUT=[/lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/outputs_from_diff_parallel_stages/test.wide.bed] OUTPUT=test.wide.bed.world 
+bpipe.PipelineDelegate	[15]	INFO	|10:40:42 Setting or creating a delegate for context 1491989218 body 212861260/script14177760415542053239257 in thread 15 
+bpipe.PipelineDelegate	[15]	INFO	|10:40:42 Created new delegate bpipe.PipelineDelegate@6de5010a overriding type script14177760415542053239257 in thread 15 
+bpipe.TransformOperation	[15]	INFO	|10:40:42 Transform using [fasta] produces outputs [/lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/outputs_from_diff_parallel_stages/test.wide.fasta] 
+bpipe.PipelineContext	[15]	INFO	|10:40:42 Producing test.wide.fasta from bpipe.PipelineContext@58edf2e2 
+bpipe.PipelineDelegate	[15]	INFO	|10:40:42 Setting or creating a delegate for context 1491989218 body 1709374023/script14177760415542053239257$_run_closure2 in thread 15 
+bpipe.PipelineDelegate	[15]	INFO	|10:40:42 Created new delegate bpipe.PipelineDelegate@c229885 overriding type script14177760415542053239257$_run_closure2 in thread 15 
+bpipe.PipelineContext	[15]	INFO	|10:40:42 Probing command using inputs [/lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/outputs_from_diff_parallel_stages/test.wide.bed] 
+bpipe.PipelineInput	[15]	INFO	|10:40:42 Searching for missing Property: bed 
+bpipe.PipelineInput	[15]	INFO	|10:40:42 Resolving inputs matching pattern ^.*\.bed$ 
+bpipe.PipelineInput	[15]	INFO	|10:40:42 Checking outputs [/lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/outputs_from_diff_parallel_stages/test.wide.bed] 
+bpipe.PipelineInput	[15]	INFO	|10:40:42 Found files with exts [bed$] : [[/lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/outputs_from_diff_parallel_stages/test.wide.bed]] 
+bpipe.PipelineInput	[15]	INFO	|10:40:42 Adding resolved input /lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/outputs_from_diff_parallel_stages/test.wide.bed 
+bpipe.PipelineContext	[15]	INFO	|10:40:42 Using previously set output: [test.wide.fasta] 
+bpipe.PipelineOutput	[15]	INFO	|10:40:42 Selected output test.wide.fasta with extension fasta from expected outputs [test.wide.fasta] 
+bpipe.PipelineContext	[15]	INFO	|10:40:42 Tracking outputs referenced=[[]] inferred=[[test.wide.fasta]] for command 
+        cp /lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/outputs_from_diff_parallel_stages/test.wide.bed test.wide.fasta
+     
+bpipe.ReportStatisticsListener	[15]	INFO	|10:40:42 Intercepted command check for command 
+        cp /lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/outputs_from_diff_parallel_stages/test.wide.bed test.wide.fasta
+     
+bpipe.PipelineContext	[15]	INFO	|10:40:42 Checking actual resolved inputs [/lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/outputs_from_diff_parallel_stages/test.wide.bed] 
+bpipe.PipelineContext	[15]	INFO	|10:40:42 Finished probe 
+bpipe.Utils	[15]	INFO	|10:40:42 ===== Check test.wide.fasta ===== 
+bpipe.Utils	[15]	INFO	|10:40:42 file doesn't exist: test.wide.fasta 
+bpipe.Utils	[15]	INFO	|10:40:42 ===== Check test.wide.fasta ===== 
+bpipe.Utils	[15]	INFO	|10:40:42 file doesn't exist: test.wide.fasta 
+bpipe.Dependencies	[15]	INFO	|10:40:42 Found these missing / older files: [test.wide.fasta, test.wide.fasta] 
+bpipe.Dependencies	[15]	INFO	|10:40:42 Some files are outdated : [test.wide.fasta, test.wide.fasta] 
+bpipe.PipelineContext	[15]	INFO	|10:40:42 Not up to date because input inferred by probe of body newer than outputs 
+bpipe.PipelineDelegate	[15]	INFO	|10:40:42 Setting or creating a delegate for context 1491989218 body 1709374023/bpipe.PipelineDelegate in thread 15 
+bpipe.PipelineDelegate	[15]	INFO	|10:40:42 Existing delegate bpipe.PipelineDelegate@c229885 has type bpipe.PipelineDelegate in thread 15. Setting new context 1491989218 
+bpipe.PipelineContext	[15]	INFO	|10:40:42 Producing from inputs [/lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/outputs_from_diff_parallel_stages/test.wide.bed] 
+bpipe.PipelineInput	[15]	INFO	|10:40:42 Searching for missing Property: bed 
+bpipe.PipelineInput	[15]	INFO	|10:40:42 Resolving inputs matching pattern ^.*\.bed$ 
+bpipe.PipelineInput	[15]	INFO	|10:40:42 Checking outputs [/lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/outputs_from_diff_parallel_stages/test.wide.bed] 
+bpipe.PipelineInput	[15]	INFO	|10:40:42 Found files with exts [bed$] : [[/lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/outputs_from_diff_parallel_stages/test.wide.bed]] 
+bpipe.PipelineInput	[15]	INFO	|10:40:42 Adding resolved input /lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/outputs_from_diff_parallel_stages/test.wide.bed 
+bpipe.PipelineContext	[15]	INFO	|10:40:42 Using previously set output: [test.wide.fasta] 
+bpipe.PipelineOutput	[15]	INFO	|10:40:42 Selected output test.wide.fasta with extension fasta from expected outputs [test.wide.fasta] 
+bpipe.PipelineContext	[15]	INFO	|10:40:42 Tracking outputs referenced=[[]] inferred=[[test.wide.fasta]] for command 
+        cp /lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/outputs_from_diff_parallel_stages/test.wide.bed test.wide.fasta
+     
+bpipe.ReportStatisticsListener	[15]	INFO	|10:40:42 Intercepted command check for command 
+        cp /lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/outputs_from_diff_parallel_stages/test.wide.bed test.wide.fasta
+     
+bpipe.PipelineContext	[15]	INFO	|10:40:42 Checking actual resolved inputs [/lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/outputs_from_diff_parallel_stages/test.wide.bed] 
+bpipe.Utils	[15]	INFO	|10:40:42 ===== Check test.wide.fasta ===== 
+bpipe.Utils	[15]	INFO	|10:40:42 file doesn't exist: test.wide.fasta 
+bpipe.Dependencies	[15]	INFO	|10:40:42 Found these missing / older files: [test.wide.fasta] 
+bpipe.Dependencies	[15]	INFO	|10:40:42 Some files are outdated : [test.wide.fasta] 
+bpipe.Command	[15]	INFO	|10:40:42 Checking for configuration for command cp 
+bpipe.Command	[15]	INFO	|10:40:42 Default command properties: [executor:local] 
+bpipe.CommandManager	[15]	INFO	|10:40:42 Using config [executor:local] for command 
+bpipe.CommandManager	[15]	INFO	|10:40:42 Created bpipe command id 5 
+bpipe.Concurrency	[15]	INFO	|10:40:42 Thread Thread-6 requesting for 1 concurrency permit(s) type threads with 32 available 
+bpipe.Concurrency	[15]	INFO	|10:40:42 Thread Thread-6 acquired resource threads in amount 1 
+bpipe.Command	[25]	INFO	|10:40:42 Command 5 changing state from null to RUNNING 
+bpipe.executor.ThrottledDelegatingCommandExecutor	[15]	INFO	|10:40:42 Waiting for command to complete before releasing 1 resources 
+bpipe.Command	[15]	INFO	|10:40:42 Command 5 changing state from RUNNING to COMPLETE 
+bpipe.executor.ThrottledDelegatingCommandExecutor	[15]	INFO	|10:40:42 Releasing 1 resources 
+bpipe.Concurrency	[15]	INFO	|10:40:42 Thread Thread-6 releasing 1 threads 
+bpipe.executor.ThrottledDelegatingCommandExecutor	[15]	INFO	|10:40:42 Released 1 resources 
+bpipe.PipelineContext	[15]	INFO	|10:40:42 Adding outputs [test.wide.fasta] as a result of produce 
+bpipe.PipelineStage	[15]	INFO	|10:40:42 Stage world [1] returned null as default inputs for next stage 
+bpipe.PipelineStage	[15]	INFO	|10:40:42 Inferring nextInputs from explicit output as [test.wide.fasta] 
+bpipe.PipelineStage	[15]	INFO	|10:40:42 Setting next inputs [test.wide.fasta] on stage 1602443059, context 1491989218 in thread 15 
+bpipe.Dependencies	[15]	INFO	|10:40:42 Context 1491989218 for stage world has resolved inputs [/lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/outputs_from_diff_parallel_stages/test.wide.bed] 
+bpipe.Dependencies	[15]	INFO	|10:40:42 Saving output file details to file .bpipe/outputs/world.test.wide.fasta.properties for command cp /lustre/scratch11... 
+bpipe.ReportStatisticsListener	[15]	INFO	|10:40:42 Annotating stage end time world 
+bpipe.PipelineStage	[15]	INFO	|10:40:42 Checking files: [test.wide.fasta] 
+bpipe.Dependencies	[15]	INFO	|10:40:42 Checking output (s) [test.wide.fasta] 
+bpipe.Dependencies	[15]	INFO	|10:40:42  Checking file test.wide.fasta 
+bpipe.PipelineContext	[15]	INFO	|10:40:42 Setting output [test.wide.fasta] on context 564625385 in thread 15 
+bpipe.PipelineStage	[15]	INFO	|10:40:42 Setting next inputs [test.wide.fasta] on stage 143241509, context 564625385 in thread 15 
+bpipe.PipelineStage	[15]	INFO	|10:40:42 Checking files: [test.wide.fasta] 
+bpipe.Dependencies	[15]	INFO	|10:40:42 Checking output (s) [test.wide.fasta] 
+bpipe.Dependencies	[15]	INFO	|10:40:42  Checking file test.wide.fasta 
+bpipe.Pipeline	[15]	INFO	|10:40:42 Pipeline segment 1 in thread 15 has finished normally 
+bpipe.Pipeline	[15]	INFO	|10:40:42 Finished running segment for inputs [test.bam, test.bed] 
+bpipe.Concurrency	[15]	INFO	|10:40:42 Decremented running count to 0 in thread Thread-6 
+bpipe.PipelineCategory	[1]	INFO	|10:40:43 Parent pipeline of concurent sections [1860030341, 610491808] is 1784251020 
+bpipe.PipelineCategory	[1]	INFO	|10:40:43 Maximum child stage list length = 2 
+bpipe.PipelineCategory	[1]	INFO	|10:40:43 ###### Merging results of parallel split in parent branch  ##### 
+bpipe.PipelineCategory	[1]	INFO	|10:40:43 Grouping stages at index 0 [hello, mars] for merging 
+bpipe.PipelineCategory	[1]	INFO	|10:40:43 Merged outputs are [/lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/outputs_from_diff_parallel_stages/test.wide.bed] 
+bpipe.PipelineContext	[1]	INFO	|10:40:43 Setting output [/lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/outputs_from_diff_parallel_stages/test.wide.bed] on context 407384310 in thread 1 
+bpipe.PipelineCategory	[1]	INFO	|10:40:43 Merged outputs are [test.extracted.bam] 
+bpipe.PipelineContext	[1]	INFO	|10:40:43 Setting output [test.extracted.bam] on context 730231534 in thread 1 
+bpipe.PipelineCategory	[1]	INFO	|10:40:43 Grouping stages at index 1 [world, null] for merging 
+bpipe.PipelineCategory	[1]	INFO	|10:40:43 Merged outputs are [test.wide.fasta] 
+bpipe.PipelineContext	[1]	INFO	|10:40:43 Setting output [test.wide.fasta] on context 132349333 in thread 1 
+bpipe.PipelineCategory	[1]	INFO	|10:40:43 There are 2 stages from nested pipelines 
+bpipe.PipelineCategory	[1]	INFO	|10:40:43 There [bpipe.PipelineStage@5f835733, bpipe.PipelineStage@b1c929f] parallel paths in final stage 
+bpipe.PipelineCategory	[1]	INFO	|10:40:43 Last merged outputs are [test.wide.fasta, test.extracted.bam] 
+bpipe.PipelineContext	[1]	INFO	|10:40:43 Setting output [test.wide.fasta, test.extracted.bam] on context 1032117326 in thread 1 
+bpipe.PipelineCategory	[1]	INFO	|10:40:43 Merged stage name is world_mars_bpipe_merge 
+bpipe.PipelineContext	[1]	INFO	|10:40:43 Setting output [test.wide.fasta, test.extracted.bam] on context 1570232927 in thread 1 
+bpipe.PipelineStage	[1]	INFO	|10:40:43 Setting next inputs [test.wide.fasta, test.extracted.bam] on stage 836752530, context 1570232927 in thread 1 
+bpipe.PipelineStage	[1]	INFO	|10:40:43 Checking files: [test.wide.fasta, test.extracted.bam] 
+bpipe.Dependencies	[1]	INFO	|10:40:43 Checking output (s) [test.wide.fasta, test.extracted.bam] 
+bpipe.Dependencies	[1]	INFO	|10:40:43  Checking file test.wide.fasta 
+bpipe.Dependencies	[1]	INFO	|10:40:43  Checking file test.extracted.bam 
+bpipe.Dependencies	[1]	INFO	|10:40:43 Checking input (s) [test.wide.fasta, test.extracted.bam] 
+bpipe.Dependencies	[1]	INFO	|10:40:43  Checking file test.wide.fasta 
+bpipe.Dependencies	[1]	INFO	|10:40:43  Checking file test.extracted.bam 
+bpipe.PipelineCategory	[1]	INFO	|10:40:43 Next inputs from stage = [test.wide.fasta, test.extracted.bam] 
+bpipe.PipelineCategory	[1]	INFO	|10:40:43 Checking inputs for next stage:  [test.wide.fasta, test.extracted.bam] 
+bpipe.Dependencies	[1]	INFO	|10:40:43 Checking input (s) [test.wide.fasta, test.extracted.bam] 
+bpipe.Dependencies	[1]	INFO	|10:40:43  Checking file test.wide.fasta 
+bpipe.Dependencies	[1]	INFO	|10:40:43  Checking file test.extracted.bam 
+bpipe.Dependencies	[1]	INFO	|10:40:43 Checking input (s) [test.wide.fasta, test.extracted.bam] 
+bpipe.Dependencies	[1]	INFO	|10:40:43  Checking file test.wide.fasta 
+bpipe.Dependencies	[1]	INFO	|10:40:43  Checking file test.extracted.bam 
+bpipe.ReportStatisticsListener	[1]	INFO	|10:40:43 Annotating stage start time align 
+bpipe.PipelineStage	[1]	INFO	|10:40:43 Stage align : INPUT=[test.wide.fasta, test.extracted.bam] OUTPUT=test.wide.fasta.align 
+bpipe.PipelineDelegate	[1]	INFO	|10:40:43 Setting or creating a delegate for context 60471435 body 1629492281/script14177760415542053239257 in thread 1 
+bpipe.PipelineDelegate	[1]	INFO	|10:40:43 Created new delegate bpipe.PipelineDelegate@22c9af86 overriding type script14177760415542053239257 in thread 1 
+bpipe.PipelineInput	[1]	INFO	|10:40:43 Searching for missing Property: bam 
+bpipe.PipelineInput	[1]	INFO	|10:40:43 Resolving inputs matching pattern ^.*\.bam$ 
+bpipe.PipelineInput	[1]	INFO	|10:40:43 Checking outputs [test.wide.fasta, test.extracted.bam] 
+bpipe.PipelineInput	[1]	INFO	|10:40:43 Found files with exts [bam$] : [[test.extracted.bam]] 
+bpipe.PipelineInput	[1]	INFO	|10:40:43 Adding resolved input test.extracted.bam 
+bpipe.PipelineContext	[1]	INFO	|10:40:43 Using non-default output due to input property reference: test.extracted.bam from resolved inputs [test.extracted.bam] 
+bpipe.PipelineContext	[1]	INFO	|10:40:43 Tracking outputs referenced=[[]] inferred=[[test.extracted.align.sai]] for command 
+        cp test.extracted.bam test.extracted.align.sai
+     
+bpipe.ReportStatisticsListener	[1]	INFO	|10:40:43 Intercepted command check for command 
+        cp test.extracted.bam test.extracted.align.sai
+     
+bpipe.PipelineContext	[1]	INFO	|10:40:43 Checking actual resolved inputs [test.extracted.bam] 
+bpipe.Utils	[1]	INFO	|10:40:43 ===== Check test.extracted.align.sai ===== 
+bpipe.Utils	[1]	INFO	|10:40:43 file doesn't exist: test.extracted.align.sai 
+bpipe.Dependencies	[1]	INFO	|10:40:43 Found these missing / older files: [test.extracted.align.sai] 
+bpipe.Dependencies	[1]	INFO	|10:40:43 Some files are outdated : [test.extracted.align.sai] 
+bpipe.Command	[1]	INFO	|10:40:43 Checking for configuration for command cp 
+bpipe.Command	[1]	INFO	|10:40:43 Default command properties: [executor:local] 
+bpipe.CommandManager	[1]	INFO	|10:40:43 Using config [executor:local] for command 
+bpipe.CommandManager	[1]	INFO	|10:40:43 Created bpipe command id 7 
+bpipe.Concurrency	[1]	INFO	|10:40:43 Thread main requesting for 1 concurrency permit(s) type threads with 32 available 
+bpipe.Concurrency	[1]	INFO	|10:40:43 Thread main acquired resource threads in amount 1 
+bpipe.Command	[28]	INFO	|10:40:43 Command 7 changing state from null to RUNNING 
+bpipe.executor.ThrottledDelegatingCommandExecutor	[1]	INFO	|10:40:43 Waiting for command to complete before releasing 1 resources 
+bpipe.Command	[1]	INFO	|10:40:43 Command 7 changing state from RUNNING to COMPLETE 
+bpipe.executor.ThrottledDelegatingCommandExecutor	[1]	INFO	|10:40:43 Releasing 1 resources 
+bpipe.Concurrency	[1]	INFO	|10:40:43 Thread main releasing 1 threads 
+bpipe.executor.ThrottledDelegatingCommandExecutor	[1]	INFO	|10:40:43 Released 1 resources 
+bpipe.PipelineStage	[1]	INFO	|10:40:43 Stage align returned null as default inputs for next stage 
+bpipe.PipelineStage	[1]	INFO	|10:40:43 Using inferred outputs [test.extracted.align.sai] as outputs because no explicit outputs set 
+bpipe.PipelineStage	[1]	INFO	|10:40:43 Inferring nextInputs from explicit output as [test.extracted.align.sai] 
+bpipe.PipelineStage	[1]	INFO	|10:40:43 Setting next inputs [test.extracted.align.sai] on stage 874242484, context 60471435 in thread 1 
+bpipe.Dependencies	[1]	INFO	|10:40:43 Context 60471435 for stage align has resolved inputs [test.extracted.bam] 
+bpipe.Dependencies	[1]	INFO	|10:40:43 Saving output file details to file .bpipe/outputs/align.test.extracted.align.sai.properties for command cp test.extracted.ba... 
+bpipe.ReportStatisticsListener	[1]	INFO	|10:40:43 Annotating stage end time align 
+bpipe.PipelineStage	[1]	INFO	|10:40:43 Checking files: [test.extracted.align.sai] 
+bpipe.Dependencies	[1]	INFO	|10:40:43 Checking output (s) [test.extracted.align.sai] 
+bpipe.Dependencies	[1]	INFO	|10:40:43  Checking file test.extracted.align.sai 
+bpipe.PipelineContext	[1]	INFO	|10:40:43 Setting output [test.extracted.align.sai] on context 1782088844 in thread 1 
+bpipe.PipelineStage	[1]	INFO	|10:40:43 Setting next inputs [test.extracted.align.sai] on stage 452844013, context 1782088844 in thread 1 
+bpipe.PipelineStage	[1]	INFO	|10:40:43 Checking files: [test.extracted.align.sai] 
+bpipe.Dependencies	[1]	INFO	|10:40:43 Checking output (s) [test.extracted.align.sai] 
+bpipe.Dependencies	[1]	INFO	|10:40:43  Checking file test.extracted.align.sai 
+bpipe.Pipeline	[1]	INFO	|10:40:43 Pipeline segment  in thread 1 has finished normally 
+bpipe.Pipeline	[1]	INFO	|10:40:43 Finished running segment for inputs [test.bed, test.bam] 
+bpipe.Pipeline	[1]	INFO	|10:40:43 adding stage hello from pipeline bpipe.Pipeline@6eddcf85 
+bpipe.Pipeline	[1]	INFO	|10:40:43 adding stage world from pipeline bpipe.Pipeline@6eddcf85 
+bpipe.Pipeline	[1]	INFO	|10:40:43 adding stage mars from pipeline bpipe.Pipeline@24635da0 
+bpipe.Pipeline	[1]	INFO	|10:40:43 adding stage align from pipeline bpipe.Pipeline@6a59828c 
+bpipe.Dependencies	[31]	INFO	|10:40:43 Reading property file .bpipe/outputs/world.test.wide.fasta.properties 
+bpipe.Dependencies	[35]	INFO	|10:40:43 Reading property file .bpipe/outputs/align.test.extracted.align.sai.properties 
+bpipe.Dependencies	[34]	INFO	|10:40:43 Reading property file .bpipe/outputs/hello._lustre_scratch112_sanger_cgppipe_canPipe_software_bpipe_git_tests_outputs_from_diff_parallel_stages_test.wide.bed.properties 
+bpipe.Dependencies	[32]	INFO	|10:40:43 Reading property file .bpipe/outputs/mars.test.extracted.bam.properties 
+bpipe.Utils	[1]	INFO	|10:40:43 Output folder scan (concurrency=5) executed in 0.019 seconds 
+bpipe.Dependencies	[1]	INFO	|10:40:43 External inputs: [[test.bam, test.bed], [test.bam]] for outputs [/lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/outputs_from_diff_parallel_stages/test.wide.bed, test.extracted.bam] 
+bpipe.Dependencies	[1]	INFO	|10:40:43 There are 2 output groups 
+bpipe.Dependencies	[1]	INFO	|10:40:43 Subtracting 2 remaining outputs from 4 total outputs 
+bpipe.Dependencies	[1]	INFO	|10:40:43 External inputs: [[/lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/outputs_from_diff_parallel_stages/test.wide.bed], [test.extracted.bam]] for outputs [test.wide.fasta, test.extracted.align.sai] 
+bpipe.Dependencies	[1]	INFO	|10:40:43 New entry for test.wide.fasta 
+bpipe.Dependencies	[1]	INFO	|10:40:43 Maxtimestamp for test.wide.fasta = 1417776042000 
+bpipe.Dependencies	[1]	INFO	|10:40:43 New entry for test.extracted.align.sai 
+bpipe.Dependencies	[1]	INFO	|10:40:43 Maxtimestamp for test.extracted.align.sai = 1417776043000 
+bpipe.Dependencies	[1]	INFO	|10:40:43 There are 2 output groups 
+bpipe.Dependencies	[1]	INFO	|10:40:43 Subtracting 2 remaining outputs from 2 total outputs 
+bpipe.Dependencies	[1]	INFO	|10:40:43 There are 0 remaining outputs 
+bpipe.Dependencies	[1]	INFO	|10:40:43 There are 0 remaining outputs 
+bpipe.Dependencies	[1]	INFO	|10:40:43 -- test.wide.fasta / entry 1601656881 -- 
+bpipe.Dependencies	[1]	INFO	|10:40:43 Input /lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/outputs_from_diff_parallel_stages/test.wide.bed? true 
+bpipe.Dependencies	[1]	INFO	|10:40:43 test.wide.fasta is older than inputs [test.wide.bed / 1417776042000 / 1417776042000 vs 1417776042000] 
+bpipe.Dependencies	[1]	INFO	|10:40:43  test.extracted.align.sai / entry 1388946149  
+bpipe.Dependencies	[1]	INFO	|10:40:43 Input test.extracted.bam? true 
+bpipe.Dependencies	[1]	INFO	|10:40:43 test.extracted.align.sai is newer than input files 
+bpipe.Dependencies	[1]	INFO	|10:40:43 ====Finished Output Graph===== 
+bpipe.Dependencies	[1]	INFO	|10:40:43 There are 0 remaining outputs 
+bpipe.Dependencies	[1]	INFO	|10:40:43 There are 0 remaining outputs 
+bpipe.Dependencies	[1]	INFO	|10:40:43  /lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/outputs_from_diff_parallel_stages/test.wide.bed / entry 870683353  
+bpipe.Dependencies	[1]	INFO	|10:40:43 /lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/outputs_from_diff_parallel_stages/test.wide.bed is newer than input files 
+bpipe.Dependencies	[1]	INFO	|10:40:43 - test.extracted.bam / entry 621543213 - 
+bpipe.Dependencies	[1]	INFO	|10:40:43 test.extracted.bam is newer than input files 
+bpipe.Dependencies	[1]	INFO	|10:40:43 ====Finished Output Graph===== 
+bpipe.ReportGenerator	[1]	INFO	|10:40:43 Searching for template in /lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/src/main/html/bpipe 
+bpipe.ReportGenerator	[1]	INFO	|10:40:43 Generating report to /lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/outputs_from_diff_parallel_stages/doc/index.html 
+bpipe.PipelineContext	[1]	INFO	|10:40:43 Using previously set output: [/lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/outputs_from_diff_parallel_stages/test.wide.bed] 
+bpipe.PipelineContext	[1]	INFO	|10:40:43 Using previously set output: [/lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/outputs_from_diff_parallel_stages/test.wide.bed] 
+bpipe.PipelineContext	[1]	INFO	|10:40:43 Using previously set output: [/lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/outputs_from_diff_parallel_stages/test.wide.bed] 
+bpipe.PipelineContext	[1]	INFO	|10:40:43 Using previously set output: [test.wide.fasta] 
+bpipe.PipelineContext	[1]	INFO	|10:40:43 Using previously set output: [test.wide.fasta] 
+bpipe.PipelineContext	[1]	INFO	|10:40:43 Using previously set output: [test.wide.fasta] 
+bpipe.PipelineContext	[1]	INFO	|10:40:43 Using previously set output: [test.extracted.bam] 
+bpipe.PipelineContext	[1]	INFO	|10:40:43 Using previously set output: [test.extracted.bam] 
+bpipe.PipelineContext	[1]	INFO	|10:40:43 Using previously set output: [test.extracted.bam] 
+bpipe.PipelineContext	[1]	INFO	|10:40:43 Using previously set output: [test.extracted.align.sai] 
+bpipe.PipelineContext	[1]	INFO	|10:40:43 Using previously set output: [test.extracted.align.sai] 
+bpipe.PipelineContext	[1]	INFO	|10:40:43 Using previously set output: [test.extracted.align.sai] 
+bpipe.Dependencies	[36]	INFO	|10:40:43 Reading property file .bpipe/outputs/world.test.wide.fasta.properties 
+bpipe.Dependencies	[39]	INFO	|10:40:43 Reading property file .bpipe/outputs/align.test.extracted.align.sai.properties 
+bpipe.Dependencies	[37]	INFO	|10:40:43 Reading property file .bpipe/outputs/mars.test.extracted.bam.properties 
+bpipe.Dependencies	[38]	INFO	|10:40:43 Reading property file .bpipe/outputs/hello._lustre_scratch112_sanger_cgppipe_canPipe_software_bpipe_git_tests_outputs_from_diff_parallel_stages_test.wide.bed.properties 
+bpipe.Utils	[1]	INFO	|10:40:43 Output folder scan (concurrency=5) executed in 0.006 seconds 
+bpipe.Dependencies	[1]	INFO	|10:40:43 External inputs: [[test.bam, test.bed], [test.bam]] for outputs [/lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/outputs_from_diff_parallel_stages/test.wide.bed, test.extracted.bam] 
+bpipe.Dependencies	[1]	INFO	|10:40:43 There are 2 output groups 
+bpipe.Dependencies	[1]	INFO	|10:40:43 Subtracting 2 remaining outputs from 4 total outputs 
+bpipe.Dependencies	[1]	INFO	|10:40:43 External inputs: [[/lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/outputs_from_diff_parallel_stages/test.wide.bed], [test.extracted.bam]] for outputs [test.wide.fasta, test.extracted.align.sai] 
+bpipe.Dependencies	[1]	INFO	|10:40:43 New entry for test.wide.fasta 
+bpipe.Dependencies	[1]	INFO	|10:40:43 Maxtimestamp for test.wide.fasta = 1417776042000 
+bpipe.Dependencies	[1]	INFO	|10:40:43 New entry for test.extracted.align.sai 
+bpipe.Dependencies	[1]	INFO	|10:40:43 Maxtimestamp for test.extracted.align.sai = 1417776043000 
+bpipe.Dependencies	[1]	INFO	|10:40:43 There are 2 output groups 
+bpipe.Dependencies	[1]	INFO	|10:40:43 Subtracting 2 remaining outputs from 2 total outputs 
+bpipe.Dependencies	[1]	INFO	|10:40:43 There are 0 remaining outputs 
+bpipe.Dependencies	[1]	INFO	|10:40:43 There are 0 remaining outputs 
+bpipe.Dependencies	[1]	INFO	|10:40:43 -- test.wide.fasta / entry 1655478482 -- 
+bpipe.Dependencies	[1]	INFO	|10:40:43 Input /lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/outputs_from_diff_parallel_stages/test.wide.bed? true 
+bpipe.Dependencies	[1]	INFO	|10:40:43 test.wide.fasta is older than inputs [test.wide.bed / 1417776042000 / 1417776042000 vs 1417776042000] 
+bpipe.Dependencies	[1]	INFO	|10:40:43  test.extracted.align.sai / entry 828716442  
+bpipe.Dependencies	[1]	INFO	|10:40:43 Input test.extracted.bam? true 
+bpipe.Dependencies	[1]	INFO	|10:40:43 test.extracted.align.sai is newer than input files 
+bpipe.Dependencies	[1]	INFO	|10:40:43 ====Finished Output Graph===== 
+bpipe.Dependencies	[1]	INFO	|10:40:43 There are 0 remaining outputs 
+bpipe.Dependencies	[1]	INFO	|10:40:43 There are 0 remaining outputs 
+bpipe.Dependencies	[1]	INFO	|10:40:43  /lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/outputs_from_diff_parallel_stages/test.wide.bed / entry 1805789899  
+bpipe.Dependencies	[1]	INFO	|10:40:43 /lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/outputs_from_diff_parallel_stages/test.wide.bed is newer than input files 
+bpipe.Dependencies	[1]	INFO	|10:40:43  test.extracted.bam / entry 1671933089 - 
+bpipe.Dependencies	[1]	INFO	|10:40:43 test.extracted.bam is newer than input files 
+bpipe.Dependencies	[1]	INFO	|10:40:43 ====Finished Output Graph===== 
+bpipe.Pipeline	[1]	INFO	|10:40:43 Outputs are: 
+		test.wide.fasta
+		test.extracted.align.sai 
+bpipe.Runner	[9]	INFO	|10:40:43 Deleting job file /nfs/users/nfs_c/cgppipe/.bpipedb/jobs/24298 

@@ -1,0 +1,54 @@
+
+####################################################################################################
+# Starting pipeline at Wed Nov 26 10:25:31 GMT 2014
+# Input files:  null
+# Output Log:  .bpipe/logs/18052.log
+# Stage hello
+touch hello.txt;  touch world.txt
+# ################ Finished at Wed Nov 26 10:25:32 GMT 2014 Duration = 0.517 seconds #################
+
+
+####################################################################################################
+# Starting pipeline at Wed Nov 26 10:25:35 GMT 2014
+# Input files:  null
+# Output Log:  .bpipe/logs/18130.log
+# Stage hello
+touch hello.txt;  touch world.txt
+# ################ Finished at Wed Nov 26 10:25:35 GMT 2014 Duration = 0.570 seconds #################
+
+
+####################################################################################################
+# Starting pipeline at Fri Dec 05 10:25:00 GMT 2014
+# Input files:  null
+# Output Log:  .bpipe/logs/1671.log
+# Stage hello
+touch hello.txt;  touch world.txt
+# ################ Finished at Fri Dec 05 10:25:01 GMT 2014 Duration = 0.786 seconds #################
+
+
+####################################################################################################
+# Starting pipeline at Fri Dec 05 10:25:03 GMT 2014
+# Input files:  null
+# Output Log:  .bpipe/logs/1758.log
+# Stage hello
+touch hello.txt;  touch world.txt
+# ################ Finished at Fri Dec 05 10:25:04 GMT 2014 Duration = 0.579 seconds #################
+
+
+####################################################################################################
+# Starting pipeline at Fri Dec 05 10:37:45 GMT 2014
+# Input files:  null
+# Output Log:  .bpipe/logs/20286.log
+# Stage hello
+touch hello.txt;  touch world.txt
+# ################ Finished at Fri Dec 05 10:37:45 GMT 2014 Duration = 0.538 seconds #################
+
+
+####################################################################################################
+# Starting pipeline at Fri Dec 05 10:37:48 GMT 2014
+# Input files:  null
+# Output Log:  .bpipe/logs/20376.log
+# Stage hello
+touch hello.txt;  touch world.txt
+# ################ Finished at Fri Dec 05 10:37:48 GMT 2014 Duration = 0.578 seconds #################
+

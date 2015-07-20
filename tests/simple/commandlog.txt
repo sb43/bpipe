@@ -1,0 +1,44 @@
+
+####################################################################################################
+# Starting pipeline at Wed Nov 26 10:24:33 GMT 2014
+# Input files:  null
+# Output Log:  .bpipe/logs/16529.log
+# Stage hello
+echo hello > test.txt
+# Stage world
+echo world > test.world.txt
+# ################ Finished at Wed Nov 26 10:24:34 GMT 2014 Duration = 0.620 seconds #################
+
+
+####################################################################################################
+# Starting pipeline at Fri Dec 05 10:14:20 GMT 2014
+# Input files:  null
+# Output Log:  .bpipe/logs/25179.log
+# Stage hello
+echo hello > test.txt
+# Stage world
+echo world > test.world.txt
+# ################ Finished at Fri Dec 05 10:14:20 GMT 2014 Duration = 0.648 seconds #################
+
+
+####################################################################################################
+# Starting pipeline at Fri Dec 05 10:24:00 GMT 2014
+# Input files:  null
+# Output Log:  .bpipe/logs/32473.log
+# Stage hello
+echo hello > test.txt
+# Stage world
+echo world > test.world.txt
+# ################ Finished at Fri Dec 05 10:24:01 GMT 2014 Duration = 0.865 seconds #################
+
+
+####################################################################################################
+# Starting pipeline at Fri Dec 05 10:36:44 GMT 2014
+# Input files:  null
+# Output Log:  .bpipe/logs/18685.log
+# Stage hello
+echo hello > test.txt
+# Stage world
+echo world > test.world.txt
+# ################ Finished at Fri Dec 05 10:36:45 GMT 2014 Duration = 0.603 seconds #################
+

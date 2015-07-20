@@ -1,0 +1,32 @@
+bpipe.Runner	[1]	INFO	|10:41:20 Starting 
+bpipe.Runner	[1]	INFO	|10:41:20 OS: Linux (2.6.32-44-server) Java: 1.7.0_25 Vendor: Oracle Corporation 
+bpipe.Runner	[1]	INFO	|10:41:20 Initializing plugins ... 
+bpipe.Config	[1]	INFO	|10:41:20 No plugins directory found: /lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/produce_multi/.bpipe/plugins 
+bpipe.Runner	[1]	INFO	|10:41:20 Showing dependency graph for [] 
+bpipe.Dependencies	[12]	INFO	|10:41:21 Reading property file .bpipe/outputs/world.mars.txt.properties 
+bpipe.Dependencies	[11]	INFO	|10:41:21 Reading property file .bpipe/outputs/world.world.txt.properties 
+bpipe.Dependencies	[10]	INFO	|10:41:21 Reading property file .bpipe/outputs/hello.foo.txt.properties 
+bpipe.Utils	[1]	INFO	|10:41:21 Output folder scan (concurrency=5) executed in 0.332 seconds 
+bpipe.Dependencies	[1]	INFO	|10:41:21 External inputs: [[test.txt]] for outputs [foo.txt] 
+bpipe.Dependencies	[1]	INFO	|10:41:21 There are 1 output groups 
+bpipe.Dependencies	[1]	INFO	|10:41:21 Subtracting 1 remaining outputs from 3 total outputs 
+bpipe.Dependencies	[1]	INFO	|10:41:21 External inputs: [[foo.txt], [foo.txt]] for outputs [world.txt, mars.txt] 
+bpipe.Dependencies	[1]	INFO	|10:41:21 New entry for world.txt 
+bpipe.Dependencies	[1]	INFO	|10:41:21 Maxtimestamp for world.txt = 1417776078000 
+bpipe.Dependencies	[1]	INFO	|10:41:21 New entry for mars.txt 
+bpipe.Dependencies	[1]	INFO	|10:41:21 Maxtimestamp for mars.txt = 1417776078000 
+bpipe.Dependencies	[1]	INFO	|10:41:21 There are 2 output groups 
+bpipe.Dependencies	[1]	INFO	|10:41:21 Subtracting 2 remaining outputs from 2 total outputs 
+bpipe.Dependencies	[1]	INFO	|10:41:21 There are 0 remaining outputs 
+bpipe.Dependencies	[1]	INFO	|10:41:21 There are 0 remaining outputs 
+bpipe.Dependencies	[1]	INFO	|10:41:21 ----- world.txt / entry 612045723 ------ 
+bpipe.Dependencies	[1]	INFO	|10:41:21 Input foo.txt? true 
+bpipe.Dependencies	[1]	INFO	|10:41:21 world.txt is older than inputs [foo.txt / 1417776078000 / 1417776078000 vs 1417776078000] 
+bpipe.Dependencies	[1]	INFO	|10:41:21 ------ mars.txt / entry 260437492 ------ 
+bpipe.Dependencies	[1]	INFO	|10:41:21 Input foo.txt? true 
+bpipe.Dependencies	[1]	INFO	|10:41:21 mars.txt is older than inputs [foo.txt / 1417776078000 / 1417776078000 vs 1417776078000] 
+bpipe.Dependencies	[1]	INFO	|10:41:21 ====Finished Output Graph===== 
+bpipe.Dependencies	[1]	INFO	|10:41:21 There are 0 remaining outputs 
+bpipe.Dependencies	[1]	INFO	|10:41:21 ------ foo.txt / entry 1844695541 ------ 
+bpipe.Dependencies	[1]	INFO	|10:41:21 foo.txt is newer than input files 
+bpipe.Dependencies	[1]	INFO	|10:41:21 ====Finished Output Graph===== 

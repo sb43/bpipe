@@ -1,0 +1,22 @@
+
+####################################################################################################
+# Starting pipeline at Wed Nov 26 10:27:10 GMT 2014
+# Input files:  [foo/test.txt, bar/test.txt]
+# Output Log:  .bpipe/logs/20528.log
+# Stage hello [foo]
+# Stage hello [bar]
+cp bar/test.txt test.bar.hello.csv
+cp foo/test.txt test.foo.hello.csv
+# ################ Finished at Wed Nov 26 10:27:11 GMT 2014 Duration = 0.991 seconds #################
+
+
+####################################################################################################
+# Starting pipeline at Fri Dec 05 10:39:24 GMT 2014
+# Input files:  [foo/test.txt, bar/test.txt]
+# Output Log:  .bpipe/logs/22814.log
+# Stage hello [bar]
+# Stage hello [foo]
+cp foo/test.txt test.foo.hello.csv
+cp bar/test.txt test.bar.hello.csv
+# ################ Finished at Fri Dec 05 10:39:25 GMT 2014 Duration = 1.011 seconds #################
+

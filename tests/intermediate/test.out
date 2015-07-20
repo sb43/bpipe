@@ -1,0 +1,29 @@
+====================================================================================================
+|                              Starting Pipeline at 2014-12-05 10:40                               |
+====================================================================================================
+
+=========================================== Stage hello ============================================
+
+=============================== Stage world_with_mismatch_filter [3] ===============================
+
+=================================== Stage world_with_filter [2] ====================================
+
+========================================= Stage world [1] ==========================================
+
+======================================== Pipeline Finished =========================================
+MSG: Generated report /lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/intermediate/doc/index.html
+10:40:52 MSG:  Finished at Fri Dec 05 10:40:52 GMT 2014
+10:40:52 MSG:  Outputs are: 
+		test.hello.world_with_mismatch_filter.xml
+		test.hello.world.xml
+		test.hello.world_with_filter.xml
+
+The following intermediate files will be removed:
+
+	test.hello.csv
+	test.hello.world.xml
+	test.hello.world_with_filter.xml
+	
+To retain files, cancel this command and use 'bpipe preserve' to preserve the files you wish to keep
+
+Deleted 3 files, saving 0.0 MB of space

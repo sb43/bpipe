@@ -1,0 +1,63 @@
+
+####################################################################################################
+# Starting pipeline at Wed Nov 26 10:25:54 GMT 2014
+# Input files:  [test.txt, test1.xml, test2.xml]
+# Output Log:  .bpipe/logs/18662.log
+# Stage hello
+echo executing1; cp test.txt test.hello.csv ; sleep 2
+# Stage world
+echo executing2; cat test1.xml > qcstats.xml
+# ################ Finished at Wed Nov 26 10:25:57 GMT 2014 Duration = 2.742 seconds #################
+
+
+####################################################################################################
+# Starting pipeline at Wed Nov 26 10:26:01 GMT 2014
+# Input files:  [test.txt, test1.xml, test2.xml]
+# Output Log:  .bpipe/logs/18756.log
+# Stage hello
+# Stage world
+echo executing2; cat test1.xml > qcstats.xml
+# ################ Finished at Wed Nov 26 10:26:02 GMT 2014 Duration = 0.760 seconds #################
+
+
+####################################################################################################
+# Starting pipeline at Fri Dec 05 10:25:23 GMT 2014
+# Input files:  [test.txt, test1.xml, test2.xml]
+# Output Log:  .bpipe/logs/2397.log
+# Stage hello
+echo executing1; cp test.txt test.hello.csv ; sleep 2
+# Stage world
+echo executing2; cat test1.xml > qcstats.xml
+# ################ Finished at Fri Dec 05 10:25:26 GMT 2014 Duration = 2.866 seconds #################
+
+
+####################################################################################################
+# Starting pipeline at Fri Dec 05 10:25:30 GMT 2014
+# Input files:  [test.txt, test1.xml, test2.xml]
+# Output Log:  .bpipe/logs/2502.log
+# Stage hello
+# Stage world
+echo executing2; cat test1.xml > qcstats.xml
+# ################ Finished at Fri Dec 05 10:25:31 GMT 2014 Duration = 0.776 seconds #################
+
+
+####################################################################################################
+# Starting pipeline at Fri Dec 05 10:38:07 GMT 2014
+# Input files:  [test.txt, test1.xml, test2.xml]
+# Output Log:  .bpipe/logs/20915.log
+# Stage hello
+echo executing1; cp test.txt test.hello.csv ; sleep 2
+# Stage world
+echo executing2; cat test1.xml > qcstats.xml
+# ################ Finished at Fri Dec 05 10:38:10 GMT 2014 Duration = 2.787 seconds #################
+
+
+####################################################################################################
+# Starting pipeline at Fri Dec 05 10:38:15 GMT 2014
+# Input files:  [test.txt, test1.xml, test2.xml]
+# Output Log:  .bpipe/logs/21021.log
+# Stage hello
+# Stage world
+echo executing2; cat test1.xml > qcstats.xml
+# ################ Finished at Fri Dec 05 10:38:15 GMT 2014 Duration = 0.765 seconds #################
+

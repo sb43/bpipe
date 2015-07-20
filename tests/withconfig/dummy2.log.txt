@@ -1,0 +1,1 @@
+(echo "run with dummy2") > .bpipe/commandtmp/4/4.out 2>  .bpipe/commandtmp/4/4.err

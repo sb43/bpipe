@@ -1,0 +1,14 @@
+====================================================================================================
+|                              Starting Pipeline at 2014-12-05 10:39                               |
+====================================================================================================
+
+=========================================== Stage hello ============================================
+
+======================================== Stage world [all] =========================================
+Fri Dec 05 10:39:21 GMT 2014 MSG: Branch all completed: no need to say hello to mars
+Fri Dec 05 10:39:22 GMT 2014 MSG: Branch  completed: All branches [all] self terminated
+
+======================================== Pipeline Finished =========================================
+MSG: Generated report /lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/succeed/doc/index.html
+10:39:22 MSG:  Finished at Fri Dec 05 10:39:22 GMT 2014
+10:39:22 MSG:  Output is test.hello.csv

@@ -1,0 +1,30 @@
+
+####################################################################################################
+# Starting pipeline at Wed Nov 26 10:28:37 GMT 2014
+# Input files:  test.txt
+# Output Log:  .bpipe/logs/22253.log
+# Stage hello
+cat test.txt > test.hello.csv
+# Stage world_with_filter [2]
+# Stage world_with_mismatch_filter [3]
+# Stage world [1]
+cat test.hello.csv > test.hello.world_with_filter.xml
+cat test.hello.csv > test.hello.world_with_mismatch_filter.xml
+cat test.hello.csv > test.hello.world.xml
+# ################ Finished at Wed Nov 26 10:28:38 GMT 2014 Duration = 1.026 seconds #################
+
+
+####################################################################################################
+# Starting pipeline at Fri Dec 05 10:40:51 GMT 2014
+# Input files:  test.txt
+# Output Log:  .bpipe/logs/24583.log
+# Stage hello
+cat test.txt > test.hello.csv
+# Stage world_with_mismatch_filter [3]
+# Stage world_with_filter [2]
+# Stage world [1]
+cat test.hello.csv > test.hello.world_with_filter.xml
+cat test.hello.csv > test.hello.world_with_mismatch_filter.xml
+cat test.hello.csv > test.hello.world.xml
+# ################ Finished at Fri Dec 05 10:40:52 GMT 2014 Duration = 1.176 seconds #################
+

@@ -1,0 +1,18 @@
+====================================================================================================
+|                              Starting Pipeline at 2014-12-05 10:34                               |
+====================================================================================================
+Pipeline failed! (2) 
+
+An input pattern was specified 's_%_*.txt' but no inputs were given when Bpipe was run.
+
+
+======================================== Pipeline Finished =========================================
+MSG: Generated report /lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/persamplenofiles/doc/index.html
+
+NOTE: The pipeline failed because inputs were expected to be provided for a wildcard match but 
+you didn't provide any.
+
+To run with all files in the local directory as input, use:
+
+    bpipe run -r test.groovy *
+
