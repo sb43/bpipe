@@ -1,0 +1,68 @@
+
+####################################################################################################
+# Starting pipeline at Wed Nov 26 10:23:31 GMT 2014
+# Input files:  test.txt
+# Output Log:  .bpipe/logs/14176.log
+# Stage hello
+cp test.txt test.txt.hello
+# Stage world [1]
+cp test.txt.hello test.txt.hello.world
+# Stage how_are_you [1]
+# Stage take_me_to_your_leader [2]
+sed 's/f/b/g' test.txt.hello > test.txt.hello.how_are_you
+sed 's/f/g/g' test.txt.hello > test.txt.hello.take_me_to_your_leader
+# Stage end
+cat test.txt.hello.world test.txt.hello.how_are_you test.txt.hello.take_me_to_your_leader > test.txt.hello.world.end
+# ################ Finished at Wed Nov 26 10:23:44 GMT 2014 Duration = 12.418 seconds ################
+
+
+####################################################################################################
+# Starting pipeline at Fri Dec 05 10:13:19 GMT 2014
+# Input files:  test.txt
+# Output Log:  .bpipe/logs/22694.log
+# Stage hello
+cp test.txt test.txt.hello
+# Stage world [1]
+cp test.txt.hello test.txt.hello.world
+# Stage take_me_to_your_leader [2]
+# Stage how_are_you [1]
+sed 's/f/g/g' test.txt.hello > test.txt.hello.take_me_to_your_leader
+sed 's/f/b/g' test.txt.hello > test.txt.hello.how_are_you
+# Stage end
+cat test.txt.hello.world test.txt.hello.how_are_you test.txt.hello.take_me_to_your_leader > test.txt.hello.world.end
+# ################ Finished at Fri Dec 05 10:13:32 GMT 2014 Duration = 12.375 seconds ################
+
+
+####################################################################################################
+# Starting pipeline at Fri Dec 05 10:23:00 GMT 2014
+# Input files:  test.txt
+# Output Log:  .bpipe/logs/30100.log
+# Stage hello
+cp test.txt test.txt.hello
+# Stage world [1]
+cp test.txt.hello test.txt.hello.world
+# Stage how_are_you [1]
+# Stage take_me_to_your_leader [2]
+sed 's/f/b/g' test.txt.hello > test.txt.hello.how_are_you
+sed 's/f/g/g' test.txt.hello > test.txt.hello.take_me_to_your_leader
+# Stage end
+cat test.txt.hello.world test.txt.hello.how_are_you test.txt.hello.take_me_to_your_leader > test.txt.hello.world.end
+# ################ Finished at Fri Dec 05 10:23:12 GMT 2014 Duration = 12.776 seconds ################
+
+
+####################################################################################################
+# Starting pipeline at Fri Dec 05 10:35:44 GMT 2014
+# Input files:  test.txt
+# Output Log:  .bpipe/logs/16292.log
+# Stage hello
+cp test.txt test.txt.hello
+# Stage world [1]
+cp test.txt.hello test.txt.hello.world
+# Stage how_are_you [1]
+# Stage take_me_to_your_leader [2]
+sed 's/f/g/g' test.txt.hello > test.txt.hello.take_me_to_your_leader
+sed 's/f/b/g' test.txt.hello > test.txt.hello.how_are_you
+# Stage end
+cat test.txt.hello.world test.txt.hello.how_are_you test.txt.hello.take_me_to_your_leader > test.txt.hello.world.end
+# ################ Finished at Fri Dec 05 10:35:56 GMT 2014 Duration = 12.398 seconds ################
+

@@ -1,0 +1,40 @@
+
+####################################################################################################
+# Starting pipeline at Wed Nov 26 10:30:00 GMT 2014
+# Input files:  test.txt
+# Output Log:  .bpipe/logs/24532.log
+# Stage folder
+echo execute1; mkdir thefolder; cp test.txt thefolder/output.csv
+# Stage after
+echo execute2; cp thefolder/output.csv output.after.xml
+# ################ Finished at Wed Nov 26 10:30:01 GMT 2014 Duration = 0.863 seconds #################
+
+
+####################################################################################################
+# Starting pipeline at Wed Nov 26 10:30:08 GMT 2014
+# Input files:  test.txt
+# Output Log:  .bpipe/logs/24667.log
+# Stage folder
+# Stage after
+# ################ Finished at Wed Nov 26 10:30:09 GMT 2014 Duration = 0.545 seconds #################
+
+
+####################################################################################################
+# Starting pipeline at Fri Dec 05 10:42:15 GMT 2014
+# Input files:  test.txt
+# Output Log:  .bpipe/logs/26968.log
+# Stage folder
+echo execute1; mkdir thefolder; cp test.txt thefolder/output.csv
+# Stage after
+echo execute2; cp thefolder/output.csv output.after.xml
+# ################ Finished at Fri Dec 05 10:42:16 GMT 2014 Duration = 0.780 seconds #################
+
+
+####################################################################################################
+# Starting pipeline at Fri Dec 05 10:42:19 GMT 2014
+# Input files:  test.txt
+# Output Log:  .bpipe/logs/27090.log
+# Stage folder
+# Stage after
+# ################ Finished at Fri Dec 05 10:42:20 GMT 2014 Duration = 0.581 seconds #################
+

@@ -1,0 +1,26 @@
+
+####################################################################################################
+# Starting pipeline at Wed Nov 26 10:35:12 GMT 2014
+# Input files:  myinput.txt
+# Output Log:  .bpipe/logs/29758.log
+# Stage testforward
+# Stage echoInput
+# Stage echoAgain
+cp myinput.txt.testforward myinput.txt.testforward.echoAgain
+# Stage end
+echo "This is the end: myinput.txt.testforward.echoAgain"
+# ################ Finished at Wed Nov 26 10:35:13 GMT 2014 Duration = 0.920 seconds #################
+
+
+####################################################################################################
+# Starting pipeline at Fri Dec 05 10:47:22 GMT 2014
+# Input files:  myinput.txt
+# Output Log:  .bpipe/logs/32200.log
+# Stage testforward
+# Stage echoInput
+# Stage echoAgain
+cp myinput.txt.testforward myinput.txt.testforward.echoAgain
+# Stage end
+echo "This is the end: myinput.txt.testforward.echoAgain"
+# ################ Finished at Fri Dec 05 10:47:23 GMT 2014 Duration = 0.884 seconds #################
+

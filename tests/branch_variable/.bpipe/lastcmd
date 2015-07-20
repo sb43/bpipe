@@ -1,0 +1,1 @@
+/nfs/users/nfs_c/cgppipe/canpipe/software/bpipe_git/tests/branch_variable/../../bin/bpipe run -r test.groovy test.txt test_1.xsl test_2.xsl

@@ -1,0 +1,1 @@
+/nfs/users/nfs_c/cgppipe/canpipe/software/bpipe_git/tests/from_with_filter_different_input/../../bin/bpipe run -r test.groovy test.bam test.vcf

@@ -1,0 +1,9 @@
+====================================================================================================
+|                              Starting Pipeline at 2014-12-05 10:39                               |
+====================================================================================================
+
+========================================== Stage simulate ==========================================
+
+======================================== Pipeline Finished =========================================
+10:39:08 MSG:  Finished at Fri Dec 05 10:39:08 GMT 2014
+10:39:08 MSG:  Output is /lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/produce_wildcard_with_set_outputdir/testsim_simulated_cnvs/XXXXX_test.bam

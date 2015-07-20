@@ -1,0 +1,27 @@
+
+####################################################################################################
+# Starting pipeline at Wed Nov 26 10:26:14 GMT 2014
+# Input files:  [test.bam, test.vcf]
+# Output Log:  .bpipe/logs/19130.log
+# Stage hello
+cat test.bam test.vcf > /lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/from_with_filter_different_input/test.clean.vcf
+# ################ Finished at Wed Nov 26 10:26:14 GMT 2014 Duration = 0.704 seconds #################
+
+
+####################################################################################################
+# Starting pipeline at Fri Dec 05 10:25:42 GMT 2014
+# Input files:  [test.bam, test.vcf]
+# Output Log:  .bpipe/logs/2844.log
+# Stage hello
+cat test.bam test.vcf > /lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/from_with_filter_different_input/test.clean.vcf
+# ################ Finished at Fri Dec 05 10:25:43 GMT 2014 Duration = 0.718 seconds #################
+
+
+####################################################################################################
+# Starting pipeline at Fri Dec 05 10:38:27 GMT 2014
+# Input files:  [test.bam, test.vcf]
+# Output Log:  .bpipe/logs/21369.log
+# Stage hello
+cat test.bam test.vcf > /lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/from_with_filter_different_input/test.clean.vcf
+# ################ Finished at Fri Dec 05 10:38:28 GMT 2014 Duration = 0.685 seconds #################
+

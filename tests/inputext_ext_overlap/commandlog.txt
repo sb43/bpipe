@@ -1,0 +1,16 @@
+
+####################################################################################################
+# Starting pipeline at Wed Nov 26 10:28:35 GMT 2014
+# Input files:  test.xcnv
+# Output Log:  .bpipe/logs/22189.log
+# Stage hello
+# ################ Finished at Wed Nov 26 10:28:35 GMT 2014 Duration = 0.239 seconds #################
+
+
+####################################################################################################
+# Starting pipeline at Fri Dec 05 10:40:48 GMT 2014
+# Input files:  test.xcnv
+# Output Log:  .bpipe/logs/24484.log
+# Stage hello
+# ################ Finished at Fri Dec 05 10:40:49 GMT 2014 Duration = 0.265 seconds #################
+

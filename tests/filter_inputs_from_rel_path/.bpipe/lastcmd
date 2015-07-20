@@ -1,0 +1,1 @@
+/nfs/users/nfs_c/cgppipe/canpipe/software/bpipe_git/tests/filter_inputs_from_rel_path/../../bin/bpipe run -r test.groovy ../filter_inputs_from_rel_path/test.xml ../filter_inputs_from_rel_path/test1.av ../filter_inputs_from_rel_path/test2.av

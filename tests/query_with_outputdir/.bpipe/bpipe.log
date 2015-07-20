@@ -1,0 +1,14 @@
+bpipe.Runner	[1]	INFO	|10:46:24 Starting 
+bpipe.Runner	[1]	INFO	|10:46:24 OS: Linux (2.6.32-44-server) Java: 1.7.0_25 Vendor: Oracle Corporation 
+bpipe.Runner	[1]	INFO	|10:46:24 Initializing plugins ... 
+bpipe.Config	[1]	INFO	|10:46:24 No plugins directory found: /lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/query_with_outputdir/.bpipe/plugins 
+bpipe.Runner	[1]	INFO	|10:46:24 Showing dependency graph for [out/test.hello.csv] 
+bpipe.Dependencies	[10]	INFO	|10:46:24 Reading property file .bpipe/outputs/hello.out_test.hello.csv.properties 
+bpipe.Utils	[1]	INFO	|10:46:24 Output folder scan (concurrency=5) executed in 0.307 seconds 
+bpipe.Dependencies	[1]	INFO	|10:46:24 External inputs: [[test.txt]] for outputs [out/test.hello.csv] 
+bpipe.Dependencies	[1]	INFO	|10:46:24 There are 1 output groups 
+bpipe.Dependencies	[1]	INFO	|10:46:24 Subtracting 1 remaining outputs from 1 total outputs 
+bpipe.Dependencies	[1]	INFO	|10:46:24 There are 0 remaining outputs 
+bpipe.Dependencies	[1]	INFO	|10:46:24 - out/test.hello.csv / entry 71746980 -- 
+bpipe.Dependencies	[1]	INFO	|10:46:24 out/test.hello.csv is newer than input files 
+bpipe.Dependencies	[1]	INFO	|10:46:24 ====Finished Output Graph===== 

@@ -1,0 +1,18 @@
+
+####################################################################################################
+# Starting pipeline at Wed Nov 26 10:27:18 GMT 2014
+# Input files:  [test1.fastq, test2.fastq, ref.fa]
+# Output Log:  .bpipe/logs/20736.log
+# Stage paired
+cat test1.fastq test2.fastq ref.fa > test1.paired.bam
+# ################ Finished at Wed Nov 26 10:27:18 GMT 2014 Duration = 0.562 seconds #################
+
+
+####################################################################################################
+# Starting pipeline at Fri Dec 05 10:39:31 GMT 2014
+# Input files:  [test1.fastq, test2.fastq, ref.fa]
+# Output Log:  .bpipe/logs/23022.log
+# Stage paired
+cat test1.fastq test2.fastq ref.fa > test1.paired.bam
+# ################ Finished at Fri Dec 05 10:39:32 GMT 2014 Duration = 0.648 seconds #################
+

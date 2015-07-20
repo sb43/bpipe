@@ -1,0 +1,150 @@
+bpipe.Runner	[1]	INFO	|10:37:44 Starting 
+bpipe.Runner	[1]	INFO	|10:37:44 OS: Linux (2.6.32-44-server) Java: 1.7.0_25 Vendor: Oracle Corporation 
+bpipe.Runner	[1]	INFO	|10:37:44 Initializing plugins ... 
+bpipe.Config	[1]	INFO	|10:37:44 No plugins directory found: /lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/produce_and_output_function/.bpipe/plugins 
+bpipe.Runner	[1]	INFO	|10:37:44 Reading user config ...  
+bpipe.Config	[1]	INFO	|10:37:44 No configuration file found in same dir as pipeline file 
+bpipe.Config	[1]	INFO	|10:37:44 No local configuration file found 
+bpipe.Utils	[10]	INFO	|10:37:45 Read config from /nfs/users/nfs_c/cgppipe/canpipe/software/bpipe_git/tests/produce_and_output_function/../../bin/../src/main/config/bpipe.config executed in 0.333 seconds 
+bpipe.Utils	[1]	INFO	|10:37:45 Read user config executed in 0.558 seconds 
+bpipe.Runner	[1]	INFO	|10:37:45 Loading tool database ...  
+bpipe.NotificationManager	[14]	INFO	|10:37:45 Configuring notifications 
+bpipe.ToolDatabase	[11]	INFO	|10:37:45 Loading tool database from user configuration 
+bpipe.Concurrency	[13]	INFO	|10:37:45 Creating thread pool with 32 threads to execute parallel pipelines 
+bpipe.NotificationManager	[14]	INFO	|10:37:45 Trying class name file for notification channel file 
+bpipe.Tool	[11]	INFO	|10:37:45 Configured meta data about tool samtools 
+bpipe.Runner	[1]	INFO	|10:37:45 No CLI parameters specified 
+bpipe.Tool	[11]	INFO	|10:37:45 Configured meta data about tool bwa 
+bpipe.Tool	[11]	INFO	|10:37:45 Configured meta data about tool bowtie 
+bpipe.Tool	[11]	INFO	|10:37:45 Configured meta data about tool fastqc 
+bpipe.Tool	[11]	INFO	|10:37:45 Configured meta data about tool coverageBed 
+bpipe.Tool	[11]	INFO	|10:37:45 Configured meta data about tool fastx_clipper 
+bpipe.Tool	[11]	INFO	|10:37:45 Configured meta data about tool convert2annovar.pl 
+bpipe.Tool	[11]	INFO	|10:37:45 Configured meta data about tool summarize_annovar.pl 
+bpipe.Tool	[11]	INFO	|10:37:45 Configured meta data about tool bowtie2 
+bpipe.Tool	[11]	INFO	|10:37:45 Configured meta data about tool GenomeAnalysisTK 
+bpipe.Tool	[11]	INFO	|10:37:45 Configured meta data about tool MarkDuplicates 
+bpipe.Tool	[11]	INFO	|10:37:45 Configured meta data about tool signalp 
+bpipe.Tool	[11]	INFO	|10:37:45 Configured meta data about tool variant_effect_predictor.pl 
+bpipe.Tool	[11]	INFO	|10:37:45 Configured meta data about tool igvtools 
+bpipe.Tool	[11]	INFO	|10:37:45 Configured meta data about tool ls 
+bpipe.NotificationManager	[14]	INFO	|10:37:45 Unable to create notification channel using class file: java.lang.ClassNotFoundException: file 
+bpipe.NotificationManager	[14]	INFO	|10:37:45 Trying class name bpipe.FILENotificationChannel for notification channel file 
+bpipe.NotificationManager	[14]	INFO	|10:37:45 Unable to create notification channel using class bpipe.FILENotificationChannel: java.lang.ClassNotFoundException: bpipe.FILENotificationChannel 
+bpipe.NotificationManager	[14]	INFO	|10:37:45 Trying class name bpipe.file for notification channel file 
+bpipe.NotificationManager	[14]	INFO	|10:37:45 Unable to create notification channel using class bpipe.file: java.lang.ClassNotFoundException: bpipe.file 
+bpipe.NotificationManager	[14]	INFO	|10:37:45 Trying class name bpipe.FileNotificationChannel for notification channel file 
+bpipe.NotificationManager	[14]	INFO	|10:37:45 Successfully created notification channel using class bpipe.FileNotificationChannel 
+bpipe.Runner	[1]	INFO	|10:37:45 Parsing script ...  
+bpipe.Runner	[1]	INFO	|10:37:45 Run ...  
+bpipe.Pipeline	[1]	INFO	|10:37:45 Running with input null 
+bpipe.PipelineCategory	[1]	INFO	|10:37:45 Found closure variable hello 
+bpipe.Pipeline	[1]	WARNING	|10:37:45 Pipeline folder /nfs/users/nfs_c/cgppipe/bpipes could not be found 
+bpipe.Pipeline	[1]	INFO	|10:37:45 Loaded external reference: args 
+bpipe.Pipeline	[1]	INFO	|10:37:45 External reference args is overridden by local reference 
+bpipe.Pipeline	[1]	INFO	|10:37:45 Loaded external reference: hello 
+bpipe.Pipeline	[1]	INFO	|10:37:45 External reference hello is overridden by local reference 
+bpipe.Pipeline	[1]	INFO	|10:37:45 Running segment with inputs null 
+bpipe.Dependencies	[1]	INFO	|10:37:45 Checking input (s) null 
+bpipe.Utils	[1]	INFO	|10:37:45 Output folder scan (concurrency=5) executed in 0.003 seconds 
+bpipe.ReportStatisticsListener	[1]	INFO	|10:37:45 Annotating stage start time hello 
+bpipe.PipelineStage	[1]	INFO	|10:37:45 Stage hello : INPUT=null OUTPUT=hello 
+bpipe.PipelineDelegate	[1]	INFO	|10:37:45 Setting or creating a delegate for context 544423489 body 283342360/script14177758652311948550547 in thread 1 
+bpipe.PipelineDelegate	[1]	INFO	|10:37:45 Created new delegate bpipe.PipelineDelegate@28e67788 overriding type script14177758652311948550547 in thread 1 
+bpipe.PipelineContext	[1]	INFO	|10:37:45 Producing [hello.txt] from bpipe.PipelineContext@20733e41 
+bpipe.PipelineDelegate	[1]	INFO	|10:37:45 Setting or creating a delegate for context 544423489 body 1689160725/script14177758652311948550547$_run_closure1 in thread 1 
+bpipe.PipelineDelegate	[1]	INFO	|10:37:45 Created new delegate bpipe.PipelineDelegate@4adaf576 overriding type script14177758652311948550547$_run_closure1 in thread 1 
+bpipe.PipelineContext	[1]	INFO	|10:37:45 Probing command using inputs null 
+bpipe.PipelineContext	[1]	INFO	|10:37:45 Using previously set output: [hello.txt] 
+bpipe.PipelineOutput	[1]	INFO	|10:37:45 Selected output hello.txt with extension txt from expected outputs [hello.txt] 
+bpipe.PipelineContext	[1]	INFO	|10:37:45 Tracking outputs referenced=[[]] inferred=[[hello.txt, world.txt]] for command 
+            touch hello.txt
+
+            touch world.txt
+         
+bpipe.ReportStatisticsListener	[1]	INFO	|10:37:45 Intercepted command check for command 
+            touch hello.txt
+
+            touch world.txt
+         
+bpipe.PipelineContext	[1]	INFO	|10:37:45 Checking actual resolved inputs [] 
+bpipe.PipelineContext	[1]	INFO	|10:37:45 Finished probe 
+bpipe.PipelineContext	[1]	INFO	|10:37:45 Not up to date because input inferred by probe of body newer than outputs 
+bpipe.PipelineDelegate	[1]	INFO	|10:37:45 Setting or creating a delegate for context 544423489 body 1689160725/bpipe.PipelineDelegate in thread 1 
+bpipe.PipelineDelegate	[1]	INFO	|10:37:45 Existing delegate bpipe.PipelineDelegate@4adaf576 has type bpipe.PipelineDelegate in thread 1. Setting new context 544423489 
+bpipe.PipelineContext	[1]	INFO	|10:37:45 Producing from inputs null 
+bpipe.PipelineContext	[1]	INFO	|10:37:45 Using previously set output: [hello.txt, world.txt] 
+bpipe.PipelineOutput	[1]	INFO	|10:37:45 Selected output hello.txt with extension txt from expected outputs [hello.txt, world.txt] 
+bpipe.PipelineContext	[1]	INFO	|10:37:45 Tracking outputs referenced=[[]] inferred=[[hello.txt, world.txt]] for command 
+            touch hello.txt
+
+            touch world.txt
+         
+bpipe.ReportStatisticsListener	[1]	INFO	|10:37:45 Intercepted command check for command 
+            touch hello.txt
+
+            touch world.txt
+         
+bpipe.PipelineContext	[1]	INFO	|10:37:45 Checking actual resolved inputs [] 
+bpipe.Command	[1]	INFO	|10:37:45 Checking for configuration for command touch 
+bpipe.Command	[1]	INFO	|10:37:45 Default command properties: [executor:local] 
+bpipe.CommandManager	[1]	INFO	|10:37:45 Using config [executor:local] for command 
+bpipe.CommandManager	[1]	INFO	|10:37:45 Created bpipe command id 1 
+bpipe.Concurrency	[1]	INFO	|10:37:45 Thread main requesting for 1 concurrency permit(s) type threads with 32 available 
+bpipe.Concurrency	[1]	INFO	|10:37:45 Thread main acquired resource threads in amount 1 
+bpipe.Command	[15]	INFO	|10:37:45 Command 1 changing state from null to RUNNING 
+bpipe.executor.ThrottledDelegatingCommandExecutor	[1]	INFO	|10:37:45 Waiting for command to complete before releasing 1 resources 
+bpipe.Command	[1]	INFO	|10:37:45 Command 1 changing state from RUNNING to COMPLETE 
+bpipe.executor.ThrottledDelegatingCommandExecutor	[1]	INFO	|10:37:45 Releasing 1 resources 
+bpipe.Concurrency	[1]	INFO	|10:37:45 Thread main releasing 1 threads 
+bpipe.executor.ThrottledDelegatingCommandExecutor	[1]	INFO	|10:37:45 Released 1 resources 
+bpipe.PipelineContext	[1]	INFO	|10:37:45 Adding outputs [hello.txt, world.txt, world.txt] as a result of produce 
+bpipe.PipelineStage	[1]	INFO	|10:37:45 Stage hello returned null as default inputs for next stage 
+bpipe.PipelineStage	[1]	INFO	|10:37:45 Inferring nextInputs from explicit output as [hello.txt, world.txt, world.txt] 
+bpipe.PipelineStage	[1]	INFO	|10:37:45 Setting next inputs [hello.txt, world.txt, world.txt] on stage 421311646, context 544423489 in thread 1 
+bpipe.Dependencies	[1]	INFO	|10:37:45 Context 544423489 for stage hello has resolved inputs [] 
+bpipe.Dependencies	[1]	INFO	|10:37:45 Saving output file details to file .bpipe/outputs/hello.hello.txt.properties for command touch hello.txt;  to... 
+bpipe.Dependencies	[1]	INFO	|10:37:45 Context 544423489 for stage hello has resolved inputs [] 
+bpipe.Dependencies	[1]	INFO	|10:37:45 Saving output file details to file .bpipe/outputs/hello.world.txt.properties for command touch hello.txt;  to... 
+bpipe.ReportStatisticsListener	[1]	INFO	|10:37:45 Annotating stage end time hello 
+bpipe.PipelineStage	[1]	INFO	|10:37:45 Checking files: [hello.txt, world.txt, world.txt] 
+bpipe.Dependencies	[1]	INFO	|10:37:45 Checking output (s) [hello.txt, world.txt, world.txt] 
+bpipe.Dependencies	[1]	INFO	|10:37:45  Checking file hello.txt 
+bpipe.Dependencies	[1]	INFO	|10:37:45  Checking file world.txt 
+bpipe.Dependencies	[1]	INFO	|10:37:45  Checking file world.txt 
+bpipe.Pipeline	[1]	INFO	|10:37:45 Pipeline segment  in thread 1 has finished normally 
+bpipe.Pipeline	[1]	INFO	|10:37:45 Finished running segment for inputs null 
+bpipe.Pipeline	[1]	INFO	|10:37:45 adding stage hello from pipeline bpipe.Pipeline@6abd47c9 
+bpipe.Dependencies	[19]	INFO	|10:37:45 Reading property file .bpipe/outputs/hello.hello.txt.properties 
+bpipe.Dependencies	[20]	INFO	|10:37:45 Reading property file .bpipe/outputs/hello.world.txt.properties 
+bpipe.Utils	[1]	INFO	|10:37:45 Output folder scan (concurrency=5) executed in 0.020 seconds 
+bpipe.Dependencies	[1]	INFO	|10:37:45 External inputs: [[], []] for outputs [hello.txt, world.txt] 
+bpipe.Dependencies	[1]	INFO	|10:37:45 There are 1 output groups 
+bpipe.Dependencies	[1]	INFO	|10:37:45 Subtracting 2 remaining outputs from 2 total outputs 
+bpipe.Dependencies	[1]	INFO	|10:37:45 There are 0 remaining outputs 
+bpipe.Dependencies	[1]	INFO	|10:37:45 ----- hello.txt / entry 749213683 ------ 
+bpipe.Dependencies	[1]	INFO	|10:37:45 hello.txt is newer than input files 
+bpipe.Dependencies	[1]	INFO	|10:37:45 ----- world.txt / entry 749213683 ------ 
+bpipe.Dependencies	[1]	INFO	|10:37:45 world.txt is newer than input files 
+bpipe.Dependencies	[1]	INFO	|10:37:45 ====Finished Output Graph===== 
+bpipe.ReportGenerator	[1]	INFO	|10:37:45 Searching for template in /lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/src/main/html/bpipe 
+bpipe.ReportGenerator	[1]	INFO	|10:37:45 Generating report to /lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/produce_and_output_function/doc/index.html 
+bpipe.PipelineContext	[1]	INFO	|10:37:46 Using previously set output: [hello.txt, world.txt, world.txt] 
+bpipe.PipelineContext	[1]	INFO	|10:37:46 Using previously set output: [hello.txt, world.txt, world.txt] 
+bpipe.PipelineContext	[1]	INFO	|10:37:46 Using previously set output: [hello.txt, world.txt, world.txt] 
+bpipe.Dependencies	[21]	INFO	|10:37:46 Reading property file .bpipe/outputs/hello.hello.txt.properties 
+bpipe.Dependencies	[22]	INFO	|10:37:46 Reading property file .bpipe/outputs/hello.world.txt.properties 
+bpipe.Utils	[1]	INFO	|10:37:46 Output folder scan (concurrency=5) executed in 0.006 seconds 
+bpipe.Dependencies	[1]	INFO	|10:37:46 External inputs: [[], []] for outputs [hello.txt, world.txt] 
+bpipe.Dependencies	[1]	INFO	|10:37:46 There are 1 output groups 
+bpipe.Dependencies	[1]	INFO	|10:37:46 Subtracting 2 remaining outputs from 2 total outputs 
+bpipe.Dependencies	[1]	INFO	|10:37:46 There are 0 remaining outputs 
+bpipe.Dependencies	[1]	INFO	|10:37:46 ----- hello.txt / entry 679143286 ------ 
+bpipe.Dependencies	[1]	INFO	|10:37:46 hello.txt is newer than input files 
+bpipe.Dependencies	[1]	INFO	|10:37:46 ----- world.txt / entry 679143286 ------ 
+bpipe.Dependencies	[1]	INFO	|10:37:46 world.txt is newer than input files 
+bpipe.Dependencies	[1]	INFO	|10:37:46 ====Finished Output Graph===== 
+bpipe.Pipeline	[1]	INFO	|10:37:46 Outputs are: 
+		hello.txt
+		world.txt 
+bpipe.Runner	[9]	INFO	|10:37:46 Deleting job file /nfs/users/nfs_c/cgppipe/.bpipedb/jobs/20286 

@@ -1,0 +1,30 @@
+
+####################################################################################################
+# Starting pipeline at Wed Nov 26 10:26:59 GMT 2014
+# Input files:  test.txt
+# Output Log:  .bpipe/logs/20261.log
+# Stage hello
+cp test.txt test.txt.hello
+# Stage world2 [2]
+# Stage world [1]
+cp test.txt.hello test.txt.hello.world2
+cp test.txt.hello test.txt.hello.world
+# Stage end
+cat test.txt.hello.world test.txt.hello.world2 > test.txt.hello.world.end
+# ################ Finished at Wed Nov 26 10:27:01 GMT 2014 Duration = 1.537 seconds #################
+
+
+####################################################################################################
+# Starting pipeline at Fri Dec 05 10:39:14 GMT 2014
+# Input files:  test.txt
+# Output Log:  .bpipe/logs/22529.log
+# Stage hello
+cp test.txt test.txt.hello
+# Stage world [1]
+# Stage world2 [2]
+cp test.txt.hello test.txt.hello.world
+cp test.txt.hello test.txt.hello.world2
+# Stage end
+cat test.txt.hello.world test.txt.hello.world2 > test.txt.hello.world.end
+# ################ Finished at Fri Dec 05 10:39:15 GMT 2014 Duration = 1.401 seconds #################
+

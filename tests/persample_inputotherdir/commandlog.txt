@@ -1,0 +1,26 @@
+
+####################################################################################################
+# Starting pipeline at Wed Nov 26 10:30:29 GMT 2014
+# Input files:  [childdir/s_1_1.txt, childdir/s_1_2.txt, childdir/s_2_1.txt, childdir/s_2_2.txt]
+# Output Log:  .bpipe/logs/25180.log
+# Stage align [2]
+# Stage align [1]
+cat childdir/s_2_1.txt childdir/s_2_2.txt > s_2_1.align.csv
+cat childdir/s_1_1.txt childdir/s_1_2.txt > s_1_1.align.csv
+# Stage dedupe [2]
+# Stage dedupe [1]
+# ################ Finished at Wed Nov 26 10:30:30 GMT 2014 Duration = 1.028 seconds #################
+
+
+####################################################################################################
+# Starting pipeline at Fri Dec 05 10:42:39 GMT 2014
+# Input files:  [childdir/s_1_1.txt, childdir/s_1_2.txt, childdir/s_2_1.txt, childdir/s_2_2.txt]
+# Output Log:  .bpipe/logs/27671.log
+# Stage align [2]
+# Stage align [1]
+cat childdir/s_2_1.txt childdir/s_2_2.txt > s_2_1.align.csv
+cat childdir/s_1_1.txt childdir/s_1_2.txt > s_1_1.align.csv
+# Stage dedupe [2]
+# Stage dedupe [1]
+# ################ Finished at Fri Dec 05 10:42:40 GMT 2014 Duration = 1.033 seconds #################
+

@@ -239,8 +239,7 @@ class Dependencies {
      * 
      * @param outputs
      * @param inputs
-     * @return  true iff file is newer than all inputs, but older than all 
-     *          non-up-to-date outputs
+     * @return
      */
     boolean checkUpToDate(def outputs, def inputs) {
         
@@ -272,22 +271,14 @@ class Dependencies {
             log.info "Found these missing / older files: " + older
         }
         
-        GraphEntry graph = this.getOutputGraph()
+        def graph = this.getOutputGraph()
         
-        def outDated = older.collect { it.canonicalPath }.grep { out ->
+        def outDated = older.collect { it.name }.grep { out ->
              def p = graph.propertiesFor(out); 
-             if(!p || !p.cleaned)  {
-                 if(!p)
-                     log.info "Output properties file is not available for $out: assume NOT cleaned up"
-                 else
-                     log.info "Output properties are available, indicating file was NOT cleaned up"
-                     
+             if(!p || !p.cleaned) 
                  return true 
-             }
-             else {
-                 log.info "File $out has output properties available: upToDate=$p.upToDate"
+             else 
                  return !p.upToDate
-             }
         }
         
         if(!outDated) {
@@ -450,13 +441,6 @@ class Dependencies {
             p.outputFile = p.outputFile.path
             
         File outputFile = new File(p.outputFile)
-        
-        // Here it seems like it PREFERs to use the output file timestamp
-        // even though that is not necessarily accurate. It seems like
-        // the logic here should be different: if a more accurate timestamp 
-        // is already known then that should take precedence
-        
-        
         if(outputFile.exists())    
             p.timestamp = String.valueOf(outputFile.lastModified())
         else
@@ -845,15 +829,15 @@ class Dependencies {
 //                
 //                log.info "Values: " + entry.parents*.values
 //                
-                def newerInputs = findNewerInputs(p, inputValues)
-                
+                def newerInputs = inputValues.grep { 
+                    log.info "Input $it.outputPath? " + p.inputs.contains(it.outputPath)
+                    p.inputs.contains(it.outputPath) && it?.maxTimestamp >= p.timestamp
+                }
                 if(newerInputs) {
                     p.upToDate = false
-                    log.info "$p.outputFile is older than inputs " +
-                       (newerInputs.collect { it.outputFile.name + ' / ' + it.timestamp + ' / ' + it.maxTimestamp + ' vs ' + p.timestamp })
+                    log.info "$p.outputFile is older than inputs " + (newerInputs.collect { it.outputFile.name + ' / ' + it.timestamp + ' / ' + it.maxTimestamp + ' vs ' + p.timestamp })
                     continue
                 }
-                
                 log.info "$p.outputPath is newer than input files"
 
                 // The entry may still not be up to date if it
@@ -892,40 +876,6 @@ class Dependencies {
         return rootTree
     }
     
-    List<Properties> findNewerInputs(Properties p, List<Properties> inputValues) {
-        inputValues.grep { Properties inputProps ->
-                    
-            if(!p.inputs.contains(inputProps.outputPath)) // Not an input used to produce this output
-                return false
-                        
-            log.info "Checking timestamp of $p.outputFile vs input $inputProps.outputPath"
-            if(inputProps?.maxTimestamp < p.timestamp) // inputs unambiguously older than output
-                return false
-                    
-            if(inputProps?.maxTimestamp > p.timestamp) // inputs unambiguously newer than output
-                return true
-            
-            // Problem: many file systems only record timestamps at a very coarse level. 
-            // 1 second resolution is common, but even 1 minute is possible. In these cases
-            // commands that run fast enough produce output files that have equal timestamps
-            // To differentiate these cases we check the start and stop times of the 
-            // actual commands that produced the file
-            if(!inputProps.stopTimeMs)
-                return true // we don't know when the command that produced the input finished
-                            // so have to assume the input could have come after
-                
-            if(!p.createTimeMs) 
-                return false // don't know when the command that produced this output started,
-                             // so have to assume the command that made the input might have
-                             // done it after
-                
-            // Return true if the command that made the input stopped after the command that 
-            // created the output. ie: that means the input is newer, even though it has the
-            // same timestamp
-            return inputProps.stopTimeMs >= p.createTimeMs
-       } 
-    }
-    
     /**
      * Read all the properties files in the output folder
      * @return
@@ -935,14 +885,7 @@ class Dependencies {
         List result = []
         Utils.time("Output folder scan (concurrency=$concurrency)") {
             GParsPool.withPool(concurrency) { 
-                List<File> files = 
-                               new File(PipelineContext.OUTPUT_METADATA_DIR).listFiles()
-                               ?.toList()
-                                .grep { !it.name.startsWith(".") } // ignore files starting with ., 
-                                                                   // added as a convenience because I occasionally
-                                                                   // edit files in output folder when debugging and it causes
-                                                                   // Bpipe to fail!
-                                
+                List<File> files = new File(PipelineContext.OUTPUT_METADATA_DIR).listFiles()?.toList()
                 if(!files)
                     return []
                 result.addAll(files.collectParallel { readOutputPropertyFile(it) }.sort { it.timestamp })

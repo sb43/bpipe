@@ -1,0 +1,42 @@
+
+####################################################################################################
+# Starting pipeline at Wed Nov 26 10:30:18 GMT 2014
+# Input files:  [s_1_1.txt, s_1_2.txt, s_2_1.txt, s_2_2.txt]
+# Output Log:  .bpipe/logs/24893.log
+# Stage hello_there [2]
+# Stage hello_there [1]
+# Stage align [2]
+# Stage align [1]
+echo "hello there"
+echo "hello there"
+cat s_1_1.txt s_1_2.txt > s_1_1.align.txt
+cat s_2_1.txt s_2_2.txt > s_2_1.align.txt
+# Stage dedupe [2]
+# Stage dedupe [1]
+cp s_2_1.align.txt s_2_1.align.dedupe.txt
+cp s_1_1.align.txt s_1_1.align.dedupe.txt
+# Stage compute_statistics
+wc s_1_1.align.dedupe.txt s_2_1.align.dedupe.txt s_1_1.txt s_1_2.txt s_2_1.txt s_2_2.txt > s_1_1.align.dedupe.txt.compute_statistics
+# ################ Finished at Wed Nov 26 10:30:20 GMT 2014 Duration = 1.594 seconds #################
+
+
+####################################################################################################
+# Starting pipeline at Fri Dec 05 10:42:28 GMT 2014
+# Input files:  [s_1_1.txt, s_1_2.txt, s_2_1.txt, s_2_2.txt]
+# Output Log:  .bpipe/logs/27332.log
+# Stage hello_there [2]
+# Stage hello_there [1]
+# Stage align [1]
+# Stage align [2]
+echo "hello there"
+echo "hello there"
+cat s_2_1.txt s_2_2.txt > s_2_1.align.txt
+cat s_1_1.txt s_1_2.txt > s_1_1.align.txt
+# Stage dedupe [2]
+# Stage dedupe [1]
+cp s_2_1.align.txt s_2_1.align.dedupe.txt
+cp s_1_1.align.txt s_1_1.align.dedupe.txt
+# Stage compute_statistics
+wc s_1_1.align.dedupe.txt s_2_1.align.dedupe.txt s_1_1.txt s_1_2.txt s_2_1.txt s_2_2.txt > s_1_1.align.dedupe.txt.compute_statistics
+# ################ Finished at Fri Dec 05 10:42:30 GMT 2014 Duration = 1.234 seconds #################
+

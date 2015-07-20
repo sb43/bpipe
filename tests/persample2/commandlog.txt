@@ -1,0 +1,44 @@
+
+####################################################################################################
+# Starting pipeline at Wed Nov 26 10:22:03 GMT 2014
+# Input files:  [SureSelect_Capture_11MG2107_AD0AN0ACXX_GATCAG_L002_R1.fastq, SureSelect_Capture_11MG2107_AD0AN0ACXX_GATCAG_L002_R2.fastq, SureSelect_Capture_11MG2108_AD0AN0ACXX_TAGCTT_L002_R1.fastq, SureSelect_Capture_11MG2108_AD0AN0ACXX_TAGCTT_L002_R2.fastq]
+# Output Log:  .bpipe/logs/12283.log
+# Stage echo [TAGCTT]
+# Stage echo [GATCAG]
+echo SureSelect_Capture_11MG2108_AD0AN0ACXX_TAGCTT_L002_R1.fastq SureSelect_Capture_11MG2108_AD0AN0ACXX_TAGCTT_L002_R2.fastq
+echo SureSelect_Capture_11MG2107_AD0AN0ACXX_GATCAG_L002_R1.fastq SureSelect_Capture_11MG2107_AD0AN0ACXX_GATCAG_L002_R2.fastq
+# ################ Finished at Wed Nov 26 10:22:04 GMT 2014 Duration = 0.665 seconds #################
+
+
+####################################################################################################
+# Starting pipeline at Fri Dec 05 10:11:47 GMT 2014
+# Input files:  [SureSelect_Capture_11MG2107_AD0AN0ACXX_GATCAG_L002_R1.fastq, SureSelect_Capture_11MG2107_AD0AN0ACXX_GATCAG_L002_R2.fastq, SureSelect_Capture_11MG2108_AD0AN0ACXX_TAGCTT_L002_R1.fastq, SureSelect_Capture_11MG2108_AD0AN0ACXX_TAGCTT_L002_R2.fastq]
+# Output Log:  .bpipe/logs/20782.log
+# Stage echo [GATCAG]
+# Stage echo [TAGCTT]
+echo SureSelect_Capture_11MG2107_AD0AN0ACXX_GATCAG_L002_R1.fastq SureSelect_Capture_11MG2107_AD0AN0ACXX_GATCAG_L002_R2.fastq
+echo SureSelect_Capture_11MG2108_AD0AN0ACXX_TAGCTT_L002_R1.fastq SureSelect_Capture_11MG2108_AD0AN0ACXX_TAGCTT_L002_R2.fastq
+# ################ Finished at Fri Dec 05 10:11:48 GMT 2014 Duration = 0.687 seconds #################
+
+
+####################################################################################################
+# Starting pipeline at Fri Dec 05 10:21:12 GMT 2014
+# Input files:  [SureSelect_Capture_11MG2107_AD0AN0ACXX_GATCAG_L002_R1.fastq, SureSelect_Capture_11MG2107_AD0AN0ACXX_GATCAG_L002_R2.fastq, SureSelect_Capture_11MG2108_AD0AN0ACXX_TAGCTT_L002_R1.fastq, SureSelect_Capture_11MG2108_AD0AN0ACXX_TAGCTT_L002_R2.fastq]
+# Output Log:  .bpipe/logs/27797.log
+# Stage echo [TAGCTT]
+# Stage echo [GATCAG]
+echo SureSelect_Capture_11MG2108_AD0AN0ACXX_TAGCTT_L002_R1.fastq SureSelect_Capture_11MG2108_AD0AN0ACXX_TAGCTT_L002_R2.fastq
+echo SureSelect_Capture_11MG2107_AD0AN0ACXX_GATCAG_L002_R1.fastq SureSelect_Capture_11MG2107_AD0AN0ACXX_GATCAG_L002_R2.fastq
+# ################ Finished at Fri Dec 05 10:21:13 GMT 2014 Duration = 0.678 seconds #################
+
+
+####################################################################################################
+# Starting pipeline at Fri Dec 05 10:33:47 GMT 2014
+# Input files:  [SureSelect_Capture_11MG2107_AD0AN0ACXX_GATCAG_L002_R1.fastq, SureSelect_Capture_11MG2107_AD0AN0ACXX_GATCAG_L002_R2.fastq, SureSelect_Capture_11MG2108_AD0AN0ACXX_TAGCTT_L002_R1.fastq, SureSelect_Capture_11MG2108_AD0AN0ACXX_TAGCTT_L002_R2.fastq]
+# Output Log:  .bpipe/logs/13957.log
+# Stage echo [TAGCTT]
+# Stage echo [GATCAG]
+echo SureSelect_Capture_11MG2108_AD0AN0ACXX_TAGCTT_L002_R1.fastq SureSelect_Capture_11MG2108_AD0AN0ACXX_TAGCTT_L002_R2.fastq
+echo SureSelect_Capture_11MG2107_AD0AN0ACXX_GATCAG_L002_R1.fastq SureSelect_Capture_11MG2107_AD0AN0ACXX_GATCAG_L002_R2.fastq
+# ################ Finished at Fri Dec 05 10:33:47 GMT 2014 Duration = 0.656 seconds #################
+

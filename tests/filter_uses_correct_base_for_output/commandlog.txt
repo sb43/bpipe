@@ -1,0 +1,27 @@
+
+####################################################################################################
+# Starting pipeline at Wed Nov 26 10:26:17 GMT 2014
+# Input files:  [foo.txt, test.bed]
+# Output Log:  .bpipe/logs/19202.log
+# Stage hello
+cat foo.txt test.bed > /lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/filter_uses_correct_base_for_output/test.hello.bed
+# ################ Finished at Wed Nov 26 10:26:18 GMT 2014 Duration = 0.820 seconds #################
+
+
+####################################################################################################
+# Starting pipeline at Fri Dec 05 10:25:46 GMT 2014
+# Input files:  [foo.txt, test.bed]
+# Output Log:  .bpipe/logs/2916.log
+# Stage hello
+cat foo.txt test.bed > /lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/filter_uses_correct_base_for_output/test.hello.bed
+# ################ Finished at Fri Dec 05 10:25:46 GMT 2014 Duration = 0.791 seconds #################
+
+
+####################################################################################################
+# Starting pipeline at Fri Dec 05 10:38:30 GMT 2014
+# Input files:  [foo.txt, test.bed]
+# Output Log:  .bpipe/logs/21441.log
+# Stage hello
+cat foo.txt test.bed > /lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/filter_uses_correct_base_for_output/test.hello.bed
+# ################ Finished at Fri Dec 05 10:38:31 GMT 2014 Duration = 0.823 seconds #################
+

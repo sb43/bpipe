@@ -1,0 +1,27 @@
+====================================================================================================
+|                              Starting Pipeline at 2014-12-05 10:47                               |
+====================================================================================================
+
+============================================ Stage foo =============================================
+total 16K
+-rw-r----- 1 cgppipe cancer  680 Dec  5 10:47 commandlog.txt
+-rw-r----- 1 cgppipe cancer    0 Dec  5 10:47 test.out
+-rwxr-xr-x 1 cgppipe cancer  567 Nov 26 09:44 run.sh
+-rwxr-xr-x 1 cgppipe cancer 1.1K Nov 26 09:44 test.groovy
+-rw-r--r-- 1 cgppipe cancer    6 Nov 26 09:44 test.txt
+
+=========================================== Stage hello ============================================
+
+============================================ Stage bar =============================================
+
+============================================ Stage fail ============================================
+I'm a big failure
+Pipeline failed! (2) 
+
+Command failed with exit status = 1 : 
+
+echo "I'm a big failure";      false
+
+
+======================================== Pipeline Finished =========================================
+MSG: Generated report /lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/documentation/doc/index.html

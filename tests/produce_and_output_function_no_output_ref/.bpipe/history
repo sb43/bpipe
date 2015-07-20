@@ -1,0 +1,3 @@
+19271	bpipe run -r test.groovy
+19351	bpipe run -r test.groovy
+19434	bpipe run -r test.groovy

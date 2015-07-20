@@ -1,0 +1,13 @@
+[----]	====================================================================================================
+[----]	|                              Starting Pipeline at 2014-12-05 10:33                               |
+[----]	====================================================================================================
+[]	
+[]	========================================= Stage align_bwa ==========================================
+
+======================================== Pipeline Finished =========================================
+MSG: Generated report /lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/multi_deps/doc/index.html
+[]	10:33:32 MSG:  Finished at Fri Dec 05 10:33:32 GMT 2014
+[]	10:33:32 MSG:  Outputs are: 
+[]			test1.sai (pre-existing)
+[]			test2.sai (pre-existing)
+[]			test1.bam (pre-existing)

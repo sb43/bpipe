@@ -1,0 +1,34 @@
+
+####################################################################################################
+# Starting pipeline at Wed Nov 26 10:28:43 GMT 2014
+# Input files:  s_1.txt
+# Output Log:  .bpipe/logs/22404.log
+# Stage take_me_to_your_leader [1]
+# Stage how_are_you [1]
+sed 's/f/g/g' s_1.txt > s_1.txt.take_me_to_your_leader
+sed 's/f/b/g' s_1.txt > s_1.txt.how_are_you
+# Stage a [1]
+cp s_1.txt.take_me_to_your_leader s_1.txt.take_me_to_your_leader.a
+# Stage a [1]
+cp s_1.txt.how_are_you s_1.txt.how_are_you.a
+# Stage end
+cat s_1.txt.how_are_you.a s_1.txt.take_me_to_your_leader.a > s_1.txt.how_are_you.a.end
+# ################ Finished at Wed Nov 26 10:28:44 GMT 2014 Duration = 1.200 seconds #################
+
+
+####################################################################################################
+# Starting pipeline at Fri Dec 05 10:40:57 GMT 2014
+# Input files:  s_1.txt
+# Output Log:  .bpipe/logs/24740.log
+# Stage take_me_to_your_leader [1]
+# Stage how_are_you [1]
+sed 's/f/b/g' s_1.txt > s_1.txt.how_are_you
+sed 's/f/g/g' s_1.txt > s_1.txt.take_me_to_your_leader
+# Stage a [1]
+cp s_1.txt.take_me_to_your_leader s_1.txt.take_me_to_your_leader.a
+# Stage a [1]
+cp s_1.txt.how_are_you s_1.txt.how_are_you.a
+# Stage end
+cat s_1.txt.how_are_you.a s_1.txt.take_me_to_your_leader.a > s_1.txt.how_are_you.a.end
+# ################ Finished at Fri Dec 05 10:40:58 GMT 2014 Duration = 1.284 seconds #################
+

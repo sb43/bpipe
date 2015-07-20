@@ -1,0 +1,9 @@
+
+####################################################################################################
+# Starting pipeline at Fri Dec 05 10:35:36 GMT 2014
+# Input files:  null
+# Output Log:  .bpipe/logs/16132.log
+# Stage hello
+# Stage world
+# ################ Finished at Fri Dec 05 10:35:37 GMT 2014 Duration = 0.616 seconds #################
+

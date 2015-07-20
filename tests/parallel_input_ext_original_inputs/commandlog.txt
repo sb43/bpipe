@@ -1,0 +1,26 @@
+
+####################################################################################################
+# Starting pipeline at Wed Nov 26 10:29:08 GMT 2014
+# Input files:  [MUW09_C0R8HACXX_ATCACG_L001_R1.fastq.merge.dedupe.merge.reorder.rg.recal.chr14.realign.vcf, MUW09_C0R8HACXX_ATCACG_L001_R1.fastq.merge.dedupe.merge.reorder.rg.recal.chr15.realign.vcf, MUW09_C0R8HACXX_ATCACG_L001_R1.fastq.merge.dedupe.merge.reorder.rg.recal.chr14.realign.bam, MUW09_C0R8HACXX_ATCACG_L001_R1.fastq.merge.dedupe.merge.reorder.rg.recal.chr15.realign.bam]
+# Output Log:  .bpipe/logs/23040.log
+# Stage annotate_test [15]
+# Stage annotate_test [14]
+touch hello.txt
+touch hello.txt
+# Stage create_variant_bam_test [14]
+# Stage create_variant_bam_test [15]
+# ################ Finished at Wed Nov 26 10:29:09 GMT 2014 Duration = 1.027 seconds #################
+
+
+####################################################################################################
+# Starting pipeline at Fri Dec 05 10:41:23 GMT 2014
+# Input files:  [MUW09_C0R8HACXX_ATCACG_L001_R1.fastq.merge.dedupe.merge.reorder.rg.recal.chr14.realign.vcf, MUW09_C0R8HACXX_ATCACG_L001_R1.fastq.merge.dedupe.merge.reorder.rg.recal.chr15.realign.vcf, MUW09_C0R8HACXX_ATCACG_L001_R1.fastq.merge.dedupe.merge.reorder.rg.recal.chr14.realign.bam, MUW09_C0R8HACXX_ATCACG_L001_R1.fastq.merge.dedupe.merge.reorder.rg.recal.chr15.realign.bam]
+# Output Log:  .bpipe/logs/25397.log
+# Stage annotate_test [15]
+# Stage annotate_test [14]
+touch hello.txt
+touch hello.txt
+# Stage create_variant_bam_test [15]
+# Stage create_variant_bam_test [14]
+# ################ Finished at Fri Dec 05 10:41:24 GMT 2014 Duration = 1.049 seconds #################
+

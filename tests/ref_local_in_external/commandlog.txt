@@ -1,0 +1,18 @@
+
+####################################################################################################
+# Starting pipeline at Wed Nov 26 10:30:15 GMT 2014
+# Input files:  null
+# Output Log:  .bpipe/logs/24820.log
+# Stage hello
+echo "hello dog"
+# ################ Finished at Wed Nov 26 10:30:15 GMT 2014 Duration = 0.368 seconds #################
+
+
+####################################################################################################
+# Starting pipeline at Fri Dec 05 10:42:25 GMT 2014
+# Input files:  null
+# Output Log:  .bpipe/logs/27249.log
+# Stage hello
+echo "hello dog"
+# ################ Finished at Fri Dec 05 10:42:26 GMT 2014 Duration = 0.380 seconds #################
+

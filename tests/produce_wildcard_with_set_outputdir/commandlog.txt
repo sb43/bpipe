@@ -1,0 +1,34 @@
+
+####################################################################################################
+# Starting pipeline at Wed Nov 26 10:26:51 GMT 2014
+# Input files:  null
+# Output Log:  .bpipe/logs/20035.log
+# Stage simulate
+touch testsim_simulated_cnvs/XXXXX_test.bam
+# ################ Finished at Wed Nov 26 10:26:51 GMT 2014 Duration = 0.508 seconds #################
+
+
+####################################################################################################
+# Starting pipeline at Wed Nov 26 10:26:54 GMT 2014
+# Input files:  null
+# Output Log:  .bpipe/logs/20098.log
+# Stage simulate
+# ################ Finished at Wed Nov 26 10:26:54 GMT 2014 Duration = 0.443 seconds #################
+
+
+####################################################################################################
+# Starting pipeline at Fri Dec 05 10:39:04 GMT 2014
+# Input files:  null
+# Output Log:  .bpipe/logs/22296.log
+# Stage simulate
+touch testsim_simulated_cnvs/XXXXX_test.bam
+# ################ Finished at Fri Dec 05 10:39:05 GMT 2014 Duration = 0.521 seconds #################
+
+
+####################################################################################################
+# Starting pipeline at Fri Dec 05 10:39:07 GMT 2014
+# Input files:  null
+# Output Log:  .bpipe/logs/22372.log
+# Stage simulate
+# ################ Finished at Fri Dec 05 10:39:08 GMT 2014 Duration = 0.427 seconds #################
+

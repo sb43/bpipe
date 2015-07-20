@@ -1,0 +1,44 @@
+
+####################################################################################################
+# Starting pipeline at Wed Nov 26 10:22:30 GMT 2014
+# Input files:  test.txt
+# Output Log:  .bpipe/logs/12856.log
+# Stage hello
+cp test.txt test.out_1
+# Stage world
+cp test.out_1 test.out_2
+# ################ Finished at Wed Nov 26 10:22:31 GMT 2014 Duration = 0.806 seconds #################
+
+
+####################################################################################################
+# Starting pipeline at Fri Dec 05 10:12:14 GMT 2014
+# Input files:  test.txt
+# Output Log:  .bpipe/logs/21358.log
+# Stage hello
+cp test.txt test.out_1
+# Stage world
+cp test.out_1 test.out_2
+# ################ Finished at Fri Dec 05 10:12:15 GMT 2014 Duration = 0.921 seconds #################
+
+
+####################################################################################################
+# Starting pipeline at Fri Dec 05 10:21:29 GMT 2014
+# Input files:  test.txt
+# Output Log:  .bpipe/logs/28343.log
+# Stage hello
+cp test.txt test.out_1
+# Stage world
+cp test.out_1 test.out_2
+# ################ Finished at Fri Dec 05 10:21:30 GMT 2014 Duration = 0.900 seconds #################
+
+
+####################################################################################################
+# Starting pipeline at Fri Dec 05 10:34:13 GMT 2014
+# Input files:  test.txt
+# Output Log:  .bpipe/logs/14536.log
+# Stage hello
+cp test.txt test.out_1
+# Stage world
+cp test.out_1 test.out_2
+# ################ Finished at Fri Dec 05 10:34:14 GMT 2014 Duration = 0.759 seconds #################
+

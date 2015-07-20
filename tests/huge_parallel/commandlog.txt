@@ -1,0 +1,418 @@
+
+####################################################################################################
+# Starting pipeline at Wed Nov 26 10:29:24 GMT 2014
+# Input files:  [input_100.txt, input_10.txt, input_11.txt, input_12.txt, input_13.txt, input_14.txt, input_15.txt, input_16.txt, input_17.txt, input_18.txt, input_19.txt, input_1.txt, input_20.txt, input_21.txt, input_22.txt, input_23.txt, input_24.txt, input_25.txt, input_26.txt, input_27.txt, input_28.txt, input_29.txt, input_2.txt, input_30.txt, input_31.txt, input_32.txt, input_33.txt, input_34.txt, input_35.txt, input_36.txt, input_37.txt, input_38.txt, input_39.txt, input_3.txt, input_40.txt, input_41.txt, input_42.txt, input_43.txt, input_44.txt, input_45.txt, input_46.txt, input_47.txt, input_48.txt, input_49.txt, input_4.txt, input_50.txt, input_51.txt, input_52.txt, input_53.txt, input_54.txt, input_55.txt, input_56.txt, input_57.txt, input_58.txt, input_59.txt, input_5.txt, input_60.txt, input_61.txt, input_62.txt, input_63.txt, input_64.txt, input_65.txt, input_66.txt, input_67.txt, input_68.txt, input_69.txt, input_6.txt, input_70.txt, input_71.txt, input_72.txt, input_73.txt, input_74.txt, input_75.txt, input_76.txt, input_77.txt, input_78.txt, input_79.txt, input_7.txt, input_80.txt, input_81.txt, input_82.txt, input_83.txt, input_84.txt, input_85.txt, input_86.txt, input_87.txt, input_88.txt, input_89.txt, input_8.txt, input_90.txt, input_91.txt, input_92.txt, input_93.txt, input_94.txt, input_95.txt, input_96.txt, input_97.txt, input_98.txt, input_99.txt, input_9.txt]
+# Output Log:  .bpipe/logs/23439.log
+# Stage hello [44]
+# Stage hello [30]
+# Stage hello [61]
+# Stage hello [45]
+# Stage hello [14]
+# Stage hello [20]
+# Stage hello [60]
+# Stage hello [19]
+# Stage hello [16]
+# Stage hello [81]
+# Stage hello [74]
+# Stage hello [94]
+# Stage hello [24]
+# Stage hello [56]
+# Stage hello [41]
+# Stage hello [1]
+# Stage hello [62]
+# Stage hello [90]
+# Stage hello [57]
+# Stage hello [15]
+# Stage hello [11]
+# Stage hello [34]
+# Stage hello [13]
+# Stage hello [89]
+# Stage hello [12]
+# Stage hello [28]
+# Stage hello [97]
+# Stage hello [73]
+# Stage hello [50]
+# Stage hello [91]
+# Stage hello [63]
+# Stage hello [58]
+# Stage hello [55]
+# Stage hello [92]
+# Stage hello [66]
+# Stage hello [9]
+# Stage hello [69]
+# Stage hello [23]
+# Stage hello [42]
+# Stage hello [65]
+# Stage hello [93]
+# Stage hello [68]
+# Stage hello [21]
+# Stage hello [64]
+# Stage hello [17]
+# Stage hello [18]
+# Stage hello [3]
+# Stage hello [39]
+# Stage hello [36]
+# Stage hello [49]
+# Stage hello [87]
+# Stage hello [100]
+# Stage hello [77]
+# Stage hello [70]
+# Stage hello [32]
+# Stage hello [79]
+# Stage hello [33]
+# Stage hello [7]
+# Stage hello [48]
+# Stage hello [31]
+cp input_60.txt input_60.txt.hello
+# Stage hello [25]
+cp input_45.txt input_45.txt.hello
+cp input_61.txt input_61.txt.hello
+# Stage hello [51]
+# Stage hello [47]
+# Stage hello [96]
+cp input_20.txt input_20.txt.hello
+# Stage hello [5]
+# Stage hello [37]
+# Stage hello [29]
+# Stage hello [10]
+# Stage hello [85]
+cp input_44.txt input_44.txt.hello
+# Stage hello [2]
+# Stage hello [27]
+# Stage hello [95]
+# Stage hello [8]
+# Stage hello [84]
+# Stage hello [35]
+cp input_14.txt input_14.txt.hello
+cp input_30.txt input_30.txt.hello
+# Stage hello [22]
+# Stage hello [82]
+# Stage hello [76]
+# Stage hello [43]
+# Stage hello [26]
+# Stage hello [67]
+# Stage hello [54]
+# Stage hello [75]
+# Stage hello [59]
+# Stage hello [78]
+# Stage hello [38]
+# Stage hello [99]
+# Stage hello [83]
+# Stage hello [6]
+# Stage hello [4]
+# Stage hello [71]
+# Stage hello [52]
+# Stage hello [40]
+# Stage hello [86]
+# Stage hello [46]
+# Stage hello [88]
+# Stage hello [80]
+# Stage hello [98]
+# Stage hello [53]
+# Stage hello [72]
+cp input_58.txt input_58.txt.hello
+cp input_12.txt input_12.txt.hello
+cp input_89.txt input_89.txt.hello
+cp input_34.txt input_34.txt.hello
+cp input_92.txt input_92.txt.hello
+cp input_13.txt input_13.txt.hello
+cp input_55.txt input_55.txt.hello
+cp input_63.txt input_63.txt.hello
+cp input_66.txt input_66.txt.hello
+cp input_91.txt input_91.txt.hello
+cp input_9.txt input_9.txt.hello
+cp input_86.txt input_86.txt.hello
+cp input_65.txt input_65.txt.hello
+cp input_69.txt input_69.txt.hello
+cp input_23.txt input_23.txt.hello
+cp input_42.txt input_42.txt.hello
+cp input_93.txt input_93.txt.hello
+cp input_68.txt input_68.txt.hello
+cp input_21.txt input_21.txt.hello
+cp input_17.txt input_17.txt.hello
+cp input_64.txt input_64.txt.hello
+cp input_51.txt input_51.txt.hello
+cp input_53.txt input_53.txt.hello
+cp input_31.txt input_31.txt.hello
+cp input_48.txt input_48.txt.hello
+cp input_72.txt input_72.txt.hello
+cp input_98.txt input_98.txt.hello
+cp input_80.txt input_80.txt.hello
+cp input_46.txt input_46.txt.hello
+cp input_88.txt input_88.txt.hello
+cp input_56.txt input_56.txt.hello
+cp input_41.txt input_41.txt.hello
+cp input_24.txt input_24.txt.hello
+cp input_19.txt input_19.txt.hello
+cp input_94.txt input_94.txt.hello
+cp input_74.txt input_74.txt.hello
+cp input_1.txt input_1.txt.hello
+cp input_62.txt input_62.txt.hello
+cp input_90.txt input_90.txt.hello
+cp input_4.txt input_4.txt.hello
+cp input_57.txt input_57.txt.hello
+cp input_99.txt input_99.txt.hello
+cp input_78.txt input_78.txt.hello
+cp input_38.txt input_38.txt.hello
+cp input_11.txt input_11.txt.hello
+cp input_15.txt input_15.txt.hello
+cp input_83.txt input_83.txt.hello
+cp input_71.txt input_71.txt.hello
+cp input_40.txt input_40.txt.hello
+cp input_6.txt input_6.txt.hello
+cp input_52.txt input_52.txt.hello
+cp input_32.txt input_32.txt.hello
+cp input_33.txt input_33.txt.hello
+cp input_79.txt input_79.txt.hello
+cp input_7.txt input_7.txt.hello
+cp input_59.txt input_59.txt.hello
+cp input_49.txt input_49.txt.hello
+cp input_87.txt input_87.txt.hello
+cp input_77.txt input_77.txt.hello
+cp input_39.txt input_39.txt.hello
+cp input_36.txt input_36.txt.hello
+cp input_18.txt input_18.txt.hello
+cp input_3.txt input_3.txt.hello
+cp input_100.txt input_100.txt.hello
+cp input_70.txt input_70.txt.hello
+cp input_5.txt input_5.txt.hello
+cp input_25.txt input_25.txt.hello
+cp input_22.txt input_22.txt.hello
+cp input_35.txt input_35.txt.hello
+cp input_84.txt input_84.txt.hello
+cp input_96.txt input_96.txt.hello
+cp input_95.txt input_95.txt.hello
+cp input_8.txt input_8.txt.hello
+cp input_27.txt input_27.txt.hello
+cp input_2.txt input_2.txt.hello
+cp input_10.txt input_10.txt.hello
+cp input_85.txt input_85.txt.hello
+cp input_29.txt input_29.txt.hello
+cp input_37.txt input_37.txt.hello
+cp input_47.txt input_47.txt.hello
+cp input_82.txt input_82.txt.hello
+cp input_76.txt input_76.txt.hello
+cp input_43.txt input_43.txt.hello
+cp input_75.txt input_75.txt.hello
+cp input_28.txt input_28.txt.hello
+cp input_54.txt input_54.txt.hello
+cp input_67.txt input_67.txt.hello
+cp input_26.txt input_26.txt.hello
+cp input_97.txt input_97.txt.hello
+cp input_50.txt input_50.txt.hello
+cp input_73.txt input_73.txt.hello
+cp input_81.txt input_81.txt.hello
+cp input_16.txt input_16.txt.hello
+# Stage end
+cat input_100.txt.hello input_10.txt.hello input_11.txt.hello input_12.txt.hello input_13.txt.hello input_14.txt.hello input_15.txt.hello input_16.txt.hello input_17.txt.hello input_18.txt.hello input_19.txt.hello input_1.txt.hello input_20.txt.hello input_21.txt.hello input_22.txt.hello input_23.txt.hello input_24.txt.hello input_25.txt.hello input_26.txt.hello input_27.txt.hello input_28.txt.hello input_29.txt.hello input_2.txt.hello input_30.txt.hello input_31.txt.hello input_32.txt.hello input_33.txt.hello input_34.txt.hello input_35.txt.hello input_36.txt.hello input_37.txt.hello input_38.txt.hello input_39.txt.hello input_3.txt.hello input_40.txt.hello input_41.txt.hello input_42.txt.hello input_43.txt.hello input_44.txt.hello input_45.txt.hello input_46.txt.hello input_47.txt.hello input_48.txt.hello input_49.txt.hello input_4.txt.hello input_50.txt.hello input_51.txt.hello input_52.txt.hello input_53.txt.hello input_54.txt.hello input_55.txt.hello input_56.txt.hello input_57.txt.hello input_58.txt.hello input_59.txt.hello input_5.txt.hello input_60.txt.hello input_61.txt.hello input_62.txt.hello input_63.txt.hello input_64.txt.hello input_65.txt.hello input_66.txt.hello input_67.txt.hello input_68.txt.hello input_69.txt.hello input_6.txt.hello input_70.txt.hello input_71.txt.hello input_72.txt.hello input_73.txt.hello input_74.txt.hello input_75.txt.hello input_76.txt.hello input_77.txt.hello input_78.txt.hello input_79.txt.hello input_7.txt.hello input_80.txt.hello input_81.txt.hello input_82.txt.hello input_83.txt.hello input_84.txt.hello input_85.txt.hello input_86.txt.hello input_87.txt.hello input_88.txt.hello input_89.txt.hello input_8.txt.hello input_90.txt.hello input_91.txt.hello input_92.txt.hello input_93.txt.hello input_94.txt.hello input_95.txt.hello input_96.txt.hello input_97.txt.hello input_98.txt.hello input_99.txt.hello input_9.txt.hello > input_100.txt.hello.end
+# ################ Finished at Wed Nov 26 10:29:27 GMT 2014 Duration = 2.820 seconds #################
+
+
+####################################################################################################
+# Starting pipeline at Fri Dec 05 10:41:39 GMT 2014
+# Input files:  [input_100.txt, input_10.txt, input_11.txt, input_12.txt, input_13.txt, input_14.txt, input_15.txt, input_16.txt, input_17.txt, input_18.txt, input_19.txt, input_1.txt, input_20.txt, input_21.txt, input_22.txt, input_23.txt, input_24.txt, input_25.txt, input_26.txt, input_27.txt, input_28.txt, input_29.txt, input_2.txt, input_30.txt, input_31.txt, input_32.txt, input_33.txt, input_34.txt, input_35.txt, input_36.txt, input_37.txt, input_38.txt, input_39.txt, input_3.txt, input_40.txt, input_41.txt, input_42.txt, input_43.txt, input_44.txt, input_45.txt, input_46.txt, input_47.txt, input_48.txt, input_49.txt, input_4.txt, input_50.txt, input_51.txt, input_52.txt, input_53.txt, input_54.txt, input_55.txt, input_56.txt, input_57.txt, input_58.txt, input_59.txt, input_5.txt, input_60.txt, input_61.txt, input_62.txt, input_63.txt, input_64.txt, input_65.txt, input_66.txt, input_67.txt, input_68.txt, input_69.txt, input_6.txt, input_70.txt, input_71.txt, input_72.txt, input_73.txt, input_74.txt, input_75.txt, input_76.txt, input_77.txt, input_78.txt, input_79.txt, input_7.txt, input_80.txt, input_81.txt, input_82.txt, input_83.txt, input_84.txt, input_85.txt, input_86.txt, input_87.txt, input_88.txt, input_89.txt, input_8.txt, input_90.txt, input_91.txt, input_92.txt, input_93.txt, input_94.txt, input_95.txt, input_96.txt, input_97.txt, input_98.txt, input_99.txt, input_9.txt]
+# Output Log:  .bpipe/logs/25858.log
+# Stage hello [44]
+# Stage hello [19]
+# Stage hello [59]
+# Stage hello [10]
+# Stage hello [61]
+# Stage hello [30]
+# Stage hello [97]
+# Stage hello [66]
+# Stage hello [31]
+# Stage hello [60]
+# Stage hello [28]
+# Stage hello [49]
+# Stage hello [6]
+# Stage hello [20]
+# Stage hello [11]
+# Stage hello [16]
+# Stage hello [32]
+# Stage hello [90]
+# Stage hello [2]
+# Stage hello [3]
+# Stage hello [74]
+# Stage hello [55]
+# Stage hello [13]
+# Stage hello [76]
+# Stage hello [35]
+# Stage hello [73]
+# Stage hello [50]
+# Stage hello [78]
+# Stage hello [77]
+# Stage hello [57]
+# Stage hello [89]
+# Stage hello [43]
+# Stage hello [52]
+# Stage hello [23]
+# Stage hello [12]
+# Stage hello [94]
+# Stage hello [27]
+# Stage hello [18]
+# Stage hello [71]
+# Stage hello [38]
+# Stage hello [36]
+# Stage hello [4]
+# Stage hello [67]
+# Stage hello [46]
+# Stage hello [26]
+# Stage hello [56]
+# Stage hello [42]
+# Stage hello [63]
+# Stage hello [14]
+# Stage hello [29]
+# Stage hello [47]
+# Stage hello [83]
+# Stage hello [58]
+# Stage hello [1]
+# Stage hello [41]
+# Stage hello [39]
+# Stage hello [98]
+# Stage hello [100]
+# Stage hello [5]
+# Stage hello [22]
+# Stage hello [53]
+# Stage hello [72]
+# Stage hello [93]
+# Stage hello [91]
+# Stage hello [68]
+# Stage hello [92]
+# Stage hello [7]
+# Stage hello [51]
+# Stage hello [81]
+# Stage hello [17]
+# Stage hello [85]
+# Stage hello [15]
+# Stage hello [25]
+# Stage hello [21]
+# Stage hello [40]
+# Stage hello [34]
+# Stage hello [70]
+# Stage hello [95]
+# Stage hello [64]
+# Stage hello [87]
+# Stage hello [99]
+# Stage hello [45]
+# Stage hello [37]
+# Stage hello [75]
+# Stage hello [9]
+# Stage hello [54]
+# Stage hello [24]
+# Stage hello [86]
+# Stage hello [33]
+# Stage hello [88]
+# Stage hello [96]
+# Stage hello [84]
+# Stage hello [69]
+# Stage hello [65]
+# Stage hello [8]
+# Stage hello [48]
+# Stage hello [62]
+# Stage hello [79]
+# Stage hello [80]
+cp input_2.txt input_2.txt.hello
+# Stage hello [82]
+cp input_74.txt input_74.txt.hello
+cp input_13.txt input_13.txt.hello
+cp input_3.txt input_3.txt.hello
+cp input_10.txt input_10.txt.hello
+cp input_11.txt input_11.txt.hello
+cp input_30.txt input_30.txt.hello
+cp input_6.txt input_6.txt.hello
+cp input_61.txt input_61.txt.hello
+cp input_18.txt input_18.txt.hello
+cp input_38.txt input_38.txt.hello
+cp input_71.txt input_71.txt.hello
+cp input_4.txt input_4.txt.hello
+cp input_36.txt input_36.txt.hello
+cp input_67.txt input_67.txt.hello
+cp input_46.txt input_46.txt.hello
+cp input_27.txt input_27.txt.hello
+cp input_42.txt input_42.txt.hello
+cp input_26.txt input_26.txt.hello
+cp input_56.txt input_56.txt.hello
+cp input_14.txt input_14.txt.hello
+cp input_63.txt input_63.txt.hello
+cp input_29.txt input_29.txt.hello
+cp input_47.txt input_47.txt.hello
+cp input_58.txt input_58.txt.hello
+cp input_83.txt input_83.txt.hello
+cp input_55.txt input_55.txt.hello
+cp input_90.txt input_90.txt.hello
+cp input_76.txt input_76.txt.hello
+cp input_32.txt input_32.txt.hello
+cp input_60.txt input_60.txt.hello
+cp input_20.txt input_20.txt.hello
+cp input_16.txt input_16.txt.hello
+cp input_49.txt input_49.txt.hello
+cp input_66.txt input_66.txt.hello
+cp input_31.txt input_31.txt.hello
+cp input_19.txt input_19.txt.hello
+cp input_59.txt input_59.txt.hello
+cp input_28.txt input_28.txt.hello
+cp input_97.txt input_97.txt.hello
+cp input_44.txt input_44.txt.hello
+cp input_34.txt input_34.txt.hello
+cp input_22.txt input_22.txt.hello
+cp input_21.txt input_21.txt.hello
+cp input_40.txt input_40.txt.hello
+cp input_15.txt input_15.txt.hello
+cp input_25.txt input_25.txt.hello
+cp input_91.txt input_91.txt.hello
+cp input_24.txt input_24.txt.hello
+cp input_85.txt input_85.txt.hello
+cp input_86.txt input_86.txt.hello
+cp input_54.txt input_54.txt.hello
+cp input_9.txt input_9.txt.hello
+cp input_75.txt input_75.txt.hello
+cp input_52.txt input_52.txt.hello
+cp input_94.txt input_94.txt.hello
+cp input_12.txt input_12.txt.hello
+cp input_73.txt input_73.txt.hello
+cp input_82.txt input_82.txt.hello
+cp input_62.txt input_62.txt.hello
+cp input_48.txt input_48.txt.hello
+cp input_78.txt input_78.txt.hello
+cp input_35.txt input_35.txt.hello
+cp input_79.txt input_79.txt.hello
+cp input_33.txt input_33.txt.hello
+cp input_88.txt input_88.txt.hello
+cp input_80.txt input_80.txt.hello
+cp input_84.txt input_84.txt.hello
+cp input_37.txt input_37.txt.hello
+cp input_8.txt input_8.txt.hello
+cp input_87.txt input_87.txt.hello
+cp input_64.txt input_64.txt.hello
+cp input_99.txt input_99.txt.hello
+cp input_96.txt input_96.txt.hello
+cp input_65.txt input_65.txt.hello
+cp input_69.txt input_69.txt.hello
+cp input_45.txt input_45.txt.hello
+cp input_70.txt input_70.txt.hello
+cp input_41.txt input_41.txt.hello
+cp input_95.txt input_95.txt.hello
+cp input_39.txt input_39.txt.hello
+cp input_98.txt input_98.txt.hello
+cp input_100.txt input_100.txt.hello
+cp input_5.txt input_5.txt.hello
+cp input_92.txt input_92.txt.hello
+cp input_53.txt input_53.txt.hello
+cp input_93.txt input_93.txt.hello
+cp input_68.txt input_68.txt.hello
+cp input_72.txt input_72.txt.hello
+cp input_51.txt input_51.txt.hello
+cp input_17.txt input_17.txt.hello
+cp input_7.txt input_7.txt.hello
+cp input_1.txt input_1.txt.hello
+cp input_81.txt input_81.txt.hello
+cp input_77.txt input_77.txt.hello
+cp input_50.txt input_50.txt.hello
+cp input_57.txt input_57.txt.hello
+cp input_89.txt input_89.txt.hello
+cp input_23.txt input_23.txt.hello
+cp input_43.txt input_43.txt.hello
+# Stage end
+cat input_100.txt.hello input_10.txt.hello input_11.txt.hello input_12.txt.hello input_13.txt.hello input_14.txt.hello input_15.txt.hello input_16.txt.hello input_17.txt.hello input_18.txt.hello input_19.txt.hello input_1.txt.hello input_20.txt.hello input_21.txt.hello input_22.txt.hello input_23.txt.hello input_24.txt.hello input_25.txt.hello input_26.txt.hello input_27.txt.hello input_28.txt.hello input_29.txt.hello input_2.txt.hello input_30.txt.hello input_31.txt.hello input_32.txt.hello input_33.txt.hello input_34.txt.hello input_35.txt.hello input_36.txt.hello input_37.txt.hello input_38.txt.hello input_39.txt.hello input_3.txt.hello input_40.txt.hello input_41.txt.hello input_42.txt.hello input_43.txt.hello input_44.txt.hello input_45.txt.hello input_46.txt.hello input_47.txt.hello input_48.txt.hello input_49.txt.hello input_4.txt.hello input_50.txt.hello input_51.txt.hello input_52.txt.hello input_53.txt.hello input_54.txt.hello input_55.txt.hello input_56.txt.hello input_57.txt.hello input_58.txt.hello input_59.txt.hello input_5.txt.hello input_60.txt.hello input_61.txt.hello input_62.txt.hello input_63.txt.hello input_64.txt.hello input_65.txt.hello input_66.txt.hello input_67.txt.hello input_68.txt.hello input_69.txt.hello input_6.txt.hello input_70.txt.hello input_71.txt.hello input_72.txt.hello input_73.txt.hello input_74.txt.hello input_75.txt.hello input_76.txt.hello input_77.txt.hello input_78.txt.hello input_79.txt.hello input_7.txt.hello input_80.txt.hello input_81.txt.hello input_82.txt.hello input_83.txt.hello input_84.txt.hello input_85.txt.hello input_86.txt.hello input_87.txt.hello input_88.txt.hello input_89.txt.hello input_8.txt.hello input_90.txt.hello input_91.txt.hello input_92.txt.hello input_93.txt.hello input_94.txt.hello input_95.txt.hello input_96.txt.hello input_97.txt.hello input_98.txt.hello input_99.txt.hello input_9.txt.hello > input_100.txt.hello.end
+# ################ Finished at Fri Dec 05 10:41:42 GMT 2014 Duration = 2.847 seconds #################
+

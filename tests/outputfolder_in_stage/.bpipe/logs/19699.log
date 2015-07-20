@@ -1,0 +1,13 @@
+[----]	====================================================================================================
+[----]	|                              Starting Pipeline at 2014-12-05 10:37                               |
+[----]	====================================================================================================
+[]	
+[]	=========================================== Stage hello ============================================
+The output folder is /lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/outputfolder_in_stage
+[]	
+[]	=========================================== Stage world ============================================
+
+======================================== Pipeline Finished =========================================
+MSG: Generated report /lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/outputfolder_in_stage/doc/index.html
+[]	10:37:23 MSG:  Finished at Fri Dec 05 10:37:23 GMT 2014
+[]	10:37:23 MSG:  Output is mars_dir/hello.txt

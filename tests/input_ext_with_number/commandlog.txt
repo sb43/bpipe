@@ -1,0 +1,18 @@
+
+####################################################################################################
+# Starting pipeline at Wed Nov 26 10:31:10 GMT 2014
+# Input files:  [test1.txt, test1.csv, test2.txt]
+# Output Log:  .bpipe/logs/26429.log
+# Stage hello
+cat test2.txt test1.csv > test1.hello.xml
+# ################ Finished at Wed Nov 26 10:31:10 GMT 2014 Duration = 0.525 seconds #################
+
+
+####################################################################################################
+# Starting pipeline at Fri Dec 05 10:43:19 GMT 2014
+# Input files:  [test1.txt, test1.csv, test2.txt]
+# Output Log:  .bpipe/logs/28906.log
+# Stage hello
+cat test2.txt test1.csv > test1.hello.xml
+# ################ Finished at Fri Dec 05 10:43:20 GMT 2014 Duration = 0.545 seconds #################
+

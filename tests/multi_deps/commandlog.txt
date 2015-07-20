@@ -1,0 +1,125 @@
+
+####################################################################################################
+# Starting pipeline at Wed Nov 26 10:21:42 GMT 2014
+# Input files:  [test1.gz, test2.gz]
+# Output Log:  .bpipe/logs/11754.log
+# Stage align_bwa
+echo 'execute multi1'; gunzip -c test1.gz > test1.sai
+echo 'execute multi2'; gunzip -c test2.gz > test2.sai
+echo 'execute cat';              cat test1.sai test2.sai test1.gz test2.gz > test1.bam
+# ################ Finished at Wed Nov 26 10:21:44 GMT 2014 Duration = 2.823 seconds #################
+
+
+####################################################################################################
+# Starting pipeline at Wed Nov 26 10:21:47 GMT 2014
+# Input files:  [test1.gz, test2.gz]
+# Output Log:  .bpipe/logs/11865.log
+# Stage align_bwa
+# ################ Finished at Wed Nov 26 10:21:47 GMT 2014 Duration = 0.527 seconds #################
+
+
+####################################################################################################
+# Starting pipeline at Wed Nov 26 10:21:50 GMT 2014
+# Input files:  [test1.gz, test2.gz]
+# Output Log:  .bpipe/logs/11944.log
+# Stage align_bwa
+echo 'execute cat';              cat test1.sai test2.sai test1.gz test2.gz > test1.bam
+# ################ Finished at Wed Nov 26 10:21:51 GMT 2014 Duration = 0.879 seconds #################
+
+
+####################################################################################################
+# Starting pipeline at Wed Nov 26 10:21:53 GMT 2014
+# Input files:  [test1.gz, test2.gz]
+# Output Log:  .bpipe/logs/12045.log
+# Stage align_bwa
+echo 'execute multi1'; gunzip -c test1.gz > test1.sai
+echo 'execute cat';              cat test1.sai test2.sai test1.gz test2.gz > test1.bam
+# ################ Finished at Wed Nov 26 10:21:56 GMT 2014 Duration = 2.854 seconds #################
+
+
+####################################################################################################
+# Starting pipeline at Fri Dec 05 10:11:25 GMT 2014
+# Input files:  [test1.gz, test2.gz]
+# Output Log:  .bpipe/logs/20257.log
+# Stage align_bwa
+echo 'execute multi1'; gunzip -c test1.gz > test1.sai
+echo 'execute multi2'; gunzip -c test2.gz > test2.sai
+echo 'execute cat';              cat test1.sai test2.sai test1.gz test2.gz > test1.bam
+# ################ Finished at Fri Dec 05 10:11:28 GMT 2014 Duration = 2.812 seconds #################
+
+
+####################################################################################################
+# Starting pipeline at Fri Dec 05 10:11:30 GMT 2014
+# Input files:  [test1.gz, test2.gz]
+# Output Log:  .bpipe/logs/20365.log
+# Stage align_bwa
+# ################ Finished at Fri Dec 05 10:11:30 GMT 2014 Duration = 0.506 seconds #################
+
+
+####################################################################################################
+# Starting pipeline at Fri Dec 05 10:11:33 GMT 2014
+# Input files:  [test1.gz, test2.gz]
+# Output Log:  .bpipe/logs/20457.log
+# Stage align_bwa
+echo 'execute cat';              cat test1.sai test2.sai test1.gz test2.gz > test1.bam
+# ################ Finished at Fri Dec 05 10:11:36 GMT 2014 Duration = 2.895 seconds #################
+
+
+####################################################################################################
+# Starting pipeline at Fri Dec 05 10:11:38 GMT 2014
+# Input files:  [test1.gz, test2.gz]
+# Output Log:  .bpipe/logs/20546.log
+# Stage align_bwa
+echo 'execute multi1'; gunzip -c test1.gz > test1.sai
+echo 'execute cat';              cat test1.sai test2.sai test1.gz test2.gz > test1.bam
+# ################ Finished at Fri Dec 05 10:11:41 GMT 2014 Duration = 2.878 seconds #################
+
+
+####################################################################################################
+# Starting pipeline at Fri Dec 05 10:18:13 GMT 2014
+# Input files:  [test1.gz, test2.gz]
+# Output Log:  .bpipe/logs/27100.log
+# Stage align_bwa
+echo 'execute multi1'; gunzip -c test1.gz > test1.sai
+echo 'execute multi2'; gunzip -c test2.gz > test2.sai
+echo 'execute cat';              cat test1.sai test2.sai test1.gz test2.gz > test1.bam
+# ################ Finished at Fri Dec 05 10:18:16 GMT 2014 Duration = 2.816 seconds #################
+
+
+####################################################################################################
+# Starting pipeline at Fri Dec 05 10:33:26 GMT 2014
+# Input files:  [test1.gz, test2.gz]
+# Output Log:  .bpipe/logs/13416.log
+# Stage align_bwa
+echo 'execute multi1'; gunzip -c test1.gz > test1.sai
+echo 'execute multi2'; gunzip -c test2.gz > test2.sai
+echo 'execute cat';              cat test1.sai test2.sai test1.gz test2.gz > test1.bam
+# ################ Finished at Fri Dec 05 10:33:29 GMT 2014 Duration = 2.833 seconds #################
+
+
+####################################################################################################
+# Starting pipeline at Fri Dec 05 10:33:31 GMT 2014
+# Input files:  [test1.gz, test2.gz]
+# Output Log:  .bpipe/logs/13523.log
+# Stage align_bwa
+# ################ Finished at Fri Dec 05 10:33:32 GMT 2014 Duration = 0.521 seconds #################
+
+
+####################################################################################################
+# Starting pipeline at Fri Dec 05 10:33:34 GMT 2014
+# Input files:  [test1.gz, test2.gz]
+# Output Log:  .bpipe/logs/13610.log
+# Stage align_bwa
+echo 'execute cat';              cat test1.sai test2.sai test1.gz test2.gz > test1.bam
+# ################ Finished at Fri Dec 05 10:33:35 GMT 2014 Duration = 0.863 seconds #################
+
+
+####################################################################################################
+# Starting pipeline at Fri Dec 05 10:33:37 GMT 2014
+# Input files:  [test1.gz, test2.gz]
+# Output Log:  .bpipe/logs/13711.log
+# Stage align_bwa
+echo 'execute multi1'; gunzip -c test1.gz > test1.sai
+echo 'execute cat';              cat test1.sai test2.sai test1.gz test2.gz > test1.bam
+# ################ Finished at Fri Dec 05 10:33:40 GMT 2014 Duration = 2.872 seconds #################
+

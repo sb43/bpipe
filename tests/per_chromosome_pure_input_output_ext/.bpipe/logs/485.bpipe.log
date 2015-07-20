@@ -1,0 +1,227 @@
+bpipe.Runner	[1]	INFO	|10:47:49 Starting 
+bpipe.Runner	[1]	INFO	|10:47:49 OS: Linux (2.6.32-44-server) Java: 1.7.0_25 Vendor: Oracle Corporation 
+bpipe.Runner	[1]	INFO	|10:47:49 Initializing plugins ... 
+bpipe.Config	[1]	INFO	|10:47:49 No plugins directory found: /lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/per_chromosome_pure_input_output_ext/.bpipe/plugins 
+bpipe.Runner	[1]	INFO	|10:47:49 Reading user config ...  
+bpipe.Config	[1]	INFO	|10:47:49 No configuration file found in same dir as pipeline file 
+bpipe.Config	[1]	INFO	|10:47:49 No local configuration file found 
+bpipe.Utils	[10]	INFO	|10:47:50 Read config from /nfs/users/nfs_c/cgppipe/canpipe/software/bpipe_git/tests/per_chromosome_pure_input_output_ext/../../bin/../src/main/config/bpipe.config executed in 0.327 seconds 
+bpipe.Utils	[1]	INFO	|10:47:50 Read user config executed in 0.557 seconds 
+bpipe.Runner	[1]	INFO	|10:47:50 Loading tool database ...  
+bpipe.ToolDatabase	[11]	INFO	|10:47:50 Loading tool database from user configuration 
+bpipe.Concurrency	[13]	INFO	|10:47:50 Creating thread pool with 32 threads to execute parallel pipelines 
+bpipe.NotificationManager	[14]	INFO	|10:47:50 Configuring notifications 
+bpipe.NotificationManager	[14]	INFO	|10:47:50 Trying class name file for notification channel file 
+bpipe.Tool	[11]	INFO	|10:47:50 Configured meta data about tool samtools 
+bpipe.Tool	[11]	INFO	|10:47:50 Configured meta data about tool bwa 
+bpipe.Tool	[11]	INFO	|10:47:50 Configured meta data about tool bowtie 
+bpipe.Tool	[11]	INFO	|10:47:50 Configured meta data about tool fastqc 
+bpipe.Runner	[1]	INFO	|10:47:50 No CLI parameters specified 
+bpipe.Tool	[11]	INFO	|10:47:50 Configured meta data about tool coverageBed 
+bpipe.Tool	[11]	INFO	|10:47:50 Configured meta data about tool fastx_clipper 
+bpipe.Tool	[11]	INFO	|10:47:50 Configured meta data about tool convert2annovar.pl 
+bpipe.Tool	[11]	INFO	|10:47:50 Configured meta data about tool summarize_annovar.pl 
+bpipe.Tool	[11]	INFO	|10:47:50 Configured meta data about tool bowtie2 
+bpipe.Tool	[11]	INFO	|10:47:50 Configured meta data about tool GenomeAnalysisTK 
+bpipe.Tool	[11]	INFO	|10:47:50 Configured meta data about tool MarkDuplicates 
+bpipe.Tool	[11]	INFO	|10:47:50 Configured meta data about tool signalp 
+bpipe.Tool	[11]	INFO	|10:47:50 Configured meta data about tool variant_effect_predictor.pl 
+bpipe.Tool	[11]	INFO	|10:47:50 Configured meta data about tool igvtools 
+bpipe.Tool	[11]	INFO	|10:47:50 Configured meta data about tool ls 
+bpipe.NotificationManager	[14]	INFO	|10:47:50 Unable to create notification channel using class file: java.lang.ClassNotFoundException: file 
+bpipe.NotificationManager	[14]	INFO	|10:47:50 Trying class name bpipe.FILENotificationChannel for notification channel file 
+bpipe.NotificationManager	[14]	INFO	|10:47:50 Unable to create notification channel using class bpipe.FILENotificationChannel: java.lang.ClassNotFoundException: bpipe.FILENotificationChannel 
+bpipe.NotificationManager	[14]	INFO	|10:47:50 Trying class name bpipe.file for notification channel file 
+bpipe.NotificationManager	[14]	INFO	|10:47:50 Unable to create notification channel using class bpipe.file: java.lang.ClassNotFoundException: bpipe.file 
+bpipe.NotificationManager	[14]	INFO	|10:47:50 Trying class name bpipe.FileNotificationChannel for notification channel file 
+bpipe.NotificationManager	[14]	INFO	|10:47:50 Successfully created notification channel using class bpipe.FileNotificationChannel 
+bpipe.Runner	[1]	INFO	|10:47:50 Parsing script ...  
+bpipe.Runner	[1]	INFO	|10:47:50 Run ...  
+bpipe.Pipeline	[1]	INFO	|10:47:50 Running with input [test.bam] 
+bpipe.PipelineCategory	[1]	INFO	|10:47:50 Found closure variable hello 
+bpipe.Pipeline	[1]	WARNING	|10:47:50 Pipeline folder /nfs/users/nfs_c/cgppipe/bpipes could not be found 
+bpipe.Pipeline	[1]	INFO	|10:47:50 Loaded external reference: args 
+bpipe.Pipeline	[1]	INFO	|10:47:50 External reference args is overridden by local reference 
+bpipe.Pipeline	[1]	INFO	|10:47:50 Loaded external reference: hello 
+bpipe.Pipeline	[1]	INFO	|10:47:50 External reference hello is overridden by local reference 
+bpipe.DefinePipelineCategory	[1]	INFO	|10:47:50 multiply on input null with pattern * 
+bpipe.InputSplitter	[1]	INFO	|10:47:50 Found * pattern at [0], hash at [] and % at [] 
+bpipe.InputSplitter	[1]	INFO	|10:47:50 Sorted: [0] 
+bpipe.InputSplitter	[1]	INFO	|10:47:50 % groups are at [] 
+bpipe.InputSplitter	[1]	INFO	|10:47:50 Result is [pattern:([^/]*), splits:[]] 
+bpipe.DefinePipelineCategory	[1]	INFO	|10:47:50 Processing segment 1833164616 
+bpipe.PipelineCategory	[1]	INFO	|10:47:50 Joiners for pipeline 198598137 = [] 
+bpipe.Pipeline	[1]	INFO	|10:47:50 Running segment with inputs test.bam 
+bpipe.Dependencies	[1]	INFO	|10:47:50 Checking input (s) test.bam 
+bpipe.Utils	[1]	INFO	|10:47:50 Output folder scan (concurrency=5) executed in 0.003 seconds 
+bpipe.Dependencies	[1]	INFO	|10:47:50  Checking file test.bam 
+bpipe.PipelineDelegate	[1]	INFO	|10:47:50 Setting or creating a delegate for context 487273573 body 1251795400/java.lang.Class in thread 1 
+bpipe.PipelineDelegate	[1]	INFO	|10:47:50 Created new delegate bpipe.PipelineDelegate@69a0a8ec overriding type java.lang.Class in thread 1 
+bpipe.PipelineCategory	[1]	INFO	|10:47:50 multiply on input test.bam on set [bpipe.Chr@3e79c17b, bpipe.Chr@2b8d9248] 
+bpipe.PipelineCategory	[1]	INFO	|10:47:50 Processing segment 1833164616 
+bpipe.PipelineCategory	[1]	INFO	|10:47:50 Creating pipeline to run on branch bpipe.Chr@3e79c17b 
+bpipe.PipelineCategory	[1]	INFO	|10:47:50 Creating pipeline to run on branch bpipe.Chr@2b8d9248 
+bpipe.Concurrency	[1]	INFO	|10:47:50 Waiting for 2 parallel stages to complete (pool.active=2 pool.tasks=2) 
+bpipe.PipelineContext	[16]	INFO	|10:47:50 Setting output test.bam on context 1289581673 in thread 16 
+bpipe.PipelineContext	[15]	INFO	|10:47:50 Setting output test.bam on context 1594212587 in thread 15 
+bpipe.PipelineContext	[16]	INFO	|10:47:50 Using previously set output: test.bam 
+bpipe.PipelineContext	[15]	INFO	|10:47:50 Using previously set output: test.bam 
+bpipe.PipelineCategory	[16]	INFO	|10:47:50 Adding dummy prior stage for thread 16 with outputs : test.bam 
+bpipe.PipelineCategory	[15]	INFO	|10:47:50 Adding dummy prior stage for thread 15 with outputs : test.bam 
+bpipe.Pipeline	[16]	INFO	|10:47:50 Running segment with inputs test.bam 
+bpipe.Pipeline	[15]	INFO	|10:47:50 Running segment with inputs test.bam 
+bpipe.Dependencies	[16]	INFO	|10:47:50 Checking input (s) test.bam 
+bpipe.Dependencies	[15]	INFO	|10:47:50 Checking input (s) test.bam 
+bpipe.Dependencies	[16]	INFO	|10:47:50  Checking file test.bam 
+bpipe.Dependencies	[15]	INFO	|10:47:50  Checking file test.bam 
+bpipe.ReportStatisticsListener	[16]	INFO	|10:47:50 Annotating stage start time hello 
+bpipe.ReportStatisticsListener	[15]	INFO	|10:47:50 Annotating stage start time hello 
+bpipe.PipelineStage	[16]	INFO	|10:47:50 Stage hello [chr2] : INPUT=test.bam OUTPUT=test.bam.chr2.hello 
+bpipe.PipelineStage	[15]	INFO	|10:47:50 Stage hello [chr1] : INPUT=test.bam OUTPUT=test.bam.chr1.hello 
+bpipe.PipelineDelegate	[16]	INFO	|10:47:50 Setting or creating a delegate for context 511300664 body 1833164616/script14177764704371868248678 in thread 16 
+bpipe.PipelineDelegate	[16]	INFO	|10:47:50 Created new delegate bpipe.PipelineDelegate@505bb829 overriding type script14177764704371868248678 in thread 16 
+bpipe.PipelineDelegate	[15]	INFO	|10:47:50 Setting or creating a delegate for context 899134710 body 1833164616/bpipe.PipelineDelegate in thread 15 
+bpipe.PipelineDelegate	[15]	INFO	|10:47:50 Existing delegate bpipe.PipelineDelegate@505bb829 has type bpipe.PipelineDelegate in thread 15. Setting new context 899134710 
+bpipe.PipelineInput	[16]	INFO	|10:47:50 Searching for missing Property: bam 
+bpipe.PipelineInput	[15]	INFO	|10:47:50 Searching for missing Property: bam 
+bpipe.PipelineInput	[15]	INFO	|10:47:50 Resolving inputs matching pattern ^.*\.bam$ 
+bpipe.PipelineInput	[16]	INFO	|10:47:50 Resolving inputs matching pattern ^.*\.bam$ 
+bpipe.PipelineInput	[15]	INFO	|10:47:50 Checking outputs [test.bam] 
+bpipe.PipelineInput	[16]	INFO	|10:47:50 Checking outputs [test.bam] 
+bpipe.PipelineInput	[16]	INFO	|10:47:50 Found files with exts [bam$] : [[test.bam]] 
+bpipe.PipelineInput	[15]	INFO	|10:47:50 Found files with exts [bam$] : [[test.bam]] 
+bpipe.PipelineInput	[16]	INFO	|10:47:50 Adding resolved input test.bam 
+bpipe.PipelineInput	[15]	INFO	|10:47:50 Adding resolved input test.bam 
+bpipe.PipelineContext	[16]	INFO	|10:47:50 Using non-default output due to input property reference: test.bam from resolved inputs [test.bam] 
+bpipe.PipelineContext	[15]	INFO	|10:47:50 Using non-default output due to input property reference: test.bam from resolved inputs [test.bam] 
+bpipe.PipelineOutput	[16]	INFO	|10:47:50 Replacing bam\.hello with hello.bam 
+bpipe.PipelineOutput	[15]	INFO	|10:47:50 Replacing bam\.hello with hello.bam 
+bpipe.PipelineContext	[16]	INFO	|10:47:50 Tracking outputs referenced=[[]] inferred=[[test.chr2.hello.bam]] for command cp test.bam test.chr2.hello.bam 
+bpipe.PipelineContext	[15]	INFO	|10:47:50 Tracking outputs referenced=[[]] inferred=[[test.chr1.hello.bam]] for command cp test.bam test.chr1.hello.bam 
+bpipe.ReportStatisticsListener	[16]	INFO	|10:47:50 Intercepted command check for command cp test.bam test.chr2.hello.bam 
+bpipe.PipelineContext	[16]	INFO	|10:47:50 Checking actual resolved inputs [test.bam] 
+bpipe.ReportStatisticsListener	[15]	INFO	|10:47:50 Intercepted command check for command cp test.bam test.chr1.hello.bam 
+bpipe.PipelineContext	[15]	INFO	|10:47:50 Checking actual resolved inputs [test.bam] 
+bpipe.Utils	[16]	INFO	|10:47:50 ===== Check test.chr2.hello.bam ===== 
+bpipe.Utils	[15]	INFO	|10:47:50 ===== Check test.chr1.hello.bam ===== 
+bpipe.Utils	[16]	INFO	|10:47:50 file doesn't exist: test.chr2.hello.bam 
+bpipe.Utils	[15]	INFO	|10:47:50 file doesn't exist: test.chr1.hello.bam 
+bpipe.Dependencies	[16]	INFO	|10:47:50 Found these missing / older files: [test.chr2.hello.bam] 
+bpipe.Dependencies	[15]	INFO	|10:47:50 Found these missing / older files: [test.chr1.hello.bam] 
+bpipe.Dependencies	[16]	INFO	|10:47:50 Some files are outdated : [test.chr2.hello.bam] 
+bpipe.Dependencies	[15]	INFO	|10:47:50 Some files are outdated : [test.chr1.hello.bam] 
+bpipe.Command	[16]	INFO	|10:47:50 Checking for configuration for command cp 
+bpipe.Command	[15]	INFO	|10:47:50 Checking for configuration for command cp 
+bpipe.Command	[16]	INFO	|10:47:50 Default command properties: [executor:local] 
+bpipe.Command	[15]	INFO	|10:47:50 Default command properties: [executor:local] 
+bpipe.CommandManager	[16]	INFO	|10:47:50 Using config [executor:local] for command 
+bpipe.CommandManager	[15]	INFO	|10:47:50 Using config [executor:local] for command 
+bpipe.CommandManager	[16]	INFO	|10:47:50 Created bpipe command id 1 
+bpipe.CommandManager	[15]	INFO	|10:47:50 Created bpipe command id 2 
+bpipe.Concurrency	[16]	INFO	|10:47:50 Thread Thread-7 requesting for 1 concurrency permit(s) type threads with 32 available 
+bpipe.Concurrency	[15]	INFO	|10:47:50 Thread Thread-6 requesting for 1 concurrency permit(s) type threads with 32 available 
+bpipe.Concurrency	[16]	INFO	|10:47:50 Thread Thread-7 acquired resource threads in amount 1 
+bpipe.Concurrency	[15]	INFO	|10:47:50 Thread Thread-6 acquired resource threads in amount 1 
+bpipe.Command	[17]	INFO	|10:47:51 Command 1 changing state from null to RUNNING 
+bpipe.Command	[18]	INFO	|10:47:51 Command 2 changing state from null to RUNNING 
+bpipe.executor.ThrottledDelegatingCommandExecutor	[15]	INFO	|10:47:51 Waiting for command to complete before releasing 1 resources 
+bpipe.executor.ThrottledDelegatingCommandExecutor	[16]	INFO	|10:47:51 Waiting for command to complete before releasing 1 resources 
+bpipe.Command	[15]	INFO	|10:47:51 Command 2 changing state from RUNNING to COMPLETE 
+bpipe.Command	[16]	INFO	|10:47:51 Command 1 changing state from RUNNING to COMPLETE 
+bpipe.executor.ThrottledDelegatingCommandExecutor	[15]	INFO	|10:47:51 Releasing 1 resources 
+bpipe.executor.ThrottledDelegatingCommandExecutor	[16]	INFO	|10:47:51 Releasing 1 resources 
+bpipe.Concurrency	[15]	INFO	|10:47:51 Thread Thread-6 releasing 1 threads 
+bpipe.Concurrency	[16]	INFO	|10:47:51 Thread Thread-7 releasing 1 threads 
+bpipe.executor.ThrottledDelegatingCommandExecutor	[15]	INFO	|10:47:51 Released 1 resources 
+bpipe.executor.ThrottledDelegatingCommandExecutor	[16]	INFO	|10:47:51 Released 1 resources 
+bpipe.PipelineStage	[15]	INFO	|10:47:51 Stage hello [chr1] returned null as default inputs for next stage 
+bpipe.PipelineStage	[16]	INFO	|10:47:51 Stage hello [chr2] returned null as default inputs for next stage 
+bpipe.PipelineStage	[16]	INFO	|10:47:51 Using inferred outputs [test.chr2.hello.bam] as outputs because no explicit outputs set 
+bpipe.PipelineStage	[15]	INFO	|10:47:51 Using inferred outputs [test.chr1.hello.bam] as outputs because no explicit outputs set 
+bpipe.PipelineStage	[16]	INFO	|10:47:51 Inferring nextInputs from explicit output as [test.chr2.hello.bam] 
+bpipe.PipelineStage	[15]	INFO	|10:47:51 Inferring nextInputs from explicit output as [test.chr1.hello.bam] 
+bpipe.PipelineStage	[16]	INFO	|10:47:51 Setting next inputs [test.chr2.hello.bam] on stage 1090622034, context 511300664 in thread 16 
+bpipe.PipelineStage	[15]	INFO	|10:47:51 Setting next inputs [test.chr1.hello.bam] on stage 1311598293, context 899134710 in thread 15 
+bpipe.Dependencies	[16]	INFO	|10:47:51 Context 511300664 for stage hello has resolved inputs [test.bam] 
+bpipe.Dependencies	[16]	INFO	|10:47:51 Saving output file details to file .bpipe/outputs/hello.test.chr2.hello.bam.properties for command cp test.bam test.chr... 
+bpipe.ReportStatisticsListener	[16]	INFO	|10:47:51 Annotating stage end time hello 
+bpipe.PipelineStage	[16]	INFO	|10:47:51 Checking files: [test.chr2.hello.bam] 
+bpipe.Dependencies	[16]	INFO	|10:47:51 Checking output (s) [test.chr2.hello.bam] 
+bpipe.Dependencies	[15]	INFO	|10:47:51 Context 899134710 for stage hello has resolved inputs [test.bam] 
+bpipe.Dependencies	[15]	INFO	|10:47:51 Saving output file details to file .bpipe/outputs/hello.test.chr1.hello.bam.properties for command cp test.bam test.chr... 
+bpipe.Dependencies	[16]	INFO	|10:47:51  Checking file test.chr2.hello.bam 
+bpipe.ReportStatisticsListener	[15]	INFO	|10:47:51 Annotating stage end time hello 
+bpipe.Pipeline	[16]	INFO	|10:47:51 Pipeline segment chr2 in thread 16 has finished normally 
+bpipe.PipelineStage	[15]	INFO	|10:47:51 Checking files: [test.chr1.hello.bam] 
+bpipe.Pipeline	[16]	INFO	|10:47:51 Finished running segment for inputs test.bam 
+bpipe.Dependencies	[15]	INFO	|10:47:51 Checking output (s) [test.chr1.hello.bam] 
+bpipe.Dependencies	[15]	INFO	|10:47:51  Checking file test.chr1.hello.bam 
+bpipe.Pipeline	[15]	INFO	|10:47:51 Pipeline segment chr1 in thread 15 has finished normally 
+bpipe.Pipeline	[15]	INFO	|10:47:51 Finished running segment for inputs test.bam 
+bpipe.Concurrency	[16]	INFO	|10:47:51 Decremented running count to 1 in thread Thread-7 
+bpipe.Concurrency	[15]	INFO	|10:47:51 Decremented running count to 0 in thread Thread-6 
+bpipe.PipelineCategory	[1]	INFO	|10:47:51 Parent pipeline of concurent sections [157378300, 1504718643] is 198598137 
+bpipe.PipelineCategory	[1]	INFO	|10:47:51 Maximum child stage list length = 2 
+bpipe.PipelineCategory	[1]	INFO	|10:47:51 ###### Merging results of parallel split in parent branch  ##### 
+bpipe.PipelineCategory	[1]	INFO	|10:47:51 Grouping stages at index 0 [Nested pipeline segment: bpipe.Chr@3e79c17b, Nested pipeline segment: bpipe.Chr@2b8d9248] for merging 
+bpipe.PipelineCategory	[1]	INFO	|10:47:51 Merged outputs are [test.bam] 
+bpipe.PipelineContext	[1]	INFO	|10:47:51 Setting output [test.bam] on context 1163365003 in thread 1 
+bpipe.PipelineCategory	[1]	INFO	|10:47:51 Merged outputs are [test.bam] 
+bpipe.PipelineContext	[1]	INFO	|10:47:51 Setting output [test.bam] on context 1980497030 in thread 1 
+bpipe.PipelineCategory	[1]	INFO	|10:47:51 Grouping stages at index 1 [hello, hello] for merging 
+bpipe.PipelineCategory	[1]	INFO	|10:47:51 Parallel segment 1 contains 2 identical hello stages - Merging outputs to single stage 
+bpipe.PipelineCategory	[1]	INFO	|10:47:51 Merged outputs are [test.chr1.hello.bam, test.chr2.hello.bam] 
+bpipe.PipelineContext	[1]	INFO	|10:47:51 Setting output [test.chr1.hello.bam, test.chr2.hello.bam] on context 217054710 in thread 1 
+bpipe.PipelineCategory	[1]	INFO	|10:47:51 There are 2 stages from nested pipelines 
+bpipe.PipelineCategory	[1]	INFO	|10:47:51 There [bpipe.PipelineStage@4e2d66d5, bpipe.PipelineStage@41019252] parallel paths in final stage 
+bpipe.PipelineCategory	[1]	INFO	|10:47:51 Last merged outputs are [test.chr1.hello.bam, test.chr2.hello.bam] 
+bpipe.PipelineContext	[1]	INFO	|10:47:51 Setting output [test.chr1.hello.bam, test.chr2.hello.bam] on context 554279358 in thread 1 
+bpipe.PipelineCategory	[1]	INFO	|10:47:51 Merged stage name is hello_bpipe_merge 
+bpipe.PipelineContext	[1]	INFO	|10:47:51 Setting output [test.chr1.hello.bam, test.chr2.hello.bam] on context 487273573 in thread 1 
+bpipe.PipelineStage	[1]	INFO	|10:47:51 Setting next inputs [test.chr1.hello.bam, test.chr2.hello.bam] on stage 525091939, context 487273573 in thread 1 
+bpipe.PipelineStage	[1]	INFO	|10:47:51 Checking files: [test.chr1.hello.bam, test.chr2.hello.bam] 
+bpipe.Dependencies	[1]	INFO	|10:47:51 Checking output (s) [test.chr1.hello.bam, test.chr2.hello.bam] 
+bpipe.Dependencies	[1]	INFO	|10:47:51  Checking file test.chr1.hello.bam 
+bpipe.Dependencies	[1]	INFO	|10:47:51  Checking file test.chr2.hello.bam 
+bpipe.Pipeline	[1]	INFO	|10:47:51 Pipeline segment  in thread 1 has finished normally 
+bpipe.Pipeline	[1]	INFO	|10:47:51 Finished running segment for inputs test.bam 
+bpipe.Pipeline	[1]	INFO	|10:47:51 adding stage Nested pipeline segment: bpipe.Chr@3e79c17b from pipeline bpipe.Pipeline@96166fc 
+bpipe.Pipeline	[1]	INFO	|10:47:51 adding stage hello from pipeline bpipe.Pipeline@96166fc 
+bpipe.Pipeline	[1]	INFO	|10:47:51 adding stage Nested pipeline segment: bpipe.Chr@2b8d9248 from pipeline bpipe.Pipeline@59b02f33 
+bpipe.Pipeline	[1]	INFO	|10:47:51 adding stage hello from pipeline bpipe.Pipeline@59b02f33 
+bpipe.Dependencies	[26]	INFO	|10:47:51 Reading property file .bpipe/outputs/hello.test.chr2.hello.bam.properties 
+bpipe.Dependencies	[25]	INFO	|10:47:51 Reading property file .bpipe/outputs/hello.test.chr1.hello.bam.properties 
+bpipe.Utils	[1]	INFO	|10:47:51 Output folder scan (concurrency=5) executed in 0.037 seconds 
+bpipe.Dependencies	[1]	INFO	|10:47:51 External inputs: [[test.bam], [test.bam]] for outputs [test.chr1.hello.bam, test.chr2.hello.bam] 
+bpipe.Dependencies	[1]	INFO	|10:47:51 There are 1 output groups 
+bpipe.Dependencies	[1]	INFO	|10:47:51 Subtracting 2 remaining outputs from 2 total outputs 
+bpipe.Dependencies	[1]	INFO	|10:47:51 There are 0 remaining outputs 
+bpipe.Dependencies	[1]	INFO	|10:47:51  test.chr1.hello.bam / entry 486668225 - 
+bpipe.Dependencies	[1]	INFO	|10:47:51 test.chr1.hello.bam is newer than input files 
+bpipe.Dependencies	[1]	INFO	|10:47:51  test.chr2.hello.bam / entry 486668225 - 
+bpipe.Dependencies	[1]	INFO	|10:47:51 test.chr2.hello.bam is newer than input files 
+bpipe.Dependencies	[1]	INFO	|10:47:51 ====Finished Output Graph===== 
+bpipe.ReportGenerator	[1]	INFO	|10:47:51 Searching for template in /lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/src/main/html/bpipe 
+bpipe.ReportGenerator	[1]	INFO	|10:47:51 Generating report to /lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/per_chromosome_pure_input_output_ext/doc/index.html 
+bpipe.PipelineContext	[1]	INFO	|10:47:51 Using previously set output: [test.chr1.hello.bam] 
+bpipe.PipelineContext	[1]	INFO	|10:47:51 Using previously set output: [test.chr1.hello.bam] 
+bpipe.PipelineContext	[1]	INFO	|10:47:52 Using previously set output: [test.chr1.hello.bam] 
+bpipe.PipelineContext	[1]	INFO	|10:47:52 Using previously set output: [test.chr2.hello.bam] 
+bpipe.PipelineContext	[1]	INFO	|10:47:52 Using previously set output: [test.chr2.hello.bam] 
+bpipe.PipelineContext	[1]	INFO	|10:47:52 Using previously set output: [test.chr2.hello.bam] 
+bpipe.Dependencies	[28]	INFO	|10:47:52 Reading property file .bpipe/outputs/hello.test.chr2.hello.bam.properties 
+bpipe.Dependencies	[27]	INFO	|10:47:52 Reading property file .bpipe/outputs/hello.test.chr1.hello.bam.properties 
+bpipe.Utils	[1]	INFO	|10:47:52 Output folder scan (concurrency=5) executed in 0.005 seconds 
+bpipe.Dependencies	[1]	INFO	|10:47:52 External inputs: [[test.bam], [test.bam]] for outputs [test.chr1.hello.bam, test.chr2.hello.bam] 
+bpipe.Dependencies	[1]	INFO	|10:47:52 There are 1 output groups 
+bpipe.Dependencies	[1]	INFO	|10:47:52 Subtracting 2 remaining outputs from 2 total outputs 
+bpipe.Dependencies	[1]	INFO	|10:47:52 There are 0 remaining outputs 
+bpipe.Dependencies	[1]	INFO	|10:47:52  test.chr1.hello.bam / entry 452844013 - 
+bpipe.Dependencies	[1]	INFO	|10:47:52 test.chr1.hello.bam is newer than input files 
+bpipe.Dependencies	[1]	INFO	|10:47:52  test.chr2.hello.bam / entry 452844013 - 
+bpipe.Dependencies	[1]	INFO	|10:47:52 test.chr2.hello.bam is newer than input files 
+bpipe.Dependencies	[1]	INFO	|10:47:52 ====Finished Output Graph===== 
+bpipe.Pipeline	[1]	INFO	|10:47:52 Outputs are: 
+		test.chr1.hello.bam
+		test.chr2.hello.bam 
+bpipe.Runner	[9]	INFO	|10:47:52 Deleting job file /nfs/users/nfs_c/cgppipe/.bpipedb/jobs/485 

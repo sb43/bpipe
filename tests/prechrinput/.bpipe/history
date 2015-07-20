@@ -1,0 +1,1 @@
+31419	bpipe run -r test.groovy test.chr10.txt test.chr11.txt test.chr12.txt test.chr1.txt test.chr2.txt test.chr3.txt

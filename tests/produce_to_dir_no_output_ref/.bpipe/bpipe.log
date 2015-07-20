@@ -1,0 +1,94 @@
+bpipe.Runner	[1]	INFO	|10:41:06 Starting 
+bpipe.Runner	[1]	INFO	|10:41:06 OS: Linux (2.6.32-44-server) Java: 1.7.0_25 Vendor: Oracle Corporation 
+bpipe.Runner	[1]	INFO	|10:41:06 Initializing plugins ... 
+bpipe.Config	[1]	INFO	|10:41:06 No plugins directory found: /lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/produce_to_dir_no_output_ref/.bpipe/plugins 
+bpipe.Runner	[1]	INFO	|10:41:06 Reading user config ...  
+bpipe.Config	[1]	INFO	|10:41:06 No configuration file found in same dir as pipeline file 
+bpipe.Config	[1]	INFO	|10:41:06 No local configuration file found 
+bpipe.Utils	[10]	INFO	|10:41:07 Read config from /nfs/users/nfs_c/cgppipe/canpipe/software/bpipe_git/tests/produce_to_dir_no_output_ref/../../bin/../src/main/config/bpipe.config executed in 0.327 seconds 
+bpipe.Utils	[1]	INFO	|10:41:07 Read user config executed in 0.556 seconds 
+bpipe.Runner	[1]	INFO	|10:41:07 Loading tool database ...  
+bpipe.Runner	[1]	INFO	|10:41:07 No CLI parameters specified 
+bpipe.Concurrency	[13]	INFO	|10:41:07 Creating thread pool with 32 threads to execute parallel pipelines 
+bpipe.ToolDatabase	[11]	INFO	|10:41:07 Loading tool database from user configuration 
+bpipe.Tool	[11]	INFO	|10:41:07 Configured meta data about tool samtools 
+bpipe.Tool	[11]	INFO	|10:41:07 Configured meta data about tool bwa 
+bpipe.Tool	[11]	INFO	|10:41:07 Configured meta data about tool bowtie 
+bpipe.Tool	[11]	INFO	|10:41:07 Configured meta data about tool fastqc 
+bpipe.Tool	[11]	INFO	|10:41:07 Configured meta data about tool coverageBed 
+bpipe.Tool	[11]	INFO	|10:41:07 Configured meta data about tool fastx_clipper 
+bpipe.Tool	[11]	INFO	|10:41:07 Configured meta data about tool convert2annovar.pl 
+bpipe.Tool	[11]	INFO	|10:41:07 Configured meta data about tool summarize_annovar.pl 
+bpipe.Tool	[11]	INFO	|10:41:07 Configured meta data about tool bowtie2 
+bpipe.Tool	[11]	INFO	|10:41:07 Configured meta data about tool GenomeAnalysisTK 
+bpipe.Tool	[11]	INFO	|10:41:07 Configured meta data about tool MarkDuplicates 
+bpipe.Tool	[11]	INFO	|10:41:07 Configured meta data about tool signalp 
+bpipe.Tool	[11]	INFO	|10:41:07 Configured meta data about tool variant_effect_predictor.pl 
+bpipe.Tool	[11]	INFO	|10:41:07 Configured meta data about tool igvtools 
+bpipe.Tool	[11]	INFO	|10:41:07 Configured meta data about tool ls 
+bpipe.Runner	[1]	INFO	|10:41:07 Parsing script ...  
+bpipe.Runner	[1]	INFO	|10:41:07 Run ...  
+bpipe.Pipeline	[1]	INFO	|10:41:07 Running with input [test.txt] 
+bpipe.PipelineCategory	[1]	INFO	|10:41:07 Found closure variable hello 
+bpipe.Pipeline	[1]	WARNING	|10:41:07 Pipeline folder /nfs/users/nfs_c/cgppipe/bpipes could not be found 
+bpipe.Pipeline	[1]	INFO	|10:41:07 Loaded external reference: args 
+bpipe.Pipeline	[1]	INFO	|10:41:07 External reference args is overridden by local reference 
+bpipe.Pipeline	[1]	INFO	|10:41:07 Loaded external reference: hello 
+bpipe.Pipeline	[1]	INFO	|10:41:07 External reference hello is overridden by local reference 
+bpipe.Pipeline	[1]	INFO	|10:41:07 Running segment with inputs test.txt 
+bpipe.Dependencies	[1]	INFO	|10:41:07 Checking input (s) test.txt 
+bpipe.Dependencies	[15]	INFO	|10:41:07 Reading property file .bpipe/outputs/hello.testoutput_hello1.txt.properties 
+bpipe.Utils	[1]	INFO	|10:41:07 Output folder scan (concurrency=5) executed in 0.025 seconds 
+bpipe.Dependencies	[1]	INFO	|10:41:07 External inputs: [[test.txt]] for outputs [testoutput/hello1.txt] 
+bpipe.Dependencies	[1]	INFO	|10:41:07 There are 1 output groups 
+bpipe.Dependencies	[1]	INFO	|10:41:07 Subtracting 1 remaining outputs from 1 total outputs 
+bpipe.Dependencies	[1]	INFO	|10:41:07 There are 0 remaining outputs 
+bpipe.Dependencies	[1]	INFO	|10:41:07  testoutput/hello1.txt / entry 4041732 - 
+bpipe.Dependencies	[1]	INFO	|10:41:07 testoutput/hello1.txt is newer than input files 
+bpipe.Dependencies	[1]	INFO	|10:41:07 ====Finished Output Graph===== 
+bpipe.Dependencies	[1]	INFO	|10:41:07  Checking file test.txt 
+bpipe.PipelineStage	[1]	INFO	|10:41:07 Stage hello : INPUT=test.txt OUTPUT=testoutput/test.txt.hello 
+bpipe.PipelineDelegate	[1]	INFO	|10:41:07 Setting or creating a delegate for context 45077766 body 57319025/script1417776067314609131612 in thread 1 
+bpipe.PipelineDelegate	[1]	INFO	|10:41:07 Created new delegate bpipe.PipelineDelegate@989b0fd overriding type script1417776067314609131612 in thread 1 
+bpipe.PipelineContext	[1]	INFO	|10:41:07 Producing [hello1.txt] from bpipe.PipelineContext@2afd506 
+bpipe.PipelineDelegate	[1]	INFO	|10:41:07 Setting or creating a delegate for context 45077766 body 598218837/script1417776067314609131612$_run_closure1 in thread 1 
+bpipe.PipelineDelegate	[1]	INFO	|10:41:07 Created new delegate bpipe.PipelineDelegate@5280da83 overriding type script1417776067314609131612$_run_closure1 in thread 1 
+bpipe.PipelineContext	[1]	INFO	|10:41:07 Probing command using inputs test.txt 
+bpipe.PipelineInput	[1]	INFO	|10:41:07 Searching for missing Property: txt 
+bpipe.PipelineInput	[1]	INFO	|10:41:07 Resolving inputs matching pattern ^.*\.txt$ 
+bpipe.PipelineInput	[1]	INFO	|10:41:07 Checking outputs [test.txt] 
+bpipe.PipelineInput	[1]	INFO	|10:41:07 Found files with exts [txt$] : [[test.txt]] 
+bpipe.PipelineInput	[1]	INFO	|10:41:07 Adding resolved input test.txt 
+bpipe.PipelineContext	[1]	INFO	|10:41:07 Using previously set output: [testoutput/hello1.txt] 
+bpipe.PipelineContext	[1]	INFO	|10:41:07 Tracking outputs referenced=[[]] inferred=[[testoutput/hello1.txt]] for command 
+            cp test.txt /lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/produce_to_dir_no_output_ref/testoutput/hello1.txt
+         
+bpipe.PipelineContext	[1]	INFO	|10:41:07 Checking actual resolved inputs [test.txt] 
+bpipe.PipelineContext	[1]	INFO	|10:41:07 Finished probe 
+bpipe.Utils	[1]	INFO	|10:41:07 ===== Check testoutput/hello1.txt ===== 
+bpipe.Utils	[1]	INFO	|10:41:07 Checking testoutput/hello1.txt against inputs [test.txt] 
+bpipe.Utils	[1]	INFO	|10:41:07 Check test.txt : 1416995053000 >  testoutput/hello1.txt : 1417776064000 
+bpipe.Utils	[1]	INFO	|10:41:07 ===== Check testoutput/hello1.txt ===== 
+bpipe.Utils	[1]	INFO	|10:41:07 Checking testoutput/hello1.txt against inputs [test.txt] 
+bpipe.Utils	[1]	INFO	|10:41:07 Check test.txt : 1416995053000 >  testoutput/hello1.txt : 1417776064000 
+bpipe.Dependencies	[1]	INFO	|10:41:07 No missing / older files from inputs: [testoutput/hello1.txt, testoutput/hello1.txt] are up to date 
+bpipe.PipelineContext	[1]	INFO	|10:41:07 Skipping produce body 
+bpipe.PipelineContext	[1]	INFO	|10:41:07 Adding outputs [testoutput/hello1.txt] as a result of produce 
+bpipe.PipelineStage	[1]	INFO	|10:41:07 Stage hello returned null as default inputs for next stage 
+bpipe.PipelineStage	[1]	INFO	|10:41:07 Inferring nextInputs from explicit output as [testoutput/hello1.txt] 
+bpipe.PipelineStage	[1]	INFO	|10:41:07 Setting next inputs [testoutput/hello1.txt] on stage 892446975, context 45077766 in thread 1 
+bpipe.PipelineStage	[1]	INFO	|10:41:07 Checking files: [testoutput/hello1.txt] 
+bpipe.Dependencies	[1]	INFO	|10:41:07 Checking output (s) [testoutput/hello1.txt] 
+bpipe.Dependencies	[1]	INFO	|10:41:07  Checking file testoutput/hello1.txt 
+bpipe.Pipeline	[1]	INFO	|10:41:07 Pipeline segment  in thread 1 has finished normally 
+bpipe.Pipeline	[1]	INFO	|10:41:07 Finished running segment for inputs test.txt 
+bpipe.Dependencies	[16]	INFO	|10:41:07 Reading property file .bpipe/outputs/hello.testoutput_hello1.txt.properties 
+bpipe.Utils	[1]	INFO	|10:41:07 Output folder scan (concurrency=5) executed in 0.007 seconds 
+bpipe.Dependencies	[1]	INFO	|10:41:07 External inputs: [[test.txt]] for outputs [testoutput/hello1.txt] 
+bpipe.Dependencies	[1]	INFO	|10:41:07 There are 1 output groups 
+bpipe.Dependencies	[1]	INFO	|10:41:07 Subtracting 1 remaining outputs from 1 total outputs 
+bpipe.Dependencies	[1]	INFO	|10:41:07 There are 0 remaining outputs 
+bpipe.Dependencies	[1]	INFO	|10:41:07  testoutput/hello1.txt / entry 76409034  
+bpipe.Dependencies	[1]	INFO	|10:41:07 testoutput/hello1.txt is newer than input files 
+bpipe.Dependencies	[1]	INFO	|10:41:07 ====Finished Output Graph===== 
+bpipe.Pipeline	[1]	INFO	|10:41:07 Output is testoutput/hello1.txt (pre-existing) 

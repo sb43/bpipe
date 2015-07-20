@@ -1,0 +1,18 @@
+
+####################################################################################################
+# Starting pipeline at Wed Nov 26 10:28:25 GMT 2014
+# Input files:  null
+# Output Log:  .bpipe/logs/21928.log
+# Stage hello
+Echo param foobar=froggledoggle
+# ################ Finished at Wed Nov 26 10:28:25 GMT 2014 Duration = 0.651 seconds #################
+
+
+####################################################################################################
+# Starting pipeline at Fri Dec 05 10:40:38 GMT 2014
+# Input files:  null
+# Output Log:  .bpipe/logs/24228.log
+# Stage hello
+Echo param foobar=froggledoggle
+# ################ Finished at Fri Dec 05 10:40:39 GMT 2014 Duration = 0.585 seconds #################
+

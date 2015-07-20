@@ -1,0 +1,19 @@
+====================================================================================================
+|                              Starting Pipeline at 2014-12-05 10:42                               |
+====================================================================================================
+
+========================================= Stage test [14] ==========================================
+input bam is MUW09_C0R8HACXX_ATCACG_L001_R1.fastq.merge.dedupe.merge.reorder.rg.recal.chr14.realign.bam => MUW09_C0R8HACXX_ATCACG_L001_R1.fastq.merge.dedupe.merge.reorder.rg.recal.chr14.realign.test.bam
+Pipeline failed! (2) 
+
+Expected output file MUW09_C0R8HACXX_ATCACG_L001_R1.fastq.merge.dedupe.merge.reorder.rg.recal.chr14.realign.test.bam could not be found
+
+Pipeline failed! (2) 
+
+One or more parallel stages aborted. The following messages were reported: 
+
+Expected output file MUW09_C0R8HACXX_ATCACG_L001_R1.fastq.merge.dedupe.merge.reorder.rg.recal.chr14.realign.test.bam could not be found
+
+
+======================================== Pipeline Finished =========================================
+MSG: Generated report /lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/outputextsame/doc/index.html

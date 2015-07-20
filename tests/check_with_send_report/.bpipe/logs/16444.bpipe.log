@@ -1,0 +1,303 @@
+bpipe.Runner	[1]	INFO	|10:35:58 Starting 
+bpipe.Runner	[1]	INFO	|10:35:58 OS: Linux (2.6.32-44-server) Java: 1.7.0_25 Vendor: Oracle Corporation 
+bpipe.Runner	[1]	INFO	|10:35:58 Initializing plugins ... 
+bpipe.Config	[1]	INFO	|10:35:58 No plugins directory found: /lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/check_with_send_report/.bpipe/plugins 
+bpipe.Runner	[1]	INFO	|10:35:58 Reading user config ...  
+bpipe.Config	[1]	INFO	|10:35:58 No configuration file found in same dir as pipeline file 
+bpipe.Config	[1]	INFO	|10:35:58 No local configuration file found 
+bpipe.Utils	[10]	INFO	|10:35:58 Read config from /nfs/users/nfs_c/cgppipe/canpipe/software/bpipe_git/tests/check_with_send_report/../../bin/../src/main/config/bpipe.config executed in 0.324 seconds 
+bpipe.Utils	[1]	INFO	|10:35:58 Read user config executed in 0.550 seconds 
+bpipe.Runner	[1]	INFO	|10:35:58 Loading tool database ...  
+bpipe.ToolDatabase	[11]	INFO	|10:35:58 Loading tool database from user configuration 
+bpipe.NotificationManager	[14]	INFO	|10:35:58 Configuring notifications 
+bpipe.Concurrency	[13]	INFO	|10:35:58 Creating thread pool with 32 threads to execute parallel pipelines 
+bpipe.NotificationManager	[14]	INFO	|10:35:58 Trying class name file for notification channel file 
+bpipe.Tool	[11]	INFO	|10:35:58 Configured meta data about tool samtools 
+bpipe.Tool	[11]	INFO	|10:35:58 Configured meta data about tool bwa 
+bpipe.Tool	[11]	INFO	|10:35:58 Configured meta data about tool bowtie 
+bpipe.Tool	[11]	INFO	|10:35:58 Configured meta data about tool fastqc 
+bpipe.Tool	[11]	INFO	|10:35:58 Configured meta data about tool coverageBed 
+bpipe.Tool	[11]	INFO	|10:35:58 Configured meta data about tool fastx_clipper 
+bpipe.Tool	[11]	INFO	|10:35:58 Configured meta data about tool convert2annovar.pl 
+bpipe.Tool	[11]	INFO	|10:35:58 Configured meta data about tool summarize_annovar.pl 
+bpipe.Tool	[11]	INFO	|10:35:58 Configured meta data about tool bowtie2 
+bpipe.Tool	[11]	INFO	|10:35:58 Configured meta data about tool GenomeAnalysisTK 
+bpipe.Tool	[11]	INFO	|10:35:58 Configured meta data about tool MarkDuplicates 
+bpipe.Tool	[11]	INFO	|10:35:58 Configured meta data about tool signalp 
+bpipe.Tool	[11]	INFO	|10:35:58 Configured meta data about tool variant_effect_predictor.pl 
+bpipe.Tool	[11]	INFO	|10:35:58 Configured meta data about tool igvtools 
+bpipe.Tool	[11]	INFO	|10:35:58 Configured meta data about tool ls 
+bpipe.Runner	[1]	INFO	|10:35:58 No CLI parameters specified 
+bpipe.NotificationManager	[14]	INFO	|10:35:58 Unable to create notification channel using class file: java.lang.ClassNotFoundException: file 
+bpipe.NotificationManager	[14]	INFO	|10:35:58 Trying class name bpipe.FILENotificationChannel for notification channel file 
+bpipe.NotificationManager	[14]	INFO	|10:35:58 Unable to create notification channel using class bpipe.FILENotificationChannel: java.lang.ClassNotFoundException: bpipe.FILENotificationChannel 
+bpipe.NotificationManager	[14]	INFO	|10:35:58 Trying class name bpipe.file for notification channel file 
+bpipe.NotificationManager	[14]	INFO	|10:35:58 Unable to create notification channel using class bpipe.file: java.lang.ClassNotFoundException: bpipe.file 
+bpipe.NotificationManager	[14]	INFO	|10:35:58 Trying class name bpipe.FileNotificationChannel for notification channel file 
+bpipe.NotificationManager	[14]	INFO	|10:35:58 Successfully created notification channel using class bpipe.FileNotificationChannel 
+bpipe.Runner	[1]	INFO	|10:35:58 Parsing script ...  
+bpipe.Runner	[1]	INFO	|10:35:58 Run ...  
+bpipe.Pipeline	[1]	INFO	|10:35:59 Running with input [test.txt] 
+bpipe.PipelineCategory	[1]	INFO	|10:35:59 Found closure variable hello 
+bpipe.PipelineCategory	[1]	INFO	|10:35:59 Found closure variable world 
+bpipe.PipelineCategory	[1]	INFO	|10:35:59 Found closure variable send_report 
+bpipe.Pipeline	[1]	WARNING	|10:35:59 Pipeline folder /nfs/users/nfs_c/cgppipe/bpipes could not be found 
+bpipe.Pipeline	[1]	INFO	|10:35:59 Loaded external reference: args 
+bpipe.Pipeline	[1]	INFO	|10:35:59 External reference args is overridden by local reference 
+bpipe.Pipeline	[1]	INFO	|10:35:59 Loaded external reference: hello 
+bpipe.Pipeline	[1]	INFO	|10:35:59 External reference hello is overridden by local reference 
+bpipe.Pipeline	[1]	INFO	|10:35:59 Loaded external reference: world 
+bpipe.Pipeline	[1]	INFO	|10:35:59 External reference world is overridden by local reference 
+bpipe.Pipeline	[1]	INFO	|10:35:59 Loaded external reference: send_report 
+bpipe.Pipeline	[1]	INFO	|10:35:59 External reference send_report is overridden by local reference 
+bpipe.Pipeline	[1]	INFO	|10:35:59 Running segment with inputs test.txt 
+bpipe.Dependencies	[1]	INFO	|10:35:59 Checking input (s) test.txt 
+bpipe.Utils	[1]	INFO	|10:35:59 Output folder scan (concurrency=5) executed in 0.003 seconds 
+bpipe.Dependencies	[1]	INFO	|10:35:59  Checking file test.txt 
+bpipe.PipelineDelegate	[1]	INFO	|10:35:59 Setting or creating a delegate for context 160037062 body 1093374990/java.lang.Class in thread 1 
+bpipe.PipelineDelegate	[1]	INFO	|10:35:59 Created new delegate bpipe.PipelineDelegate@57520c38 overriding type java.lang.Class in thread 1 
+bpipe.Dependencies	[1]	INFO	|10:35:59 Checking input (s) test.txt 
+bpipe.Dependencies	[1]	INFO	|10:35:59  Checking file test.txt 
+bpipe.PipelineDelegate	[1]	INFO	|10:35:59 Setting or creating a delegate for context 1265310324 body 1687542874/java.lang.Class in thread 1 
+bpipe.PipelineDelegate	[1]	INFO	|10:35:59 Created new delegate bpipe.PipelineDelegate@2ab5cc4d overriding type java.lang.Class in thread 1 
+bpipe.Dependencies	[1]	INFO	|10:35:59 Checking input (s) test.txt 
+bpipe.Dependencies	[1]	INFO	|10:35:59  Checking file test.txt 
+bpipe.ReportStatisticsListener	[1]	INFO	|10:35:59 Annotating stage start time hello 
+bpipe.PipelineStage	[1]	INFO	|10:35:59 Stage hello : INPUT=test.txt OUTPUT=test.txt.hello 
+bpipe.PipelineDelegate	[1]	INFO	|10:35:59 Setting or creating a delegate for context 1819573077 body 567932860/script1417775758924794904644 in thread 1 
+bpipe.PipelineDelegate	[1]	INFO	|10:35:59 Created new delegate bpipe.PipelineDelegate@534d4113 overriding type script1417775758924794904644 in thread 1 
+bpipe.Checker	[1]	INFO	|10:35:59 Evaluating otherwise clause for Check hello / null 
+bpipe.Checker	[1]	INFO	|10:35:59 Check name = null 
+bpipe.Checker	[1]	INFO	|10:35:59 Executing check: Check null for stage hello in branch all with status in file: .bpipe/checks/all.hello.properties 
+bpipe.PipelineContext	[1]	INFO	|10:35:59 Tracking outputs referenced=[[]] inferred=[[]] for command 
+            true
+         
+bpipe.ReportStatisticsListener	[1]	INFO	|10:35:59 Intercepted command check for command 
+            true
+         
+bpipe.PipelineContext	[1]	INFO	|10:35:59 Checking actual resolved inputs [] 
+bpipe.Command	[1]	INFO	|10:35:59 Checking for configuration for command true 
+bpipe.Command	[1]	INFO	|10:35:59 Default command properties: [executor:local] 
+bpipe.CommandManager	[1]	INFO	|10:35:59 Using config [executor:local] for command 
+bpipe.CommandManager	[1]	INFO	|10:35:59 Created bpipe command id 1 
+bpipe.Concurrency	[1]	INFO	|10:35:59 Thread main requesting for 1 concurrency permit(s) type threads with 32 available 
+bpipe.Concurrency	[1]	INFO	|10:35:59 Thread main acquired resource threads in amount 1 
+bpipe.Command	[15]	INFO	|10:35:59 Command 1 changing state from null to RUNNING 
+bpipe.executor.ThrottledDelegatingCommandExecutor	[1]	INFO	|10:35:59 Waiting for command to complete before releasing 1 resources 
+bpipe.Command	[1]	INFO	|10:35:59 Command 1 changing state from RUNNING to COMPLETE 
+bpipe.executor.ThrottledDelegatingCommandExecutor	[1]	INFO	|10:35:59 Releasing 1 resources 
+bpipe.Concurrency	[1]	INFO	|10:35:59 Thread main releasing 1 threads 
+bpipe.executor.ThrottledDelegatingCommandExecutor	[1]	INFO	|10:35:59 Released 1 resources 
+bpipe.PipelineContext	[1]	INFO	|10:35:59 Setting output null on context 1819573077 in thread 1 
+bpipe.PipelineStage	[1]	INFO	|10:35:59 Stage hello returned null as default inputs for next stage 
+bpipe.PipelineStage	[1]	INFO	|10:35:59 Removing inferred outputs matching [\.bai$, \.log$] 
+bpipe.PipelineStage	[1]	INFO	|10:35:59 Inferring nextInputs from inputs bpipe.PipelineContext@6c747b55.@input 
+bpipe.PipelineContext	[1]	INFO	|10:35:59 Setting output test.txt on context 1819573077 in thread 1 
+bpipe.PipelineStage	[1]	INFO	|10:35:59 Setting next inputs test.txt on stage 1081973189, context 1819573077 in thread 1 
+bpipe.ReportStatisticsListener	[1]	INFO	|10:35:59 Annotating stage end time hello 
+bpipe.PipelineStage	[1]	INFO	|10:35:59 Checking files: test.txt 
+bpipe.Dependencies	[1]	INFO	|10:35:59 Checking output (s) test.txt 
+bpipe.Dependencies	[1]	INFO	|10:35:59  Checking file test.txt 
+bpipe.Dependencies	[1]	INFO	|10:35:59 Checking input (s) test.txt 
+bpipe.Dependencies	[1]	INFO	|10:35:59  Checking file test.txt 
+bpipe.PipelineCategory	[1]	INFO	|10:35:59 Next inputs from stage = test.txt 
+bpipe.PipelineCategory	[1]	INFO	|10:35:59 Checking inputs for next stage:  test.txt 
+bpipe.Dependencies	[1]	INFO	|10:35:59 Checking input (s) test.txt 
+bpipe.Dependencies	[1]	INFO	|10:35:59  Checking file test.txt 
+bpipe.Dependencies	[1]	INFO	|10:35:59 Checking input (s) test.txt 
+bpipe.Dependencies	[1]	INFO	|10:35:59  Checking file test.txt 
+bpipe.ReportStatisticsListener	[1]	INFO	|10:35:59 Annotating stage start time world 
+bpipe.PipelineStage	[1]	INFO	|10:35:59 Stage world : INPUT=test.txt OUTPUT=test.txt.world 
+bpipe.PipelineDelegate	[1]	INFO	|10:35:59 Setting or creating a delegate for context 315435010 body 1830250752/script1417775758924794904644 in thread 1 
+bpipe.PipelineDelegate	[1]	INFO	|10:35:59 Created new delegate bpipe.PipelineDelegate@5afda4f2 overriding type script1417775758924794904644 in thread 1 
+bpipe.Checker	[1]	INFO	|10:35:59 Evaluating otherwise clause for Check world / null 
+bpipe.Checker	[1]	INFO	|10:35:59 Check name = null 
+bpipe.Checker	[1]	INFO	|10:35:59 Executing check: Check null for stage world in branch all with status in file: .bpipe/checks/all.world.properties 
+bpipe.PipelineInput	[1]	INFO	|10:35:59 Searching for missing Property: txt 
+bpipe.PipelineInput	[1]	INFO	|10:35:59 Resolving inputs matching pattern ^.*\.txt$ 
+bpipe.PipelineInput	[1]	INFO	|10:35:59 Checking outputs [test.txt] 
+bpipe.PipelineInput	[1]	INFO	|10:35:59 Found files with exts [txt$] : [[test.txt]] 
+bpipe.PipelineInput	[1]	INFO	|10:35:59 Adding resolved input test.txt 
+bpipe.PipelineContext	[1]	INFO	|10:35:59 Tracking outputs referenced=[[]] inferred=[[]] for command 
+            grep -q sdfsdffs test.txt
+         
+bpipe.ReportStatisticsListener	[1]	INFO	|10:35:59 Intercepted command check for command 
+            grep -q sdfsdffs test.txt
+         
+bpipe.PipelineContext	[1]	INFO	|10:35:59 Checking actual resolved inputs [test.txt] 
+bpipe.Utils	[1]	INFO	|10:35:59 ===== Check .bpipe/checks/all.world.properties ===== 
+bpipe.Utils	[1]	INFO	|10:35:59 file doesn't exist: .bpipe/checks/all.world.properties 
+bpipe.Dependencies	[1]	INFO	|10:35:59 Found these missing / older files: [.bpipe/checks/all.world.properties] 
+bpipe.Dependencies	[1]	INFO	|10:35:59 Some files are outdated : [all.world.properties] 
+bpipe.Command	[1]	INFO	|10:35:59 Checking for configuration for command grep 
+bpipe.Command	[1]	INFO	|10:35:59 Default command properties: [executor:local] 
+bpipe.CommandManager	[1]	INFO	|10:35:59 Using config [executor:local] for command 
+bpipe.CommandManager	[1]	INFO	|10:35:59 Created bpipe command id 2 
+bpipe.Concurrency	[1]	INFO	|10:35:59 Thread main requesting for 1 concurrency permit(s) type threads with 32 available 
+bpipe.Concurrency	[1]	INFO	|10:35:59 Thread main acquired resource threads in amount 1 
+bpipe.Command	[19]	INFO	|10:35:59 Command 2 changing state from null to RUNNING 
+bpipe.executor.ThrottledDelegatingCommandExecutor	[1]	INFO	|10:35:59 Waiting for command to complete before releasing 1 resources 
+bpipe.Command	[1]	INFO	|10:35:59 Command 2 changing state from RUNNING to COMPLETE 
+bpipe.executor.ThrottledDelegatingCommandExecutor	[1]	INFO	|10:35:59 Releasing 1 resources 
+bpipe.Concurrency	[1]	INFO	|10:35:59 Thread main releasing 1 threads 
+bpipe.executor.ThrottledDelegatingCommandExecutor	[1]	INFO	|10:35:59 Released 1 resources 
+bpipe.PipelineContext	[1]	INFO	|10:35:59 Setting output null on context 315435010 in thread 1 
+bpipe.Checker	[1]	INFO	|10:35:59 Check Check null for stage world in branch all was executed and failed (bpipe.CommandFailedException: Command failed with exit status = 1 : 
+
+grep -q sdfsdffs test.txt) 
+bpipe.PipelineStage	[1]	INFO	|10:35:59 Stage world returned null as default inputs for next stage 
+bpipe.PipelineStage	[1]	INFO	|10:35:59 Removing inferred outputs matching [\.bai$, \.log$] 
+bpipe.PipelineStage	[1]	INFO	|10:35:59 Inferring nextInputs from inputs bpipe.PipelineContext@12cd2802.@input 
+bpipe.PipelineContext	[1]	INFO	|10:35:59 Setting output test.txt on context 315435010 in thread 1 
+bpipe.PipelineStage	[1]	INFO	|10:35:59 Setting next inputs test.txt on stage 2045305690, context 315435010 in thread 1 
+bpipe.ReportStatisticsListener	[1]	INFO	|10:35:59 Annotating stage end time world 
+bpipe.PipelineStage	[1]	INFO	|10:35:59 Checking files: test.txt 
+bpipe.Dependencies	[1]	INFO	|10:35:59 Checking output (s) test.txt 
+bpipe.Dependencies	[1]	INFO	|10:35:59  Checking file test.txt 
+bpipe.PipelineContext	[1]	INFO	|10:35:59 Setting output test.txt on context 1265310324 in thread 1 
+bpipe.PipelineStage	[1]	INFO	|10:35:59 Setting next inputs test.txt on stage 488240573, context 1265310324 in thread 1 
+bpipe.PipelineStage	[1]	INFO	|10:35:59 Checking files: test.txt 
+bpipe.Dependencies	[1]	INFO	|10:35:59 Checking output (s) test.txt 
+bpipe.Dependencies	[1]	INFO	|10:35:59  Checking file test.txt 
+bpipe.Dependencies	[1]	INFO	|10:35:59 Checking input (s) test.txt 
+bpipe.Dependencies	[1]	INFO	|10:35:59  Checking file test.txt 
+bpipe.PipelineCategory	[1]	INFO	|10:35:59 Next inputs from stage = test.txt 
+bpipe.PipelineCategory	[1]	INFO	|10:35:59 Checking inputs for next stage:  test.txt 
+bpipe.Dependencies	[1]	INFO	|10:35:59 Checking input (s) test.txt 
+bpipe.Dependencies	[1]	INFO	|10:35:59  Checking file test.txt 
+bpipe.Dependencies	[1]	INFO	|10:35:59 Checking input (s) test.txt 
+bpipe.Dependencies	[1]	INFO	|10:35:59  Checking file test.txt 
+bpipe.ReportStatisticsListener	[1]	INFO	|10:35:59 Annotating stage start time send_report 
+bpipe.PipelineStage	[1]	INFO	|10:35:59 Stage send_report : INPUT=test.txt OUTPUT=test.txt.send_report 
+bpipe.PipelineDelegate	[1]	INFO	|10:35:59 Setting or creating a delegate for context 129577842 body 468629236/script1417775758924794904644 in thread 1 
+bpipe.PipelineDelegate	[1]	INFO	|10:35:59 Created new delegate bpipe.PipelineDelegate@fe08554 overriding type script1417775758924794904644 in thread 1 
+bpipe.Pipeline	[1]	INFO	|10:36:00 adding stage hello from pipeline bpipe.Pipeline@5378032b 
+bpipe.Pipeline	[1]	INFO	|10:36:00 adding stage world from pipeline bpipe.Pipeline@5378032b 
+bpipe.Pipeline	[1]	INFO	|10:36:00 adding stage send_report from pipeline bpipe.Pipeline@5378032b 
+bpipe.Utils	[1]	INFO	|10:36:00 Output folder scan (concurrency=5) executed in 0.001 seconds 
+bpipe.ReportGenerator	[1]	INFO	|10:36:00 Searching for template in /lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/src/main/html/bpipe 
+bpipe.ReportGenerator	[1]	INFO	|10:36:00 Generating report to /lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/check_with_send_report/.bpipe/reports/16444/45329.checks.html 
+bpipe.Sender	[1]	INFO	|10:36:01 Sending <!doctype html>
+
+
+<html style='padding: 0; margin: 0;'>
+    
+
+    <head>
+        <title>Pipeline Check Report : check_with_send_report</title>
+    </head>
+
+    <body style='font-family: verdana, arial; color: #333; padding:0; margin:0;'>
+        <div style='padding: 0.5em 1em 1em 1em; background-color: #f0f0f0;'>
+            <h1 style='padding-top: 0.5em; margin-top:0; font-size: 18pt;'>Pipeline Check Report : check_with_send_report</h1>
+        </div>
+        <div style='padding: 0 1.5em 1.5em 1.5em;'>
+            
+                <h3 style='color: #c00'>One or more checks failed</h3>
+            
+            <table style='border-collapse: collapse;' border=1 cellpadding=4 bordercolor='#444'>
+                <tr><th>Check</th><th>Branch</th><th>Status</th><th>Details</th></tr>
+                
+                <tr>
+                    <td>world</td>
+                    <td></td>
+                    <td style='color: red'>Failed</td>
+                    <td>Oh dear, it failed.</td>
+                </tr>
+                
+                <tr>
+                    <td>hello</td>
+                    <td></td>
+                    <td style='color: green'>Passed</td>
+                    <td></td>
+                </tr>
+                
+            </table>
+
+            <div style='font-size: 85%; font-style:italic; color: #999; margin-top: 1em;'>Report generated Fri Dec 05 10:36:01 GMT 2014</div>
+        </div>
+    </body>
+</html>
+    
+ to file! 
+bpipe.Sender	[1]	INFO	|10:36:01 Sending <!doctype html>
+
+
+<html style='padding: 0; margin: 0;'>
+    
+
+    <head>
+        <title>Pipeline Check Report : check_with_send_report</title>
+    </head>
+
+    <body style='font-family: verdana, arial; color: #333; padding:0; margin:0;'>
+        <div style='padding: 0.5em 1em 1em 1em; background-color: #f0f0f0;'>
+            <h1 style='padding-top: 0.5em; margin-top:0; font-size: 18pt;'>Pipeline Check Report : check_with_send_report</h1>
+        </div>
+        <div style='padding: 0 1.5em 1.5em 1.5em;'>
+            
+                <h3 style='color: #c00'>One or more checks failed</h3>
+            
+            <table style='border-collapse: collapse;' border=1 cellpadding=4 bordercolor='#444'>
+                <tr><th>Check</th><th>Branch</th><th>Status</th><th>Details</th></tr>
+                
+                <tr>
+                    <td>world</td>
+                    <td></td>
+                    <td style='color: red'>Failed</td>
+                    <td>Oh dear, it failed.</td>
+                </tr>
+                
+                <tr>
+                    <td>hello</td>
+                    <td></td>
+                    <td style='color: green'>Passed</td>
+                    <td></td>
+                </tr>
+                
+            </table>
+
+            <div style='font-size: 85%; font-style:italic; color: #999; margin-top: 1em;'>Report generated Fri Dec 05 10:36:01 GMT 2014</div>
+        </div>
+    </body>
+</html>
+    
+ to file 
+bpipe.ReportGenerator	[1]	INFO	|10:36:01 Searching for template in /lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/src/main/html/bpipe 
+bpipe.ReportGenerator	[1]	INFO	|10:36:01 Searching for template in /lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/src/main/templates/bpipe 
+bpipe.FileNotificationChannel	[1]	INFO	|10:36:01 Saving file for event SEND (subject = Message from Pipeline Stage send_report) 
+bpipe.PipelineStage	[1]	INFO	|10:36:01 Stage send_report returned null as default inputs for next stage 
+bpipe.PipelineStage	[1]	INFO	|10:36:01 Removing inferred outputs matching [\.bai$, \.log$] 
+bpipe.PipelineStage	[1]	INFO	|10:36:01 Comparing default output test.txt.send_report to new files [./test.html] 
+bpipe.PipelineStage	[1]	INFO	|10:36:01 Inferring nextInputs from inputs bpipe.PipelineContext@7b93372.@input 
+bpipe.PipelineContext	[1]	INFO	|10:36:01 Setting output test.txt on context 129577842 in thread 1 
+bpipe.PipelineStage	[1]	INFO	|10:36:01 Setting next inputs test.txt on stage 420157423, context 129577842 in thread 1 
+bpipe.ReportStatisticsListener	[1]	INFO	|10:36:01 Annotating stage end time send_report 
+bpipe.PipelineStage	[1]	INFO	|10:36:01 Checking files: test.txt 
+bpipe.Dependencies	[1]	INFO	|10:36:01 Checking output (s) test.txt 
+bpipe.Dependencies	[1]	INFO	|10:36:01  Checking file test.txt 
+bpipe.PipelineContext	[1]	INFO	|10:36:01 Setting output test.txt on context 160037062 in thread 1 
+bpipe.PipelineStage	[1]	INFO	|10:36:01 Setting next inputs test.txt on stage 659577025, context 160037062 in thread 1 
+bpipe.PipelineStage	[1]	INFO	|10:36:01 Checking files: test.txt 
+bpipe.Dependencies	[1]	INFO	|10:36:01 Checking output (s) test.txt 
+bpipe.Dependencies	[1]	INFO	|10:36:01  Checking file test.txt 
+bpipe.Pipeline	[1]	INFO	|10:36:01 Pipeline segment  in thread 1 has finished normally 
+bpipe.Pipeline	[1]	INFO	|10:36:01 Finished running segment for inputs test.txt 
+bpipe.Pipeline	[1]	INFO	|10:36:01 adding stage hello from pipeline bpipe.Pipeline@5378032b 
+bpipe.Pipeline	[1]	INFO	|10:36:01 adding stage world from pipeline bpipe.Pipeline@5378032b 
+bpipe.Pipeline	[1]	INFO	|10:36:01 adding stage send_report from pipeline bpipe.Pipeline@5378032b 
+bpipe.Utils	[1]	INFO	|10:36:01 Output folder scan (concurrency=5) executed in 0.002 seconds 
+bpipe.ReportGenerator	[1]	INFO	|10:36:01 Searching for template in /lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/src/main/html/bpipe 
+bpipe.ReportGenerator	[1]	INFO	|10:36:01 Generating report to /lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/check_with_send_report/doc/index.html 
+bpipe.PipelineContext	[1]	INFO	|10:36:01 Using previously set output: test.txt 
+bpipe.PipelineContext	[1]	INFO	|10:36:01 Using previously set output: test.txt 
+bpipe.PipelineContext	[1]	INFO	|10:36:01 Using previously set output: test.txt 
+bpipe.PipelineContext	[1]	INFO	|10:36:01 Using previously set output: test.txt 
+bpipe.PipelineContext	[1]	INFO	|10:36:01 Using previously set output: test.txt 
+bpipe.PipelineContext	[1]	INFO	|10:36:01 Using previously set output: test.txt 
+bpipe.PipelineContext	[1]	INFO	|10:36:01 Using previously set output: test.txt 
+bpipe.PipelineContext	[1]	INFO	|10:36:01 Using previously set output: test.txt 
+bpipe.PipelineContext	[1]	INFO	|10:36:01 Using previously set output: test.txt 
+bpipe.Utils	[1]	INFO	|10:36:01 Output folder scan (concurrency=5) executed in 0.001 seconds 
+bpipe.Pipeline	[1]	INFO	|10:36:01 No tracked output files from this run 
+bpipe.Runner	[9]	INFO	|10:36:01 Deleting job file /nfs/users/nfs_c/cgppipe/.bpipedb/jobs/16444 

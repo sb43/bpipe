@@ -1,0 +1,7 @@
+
+Dependency graph is: 
+
+test.txt => 
+        foo.txt => 
+               world.txt
+               mars.txt

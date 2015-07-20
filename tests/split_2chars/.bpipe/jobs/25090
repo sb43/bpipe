@@ -1,0 +1,1 @@
+/nfs/users/nfs_c/cgppipe/canpipe/software/bpipe_git/tests/split_2chars/../../bin/bpipe run -r test.groovy 11D_F_H14.txt 11D_H14.txt 11D_M_H14.txt

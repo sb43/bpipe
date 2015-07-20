@@ -1,0 +1,1 @@
+485	bpipe run -r test.groovy test.bam

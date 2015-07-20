@@ -1,0 +1,13 @@
+====================================================================================================
+|                              Starting Pipeline at 2014-12-05 10:33                               |
+====================================================================================================
+
+======================================= Stage echo [TAGCTT] ========================================
+
+======================================= Stage echo [GATCAG] ========================================
+SureSelect_Capture_11MG2107_AD0AN0ACXX_GATCAG_L002_R1.fastq SureSelect_Capture_11MG2107_AD0AN0ACXX_GATCAG_L002_R2.fastq
+SureSelect_Capture_11MG2108_AD0AN0ACXX_TAGCTT_L002_R1.fastq SureSelect_Capture_11MG2108_AD0AN0ACXX_TAGCTT_L002_R2.fastq
+
+======================================== Pipeline Finished =========================================
+MSG: Generated report /lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/persample2/doc/index.html
+10:33:47 MSG:  Finished at Fri Dec 05 10:33:47 GMT 2014

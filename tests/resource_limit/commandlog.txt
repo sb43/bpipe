@@ -1,0 +1,26 @@
+
+####################################################################################################
+# Starting pipeline at Wed Nov 26 10:27:54 GMT 2014
+# Input files:  null
+# Output Log:  .bpipe/logs/21528.log
+# Stage hello [foo]
+# Stage hello [bar]
+# Stage hello [tree]
+echo ">>>>>> Using resource bar <<<<<<";              sleep 5;              echo "<<<<<< End using resource bar >>>>"
+echo ">>>>>> Using resource tree <<<<<<";              sleep 5;              echo "<<<<<< End using resource tree >>>>"
+echo ">>>>>> Using resource foo <<<<<<";              sleep 5;              echo "<<<<<< End using resource foo >>>>"
+# ################ Finished at Wed Nov 26 10:28:10 GMT 2014 Duration = 15.714 seconds ################
+
+
+####################################################################################################
+# Starting pipeline at Fri Dec 05 10:40:08 GMT 2014
+# Input files:  null
+# Output Log:  .bpipe/logs/23828.log
+# Stage hello [bar]
+# Stage hello [foo]
+# Stage hello [tree]
+echo ">>>>>> Using resource bar <<<<<<";              sleep 5;              echo "<<<<<< End using resource bar >>>>"
+echo ">>>>>> Using resource foo <<<<<<";              sleep 5;              echo "<<<<<< End using resource foo >>>>"
+echo ">>>>>> Using resource tree <<<<<<";              sleep 5;              echo "<<<<<< End using resource tree >>>>"
+# ################ Finished at Fri Dec 05 10:40:23 GMT 2014 Duration = 15.737 seconds ################
+

@@ -1,0 +1,26 @@
+
+####################################################################################################
+# Starting pipeline at Wed Nov 26 10:30:33 GMT 2014
+# Input files:  test.txt
+# Output Log:  .bpipe/logs/25266.log
+# Stage hello
+cp test.txt test.txt.hello
+# Stage fine
+cp test.txt.hello test.txt.hello.fine
+# Stage world
+if [ test.txt.hello != 'test.txt.hello' ]; then exit 1; else cp test.txt.hello test.txt.hello.world; fi;
+# ################ Finished at Wed Nov 26 10:30:34 GMT 2014 Duration = 0.934 seconds #################
+
+
+####################################################################################################
+# Starting pipeline at Fri Dec 05 10:42:43 GMT 2014
+# Input files:  test.txt
+# Output Log:  .bpipe/logs/27763.log
+# Stage hello
+cp test.txt test.txt.hello
+# Stage fine
+cp test.txt.hello test.txt.hello.fine
+# Stage world
+if [ test.txt.hello != 'test.txt.hello' ]; then exit 1; else cp test.txt.hello test.txt.hello.world; fi;
+# ################ Finished at Fri Dec 05 10:42:44 GMT 2014 Duration = 1.068 seconds #################
+

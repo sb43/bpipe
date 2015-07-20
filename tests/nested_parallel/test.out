@@ -1,0 +1,46 @@
+====================================================================================================
+|                              Starting Pipeline at 2014-12-05 10:35                               |
+====================================================================================================
+
+=========================================== Stage hello ============================================
+
+========================================= Stage world [1] ==========================================
+
+====================================== Stage how_are_you [1] =======================================
+
+================================= Stage take_me_to_your_leader [2] =================================
+world 0
+take_me 0
+how_are 0
+world 1
+take_me 1
+how_are 1
+world 2
+take_me 2
+how_are 2
+world 3
+take_me 3
+how_are 3
+world 4
+take_me 4
+how_are 4
+world 5
+take_me 5
+how_are 5
+world 6
+how_are 6
+world 7
+how_are 7
+world 8
+how_are 8
+world 9
+how_are 9
+world 10
+how_are 10
+
+============================================ Stage end =============================================
+
+======================================== Pipeline Finished =========================================
+MSG: Generated report /lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/nested_parallel/doc/index.html
+10:35:56 MSG:  Finished at Fri Dec 05 10:35:56 GMT 2014
+10:35:56 MSG:  Output is test.txt.hello.world.end

@@ -1,0 +1,16 @@
+
+####################################################################################################
+# Starting pipeline at Wed Nov 26 10:34:54 GMT 2014
+# Input files:  null
+# Output Log:  .bpipe/logs/29419.log
+# Stage hello
+echo hello
+# Stage world
+
+####################################################################################################
+# Starting pipeline at Fri Dec 05 10:47:04 GMT 2014
+# Input files:  null
+# Output Log:  .bpipe/logs/31929.log
+# Stage hello
+echo hello
+# Stage world

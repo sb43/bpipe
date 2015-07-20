@@ -1,0 +1,22 @@
+
+####################################################################################################
+# Starting pipeline at Wed Nov 26 10:27:03 GMT 2014
+# Input files:  null
+# Output Log:  .bpipe/logs/20360.log
+# Stage stage_one
+touch stage_one.vcf
+# Stage stage_23
+cp stage_one.vcf stage_one.stage_23.vcf
+# ################ Finished at Wed Nov 26 10:27:04 GMT 2014 Duration = 0.764 seconds #################
+
+
+####################################################################################################
+# Starting pipeline at Fri Dec 05 10:39:18 GMT 2014
+# Input files:  null
+# Output Log:  .bpipe/logs/22640.log
+# Stage stage_one
+touch stage_one.vcf
+# Stage stage_23
+cp stage_one.vcf stage_one.stage_23.vcf
+# ################ Finished at Fri Dec 05 10:39:18 GMT 2014 Duration = 0.784 seconds #################
+

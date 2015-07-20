@@ -1,0 +1,36 @@
+
+####################################################################################################
+# Starting pipeline at Wed Nov 26 10:22:46 GMT 2014
+# Input files:  null
+# Output Log:  .bpipe/logs/13072.log
+# Stage hello
+x=`echo world`;     echo "$x"
+# ################ Finished at Wed Nov 26 10:22:46 GMT 2014 Duration = 0.401 seconds #################
+
+
+####################################################################################################
+# Starting pipeline at Fri Dec 05 10:12:30 GMT 2014
+# Input files:  null
+# Output Log:  .bpipe/logs/21549.log
+# Stage hello
+x=`echo world`;     echo "$x"
+# ################ Finished at Fri Dec 05 10:12:30 GMT 2014 Duration = 0.394 seconds #################
+
+
+####################################################################################################
+# Starting pipeline at Fri Dec 05 10:22:16 GMT 2014
+# Input files:  null
+# Output Log:  .bpipe/logs/28965.log
+# Stage hello
+x=`echo world`;     echo "$x"
+# ################ Finished at Fri Dec 05 10:22:17 GMT 2014 Duration = 0.387 seconds #################
+
+
+####################################################################################################
+# Starting pipeline at Fri Dec 05 10:34:59 GMT 2014
+# Input files:  null
+# Output Log:  .bpipe/logs/15148.log
+# Stage hello
+x=`echo world`;     echo "$x"
+# ################ Finished at Fri Dec 05 10:35:00 GMT 2014 Duration = 0.382 seconds #################
+

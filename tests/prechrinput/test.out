@@ -1,0 +1,19 @@
+====================================================================================================
+|                              Starting Pipeline at 2014-12-05 10:46                               |
+====================================================================================================
+MSG: Skipping region chr5 because no matching inputs were found
+MSG: Skipping region chr4 because no matching inputs were found
+
+======================================== Stage hello [chr2] ========================================
+
+======================================== Stage hello [chr1] ========================================
+
+======================================== Stage hello [chr3] ========================================
+
+======================================== Pipeline Finished =========================================
+MSG: Generated report /lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/prechrinput/doc/index.html
+10:46:45 MSG:  Finished at Fri Dec 05 10:46:45 GMT 2014
+10:46:45 MSG:  Outputs are: 
+		test.chr2.hello.csv
+		test.chr1.hello.csv
+		test.chr3.hello.csv

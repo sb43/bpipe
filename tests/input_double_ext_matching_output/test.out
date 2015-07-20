@@ -1,0 +1,13 @@
+====================================================================================================
+|                              Starting Pipeline at 2014-12-05 10:42                               |
+====================================================================================================
+
+=========================================== Stage hello ============================================
+Using test.foo.csv
+
+======================================== Pipeline Finished =========================================
+MSG: Generated report /lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/input_double_ext_matching_output/doc/index.html
+10:42:48 MSG:  Finished at Fri Dec 05 10:42:48 GMT 2014
+10:42:48 MSG:  Outputs are: 
+		hello.xml
+		bad.csv

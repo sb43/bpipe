@@ -1,0 +1,20 @@
+
+####################################################################################################
+# Starting pipeline at Wed Nov 26 10:29:41 GMT 2014
+# Input files:  null
+# Output Log:  .bpipe/logs/24274.log
+# Stage hello
+echo "x = 15 and y = 20"
+# Stage world
+# ################ Finished at Wed Nov 26 10:29:41 GMT 2014 Duration = 0.502 seconds #################
+
+
+####################################################################################################
+# Starting pipeline at Fri Dec 05 10:41:55 GMT 2014
+# Input files:  null
+# Output Log:  .bpipe/logs/26710.log
+# Stage hello
+echo "x = 15 and y = 20"
+# Stage world
+# ################ Finished at Fri Dec 05 10:41:56 GMT 2014 Duration = 0.459 seconds #################
+

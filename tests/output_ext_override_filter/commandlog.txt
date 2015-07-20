@@ -1,0 +1,18 @@
+
+####################################################################################################
+# Starting pipeline at Wed Nov 26 10:29:44 GMT 2014
+# Input files:  [test.txt, test.csv]
+# Output Log:  .bpipe/logs/24345.log
+# Stage hello
+cp test.txt /lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/output_ext_override_filter/test.over.csv
+# ################ Finished at Wed Nov 26 10:29:44 GMT 2014 Duration = 0.598 seconds #################
+
+
+####################################################################################################
+# Starting pipeline at Fri Dec 05 10:41:59 GMT 2014
+# Input files:  [test.txt, test.csv]
+# Output Log:  .bpipe/logs/26781.log
+# Stage hello
+cp test.txt /lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/output_ext_override_filter/test.over.csv
+# ################ Finished at Fri Dec 05 10:41:59 GMT 2014 Duration = 0.569 seconds #################
+

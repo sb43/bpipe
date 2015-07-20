@@ -1,0 +1,44 @@
+
+####################################################################################################
+# Starting pipeline at Wed Nov 26 10:24:22 GMT 2014
+# Input files:  null
+# Output Log:  .bpipe/logs/16326.log
+# Stage hello
+echo mars > out1.txt
+echo jupiter > out2.txt
+echo earth > out3.txt
+# ################ Finished at Wed Nov 26 10:24:26 GMT 2014 Duration = 4.491 seconds #################
+
+
+####################################################################################################
+# Starting pipeline at Fri Dec 05 10:14:10 GMT 2014
+# Input files:  null
+# Output Log:  .bpipe/logs/24975.log
+# Stage hello
+echo mars > out1.txt
+echo jupiter > out2.txt
+echo earth > out3.txt
+# ################ Finished at Fri Dec 05 10:14:13 GMT 2014 Duration = 2.500 seconds #################
+
+
+####################################################################################################
+# Starting pipeline at Fri Dec 05 10:23:51 GMT 2014
+# Input files:  null
+# Output Log:  .bpipe/logs/32277.log
+# Stage hello
+echo mars > out1.txt
+echo jupiter > out2.txt
+echo earth > out3.txt
+# ################ Finished at Fri Dec 05 10:23:53 GMT 2014 Duration = 2.475 seconds #################
+
+
+####################################################################################################
+# Starting pipeline at Fri Dec 05 10:36:35 GMT 2014
+# Input files:  null
+# Output Log:  .bpipe/logs/18490.log
+# Stage hello
+echo mars > out1.txt
+echo jupiter > out2.txt
+echo earth > out3.txt
+# ################ Finished at Fri Dec 05 10:36:37 GMT 2014 Duration = 2.500 seconds #################
+

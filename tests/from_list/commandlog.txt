@@ -1,0 +1,27 @@
+
+####################################################################################################
+# Starting pipeline at Wed Nov 26 10:25:28 GMT 2014
+# Input files:  [foo.txt, bar.txt]
+# Output Log:  .bpipe/logs/17969.log
+# Stage hello
+echo foo.txt bar.txt > foo.txt.hello
+# ################ Finished at Wed Nov 26 10:25:29 GMT 2014 Duration = 0.528 seconds #################
+
+
+####################################################################################################
+# Starting pipeline at Fri Dec 05 10:24:57 GMT 2014
+# Input files:  [foo.txt, bar.txt]
+# Output Log:  .bpipe/logs/1586.log
+# Stage hello
+echo foo.txt bar.txt > foo.txt.hello
+# ################ Finished at Fri Dec 05 10:24:57 GMT 2014 Duration = 0.536 seconds #################
+
+
+####################################################################################################
+# Starting pipeline at Fri Dec 05 10:37:42 GMT 2014
+# Input files:  [foo.txt, bar.txt]
+# Output Log:  .bpipe/logs/20212.log
+# Stage hello
+echo foo.txt bar.txt > foo.txt.hello
+# ################ Finished at Fri Dec 05 10:37:42 GMT 2014 Duration = 0.520 seconds #################
+

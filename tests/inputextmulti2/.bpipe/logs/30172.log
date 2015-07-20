@@ -1,0 +1,16 @@
+[----]	====================================================================================================
+[----]	|                              Starting Pipeline at 2014-12-05 10:45                               |
+[----]	====================================================================================================
+[]	
+[]	=========================================== Stage hello ============================================
+inputs.txt: cat test_1.txt test_2.txt > test_1.txt.hello
+input.txt:  cat test_1.txt > test_1.txt.hello
+inputs:  cat test_1.txt test_2.txt test.csv > test_1.txt.hello
+input:  cat test_1.txt > test_1.txt.hello
+input[0]:  cat test_1.txt > test_1.txt.hello
+inputs[0]:  cat test_1.txt > test_1.txt.hello
+
+======================================== Pipeline Finished =========================================
+MSG: Generated report /lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/inputextmulti2/doc/index.html
+[]	10:45:56 MSG:  Finished at Fri Dec 05 10:45:56 GMT 2014
+[]	10:45:57 MSG:  Output is test_1.txt.hello

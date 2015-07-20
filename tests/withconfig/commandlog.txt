@@ -1,0 +1,72 @@
+
+####################################################################################################
+# Starting pipeline at Wed Nov 26 10:22:06 GMT 2014
+# Input files:  null
+# Output Log:  .bpipe/logs/12371.log
+# Stage init
+# Stage hello
+for i in 1 2 3;  do echo "Hello World $i"; sleep 2; done
+# Stage there
+ls | wc
+# Stage world
+echo "run with dummy2"
+# Stage body
+echo "run with dummy2"
+# Stage fail
+false
+# ################ Finished at Wed Nov 26 10:22:14 GMT 2014 Duration = 7.303 seconds #################
+
+
+####################################################################################################
+# Starting pipeline at Fri Dec 05 10:11:51 GMT 2014
+# Input files:  null
+# Output Log:  .bpipe/logs/20889.log
+# Stage init
+# Stage hello
+for i in 1 2 3;  do echo "Hello World $i"; sleep 2; done
+# Stage there
+ls | wc
+# Stage world
+echo "run with dummy2"
+# Stage body
+echo "run with dummy2"
+# Stage fail
+false
+# ################ Finished at Fri Dec 05 10:11:58 GMT 2014 Duration = 7.167 seconds #################
+
+
+####################################################################################################
+# Starting pipeline at Fri Dec 05 10:21:14 GMT 2014
+# Input files:  null
+# Output Log:  .bpipe/logs/27877.log
+# Stage init
+# Stage hello
+for i in 1 2 3;  do echo "Hello World $i"; sleep 2; done
+# Stage there
+ls | wc
+# Stage world
+echo "run with dummy2"
+# Stage body
+echo "run with dummy2"
+# Stage fail
+false
+# ################ Finished at Fri Dec 05 10:21:21 GMT 2014 Duration = 7.114 seconds #################
+
+
+####################################################################################################
+# Starting pipeline at Fri Dec 05 10:33:50 GMT 2014
+# Input files:  null
+# Output Log:  .bpipe/logs/14045.log
+# Stage init
+# Stage hello
+for i in 1 2 3;  do echo "Hello World $i"; sleep 2; done
+# Stage there
+ls | wc
+# Stage world
+echo "run with dummy2"
+# Stage body
+echo "run with dummy2"
+# Stage fail
+false
+# ################ Finished at Fri Dec 05 10:33:57 GMT 2014 Duration = 7.157 seconds #################
+

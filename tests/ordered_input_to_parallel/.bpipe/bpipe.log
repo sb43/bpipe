@@ -1,0 +1,216 @@
+bpipe.Runner	[1]	INFO	|10:41:47 Starting 
+bpipe.Runner	[1]	INFO	|10:41:47 OS: Linux (2.6.32-44-server) Java: 1.7.0_25 Vendor: Oracle Corporation 
+bpipe.Runner	[1]	INFO	|10:41:47 Initializing plugins ... 
+bpipe.Config	[1]	INFO	|10:41:47 No plugins directory found: /lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/ordered_input_to_parallel/.bpipe/plugins 
+bpipe.Runner	[1]	INFO	|10:41:47 Reading user config ...  
+bpipe.Config	[1]	INFO	|10:41:47 No configuration file found in same dir as pipeline file 
+bpipe.Config	[1]	INFO	|10:41:47 No local configuration file found 
+bpipe.Utils	[10]	INFO	|10:41:48 Read config from /nfs/users/nfs_c/cgppipe/canpipe/software/bpipe_git/tests/ordered_input_to_parallel/../../bin/../src/main/config/bpipe.config executed in 0.320 seconds 
+bpipe.Utils	[1]	INFO	|10:41:48 Read user config executed in 0.545 seconds 
+bpipe.Runner	[1]	INFO	|10:41:48 Loading tool database ...  
+bpipe.ToolDatabase	[11]	INFO	|10:41:48 Loading tool database from user configuration 
+bpipe.NotificationManager	[14]	INFO	|10:41:48 Configuring notifications 
+bpipe.Concurrency	[13]	INFO	|10:41:48 Creating thread pool with 32 threads to execute parallel pipelines 
+bpipe.NotificationManager	[14]	INFO	|10:41:48 Trying class name file for notification channel file 
+bpipe.Tool	[11]	INFO	|10:41:48 Configured meta data about tool samtools 
+bpipe.Runner	[1]	INFO	|10:41:48 No CLI parameters specified 
+bpipe.Tool	[11]	INFO	|10:41:48 Configured meta data about tool bwa 
+bpipe.Tool	[11]	INFO	|10:41:48 Configured meta data about tool bowtie 
+bpipe.Tool	[11]	INFO	|10:41:48 Configured meta data about tool fastqc 
+bpipe.Tool	[11]	INFO	|10:41:48 Configured meta data about tool coverageBed 
+bpipe.Tool	[11]	INFO	|10:41:48 Configured meta data about tool fastx_clipper 
+bpipe.Tool	[11]	INFO	|10:41:48 Configured meta data about tool convert2annovar.pl 
+bpipe.Tool	[11]	INFO	|10:41:48 Configured meta data about tool summarize_annovar.pl 
+bpipe.Tool	[11]	INFO	|10:41:48 Configured meta data about tool bowtie2 
+bpipe.Tool	[11]	INFO	|10:41:48 Configured meta data about tool GenomeAnalysisTK 
+bpipe.Tool	[11]	INFO	|10:41:48 Configured meta data about tool MarkDuplicates 
+bpipe.Tool	[11]	INFO	|10:41:48 Configured meta data about tool signalp 
+bpipe.Tool	[11]	INFO	|10:41:48 Configured meta data about tool variant_effect_predictor.pl 
+bpipe.Tool	[11]	INFO	|10:41:48 Configured meta data about tool igvtools 
+bpipe.Tool	[11]	INFO	|10:41:48 Configured meta data about tool ls 
+bpipe.NotificationManager	[14]	INFO	|10:41:48 Unable to create notification channel using class file: java.lang.ClassNotFoundException: file 
+bpipe.NotificationManager	[14]	INFO	|10:41:48 Trying class name bpipe.FILENotificationChannel for notification channel file 
+bpipe.NotificationManager	[14]	INFO	|10:41:48 Unable to create notification channel using class bpipe.FILENotificationChannel: java.lang.ClassNotFoundException: bpipe.FILENotificationChannel 
+bpipe.NotificationManager	[14]	INFO	|10:41:48 Trying class name bpipe.file for notification channel file 
+bpipe.NotificationManager	[14]	INFO	|10:41:48 Unable to create notification channel using class bpipe.file: java.lang.ClassNotFoundException: bpipe.file 
+bpipe.NotificationManager	[14]	INFO	|10:41:48 Trying class name bpipe.FileNotificationChannel for notification channel file 
+bpipe.NotificationManager	[14]	INFO	|10:41:48 Successfully created notification channel using class bpipe.FileNotificationChannel 
+bpipe.Runner	[1]	INFO	|10:41:48 Parsing script ...  
+bpipe.Runner	[1]	INFO	|10:41:48 Run ...  
+bpipe.Pipeline	[1]	INFO	|10:41:48 Running with input null 
+bpipe.PipelineCategory	[1]	INFO	|10:41:48 Found closure variable cutadapt 
+bpipe.PipelineCategory	[1]	INFO	|10:41:48 Found closure variable tophat 
+bpipe.Pipeline	[1]	WARNING	|10:41:48 Pipeline folder /nfs/users/nfs_c/cgppipe/bpipes could not be found 
+bpipe.Pipeline	[1]	INFO	|10:41:48 Loaded external reference: args 
+bpipe.Pipeline	[1]	INFO	|10:41:48 External reference args is overridden by local reference 
+bpipe.Pipeline	[1]	INFO	|10:41:48 Loaded external reference: cutadapt 
+bpipe.Pipeline	[1]	INFO	|10:41:48 External reference cutadapt is overridden by local reference 
+bpipe.Pipeline	[1]	INFO	|10:41:48 Loaded external reference: tophat 
+bpipe.Pipeline	[1]	INFO	|10:41:48 External reference tophat is overridden by local reference 
+bpipe.DefinePipelineCategory	[1]	INFO	|10:41:48 multiply on input null with pattern * 
+bpipe.InputSplitter	[1]	INFO	|10:41:48 Found * pattern at [0], hash at [] and % at [] 
+bpipe.InputSplitter	[1]	INFO	|10:41:48 Sorted: [0] 
+bpipe.InputSplitter	[1]	INFO	|10:41:48 % groups are at [] 
+bpipe.InputSplitter	[1]	INFO	|10:41:48 Result is [pattern:([^/]*), splits:[]] 
+bpipe.DefinePipelineCategory	[1]	INFO	|10:41:48 Processing segment 1833561830 
+bpipe.PipelineCategory	[1]	INFO	|10:41:48 Joiners for pipeline 1801606234 = [] 
+bpipe.Pipeline	[1]	INFO	|10:41:48 Running segment with inputs null 
+bpipe.Dependencies	[1]	INFO	|10:41:48 Checking input (s) null 
+bpipe.Utils	[1]	INFO	|10:41:48 Output folder scan (concurrency=5) executed in 0.003 seconds 
+bpipe.PipelineDelegate	[1]	INFO	|10:41:48 Setting or creating a delegate for context 1193169587 body 398953023/java.lang.Class in thread 1 
+bpipe.PipelineDelegate	[1]	INFO	|10:41:48 Created new delegate bpipe.PipelineDelegate@75304935 overriding type java.lang.Class in thread 1 
+bpipe.Dependencies	[1]	INFO	|10:41:48 Checking input (s) null 
+bpipe.ReportStatisticsListener	[1]	INFO	|10:41:48 Annotating stage start time cutadapt 
+bpipe.PipelineStage	[1]	INFO	|10:41:48 Stage cutadapt : INPUT=null OUTPUT=cutadapt 
+bpipe.PipelineDelegate	[1]	INFO	|10:41:48 Setting or creating a delegate for context 1498857570 body 341519002/script14177761086261582332041 in thread 1 
+bpipe.PipelineDelegate	[1]	INFO	|10:41:48 Created new delegate bpipe.PipelineDelegate@4e708fc0 overriding type script14177761086261582332041 in thread 1 
+bpipe.PipelineContext	[1]	INFO	|10:41:48 Producing [cutadapt.1.fq.gz, cutadapt.2.fq.gz] from bpipe.PipelineContext@5956c062 
+bpipe.PipelineDelegate	[1]	INFO	|10:41:48 Setting or creating a delegate for context 1498857570 body 212486074/script14177761086261582332041$_run_closure1 in thread 1 
+bpipe.PipelineDelegate	[1]	INFO	|10:41:48 Created new delegate bpipe.PipelineDelegate@17b42596 overriding type script14177761086261582332041$_run_closure1 in thread 1 
+bpipe.PipelineContext	[1]	INFO	|10:41:48 Probing command using inputs null 
+bpipe.PipelineDelegate	[1]	INFO	|10:41:48 Output 1 reference resolved by PipelineDelegate 
+bpipe.PipelineContext	[1]	INFO	|10:41:48 Using previously set output: [cutadapt.1.fq.gz, cutadapt.2.fq.gz] 
+bpipe.PipelineContext	[1]	INFO	|10:41:49 Query for output 0 base result = cutadapt.1.fq.gz 
+bpipe.PipelineDelegate	[1]	INFO	|10:41:49 Output 2 reference resolved by PipelineDelegate 
+bpipe.PipelineContext	[1]	INFO	|10:41:49 Using previously set output: [cutadapt.1.fq.gz, cutadapt.2.fq.gz] 
+bpipe.PipelineContext	[1]	INFO	|10:41:49 Query for output 1 base result = cutadapt.2.fq.gz 
+bpipe.PipelineContext	[1]	INFO	|10:41:49 Tracking outputs referenced=[[]] inferred=[[cutadapt.1.fq.gz, cutadapt.2.fq.gz]] for command touch cutadapt.1.fq.gz; touch cutadapt.2.fq.gz;  
+bpipe.ReportStatisticsListener	[1]	INFO	|10:41:49 Intercepted command check for command touch cutadapt.1.fq.gz; touch cutadapt.2.fq.gz;  
+bpipe.PipelineContext	[1]	INFO	|10:41:49 Checking actual resolved inputs [] 
+bpipe.PipelineContext	[1]	INFO	|10:41:49 Finished probe 
+bpipe.PipelineContext	[1]	INFO	|10:41:49 Not up to date because input inferred by probe of body newer than outputs 
+bpipe.PipelineDelegate	[1]	INFO	|10:41:49 Setting or creating a delegate for context 1498857570 body 212486074/bpipe.PipelineDelegate in thread 1 
+bpipe.PipelineDelegate	[1]	INFO	|10:41:49 Existing delegate bpipe.PipelineDelegate@17b42596 has type bpipe.PipelineDelegate in thread 1. Setting new context 1498857570 
+bpipe.PipelineContext	[1]	INFO	|10:41:49 Producing from inputs null 
+bpipe.PipelineDelegate	[1]	INFO	|10:41:49 Output 1 reference resolved by PipelineDelegate 
+bpipe.PipelineContext	[1]	INFO	|10:41:49 Using previously set output: [cutadapt.1.fq.gz, cutadapt.2.fq.gz] 
+bpipe.PipelineContext	[1]	INFO	|10:41:49 Query for output 0 base result = cutadapt.1.fq.gz 
+bpipe.PipelineDelegate	[1]	INFO	|10:41:49 Output 2 reference resolved by PipelineDelegate 
+bpipe.PipelineContext	[1]	INFO	|10:41:49 Using previously set output: [cutadapt.1.fq.gz, cutadapt.2.fq.gz] 
+bpipe.PipelineContext	[1]	INFO	|10:41:49 Query for output 1 base result = cutadapt.2.fq.gz 
+bpipe.PipelineContext	[1]	INFO	|10:41:49 Tracking outputs referenced=[[]] inferred=[[cutadapt.1.fq.gz, cutadapt.2.fq.gz]] for command touch cutadapt.1.fq.gz; touch cutadapt.2.fq.gz;  
+bpipe.ReportStatisticsListener	[1]	INFO	|10:41:49 Intercepted command check for command touch cutadapt.1.fq.gz; touch cutadapt.2.fq.gz;  
+bpipe.PipelineContext	[1]	INFO	|10:41:49 Checking actual resolved inputs [] 
+bpipe.Command	[1]	INFO	|10:41:49 Checking for configuration for command touch 
+bpipe.Command	[1]	INFO	|10:41:49 Default command properties: [executor:local] 
+bpipe.CommandManager	[1]	INFO	|10:41:49 Using config [executor:local] for command 
+bpipe.CommandManager	[1]	INFO	|10:41:49 Created bpipe command id 1 
+bpipe.Concurrency	[1]	INFO	|10:41:49 Thread main requesting for 1 concurrency permit(s) type threads with 32 available 
+bpipe.Concurrency	[1]	INFO	|10:41:49 Thread main acquired resource threads in amount 1 
+bpipe.Command	[15]	INFO	|10:41:49 Command 1 changing state from null to RUNNING 
+bpipe.executor.ThrottledDelegatingCommandExecutor	[1]	INFO	|10:41:49 Waiting for command to complete before releasing 1 resources 
+bpipe.Command	[1]	INFO	|10:41:49 Command 1 changing state from RUNNING to COMPLETE 
+bpipe.executor.ThrottledDelegatingCommandExecutor	[1]	INFO	|10:41:49 Releasing 1 resources 
+bpipe.Concurrency	[1]	INFO	|10:41:49 Thread main releasing 1 threads 
+bpipe.executor.ThrottledDelegatingCommandExecutor	[1]	INFO	|10:41:49 Released 1 resources 
+bpipe.PipelineContext	[1]	INFO	|10:41:49 Adding outputs [cutadapt.1.fq.gz, cutadapt.2.fq.gz] as a result of produce 
+bpipe.PipelineStage	[1]	INFO	|10:41:49 Stage cutadapt returned null as default inputs for next stage 
+bpipe.PipelineStage	[1]	INFO	|10:41:49 Inferring nextInputs from explicit output as [cutadapt.1.fq.gz, cutadapt.2.fq.gz] 
+bpipe.PipelineStage	[1]	INFO	|10:41:49 Setting next inputs [cutadapt.1.fq.gz, cutadapt.2.fq.gz] on stage 803738242, context 1498857570 in thread 1 
+bpipe.Dependencies	[1]	INFO	|10:41:49 Context 1498857570 for stage cutadapt has resolved inputs [] 
+bpipe.Dependencies	[1]	INFO	|10:41:49 Saving output file details to file .bpipe/outputs/cutadapt.cutadapt.1.fq.gz.properties for command touch cutadapt.1.fq.... 
+bpipe.Dependencies	[1]	INFO	|10:41:49 Context 1498857570 for stage cutadapt has resolved inputs [] 
+bpipe.Dependencies	[1]	INFO	|10:41:49 Saving output file details to file .bpipe/outputs/cutadapt.cutadapt.2.fq.gz.properties for command touch cutadapt.1.fq.... 
+bpipe.ReportStatisticsListener	[1]	INFO	|10:41:49 Annotating stage end time cutadapt 
+bpipe.PipelineStage	[1]	INFO	|10:41:49 Checking files: [cutadapt.1.fq.gz, cutadapt.2.fq.gz] 
+bpipe.Dependencies	[1]	INFO	|10:41:49 Checking output (s) [cutadapt.1.fq.gz, cutadapt.2.fq.gz] 
+bpipe.Dependencies	[1]	INFO	|10:41:49  Checking file cutadapt.1.fq.gz 
+bpipe.Dependencies	[1]	INFO	|10:41:49  Checking file cutadapt.2.fq.gz 
+bpipe.PipelineContext	[1]	INFO	|10:41:49 Using previously set output: [cutadapt.1.fq.gz, cutadapt.2.fq.gz] 
+bpipe.Dependencies	[1]	INFO	|10:41:49 Checking input (s) cutadapt.1.fq.gz 
+bpipe.Dependencies	[1]	INFO	|10:41:49  Checking file cutadapt.1.fq.gz 
+bpipe.Dependencies	[1]	INFO	|10:41:49 Checking input (s) [cutadapt.1.fq.gz, cutadapt.2.fq.gz] 
+bpipe.Dependencies	[1]	INFO	|10:41:49  Checking file cutadapt.1.fq.gz 
+bpipe.Dependencies	[1]	INFO	|10:41:49  Checking file cutadapt.2.fq.gz 
+bpipe.PipelineCategory	[1]	INFO	|10:41:49 multiply on input [cutadapt.1.fq.gz, cutadapt.2.fq.gz] with pattern * 
+bpipe.InputSplitter	[1]	INFO	|10:41:49 Found * pattern at [0], hash at [] and % at [] 
+bpipe.InputSplitter	[1]	INFO	|10:41:49 Sorted: [0] 
+bpipe.InputSplitter	[1]	INFO	|10:41:49 % groups are at [] 
+bpipe.InputSplitter	[1]	INFO	|10:41:49 Result is [pattern:([^/]*), splits:[]] 
+bpipe.PipelineCategory	[1]	INFO	|10:41:49 Created pipeline stage 1048250758 for parallel block 
+bpipe.PipelineCategory	[1]	INFO	|10:41:49 Processing segment 1833561830 
+bpipe.PipelineCategory	[1]	INFO	|10:41:49 Creating pipeline to run parallel segment all with files [cutadapt.1.fq.gz, cutadapt.2.fq.gz]. Branch filter = [] 
+bpipe.Concurrency	[1]	INFO	|10:41:49 Waiting for 1 parallel stages to complete (pool.active=1 pool.tasks=1) 
+bpipe.PipelineContext	[19]	INFO	|10:41:49 Setting output [cutadapt.1.fq.gz, cutadapt.2.fq.gz] on context 1521452451 in thread 19 
+bpipe.PipelineContext	[19]	INFO	|10:41:49 Using previously set output: [cutadapt.1.fq.gz, cutadapt.2.fq.gz] 
+bpipe.PipelineCategory	[19]	INFO	|10:41:49 Adding dummy prior stage for thread 19 with outputs : cutadapt.1.fq.gz 
+bpipe.Pipeline	[19]	INFO	|10:41:49 Running segment with inputs [cutadapt.1.fq.gz, cutadapt.2.fq.gz] 
+bpipe.Dependencies	[19]	INFO	|10:41:49 Checking input (s) [cutadapt.1.fq.gz, cutadapt.2.fq.gz] 
+bpipe.Dependencies	[19]	INFO	|10:41:49  Checking file cutadapt.1.fq.gz 
+bpipe.Dependencies	[19]	INFO	|10:41:49  Checking file cutadapt.2.fq.gz 
+bpipe.ReportStatisticsListener	[19]	INFO	|10:41:49 Annotating stage start time tophat 
+bpipe.PipelineStage	[19]	INFO	|10:41:49 Stage tophat [all] : INPUT=[cutadapt.1.fq.gz, cutadapt.2.fq.gz] OUTPUT=cutadapt.1.fq.gz.tophat 
+bpipe.PipelineDelegate	[19]	INFO	|10:41:49 Setting or creating a delegate for context 221059970 body 1833561830/script14177761086261582332041 in thread 19 
+bpipe.PipelineDelegate	[19]	INFO	|10:41:49 Created new delegate bpipe.PipelineDelegate@c68fa90 overriding type script14177761086261582332041 in thread 19 
+bpipe.PipelineDelegate	[19]	INFO	|10:41:49 Input 1 reference resolved by PipelineDelegate 
+bpipe.PipelineDelegate	[19]	INFO	|10:41:49 Input 2 reference resolved by PipelineDelegate 
+bpipe.PipelineStage	[19]	INFO	|10:41:49 Stage tophat [all] returned null as default inputs for next stage 
+bpipe.PipelineStage	[19]	INFO	|10:41:49 Removing inferred outputs matching [\.bai$, \.log$] 
+bpipe.PipelineStage	[19]	INFO	|10:41:49 Inferring nextInputs from inputs bpipe.PipelineContext@d2d1b82.@input 
+bpipe.PipelineContext	[19]	INFO	|10:41:49 Setting output [cutadapt.1.fq.gz, cutadapt.2.fq.gz] on context 221059970 in thread 19 
+bpipe.PipelineStage	[19]	INFO	|10:41:49 Setting next inputs [cutadapt.1.fq.gz, cutadapt.2.fq.gz] on stage 2096543549, context 221059970 in thread 19 
+bpipe.ReportStatisticsListener	[19]	INFO	|10:41:49 Annotating stage end time tophat 
+bpipe.PipelineStage	[19]	INFO	|10:41:49 Checking files: [cutadapt.1.fq.gz, cutadapt.2.fq.gz] 
+bpipe.Dependencies	[19]	INFO	|10:41:49 Checking output (s) [cutadapt.1.fq.gz, cutadapt.2.fq.gz] 
+bpipe.Dependencies	[19]	INFO	|10:41:49  Checking file cutadapt.1.fq.gz 
+bpipe.Dependencies	[19]	INFO	|10:41:49  Checking file cutadapt.2.fq.gz 
+bpipe.Pipeline	[19]	INFO	|10:41:49 Pipeline segment all in thread 19 has finished normally 
+bpipe.Pipeline	[19]	INFO	|10:41:49 Finished running segment for inputs [cutadapt.1.fq.gz, cutadapt.2.fq.gz] 
+bpipe.Concurrency	[19]	INFO	|10:41:49 Decremented running count to 0 in thread Thread-9 
+bpipe.PipelineCategory	[1]	INFO	|10:41:49 Parent pipeline of concurent sections [350070673] is 1801606234 
+bpipe.PipelineCategory	[1]	INFO	|10:41:49 Maximum child stage list length = 1 
+bpipe.PipelineCategory	[1]	INFO	|10:41:49 ###### Merging results of parallel split in parent branch  ##### 
+bpipe.PipelineCategory	[1]	INFO	|10:41:49 Grouping stages at index 0 [tophat] for merging 
+bpipe.PipelineCategory	[1]	INFO	|10:41:49 Merged outputs are [cutadapt.1.fq.gz, cutadapt.2.fq.gz] 
+bpipe.PipelineContext	[1]	INFO	|10:41:49 Setting output [cutadapt.1.fq.gz, cutadapt.2.fq.gz] on context 1537607604 in thread 1 
+bpipe.PipelineCategory	[1]	INFO	|10:41:49 There are 1 stages from nested pipelines 
+bpipe.PipelineCategory	[1]	INFO	|10:41:49 There [bpipe.PipelineStage@7cf6b73d] parallel paths in final stage 
+bpipe.PipelineCategory	[1]	INFO	|10:41:49 Last merged outputs are [cutadapt.1.fq.gz, cutadapt.2.fq.gz] 
+bpipe.PipelineContext	[1]	INFO	|10:41:49 Setting output [cutadapt.1.fq.gz, cutadapt.2.fq.gz] on context 1233234757 in thread 1 
+bpipe.PipelineCategory	[1]	INFO	|10:41:49 Merged stage name is tophat_bpipe_merge 
+bpipe.PipelineContext	[1]	INFO	|10:41:49 Setting output [cutadapt.1.fq.gz, cutadapt.2.fq.gz] on context 1193169587 in thread 1 
+bpipe.PipelineStage	[1]	INFO	|10:41:49 Setting next inputs [cutadapt.1.fq.gz, cutadapt.2.fq.gz] on stage 848713111, context 1193169587 in thread 1 
+bpipe.PipelineStage	[1]	INFO	|10:41:49 Checking files: [cutadapt.1.fq.gz, cutadapt.2.fq.gz] 
+bpipe.Dependencies	[1]	INFO	|10:41:49 Checking output (s) [cutadapt.1.fq.gz, cutadapt.2.fq.gz] 
+bpipe.Dependencies	[1]	INFO	|10:41:49  Checking file cutadapt.1.fq.gz 
+bpipe.Dependencies	[1]	INFO	|10:41:49  Checking file cutadapt.2.fq.gz 
+bpipe.Pipeline	[1]	INFO	|10:41:49 Pipeline segment  in thread 1 has finished normally 
+bpipe.Pipeline	[1]	INFO	|10:41:49 Finished running segment for inputs null 
+bpipe.Pipeline	[1]	INFO	|10:41:49 adding stage cutadapt from pipeline bpipe.Pipeline@6b62545a 
+bpipe.Pipeline	[1]	INFO	|10:41:49 adding stage cutadapt from pipeline bpipe.Pipeline@14dda791 
+bpipe.Pipeline	[1]	INFO	|10:41:49 adding stage tophat from pipeline bpipe.Pipeline@14dda791 
+bpipe.Dependencies	[21]	INFO	|10:41:49 Reading property file .bpipe/outputs/cutadapt.cutadapt.1.fq.gz.properties 
+bpipe.Dependencies	[20]	INFO	|10:41:49 Reading property file .bpipe/outputs/cutadapt.cutadapt.2.fq.gz.properties 
+bpipe.Utils	[1]	INFO	|10:41:49 Output folder scan (concurrency=5) executed in 0.024 seconds 
+bpipe.Dependencies	[1]	INFO	|10:41:49 External inputs: [[], []] for outputs [cutadapt.2.fq.gz, cutadapt.1.fq.gz] 
+bpipe.Dependencies	[1]	INFO	|10:41:49 There are 1 output groups 
+bpipe.Dependencies	[1]	INFO	|10:41:49 Subtracting 2 remaining outputs from 2 total outputs 
+bpipe.Dependencies	[1]	INFO	|10:41:49 There are 0 remaining outputs 
+bpipe.Dependencies	[1]	INFO	|10:41:49 - cutadapt.2.fq.gz / entry 1906205630 -- 
+bpipe.Dependencies	[1]	INFO	|10:41:49 cutadapt.2.fq.gz is newer than input files 
+bpipe.Dependencies	[1]	INFO	|10:41:49 - cutadapt.1.fq.gz / entry 1906205630 -- 
+bpipe.Dependencies	[1]	INFO	|10:41:49 cutadapt.1.fq.gz is newer than input files 
+bpipe.Dependencies	[1]	INFO	|10:41:49 ====Finished Output Graph===== 
+bpipe.ReportGenerator	[1]	INFO	|10:41:49 Searching for template in /lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/src/main/html/bpipe 
+bpipe.ReportGenerator	[1]	INFO	|10:41:49 Generating report to /lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/ordered_input_to_parallel/doc/index.html 
+bpipe.PipelineContext	[1]	INFO	|10:41:50 Using previously set output: [cutadapt.1.fq.gz, cutadapt.2.fq.gz] 
+bpipe.PipelineContext	[1]	INFO	|10:41:50 Using previously set output: [cutadapt.1.fq.gz, cutadapt.2.fq.gz] 
+bpipe.PipelineContext	[1]	INFO	|10:41:50 Using previously set output: [cutadapt.1.fq.gz, cutadapt.2.fq.gz] 
+bpipe.PipelineContext	[1]	INFO	|10:41:50 Using previously set output: [cutadapt.1.fq.gz, cutadapt.2.fq.gz] 
+bpipe.PipelineContext	[1]	INFO	|10:41:50 Using previously set output: [cutadapt.1.fq.gz, cutadapt.2.fq.gz] 
+bpipe.PipelineContext	[1]	INFO	|10:41:50 Using previously set output: [cutadapt.1.fq.gz, cutadapt.2.fq.gz] 
+bpipe.Dependencies	[22]	INFO	|10:41:50 Reading property file .bpipe/outputs/cutadapt.cutadapt.2.fq.gz.properties 
+bpipe.Dependencies	[23]	INFO	|10:41:50 Reading property file .bpipe/outputs/cutadapt.cutadapt.1.fq.gz.properties 
+bpipe.Utils	[1]	INFO	|10:41:50 Output folder scan (concurrency=5) executed in 0.006 seconds 
+bpipe.Dependencies	[1]	INFO	|10:41:50 External inputs: [[], []] for outputs [cutadapt.2.fq.gz, cutadapt.1.fq.gz] 
+bpipe.Dependencies	[1]	INFO	|10:41:50 There are 1 output groups 
+bpipe.Dependencies	[1]	INFO	|10:41:50 Subtracting 2 remaining outputs from 2 total outputs 
+bpipe.Dependencies	[1]	INFO	|10:41:50 There are 0 remaining outputs 
+bpipe.Dependencies	[1]	INFO	|10:41:50 -- cutadapt.2.fq.gz / entry 968677820 -- 
+bpipe.Dependencies	[1]	INFO	|10:41:50 cutadapt.2.fq.gz is newer than input files 
+bpipe.Dependencies	[1]	INFO	|10:41:50 -- cutadapt.1.fq.gz / entry 968677820 -- 
+bpipe.Dependencies	[1]	INFO	|10:41:50 cutadapt.1.fq.gz is newer than input files 
+bpipe.Dependencies	[1]	INFO	|10:41:50 ====Finished Output Graph===== 
+bpipe.Pipeline	[1]	INFO	|10:41:50 Outputs are: 
+		cutadapt.2.fq.gz
+		cutadapt.1.fq.gz 

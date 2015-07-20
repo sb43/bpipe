@@ -1,0 +1,4 @@
+14633	bpipe run -r test.groovy test.txt
+14750	bpipe run -r test.groovy test.txt
+14890	bpipe run -r test.groovy test.txt
+14994	bpipe run -r test.groovy test.txt

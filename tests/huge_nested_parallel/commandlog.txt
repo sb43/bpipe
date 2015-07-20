@@ -1,0 +1,2436 @@
+
+####################################################################################################
+# Starting pipeline at Wed Nov 26 10:23:51 GMT 2014
+# Input files:  [input_100.txt, input_10.txt, input_11.txt, input_12.txt, input_13.txt, input_14.txt, input_15.txt, input_16.txt, input_17.txt, input_18.txt, input_19.txt, input_1.txt, input_20.txt, input_21.txt, input_22.txt, input_23.txt, input_24.txt, input_25.txt, input_26.txt, input_27.txt, input_28.txt, input_29.txt, input_2.txt, input_30.txt, input_31.txt, input_32.txt, input_33.txt, input_34.txt, input_35.txt, input_36.txt, input_37.txt, input_38.txt, input_39.txt, input_3.txt, input_40.txt, input_41.txt, input_42.txt, input_43.txt, input_44.txt, input_45.txt, input_46.txt, input_47.txt, input_48.txt, input_49.txt, input_4.txt, input_50.txt, input_51.txt, input_52.txt, input_53.txt, input_54.txt, input_55.txt, input_56.txt, input_57.txt, input_58.txt, input_59.txt, input_5.txt, input_60.txt, input_61.txt, input_62.txt, input_63.txt, input_64.txt, input_65.txt, input_66.txt, input_67.txt, input_68.txt, input_69.txt, input_6.txt, input_70.txt, input_71.txt, input_72.txt, input_73.txt, input_74.txt, input_75.txt, input_76.txt, input_77.txt, input_78.txt, input_79.txt, input_7.txt, input_80.txt, input_81.txt, input_82.txt, input_83.txt, input_84.txt, input_85.txt, input_86.txt, input_87.txt, input_88.txt, input_89.txt, input_8.txt, input_90.txt, input_91.txt, input_92.txt, input_93.txt, input_94.txt, input_95.txt, input_96.txt, input_97.txt, input_98.txt, input_99.txt, input_9.txt]
+# Output Log:  .bpipe/logs/14384.log
+# Stage hello [14]
+# Stage hello [21]
+# Stage hello [72]
+# Stage hello [33]
+# Stage hello [30]
+# Stage hello [62]
+# Stage hello [32]
+# Stage hello [5]
+# Stage hello [2]
+# Stage hello [20]
+# Stage hello [57]
+# Stage hello [29]
+# Stage hello [25]
+# Stage hello [46]
+# Stage hello [23]
+# Stage hello [17]
+# Stage hello [63]
+# Stage hello [10]
+# Stage hello [16]
+# Stage hello [100]
+# Stage hello [64]
+# Stage hello [77]
+# Stage hello [67]
+# Stage hello [28]
+# Stage hello [40]
+# Stage hello [45]
+# Stage hello [48]
+# Stage hello [36]
+# Stage hello [44]
+# Stage hello [8]
+# Stage hello [27]
+# Stage hello [55]
+# Stage hello [24]
+# Stage hello [37]
+# Stage hello [76]
+# Stage hello [75]
+# Stage hello [99]
+# Stage hello [92]
+# Stage hello [71]
+# Stage hello [6]
+# Stage hello [50]
+# Stage hello [13]
+# Stage hello [70]
+# Stage hello [66]
+# Stage hello [68]
+# Stage hello [74]
+# Stage hello [9]
+# Stage hello [18]
+# Stage hello [65]
+# Stage hello [3]
+# Stage hello [86]
+# Stage hello [56]
+# Stage hello [95]
+# Stage hello [35]
+# Stage hello [31]
+# Stage hello [26]
+# Stage hello [54]
+# Stage hello [47]
+# Stage hello [1]
+# Stage hello [83]
+cp input_33.txt input_33.txt.hello; sleep 5
+cp input_72.txt input_72.txt.hello; sleep 5
+cp input_30.txt input_30.txt.hello; sleep 5
+cp input_14.txt input_14.txt.hello; sleep 5
+# Stage hello [94]
+cp input_62.txt input_62.txt.hello; sleep 5
+# Stage hello [15]
+# Stage hello [97]
+# Stage hello [39]
+cp input_20.txt input_20.txt.hello; sleep 5
+# Stage hello [79]
+# Stage hello [49]
+# Stage hello [53]
+cp input_46.txt input_46.txt.hello; sleep 5
+# Stage hello [22]
+# Stage hello [78]
+# Stage hello [69]
+# Stage hello [43]
+# Stage hello [11]
+# Stage hello [61]
+# Stage hello [87]
+# Stage hello [73]
+# Stage hello [58]
+# Stage hello [80]
+# Stage hello [81]
+cp input_57.txt input_57.txt.hello; sleep 5
+# Stage hello [93]
+# Stage hello [59]
+# Stage hello [52]
+# Stage hello [96]
+# Stage hello [7]
+# Stage hello [34]
+cp input_32.txt input_32.txt.hello; sleep 5
+cp input_70.txt input_70.txt.hello; sleep 5
+cp input_21.txt input_21.txt.hello; sleep 5
+cp input_71.txt input_71.txt.hello; sleep 5
+cp input_2.txt input_2.txt.hello; sleep 5
+# Stage hello [85]
+cp input_6.txt input_6.txt.hello; sleep 5
+cp input_50.txt input_50.txt.hello; sleep 5
+# Stage hello [90]
+# Stage hello [12]
+# Stage hello [41]
+# Stage hello [91]
+# Stage hello [89]
+# Stage hello [4]
+# Stage hello [84]
+# Stage hello [19]
+cp input_99.txt input_99.txt.hello; sleep 5
+cp input_92.txt input_92.txt.hello; sleep 5
+cp input_3.txt input_3.txt.hello; sleep 5
+cp input_75.txt input_75.txt.hello; sleep 5
+# Stage hello [88]
+# Stage hello [98]
+# Stage hello [82]
+# Stage hello [51]
+# Stage hello [42]
+cp input_63.txt input_63.txt.hello; sleep 5
+# Stage hello [60]
+cp input_5.txt input_5.txt.hello; sleep 5
+cp input_100.txt input_100.txt.hello; sleep 5
+cp input_16.txt input_16.txt.hello; sleep 5
+# Stage hello [38]
+cp input_10.txt input_10.txt.hello; sleep 5
+cp input_25.txt input_25.txt.hello; sleep 5
+cp input_29.txt input_29.txt.hello; sleep 5
+cp input_17.txt input_17.txt.hello; sleep 5
+cp input_23.txt input_23.txt.hello; sleep 5
+cp input_64.txt input_64.txt.hello; sleep 5
+cp input_67.txt input_67.txt.hello; sleep 5
+cp input_77.txt input_77.txt.hello; sleep 5
+cp input_44.txt input_44.txt.hello; sleep 5
+cp input_52.txt input_52.txt.hello; sleep 5
+cp input_59.txt input_59.txt.hello; sleep 5
+cp input_7.txt input_7.txt.hello; sleep 5
+cp input_80.txt input_80.txt.hello; sleep 5
+cp input_81.txt input_81.txt.hello; sleep 5
+cp input_93.txt input_93.txt.hello; sleep 5
+cp input_87.txt input_87.txt.hello; sleep 5
+cp input_58.txt input_58.txt.hello; sleep 5
+cp input_73.txt input_73.txt.hello; sleep 5
+cp input_61.txt input_61.txt.hello; sleep 5
+cp input_43.txt input_43.txt.hello; sleep 5
+cp input_11.txt input_11.txt.hello; sleep 5
+cp input_69.txt input_69.txt.hello; sleep 5
+cp input_28.txt input_28.txt.hello; sleep 5
+cp input_31.txt input_31.txt.hello; sleep 5
+cp input_35.txt input_35.txt.hello; sleep 5
+cp input_95.txt input_95.txt.hello; sleep 5
+cp input_26.txt input_26.txt.hello; sleep 5
+cp input_86.txt input_86.txt.hello; sleep 5
+cp input_56.txt input_56.txt.hello; sleep 5
+cp input_65.txt input_65.txt.hello; sleep 5
+cp input_9.txt input_9.txt.hello; sleep 5
+cp input_18.txt input_18.txt.hello; sleep 5
+cp input_74.txt input_74.txt.hello; sleep 5
+cp input_68.txt input_68.txt.hello; sleep 5
+cp input_66.txt input_66.txt.hello; sleep 5
+cp input_13.txt input_13.txt.hello; sleep 5
+cp input_1.txt input_1.txt.hello; sleep 5
+cp input_83.txt input_83.txt.hello; sleep 5
+cp input_54.txt input_54.txt.hello; sleep 5
+cp input_47.txt input_47.txt.hello; sleep 5
+cp input_38.txt input_38.txt.hello; sleep 5
+cp input_60.txt input_60.txt.hello; sleep 5
+cp input_51.txt input_51.txt.hello; sleep 5
+cp input_42.txt input_42.txt.hello; sleep 5
+cp input_82.txt input_82.txt.hello; sleep 5
+cp input_88.txt input_88.txt.hello; sleep 5
+cp input_19.txt input_19.txt.hello; sleep 5
+cp input_24.txt input_24.txt.hello; sleep 5
+cp input_22.txt input_22.txt.hello; sleep 5
+cp input_37.txt input_37.txt.hello; sleep 5
+cp input_76.txt input_76.txt.hello; sleep 5
+cp input_55.txt input_55.txt.hello; sleep 5
+cp input_98.txt input_98.txt.hello; sleep 5
+cp input_8.txt input_8.txt.hello; sleep 5
+cp input_27.txt input_27.txt.hello; sleep 5
+cp input_40.txt input_40.txt.hello; sleep 5
+cp input_36.txt input_36.txt.hello; sleep 5
+cp input_48.txt input_48.txt.hello; sleep 5
+cp input_45.txt input_45.txt.hello; sleep 5
+cp input_96.txt input_96.txt.hello; sleep 5
+cp input_90.txt input_90.txt.hello; sleep 5
+cp input_12.txt input_12.txt.hello; sleep 5
+cp input_34.txt input_34.txt.hello; sleep 5
+cp input_85.txt input_85.txt.hello; sleep 5
+cp input_78.txt input_78.txt.hello; sleep 5
+cp input_53.txt input_53.txt.hello; sleep 5
+cp input_49.txt input_49.txt.hello; sleep 5
+cp input_79.txt input_79.txt.hello; sleep 5
+cp input_39.txt input_39.txt.hello; sleep 5
+cp input_97.txt input_97.txt.hello; sleep 5
+cp input_15.txt input_15.txt.hello; sleep 5
+cp input_94.txt input_94.txt.hello; sleep 5
+cp input_4.txt input_4.txt.hello; sleep 5
+cp input_84.txt input_84.txt.hello; sleep 5
+cp input_89.txt input_89.txt.hello; sleep 5
+cp input_91.txt input_91.txt.hello; sleep 5
+cp input_41.txt input_41.txt.hello; sleep 5
+# Stage world [1]
+# Stage world2 [2]
+# Stage world2 [2]
+# Stage world [1]
+# Stage world2 [2]
+# Stage world [1]
+# Stage world [1]
+# Stage world [1]
+# Stage world [1]
+# Stage world [1]
+# Stage world2 [2]
+# Stage world2 [2]
+# Stage world2 [2]
+# Stage world2 [2]
+# Stage world [1]
+# Stage world [1]
+# Stage world2 [2]
+# Stage world2 [2]
+# Stage world2 [2]
+# Stage world [1]
+# Stage world2 [2]
+# Stage world [1]
+# Stage world [1]
+# Stage world2 [2]
+# Stage world2 [2]
+# Stage world [1]
+# Stage world2 [2]
+# Stage world2 [2]
+# Stage world [1]
+# Stage world2 [2]
+# Stage world [1]
+# Stage world2 [2]
+# Stage world [1]
+# Stage world [1]
+# Stage world [1]
+# Stage world2 [2]
+# Stage world2 [2]
+# Stage world2 [2]
+# Stage world2 [2]
+cp input_32.txt.hello input_32.txt.hello.world
+# Stage world [1]
+# Stage world [1]
+# Stage world2 [2]
+# Stage world [1]
+# Stage world2 [2]
+# Stage world2 [2]
+cp input_67.txt.hello input_67.txt.hello.world2
+# Stage world [1]
+# Stage world [1]
+# Stage world [1]
+# Stage world [1]
+cp input_14.txt.hello input_14.txt.hello.world
+cp input_70.txt.hello input_70.txt.hello.world2
+cp input_17.txt.hello input_17.txt.hello.world2
+# Stage world2 [2]
+# Stage world [1]
+# Stage world [1]
+# Stage world2 [2]
+# Stage world [1]
+# Stage world2 [2]
+# Stage world2 [2]
+# Stage world2 [2]
+# Stage world [1]
+# Stage world2 [2]
+cp input_70.txt.hello input_70.txt.hello.world
+# Stage world [1]
+cp input_62.txt.hello input_62.txt.hello.world
+# Stage world [1]
+# Stage world [1]
+# Stage world2 [2]
+# Stage world2 [2]
+cp input_29.txt.hello input_29.txt.hello.world
+cp input_44.txt.hello input_44.txt.hello.world2
+cp input_50.txt.hello input_50.txt.hello.world2
+cp input_25.txt.hello input_25.txt.hello.world2
+cp input_75.txt.hello input_75.txt.hello.world
+cp input_10.txt.hello input_10.txt.hello.world2
+cp input_5.txt.hello input_5.txt.hello.world2
+cp input_16.txt.hello input_16.txt.hello.world2
+cp input_6.txt.hello input_6.txt.hello.world
+cp input_63.txt.hello input_63.txt.hello.world2
+cp input_77.txt.hello input_77.txt.hello.world
+cp input_44.txt.hello input_44.txt.hello.world
+cp input_30.txt.hello input_30.txt.hello.world2
+cp input_14.txt.hello input_14.txt.hello.world2
+cp input_2.txt.hello input_2.txt.hello.world2
+cp input_17.txt.hello input_17.txt.hello.world
+cp input_50.txt.hello input_50.txt.hello.world
+cp input_23.txt.hello input_23.txt.hello.world2
+cp input_71.txt.hello input_71.txt.hello.world2
+cp input_5.txt.hello input_5.txt.hello.world
+cp input_75.txt.hello input_75.txt.hello.world2
+cp input_57.txt.hello input_57.txt.hello.world
+cp input_92.txt.hello input_92.txt.hello.world
+cp input_57.txt.hello input_57.txt.hello.world2
+cp input_72.txt.hello input_72.txt.hello.world
+cp input_23.txt.hello input_23.txt.hello.world
+cp input_99.txt.hello input_99.txt.hello.world
+cp input_63.txt.hello input_63.txt.hello.world
+cp input_33.txt.hello input_33.txt.hello.world
+cp input_2.txt.hello input_2.txt.hello.world
+cp input_99.txt.hello input_99.txt.hello.world2
+cp input_64.txt.hello input_64.txt.hello.world2
+cp input_92.txt.hello input_92.txt.hello.world2
+cp input_77.txt.hello input_77.txt.hello.world2
+cp input_29.txt.hello input_29.txt.hello.world2
+cp input_3.txt.hello input_3.txt.hello.world
+cp input_46.txt.hello input_46.txt.hello.world
+cp input_64.txt.hello input_64.txt.hello.world
+cp input_20.txt.hello input_20.txt.hello.world
+cp input_100.txt.hello input_100.txt.hello.world2
+cp input_62.txt.hello input_62.txt.hello.world2
+cp input_16.txt.hello input_16.txt.hello.world
+cp input_72.txt.hello input_72.txt.hello.world2
+cp input_25.txt.hello input_25.txt.hello.world
+cp input_32.txt.hello input_32.txt.hello.world2
+cp input_46.txt.hello input_46.txt.hello.world2
+cp input_20.txt.hello input_20.txt.hello.world2
+cp input_71.txt.hello input_71.txt.hello.world
+cp input_67.txt.hello input_67.txt.hello.world
+cp input_21.txt.hello input_21.txt.hello.world
+cp input_6.txt.hello input_6.txt.hello.world2
+cp input_33.txt.hello input_33.txt.hello.world2
+cp input_21.txt.hello input_21.txt.hello.world2
+cp input_3.txt.hello input_3.txt.hello.world2
+cp input_10.txt.hello input_10.txt.hello.world
+cp input_30.txt.hello input_30.txt.hello.world
+cp input_100.txt.hello input_100.txt.hello.world
+# Stage world2 [2]
+# Stage world [1]
+# Stage world2 [2]
+# Stage world [1]
+cp input_81.txt.hello input_81.txt.hello.world2
+cp input_81.txt.hello input_81.txt.hello.world
+cp input_52.txt.hello input_52.txt.hello.world
+cp input_52.txt.hello input_52.txt.hello.world2
+# Stage world [1]
+# Stage world2 [2]
+# Stage world [1]
+# Stage world2 [2]
+# Stage world2 [2]
+cp input_26.txt.hello input_26.txt.hello.world
+# Stage world2 [2]
+# Stage world [1]
+# Stage world2 [2]
+# Stage world [1]
+# Stage world2 [2]
+# Stage world [1]
+# Stage world [1]
+cp input_87.txt.hello input_87.txt.hello.world
+cp input_26.txt.hello input_26.txt.hello.world2
+# Stage world [1]
+# Stage world [1]
+# Stage world2 [2]
+# Stage world2 [2]
+# Stage world2 [2]
+# Stage world [1]
+cp input_93.txt.hello input_93.txt.hello.world2
+# Stage world [1]
+cp input_93.txt.hello input_93.txt.hello.world
+cp input_7.txt.hello input_7.txt.hello.world2
+# Stage world2 [2]
+# Stage world2 [2]
+# Stage world2 [2]
+# Stage world [1]
+cp input_18.txt.hello input_18.txt.hello.world2
+# Stage world [1]
+cp input_87.txt.hello input_87.txt.hello.world2
+# Stage world [1]
+# Stage world [1]
+# Stage world2 [2]
+cp input_54.txt.hello input_54.txt.hello.world
+# Stage world [1]
+# Stage world2 [2]
+# Stage world2 [2]
+# Stage world [1]
+# Stage world [1]
+cp input_9.txt.hello input_9.txt.hello.world
+# Stage world [1]
+cp input_18.txt.hello input_18.txt.hello.world
+# Stage world2 [2]
+# Stage world2 [2]
+# Stage world2 [2]
+# Stage world2 [2]
+# Stage world2 [2]
+# Stage world [1]
+# Stage world2 [2]
+# Stage world2 [2]
+# Stage world [1]
+cp input_11.txt.hello input_11.txt.hello.world2
+# Stage world [1]
+cp input_58.txt.hello input_58.txt.hello.world2
+cp input_11.txt.hello input_11.txt.hello.world
+cp input_56.txt.hello input_56.txt.hello.world
+# Stage world [1]
+# Stage world2 [2]
+cp input_35.txt.hello input_35.txt.hello.world
+# Stage world [1]
+# Stage world [1]
+# Stage world [1]
+# Stage world [1]
+cp input_31.txt.hello input_31.txt.hello.world2
+# Stage world2 [2]
+# Stage world2 [2]
+# Stage world [1]
+# Stage world [1]
+# Stage world2 [2]
+# Stage world [1]
+# Stage world2 [2]
+# Stage world2 [2]
+# Stage world2 [2]
+# Stage world [1]
+cp input_35.txt.hello input_35.txt.hello.world2
+# Stage world2 [2]
+cp input_73.txt.hello input_73.txt.hello.world2
+cp input_80.txt.hello input_80.txt.hello.world
+cp input_80.txt.hello input_80.txt.hello.world2
+cp input_73.txt.hello input_73.txt.hello.world
+cp input_95.txt.hello input_95.txt.hello.world
+cp input_68.txt.hello input_68.txt.hello.world2
+cp input_68.txt.hello input_68.txt.hello.world
+cp input_95.txt.hello input_95.txt.hello.world2
+cp input_61.txt.hello input_61.txt.hello.world
+cp input_65.txt.hello input_65.txt.hello.world
+cp input_74.txt.hello input_74.txt.hello.world
+cp input_28.txt.hello input_28.txt.hello.world
+cp input_83.txt.hello input_83.txt.hello.world
+cp input_9.txt.hello input_9.txt.hello.world2
+cp input_28.txt.hello input_28.txt.hello.world2
+cp input_86.txt.hello input_86.txt.hello.world
+cp input_65.txt.hello input_65.txt.hello.world2
+cp input_69.txt.hello input_69.txt.hello.world2
+cp input_31.txt.hello input_31.txt.hello.world
+cp input_86.txt.hello input_86.txt.hello.world2
+cp input_13.txt.hello input_13.txt.hello.world2
+cp input_61.txt.hello input_61.txt.hello.world2
+cp input_38.txt.hello input_38.txt.hello.world
+cp input_56.txt.hello input_56.txt.hello.world2
+cp input_54.txt.hello input_54.txt.hello.world2
+cp input_47.txt.hello input_47.txt.hello.world2
+cp input_13.txt.hello input_13.txt.hello.world
+cp input_66.txt.hello input_66.txt.hello.world
+cp input_47.txt.hello input_47.txt.hello.world
+cp input_43.txt.hello input_43.txt.hello.world2
+cp input_83.txt.hello input_83.txt.hello.world2
+cp input_59.txt.hello input_59.txt.hello.world2
+cp input_74.txt.hello input_74.txt.hello.world2
+cp input_59.txt.hello input_59.txt.hello.world
+cp input_1.txt.hello input_1.txt.hello.world2
+cp input_69.txt.hello input_69.txt.hello.world
+cp input_66.txt.hello input_66.txt.hello.world2
+cp input_58.txt.hello input_58.txt.hello.world
+cp input_7.txt.hello input_7.txt.hello.world
+cp input_38.txt.hello input_38.txt.hello.world2
+cp input_1.txt.hello input_1.txt.hello.world
+cp input_43.txt.hello input_43.txt.hello.world
+# Stage world2 [2]
+# Stage world2 [2]
+# Stage world [1]
+# Stage world [1]
+# Stage world [1]
+cp input_60.txt.hello input_60.txt.hello.world
+cp input_88.txt.hello input_88.txt.hello.world2
+cp input_82.txt.hello input_82.txt.hello.world2
+cp input_82.txt.hello input_82.txt.hello.world
+cp input_88.txt.hello input_88.txt.hello.world
+# Stage world [1]
+# Stage world2 [2]
+# Stage world2 [2]
+# Stage world2 [2]
+cp input_51.txt.hello input_51.txt.hello.world2
+# Stage world [1]
+cp input_60.txt.hello input_60.txt.hello.world2
+cp input_51.txt.hello input_51.txt.hello.world
+# Stage world [1]
+# Stage world2 [2]
+cp input_42.txt.hello input_42.txt.hello.world
+cp input_42.txt.hello input_42.txt.hello.world2
+# Stage world2 [2]
+# Stage world [1]
+cp input_8.txt.hello input_8.txt.hello.world2
+cp input_8.txt.hello input_8.txt.hello.world
+# Stage world2 [2]
+# Stage world2 [2]
+# Stage world2 [2]
+# Stage world [1]
+# Stage world2 [2]
+# Stage world [1]
+# Stage world [1]
+# Stage world [1]
+cp input_48.txt.hello input_48.txt.hello.world2
+# Stage world [1]
+# Stage world2 [2]
+# Stage world [1]
+# Stage world2 [2]
+# Stage world2 [2]
+# Stage world [1]
+# Stage world2 [2]
+# Stage world [1]
+# Stage world [1]
+# Stage world2 [2]
+# Stage world [1]
+# Stage world2 [2]
+# Stage world [1]
+# Stage world [1]
+# Stage world2 [2]
+# Stage world2 [2]
+cp input_97.txt.hello input_97.txt.hello.world
+cp input_97.txt.hello input_97.txt.hello.world2
+cp input_78.txt.hello input_78.txt.hello.world2
+cp input_37.txt.hello input_37.txt.hello.world2
+cp input_48.txt.hello input_48.txt.hello.world
+# Stage world [1]
+# Stage world2 [2]
+cp input_49.txt.hello input_49.txt.hello.world2
+cp input_85.txt.hello input_85.txt.hello.world
+# Stage world [1]
+# Stage world2 [2]
+# Stage world [1]
+# Stage world [1]
+# Stage world2 [2]
+# Stage world2 [2]
+# Stage world [1]
+# Stage world [1]
+# Stage world2 [2]
+cp input_15.txt.hello input_15.txt.hello.world2
+cp input_12.txt.hello input_12.txt.hello.world
+cp input_94.txt.hello input_94.txt.hello.world2
+cp input_4.txt.hello input_4.txt.hello.world
+cp input_98.txt.hello input_98.txt.hello.world
+cp input_53.txt.hello input_53.txt.hello.world
+cp input_37.txt.hello input_37.txt.hello.world
+cp input_90.txt.hello input_90.txt.hello.world
+cp input_12.txt.hello input_12.txt.hello.world2
+cp input_76.txt.hello input_76.txt.hello.world
+cp input_85.txt.hello input_85.txt.hello.world2
+cp input_78.txt.hello input_78.txt.hello.world
+cp input_27.txt.hello input_27.txt.hello.world
+cp input_19.txt.hello input_19.txt.hello.world2
+cp input_55.txt.hello input_55.txt.hello.world2
+cp input_90.txt.hello input_90.txt.hello.world2
+cp input_55.txt.hello input_55.txt.hello.world
+cp input_27.txt.hello input_27.txt.hello.world2
+cp input_53.txt.hello input_53.txt.hello.world2
+cp input_79.txt.hello input_79.txt.hello.world2
+cp input_79.txt.hello input_79.txt.hello.world
+# Stage world2 [2]
+cp input_49.txt.hello input_49.txt.hello.world
+cp input_4.txt.hello input_4.txt.hello.world2
+cp input_15.txt.hello input_15.txt.hello.world
+cp input_36.txt.hello input_36.txt.hello.world
+cp input_19.txt.hello input_19.txt.hello.world
+cp input_98.txt.hello input_98.txt.hello.world2
+cp input_36.txt.hello input_36.txt.hello.world2
+cp input_94.txt.hello input_94.txt.hello.world
+# Stage world2 [2]
+# Stage world [1]
+# Stage world [1]
+# Stage world [1]
+# Stage world2 [2]
+# Stage world [1]
+# Stage world2 [2]
+# Stage world [1]
+cp input_76.txt.hello input_76.txt.hello.world2
+# Stage world2 [2]
+# Stage world2 [2]
+# Stage world [1]
+cp input_34.txt.hello input_34.txt.hello.world2
+cp input_34.txt.hello input_34.txt.hello.world
+cp input_96.txt.hello input_96.txt.hello.world
+cp input_24.txt.hello input_24.txt.hello.world2
+cp input_24.txt.hello input_24.txt.hello.world
+cp input_40.txt.hello input_40.txt.hello.world2
+cp input_45.txt.hello input_45.txt.hello.world
+# Stage world2 [2]
+# Stage world [1]
+# Stage world2 [2]
+cp input_39.txt.hello input_39.txt.hello.world2
+cp input_39.txt.hello input_39.txt.hello.world
+cp input_96.txt.hello input_96.txt.hello.world2
+cp input_22.txt.hello input_22.txt.hello.world
+cp input_22.txt.hello input_22.txt.hello.world2
+cp input_45.txt.hello input_45.txt.hello.world2
+cp input_40.txt.hello input_40.txt.hello.world
+# Stage world2 [2]
+# Stage world [1]
+# Stage world [1]
+cp input_84.txt.hello input_84.txt.hello.world2
+cp input_84.txt.hello input_84.txt.hello.world
+# Stage world [1]
+# Stage world2 [2]
+# Stage world [1]
+# Stage world2 [2]
+cp input_89.txt.hello input_89.txt.hello.world
+cp input_91.txt.hello input_91.txt.hello.world
+cp input_41.txt.hello input_41.txt.hello.world
+cp input_89.txt.hello input_89.txt.hello.world2
+cp input_41.txt.hello input_41.txt.hello.world2
+# Stage world2 [2]
+cp input_91.txt.hello input_91.txt.hello.world2
+# Stage end
+cat input_100.txt.hello.world input_100.txt.hello.world2 input_10.txt.hello.world input_10.txt.hello.world2 input_11.txt.hello.world input_11.txt.hello.world2 input_12.txt.hello.world input_12.txt.hello.world2 input_13.txt.hello.world input_13.txt.hello.world2 input_14.txt.hello.world input_14.txt.hello.world2 input_15.txt.hello.world input_15.txt.hello.world2 input_16.txt.hello.world input_16.txt.hello.world2 input_17.txt.hello.world input_17.txt.hello.world2 input_18.txt.hello.world input_18.txt.hello.world2 input_19.txt.hello.world input_19.txt.hello.world2 input_1.txt.hello.world input_1.txt.hello.world2 input_20.txt.hello.world input_20.txt.hello.world2 input_21.txt.hello.world input_21.txt.hello.world2 input_22.txt.hello.world input_22.txt.hello.world2 input_23.txt.hello.world input_23.txt.hello.world2 input_24.txt.hello.world input_24.txt.hello.world2 input_25.txt.hello.world input_25.txt.hello.world2 input_26.txt.hello.world input_26.txt.hello.world2 input_27.txt.hello.world input_27.txt.hello.world2 input_28.txt.hello.world input_28.txt.hello.world2 input_29.txt.hello.world input_29.txt.hello.world2 input_2.txt.hello.world input_2.txt.hello.world2 input_30.txt.hello.world input_30.txt.hello.world2 input_31.txt.hello.world input_31.txt.hello.world2 input_32.txt.hello.world input_32.txt.hello.world2 input_33.txt.hello.world input_33.txt.hello.world2 input_34.txt.hello.world input_34.txt.hello.world2 input_35.txt.hello.world input_35.txt.hello.world2 input_36.txt.hello.world input_36.txt.hello.world2 input_37.txt.hello.world input_37.txt.hello.world2 input_38.txt.hello.world input_38.txt.hello.world2 input_39.txt.hello.world input_39.txt.hello.world2 input_3.txt.hello.world input_3.txt.hello.world2 input_40.txt.hello.world input_40.txt.hello.world2 input_41.txt.hello.world input_41.txt.hello.world2 input_42.txt.hello.world input_42.txt.hello.world2 input_43.txt.hello.world input_43.txt.hello.world2 input_44.txt.hello.world input_44.txt.hello.world2 input_45.txt.hello.world input_45.txt.hello.world2 input_46.txt.hello.world input_46.txt.hello.world2 input_47.txt.hello.world input_47.txt.hello.world2 input_48.txt.hello.world input_48.txt.hello.world2 input_49.txt.hello.world input_49.txt.hello.world2 input_4.txt.hello.world input_4.txt.hello.world2 input_50.txt.hello.world input_50.txt.hello.world2 input_51.txt.hello.world input_51.txt.hello.world2 input_52.txt.hello.world input_52.txt.hello.world2 input_53.txt.hello.world input_53.txt.hello.world2 input_54.txt.hello.world input_54.txt.hello.world2 input_55.txt.hello.world input_55.txt.hello.world2 input_56.txt.hello.world input_56.txt.hello.world2 input_57.txt.hello.world input_57.txt.hello.world2 input_58.txt.hello.world input_58.txt.hello.world2 input_59.txt.hello.world input_59.txt.hello.world2 input_5.txt.hello.world input_5.txt.hello.world2 input_60.txt.hello.world input_60.txt.hello.world2 input_61.txt.hello.world input_61.txt.hello.world2 input_62.txt.hello.world input_62.txt.hello.world2 input_63.txt.hello.world input_63.txt.hello.world2 input_64.txt.hello.world input_64.txt.hello.world2 input_65.txt.hello.world input_65.txt.hello.world2 input_66.txt.hello.world input_66.txt.hello.world2 input_67.txt.hello.world input_67.txt.hello.world2 input_68.txt.hello.world input_68.txt.hello.world2 input_69.txt.hello.world input_69.txt.hello.world2 input_6.txt.hello.world input_6.txt.hello.world2 input_70.txt.hello.world input_70.txt.hello.world2 input_71.txt.hello.world input_71.txt.hello.world2 input_72.txt.hello.world input_72.txt.hello.world2 input_73.txt.hello.world input_73.txt.hello.world2 input_74.txt.hello.world input_74.txt.hello.world2 input_75.txt.hello.world input_75.txt.hello.world2 input_76.txt.hello.world input_76.txt.hello.world2 input_77.txt.hello.world input_77.txt.hello.world2 input_78.txt.hello.world input_78.txt.hello.world2 input_79.txt.hello.world input_79.txt.hello.world2 input_7.txt.hello.world input_7.txt.hello.world2 input_80.txt.hello.world input_80.txt.hello.world2 input_81.txt.hello.world input_81.txt.hello.world2 input_82.txt.hello.world input_82.txt.hello.world2 input_83.txt.hello.world input_83.txt.hello.world2 input_84.txt.hello.world input_84.txt.hello.world2 input_85.txt.hello.world input_85.txt.hello.world2 input_86.txt.hello.world input_86.txt.hello.world2 input_87.txt.hello.world input_87.txt.hello.world2 input_88.txt.hello.world input_88.txt.hello.world2 input_89.txt.hello.world input_89.txt.hello.world2 input_8.txt.hello.world input_8.txt.hello.world2 input_90.txt.hello.world input_90.txt.hello.world2 input_91.txt.hello.world input_91.txt.hello.world2 input_92.txt.hello.world input_92.txt.hello.world2 input_93.txt.hello.world input_93.txt.hello.world2 input_94.txt.hello.world input_94.txt.hello.world2 input_95.txt.hello.world input_95.txt.hello.world2 input_96.txt.hello.world input_96.txt.hello.world2 input_97.txt.hello.world input_97.txt.hello.world2 input_98.txt.hello.world input_98.txt.hello.world2 input_99.txt.hello.world input_99.txt.hello.world2 input_9.txt.hello.world input_9.txt.hello.world2 > input_100.txt.hello.world.end
+# ################ Finished at Wed Nov 26 10:24:13 GMT 2014 Duration = 22.611 seconds ################
+
+
+####################################################################################################
+# Starting pipeline at Fri Dec 05 10:13:39 GMT 2014
+# Input files:  [input_100.txt, input_10.txt, input_11.txt, input_12.txt, input_13.txt, input_14.txt, input_15.txt, input_16.txt, input_17.txt, input_18.txt, input_19.txt, input_1.txt, input_20.txt, input_21.txt, input_22.txt, input_23.txt, input_24.txt, input_25.txt, input_26.txt, input_27.txt, input_28.txt, input_29.txt, input_2.txt, input_30.txt, input_31.txt, input_32.txt, input_33.txt, input_34.txt, input_35.txt, input_36.txt, input_37.txt, input_38.txt, input_39.txt, input_3.txt, input_40.txt, input_41.txt, input_42.txt, input_43.txt, input_44.txt, input_45.txt, input_46.txt, input_47.txt, input_48.txt, input_49.txt, input_4.txt, input_50.txt, input_51.txt, input_52.txt, input_53.txt, input_54.txt, input_55.txt, input_56.txt, input_57.txt, input_58.txt, input_59.txt, input_5.txt, input_60.txt, input_61.txt, input_62.txt, input_63.txt, input_64.txt, input_65.txt, input_66.txt, input_67.txt, input_68.txt, input_69.txt, input_6.txt, input_70.txt, input_71.txt, input_72.txt, input_73.txt, input_74.txt, input_75.txt, input_76.txt, input_77.txt, input_78.txt, input_79.txt, input_7.txt, input_80.txt, input_81.txt, input_82.txt, input_83.txt, input_84.txt, input_85.txt, input_86.txt, input_87.txt, input_88.txt, input_89.txt, input_8.txt, input_90.txt, input_91.txt, input_92.txt, input_93.txt, input_94.txt, input_95.txt, input_96.txt, input_97.txt, input_98.txt, input_99.txt, input_9.txt]
+# Output Log:  .bpipe/logs/22959.log
+# Stage hello [36]
+# Stage hello [42]
+# Stage hello [32]
+# Stage hello [11]
+# Stage hello [70]
+# Stage hello [43]
+# Stage hello [23]
+# Stage hello [33]
+# Stage hello [77]
+# Stage hello [78]
+# Stage hello [57]
+# Stage hello [49]
+# Stage hello [51]
+# Stage hello [13]
+# Stage hello [18]
+# Stage hello [53]
+# Stage hello [39]
+# Stage hello [1]
+# Stage hello [28]
+# Stage hello [22]
+# Stage hello [26]
+# Stage hello [20]
+# Stage hello [69]
+# Stage hello [97]
+# Stage hello [25]
+# Stage hello [91]
+# Stage hello [93]
+# Stage hello [27]
+# Stage hello [50]
+# Stage hello [44]
+# Stage hello [61]
+# Stage hello [72]
+# Stage hello [58]
+# Stage hello [80]
+# Stage hello [3]
+# Stage hello [12]
+# Stage hello [67]
+# Stage hello [83]
+# Stage hello [2]
+# Stage hello [84]
+# Stage hello [5]
+# Stage hello [59]
+# Stage hello [85]
+cp input_23.txt input_23.txt.hello; sleep 5
+cp input_70.txt input_70.txt.hello; sleep 5
+cp input_32.txt input_32.txt.hello; sleep 5
+cp input_11.txt input_11.txt.hello; sleep 5
+cp input_33.txt input_33.txt.hello; sleep 5
+cp input_42.txt input_42.txt.hello; sleep 5
+# Stage hello [24]
+# Stage hello [21]
+cp input_36.txt input_36.txt.hello; sleep 5
+# Stage hello [82]
+cp input_43.txt input_43.txt.hello; sleep 5
+cp input_77.txt input_77.txt.hello; sleep 5
+# Stage hello [29]
+# Stage hello [64]
+cp input_18.txt input_18.txt.hello; sleep 5
+cp input_13.txt input_13.txt.hello; sleep 5
+cp input_61.txt input_61.txt.hello; sleep 5
+# Stage hello [8]
+# Stage hello [40]
+# Stage hello [88]
+cp input_57.txt input_57.txt.hello; sleep 5
+cp input_25.txt input_25.txt.hello; sleep 5
+cp input_51.txt input_51.txt.hello; sleep 5
+# Stage hello [94]
+# Stage hello [47]
+cp input_78.txt input_78.txt.hello; sleep 5
+# Stage hello [71]
+cp input_69.txt input_69.txt.hello; sleep 5
+cp input_49.txt input_49.txt.hello; sleep 5
+# Stage hello [46]
+# Stage hello [48]
+# Stage hello [7]
+# Stage hello [87]
+cp input_21.txt input_21.txt.hello; sleep 5
+# Stage hello [31]
+# Stage hello [75]
+cp input_5.txt input_5.txt.hello; sleep 5
+cp input_85.txt input_85.txt.hello; sleep 5
+cp input_59.txt input_59.txt.hello; sleep 5
+cp input_24.txt input_24.txt.hello; sleep 5
+# Stage hello [4]
+cp input_97.txt input_97.txt.hello; sleep 5
+cp input_22.txt input_22.txt.hello; sleep 5
+# Stage hello [9]
+cp input_28.txt input_28.txt.hello; sleep 5
+cp input_20.txt input_20.txt.hello; sleep 5
+cp input_53.txt input_53.txt.hello; sleep 5
+cp input_26.txt input_26.txt.hello; sleep 5
+cp input_71.txt input_71.txt.hello; sleep 5
+# Stage hello [17]
+# Stage hello [41]
+# Stage hello [100]
+# Stage hello [95]
+# Stage hello [37]
+# Stage hello [74]
+cp input_1.txt input_1.txt.hello; sleep 5
+cp input_3.txt input_3.txt.hello; sleep 5
+cp input_58.txt input_58.txt.hello; sleep 5
+# Stage hello [73]
+cp input_72.txt input_72.txt.hello; sleep 5
+cp input_39.txt input_39.txt.hello; sleep 5
+# Stage hello [19]
+# Stage hello [35]
+# Stage hello [54]
+# Stage hello [63]
+# Stage hello [96]
+# Stage hello [81]
+# Stage hello [10]
+# Stage hello [38]
+# Stage hello [56]
+cp input_80.txt input_80.txt.hello; sleep 5
+cp input_44.txt input_44.txt.hello; sleep 5
+# Stage hello [99]
+cp input_50.txt input_50.txt.hello; sleep 5
+# Stage hello [45]
+# Stage hello [66]
+# Stage hello [16]
+cp input_27.txt input_27.txt.hello; sleep 5
+cp input_47.txt input_47.txt.hello; sleep 5
+cp input_94.txt input_94.txt.hello; sleep 5
+# Stage hello [55]
+# Stage hello [79]
+cp input_93.txt input_93.txt.hello; sleep 5
+cp input_91.txt input_91.txt.hello; sleep 5
+cp input_82.txt input_82.txt.hello; sleep 5
+cp input_29.txt input_29.txt.hello; sleep 5
+# Stage hello [62]
+# Stage hello [52]
+cp input_4.txt input_4.txt.hello; sleep 5
+# Stage hello [86]
+# Stage hello [98]
+# Stage hello [68]
+# Stage hello [34]
+cp input_84.txt input_84.txt.hello; sleep 5
+# Stage hello [60]
+# Stage hello [6]
+cp input_83.txt input_83.txt.hello; sleep 5
+# Stage hello [89]
+cp input_67.txt input_67.txt.hello; sleep 5
+cp input_2.txt input_2.txt.hello; sleep 5
+cp input_12.txt input_12.txt.hello; sleep 5
+# Stage hello [76]
+# Stage hello [90]
+# Stage hello [92]
+# Stage hello [65]
+# Stage hello [30]
+# Stage hello [15]
+# Stage hello [14]
+cp input_19.txt input_19.txt.hello; sleep 5
+cp input_95.txt input_95.txt.hello; sleep 5
+cp input_74.txt input_74.txt.hello; sleep 5
+cp input_87.txt input_87.txt.hello; sleep 5
+cp input_75.txt input_75.txt.hello; sleep 5
+cp input_46.txt input_46.txt.hello; sleep 5
+cp input_48.txt input_48.txt.hello; sleep 5
+cp input_7.txt input_7.txt.hello; sleep 5
+cp input_16.txt input_16.txt.hello; sleep 5
+cp input_45.txt input_45.txt.hello; sleep 5
+cp input_31.txt input_31.txt.hello; sleep 5
+cp input_66.txt input_66.txt.hello; sleep 5
+cp input_88.txt input_88.txt.hello; sleep 5
+cp input_40.txt input_40.txt.hello; sleep 5
+cp input_8.txt input_8.txt.hello; sleep 5
+cp input_64.txt input_64.txt.hello; sleep 5
+cp input_89.txt input_89.txt.hello; sleep 5
+cp input_17.txt input_17.txt.hello; sleep 5
+cp input_9.txt input_9.txt.hello; sleep 5
+cp input_6.txt input_6.txt.hello; sleep 5
+cp input_76.txt input_76.txt.hello; sleep 5
+cp input_60.txt input_60.txt.hello; sleep 5
+cp input_34.txt input_34.txt.hello; sleep 5
+cp input_68.txt input_68.txt.hello; sleep 5
+cp input_56.txt input_56.txt.hello; sleep 5
+cp input_99.txt input_99.txt.hello; sleep 5
+cp input_98.txt input_98.txt.hello; sleep 5
+cp input_81.txt input_81.txt.hello; sleep 5
+cp input_38.txt input_38.txt.hello; sleep 5
+cp input_96.txt input_96.txt.hello; sleep 5
+cp input_10.txt input_10.txt.hello; sleep 5
+cp input_35.txt input_35.txt.hello; sleep 5
+cp input_54.txt input_54.txt.hello; sleep 5
+cp input_63.txt input_63.txt.hello; sleep 5
+cp input_73.txt input_73.txt.hello; sleep 5
+cp input_14.txt input_14.txt.hello; sleep 5
+cp input_52.txt input_52.txt.hello; sleep 5
+cp input_92.txt input_92.txt.hello; sleep 5
+cp input_15.txt input_15.txt.hello; sleep 5
+cp input_79.txt input_79.txt.hello; sleep 5
+cp input_86.txt input_86.txt.hello; sleep 5
+cp input_55.txt input_55.txt.hello; sleep 5
+cp input_62.txt input_62.txt.hello; sleep 5
+cp input_37.txt input_37.txt.hello; sleep 5
+cp input_100.txt input_100.txt.hello; sleep 5
+cp input_41.txt input_41.txt.hello; sleep 5
+cp input_65.txt input_65.txt.hello; sleep 5
+cp input_30.txt input_30.txt.hello; sleep 5
+cp input_90.txt input_90.txt.hello; sleep 5
+# Stage world2 [2]
+# Stage world2 [2]
+# Stage world [1]
+# Stage world [1]
+# Stage world [1]
+# Stage world [1]
+# Stage world2 [2]
+# Stage world2 [2]
+# Stage world [1]
+# Stage world2 [2]
+# Stage world2 [2]
+# Stage world [1]
+# Stage world2 [2]
+# Stage world2 [2]
+# Stage world2 [2]
+# Stage world [1]
+# Stage world2 [2]
+# Stage world2 [2]
+# Stage world [1]
+# Stage world [1]
+# Stage world2 [2]
+# Stage world [1]
+# Stage world2 [2]
+# Stage world [1]
+# Stage world [1]
+# Stage world [1]
+# Stage world [1]
+# Stage world [1]
+# Stage world [1]
+# Stage world [1]
+# Stage world2 [2]
+# Stage world2 [2]
+# Stage world2 [2]
+# Stage world [1]
+cp input_5.txt.hello input_5.txt.hello.world
+cp input_11.txt.hello input_11.txt.hello.world
+cp input_57.txt.hello input_57.txt.hello.world
+# Stage world2 [2]
+# Stage world [1]
+cp input_13.txt.hello input_13.txt.hello.world2
+# Stage world2 [2]
+cp input_61.txt.hello input_61.txt.hello.world
+# Stage world2 [2]
+cp input_21.txt.hello input_21.txt.hello.world
+# Stage world2 [2]
+# Stage world [1]
+# Stage world [1]
+# Stage world2 [2]
+# Stage world [1]
+# Stage world [1]
+# Stage world [1]
+cp input_42.txt.hello input_42.txt.hello.world2
+cp input_51.txt.hello input_51.txt.hello.world
+# Stage world2 [2]
+cp input_49.txt.hello input_49.txt.hello.world
+# Stage world2 [2]
+# Stage world [1]
+# Stage world [1]
+cp input_85.txt.hello input_85.txt.hello.world2
+# Stage world2 [2]
+# Stage world [1]
+# Stage world2 [2]
+# Stage world2 [2]
+cp input_11.txt.hello input_11.txt.hello.world2
+cp input_18.txt.hello input_18.txt.hello.world
+# Stage world2 [2]
+# Stage world [1]
+# Stage world [1]
+cp input_25.txt.hello input_25.txt.hello.world2
+# Stage world [1]
+# Stage world2 [2]
+# Stage world2 [2]
+# Stage world [1]
+# Stage world [1]
+# Stage world2 [2]
+cp input_18.txt.hello input_18.txt.hello.world2
+cp input_57.txt.hello input_57.txt.hello.world2
+# Stage world2 [2]
+cp input_13.txt.hello input_13.txt.hello.world
+# Stage world2 [2]
+cp input_53.txt.hello input_53.txt.hello.world
+cp input_5.txt.hello input_5.txt.hello.world2
+cp input_33.txt.hello input_33.txt.hello.world2
+cp input_78.txt.hello input_78.txt.hello.world2
+cp input_78.txt.hello input_78.txt.hello.world
+cp input_49.txt.hello input_49.txt.hello.world2
+cp input_69.txt.hello input_69.txt.hello.world
+cp input_28.txt.hello input_28.txt.hello.world
+cp input_85.txt.hello input_85.txt.hello.world
+cp input_69.txt.hello input_69.txt.hello.world2
+cp input_36.txt.hello input_36.txt.hello.world
+cp input_61.txt.hello input_61.txt.hello.world2
+cp input_42.txt.hello input_42.txt.hello.world
+cp input_51.txt.hello input_51.txt.hello.world2
+cp input_21.txt.hello input_21.txt.hello.world2
+cp input_59.txt.hello input_59.txt.hello.world2
+cp input_22.txt.hello input_22.txt.hello.world2
+cp input_23.txt.hello input_23.txt.hello.world2
+cp input_32.txt.hello input_32.txt.hello.world
+cp input_23.txt.hello input_23.txt.hello.world
+cp input_26.txt.hello input_26.txt.hello.world
+cp input_36.txt.hello input_36.txt.hello.world2
+cp input_3.txt.hello input_3.txt.hello.world
+cp input_53.txt.hello input_53.txt.hello.world2
+cp input_28.txt.hello input_28.txt.hello.world2
+cp input_1.txt.hello input_1.txt.hello.world
+cp input_70.txt.hello input_70.txt.hello.world
+cp input_77.txt.hello input_77.txt.hello.world
+cp input_1.txt.hello input_1.txt.hello.world2
+cp input_97.txt.hello input_97.txt.hello.world
+cp input_70.txt.hello input_70.txt.hello.world2
+cp input_26.txt.hello input_26.txt.hello.world2
+cp input_77.txt.hello input_77.txt.hello.world2
+cp input_20.txt.hello input_20.txt.hello.world
+cp input_24.txt.hello input_24.txt.hello.world
+cp input_33.txt.hello input_33.txt.hello.world
+cp input_24.txt.hello input_24.txt.hello.world2
+cp input_97.txt.hello input_97.txt.hello.world2
+cp input_20.txt.hello input_20.txt.hello.world2
+cp input_71.txt.hello input_71.txt.hello.world
+cp input_25.txt.hello input_25.txt.hello.world
+cp input_43.txt.hello input_43.txt.hello.world
+cp input_59.txt.hello input_59.txt.hello.world
+cp input_71.txt.hello input_71.txt.hello.world2
+cp input_32.txt.hello input_32.txt.hello.world2
+cp input_43.txt.hello input_43.txt.hello.world2
+cp input_22.txt.hello input_22.txt.hello.world
+cp input_3.txt.hello input_3.txt.hello.world2
+# Stage world2 [2]
+# Stage world [1]
+# Stage world [1]
+# Stage world [1]
+# Stage world2 [2]
+# Stage world [1]
+# Stage world [1]
+# Stage world2 [2]
+cp input_84.txt.hello input_84.txt.hello.world2
+cp input_39.txt.hello input_39.txt.hello.world
+cp input_4.txt.hello input_4.txt.hello.world
+cp input_27.txt.hello input_27.txt.hello.world2
+cp input_27.txt.hello input_27.txt.hello.world
+cp input_84.txt.hello input_84.txt.hello.world
+# Stage world [1]
+# Stage world2 [2]
+cp input_87.txt.hello input_87.txt.hello.world
+cp input_66.txt.hello input_66.txt.hello.world2
+# Stage world2 [2]
+# Stage world [1]
+# Stage world2 [2]
+# Stage world [1]
+# Stage world [1]
+# Stage world2 [2]
+cp input_4.txt.hello input_4.txt.hello.world2
+# Stage world2 [2]
+cp input_29.txt.hello input_29.txt.hello.world
+# Stage world [1]
+# Stage world [1]
+# Stage world [1]
+# Stage world2 [2]
+cp input_58.txt.hello input_58.txt.hello.world2
+cp input_93.txt.hello input_93.txt.hello.world
+# Stage world2 [2]
+cp input_46.txt.hello input_46.txt.hello.world
+# Stage world2 [2]
+# Stage world2 [2]
+# Stage world [1]
+# Stage world [1]
+# Stage world [1]
+cp input_87.txt.hello input_87.txt.hello.world2
+# Stage world2 [2]
+# Stage world [1]
+# Stage world2 [2]
+# Stage world2 [2]
+cp input_58.txt.hello input_58.txt.hello.world
+# Stage world [1]
+# Stage world [1]
+# Stage world2 [2]
+cp input_50.txt.hello input_50.txt.hello.world2
+# Stage world [1]
+cp input_66.txt.hello input_66.txt.hello.world
+# Stage world2 [2]
+# Stage world [1]
+# Stage world2 [2]
+# Stage world [1]
+# Stage world2 [2]
+# Stage world2 [2]
+# Stage world [1]
+cp input_31.txt.hello input_31.txt.hello.world2
+cp input_31.txt.hello input_31.txt.hello.world
+# Stage world2 [2]
+# Stage world2 [2]
+# Stage world [1]
+# Stage world2 [2]
+cp input_50.txt.hello input_50.txt.hello.world
+cp input_74.txt.hello input_74.txt.hello.world
+# Stage world2 [2]
+# Stage world [1]
+# Stage world2 [2]
+# Stage world [1]
+# Stage world2 [2]
+# Stage world2 [2]
+# Stage world [1]
+cp input_44.txt.hello input_44.txt.hello.world
+cp input_74.txt.hello input_74.txt.hello.world2
+# Stage world2 [2]
+# Stage world [1]
+cp input_29.txt.hello input_29.txt.hello.world2
+# Stage world [1]
+cp input_72.txt.hello input_72.txt.hello.world
+cp input_39.txt.hello input_39.txt.hello.world2
+# Stage world [1]
+# Stage world2 [2]
+cp input_44.txt.hello input_44.txt.hello.world2
+# Stage world2 [2]
+# Stage world [1]
+# Stage world [1]
+# Stage world [1]
+# Stage world2 [2]
+cp input_93.txt.hello input_93.txt.hello.world2
+cp input_67.txt.hello input_67.txt.hello.world
+cp input_2.txt.hello input_2.txt.hello.world
+cp input_75.txt.hello input_75.txt.hello.world
+# Stage world2 [2]
+cp input_47.txt.hello input_47.txt.hello.world2
+cp input_94.txt.hello input_94.txt.hello.world2
+cp input_2.txt.hello input_2.txt.hello.world2
+cp input_47.txt.hello input_47.txt.hello.world
+cp input_67.txt.hello input_67.txt.hello.world2
+cp input_95.txt.hello input_95.txt.hello.world2
+cp input_91.txt.hello input_91.txt.hello.world
+cp input_91.txt.hello input_91.txt.hello.world2
+cp input_16.txt.hello input_16.txt.hello.world2
+cp input_82.txt.hello input_82.txt.hello.world2
+cp input_80.txt.hello input_80.txt.hello.world
+cp input_48.txt.hello input_48.txt.hello.world2
+cp input_82.txt.hello input_82.txt.hello.world
+cp input_12.txt.hello input_12.txt.hello.world2
+cp input_83.txt.hello input_83.txt.hello.world
+cp input_45.txt.hello input_45.txt.hello.world2
+cp input_88.txt.hello input_88.txt.hello.world
+cp input_19.txt.hello input_19.txt.hello.world
+cp input_19.txt.hello input_19.txt.hello.world2
+cp input_45.txt.hello input_45.txt.hello.world
+cp input_46.txt.hello input_46.txt.hello.world2
+cp input_7.txt.hello input_7.txt.hello.world
+cp input_83.txt.hello input_83.txt.hello.world2
+cp input_72.txt.hello input_72.txt.hello.world2
+cp input_7.txt.hello input_7.txt.hello.world2
+cp input_80.txt.hello input_80.txt.hello.world2
+cp input_95.txt.hello input_95.txt.hello.world
+cp input_94.txt.hello input_94.txt.hello.world
+cp input_12.txt.hello input_12.txt.hello.world
+cp input_48.txt.hello input_48.txt.hello.world
+cp input_88.txt.hello input_88.txt.hello.world2
+cp input_75.txt.hello input_75.txt.hello.world2
+cp input_16.txt.hello input_16.txt.hello.world
+# Stage world [1]
+# Stage world2 [2]
+cp input_8.txt.hello input_8.txt.hello.world
+cp input_8.txt.hello input_8.txt.hello.world2
+# Stage world [1]
+# Stage world2 [2]
+# Stage world [1]
+# Stage world2 [2]
+cp input_64.txt.hello input_64.txt.hello.world
+cp input_40.txt.hello input_40.txt.hello.world
+cp input_40.txt.hello input_40.txt.hello.world2
+cp input_64.txt.hello input_64.txt.hello.world2
+# Stage world2 [2]
+# Stage world2 [2]
+# Stage world [1]
+# Stage world [1]
+# Stage world [1]
+# Stage world [1]
+# Stage world2 [2]
+# Stage world [1]
+# Stage world2 [2]
+cp input_9.txt.hello input_9.txt.hello.world
+cp input_89.txt.hello input_89.txt.hello.world2
+cp input_89.txt.hello input_89.txt.hello.world
+cp input_81.txt.hello input_81.txt.hello.world
+cp input_9.txt.hello input_9.txt.hello.world2
+# Stage world [1]
+# Stage world2 [2]
+# Stage world2 [2]
+cp input_76.txt.hello input_76.txt.hello.world
+cp input_17.txt.hello input_17.txt.hello.world
+cp input_17.txt.hello input_17.txt.hello.world2
+cp input_76.txt.hello input_76.txt.hello.world2
+cp input_81.txt.hello input_81.txt.hello.world2
+cp input_56.txt.hello input_56.txt.hello.world
+cp input_56.txt.hello input_56.txt.hello.world2
+# Stage world [1]
+# Stage world [1]
+# Stage world2 [2]
+# Stage world2 [2]
+# Stage world2 [2]
+# Stage world [1]
+cp input_98.txt.hello input_98.txt.hello.world
+cp input_98.txt.hello input_98.txt.hello.world2
+# Stage world [1]
+# Stage world2 [2]
+# Stage world [1]
+# Stage world2 [2]
+# Stage world2 [2]
+# Stage world2 [2]
+# Stage world2 [2]
+# Stage world [1]
+# Stage world [1]
+# Stage world [1]
+cp input_34.txt.hello input_34.txt.hello.world2
+cp input_96.txt.hello input_96.txt.hello.world2
+cp input_96.txt.hello input_96.txt.hello.world
+cp input_34.txt.hello input_34.txt.hello.world
+# Stage world [1]
+# Stage world2 [2]
+# Stage world2 [2]
+cp input_60.txt.hello input_60.txt.hello.world
+# Stage world2 [2]
+# Stage world2 [2]
+# Stage world [1]
+cp input_6.txt.hello input_6.txt.hello.world2
+# Stage world [1]
+# Stage world [1]
+# Stage world2 [2]
+# Stage world [1]
+# Stage world [1]
+# Stage world2 [2]
+# Stage world [1]
+# Stage world2 [2]
+# Stage world2 [2]
+# Stage world [1]
+# Stage world [1]
+# Stage world2 [2]
+# Stage world [1]
+cp input_79.txt.hello input_79.txt.hello.world
+# Stage world2 [2]
+# Stage world [1]
+# Stage world2 [2]
+cp input_54.txt.hello input_54.txt.hello.world
+cp input_79.txt.hello input_79.txt.hello.world2
+cp input_54.txt.hello input_54.txt.hello.world2
+cp input_6.txt.hello input_6.txt.hello.world
+cp input_15.txt.hello input_15.txt.hello.world
+cp input_35.txt.hello input_35.txt.hello.world2
+cp input_35.txt.hello input_35.txt.hello.world
+cp input_92.txt.hello input_92.txt.hello.world
+cp input_10.txt.hello input_10.txt.hello.world2
+cp input_10.txt.hello input_10.txt.hello.world
+cp input_68.txt.hello input_68.txt.hello.world2
+cp input_92.txt.hello input_92.txt.hello.world2
+cp input_73.txt.hello input_73.txt.hello.world2
+cp input_99.txt.hello input_99.txt.hello.world2
+cp input_60.txt.hello input_60.txt.hello.world2
+cp input_99.txt.hello input_99.txt.hello.world
+cp input_52.txt.hello input_52.txt.hello.world2
+cp input_52.txt.hello input_52.txt.hello.world
+cp input_62.txt.hello input_62.txt.hello.world
+cp input_73.txt.hello input_73.txt.hello.world
+cp input_55.txt.hello input_55.txt.hello.world2
+cp input_68.txt.hello input_68.txt.hello.world
+cp input_100.txt.hello input_100.txt.hello.world
+cp input_63.txt.hello input_63.txt.hello.world2
+cp input_100.txt.hello input_100.txt.hello.world2
+cp input_15.txt.hello input_15.txt.hello.world2
+cp input_62.txt.hello input_62.txt.hello.world2
+cp input_63.txt.hello input_63.txt.hello.world
+cp input_55.txt.hello input_55.txt.hello.world
+# Stage world2 [2]
+# Stage world2 [2]
+# Stage world [1]
+# Stage world [1]
+# Stage world [1]
+# Stage world [1]
+# Stage world2 [2]
+# Stage world2 [2]
+cp input_37.txt.hello input_37.txt.hello.world2
+cp input_38.txt.hello input_38.txt.hello.world2
+cp input_38.txt.hello input_38.txt.hello.world
+cp input_14.txt.hello input_14.txt.hello.world
+cp input_14.txt.hello input_14.txt.hello.world2
+cp input_86.txt.hello input_86.txt.hello.world2
+cp input_86.txt.hello input_86.txt.hello.world
+cp input_37.txt.hello input_37.txt.hello.world
+# Stage world2 [2]
+# Stage world [1]
+# Stage world2 [2]
+# Stage world [1]
+cp input_30.txt.hello input_30.txt.hello.world
+cp input_41.txt.hello input_41.txt.hello.world
+cp input_30.txt.hello input_30.txt.hello.world2
+cp input_41.txt.hello input_41.txt.hello.world2
+# Stage world2 [2]
+# Stage world [1]
+cp input_65.txt.hello input_65.txt.hello.world2
+cp input_65.txt.hello input_65.txt.hello.world
+# Stage world [1]
+# Stage world2 [2]
+cp input_90.txt.hello input_90.txt.hello.world
+cp input_90.txt.hello input_90.txt.hello.world2
+# Stage end
+cat input_100.txt.hello.world input_100.txt.hello.world2 input_10.txt.hello.world input_10.txt.hello.world2 input_11.txt.hello.world input_11.txt.hello.world2 input_12.txt.hello.world input_12.txt.hello.world2 input_13.txt.hello.world input_13.txt.hello.world2 input_14.txt.hello.world input_14.txt.hello.world2 input_15.txt.hello.world input_15.txt.hello.world2 input_16.txt.hello.world input_16.txt.hello.world2 input_17.txt.hello.world input_17.txt.hello.world2 input_18.txt.hello.world input_18.txt.hello.world2 input_19.txt.hello.world input_19.txt.hello.world2 input_1.txt.hello.world input_1.txt.hello.world2 input_20.txt.hello.world input_20.txt.hello.world2 input_21.txt.hello.world input_21.txt.hello.world2 input_22.txt.hello.world input_22.txt.hello.world2 input_23.txt.hello.world input_23.txt.hello.world2 input_24.txt.hello.world input_24.txt.hello.world2 input_25.txt.hello.world input_25.txt.hello.world2 input_26.txt.hello.world input_26.txt.hello.world2 input_27.txt.hello.world input_27.txt.hello.world2 input_28.txt.hello.world input_28.txt.hello.world2 input_29.txt.hello.world input_29.txt.hello.world2 input_2.txt.hello.world input_2.txt.hello.world2 input_30.txt.hello.world input_30.txt.hello.world2 input_31.txt.hello.world input_31.txt.hello.world2 input_32.txt.hello.world input_32.txt.hello.world2 input_33.txt.hello.world input_33.txt.hello.world2 input_34.txt.hello.world input_34.txt.hello.world2 input_35.txt.hello.world input_35.txt.hello.world2 input_36.txt.hello.world input_36.txt.hello.world2 input_37.txt.hello.world input_37.txt.hello.world2 input_38.txt.hello.world input_38.txt.hello.world2 input_39.txt.hello.world input_39.txt.hello.world2 input_3.txt.hello.world input_3.txt.hello.world2 input_40.txt.hello.world input_40.txt.hello.world2 input_41.txt.hello.world input_41.txt.hello.world2 input_42.txt.hello.world input_42.txt.hello.world2 input_43.txt.hello.world input_43.txt.hello.world2 input_44.txt.hello.world input_44.txt.hello.world2 input_45.txt.hello.world input_45.txt.hello.world2 input_46.txt.hello.world input_46.txt.hello.world2 input_47.txt.hello.world input_47.txt.hello.world2 input_48.txt.hello.world input_48.txt.hello.world2 input_49.txt.hello.world input_49.txt.hello.world2 input_4.txt.hello.world input_4.txt.hello.world2 input_50.txt.hello.world input_50.txt.hello.world2 input_51.txt.hello.world input_51.txt.hello.world2 input_52.txt.hello.world input_52.txt.hello.world2 input_53.txt.hello.world input_53.txt.hello.world2 input_54.txt.hello.world input_54.txt.hello.world2 input_55.txt.hello.world input_55.txt.hello.world2 input_56.txt.hello.world input_56.txt.hello.world2 input_57.txt.hello.world input_57.txt.hello.world2 input_58.txt.hello.world input_58.txt.hello.world2 input_59.txt.hello.world input_59.txt.hello.world2 input_5.txt.hello.world input_5.txt.hello.world2 input_60.txt.hello.world input_60.txt.hello.world2 input_61.txt.hello.world input_61.txt.hello.world2 input_62.txt.hello.world input_62.txt.hello.world2 input_63.txt.hello.world input_63.txt.hello.world2 input_64.txt.hello.world input_64.txt.hello.world2 input_65.txt.hello.world input_65.txt.hello.world2 input_66.txt.hello.world input_66.txt.hello.world2 input_67.txt.hello.world input_67.txt.hello.world2 input_68.txt.hello.world input_68.txt.hello.world2 input_69.txt.hello.world input_69.txt.hello.world2 input_6.txt.hello.world input_6.txt.hello.world2 input_70.txt.hello.world input_70.txt.hello.world2 input_71.txt.hello.world input_71.txt.hello.world2 input_72.txt.hello.world input_72.txt.hello.world2 input_73.txt.hello.world input_73.txt.hello.world2 input_74.txt.hello.world input_74.txt.hello.world2 input_75.txt.hello.world input_75.txt.hello.world2 input_76.txt.hello.world input_76.txt.hello.world2 input_77.txt.hello.world input_77.txt.hello.world2 input_78.txt.hello.world input_78.txt.hello.world2 input_79.txt.hello.world input_79.txt.hello.world2 input_7.txt.hello.world input_7.txt.hello.world2 input_80.txt.hello.world input_80.txt.hello.world2 input_81.txt.hello.world input_81.txt.hello.world2 input_82.txt.hello.world input_82.txt.hello.world2 input_83.txt.hello.world input_83.txt.hello.world2 input_84.txt.hello.world input_84.txt.hello.world2 input_85.txt.hello.world input_85.txt.hello.world2 input_86.txt.hello.world input_86.txt.hello.world2 input_87.txt.hello.world input_87.txt.hello.world2 input_88.txt.hello.world input_88.txt.hello.world2 input_89.txt.hello.world input_89.txt.hello.world2 input_8.txt.hello.world input_8.txt.hello.world2 input_90.txt.hello.world input_90.txt.hello.world2 input_91.txt.hello.world input_91.txt.hello.world2 input_92.txt.hello.world input_92.txt.hello.world2 input_93.txt.hello.world input_93.txt.hello.world2 input_94.txt.hello.world input_94.txt.hello.world2 input_95.txt.hello.world input_95.txt.hello.world2 input_96.txt.hello.world input_96.txt.hello.world2 input_97.txt.hello.world input_97.txt.hello.world2 input_98.txt.hello.world input_98.txt.hello.world2 input_99.txt.hello.world input_99.txt.hello.world2 input_9.txt.hello.world input_9.txt.hello.world2 > input_100.txt.hello.world.end
+# ################ Finished at Fri Dec 05 10:14:02 GMT 2014 Duration = 22.450 seconds ################
+
+
+####################################################################################################
+# Starting pipeline at Fri Dec 05 10:23:19 GMT 2014
+# Input files:  [input_100.txt, input_10.txt, input_11.txt, input_12.txt, input_13.txt, input_14.txt, input_15.txt, input_16.txt, input_17.txt, input_18.txt, input_19.txt, input_1.txt, input_20.txt, input_21.txt, input_22.txt, input_23.txt, input_24.txt, input_25.txt, input_26.txt, input_27.txt, input_28.txt, input_29.txt, input_2.txt, input_30.txt, input_31.txt, input_32.txt, input_33.txt, input_34.txt, input_35.txt, input_36.txt, input_37.txt, input_38.txt, input_39.txt, input_3.txt, input_40.txt, input_41.txt, input_42.txt, input_43.txt, input_44.txt, input_45.txt, input_46.txt, input_47.txt, input_48.txt, input_49.txt, input_4.txt, input_50.txt, input_51.txt, input_52.txt, input_53.txt, input_54.txt, input_55.txt, input_56.txt, input_57.txt, input_58.txt, input_59.txt, input_5.txt, input_60.txt, input_61.txt, input_62.txt, input_63.txt, input_64.txt, input_65.txt, input_66.txt, input_67.txt, input_68.txt, input_69.txt, input_6.txt, input_70.txt, input_71.txt, input_72.txt, input_73.txt, input_74.txt, input_75.txt, input_76.txt, input_77.txt, input_78.txt, input_79.txt, input_7.txt, input_80.txt, input_81.txt, input_82.txt, input_83.txt, input_84.txt, input_85.txt, input_86.txt, input_87.txt, input_88.txt, input_89.txt, input_8.txt, input_90.txt, input_91.txt, input_92.txt, input_93.txt, input_94.txt, input_95.txt, input_96.txt, input_97.txt, input_98.txt, input_99.txt, input_9.txt]
+# Output Log:  .bpipe/logs/30334.log
+# Stage hello [52]
+# Stage hello [36]
+# Stage hello [29]
+# Stage hello [57]
+# Stage hello [15]
+# Stage hello [37]
+# Stage hello [38]
+# Stage hello [59]
+# Stage hello [91]
+# Stage hello [35]
+# Stage hello [40]
+# Stage hello [31]
+# Stage hello [25]
+# Stage hello [16]
+# Stage hello [3]
+# Stage hello [93]
+# Stage hello [27]
+# Stage hello [56]
+# Stage hello [66]
+# Stage hello [26]
+# Stage hello [46]
+# Stage hello [96]
+# Stage hello [8]
+# Stage hello [81]
+# Stage hello [60]
+# Stage hello [2]
+# Stage hello [32]
+# Stage hello [51]
+# Stage hello [63]
+# Stage hello [5]
+# Stage hello [28]
+# Stage hello [34]
+# Stage hello [12]
+# Stage hello [75]
+# Stage hello [9]
+# Stage hello [53]
+# Stage hello [80]
+# Stage hello [14]
+# Stage hello [18]
+# Stage hello [33]
+# Stage hello [11]
+# Stage hello [94]
+# Stage hello [48]
+# Stage hello [44]
+# Stage hello [22]
+# Stage hello [79]
+# Stage hello [54]
+# Stage hello [61]
+# Stage hello [41]
+# Stage hello [82]
+# Stage hello [73]
+# Stage hello [30]
+# Stage hello [89]
+# Stage hello [70]
+# Stage hello [83]
+# Stage hello [76]
+# Stage hello [65]
+# Stage hello [85]
+# Stage hello [67]
+# Stage hello [68]
+# Stage hello [55]
+# Stage hello [78]
+# Stage hello [86]
+# Stage hello [99]
+# Stage hello [97]
+# Stage hello [92]
+# Stage hello [100]
+# Stage hello [13]
+# Stage hello [88]
+# Stage hello [72]
+cp input_25.txt input_25.txt.hello; sleep 5
+cp input_56.txt input_56.txt.hello; sleep 5
+cp input_16.txt input_16.txt.hello; sleep 5
+cp input_46.txt input_46.txt.hello; sleep 5
+cp input_37.txt input_37.txt.hello; sleep 5
+# Stage hello [21]
+cp input_93.txt input_93.txt.hello; sleep 5
+cp input_52.txt input_52.txt.hello; sleep 5
+cp input_3.txt input_3.txt.hello; sleep 5
+cp input_40.txt input_40.txt.hello; sleep 5
+cp input_91.txt input_91.txt.hello; sleep 5
+cp input_27.txt input_27.txt.hello; sleep 5
+# Stage hello [50]
+# Stage hello [84]
+# Stage hello [77]
+# Stage hello [62]
+# Stage hello [95]
+# Stage hello [45]
+# Stage hello [58]
+# Stage hello [47]
+# Stage hello [10]
+# Stage hello [42]
+# Stage hello [1]
+# Stage hello [74]
+# Stage hello [4]
+# Stage hello [19]
+# Stage hello [87]
+cp input_22.txt input_22.txt.hello; sleep 5
+# Stage hello [71]
+# Stage hello [7]
+cp input_54.txt input_54.txt.hello; sleep 5
+# Stage hello [17]
+# Stage hello [98]
+# Stage hello [23]
+# Stage hello [39]
+# Stage hello [24]
+cp input_44.txt input_44.txt.hello; sleep 5
+# Stage hello [49]
+cp input_48.txt input_48.txt.hello; sleep 5
+# Stage hello [20]
+# Stage hello [64]
+# Stage hello [6]
+# Stage hello [90]
+cp input_86.txt input_86.txt.hello; sleep 5
+cp input_82.txt input_82.txt.hello; sleep 5
+cp input_73.txt input_73.txt.hello; sleep 5
+cp input_41.txt input_41.txt.hello; sleep 5
+cp input_51.txt input_51.txt.hello; sleep 5
+cp input_70.txt input_70.txt.hello; sleep 5
+# Stage hello [69]
+# Stage hello [43]
+cp input_89.txt input_89.txt.hello; sleep 5
+cp input_78.txt input_78.txt.hello; sleep 5
+cp input_30.txt input_30.txt.hello; sleep 5
+cp input_83.txt input_83.txt.hello; sleep 5
+cp input_76.txt input_76.txt.hello; sleep 5
+cp input_57.txt input_57.txt.hello; sleep 5
+cp input_36.txt input_36.txt.hello; sleep 5
+cp input_15.txt input_15.txt.hello; sleep 5
+cp input_65.txt input_65.txt.hello; sleep 5
+cp input_31.txt input_31.txt.hello; sleep 5
+cp input_29.txt input_29.txt.hello; sleep 5
+cp input_59.txt input_59.txt.hello; sleep 5
+cp input_35.txt input_35.txt.hello; sleep 5
+cp input_38.txt input_38.txt.hello; sleep 5
+cp input_72.txt input_72.txt.hello; sleep 5
+cp input_88.txt input_88.txt.hello; sleep 5
+cp input_13.txt input_13.txt.hello; sleep 5
+cp input_99.txt input_99.txt.hello; sleep 5
+cp input_94.txt input_94.txt.hello; sleep 5
+cp input_92.txt input_92.txt.hello; sleep 5
+cp input_97.txt input_97.txt.hello; sleep 5
+cp input_14.txt input_14.txt.hello; sleep 5
+cp input_33.txt input_33.txt.hello; sleep 5
+cp input_11.txt input_11.txt.hello; sleep 5
+cp input_18.txt input_18.txt.hello; sleep 5
+cp input_80.txt input_80.txt.hello; sleep 5
+cp input_53.txt input_53.txt.hello; sleep 5
+cp input_12.txt input_12.txt.hello; sleep 5
+cp input_9.txt input_9.txt.hello; sleep 5
+cp input_34.txt input_34.txt.hello; sleep 5
+cp input_75.txt input_75.txt.hello; sleep 5
+cp input_5.txt input_5.txt.hello; sleep 5
+cp input_63.txt input_63.txt.hello; sleep 5
+cp input_32.txt input_32.txt.hello; sleep 5
+cp input_2.txt input_2.txt.hello; sleep 5
+cp input_60.txt input_60.txt.hello; sleep 5
+cp input_28.txt input_28.txt.hello; sleep 5
+cp input_8.txt input_8.txt.hello; sleep 5
+cp input_96.txt input_96.txt.hello; sleep 5
+cp input_81.txt input_81.txt.hello; sleep 5
+cp input_26.txt input_26.txt.hello; sleep 5
+cp input_61.txt input_61.txt.hello; sleep 5
+cp input_79.txt input_79.txt.hello; sleep 5
+cp input_98.txt input_98.txt.hello; sleep 5
+cp input_100.txt input_100.txt.hello; sleep 5
+cp input_7.txt input_7.txt.hello; sleep 5
+cp input_71.txt input_71.txt.hello; sleep 5
+cp input_68.txt input_68.txt.hello; sleep 5
+cp input_55.txt input_55.txt.hello; sleep 5
+cp input_85.txt input_85.txt.hello; sleep 5
+cp input_67.txt input_67.txt.hello; sleep 5
+cp input_43.txt input_43.txt.hello; sleep 5
+cp input_69.txt input_69.txt.hello; sleep 5
+cp input_6.txt input_6.txt.hello; sleep 5
+cp input_66.txt input_66.txt.hello; sleep 5
+cp input_74.txt input_74.txt.hello; sleep 5
+cp input_90.txt input_90.txt.hello; sleep 5
+cp input_1.txt input_1.txt.hello; sleep 5
+cp input_42.txt input_42.txt.hello; sleep 5
+cp input_4.txt input_4.txt.hello; sleep 5
+cp input_47.txt input_47.txt.hello; sleep 5
+cp input_10.txt input_10.txt.hello; sleep 5
+cp input_58.txt input_58.txt.hello; sleep 5
+cp input_45.txt input_45.txt.hello; sleep 5
+cp input_95.txt input_95.txt.hello; sleep 5
+cp input_77.txt input_77.txt.hello; sleep 5
+cp input_84.txt input_84.txt.hello; sleep 5
+cp input_50.txt input_50.txt.hello; sleep 5
+cp input_19.txt input_19.txt.hello; sleep 5
+cp input_62.txt input_62.txt.hello; sleep 5
+cp input_21.txt input_21.txt.hello; sleep 5
+cp input_87.txt input_87.txt.hello; sleep 5
+cp input_20.txt input_20.txt.hello; sleep 5
+cp input_64.txt input_64.txt.hello; sleep 5
+cp input_39.txt input_39.txt.hello; sleep 5
+cp input_49.txt input_49.txt.hello; sleep 5
+cp input_24.txt input_24.txt.hello; sleep 5
+cp input_23.txt input_23.txt.hello; sleep 5
+cp input_17.txt input_17.txt.hello; sleep 5
+# Stage world2 [2]
+# Stage world [1]
+# Stage world [1]
+# Stage world2 [2]
+# Stage world2 [2]
+# Stage world [1]
+# Stage world2 [2]
+# Stage world [1]
+cp input_57.txt.hello input_57.txt.hello.world2
+# Stage world [1]
+# Stage world2 [2]
+# Stage world [1]
+# Stage world2 [2]
+# Stage world [1]
+# Stage world2 [2]
+# Stage world [1]
+# Stage world2 [2]
+# Stage world [1]
+# Stage world2 [2]
+# Stage world2 [2]
+# Stage world2 [2]
+# Stage world [1]
+# Stage world [1]
+# Stage world2 [2]
+# Stage world [1]
+# Stage world [1]
+# Stage world2 [2]
+# Stage world2 [2]
+# Stage world [1]
+# Stage world2 [2]
+# Stage world [1]
+# Stage world2 [2]
+# Stage world2 [2]
+# Stage world2 [2]
+# Stage world [1]
+# Stage world2 [2]
+# Stage world2 [2]
+# Stage world2 [2]
+# Stage world2 [2]
+# Stage world2 [2]
+# Stage world [1]
+# Stage world2 [2]
+# Stage world2 [2]
+# Stage world [1]
+# Stage world [1]
+# Stage world2 [2]
+# Stage world [1]
+# Stage world [1]
+# Stage world [1]
+# Stage world [1]
+# Stage world [1]
+# Stage world2 [2]
+# Stage world [1]
+# Stage world [1]
+# Stage world [1]
+# Stage world2 [2]
+# Stage world [1]
+# Stage world [1]
+# Stage world2 [2]
+# Stage world2 [2]
+cp input_65.txt.hello input_65.txt.hello.world2
+cp input_57.txt.hello input_57.txt.hello.world
+# Stage world [1]
+# Stage world2 [2]
+# Stage world [1]
+# Stage world [1]
+# Stage world2 [2]
+cp input_37.txt.hello input_37.txt.hello.world2
+cp input_22.txt.hello input_22.txt.hello.world
+cp input_37.txt.hello input_37.txt.hello.world
+cp input_30.txt.hello input_30.txt.hello.world2
+cp input_46.txt.hello input_46.txt.hello.world2
+cp input_22.txt.hello input_22.txt.hello.world2
+cp input_27.txt.hello input_27.txt.hello.world
+cp input_3.txt.hello input_3.txt.hello.world
+cp input_73.txt.hello input_73.txt.hello.world2
+cp input_73.txt.hello input_73.txt.hello.world
+cp input_54.txt.hello input_54.txt.hello.world
+cp input_27.txt.hello input_27.txt.hello.world2
+cp input_40.txt.hello input_40.txt.hello.world
+cp input_40.txt.hello input_40.txt.hello.world2
+cp input_15.txt.hello input_15.txt.hello.world
+cp input_36.txt.hello input_36.txt.hello.world2
+cp input_91.txt.hello input_91.txt.hello.world2
+cp input_54.txt.hello input_54.txt.hello.world2
+cp input_56.txt.hello input_56.txt.hello.world2
+cp input_82.txt.hello input_82.txt.hello.world
+cp input_52.txt.hello input_52.txt.hello.world
+cp input_76.txt.hello input_76.txt.hello.world2
+cp input_51.txt.hello input_51.txt.hello.world2
+cp input_59.txt.hello input_59.txt.hello.world2
+cp input_86.txt.hello input_86.txt.hello.world2
+cp input_51.txt.hello input_51.txt.hello.world
+cp input_52.txt.hello input_52.txt.hello.world2
+cp input_91.txt.hello input_91.txt.hello.world
+cp input_44.txt.hello input_44.txt.hello.world2
+cp input_59.txt.hello input_59.txt.hello.world
+cp input_70.txt.hello input_70.txt.hello.world2
+cp input_30.txt.hello input_30.txt.hello.world
+cp input_25.txt.hello input_25.txt.hello.world2
+cp input_83.txt.hello input_83.txt.hello.world
+cp input_76.txt.hello input_76.txt.hello.world
+cp input_25.txt.hello input_25.txt.hello.world
+cp input_70.txt.hello input_70.txt.hello.world
+cp input_89.txt.hello input_89.txt.hello.world
+cp input_36.txt.hello input_36.txt.hello.world
+cp input_86.txt.hello input_86.txt.hello.world
+cp input_82.txt.hello input_82.txt.hello.world2
+cp input_48.txt.hello input_48.txt.hello.world
+cp input_93.txt.hello input_93.txt.hello.world2
+cp input_89.txt.hello input_89.txt.hello.world2
+cp input_41.txt.hello input_41.txt.hello.world2
+cp input_41.txt.hello input_41.txt.hello.world
+cp input_48.txt.hello input_48.txt.hello.world2
+cp input_93.txt.hello input_93.txt.hello.world
+cp input_16.txt.hello input_16.txt.hello.world
+cp input_16.txt.hello input_16.txt.hello.world2
+cp input_3.txt.hello input_3.txt.hello.world2
+cp input_15.txt.hello input_15.txt.hello.world2
+cp input_31.txt.hello input_31.txt.hello.world2
+cp input_31.txt.hello input_31.txt.hello.world
+cp input_46.txt.hello input_46.txt.hello.world
+cp input_65.txt.hello input_65.txt.hello.world
+cp input_78.txt.hello input_78.txt.hello.world2
+cp input_83.txt.hello input_83.txt.hello.world2
+cp input_78.txt.hello input_78.txt.hello.world
+cp input_56.txt.hello input_56.txt.hello.world
+cp input_44.txt.hello input_44.txt.hello.world
+# Stage world [1]
+# Stage world2 [2]
+# Stage world2 [2]
+# Stage world [1]
+# Stage world [1]
+cp input_80.txt.hello input_80.txt.hello.world
+cp input_80.txt.hello input_80.txt.hello.world2
+cp input_94.txt.hello input_94.txt.hello.world
+cp input_94.txt.hello input_94.txt.hello.world2
+cp input_72.txt.hello input_72.txt.hello.world
+# Stage world2 [2]
+# Stage world [1]
+# Stage world [1]
+# Stage world [1]
+cp input_72.txt.hello input_72.txt.hello.world2
+cp input_38.txt.hello input_38.txt.hello.world
+cp input_18.txt.hello input_18.txt.hello.world
+cp input_53.txt.hello input_53.txt.hello.world
+# Stage world2 [2]
+# Stage world2 [2]
+# Stage world2 [2]
+# Stage world2 [2]
+cp input_35.txt.hello input_35.txt.hello.world2
+cp input_12.txt.hello input_12.txt.hello.world2
+# Stage world2 [2]
+# Stage world [1]
+# Stage world2 [2]
+cp input_79.txt.hello input_79.txt.hello.world2
+# Stage world [1]
+# Stage world2 [2]
+cp input_38.txt.hello input_38.txt.hello.world2
+# Stage world [1]
+# Stage world [1]
+# Stage world2 [2]
+cp input_11.txt.hello input_11.txt.hello.world2
+# Stage world [1]
+cp input_2.txt.hello input_2.txt.hello.world
+cp input_5.txt.hello input_5.txt.hello.world2
+# Stage world [1]
+# Stage world2 [2]
+cp input_29.txt.hello input_29.txt.hello.world2
+cp input_5.txt.hello input_5.txt.hello.world
+# Stage world2 [2]
+# Stage world2 [2]
+# Stage world [1]
+# Stage world [1]
+cp input_79.txt.hello input_79.txt.hello.world
+# Stage world2 [2]
+cp input_35.txt.hello input_35.txt.hello.world
+cp input_61.txt.hello input_61.txt.hello.world2
+cp input_81.txt.hello input_81.txt.hello.world
+# Stage world [1]
+# Stage world [1]
+# Stage world2 [2]
+cp input_92.txt.hello input_92.txt.hello.world
+# Stage world2 [2]
+# Stage world [1]
+# Stage world [1]
+# Stage world2 [2]
+cp input_33.txt.hello input_33.txt.hello.world
+# Stage world2 [2]
+# Stage world2 [2]
+cp input_18.txt.hello input_18.txt.hello.world2
+cp input_2.txt.hello input_2.txt.hello.world2
+# Stage world [1]
+# Stage world [1]
+# Stage world [1]
+# Stage world2 [2]
+# Stage world2 [2]
+# Stage world [1]
+# Stage world2 [2]
+cp input_81.txt.hello input_81.txt.hello.world2
+# Stage world2 [2]
+# Stage world [1]
+# Stage world [1]
+cp input_11.txt.hello input_11.txt.hello.world
+# Stage world [1]
+cp input_29.txt.hello input_29.txt.hello.world
+# Stage world2 [2]
+# Stage world2 [2]
+cp input_92.txt.hello input_92.txt.hello.world2
+# Stage world [1]
+# Stage world [1]
+# Stage world2 [2]
+# Stage world2 [2]
+# Stage world [1]
+# Stage world [1]
+cp input_32.txt.hello input_32.txt.hello.world
+# Stage world2 [2]
+# Stage world [1]
+# Stage world2 [2]
+# Stage world2 [2]
+# Stage world2 [2]
+# Stage world [1]
+# Stage world [1]
+cp input_88.txt.hello input_88.txt.hello.world
+cp input_12.txt.hello input_12.txt.hello.world
+cp input_53.txt.hello input_53.txt.hello.world2
+cp input_14.txt.hello input_14.txt.hello.world
+cp input_13.txt.hello input_13.txt.hello.world
+cp input_60.txt.hello input_60.txt.hello.world2
+cp input_96.txt.hello input_96.txt.hello.world2
+cp input_97.txt.hello input_97.txt.hello.world2
+cp input_99.txt.hello input_99.txt.hello.world2
+cp input_96.txt.hello input_96.txt.hello.world
+cp input_63.txt.hello input_63.txt.hello.world2
+cp input_33.txt.hello input_33.txt.hello.world2
+cp input_32.txt.hello input_32.txt.hello.world2
+cp input_97.txt.hello input_97.txt.hello.world
+cp input_34.txt.hello input_34.txt.hello.world
+cp input_88.txt.hello input_88.txt.hello.world2
+cp input_99.txt.hello input_99.txt.hello.world
+cp input_26.txt.hello input_26.txt.hello.world2
+cp input_28.txt.hello input_28.txt.hello.world
+cp input_34.txt.hello input_34.txt.hello.world2
+cp input_63.txt.hello input_63.txt.hello.world
+cp input_28.txt.hello input_28.txt.hello.world2
+cp input_60.txt.hello input_60.txt.hello.world
+cp input_8.txt.hello input_8.txt.hello.world
+cp input_75.txt.hello input_75.txt.hello.world
+cp input_9.txt.hello input_9.txt.hello.world
+cp input_75.txt.hello input_75.txt.hello.world2
+cp input_14.txt.hello input_14.txt.hello.world2
+cp input_9.txt.hello input_9.txt.hello.world2
+cp input_8.txt.hello input_8.txt.hello.world2
+cp input_61.txt.hello input_61.txt.hello.world
+cp input_26.txt.hello input_26.txt.hello.world
+cp input_13.txt.hello input_13.txt.hello.world2
+# Stage world [1]
+# Stage world2 [2]
+# Stage world2 [2]
+# Stage world [1]
+cp input_100.txt.hello input_100.txt.hello.world2
+cp input_100.txt.hello input_100.txt.hello.world
+cp input_98.txt.hello input_98.txt.hello.world
+cp input_98.txt.hello input_98.txt.hello.world2
+# Stage world [1]
+# Stage world2 [2]
+# Stage world2 [2]
+# Stage world [1]
+# Stage world2 [2]
+# Stage world [1]
+cp input_7.txt.hello input_7.txt.hello.world2
+cp input_85.txt.hello input_85.txt.hello.world2
+cp input_7.txt.hello input_7.txt.hello.world
+cp input_71.txt.hello input_71.txt.hello.world2
+# Stage world [1]
+# Stage world2 [2]
+cp input_71.txt.hello input_71.txt.hello.world
+cp input_85.txt.hello input_85.txt.hello.world
+cp input_68.txt.hello input_68.txt.hello.world
+cp input_68.txt.hello input_68.txt.hello.world2
+# Stage world2 [2]
+# Stage world [1]
+# Stage world2 [2]
+# Stage world [1]
+# Stage world [1]
+# Stage world2 [2]
+# Stage world [1]
+# Stage world2 [2]
+# Stage world [1]
+# Stage world [1]
+# Stage world2 [2]
+# Stage world2 [2]
+# Stage world [1]
+# Stage world2 [2]
+# Stage world [1]
+# Stage world2 [2]
+# Stage world [1]
+# Stage world2 [2]
+# Stage world2 [2]
+# Stage world2 [2]
+# Stage world [1]
+# Stage world [1]
+# Stage world [1]
+# Stage world [1]
+# Stage world2 [2]
+# Stage world2 [2]
+# Stage world2 [2]
+# Stage world [1]
+# Stage world2 [2]
+# Stage world [1]
+cp input_1.txt.hello input_1.txt.hello.world2
+cp input_77.txt.hello input_77.txt.hello.world
+cp input_21.txt.hello input_21.txt.hello.world2
+cp input_55.txt.hello input_55.txt.hello.world
+cp input_42.txt.hello input_42.txt.hello.world2
+cp input_55.txt.hello input_55.txt.hello.world2
+cp input_67.txt.hello input_67.txt.hello.world
+cp input_42.txt.hello input_42.txt.hello.world
+cp input_67.txt.hello input_67.txt.hello.world2
+cp input_58.txt.hello input_58.txt.hello.world
+cp input_49.txt.hello input_49.txt.hello.world
+cp input_58.txt.hello input_58.txt.hello.world2
+cp input_47.txt.hello input_47.txt.hello.world
+cp input_87.txt.hello input_87.txt.hello.world
+cp input_49.txt.hello input_49.txt.hello.world2
+cp input_47.txt.hello input_47.txt.hello.world2
+cp input_84.txt.hello input_84.txt.hello.world2
+cp input_84.txt.hello input_84.txt.hello.world
+cp input_87.txt.hello input_87.txt.hello.world2
+cp input_10.txt.hello input_10.txt.hello.world2
+cp input_20.txt.hello input_20.txt.hello.world2
+cp input_10.txt.hello input_10.txt.hello.world
+cp input_50.txt.hello input_50.txt.hello.world
+cp input_21.txt.hello input_21.txt.hello.world
+cp input_77.txt.hello input_77.txt.hello.world2
+cp input_20.txt.hello input_20.txt.hello.world
+cp input_50.txt.hello input_50.txt.hello.world2
+cp input_62.txt.hello input_62.txt.hello.world2
+# Stage world [1]
+# Stage world [1]
+cp input_62.txt.hello input_62.txt.hello.world
+# Stage world [1]
+# Stage world [1]
+# Stage world2 [2]
+# Stage world2 [2]
+# Stage world2 [2]
+# Stage world2 [2]
+# Stage world [1]
+# Stage world2 [2]
+# Stage world [1]
+# Stage world2 [2]
+cp input_1.txt.hello input_1.txt.hello.world
+cp input_4.txt.hello input_4.txt.hello.world
+cp input_74.txt.hello input_74.txt.hello.world
+cp input_43.txt.hello input_43.txt.hello.world2
+cp input_6.txt.hello input_6.txt.hello.world
+cp input_64.txt.hello input_64.txt.hello.world
+cp input_19.txt.hello input_19.txt.hello.world2
+cp input_43.txt.hello input_43.txt.hello.world
+cp input_64.txt.hello input_64.txt.hello.world2
+cp input_19.txt.hello input_19.txt.hello.world
+cp input_4.txt.hello input_4.txt.hello.world2
+cp input_6.txt.hello input_6.txt.hello.world2
+cp input_74.txt.hello input_74.txt.hello.world2
+# Stage world2 [2]
+# Stage world [1]
+# Stage world2 [2]
+# Stage world2 [2]
+# Stage world [1]
+# Stage world [1]
+# Stage world2 [2]
+# Stage world2 [2]
+# Stage world [1]
+# Stage world [1]
+cp input_45.txt.hello input_45.txt.hello.world
+cp input_66.txt.hello input_66.txt.hello.world2
+cp input_95.txt.hello input_95.txt.hello.world2
+cp input_45.txt.hello input_45.txt.hello.world2
+cp input_95.txt.hello input_95.txt.hello.world
+cp input_66.txt.hello input_66.txt.hello.world
+cp input_69.txt.hello input_69.txt.hello.world
+cp input_69.txt.hello input_69.txt.hello.world2
+cp input_90.txt.hello input_90.txt.hello.world
+cp input_90.txt.hello input_90.txt.hello.world2
+# Stage world2 [2]
+# Stage world [1]
+cp input_24.txt.hello input_24.txt.hello.world
+# Stage world [1]
+# Stage world2 [2]
+cp input_39.txt.hello input_39.txt.hello.world2
+cp input_39.txt.hello input_39.txt.hello.world
+cp input_24.txt.hello input_24.txt.hello.world2
+# Stage world [1]
+# Stage world2 [2]
+# Stage world2 [2]
+# Stage world [1]
+cp input_17.txt.hello input_17.txt.hello.world
+cp input_17.txt.hello input_17.txt.hello.world2
+cp input_23.txt.hello input_23.txt.hello.world2
+cp input_23.txt.hello input_23.txt.hello.world
+# Stage end
+cat input_100.txt.hello.world input_100.txt.hello.world2 input_10.txt.hello.world input_10.txt.hello.world2 input_11.txt.hello.world input_11.txt.hello.world2 input_12.txt.hello.world input_12.txt.hello.world2 input_13.txt.hello.world input_13.txt.hello.world2 input_14.txt.hello.world input_14.txt.hello.world2 input_15.txt.hello.world input_15.txt.hello.world2 input_16.txt.hello.world input_16.txt.hello.world2 input_17.txt.hello.world input_17.txt.hello.world2 input_18.txt.hello.world input_18.txt.hello.world2 input_19.txt.hello.world input_19.txt.hello.world2 input_1.txt.hello.world input_1.txt.hello.world2 input_20.txt.hello.world input_20.txt.hello.world2 input_21.txt.hello.world input_21.txt.hello.world2 input_22.txt.hello.world input_22.txt.hello.world2 input_23.txt.hello.world input_23.txt.hello.world2 input_24.txt.hello.world input_24.txt.hello.world2 input_25.txt.hello.world input_25.txt.hello.world2 input_26.txt.hello.world input_26.txt.hello.world2 input_27.txt.hello.world input_27.txt.hello.world2 input_28.txt.hello.world input_28.txt.hello.world2 input_29.txt.hello.world input_29.txt.hello.world2 input_2.txt.hello.world input_2.txt.hello.world2 input_30.txt.hello.world input_30.txt.hello.world2 input_31.txt.hello.world input_31.txt.hello.world2 input_32.txt.hello.world input_32.txt.hello.world2 input_33.txt.hello.world input_33.txt.hello.world2 input_34.txt.hello.world input_34.txt.hello.world2 input_35.txt.hello.world input_35.txt.hello.world2 input_36.txt.hello.world input_36.txt.hello.world2 input_37.txt.hello.world input_37.txt.hello.world2 input_38.txt.hello.world input_38.txt.hello.world2 input_39.txt.hello.world input_39.txt.hello.world2 input_3.txt.hello.world input_3.txt.hello.world2 input_40.txt.hello.world input_40.txt.hello.world2 input_41.txt.hello.world input_41.txt.hello.world2 input_42.txt.hello.world input_42.txt.hello.world2 input_43.txt.hello.world input_43.txt.hello.world2 input_44.txt.hello.world input_44.txt.hello.world2 input_45.txt.hello.world input_45.txt.hello.world2 input_46.txt.hello.world input_46.txt.hello.world2 input_47.txt.hello.world input_47.txt.hello.world2 input_48.txt.hello.world input_48.txt.hello.world2 input_49.txt.hello.world input_49.txt.hello.world2 input_4.txt.hello.world input_4.txt.hello.world2 input_50.txt.hello.world input_50.txt.hello.world2 input_51.txt.hello.world input_51.txt.hello.world2 input_52.txt.hello.world input_52.txt.hello.world2 input_53.txt.hello.world input_53.txt.hello.world2 input_54.txt.hello.world input_54.txt.hello.world2 input_55.txt.hello.world input_55.txt.hello.world2 input_56.txt.hello.world input_56.txt.hello.world2 input_57.txt.hello.world input_57.txt.hello.world2 input_58.txt.hello.world input_58.txt.hello.world2 input_59.txt.hello.world input_59.txt.hello.world2 input_5.txt.hello.world input_5.txt.hello.world2 input_60.txt.hello.world input_60.txt.hello.world2 input_61.txt.hello.world input_61.txt.hello.world2 input_62.txt.hello.world input_62.txt.hello.world2 input_63.txt.hello.world input_63.txt.hello.world2 input_64.txt.hello.world input_64.txt.hello.world2 input_65.txt.hello.world input_65.txt.hello.world2 input_66.txt.hello.world input_66.txt.hello.world2 input_67.txt.hello.world input_67.txt.hello.world2 input_68.txt.hello.world input_68.txt.hello.world2 input_69.txt.hello.world input_69.txt.hello.world2 input_6.txt.hello.world input_6.txt.hello.world2 input_70.txt.hello.world input_70.txt.hello.world2 input_71.txt.hello.world input_71.txt.hello.world2 input_72.txt.hello.world input_72.txt.hello.world2 input_73.txt.hello.world input_73.txt.hello.world2 input_74.txt.hello.world input_74.txt.hello.world2 input_75.txt.hello.world input_75.txt.hello.world2 input_76.txt.hello.world input_76.txt.hello.world2 input_77.txt.hello.world input_77.txt.hello.world2 input_78.txt.hello.world input_78.txt.hello.world2 input_79.txt.hello.world input_79.txt.hello.world2 input_7.txt.hello.world input_7.txt.hello.world2 input_80.txt.hello.world input_80.txt.hello.world2 input_81.txt.hello.world input_81.txt.hello.world2 input_82.txt.hello.world input_82.txt.hello.world2 input_83.txt.hello.world input_83.txt.hello.world2 input_84.txt.hello.world input_84.txt.hello.world2 input_85.txt.hello.world input_85.txt.hello.world2 input_86.txt.hello.world input_86.txt.hello.world2 input_87.txt.hello.world input_87.txt.hello.world2 input_88.txt.hello.world input_88.txt.hello.world2 input_89.txt.hello.world input_89.txt.hello.world2 input_8.txt.hello.world input_8.txt.hello.world2 input_90.txt.hello.world input_90.txt.hello.world2 input_91.txt.hello.world input_91.txt.hello.world2 input_92.txt.hello.world input_92.txt.hello.world2 input_93.txt.hello.world input_93.txt.hello.world2 input_94.txt.hello.world input_94.txt.hello.world2 input_95.txt.hello.world input_95.txt.hello.world2 input_96.txt.hello.world input_96.txt.hello.world2 input_97.txt.hello.world input_97.txt.hello.world2 input_98.txt.hello.world input_98.txt.hello.world2 input_99.txt.hello.world input_99.txt.hello.world2 input_9.txt.hello.world input_9.txt.hello.world2 > input_100.txt.hello.world.end
+# ################ Finished at Fri Dec 05 10:23:42 GMT 2014 Duration = 22.567 seconds ################
+
+
+####################################################################################################
+# Starting pipeline at Fri Dec 05 10:36:04 GMT 2014
+# Input files:  [input_100.txt, input_10.txt, input_11.txt, input_12.txt, input_13.txt, input_14.txt, input_15.txt, input_16.txt, input_17.txt, input_18.txt, input_19.txt, input_1.txt, input_20.txt, input_21.txt, input_22.txt, input_23.txt, input_24.txt, input_25.txt, input_26.txt, input_27.txt, input_28.txt, input_29.txt, input_2.txt, input_30.txt, input_31.txt, input_32.txt, input_33.txt, input_34.txt, input_35.txt, input_36.txt, input_37.txt, input_38.txt, input_39.txt, input_3.txt, input_40.txt, input_41.txt, input_42.txt, input_43.txt, input_44.txt, input_45.txt, input_46.txt, input_47.txt, input_48.txt, input_49.txt, input_4.txt, input_50.txt, input_51.txt, input_52.txt, input_53.txt, input_54.txt, input_55.txt, input_56.txt, input_57.txt, input_58.txt, input_59.txt, input_5.txt, input_60.txt, input_61.txt, input_62.txt, input_63.txt, input_64.txt, input_65.txt, input_66.txt, input_67.txt, input_68.txt, input_69.txt, input_6.txt, input_70.txt, input_71.txt, input_72.txt, input_73.txt, input_74.txt, input_75.txt, input_76.txt, input_77.txt, input_78.txt, input_79.txt, input_7.txt, input_80.txt, input_81.txt, input_82.txt, input_83.txt, input_84.txt, input_85.txt, input_86.txt, input_87.txt, input_88.txt, input_89.txt, input_8.txt, input_90.txt, input_91.txt, input_92.txt, input_93.txt, input_94.txt, input_95.txt, input_96.txt, input_97.txt, input_98.txt, input_99.txt, input_9.txt]
+# Output Log:  .bpipe/logs/16539.log
+# Stage hello [44]
+# Stage hello [22]
+# Stage hello [32]
+# Stage hello [34]
+# Stage hello [66]
+# Stage hello [38]
+# Stage hello [51]
+# Stage hello [33]
+# Stage hello [58]
+# Stage hello [14]
+# Stage hello [13]
+# Stage hello [39]
+# Stage hello [47]
+# Stage hello [15]
+# Stage hello [97]
+# Stage hello [69]
+# Stage hello [2]
+# Stage hello [1]
+# Stage hello [40]
+# Stage hello [50]
+# Stage hello [46]
+# Stage hello [11]
+# Stage hello [94]
+# Stage hello [35]
+# Stage hello [77]
+# Stage hello [80]
+# Stage hello [72]
+# Stage hello [57]
+# Stage hello [31]
+# Stage hello [71]
+# Stage hello [17]
+# Stage hello [86]
+# Stage hello [53]
+# Stage hello [4]
+# Stage hello [48]
+# Stage hello [52]
+# Stage hello [92]
+# Stage hello [8]
+# Stage hello [65]
+# Stage hello [85]
+# Stage hello [95]
+# Stage hello [36]
+# Stage hello [60]
+# Stage hello [63]
+# Stage hello [23]
+# Stage hello [20]
+# Stage hello [87]
+# Stage hello [83]
+# Stage hello [30]
+# Stage hello [73]
+# Stage hello [84]
+cp input_44.txt input_44.txt.hello; sleep 5
+# Stage hello [82]
+cp input_22.txt input_22.txt.hello; sleep 5
+cp input_66.txt input_66.txt.hello; sleep 5
+# Stage hello [5]
+cp input_34.txt input_34.txt.hello; sleep 5
+# Stage hello [59]
+# Stage hello [62]
+# Stage hello [90]
+cp input_32.txt input_32.txt.hello; sleep 5
+# Stage hello [89]
+cp input_33.txt input_33.txt.hello; sleep 5
+# Stage hello [24]
+# Stage hello [42]
+# Stage hello [88]
+# Stage hello [27]
+cp input_47.txt input_47.txt.hello; sleep 5
+cp input_58.txt input_58.txt.hello; sleep 5
+# Stage hello [19]
+# Stage hello [29]
+# Stage hello [100]
+cp input_40.txt input_40.txt.hello; sleep 5
+# Stage hello [98]
+cp input_50.txt input_50.txt.hello; sleep 5
+# Stage hello [18]
+# Stage hello [10]
+# Stage hello [67]
+# Stage hello [21]
+# Stage hello [7]
+# Stage hello [49]
+cp input_13.txt input_13.txt.hello; sleep 5
+# Stage hello [43]
+cp input_14.txt input_14.txt.hello; sleep 5
+# Stage hello [12]
+cp input_92.txt input_92.txt.hello; sleep 5
+# Stage hello [99]
+# Stage hello [93]
+cp input_39.txt input_39.txt.hello; sleep 5
+cp input_1.txt input_1.txt.hello; sleep 5
+cp input_52.txt input_52.txt.hello; sleep 5
+cp input_65.txt input_65.txt.hello; sleep 5
+cp input_8.txt input_8.txt.hello; sleep 5
+# Stage hello [55]
+cp input_2.txt input_2.txt.hello; sleep 5
+# Stage hello [79]
+# Stage hello [25]
+# Stage hello [54]
+# Stage hello [16]
+cp input_15.txt input_15.txt.hello; sleep 5
+cp input_97.txt input_97.txt.hello; sleep 5
+cp input_77.txt input_77.txt.hello; sleep 5
+# Stage hello [70]
+# Stage hello [81]
+# Stage hello [41]
+cp input_69.txt input_69.txt.hello; sleep 5
+cp input_72.txt input_72.txt.hello; sleep 5
+# Stage hello [74]
+# Stage hello [76]
+# Stage hello [9]
+# Stage hello [91]
+cp input_94.txt input_94.txt.hello; sleep 5
+cp input_35.txt input_35.txt.hello; sleep 5
+cp input_80.txt input_80.txt.hello; sleep 5
+# Stage hello [56]
+# Stage hello [96]
+# Stage hello [75]
+cp input_11.txt input_11.txt.hello; sleep 5
+cp input_38.txt input_38.txt.hello; sleep 5
+cp input_46.txt input_46.txt.hello; sleep 5
+# Stage hello [45]
+# Stage hello [28]
+# Stage hello [64]
+# Stage hello [37]
+cp input_51.txt input_51.txt.hello; sleep 5
+cp input_67.txt input_67.txt.hello; sleep 5
+# Stage hello [68]
+# Stage hello [6]
+cp input_10.txt input_10.txt.hello; sleep 5
+cp input_18.txt input_18.txt.hello; sleep 5
+cp input_21.txt input_21.txt.hello; sleep 5
+# Stage hello [3]
+cp input_100.txt input_100.txt.hello; sleep 5
+cp input_83.txt input_83.txt.hello; sleep 5
+cp input_98.txt input_98.txt.hello; sleep 5
+cp input_87.txt input_87.txt.hello; sleep 5
+cp input_20.txt input_20.txt.hello; sleep 5
+# Stage hello [78]
+# Stage hello [61]
+# Stage hello [26]
+cp input_23.txt input_23.txt.hello; sleep 5
+cp input_60.txt input_60.txt.hello; sleep 5
+cp input_90.txt input_90.txt.hello; sleep 5
+cp input_95.txt input_95.txt.hello; sleep 5
+cp input_36.txt input_36.txt.hello; sleep 5
+cp input_63.txt input_63.txt.hello; sleep 5
+cp input_85.txt input_85.txt.hello; sleep 5
+cp input_16.txt input_16.txt.hello; sleep 5
+cp input_54.txt input_54.txt.hello; sleep 5
+cp input_88.txt input_88.txt.hello; sleep 5
+cp input_79.txt input_79.txt.hello; sleep 5
+cp input_25.txt input_25.txt.hello; sleep 5
+cp input_48.txt input_48.txt.hello; sleep 5
+cp input_53.txt input_53.txt.hello; sleep 5
+cp input_4.txt input_4.txt.hello; sleep 5
+cp input_86.txt input_86.txt.hello; sleep 5
+cp input_17.txt input_17.txt.hello; sleep 5
+cp input_31.txt input_31.txt.hello; sleep 5
+cp input_71.txt input_71.txt.hello; sleep 5
+cp input_57.txt input_57.txt.hello; sleep 5
+cp input_49.txt input_49.txt.hello; sleep 5
+cp input_43.txt input_43.txt.hello; sleep 5
+cp input_7.txt input_7.txt.hello; sleep 5
+cp input_30.txt input_30.txt.hello; sleep 5
+cp input_56.txt input_56.txt.hello; sleep 5
+cp input_75.txt input_75.txt.hello; sleep 5
+cp input_45.txt input_45.txt.hello; sleep 5
+cp input_96.txt input_96.txt.hello; sleep 5
+cp input_76.txt input_76.txt.hello; sleep 5
+cp input_91.txt input_91.txt.hello; sleep 5
+cp input_9.txt input_9.txt.hello; sleep 5
+cp input_41.txt input_41.txt.hello; sleep 5
+cp input_74.txt input_74.txt.hello; sleep 5
+cp input_81.txt input_81.txt.hello; sleep 5
+cp input_42.txt input_42.txt.hello; sleep 5
+cp input_70.txt input_70.txt.hello; sleep 5
+cp input_19.txt input_19.txt.hello; sleep 5
+cp input_24.txt input_24.txt.hello; sleep 5
+cp input_89.txt input_89.txt.hello; sleep 5
+cp input_62.txt input_62.txt.hello; sleep 5
+cp input_5.txt input_5.txt.hello; sleep 5
+cp input_59.txt input_59.txt.hello; sleep 5
+cp input_73.txt input_73.txt.hello; sleep 5
+cp input_82.txt input_82.txt.hello; sleep 5
+cp input_84.txt input_84.txt.hello; sleep 5
+cp input_68.txt input_68.txt.hello; sleep 5
+cp input_64.txt input_64.txt.hello; sleep 5
+cp input_6.txt input_6.txt.hello; sleep 5
+cp input_37.txt input_37.txt.hello; sleep 5
+cp input_27.txt input_27.txt.hello; sleep 5
+cp input_26.txt input_26.txt.hello; sleep 5
+cp input_61.txt input_61.txt.hello; sleep 5
+cp input_28.txt input_28.txt.hello; sleep 5
+cp input_29.txt input_29.txt.hello; sleep 5
+cp input_3.txt input_3.txt.hello; sleep 5
+cp input_78.txt input_78.txt.hello; sleep 5
+cp input_99.txt input_99.txt.hello; sleep 5
+cp input_12.txt input_12.txt.hello; sleep 5
+cp input_93.txt input_93.txt.hello; sleep 5
+cp input_55.txt input_55.txt.hello; sleep 5
+# Stage world2 [2]
+# Stage world [1]
+# Stage world2 [2]
+# Stage world2 [2]
+# Stage world [1]
+# Stage world [1]
+# Stage world [1]
+# Stage world [1]
+# Stage world [1]
+# Stage world2 [2]
+# Stage world2 [2]
+# Stage world [1]
+# Stage world2 [2]
+# Stage world2 [2]
+# Stage world2 [2]
+# Stage world [1]
+# Stage world [1]
+# Stage world2 [2]
+# Stage world [1]
+# Stage world [1]
+# Stage world2 [2]
+# Stage world2 [2]
+# Stage world [1]
+# Stage world [1]
+# Stage world [1]
+# Stage world2 [2]
+# Stage world2 [2]
+# Stage world [1]
+# Stage world [1]
+# Stage world2 [2]
+# Stage world2 [2]
+# Stage world2 [2]
+# Stage world [1]
+# Stage world2 [2]
+# Stage world [1]
+# Stage world [1]
+# Stage world2 [2]
+# Stage world [1]
+# Stage world [1]
+# Stage world2 [2]
+# Stage world [1]
+# Stage world2 [2]
+# Stage world2 [2]
+# Stage world [1]
+# Stage world2 [2]
+# Stage world [1]
+# Stage world [1]
+# Stage world2 [2]
+# Stage world [1]
+# Stage world [1]
+# Stage world2 [2]
+# Stage world2 [2]
+cp input_44.txt.hello input_44.txt.hello.world
+# Stage world2 [2]
+# Stage world2 [2]
+# Stage world2 [2]
+# Stage world2 [2]
+# Stage world [1]
+# Stage world [1]
+# Stage world2 [2]
+cp input_66.txt.hello input_66.txt.hello.world2
+# Stage world2 [2]
+# Stage world [1]
+# Stage world2 [2]
+cp input_14.txt.hello input_14.txt.hello.world2
+# Stage world [1]
+cp input_32.txt.hello input_32.txt.hello.world
+cp input_39.txt.hello input_39.txt.hello.world2
+# Stage world [1]
+cp input_67.txt.hello input_67.txt.hello.world
+cp input_34.txt.hello input_34.txt.hello.world
+cp input_44.txt.hello input_44.txt.hello.world2
+cp input_2.txt.hello input_2.txt.hello.world
+cp input_1.txt.hello input_1.txt.hello.world2
+cp input_2.txt.hello input_2.txt.hello.world2
+cp input_77.txt.hello input_77.txt.hello.world2
+cp input_13.txt.hello input_13.txt.hello.world2
+cp input_40.txt.hello input_40.txt.hello.world
+cp input_77.txt.hello input_77.txt.hello.world
+cp input_58.txt.hello input_58.txt.hello.world
+cp input_34.txt.hello input_34.txt.hello.world2
+cp input_50.txt.hello input_50.txt.hello.world
+cp input_80.txt.hello input_80.txt.hello.world
+cp input_58.txt.hello input_58.txt.hello.world2
+cp input_51.txt.hello input_51.txt.hello.world2
+cp input_33.txt.hello input_33.txt.hello.world
+cp input_15.txt.hello input_15.txt.hello.world2
+cp input_51.txt.hello input_51.txt.hello.world
+cp input_35.txt.hello input_35.txt.hello.world2
+cp input_13.txt.hello input_13.txt.hello.world
+cp input_72.txt.hello input_72.txt.hello.world
+cp input_50.txt.hello input_50.txt.hello.world2
+cp input_32.txt.hello input_32.txt.hello.world2
+cp input_66.txt.hello input_66.txt.hello.world
+cp input_39.txt.hello input_39.txt.hello.world
+cp input_1.txt.hello input_1.txt.hello.world
+cp input_92.txt.hello input_92.txt.hello.world
+cp input_14.txt.hello input_14.txt.hello.world
+cp input_92.txt.hello input_92.txt.hello.world2
+cp input_46.txt.hello input_46.txt.hello.world
+cp input_33.txt.hello input_33.txt.hello.world2
+cp input_52.txt.hello input_52.txt.hello.world2
+cp input_15.txt.hello input_15.txt.hello.world
+cp input_11.txt.hello input_11.txt.hello.world
+cp input_80.txt.hello input_80.txt.hello.world2
+cp input_94.txt.hello input_94.txt.hello.world
+cp input_22.txt.hello input_22.txt.hello.world2
+cp input_35.txt.hello input_35.txt.hello.world
+cp input_11.txt.hello input_11.txt.hello.world2
+cp input_22.txt.hello input_22.txt.hello.world
+cp input_47.txt.hello input_47.txt.hello.world2
+cp input_46.txt.hello input_46.txt.hello.world2
+cp input_97.txt.hello input_97.txt.hello.world2
+cp input_65.txt.hello input_65.txt.hello.world2
+cp input_65.txt.hello input_65.txt.hello.world
+cp input_69.txt.hello input_69.txt.hello.world2
+cp input_69.txt.hello input_69.txt.hello.world
+cp input_97.txt.hello input_97.txt.hello.world
+cp input_8.txt.hello input_8.txt.hello.world2
+cp input_38.txt.hello input_38.txt.hello.world
+cp input_40.txt.hello input_40.txt.hello.world2
+cp input_38.txt.hello input_38.txt.hello.world2
+cp input_67.txt.hello input_67.txt.hello.world2
+cp input_8.txt.hello input_8.txt.hello.world
+cp input_94.txt.hello input_94.txt.hello.world2
+cp input_47.txt.hello input_47.txt.hello.world
+cp input_72.txt.hello input_72.txt.hello.world2
+cp input_52.txt.hello input_52.txt.hello.world
+# Stage world [1]
+# Stage world2 [2]
+# Stage world2 [2]
+# Stage world [1]
+cp input_83.txt.hello input_83.txt.hello.world2
+cp input_83.txt.hello input_83.txt.hello.world
+cp input_100.txt.hello input_100.txt.hello.world
+cp input_100.txt.hello input_100.txt.hello.world2
+# Stage world2 [2]
+# Stage world [1]
+# Stage world2 [2]
+# Stage world [1]
+# Stage world [1]
+cp input_87.txt.hello input_87.txt.hello.world2
+# Stage world [1]
+# Stage world [1]
+# Stage world [1]
+# Stage world2 [2]
+cp input_23.txt.hello input_23.txt.hello.world
+cp input_87.txt.hello input_87.txt.hello.world
+cp input_57.txt.hello input_57.txt.hello.world2
+cp input_90.txt.hello input_90.txt.hello.world
+# Stage world2 [2]
+cp input_30.txt.hello input_30.txt.hello.world
+# Stage world2 [2]
+# Stage world2 [2]
+cp input_88.txt.hello input_88.txt.hello.world
+cp input_57.txt.hello input_57.txt.hello.world
+cp input_10.txt.hello input_10.txt.hello.world2
+# Stage world [1]
+# Stage world [1]
+cp input_18.txt.hello input_18.txt.hello.world2
+cp input_30.txt.hello input_30.txt.hello.world2
+# Stage world [1]
+# Stage world2 [2]
+# Stage world2 [2]
+# Stage world [1]
+cp input_10.txt.hello input_10.txt.hello.world
+cp input_18.txt.hello input_18.txt.hello.world
+cp input_23.txt.hello input_23.txt.hello.world2
+# Stage world2 [2]
+# Stage world2 [2]
+# Stage world [1]
+# Stage world [1]
+cp input_98.txt.hello input_98.txt.hello.world
+# Stage world2 [2]
+# Stage world [1]
+# Stage world [1]
+# Stage world2 [2]
+cp input_21.txt.hello input_21.txt.hello.world
+# Stage world2 [2]
+cp input_95.txt.hello input_95.txt.hello.world2
+# Stage world [1]
+# Stage world2 [2]
+# Stage world [1]
+cp input_90.txt.hello input_90.txt.hello.world2
+cp input_88.txt.hello input_88.txt.hello.world2
+cp input_21.txt.hello input_21.txt.hello.world2
+cp input_60.txt.hello input_60.txt.hello.world
+# Stage world [1]
+# Stage world [1]
+# Stage world2 [2]
+cp input_48.txt.hello input_48.txt.hello.world
+cp input_95.txt.hello input_95.txt.hello.world
+cp input_36.txt.hello input_36.txt.hello.world2
+# Stage world2 [2]
+# Stage world2 [2]
+# Stage world2 [2]
+# Stage world2 [2]
+cp input_98.txt.hello input_98.txt.hello.world2
+cp input_7.txt.hello input_7.txt.hello.world2
+cp input_4.txt.hello input_4.txt.hello.world
+cp input_36.txt.hello input_36.txt.hello.world
+# Stage world2 [2]
+# Stage world [1]
+# Stage world [1]
+# Stage world2 [2]
+# Stage world [1]
+# Stage world [1]
+# Stage world [1]
+cp input_7.txt.hello input_7.txt.hello.world
+# Stage world2 [2]
+# Stage world [1]
+# Stage world2 [2]
+cp input_60.txt.hello input_60.txt.hello.world2
+# Stage world [1]
+# Stage world2 [2]
+cp input_48.txt.hello input_48.txt.hello.world2
+# Stage world2 [2]
+# Stage world2 [2]
+# Stage world2 [2]
+cp input_25.txt.hello input_25.txt.hello.world2
+# Stage world [1]
+cp input_71.txt.hello input_71.txt.hello.world2
+# Stage world2 [2]
+# Stage world [1]
+cp input_49.txt.hello input_49.txt.hello.world2
+# Stage world [1]
+# Stage world2 [2]
+# Stage world [1]
+cp input_71.txt.hello input_71.txt.hello.world
+cp input_43.txt.hello input_43.txt.hello.world
+cp input_86.txt.hello input_86.txt.hello.world
+cp input_53.txt.hello input_53.txt.hello.world
+cp input_17.txt.hello input_17.txt.hello.world2
+cp input_31.txt.hello input_31.txt.hello.world2
+cp input_31.txt.hello input_31.txt.hello.world
+# Stage world2 [2]
+cp input_4.txt.hello input_4.txt.hello.world2
+# Stage world [1]
+cp input_85.txt.hello input_85.txt.hello.world2
+cp input_49.txt.hello input_49.txt.hello.world
+cp input_43.txt.hello input_43.txt.hello.world2
+cp input_17.txt.hello input_17.txt.hello.world
+cp input_79.txt.hello input_79.txt.hello.world
+cp input_53.txt.hello input_53.txt.hello.world2
+cp input_63.txt.hello input_63.txt.hello.world
+cp input_63.txt.hello input_63.txt.hello.world2
+cp input_79.txt.hello input_79.txt.hello.world2
+cp input_85.txt.hello input_85.txt.hello.world
+cp input_20.txt.hello input_20.txt.hello.world
+cp input_54.txt.hello input_54.txt.hello.world2
+cp input_25.txt.hello input_25.txt.hello.world
+cp input_54.txt.hello input_54.txt.hello.world
+cp input_16.txt.hello input_16.txt.hello.world2
+cp input_16.txt.hello input_16.txt.hello.world
+cp input_86.txt.hello input_86.txt.hello.world2
+cp input_20.txt.hello input_20.txt.hello.world2
+# Stage world2 [2]
+# Stage world [1]
+# Stage world [1]
+# Stage world2 [2]
+cp input_70.txt.hello input_70.txt.hello.world
+cp input_70.txt.hello input_70.txt.hello.world2
+cp input_45.txt.hello input_45.txt.hello.world
+cp input_45.txt.hello input_45.txt.hello.world2
+# Stage world [1]
+# Stage world2 [2]
+cp input_9.txt.hello input_9.txt.hello.world2
+cp input_9.txt.hello input_9.txt.hello.world
+# Stage world [1]
+# Stage world2 [2]
+# Stage world [1]
+# Stage world2 [2]
+# Stage world2 [2]
+# Stage world [1]
+# Stage world [1]
+# Stage world2 [2]
+cp input_82.txt.hello input_82.txt.hello.world2
+# Stage world [1]
+# Stage world2 [2]
+cp input_82.txt.hello input_82.txt.hello.world
+cp input_73.txt.hello input_73.txt.hello.world2
+cp input_91.txt.hello input_91.txt.hello.world2
+cp input_73.txt.hello input_73.txt.hello.world
+cp input_91.txt.hello input_91.txt.hello.world
+# Stage world2 [2]
+# Stage world2 [2]
+# Stage world2 [2]
+# Stage world [1]
+# Stage world2 [2]
+# Stage world2 [2]
+# Stage world2 [2]
+# Stage world [1]
+# Stage world [1]
+# Stage world [1]
+# Stage world2 [2]
+# Stage world [1]
+# Stage world [1]
+# Stage world [1]
+# Stage world2 [2]
+# Stage world2 [2]
+# Stage world2 [2]
+# Stage world [1]
+# Stage world [1]
+# Stage world [1]
+cp input_59.txt.hello input_59.txt.hello.world
+cp input_5.txt.hello input_5.txt.hello.world2
+cp input_6.txt.hello input_6.txt.hello.world
+cp input_68.txt.hello input_68.txt.hello.world2
+cp input_64.txt.hello input_64.txt.hello.world2
+cp input_59.txt.hello input_59.txt.hello.world2
+cp input_42.txt.hello input_42.txt.hello.world2
+cp input_64.txt.hello input_64.txt.hello.world
+cp input_68.txt.hello input_68.txt.hello.world
+cp input_89.txt.hello input_89.txt.hello.world
+cp input_84.txt.hello input_84.txt.hello.world2
+cp input_62.txt.hello input_62.txt.hello.world
+cp input_89.txt.hello input_89.txt.hello.world2
+cp input_42.txt.hello input_42.txt.hello.world
+cp input_6.txt.hello input_6.txt.hello.world2
+cp input_19.txt.hello input_19.txt.hello.world2
+cp input_19.txt.hello input_19.txt.hello.world
+cp input_5.txt.hello input_5.txt.hello.world
+# Stage world [1]
+cp input_84.txt.hello input_84.txt.hello.world
+cp input_74.txt.hello input_74.txt.hello.world2
+cp input_62.txt.hello input_62.txt.hello.world2
+cp input_74.txt.hello input_74.txt.hello.world
+# Stage world2 [2]
+# Stage world [1]
+# Stage world2 [2]
+# Stage world2 [2]
+cp input_56.txt.hello input_56.txt.hello.world
+cp input_56.txt.hello input_56.txt.hello.world2
+# Stage world2 [2]
+# Stage world [1]
+# Stage world [1]
+# Stage world [1]
+# Stage world2 [2]
+cp input_37.txt.hello input_37.txt.hello.world
+cp input_29.txt.hello input_29.txt.hello.world
+cp input_78.txt.hello input_78.txt.hello.world2
+cp input_3.txt.hello input_3.txt.hello.world2
+cp input_37.txt.hello input_37.txt.hello.world2
+cp input_78.txt.hello input_78.txt.hello.world
+cp input_3.txt.hello input_3.txt.hello.world
+cp input_28.txt.hello input_28.txt.hello.world
+cp input_29.txt.hello input_29.txt.hello.world2
+cp input_28.txt.hello input_28.txt.hello.world2
+# Stage world [1]
+# Stage world2 [2]
+cp input_81.txt.hello input_81.txt.hello.world
+cp input_41.txt.hello input_41.txt.hello.world2
+# Stage world [1]
+# Stage world [1]
+# Stage world2 [2]
+# Stage world2 [2]
+# Stage world [1]
+cp input_81.txt.hello input_81.txt.hello.world2
+cp input_41.txt.hello input_41.txt.hello.world
+cp input_24.txt.hello input_24.txt.hello.world
+cp input_96.txt.hello input_96.txt.hello.world2
+# Stage world2 [2]
+cp input_96.txt.hello input_96.txt.hello.world
+cp input_24.txt.hello input_24.txt.hello.world2
+# Stage world [1]
+# Stage world [1]
+# Stage world2 [2]
+# Stage world2 [2]
+# Stage world [1]
+# Stage world2 [2]
+# Stage world2 [2]
+# Stage world [1]
+# Stage world2 [2]
+# Stage world [1]
+cp input_75.txt.hello input_75.txt.hello.world
+cp input_26.txt.hello input_26.txt.hello.world2
+cp input_61.txt.hello input_61.txt.hello.world2
+cp input_61.txt.hello input_61.txt.hello.world
+cp input_75.txt.hello input_75.txt.hello.world2
+cp input_26.txt.hello input_26.txt.hello.world
+cp input_76.txt.hello input_76.txt.hello.world2
+cp input_27.txt.hello input_27.txt.hello.world
+cp input_27.txt.hello input_27.txt.hello.world2
+cp input_76.txt.hello input_76.txt.hello.world
+# Stage world [1]
+# Stage world [1]
+# Stage world2 [2]
+# Stage world2 [2]
+# Stage world2 [2]
+# Stage world [1]
+# Stage world [1]
+# Stage world2 [2]
+cp input_55.txt.hello input_55.txt.hello.world
+cp input_12.txt.hello input_12.txt.hello.world
+cp input_12.txt.hello input_12.txt.hello.world2
+cp input_55.txt.hello input_55.txt.hello.world2
+cp input_99.txt.hello input_99.txt.hello.world
+cp input_93.txt.hello input_93.txt.hello.world2
+cp input_99.txt.hello input_99.txt.hello.world2
+cp input_93.txt.hello input_93.txt.hello.world
+# Stage end
+cat input_100.txt.hello.world input_100.txt.hello.world2 input_10.txt.hello.world input_10.txt.hello.world2 input_11.txt.hello.world input_11.txt.hello.world2 input_12.txt.hello.world input_12.txt.hello.world2 input_13.txt.hello.world input_13.txt.hello.world2 input_14.txt.hello.world input_14.txt.hello.world2 input_15.txt.hello.world input_15.txt.hello.world2 input_16.txt.hello.world input_16.txt.hello.world2 input_17.txt.hello.world input_17.txt.hello.world2 input_18.txt.hello.world input_18.txt.hello.world2 input_19.txt.hello.world input_19.txt.hello.world2 input_1.txt.hello.world input_1.txt.hello.world2 input_20.txt.hello.world input_20.txt.hello.world2 input_21.txt.hello.world input_21.txt.hello.world2 input_22.txt.hello.world input_22.txt.hello.world2 input_23.txt.hello.world input_23.txt.hello.world2 input_24.txt.hello.world input_24.txt.hello.world2 input_25.txt.hello.world input_25.txt.hello.world2 input_26.txt.hello.world input_26.txt.hello.world2 input_27.txt.hello.world input_27.txt.hello.world2 input_28.txt.hello.world input_28.txt.hello.world2 input_29.txt.hello.world input_29.txt.hello.world2 input_2.txt.hello.world input_2.txt.hello.world2 input_30.txt.hello.world input_30.txt.hello.world2 input_31.txt.hello.world input_31.txt.hello.world2 input_32.txt.hello.world input_32.txt.hello.world2 input_33.txt.hello.world input_33.txt.hello.world2 input_34.txt.hello.world input_34.txt.hello.world2 input_35.txt.hello.world input_35.txt.hello.world2 input_36.txt.hello.world input_36.txt.hello.world2 input_37.txt.hello.world input_37.txt.hello.world2 input_38.txt.hello.world input_38.txt.hello.world2 input_39.txt.hello.world input_39.txt.hello.world2 input_3.txt.hello.world input_3.txt.hello.world2 input_40.txt.hello.world input_40.txt.hello.world2 input_41.txt.hello.world input_41.txt.hello.world2 input_42.txt.hello.world input_42.txt.hello.world2 input_43.txt.hello.world input_43.txt.hello.world2 input_44.txt.hello.world input_44.txt.hello.world2 input_45.txt.hello.world input_45.txt.hello.world2 input_46.txt.hello.world input_46.txt.hello.world2 input_47.txt.hello.world input_47.txt.hello.world2 input_48.txt.hello.world input_48.txt.hello.world2 input_49.txt.hello.world input_49.txt.hello.world2 input_4.txt.hello.world input_4.txt.hello.world2 input_50.txt.hello.world input_50.txt.hello.world2 input_51.txt.hello.world input_51.txt.hello.world2 input_52.txt.hello.world input_52.txt.hello.world2 input_53.txt.hello.world input_53.txt.hello.world2 input_54.txt.hello.world input_54.txt.hello.world2 input_55.txt.hello.world input_55.txt.hello.world2 input_56.txt.hello.world input_56.txt.hello.world2 input_57.txt.hello.world input_57.txt.hello.world2 input_58.txt.hello.world input_58.txt.hello.world2 input_59.txt.hello.world input_59.txt.hello.world2 input_5.txt.hello.world input_5.txt.hello.world2 input_60.txt.hello.world input_60.txt.hello.world2 input_61.txt.hello.world input_61.txt.hello.world2 input_62.txt.hello.world input_62.txt.hello.world2 input_63.txt.hello.world input_63.txt.hello.world2 input_64.txt.hello.world input_64.txt.hello.world2 input_65.txt.hello.world input_65.txt.hello.world2 input_66.txt.hello.world input_66.txt.hello.world2 input_67.txt.hello.world input_67.txt.hello.world2 input_68.txt.hello.world input_68.txt.hello.world2 input_69.txt.hello.world input_69.txt.hello.world2 input_6.txt.hello.world input_6.txt.hello.world2 input_70.txt.hello.world input_70.txt.hello.world2 input_71.txt.hello.world input_71.txt.hello.world2 input_72.txt.hello.world input_72.txt.hello.world2 input_73.txt.hello.world input_73.txt.hello.world2 input_74.txt.hello.world input_74.txt.hello.world2 input_75.txt.hello.world input_75.txt.hello.world2 input_76.txt.hello.world input_76.txt.hello.world2 input_77.txt.hello.world input_77.txt.hello.world2 input_78.txt.hello.world input_78.txt.hello.world2 input_79.txt.hello.world input_79.txt.hello.world2 input_7.txt.hello.world input_7.txt.hello.world2 input_80.txt.hello.world input_80.txt.hello.world2 input_81.txt.hello.world input_81.txt.hello.world2 input_82.txt.hello.world input_82.txt.hello.world2 input_83.txt.hello.world input_83.txt.hello.world2 input_84.txt.hello.world input_84.txt.hello.world2 input_85.txt.hello.world input_85.txt.hello.world2 input_86.txt.hello.world input_86.txt.hello.world2 input_87.txt.hello.world input_87.txt.hello.world2 input_88.txt.hello.world input_88.txt.hello.world2 input_89.txt.hello.world input_89.txt.hello.world2 input_8.txt.hello.world input_8.txt.hello.world2 input_90.txt.hello.world input_90.txt.hello.world2 input_91.txt.hello.world input_91.txt.hello.world2 input_92.txt.hello.world input_92.txt.hello.world2 input_93.txt.hello.world input_93.txt.hello.world2 input_94.txt.hello.world input_94.txt.hello.world2 input_95.txt.hello.world input_95.txt.hello.world2 input_96.txt.hello.world input_96.txt.hello.world2 input_97.txt.hello.world input_97.txt.hello.world2 input_98.txt.hello.world input_98.txt.hello.world2 input_99.txt.hello.world input_99.txt.hello.world2 input_9.txt.hello.world input_9.txt.hello.world2 > input_100.txt.hello.world.end
+# ################ Finished at Fri Dec 05 10:36:26 GMT 2014 Duration = 22.504 seconds ################
+

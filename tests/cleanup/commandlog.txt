@@ -1,0 +1,139 @@
+
+####################################################################################################
+# Starting pipeline at Wed Nov 26 10:22:33 GMT 2014
+# Input files:  test.txt
+# Output Log:  .bpipe/logs/12953.log
+# Stage hello
+echo execute1;cp test.txt test.html
+# Stage there
+echo execute2;cp test.html test.csv
+# Stage world
+echo execute3;cp test.csv test.xml
+# Stage take
+echo execute4;cp test.html test.xls
+# Stage me
+echo execute5;echo me > test.xls.me
+# ################ Finished at Wed Nov 26 10:22:43 GMT 2014 Duration = 10.455 seconds ################
+
+
+####################################################################################################
+# Starting pipeline at Fri Dec 05 10:12:19 GMT 2014
+# Input files:  test.txt
+# Output Log:  .bpipe/logs/21443.log
+# Stage hello
+echo execute1;cp test.txt test.html
+# Stage there
+echo execute2;cp test.html test.csv
+# Stage world
+echo execute3;cp test.csv test.xml
+# Stage take
+echo execute4;cp test.html test.xls
+# Stage me
+# ################ Finished at Fri Dec 05 10:12:29 GMT 2014 Duration = 10.264 seconds ################
+
+
+####################################################################################################
+# Starting pipeline at Fri Dec 05 10:21:34 GMT 2014
+# Input files:  test.txt
+# Output Log:  .bpipe/logs/28447.log
+# Stage hello
+echo execute1;cp test.txt test.html
+# Stage there
+echo execute2;cp test.html test.csv
+# Stage world
+echo execute3;cp test.csv test.xml
+# Stage take
+echo execute4;cp test.html test.xls
+# Stage me
+# ################ Finished at Fri Dec 05 10:21:44 GMT 2014 Duration = 10.308 seconds ################
+
+
+####################################################################################################
+# Starting pipeline at Fri Dec 05 10:21:47 GMT 2014
+# Input files:  test.txt
+# Output Log:  .bpipe/logs/28577.log
+# Stage hello
+# Stage there
+# Stage world
+# Stage take
+# Stage me
+# ################ Finished at Fri Dec 05 10:21:52 GMT 2014 Duration = 5.255 seconds #################
+
+
+####################################################################################################
+# Starting pipeline at Fri Dec 05 10:21:57 GMT 2014
+# Input files:  test.txt
+# Output Log:  .bpipe/logs/28718.log
+# Stage hello
+# Stage there
+# Stage world
+# Stage take
+# Stage me
+# ################ Finished at Fri Dec 05 10:22:02 GMT 2014 Duration = 5.303 seconds #################
+
+
+####################################################################################################
+# Starting pipeline at Fri Dec 05 10:22:05 GMT 2014
+# Input files:  test.txt
+# Output Log:  .bpipe/logs/28819.log
+# Stage hello
+# Stage there
+# Stage world
+echo execute3;cp test.csv test.xml
+# Stage take
+# Stage me
+# ################ Finished at Fri Dec 05 10:22:13 GMT 2014 Duration = 7.733 seconds #################
+
+
+####################################################################################################
+# Starting pipeline at Fri Dec 05 10:34:17 GMT 2014
+# Input files:  test.txt
+# Output Log:  .bpipe/logs/14633.log
+# Stage hello
+echo execute1;cp test.txt test.html
+# Stage there
+echo execute2;cp test.html test.csv
+# Stage world
+echo execute3;cp test.csv test.xml
+# Stage take
+echo execute4;cp test.html test.xls
+# Stage me
+# ################ Finished at Fri Dec 05 10:34:27 GMT 2014 Duration = 10.275 seconds ################
+
+
+####################################################################################################
+# Starting pipeline at Fri Dec 05 10:34:30 GMT 2014
+# Input files:  test.txt
+# Output Log:  .bpipe/logs/14750.log
+# Stage hello
+# Stage there
+# Stage world
+# Stage take
+# Stage me
+# ################ Finished at Fri Dec 05 10:34:35 GMT 2014 Duration = 5.295 seconds #################
+
+
+####################################################################################################
+# Starting pipeline at Fri Dec 05 10:34:40 GMT 2014
+# Input files:  test.txt
+# Output Log:  .bpipe/logs/14890.log
+# Stage hello
+# Stage there
+# Stage world
+# Stage take
+# Stage me
+# ################ Finished at Fri Dec 05 10:34:45 GMT 2014 Duration = 5.289 seconds #################
+
+
+####################################################################################################
+# Starting pipeline at Fri Dec 05 10:34:48 GMT 2014
+# Input files:  test.txt
+# Output Log:  .bpipe/logs/14994.log
+# Stage hello
+# Stage there
+# Stage world
+echo execute3;cp test.csv test.xml
+# Stage take
+# Stage me
+# ################ Finished at Fri Dec 05 10:34:56 GMT 2014 Duration = 7.770 seconds #################
+

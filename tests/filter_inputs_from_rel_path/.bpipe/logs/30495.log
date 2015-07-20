@@ -1,0 +1,10 @@
+[----]	====================================================================================================
+[----]	|                              Starting Pipeline at 2014-12-05 10:46                               |
+[----]	====================================================================================================
+[]	
+[]	========================================== Stage merge_av ==========================================
+
+======================================== Pipeline Finished =========================================
+MSG: Generated report /lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/filter_inputs_from_rel_path/doc/index.html
+[]	10:46:08 MSG:  Finished at Fri Dec 05 10:46:08 GMT 2014
+[]	10:46:08 MSG:  Output is /lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/filter_inputs_from_rel_path/test1.merge.av

@@ -1,0 +1,25 @@
+
+####################################################################################################
+# Starting pipeline at Fri Dec 05 10:45:46 GMT 2014
+# Input files:  [test1.txt, test2.txt, test1.csv, test2.csv]
+# Output Log:  .bpipe/logs/29882.log
+# Stage hello [test2]
+# Stage help [test2]
+# Stage hello [test1]
+# Stage help [test1]
+cp test2.csv test2.csv.hello
+cp test1.txt test1.txt.help
+cp test1.csv test1.csv.hello
+cp test2.txt test2.txt.help
+# Stage there [test1]
+# Stage me [test1]
+# Stage there [test2]
+# Stage me [test2]
+cp test1.txt.help test1.txt.me.xml
+cp test1.csv.hello test1.csv.there.xls
+cp test2.txt.help test2.txt.me.xml
+cp test2.csv.hello test2.csv.there.xls
+# Stage world
+ls test1.csv.there.xls test2.csv.there.xls test1.txt.me.xml test2.txt.me.xml > result.out
+# ################ Finished at Fri Dec 05 10:45:48 GMT 2014 Duration = 1.619 seconds #################
+

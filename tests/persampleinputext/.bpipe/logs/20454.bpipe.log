@@ -1,0 +1,665 @@
+bpipe.Runner	[1]	INFO	|10:37:50 Starting 
+bpipe.Runner	[1]	INFO	|10:37:50 OS: Linux (2.6.32-44-server) Java: 1.7.0_25 Vendor: Oracle Corporation 
+bpipe.Runner	[1]	INFO	|10:37:50 Initializing plugins ... 
+bpipe.Config	[1]	INFO	|10:37:50 No plugins directory found: /lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/persampleinputext/.bpipe/plugins 
+bpipe.Runner	[1]	INFO	|10:37:50 Reading user config ...  
+bpipe.Config	[1]	INFO	|10:37:50 No configuration file found in same dir as pipeline file 
+bpipe.Config	[1]	INFO	|10:37:50 No local configuration file found 
+bpipe.Utils	[10]	INFO	|10:37:51 Read config from /nfs/users/nfs_c/cgppipe/canpipe/software/bpipe_git/tests/persampleinputext/../../bin/../src/main/config/bpipe.config executed in 0.329 seconds 
+bpipe.Utils	[1]	INFO	|10:37:51 Read user config executed in 0.554 seconds 
+bpipe.Runner	[1]	INFO	|10:37:51 Loading tool database ...  
+bpipe.Concurrency	[13]	INFO	|10:37:51 Creating thread pool with 32 threads to execute parallel pipelines 
+bpipe.NotificationManager	[14]	INFO	|10:37:51 Configuring notifications 
+bpipe.ToolDatabase	[11]	INFO	|10:37:51 Loading tool database from user configuration 
+bpipe.NotificationManager	[14]	INFO	|10:37:51 Trying class name file for notification channel file 
+bpipe.Tool	[11]	INFO	|10:37:51 Configured meta data about tool samtools 
+bpipe.Tool	[11]	INFO	|10:37:51 Configured meta data about tool bwa 
+bpipe.Tool	[11]	INFO	|10:37:51 Configured meta data about tool bowtie 
+bpipe.Tool	[11]	INFO	|10:37:51 Configured meta data about tool fastqc 
+bpipe.Tool	[11]	INFO	|10:37:51 Configured meta data about tool coverageBed 
+bpipe.Runner	[1]	INFO	|10:37:51 No CLI parameters specified 
+bpipe.Tool	[11]	INFO	|10:37:51 Configured meta data about tool fastx_clipper 
+bpipe.Tool	[11]	INFO	|10:37:51 Configured meta data about tool convert2annovar.pl 
+bpipe.Tool	[11]	INFO	|10:37:51 Configured meta data about tool summarize_annovar.pl 
+bpipe.Tool	[11]	INFO	|10:37:51 Configured meta data about tool bowtie2 
+bpipe.Tool	[11]	INFO	|10:37:51 Configured meta data about tool GenomeAnalysisTK 
+bpipe.Tool	[11]	INFO	|10:37:51 Configured meta data about tool MarkDuplicates 
+bpipe.Tool	[11]	INFO	|10:37:51 Configured meta data about tool signalp 
+bpipe.Tool	[11]	INFO	|10:37:51 Configured meta data about tool variant_effect_predictor.pl 
+bpipe.Tool	[11]	INFO	|10:37:51 Configured meta data about tool igvtools 
+bpipe.Tool	[11]	INFO	|10:37:51 Configured meta data about tool ls 
+bpipe.NotificationManager	[14]	INFO	|10:37:51 Unable to create notification channel using class file: java.lang.ClassNotFoundException: file 
+bpipe.NotificationManager	[14]	INFO	|10:37:51 Trying class name bpipe.FILENotificationChannel for notification channel file 
+bpipe.NotificationManager	[14]	INFO	|10:37:51 Unable to create notification channel using class bpipe.FILENotificationChannel: java.lang.ClassNotFoundException: bpipe.FILENotificationChannel 
+bpipe.NotificationManager	[14]	INFO	|10:37:51 Trying class name bpipe.file for notification channel file 
+bpipe.NotificationManager	[14]	INFO	|10:37:51 Unable to create notification channel using class bpipe.file: java.lang.ClassNotFoundException: bpipe.file 
+bpipe.NotificationManager	[14]	INFO	|10:37:51 Trying class name bpipe.FileNotificationChannel for notification channel file 
+bpipe.NotificationManager	[14]	INFO	|10:37:51 Successfully created notification channel using class bpipe.FileNotificationChannel 
+bpipe.Runner	[1]	INFO	|10:37:51 Parsing script ...  
+bpipe.Runner	[1]	INFO	|10:37:51 Run ...  
+bpipe.Pipeline	[1]	INFO	|10:37:51 Running with input [s_1_1.txt, s_1_2.txt, s_2_1.txt, s_2_2.txt, s_3_1.txt, s_3_2.txt] 
+bpipe.PipelineCategory	[1]	INFO	|10:37:51 Found closure variable align 
+bpipe.PipelineCategory	[1]	INFO	|10:37:51 Found closure variable dedupe 
+bpipe.Pipeline	[1]	WARNING	|10:37:51 Pipeline folder /nfs/users/nfs_c/cgppipe/bpipes could not be found 
+bpipe.Pipeline	[1]	INFO	|10:37:51 Loaded external reference: args 
+bpipe.Pipeline	[1]	INFO	|10:37:51 External reference args is overridden by local reference 
+bpipe.Pipeline	[1]	INFO	|10:37:51 Loaded external reference: align 
+bpipe.Pipeline	[1]	INFO	|10:37:51 External reference align is overridden by local reference 
+bpipe.Pipeline	[1]	INFO	|10:37:51 Loaded external reference: dedupe 
+bpipe.Pipeline	[1]	INFO	|10:37:51 External reference dedupe is overridden by local reference 
+bpipe.DefinePipelineCategory	[1]	INFO	|10:37:51 multiply on input null with pattern s_%_*.txt 
+bpipe.InputSplitter	[1]	INFO	|10:37:51 Found * pattern at [4], hash at [] and % at [2] 
+bpipe.InputSplitter	[1]	INFO	|10:37:51 Sorted: [2, 4] 
+bpipe.InputSplitter	[1]	INFO	|10:37:51 % groups are at [0] 
+bpipe.InputSplitter	[1]	INFO	|10:37:51 Result is [pattern:s_([^/]*?)_([^/]*?)\.txt, splits:[0]] 
+bpipe.DefinePipelineCategory	[1]	INFO	|10:37:51 Processing segment 1302504214 
+bpipe.PipelineCategory	[1]	INFO	|10:37:51 Joiners for pipeline 1735056231 = [bpipe.PipelineCategory$_plus_closure1@186a7c3c] 
+bpipe.Pipeline	[1]	INFO	|10:37:51 Running segment with inputs [s_1_1.txt, s_1_2.txt, s_2_1.txt, s_2_2.txt, s_3_1.txt, s_3_2.txt] 
+bpipe.Dependencies	[1]	INFO	|10:37:51 Checking input (s) [s_1_1.txt, s_1_2.txt, s_2_1.txt, s_2_2.txt, s_3_1.txt, s_3_2.txt] 
+bpipe.Utils	[1]	INFO	|10:37:51 Output folder scan (concurrency=5) executed in 0.004 seconds 
+bpipe.Dependencies	[1]	INFO	|10:37:51  Checking file s_1_1.txt 
+bpipe.Dependencies	[1]	INFO	|10:37:51  Checking file s_1_2.txt 
+bpipe.Dependencies	[1]	INFO	|10:37:51  Checking file s_2_1.txt 
+bpipe.Dependencies	[1]	INFO	|10:37:51  Checking file s_2_2.txt 
+bpipe.Dependencies	[1]	INFO	|10:37:51  Checking file s_3_1.txt 
+bpipe.Dependencies	[1]	INFO	|10:37:51  Checking file s_3_2.txt 
+bpipe.PipelineDelegate	[1]	INFO	|10:37:51 Setting or creating a delegate for context 890663598 body 1422071996/java.lang.Class in thread 1 
+bpipe.PipelineDelegate	[1]	INFO	|10:37:51 Created new delegate bpipe.PipelineDelegate@1d4c6abc overriding type java.lang.Class in thread 1 
+bpipe.PipelineCategory	[1]	INFO	|10:37:51 multiply on input [s_1_1.txt, s_1_2.txt, s_2_1.txt, s_2_2.txt, s_3_1.txt, s_3_2.txt] with pattern s_%_*.txt 
+bpipe.InputSplitter	[1]	INFO	|10:37:51 Found * pattern at [4], hash at [] and % at [2] 
+bpipe.InputSplitter	[1]	INFO	|10:37:51 Sorted: [2, 4] 
+bpipe.InputSplitter	[1]	INFO	|10:37:51 % groups are at [0] 
+bpipe.InputSplitter	[1]	INFO	|10:37:51 Result is [pattern:s_([^/]*?)_([^/]*?)\.txt, splits:[0]] 
+bpipe.PipelineCategory	[1]	INFO	|10:37:51 Created pipeline stage 514008825 for parallel block 
+bpipe.PipelineCategory	[1]	INFO	|10:37:51 Processing segment 409631804 
+bpipe.PipelineCategory	[1]	INFO	|10:37:51 Creating pipeline to run parallel segment 1 with files [s_1_1.txt, s_1_2.txt]. Branch filter = [] 
+bpipe.PipelineCategory	[1]	INFO	|10:37:51 Creating pipeline to run parallel segment 2 with files [s_2_1.txt, s_2_2.txt]. Branch filter = [] 
+bpipe.PipelineCategory	[1]	INFO	|10:37:51 Creating pipeline to run parallel segment 3 with files [s_3_1.txt, s_3_2.txt]. Branch filter = [] 
+bpipe.Concurrency	[1]	INFO	|10:37:51 Waiting for 3 parallel stages to complete (pool.active=3 pool.tasks=3) 
+bpipe.PipelineContext	[17]	INFO	|10:37:51 Setting output [s_3_1.txt, s_3_2.txt] on context 211944063 in thread 17 
+bpipe.PipelineContext	[16]	INFO	|10:37:51 Setting output [s_2_1.txt, s_2_2.txt] on context 552109196 in thread 16 
+bpipe.PipelineContext	[15]	INFO	|10:37:51 Setting output [s_1_1.txt, s_1_2.txt] on context 1615980115 in thread 15 
+bpipe.PipelineContext	[17]	INFO	|10:37:51 Using previously set output: [s_3_1.txt, s_3_2.txt] 
+bpipe.PipelineContext	[16]	INFO	|10:37:51 Using previously set output: [s_2_1.txt, s_2_2.txt] 
+bpipe.PipelineContext	[15]	INFO	|10:37:51 Using previously set output: [s_1_1.txt, s_1_2.txt] 
+bpipe.PipelineCategory	[16]	INFO	|10:37:51 Adding dummy prior stage for thread 16 with outputs : s_2_1.txt 
+bpipe.PipelineCategory	[17]	INFO	|10:37:51 Adding dummy prior stage for thread 17 with outputs : s_3_1.txt 
+bpipe.PipelineCategory	[15]	INFO	|10:37:51 Adding dummy prior stage for thread 15 with outputs : s_1_1.txt 
+bpipe.Pipeline	[16]	INFO	|10:37:51 Running segment with inputs [s_2_1.txt, s_2_2.txt] 
+bpipe.Pipeline	[15]	INFO	|10:37:51 Running segment with inputs [s_1_1.txt, s_1_2.txt] 
+bpipe.Pipeline	[17]	INFO	|10:37:51 Running segment with inputs [s_3_1.txt, s_3_2.txt] 
+bpipe.Dependencies	[16]	INFO	|10:37:51 Checking input (s) [s_2_1.txt, s_2_2.txt] 
+bpipe.Dependencies	[15]	INFO	|10:37:51 Checking input (s) [s_1_1.txt, s_1_2.txt] 
+bpipe.Dependencies	[17]	INFO	|10:37:51 Checking input (s) [s_3_1.txt, s_3_2.txt] 
+bpipe.Dependencies	[16]	INFO	|10:37:51  Checking file s_2_1.txt 
+bpipe.Dependencies	[15]	INFO	|10:37:51  Checking file s_1_1.txt 
+bpipe.Dependencies	[17]	INFO	|10:37:51  Checking file s_3_1.txt 
+bpipe.Dependencies	[16]	INFO	|10:37:51  Checking file s_2_2.txt 
+bpipe.Dependencies	[15]	INFO	|10:37:51  Checking file s_1_2.txt 
+bpipe.Dependencies	[17]	INFO	|10:37:51  Checking file s_3_2.txt 
+bpipe.PipelineDelegate	[16]	INFO	|10:37:51 Setting or creating a delegate for context 952574251 body 409631804/java.lang.Class in thread 16 
+bpipe.PipelineDelegate	[16]	INFO	|10:37:51 Created new delegate bpipe.PipelineDelegate@6bb7d3b0 overriding type java.lang.Class in thread 16 
+bpipe.PipelineDelegate	[15]	INFO	|10:37:51 Setting or creating a delegate for context 1907031823 body 409631804/bpipe.PipelineDelegate in thread 15 
+bpipe.PipelineDelegate	[15]	INFO	|10:37:51 Existing delegate bpipe.PipelineDelegate@6bb7d3b0 has type bpipe.PipelineDelegate in thread 15. Setting new context 1907031823 
+bpipe.Dependencies	[16]	INFO	|10:37:51 Checking input (s) [s_2_1.txt, s_2_2.txt] 
+bpipe.PipelineDelegate	[17]	INFO	|10:37:51 Setting or creating a delegate for context 116171514 body 409631804/bpipe.PipelineDelegate in thread 17 
+bpipe.Dependencies	[16]	INFO	|10:37:51  Checking file s_2_1.txt 
+bpipe.Dependencies	[15]	INFO	|10:37:51 Checking input (s) [s_1_1.txt, s_1_2.txt] 
+bpipe.Dependencies	[16]	INFO	|10:37:51  Checking file s_2_2.txt 
+bpipe.PipelineDelegate	[17]	INFO	|10:37:51 Existing delegate bpipe.PipelineDelegate@6bb7d3b0 has type bpipe.PipelineDelegate in thread 17. Setting new context 116171514 
+bpipe.Dependencies	[15]	INFO	|10:37:51  Checking file s_1_1.txt 
+bpipe.Dependencies	[15]	INFO	|10:37:51  Checking file s_1_2.txt 
+bpipe.Dependencies	[17]	INFO	|10:37:51 Checking input (s) [s_3_1.txt, s_3_2.txt] 
+bpipe.Dependencies	[17]	INFO	|10:37:51  Checking file s_3_1.txt 
+bpipe.Dependencies	[17]	INFO	|10:37:51  Checking file s_3_2.txt 
+bpipe.ReportStatisticsListener	[16]	INFO	|10:37:51 Annotating stage start time align 
+bpipe.ReportStatisticsListener	[15]	INFO	|10:37:51 Annotating stage start time align 
+bpipe.PipelineStage	[16]	INFO	|10:37:51 Stage align [2] : INPUT=[s_2_1.txt, s_2_2.txt] OUTPUT=s_2_1.txt.align 
+bpipe.ReportStatisticsListener	[17]	INFO	|10:37:51 Annotating stage start time align 
+bpipe.PipelineStage	[15]	INFO	|10:37:51 Stage align [1] : INPUT=[s_1_1.txt, s_1_2.txt] OUTPUT=s_1_1.txt.align 
+bpipe.PipelineDelegate	[16]	INFO	|10:37:51 Setting or creating a delegate for context 1075767932 body 690769771/script1417775871410669741269 in thread 16 
+bpipe.PipelineStage	[17]	INFO	|10:37:51 Stage align [3] : INPUT=[s_3_1.txt, s_3_2.txt] OUTPUT=s_3_1.txt.align 
+bpipe.PipelineDelegate	[16]	INFO	|10:37:51 Created new delegate bpipe.PipelineDelegate@6ed745c2 overriding type script1417775871410669741269 in thread 16 
+bpipe.PipelineDelegate	[17]	INFO	|10:37:51 Setting or creating a delegate for context 1998912615 body 690769771/bpipe.PipelineDelegate in thread 17 
+bpipe.PipelineDelegate	[17]	INFO	|10:37:51 Existing delegate bpipe.PipelineDelegate@6ed745c2 has type bpipe.PipelineDelegate in thread 17. Setting new context 1998912615 
+bpipe.PipelineDelegate	[16]	INFO	|10:37:51 Input 1 reference resolved by PipelineDelegate 
+bpipe.PipelineDelegate	[15]	INFO	|10:37:51 Setting or creating a delegate for context 2115856113 body 690769771/bpipe.PipelineDelegate in thread 15 
+bpipe.PipelineDelegate	[17]	INFO	|10:37:51 Input 1 reference resolved by PipelineDelegate 
+bpipe.PipelineDelegate	[15]	INFO	|10:37:51 Existing delegate bpipe.PipelineDelegate@6ed745c2 has type bpipe.PipelineDelegate in thread 15. Setting new context 2115856113 
+bpipe.PipelineDelegate	[15]	INFO	|10:37:51 Input 1 reference resolved by PipelineDelegate 
+bpipe.PipelineDelegate	[16]	INFO	|10:37:51 Input 2 reference resolved by PipelineDelegate 
+bpipe.PipelineDelegate	[17]	INFO	|10:37:51 Input 2 reference resolved by PipelineDelegate 
+bpipe.PipelineDelegate	[15]	INFO	|10:37:51 Input 2 reference resolved by PipelineDelegate 
+bpipe.PipelineContext	[16]	INFO	|10:37:51 No inputs resolved by input wrappers: outputs based on default s_2_1.txt.align 
+bpipe.PipelineContext	[15]	INFO	|10:37:51 No inputs resolved by input wrappers: outputs based on default s_1_1.txt.align 
+bpipe.PipelineContext	[17]	INFO	|10:37:51 No inputs resolved by input wrappers: outputs based on default s_3_1.txt.align 
+bpipe.PipelineContext	[16]	INFO	|10:37:51 Tracking outputs referenced=[[]] inferred=[[s_2_1.txt.align]] for command cat s_2_1.txt s_2_2.txt > s_2_1.txt.align 
+bpipe.PipelineContext	[15]	INFO	|10:37:51 Tracking outputs referenced=[[]] inferred=[[s_1_1.txt.align]] for command cat s_1_1.txt s_1_2.txt > s_1_1.txt.align 
+bpipe.PipelineContext	[17]	INFO	|10:37:51 Tracking outputs referenced=[[]] inferred=[[s_3_1.txt.align]] for command cat s_3_1.txt s_3_2.txt > s_3_1.txt.align 
+bpipe.ReportStatisticsListener	[16]	INFO	|10:37:51 Intercepted command check for command cat s_2_1.txt s_2_2.txt > s_2_1.txt.align 
+bpipe.PipelineContext	[16]	INFO	|10:37:51 Checking actual resolved inputs [s_2_1.txt] 
+bpipe.ReportStatisticsListener	[15]	INFO	|10:37:51 Intercepted command check for command cat s_1_1.txt s_1_2.txt > s_1_1.txt.align 
+bpipe.PipelineContext	[15]	INFO	|10:37:51 Checking actual resolved inputs [s_1_1.txt] 
+bpipe.ReportStatisticsListener	[17]	INFO	|10:37:51 Intercepted command check for command cat s_3_1.txt s_3_2.txt > s_3_1.txt.align 
+bpipe.Utils	[16]	INFO	|10:37:51 ===== Check s_2_1.txt.align ===== 
+bpipe.Utils	[15]	INFO	|10:37:51 ===== Check s_1_1.txt.align ===== 
+bpipe.Utils	[16]	INFO	|10:37:51 file doesn't exist: s_2_1.txt.align 
+bpipe.PipelineContext	[17]	INFO	|10:37:51 Checking actual resolved inputs [s_3_1.txt] 
+bpipe.Utils	[15]	INFO	|10:37:51 file doesn't exist: s_1_1.txt.align 
+bpipe.Dependencies	[16]	INFO	|10:37:51 Found these missing / older files: [s_2_1.txt.align] 
+bpipe.Utils	[17]	INFO	|10:37:51 ===== Check s_3_1.txt.align ===== 
+bpipe.Dependencies	[15]	INFO	|10:37:51 Found these missing / older files: [s_1_1.txt.align] 
+bpipe.Utils	[17]	INFO	|10:37:51 file doesn't exist: s_3_1.txt.align 
+bpipe.Dependencies	[17]	INFO	|10:37:51 Found these missing / older files: [s_3_1.txt.align] 
+bpipe.Dependencies	[16]	INFO	|10:37:51 Some files are outdated : [s_2_1.txt.align] 
+bpipe.Dependencies	[15]	INFO	|10:37:51 Some files are outdated : [s_1_1.txt.align] 
+bpipe.Dependencies	[17]	INFO	|10:37:51 Some files are outdated : [s_3_1.txt.align] 
+bpipe.Command	[16]	INFO	|10:37:51 Checking for configuration for command cat 
+bpipe.Command	[15]	INFO	|10:37:51 Checking for configuration for command cat 
+bpipe.Command	[17]	INFO	|10:37:51 Checking for configuration for command cat 
+bpipe.Command	[16]	INFO	|10:37:51 Default command properties: [executor:local] 
+bpipe.Command	[17]	INFO	|10:37:51 Default command properties: [executor:local] 
+bpipe.Command	[15]	INFO	|10:37:51 Default command properties: [executor:local] 
+bpipe.CommandManager	[16]	INFO	|10:37:51 Using config [executor:local] for command 
+bpipe.CommandManager	[17]	INFO	|10:37:51 Using config [executor:local] for command 
+bpipe.CommandManager	[15]	INFO	|10:37:51 Using config [executor:local] for command 
+bpipe.CommandManager	[16]	INFO	|10:37:51 Created bpipe command id 1 
+bpipe.CommandManager	[17]	INFO	|10:37:51 Created bpipe command id 2 
+bpipe.CommandManager	[15]	INFO	|10:37:51 Created bpipe command id 3 
+bpipe.Concurrency	[16]	INFO	|10:37:51 Thread Thread-7 requesting for 1 concurrency permit(s) type threads with 32 available 
+bpipe.Concurrency	[17]	INFO	|10:37:51 Thread Thread-8 requesting for 1 concurrency permit(s) type threads with 32 available 
+bpipe.Concurrency	[15]	INFO	|10:37:51 Thread Thread-6 requesting for 1 concurrency permit(s) type threads with 32 available 
+bpipe.Concurrency	[16]	INFO	|10:37:51 Thread Thread-7 acquired resource threads in amount 1 
+bpipe.Concurrency	[17]	INFO	|10:37:51 Thread Thread-8 acquired resource threads in amount 1 
+bpipe.Concurrency	[15]	INFO	|10:37:52 Thread Thread-6 acquired resource threads in amount 1 
+bpipe.Command	[19]	INFO	|10:37:52 Command 2 changing state from null to RUNNING 
+bpipe.Command	[20]	INFO	|10:37:52 Command 3 changing state from null to RUNNING 
+bpipe.Command	[18]	INFO	|10:37:52 Command 1 changing state from null to RUNNING 
+bpipe.executor.ThrottledDelegatingCommandExecutor	[17]	INFO	|10:37:52 Waiting for command to complete before releasing 1 resources 
+bpipe.executor.ThrottledDelegatingCommandExecutor	[16]	INFO	|10:37:52 Waiting for command to complete before releasing 1 resources 
+bpipe.executor.ThrottledDelegatingCommandExecutor	[15]	INFO	|10:37:52 Waiting for command to complete before releasing 1 resources 
+bpipe.Command	[17]	INFO	|10:37:52 Command 2 changing state from RUNNING to COMPLETE 
+bpipe.Command	[16]	INFO	|10:37:52 Command 1 changing state from RUNNING to COMPLETE 
+bpipe.Command	[15]	INFO	|10:37:52 Command 3 changing state from RUNNING to COMPLETE 
+bpipe.executor.ThrottledDelegatingCommandExecutor	[17]	INFO	|10:37:52 Releasing 1 resources 
+bpipe.executor.ThrottledDelegatingCommandExecutor	[16]	INFO	|10:37:52 Releasing 1 resources 
+bpipe.executor.ThrottledDelegatingCommandExecutor	[15]	INFO	|10:37:52 Releasing 1 resources 
+bpipe.Concurrency	[17]	INFO	|10:37:52 Thread Thread-8 releasing 1 threads 
+bpipe.Concurrency	[15]	INFO	|10:37:52 Thread Thread-6 releasing 1 threads 
+bpipe.Concurrency	[16]	INFO	|10:37:52 Thread Thread-7 releasing 1 threads 
+bpipe.executor.ThrottledDelegatingCommandExecutor	[15]	INFO	|10:37:52 Released 1 resources 
+bpipe.executor.ThrottledDelegatingCommandExecutor	[16]	INFO	|10:37:52 Released 1 resources 
+bpipe.executor.ThrottledDelegatingCommandExecutor	[17]	INFO	|10:37:52 Released 1 resources 
+bpipe.PipelineStage	[15]	INFO	|10:37:52 Stage align [1] returned null as default inputs for next stage 
+bpipe.PipelineStage	[16]	INFO	|10:37:52 Stage align [2] returned null as default inputs for next stage 
+bpipe.PipelineStage	[17]	INFO	|10:37:52 Stage align [3] returned null as default inputs for next stage 
+bpipe.PipelineStage	[16]	INFO	|10:37:52 Using inferred outputs [s_2_1.txt.align] as outputs because no explicit outputs set 
+bpipe.PipelineStage	[17]	INFO	|10:37:52 Using inferred outputs [s_3_1.txt.align] as outputs because no explicit outputs set 
+bpipe.PipelineStage	[15]	INFO	|10:37:52 Using inferred outputs [s_1_1.txt.align] as outputs because no explicit outputs set 
+bpipe.PipelineStage	[16]	INFO	|10:37:52 Inferring nextInputs from explicit output as [s_2_1.txt.align] 
+bpipe.PipelineStage	[15]	INFO	|10:37:52 Inferring nextInputs from explicit output as [s_1_1.txt.align] 
+bpipe.PipelineStage	[17]	INFO	|10:37:52 Inferring nextInputs from explicit output as [s_3_1.txt.align] 
+bpipe.PipelineStage	[15]	INFO	|10:37:52 Setting next inputs [s_1_1.txt.align] on stage 403242991, context 2115856113 in thread 15 
+bpipe.PipelineStage	[17]	INFO	|10:37:52 Setting next inputs [s_3_1.txt.align] on stage 258502682, context 1998912615 in thread 17 
+bpipe.PipelineStage	[16]	INFO	|10:37:52 Setting next inputs [s_2_1.txt.align] on stage 1994043452, context 1075767932 in thread 16 
+bpipe.Dependencies	[15]	INFO	|10:37:52 Context 2115856113 for stage align has resolved inputs [s_1_1.txt, s_1_2.txt] 
+bpipe.Dependencies	[15]	INFO	|10:37:52 Saving output file details to file .bpipe/outputs/align.s_1_1.txt.align.properties for command cat s_1_1.txt s_1_2.... 
+bpipe.ReportStatisticsListener	[15]	INFO	|10:37:52 Annotating stage end time align 
+bpipe.PipelineStage	[15]	INFO	|10:37:52 Checking files: [s_1_1.txt.align] 
+bpipe.Dependencies	[15]	INFO	|10:37:52 Checking output (s) [s_1_1.txt.align] 
+bpipe.Dependencies	[16]	INFO	|10:37:52 Context 1075767932 for stage align has resolved inputs [s_2_1.txt, s_2_2.txt] 
+bpipe.Dependencies	[16]	INFO	|10:37:52 Saving output file details to file .bpipe/outputs/align.s_2_1.txt.align.properties for command cat s_2_1.txt s_2_2.... 
+bpipe.ReportStatisticsListener	[16]	INFO	|10:37:52 Annotating stage end time align 
+bpipe.PipelineStage	[16]	INFO	|10:37:52 Checking files: [s_2_1.txt.align] 
+bpipe.Dependencies	[16]	INFO	|10:37:52 Checking output (s) [s_2_1.txt.align] 
+bpipe.Dependencies	[17]	INFO	|10:37:52 Context 1998912615 for stage align has resolved inputs [s_3_1.txt, s_3_2.txt] 
+bpipe.Dependencies	[17]	INFO	|10:37:52 Saving output file details to file .bpipe/outputs/align.s_3_1.txt.align.properties for command cat s_3_1.txt s_3_2.... 
+bpipe.Dependencies	[16]	INFO	|10:37:52  Checking file s_2_1.txt.align 
+bpipe.Dependencies	[15]	INFO	|10:37:52  Checking file s_1_1.txt.align 
+bpipe.ReportStatisticsListener	[17]	INFO	|10:37:52 Annotating stage end time align 
+bpipe.Dependencies	[16]	INFO	|10:37:52 Checking input (s) [s_2_1.txt.align] 
+bpipe.Dependencies	[15]	INFO	|10:37:52 Checking input (s) [s_1_1.txt.align] 
+bpipe.PipelineStage	[17]	INFO	|10:37:52 Checking files: [s_3_1.txt.align] 
+bpipe.Dependencies	[16]	INFO	|10:37:52  Checking file s_2_1.txt.align 
+bpipe.Dependencies	[17]	INFO	|10:37:52 Checking output (s) [s_3_1.txt.align] 
+bpipe.Dependencies	[15]	INFO	|10:37:52  Checking file s_1_1.txt.align 
+bpipe.PipelineCategory	[16]	INFO	|10:37:52 Next inputs from stage = [s_2_1.txt.align] 
+bpipe.Dependencies	[17]	INFO	|10:37:52  Checking file s_3_1.txt.align 
+bpipe.PipelineCategory	[15]	INFO	|10:37:52 Next inputs from stage = [s_1_1.txt.align] 
+bpipe.PipelineCategory	[16]	INFO	|10:37:52 Checking inputs for next stage:  [s_2_1.txt.align] 
+bpipe.PipelineCategory	[15]	INFO	|10:37:52 Checking inputs for next stage:  [s_1_1.txt.align] 
+bpipe.Dependencies	[17]	INFO	|10:37:52 Checking input (s) [s_3_1.txt.align] 
+bpipe.Dependencies	[16]	INFO	|10:37:52 Checking input (s) [s_2_1.txt.align] 
+bpipe.Dependencies	[15]	INFO	|10:37:52 Checking input (s) [s_1_1.txt.align] 
+bpipe.Dependencies	[17]	INFO	|10:37:52  Checking file s_3_1.txt.align 
+bpipe.Dependencies	[16]	INFO	|10:37:52  Checking file s_2_1.txt.align 
+bpipe.PipelineCategory	[17]	INFO	|10:37:52 Next inputs from stage = [s_3_1.txt.align] 
+bpipe.Dependencies	[15]	INFO	|10:37:52  Checking file s_1_1.txt.align 
+bpipe.PipelineCategory	[17]	INFO	|10:37:52 Checking inputs for next stage:  [s_3_1.txt.align] 
+bpipe.Dependencies	[17]	INFO	|10:37:52 Checking input (s) [s_3_1.txt.align] 
+bpipe.Dependencies	[17]	INFO	|10:37:52  Checking file s_3_1.txt.align 
+bpipe.Dependencies	[16]	INFO	|10:37:52 Checking input (s) [s_2_1.txt.align] 
+bpipe.Dependencies	[15]	INFO	|10:37:52 Checking input (s) [s_1_1.txt.align] 
+bpipe.Dependencies	[16]	INFO	|10:37:52  Checking file s_2_1.txt.align 
+bpipe.Dependencies	[15]	INFO	|10:37:52  Checking file s_1_1.txt.align 
+bpipe.Dependencies	[17]	INFO	|10:37:52 Checking input (s) [s_3_1.txt.align] 
+bpipe.Dependencies	[17]	INFO	|10:37:52  Checking file s_3_1.txt.align 
+bpipe.ReportStatisticsListener	[16]	INFO	|10:37:52 Annotating stage start time dedupe 
+bpipe.ReportStatisticsListener	[15]	INFO	|10:37:52 Annotating stage start time dedupe 
+bpipe.PipelineStage	[16]	INFO	|10:37:52 Stage dedupe [2] : INPUT=[s_2_1.txt.align] OUTPUT=s_2_1.txt.align.dedupe 
+bpipe.ReportStatisticsListener	[17]	INFO	|10:37:52 Annotating stage start time dedupe 
+bpipe.PipelineDelegate	[16]	INFO	|10:37:52 Setting or creating a delegate for context 147155322 body 470945515/script1417775871410669741269 in thread 16 
+bpipe.PipelineStage	[15]	INFO	|10:37:52 Stage dedupe [1] : INPUT=[s_1_1.txt.align] OUTPUT=s_1_1.txt.align.dedupe 
+bpipe.PipelineStage	[17]	INFO	|10:37:52 Stage dedupe [3] : INPUT=[s_3_1.txt.align] OUTPUT=s_3_1.txt.align.dedupe 
+bpipe.PipelineDelegate	[16]	INFO	|10:37:52 Created new delegate bpipe.PipelineDelegate@3f0b059a overriding type script1417775871410669741269 in thread 16 
+bpipe.PipelineDelegate	[17]	INFO	|10:37:52 Setting or creating a delegate for context 1221849761 body 470945515/bpipe.PipelineDelegate in thread 17 
+bpipe.PipelineDelegate	[17]	INFO	|10:37:52 Existing delegate bpipe.PipelineDelegate@3f0b059a has type bpipe.PipelineDelegate in thread 17. Setting new context 1221849761 
+bpipe.PipelineDelegate	[15]	INFO	|10:37:52 Setting or creating a delegate for context 1173977989 body 470945515/bpipe.PipelineDelegate in thread 15 
+bpipe.PipelineDelegate	[15]	INFO	|10:37:52 Existing delegate bpipe.PipelineDelegate@3f0b059a has type bpipe.PipelineDelegate in thread 15. Setting new context 1173977989 
+bpipe.FilterFileNameTransformer	[16]	INFO	|10:37:52 Filtering based on input s_2_1.txt.align 
+bpipe.FilterFileNameTransformer	[15]	INFO	|10:37:52 Filtering based on input s_1_1.txt.align 
+bpipe.FilterFileNameTransformer	[17]	INFO	|10:37:52 Filtering based on input s_3_1.txt.align 
+bpipe.FilterFileNameTransformer	[16]	INFO	|10:37:52 Filtering using [foo] produces outputs [s_2_1.txt.foo.align] 
+bpipe.FilterFileNameTransformer	[15]	INFO	|10:37:52 Filtering using [foo] produces outputs [s_1_1.txt.foo.align] 
+bpipe.FilterFileNameTransformer	[17]	INFO	|10:37:52 Filtering using [foo] produces outputs [s_3_1.txt.foo.align] 
+bpipe.PipelineContext	[16]	INFO	|10:37:52 Producing s_2_1.txt.foo.align from bpipe.PipelineContext@8c5697a 
+bpipe.PipelineContext	[17]	INFO	|10:37:52 Producing s_3_1.txt.foo.align from bpipe.PipelineContext@48d3f2a1 
+bpipe.PipelineContext	[15]	INFO	|10:37:52 Producing s_1_1.txt.foo.align from bpipe.PipelineContext@45f97b85 
+bpipe.PipelineDelegate	[15]	INFO	|10:37:52 Setting or creating a delegate for context 1173977989 body 418859406/script1417775871410669741269$_run_closure2 in thread 15 
+bpipe.PipelineDelegate	[16]	INFO	|10:37:52 Setting or creating a delegate for context 147155322 body 1735597261/script1417775871410669741269$_run_closure2 in thread 16 
+bpipe.PipelineDelegate	[17]	INFO	|10:37:52 Setting or creating a delegate for context 1221849761 body 318641776/script1417775871410669741269$_run_closure2 in thread 17 
+bpipe.PipelineDelegate	[15]	INFO	|10:37:52 Created new delegate bpipe.PipelineDelegate@68de16ad overriding type script1417775871410669741269$_run_closure2 in thread 15 
+bpipe.PipelineDelegate	[16]	INFO	|10:37:52 Created new delegate bpipe.PipelineDelegate@4ca2eda4 overriding type script1417775871410669741269$_run_closure2 in thread 16 
+bpipe.PipelineDelegate	[17]	INFO	|10:37:52 Created new delegate bpipe.PipelineDelegate@5c9fd14a overriding type script1417775871410669741269$_run_closure2 in thread 17 
+bpipe.PipelineContext	[16]	INFO	|10:37:52 Probing command using inputs [s_2_1.txt.align] 
+bpipe.PipelineContext	[15]	INFO	|10:37:52 Probing command using inputs [s_1_1.txt.align] 
+bpipe.PipelineContext	[17]	INFO	|10:37:52 Probing command using inputs [s_3_1.txt.align] 
+bpipe.PipelineInput	[16]	INFO	|10:37:52 Searching for missing Property: align 
+bpipe.PipelineInput	[15]	INFO	|10:37:52 Searching for missing Property: align 
+bpipe.PipelineInput	[17]	INFO	|10:37:52 Searching for missing Property: align 
+bpipe.PipelineInput	[17]	INFO	|10:37:52 Resolving inputs matching pattern ^.*\.align$ 
+bpipe.PipelineInput	[15]	INFO	|10:37:52 Resolving inputs matching pattern ^.*\.align$ 
+bpipe.PipelineInput	[16]	INFO	|10:37:52 Resolving inputs matching pattern ^.*\.align$ 
+bpipe.PipelineInput	[15]	INFO	|10:37:52 Checking outputs [s_1_1.txt.align] 
+bpipe.PipelineInput	[17]	INFO	|10:37:52 Checking outputs [s_3_1.txt.align] 
+bpipe.PipelineInput	[16]	INFO	|10:37:52 Checking outputs [s_2_1.txt.align] 
+bpipe.PipelineInput	[15]	INFO	|10:37:52 Found files with exts [align$] : [[s_1_1.txt.align]] 
+bpipe.PipelineInput	[16]	INFO	|10:37:52 Found files with exts [align$] : [[s_2_1.txt.align]] 
+bpipe.PipelineInput	[17]	INFO	|10:37:52 Found files with exts [align$] : [[s_3_1.txt.align]] 
+bpipe.PipelineInput	[15]	INFO	|10:37:52 Adding resolved input s_1_1.txt.align 
+bpipe.PipelineInput	[16]	INFO	|10:37:52 Adding resolved input s_2_1.txt.align 
+bpipe.PipelineInput	[17]	INFO	|10:37:52 Adding resolved input s_3_1.txt.align 
+bpipe.PipelineContext	[17]	INFO	|10:37:52 Using non-default output due to input property reference: s_3_1.txt.align from resolved inputs [s_3_1.txt.align] 
+bpipe.PipelineContext	[15]	INFO	|10:37:52 Using non-default output due to input property reference: s_1_1.txt.align from resolved inputs [s_1_1.txt.align] 
+bpipe.PipelineContext	[16]	INFO	|10:37:52 Using non-default output due to input property reference: s_2_1.txt.align from resolved inputs [s_2_1.txt.align] 
+bpipe.FilterFileNameTransformer	[17]	INFO	|10:37:52 Filtering based on input s_3_1.txt.align 
+bpipe.FilterFileNameTransformer	[15]	INFO	|10:37:52 Filtering based on input s_1_1.txt.align 
+bpipe.FilterFileNameTransformer	[16]	INFO	|10:37:52 Filtering based on input s_2_1.txt.align 
+bpipe.FilterFileNameTransformer	[17]	INFO	|10:37:52 Filtering using [foo] produces outputs [s_3_1.txt.foo.align] 
+bpipe.FilterFileNameTransformer	[15]	INFO	|10:37:52 Filtering using [foo] produces outputs [s_1_1.txt.foo.align] 
+bpipe.FilterFileNameTransformer	[16]	INFO	|10:37:52 Filtering using [foo] produces outputs [s_2_1.txt.foo.align] 
+bpipe.PipelineInput	[17]	INFO	|10:37:52 Searching for missing Property: align 
+bpipe.PipelineInput	[16]	INFO	|10:37:52 Searching for missing Property: align 
+bpipe.PipelineInput	[15]	INFO	|10:37:52 Searching for missing Property: align 
+bpipe.PipelineInput	[17]	INFO	|10:37:52 Resolving inputs matching pattern ^.*\.align$ 
+bpipe.PipelineInput	[16]	INFO	|10:37:52 Resolving inputs matching pattern ^.*\.align$ 
+bpipe.PipelineInput	[17]	INFO	|10:37:52 Checking outputs [s_3_1.txt.align] 
+bpipe.PipelineInput	[16]	INFO	|10:37:52 Checking outputs [s_2_1.txt.align] 
+bpipe.PipelineInput	[15]	INFO	|10:37:52 Resolving inputs matching pattern ^.*\.align$ 
+bpipe.PipelineInput	[17]	INFO	|10:37:52 Found files with exts [align$] : [[s_3_1.txt.align]] 
+bpipe.PipelineInput	[16]	INFO	|10:37:52 Found files with exts [align$] : [[s_2_1.txt.align]] 
+bpipe.PipelineInput	[15]	INFO	|10:37:52 Checking outputs [s_1_1.txt.align] 
+bpipe.PipelineInput	[17]	INFO	|10:37:52 Adding resolved input s_3_1.txt.align 
+bpipe.PipelineInput	[16]	INFO	|10:37:52 Adding resolved input s_2_1.txt.align 
+bpipe.PipelineInput	[15]	INFO	|10:37:52 Found files with exts [align$] : [[s_1_1.txt.align]] 
+bpipe.PipelineContext	[17]	INFO	|10:37:52 Using non-default output due to input property reference: s_3_1.txt.align from resolved inputs [s_3_1.txt.align] 
+bpipe.PipelineContext	[16]	INFO	|10:37:52 Using non-default output due to input property reference: s_2_1.txt.align from resolved inputs [s_2_1.txt.align] 
+bpipe.PipelineInput	[15]	INFO	|10:37:52 Adding resolved input s_1_1.txt.align 
+bpipe.FilterFileNameTransformer	[17]	INFO	|10:37:52 Filtering based on input s_3_1.txt.align 
+bpipe.FilterFileNameTransformer	[16]	INFO	|10:37:52 Filtering based on input s_2_1.txt.align 
+bpipe.PipelineContext	[15]	INFO	|10:37:52 Using non-default output due to input property reference: s_1_1.txt.align from resolved inputs [s_1_1.txt.align] 
+bpipe.FilterFileNameTransformer	[17]	INFO	|10:37:52 Filtering using [foo] produces outputs [s_3_1.txt.foo.align] 
+bpipe.FilterFileNameTransformer	[16]	INFO	|10:37:52 Filtering using [foo] produces outputs [s_2_1.txt.foo.align] 
+bpipe.FilterFileNameTransformer	[15]	INFO	|10:37:52 Filtering based on input s_1_1.txt.align 
+bpipe.FilterFileNameTransformer	[15]	INFO	|10:37:52 Filtering using [foo] produces outputs [s_1_1.txt.foo.align] 
+bpipe.PipelineContext	[16]	INFO	|10:37:52 Tracking outputs referenced=[[]] inferred=[[s_2_1.txt.foo.align]] for command cat s_2_1.txt.align > s_2_1.txt.foo.align 
+bpipe.PipelineContext	[17]	INFO	|10:37:52 Tracking outputs referenced=[[]] inferred=[[s_3_1.txt.foo.align]] for command cat s_3_1.txt.align > s_3_1.txt.foo.align 
+bpipe.PipelineContext	[15]	INFO	|10:37:52 Tracking outputs referenced=[[]] inferred=[[s_1_1.txt.foo.align]] for command cat s_1_1.txt.align > s_1_1.txt.foo.align 
+bpipe.ReportStatisticsListener	[16]	INFO	|10:37:52 Intercepted command check for command cat s_2_1.txt.align > s_2_1.txt.foo.align 
+bpipe.PipelineContext	[16]	INFO	|10:37:52 Checking actual resolved inputs [s_2_1.txt.align] 
+bpipe.ReportStatisticsListener	[15]	INFO	|10:37:52 Intercepted command check for command cat s_1_1.txt.align > s_1_1.txt.foo.align 
+bpipe.PipelineContext	[15]	INFO	|10:37:52 Checking actual resolved inputs [s_1_1.txt.align] 
+bpipe.ReportStatisticsListener	[17]	INFO	|10:37:52 Intercepted command check for command cat s_3_1.txt.align > s_3_1.txt.foo.align 
+bpipe.PipelineContext	[17]	INFO	|10:37:52 Checking actual resolved inputs [s_3_1.txt.align] 
+bpipe.PipelineContext	[16]	INFO	|10:37:52 Finished probe 
+bpipe.PipelineContext	[15]	INFO	|10:37:52 Finished probe 
+bpipe.PipelineContext	[17]	INFO	|10:37:52 Finished probe 
+bpipe.Utils	[16]	INFO	|10:37:52 ===== Check s_2_1.txt.foo.align ===== 
+bpipe.Utils	[15]	INFO	|10:37:52 ===== Check s_1_1.txt.foo.align ===== 
+bpipe.Utils	[17]	INFO	|10:37:52 ===== Check s_3_1.txt.foo.align ===== 
+bpipe.Utils	[16]	INFO	|10:37:52 file doesn't exist: s_2_1.txt.foo.align 
+bpipe.Utils	[15]	INFO	|10:37:52 file doesn't exist: s_1_1.txt.foo.align 
+bpipe.Utils	[16]	INFO	|10:37:52 ===== Check s_2_1.txt.foo.align ===== 
+bpipe.Utils	[17]	INFO	|10:37:52 file doesn't exist: s_3_1.txt.foo.align 
+bpipe.Utils	[15]	INFO	|10:37:52 ===== Check s_1_1.txt.foo.align ===== 
+bpipe.Utils	[16]	INFO	|10:37:52 file doesn't exist: s_2_1.txt.foo.align 
+bpipe.Utils	[17]	INFO	|10:37:52 ===== Check s_3_1.txt.foo.align ===== 
+bpipe.Utils	[15]	INFO	|10:37:52 file doesn't exist: s_1_1.txt.foo.align 
+bpipe.Dependencies	[16]	INFO	|10:37:52 Found these missing / older files: [s_2_1.txt.foo.align, s_2_1.txt.foo.align] 
+bpipe.Utils	[17]	INFO	|10:37:52 file doesn't exist: s_3_1.txt.foo.align 
+bpipe.Dependencies	[15]	INFO	|10:37:52 Found these missing / older files: [s_1_1.txt.foo.align, s_1_1.txt.foo.align] 
+bpipe.Dependencies	[16]	INFO	|10:37:52 Some files are outdated : [s_2_1.txt.foo.align, s_2_1.txt.foo.align] 
+bpipe.Dependencies	[17]	INFO	|10:37:52 Found these missing / older files: [s_3_1.txt.foo.align, s_3_1.txt.foo.align] 
+bpipe.Dependencies	[15]	INFO	|10:37:52 Some files are outdated : [s_1_1.txt.foo.align, s_1_1.txt.foo.align] 
+bpipe.PipelineContext	[16]	INFO	|10:37:52 Not up to date because input inferred by probe of body newer than outputs 
+bpipe.Dependencies	[17]	INFO	|10:37:52 Some files are outdated : [s_3_1.txt.foo.align, s_3_1.txt.foo.align] 
+bpipe.PipelineContext	[15]	INFO	|10:37:52 Not up to date because input inferred by probe of body newer than outputs 
+bpipe.PipelineContext	[17]	INFO	|10:37:52 Not up to date because input inferred by probe of body newer than outputs 
+bpipe.PipelineDelegate	[16]	INFO	|10:37:52 Setting or creating a delegate for context 147155322 body 1735597261/bpipe.PipelineDelegate in thread 16 
+bpipe.PipelineDelegate	[15]	INFO	|10:37:52 Setting or creating a delegate for context 1173977989 body 418859406/bpipe.PipelineDelegate in thread 15 
+bpipe.PipelineDelegate	[17]	INFO	|10:37:52 Setting or creating a delegate for context 1221849761 body 318641776/bpipe.PipelineDelegate in thread 17 
+bpipe.PipelineDelegate	[16]	INFO	|10:37:52 Existing delegate bpipe.PipelineDelegate@4ca2eda4 has type bpipe.PipelineDelegate in thread 16. Setting new context 147155322 
+bpipe.PipelineDelegate	[15]	INFO	|10:37:52 Existing delegate bpipe.PipelineDelegate@68de16ad has type bpipe.PipelineDelegate in thread 15. Setting new context 1173977989 
+bpipe.PipelineDelegate	[17]	INFO	|10:37:52 Existing delegate bpipe.PipelineDelegate@5c9fd14a has type bpipe.PipelineDelegate in thread 17. Setting new context 1221849761 
+bpipe.PipelineContext	[16]	INFO	|10:37:52 Producing from inputs [s_2_1.txt.align] 
+bpipe.PipelineContext	[15]	INFO	|10:37:52 Producing from inputs [s_1_1.txt.align] 
+bpipe.PipelineContext	[17]	INFO	|10:37:52 Producing from inputs [s_3_1.txt.align] 
+bpipe.PipelineInput	[16]	INFO	|10:37:52 Searching for missing Property: align 
+bpipe.PipelineInput	[15]	INFO	|10:37:52 Searching for missing Property: align 
+bpipe.PipelineInput	[17]	INFO	|10:37:52 Searching for missing Property: align 
+bpipe.PipelineInput	[16]	INFO	|10:37:52 Resolving inputs matching pattern ^.*\.align$ 
+bpipe.PipelineInput	[15]	INFO	|10:37:52 Resolving inputs matching pattern ^.*\.align$ 
+bpipe.PipelineInput	[17]	INFO	|10:37:52 Resolving inputs matching pattern ^.*\.align$ 
+bpipe.PipelineInput	[16]	INFO	|10:37:52 Checking outputs [s_2_1.txt.align] 
+bpipe.PipelineInput	[15]	INFO	|10:37:52 Checking outputs [s_1_1.txt.align] 
+bpipe.PipelineInput	[17]	INFO	|10:37:52 Checking outputs [s_3_1.txt.align] 
+bpipe.PipelineInput	[16]	INFO	|10:37:52 Found files with exts [align$] : [[s_2_1.txt.align]] 
+bpipe.PipelineInput	[15]	INFO	|10:37:52 Found files with exts [align$] : [[s_1_1.txt.align]] 
+bpipe.PipelineInput	[17]	INFO	|10:37:52 Found files with exts [align$] : [[s_3_1.txt.align]] 
+bpipe.PipelineInput	[16]	INFO	|10:37:52 Adding resolved input s_2_1.txt.align 
+bpipe.PipelineInput	[15]	INFO	|10:37:52 Adding resolved input s_1_1.txt.align 
+bpipe.PipelineInput	[17]	INFO	|10:37:52 Adding resolved input s_3_1.txt.align 
+bpipe.PipelineContext	[16]	INFO	|10:37:52 Using non-default output due to input property reference: s_2_1.txt.align from resolved inputs [s_2_1.txt.align] 
+bpipe.PipelineContext	[15]	INFO	|10:37:52 Using non-default output due to input property reference: s_1_1.txt.align from resolved inputs [s_1_1.txt.align] 
+bpipe.PipelineContext	[17]	INFO	|10:37:52 Using non-default output due to input property reference: s_3_1.txt.align from resolved inputs [s_3_1.txt.align] 
+bpipe.FilterFileNameTransformer	[16]	INFO	|10:37:52 Filtering based on input s_2_1.txt.align 
+bpipe.FilterFileNameTransformer	[15]	INFO	|10:37:52 Filtering based on input s_1_1.txt.align 
+bpipe.FilterFileNameTransformer	[17]	INFO	|10:37:52 Filtering based on input s_3_1.txt.align 
+bpipe.FilterFileNameTransformer	[16]	INFO	|10:37:52 Filtering using [foo] produces outputs [s_2_1.txt.foo.align] 
+bpipe.FilterFileNameTransformer	[15]	INFO	|10:37:52 Filtering using [foo] produces outputs [s_1_1.txt.foo.align] 
+bpipe.FilterFileNameTransformer	[17]	INFO	|10:37:52 Filtering using [foo] produces outputs [s_3_1.txt.foo.align] 
+bpipe.PipelineInput	[15]	INFO	|10:37:52 Searching for missing Property: align 
+bpipe.PipelineInput	[16]	INFO	|10:37:52 Searching for missing Property: align 
+bpipe.PipelineInput	[17]	INFO	|10:37:52 Searching for missing Property: align 
+bpipe.PipelineInput	[15]	INFO	|10:37:52 Resolving inputs matching pattern ^.*\.align$ 
+bpipe.PipelineInput	[16]	INFO	|10:37:52 Resolving inputs matching pattern ^.*\.align$ 
+bpipe.PipelineInput	[15]	INFO	|10:37:52 Checking outputs [s_1_1.txt.align] 
+bpipe.PipelineInput	[17]	INFO	|10:37:52 Resolving inputs matching pattern ^.*\.align$ 
+bpipe.PipelineInput	[16]	INFO	|10:37:52 Checking outputs [s_2_1.txt.align] 
+bpipe.PipelineInput	[15]	INFO	|10:37:52 Found files with exts [align$] : [[s_1_1.txt.align]] 
+bpipe.PipelineInput	[17]	INFO	|10:37:52 Checking outputs [s_3_1.txt.align] 
+bpipe.PipelineInput	[16]	INFO	|10:37:52 Found files with exts [align$] : [[s_2_1.txt.align]] 
+bpipe.PipelineInput	[15]	INFO	|10:37:52 Adding resolved input s_1_1.txt.align 
+bpipe.PipelineInput	[17]	INFO	|10:37:52 Found files with exts [align$] : [[s_3_1.txt.align]] 
+bpipe.PipelineInput	[16]	INFO	|10:37:52 Adding resolved input s_2_1.txt.align 
+bpipe.PipelineInput	[17]	INFO	|10:37:52 Adding resolved input s_3_1.txt.align 
+bpipe.PipelineContext	[15]	INFO	|10:37:52 Using non-default output due to input property reference: s_1_1.txt.align from resolved inputs [s_1_1.txt.align] 
+bpipe.PipelineContext	[16]	INFO	|10:37:52 Using non-default output due to input property reference: s_2_1.txt.align from resolved inputs [s_2_1.txt.align] 
+bpipe.FilterFileNameTransformer	[15]	INFO	|10:37:52 Filtering based on input s_1_1.txt.align 
+bpipe.PipelineContext	[17]	INFO	|10:37:52 Using non-default output due to input property reference: s_3_1.txt.align from resolved inputs [s_3_1.txt.align] 
+bpipe.FilterFileNameTransformer	[16]	INFO	|10:37:52 Filtering based on input s_2_1.txt.align 
+bpipe.FilterFileNameTransformer	[15]	INFO	|10:37:52 Filtering using [foo] produces outputs [s_1_1.txt.foo.align] 
+bpipe.FilterFileNameTransformer	[17]	INFO	|10:37:52 Filtering based on input s_3_1.txt.align 
+bpipe.FilterFileNameTransformer	[16]	INFO	|10:37:52 Filtering using [foo] produces outputs [s_2_1.txt.foo.align] 
+bpipe.FilterFileNameTransformer	[17]	INFO	|10:37:52 Filtering using [foo] produces outputs [s_3_1.txt.foo.align] 
+bpipe.PipelineContext	[15]	INFO	|10:37:52 Tracking outputs referenced=[[]] inferred=[[s_1_1.txt.foo.align]] for command cat s_1_1.txt.align > s_1_1.txt.foo.align 
+bpipe.PipelineContext	[17]	INFO	|10:37:52 Tracking outputs referenced=[[]] inferred=[[s_3_1.txt.foo.align]] for command cat s_3_1.txt.align > s_3_1.txt.foo.align 
+bpipe.PipelineContext	[16]	INFO	|10:37:52 Tracking outputs referenced=[[]] inferred=[[s_2_1.txt.foo.align]] for command cat s_2_1.txt.align > s_2_1.txt.foo.align 
+bpipe.ReportStatisticsListener	[15]	INFO	|10:37:52 Intercepted command check for command cat s_1_1.txt.align > s_1_1.txt.foo.align 
+bpipe.PipelineContext	[15]	INFO	|10:37:52 Checking actual resolved inputs [s_1_1.txt.align] 
+bpipe.ReportStatisticsListener	[16]	INFO	|10:37:52 Intercepted command check for command cat s_2_1.txt.align > s_2_1.txt.foo.align 
+bpipe.Utils	[15]	INFO	|10:37:52 ===== Check s_1_1.txt.foo.align ===== 
+bpipe.PipelineContext	[16]	INFO	|10:37:52 Checking actual resolved inputs [s_2_1.txt.align] 
+bpipe.ReportStatisticsListener	[17]	INFO	|10:37:52 Intercepted command check for command cat s_3_1.txt.align > s_3_1.txt.foo.align 
+bpipe.Utils	[15]	INFO	|10:37:52 file doesn't exist: s_1_1.txt.foo.align 
+bpipe.Utils	[16]	INFO	|10:37:52 ===== Check s_2_1.txt.foo.align ===== 
+bpipe.Dependencies	[15]	INFO	|10:37:52 Found these missing / older files: [s_1_1.txt.foo.align] 
+bpipe.Utils	[16]	INFO	|10:37:52 file doesn't exist: s_2_1.txt.foo.align 
+bpipe.PipelineContext	[17]	INFO	|10:37:52 Checking actual resolved inputs [s_3_1.txt.align] 
+bpipe.Dependencies	[15]	INFO	|10:37:52 Some files are outdated : [s_1_1.txt.foo.align] 
+bpipe.Dependencies	[16]	INFO	|10:37:52 Found these missing / older files: [s_2_1.txt.foo.align] 
+bpipe.Utils	[17]	INFO	|10:37:52 ===== Check s_3_1.txt.foo.align ===== 
+bpipe.Dependencies	[16]	INFO	|10:37:52 Some files are outdated : [s_2_1.txt.foo.align] 
+bpipe.Command	[15]	INFO	|10:37:52 Checking for configuration for command cat 
+bpipe.Utils	[17]	INFO	|10:37:52 file doesn't exist: s_3_1.txt.foo.align 
+bpipe.Command	[15]	INFO	|10:37:52 Default command properties: [executor:local] 
+bpipe.Dependencies	[17]	INFO	|10:37:52 Found these missing / older files: [s_3_1.txt.foo.align] 
+bpipe.Command	[16]	INFO	|10:37:52 Checking for configuration for command cat 
+bpipe.CommandManager	[15]	INFO	|10:37:52 Using config [executor:local] for command 
+bpipe.Dependencies	[17]	INFO	|10:37:52 Some files are outdated : [s_3_1.txt.foo.align] 
+bpipe.Command	[16]	INFO	|10:37:52 Default command properties: [executor:local] 
+bpipe.CommandManager	[16]	INFO	|10:37:52 Using config [executor:local] for command 
+bpipe.Command	[17]	INFO	|10:37:52 Checking for configuration for command cat 
+bpipe.Command	[17]	INFO	|10:37:52 Default command properties: [executor:local] 
+bpipe.CommandManager	[15]	INFO	|10:37:52 Created bpipe command id 4 
+bpipe.CommandManager	[17]	INFO	|10:37:52 Using config [executor:local] for command 
+bpipe.Concurrency	[15]	INFO	|10:37:52 Thread Thread-6 requesting for 1 concurrency permit(s) type threads with 32 available 
+bpipe.CommandManager	[16]	INFO	|10:37:52 Created bpipe command id 5 
+bpipe.Concurrency	[15]	INFO	|10:37:52 Thread Thread-6 acquired resource threads in amount 1 
+bpipe.Concurrency	[16]	INFO	|10:37:52 Thread Thread-7 requesting for 1 concurrency permit(s) type threads with 31 available 
+bpipe.CommandManager	[17]	INFO	|10:37:52 Created bpipe command id 6 
+bpipe.Concurrency	[16]	INFO	|10:37:52 Thread Thread-7 acquired resource threads in amount 1 
+bpipe.Concurrency	[17]	INFO	|10:37:52 Thread Thread-8 requesting for 1 concurrency permit(s) type threads with 30 available 
+bpipe.Command	[30]	INFO	|10:37:52 Command 4 changing state from null to RUNNING 
+bpipe.Concurrency	[17]	INFO	|10:37:52 Thread Thread-8 acquired resource threads in amount 1 
+bpipe.Command	[31]	INFO	|10:37:52 Command 5 changing state from null to RUNNING 
+bpipe.Command	[34]	INFO	|10:37:52 Command 6 changing state from null to RUNNING 
+bpipe.executor.ThrottledDelegatingCommandExecutor	[15]	INFO	|10:37:52 Waiting for command to complete before releasing 1 resources 
+bpipe.executor.ThrottledDelegatingCommandExecutor	[16]	INFO	|10:37:52 Waiting for command to complete before releasing 1 resources 
+bpipe.executor.ThrottledDelegatingCommandExecutor	[17]	INFO	|10:37:52 Waiting for command to complete before releasing 1 resources 
+bpipe.Command	[15]	INFO	|10:37:52 Command 4 changing state from RUNNING to COMPLETE 
+bpipe.executor.ThrottledDelegatingCommandExecutor	[15]	INFO	|10:37:52 Releasing 1 resources 
+bpipe.Command	[16]	INFO	|10:37:52 Command 5 changing state from RUNNING to COMPLETE 
+bpipe.Command	[17]	INFO	|10:37:52 Command 6 changing state from RUNNING to COMPLETE 
+bpipe.Concurrency	[15]	INFO	|10:37:52 Thread Thread-6 releasing 1 threads 
+bpipe.executor.ThrottledDelegatingCommandExecutor	[16]	INFO	|10:37:52 Releasing 1 resources 
+bpipe.executor.ThrottledDelegatingCommandExecutor	[17]	INFO	|10:37:52 Releasing 1 resources 
+bpipe.executor.ThrottledDelegatingCommandExecutor	[15]	INFO	|10:37:52 Released 1 resources 
+bpipe.Concurrency	[16]	INFO	|10:37:52 Thread Thread-7 releasing 1 threads 
+bpipe.Concurrency	[17]	INFO	|10:37:52 Thread Thread-8 releasing 1 threads 
+bpipe.executor.ThrottledDelegatingCommandExecutor	[16]	INFO	|10:37:52 Released 1 resources 
+bpipe.executor.ThrottledDelegatingCommandExecutor	[17]	INFO	|10:37:52 Released 1 resources 
+bpipe.PipelineContext	[15]	INFO	|10:37:52 Adding outputs [s_1_1.txt.foo.align] as a result of produce 
+bpipe.PipelineContext	[16]	INFO	|10:37:52 Adding outputs [s_2_1.txt.foo.align] as a result of produce 
+bpipe.PipelineContext	[17]	INFO	|10:37:52 Adding outputs [s_3_1.txt.foo.align] as a result of produce 
+bpipe.PipelineStage	[15]	INFO	|10:37:52 Stage dedupe [1] returned null as default inputs for next stage 
+bpipe.PipelineStage	[16]	INFO	|10:37:52 Stage dedupe [2] returned null as default inputs for next stage 
+bpipe.PipelineStage	[17]	INFO	|10:37:52 Stage dedupe [3] returned null as default inputs for next stage 
+bpipe.PipelineStage	[17]	INFO	|10:37:52 Inferring nextInputs from explicit output as [s_3_1.txt.foo.align] 
+bpipe.PipelineStage	[15]	INFO	|10:37:52 Inferring nextInputs from explicit output as [s_1_1.txt.foo.align] 
+bpipe.PipelineStage	[16]	INFO	|10:37:52 Inferring nextInputs from explicit output as [s_2_1.txt.foo.align] 
+bpipe.PipelineStage	[17]	INFO	|10:37:52 Setting next inputs [s_3_1.txt.foo.align] on stage 1836434720, context 1221849761 in thread 17 
+bpipe.PipelineStage	[15]	INFO	|10:37:52 Setting next inputs [s_1_1.txt.foo.align] on stage 1323364356, context 1173977989 in thread 15 
+bpipe.PipelineStage	[16]	INFO	|10:37:52 Setting next inputs [s_2_1.txt.foo.align] on stage 296599313, context 147155322 in thread 16 
+bpipe.Dependencies	[17]	INFO	|10:37:52 Context 1221849761 for stage dedupe has resolved inputs [s_3_1.txt.align] 
+bpipe.Dependencies	[17]	INFO	|10:37:52 Saving output file details to file .bpipe/outputs/dedupe.s_3_1.txt.foo.align.properties for command cat s_3_1.txt.align ... 
+bpipe.ReportStatisticsListener	[17]	INFO	|10:37:52 Annotating stage end time dedupe 
+bpipe.PipelineStage	[17]	INFO	|10:37:52 Checking files: [s_3_1.txt.foo.align] 
+bpipe.Dependencies	[17]	INFO	|10:37:52 Checking output (s) [s_3_1.txt.foo.align] 
+bpipe.Dependencies	[16]	INFO	|10:37:52 Context 147155322 for stage dedupe has resolved inputs [s_2_1.txt.align] 
+bpipe.Dependencies	[16]	INFO	|10:37:52 Saving output file details to file .bpipe/outputs/dedupe.s_2_1.txt.foo.align.properties for command cat s_2_1.txt.align ... 
+bpipe.ReportStatisticsListener	[16]	INFO	|10:37:52 Annotating stage end time dedupe 
+bpipe.PipelineStage	[16]	INFO	|10:37:52 Checking files: [s_2_1.txt.foo.align] 
+bpipe.Dependencies	[16]	INFO	|10:37:52 Checking output (s) [s_2_1.txt.foo.align] 
+bpipe.Dependencies	[15]	INFO	|10:37:52 Context 1173977989 for stage dedupe has resolved inputs [s_1_1.txt.align] 
+bpipe.Dependencies	[15]	INFO	|10:37:52 Saving output file details to file .bpipe/outputs/dedupe.s_1_1.txt.foo.align.properties for command cat s_1_1.txt.align ... 
+bpipe.Dependencies	[16]	INFO	|10:37:52  Checking file s_2_1.txt.foo.align 
+bpipe.Dependencies	[17]	INFO	|10:37:52  Checking file s_3_1.txt.foo.align 
+bpipe.ReportStatisticsListener	[15]	INFO	|10:37:52 Annotating stage end time dedupe 
+bpipe.PipelineStage	[15]	INFO	|10:37:52 Checking files: [s_1_1.txt.foo.align] 
+bpipe.Dependencies	[15]	INFO	|10:37:52 Checking output (s) [s_1_1.txt.foo.align] 
+bpipe.Dependencies	[15]	INFO	|10:37:52  Checking file s_1_1.txt.foo.align 
+bpipe.PipelineContext	[16]	INFO	|10:37:52 Setting output [s_2_1.txt.foo.align] on context 952574251 in thread 16 
+bpipe.PipelineContext	[17]	INFO	|10:37:52 Setting output [s_3_1.txt.foo.align] on context 116171514 in thread 17 
+bpipe.PipelineStage	[16]	INFO	|10:37:52 Setting next inputs [s_2_1.txt.foo.align] on stage 632451890, context 952574251 in thread 16 
+bpipe.PipelineStage	[17]	INFO	|10:37:52 Setting next inputs [s_3_1.txt.foo.align] on stage 1722346227, context 116171514 in thread 17 
+bpipe.PipelineStage	[16]	INFO	|10:37:52 Checking files: [s_2_1.txt.foo.align] 
+bpipe.PipelineStage	[17]	INFO	|10:37:52 Checking files: [s_3_1.txt.foo.align] 
+bpipe.Dependencies	[16]	INFO	|10:37:52 Checking output (s) [s_2_1.txt.foo.align] 
+bpipe.Dependencies	[17]	INFO	|10:37:52 Checking output (s) [s_3_1.txt.foo.align] 
+bpipe.PipelineContext	[15]	INFO	|10:37:52 Setting output [s_1_1.txt.foo.align] on context 1907031823 in thread 15 
+bpipe.Dependencies	[16]	INFO	|10:37:52  Checking file s_2_1.txt.foo.align 
+bpipe.Dependencies	[17]	INFO	|10:37:52  Checking file s_3_1.txt.foo.align 
+bpipe.PipelineStage	[15]	INFO	|10:37:52 Setting next inputs [s_1_1.txt.foo.align] on stage 1683057746, context 1907031823 in thread 15 
+bpipe.Pipeline	[16]	INFO	|10:37:52 Pipeline segment 2 in thread 16 has finished normally 
+bpipe.Pipeline	[17]	INFO	|10:37:52 Pipeline segment 3 in thread 17 has finished normally 
+bpipe.PipelineStage	[15]	INFO	|10:37:52 Checking files: [s_1_1.txt.foo.align] 
+bpipe.Pipeline	[16]	INFO	|10:37:52 Finished running segment for inputs [s_2_1.txt, s_2_2.txt] 
+bpipe.Pipeline	[17]	INFO	|10:37:52 Finished running segment for inputs [s_3_1.txt, s_3_2.txt] 
+bpipe.Dependencies	[15]	INFO	|10:37:52 Checking output (s) [s_1_1.txt.foo.align] 
+bpipe.Dependencies	[15]	INFO	|10:37:52  Checking file s_1_1.txt.foo.align 
+bpipe.Pipeline	[15]	INFO	|10:37:52 Pipeline segment 1 in thread 15 has finished normally 
+bpipe.Pipeline	[15]	INFO	|10:37:52 Finished running segment for inputs [s_1_1.txt, s_1_2.txt] 
+bpipe.Concurrency	[17]	INFO	|10:37:52 Decremented running count to 2 in thread Thread-8 
+bpipe.Concurrency	[15]	INFO	|10:37:52 Decremented running count to 1 in thread Thread-6 
+bpipe.Concurrency	[16]	INFO	|10:37:52 Decremented running count to 0 in thread Thread-7 
+bpipe.PipelineCategory	[1]	INFO	|10:37:52 Parent pipeline of concurent sections [1697607286, 217921760, 1151402185] is 1735056231 
+bpipe.PipelineCategory	[1]	INFO	|10:37:52 Maximum child stage list length = 2 
+bpipe.PipelineCategory	[1]	INFO	|10:37:52 ###### Merging results of parallel split in parent branch  ##### 
+bpipe.PipelineCategory	[1]	INFO	|10:37:52 Grouping stages at index 0 [align, align, align] for merging 
+bpipe.PipelineCategory	[1]	INFO	|10:37:52 Parallel segment 0 contains 3 identical align stages - Merging outputs to single stage 
+bpipe.PipelineCategory	[1]	INFO	|10:37:52 Merged outputs are [s_1_1.txt.align, s_2_1.txt.align, s_3_1.txt.align] 
+bpipe.PipelineContext	[1]	INFO	|10:37:52 Setting output [s_1_1.txt.align, s_2_1.txt.align, s_3_1.txt.align] on context 591511745 in thread 1 
+bpipe.PipelineCategory	[1]	INFO	|10:37:52 Grouping stages at index 1 [dedupe, dedupe, dedupe] for merging 
+bpipe.PipelineCategory	[1]	INFO	|10:37:52 Parallel segment 1 contains 3 identical dedupe stages - Merging outputs to single stage 
+bpipe.PipelineCategory	[1]	INFO	|10:37:52 Merged outputs are [s_1_1.txt.foo.align, s_2_1.txt.foo.align, s_3_1.txt.foo.align] 
+bpipe.PipelineContext	[1]	INFO	|10:37:52 Setting output [s_1_1.txt.foo.align, s_2_1.txt.foo.align, s_3_1.txt.foo.align] on context 76751620 in thread 1 
+bpipe.PipelineCategory	[1]	INFO	|10:37:52 There are 2 stages from nested pipelines 
+bpipe.PipelineCategory	[1]	INFO	|10:37:52 There [bpipe.PipelineStage@4ee0f004, bpipe.PipelineStage@11adbf11, bpipe.PipelineStage@6d75c520] parallel paths in final stage 
+bpipe.PipelineCategory	[1]	INFO	|10:37:52 Last merged outputs are [s_1_1.txt.foo.align, s_2_1.txt.foo.align, s_3_1.txt.foo.align] 
+bpipe.PipelineContext	[1]	INFO	|10:37:52 Setting output [s_1_1.txt.foo.align, s_2_1.txt.foo.align, s_3_1.txt.foo.align] on context 686281774 in thread 1 
+bpipe.PipelineCategory	[1]	INFO	|10:37:52 Merged stage name is dedupe_bpipe_merge 
+bpipe.PipelineContext	[1]	INFO	|10:37:52 Setting output [s_1_1.txt.foo.align, s_2_1.txt.foo.align, s_3_1.txt.foo.align] on context 890663598 in thread 1 
+bpipe.PipelineStage	[1]	INFO	|10:37:52 Setting next inputs [s_1_1.txt.foo.align, s_2_1.txt.foo.align, s_3_1.txt.foo.align] on stage 738112285, context 890663598 in thread 1 
+bpipe.PipelineStage	[1]	INFO	|10:37:52 Checking files: [s_1_1.txt.foo.align, s_2_1.txt.foo.align, s_3_1.txt.foo.align] 
+bpipe.Dependencies	[1]	INFO	|10:37:52 Checking output (s) [s_1_1.txt.foo.align, s_2_1.txt.foo.align, s_3_1.txt.foo.align] 
+bpipe.Dependencies	[1]	INFO	|10:37:52  Checking file s_1_1.txt.foo.align 
+bpipe.Dependencies	[1]	INFO	|10:37:52  Checking file s_2_1.txt.foo.align 
+bpipe.Dependencies	[1]	INFO	|10:37:52  Checking file s_3_1.txt.foo.align 
+bpipe.Pipeline	[1]	INFO	|10:37:52 Pipeline segment  in thread 1 has finished normally 
+bpipe.Pipeline	[1]	INFO	|10:37:52 Finished running segment for inputs [s_1_1.txt, s_1_2.txt, s_2_1.txt, s_2_2.txt, s_3_1.txt, s_3_2.txt] 
+bpipe.Pipeline	[1]	INFO	|10:37:52 adding stage align from pipeline bpipe.Pipeline@652f6e76 
+bpipe.Pipeline	[1]	INFO	|10:37:52 adding stage dedupe from pipeline bpipe.Pipeline@652f6e76 
+bpipe.Pipeline	[1]	INFO	|10:37:52 adding stage align from pipeline bpipe.Pipeline@cfd38e0 
+bpipe.Pipeline	[1]	INFO	|10:37:52 adding stage dedupe from pipeline bpipe.Pipeline@cfd38e0 
+bpipe.Pipeline	[1]	INFO	|10:37:52 adding stage align from pipeline bpipe.Pipeline@44a100c9 
+bpipe.Pipeline	[1]	INFO	|10:37:52 adding stage dedupe from pipeline bpipe.Pipeline@44a100c9 
+bpipe.Dependencies	[39]	INFO	|10:37:52 Reading property file .bpipe/outputs/dedupe.s_2_1.txt.foo.align.properties 
+bpipe.Dependencies	[43]	INFO	|10:37:52 Reading property file .bpipe/outputs/dedupe.s_3_1.txt.foo.align.properties 
+bpipe.Dependencies	[40]	INFO	|10:37:52 Reading property file .bpipe/outputs/align.s_3_1.txt.align.properties 
+bpipe.Dependencies	[41]	INFO	|10:37:52 Reading property file .bpipe/outputs/align.s_1_1.txt.align.properties 
+bpipe.Dependencies	[42]	INFO	|10:37:52 Reading property file .bpipe/outputs/align.s_2_1.txt.align.properties 
+bpipe.Dependencies	[43]	INFO	|10:37:52 Reading property file .bpipe/outputs/dedupe.s_1_1.txt.foo.align.properties 
+bpipe.Utils	[1]	INFO	|10:37:52 Output folder scan (concurrency=5) executed in 0.028 seconds 
+bpipe.Dependencies	[1]	INFO	|10:37:52 External inputs: [[s_2_1.txt, s_2_2.txt], [s_3_1.txt, s_3_2.txt], [s_1_1.txt, s_1_2.txt]] for outputs [s_2_1.txt.align, s_3_1.txt.align, s_1_1.txt.align] 
+bpipe.Dependencies	[1]	INFO	|10:37:52 There are 3 output groups 
+bpipe.Dependencies	[1]	INFO	|10:37:52 Subtracting 3 remaining outputs from 6 total outputs 
+bpipe.Dependencies	[1]	INFO	|10:37:52 External inputs: [[s_2_1.txt.align], [s_3_1.txt.align], [s_1_1.txt.align]] for outputs [s_2_1.txt.foo.align, s_3_1.txt.foo.align, s_1_1.txt.foo.align] 
+bpipe.Dependencies	[1]	INFO	|10:37:52 New entry for s_2_1.txt.foo.align 
+bpipe.Dependencies	[1]	INFO	|10:37:53 Maxtimestamp for s_2_1.txt.foo.align = 1417775872000 
+bpipe.Dependencies	[1]	INFO	|10:37:53 New entry for s_3_1.txt.foo.align 
+bpipe.Dependencies	[1]	INFO	|10:37:53 Maxtimestamp for s_3_1.txt.foo.align = 1417775872000 
+bpipe.Dependencies	[1]	INFO	|10:37:53 New entry for s_1_1.txt.foo.align 
+bpipe.Dependencies	[1]	INFO	|10:37:53 Maxtimestamp for s_1_1.txt.foo.align = 1417775872000 
+bpipe.Dependencies	[1]	INFO	|10:37:53 There are 3 output groups 
+bpipe.Dependencies	[1]	INFO	|10:37:53 Subtracting 3 remaining outputs from 3 total outputs 
+bpipe.Dependencies	[1]	INFO	|10:37:53 There are 0 remaining outputs 
+bpipe.Dependencies	[1]	INFO	|10:37:53 There are 0 remaining outputs 
+bpipe.Dependencies	[1]	INFO	|10:37:53 There are 0 remaining outputs 
+bpipe.Dependencies	[1]	INFO	|10:37:53  s_2_1.txt.foo.align / entry 2079606421  
+bpipe.Dependencies	[1]	INFO	|10:37:53 Input s_2_1.txt.align? true 
+bpipe.Dependencies	[1]	INFO	|10:37:53 s_2_1.txt.foo.align is older than inputs [s_2_1.txt.align / 1417775872000 / 1417775872000 vs 1417775872000] 
+bpipe.Dependencies	[1]	INFO	|10:37:53  s_3_1.txt.foo.align / entry 730231534 - 
+bpipe.Dependencies	[1]	INFO	|10:37:53 Input s_3_1.txt.align? true 
+bpipe.Dependencies	[1]	INFO	|10:37:53 s_3_1.txt.foo.align is older than inputs [s_3_1.txt.align / 1417775872000 / 1417775872000 vs 1417775872000] 
+bpipe.Dependencies	[1]	INFO	|10:37:53  s_1_1.txt.foo.align / entry 132349333 - 
+bpipe.Dependencies	[1]	INFO	|10:37:53 Input s_1_1.txt.align? true 
+bpipe.Dependencies	[1]	INFO	|10:37:53 s_1_1.txt.foo.align is older than inputs [s_1_1.txt.align / 1417775872000 / 1417775872000 vs 1417775872000] 
+bpipe.Dependencies	[1]	INFO	|10:37:53 ====Finished Output Graph===== 
+bpipe.Dependencies	[1]	INFO	|10:37:53 There are 0 remaining outputs 
+bpipe.Dependencies	[1]	INFO	|10:37:53 There are 0 remaining outputs 
+bpipe.Dependencies	[1]	INFO	|10:37:53 There are 0 remaining outputs 
+bpipe.Dependencies	[1]	INFO	|10:37:53 -- s_2_1.txt.align / entry 867073889 --- 
+bpipe.Dependencies	[1]	INFO	|10:37:53 s_2_1.txt.align is newer than input files 
+bpipe.Dependencies	[1]	INFO	|10:37:53 --- s_3_1.txt.align / entry 86823881 --- 
+bpipe.Dependencies	[1]	INFO	|10:37:53 s_3_1.txt.align is newer than input files 
+bpipe.Dependencies	[1]	INFO	|10:37:53 -- s_1_1.txt.align / entry 1107571654 -- 
+bpipe.Dependencies	[1]	INFO	|10:37:53 s_1_1.txt.align is newer than input files 
+bpipe.Dependencies	[1]	INFO	|10:37:53 ====Finished Output Graph===== 
+bpipe.ReportGenerator	[1]	INFO	|10:37:53 Searching for template in /lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/src/main/html/bpipe 
+bpipe.ReportGenerator	[1]	INFO	|10:37:53 Generating report to /lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/persampleinputext/doc/index.html 
+bpipe.PipelineContext	[1]	INFO	|10:37:53 Using previously set output: [s_1_1.txt.align] 
+bpipe.PipelineContext	[1]	INFO	|10:37:53 Using previously set output: [s_1_1.txt.align] 
+bpipe.PipelineContext	[1]	INFO	|10:37:53 Using previously set output: [s_1_1.txt.align] 
+bpipe.PipelineContext	[1]	INFO	|10:37:53 Using previously set output: [s_1_1.txt.foo.align] 
+bpipe.PipelineContext	[1]	INFO	|10:37:53 Using previously set output: [s_1_1.txt.foo.align] 
+bpipe.PipelineContext	[1]	INFO	|10:37:53 Using previously set output: [s_1_1.txt.foo.align] 
+bpipe.PipelineContext	[1]	INFO	|10:37:53 Using previously set output: [s_2_1.txt.align] 
+bpipe.PipelineContext	[1]	INFO	|10:37:53 Using previously set output: [s_2_1.txt.align] 
+bpipe.PipelineContext	[1]	INFO	|10:37:53 Using previously set output: [s_2_1.txt.align] 
+bpipe.PipelineContext	[1]	INFO	|10:37:53 Using previously set output: [s_2_1.txt.foo.align] 
+bpipe.PipelineContext	[1]	INFO	|10:37:53 Using previously set output: [s_2_1.txt.foo.align] 
+bpipe.PipelineContext	[1]	INFO	|10:37:53 Using previously set output: [s_2_1.txt.foo.align] 
+bpipe.PipelineContext	[1]	INFO	|10:37:53 Using previously set output: [s_3_1.txt.align] 
+bpipe.PipelineContext	[1]	INFO	|10:37:53 Using previously set output: [s_3_1.txt.align] 
+bpipe.PipelineContext	[1]	INFO	|10:37:53 Using previously set output: [s_3_1.txt.align] 
+bpipe.PipelineContext	[1]	INFO	|10:37:53 Using previously set output: [s_3_1.txt.foo.align] 
+bpipe.PipelineContext	[1]	INFO	|10:37:53 Using previously set output: [s_3_1.txt.foo.align] 
+bpipe.PipelineContext	[1]	INFO	|10:37:53 Using previously set output: [s_3_1.txt.foo.align] 
+bpipe.Dependencies	[44]	INFO	|10:37:53 Reading property file .bpipe/outputs/dedupe.s_2_1.txt.foo.align.properties 
+bpipe.Dependencies	[48]	INFO	|10:37:53 Reading property file .bpipe/outputs/dedupe.s_1_1.txt.foo.align.properties 
+bpipe.Dependencies	[46]	INFO	|10:37:53 Reading property file .bpipe/outputs/align.s_2_1.txt.align.properties 
+bpipe.Dependencies	[47]	INFO	|10:37:53 Reading property file .bpipe/outputs/align.s_1_1.txt.align.properties 
+bpipe.Dependencies	[45]	INFO	|10:37:53 Reading property file .bpipe/outputs/align.s_3_1.txt.align.properties 
+bpipe.Dependencies	[44]	INFO	|10:37:53 Reading property file .bpipe/outputs/dedupe.s_3_1.txt.foo.align.properties 
+bpipe.Utils	[1]	INFO	|10:37:53 Output folder scan (concurrency=5) executed in 0.008 seconds 
+bpipe.Dependencies	[1]	INFO	|10:37:53 External inputs: [[s_2_1.txt, s_2_2.txt], [s_3_1.txt, s_3_2.txt], [s_1_1.txt, s_1_2.txt]] for outputs [s_2_1.txt.align, s_3_1.txt.align, s_1_1.txt.align] 
+bpipe.Dependencies	[1]	INFO	|10:37:53 There are 3 output groups 
+bpipe.Dependencies	[1]	INFO	|10:37:53 Subtracting 3 remaining outputs from 6 total outputs 
+bpipe.Dependencies	[1]	INFO	|10:37:53 External inputs: [[s_2_1.txt.align], [s_3_1.txt.align], [s_1_1.txt.align]] for outputs [s_2_1.txt.foo.align, s_3_1.txt.foo.align, s_1_1.txt.foo.align] 
+bpipe.Dependencies	[1]	INFO	|10:37:53 New entry for s_2_1.txt.foo.align 
+bpipe.Dependencies	[1]	INFO	|10:37:53 Maxtimestamp for s_2_1.txt.foo.align = 1417775872000 
+bpipe.Dependencies	[1]	INFO	|10:37:53 New entry for s_3_1.txt.foo.align 
+bpipe.Dependencies	[1]	INFO	|10:37:53 Maxtimestamp for s_3_1.txt.foo.align = 1417775872000 
+bpipe.Dependencies	[1]	INFO	|10:37:53 New entry for s_1_1.txt.foo.align 
+bpipe.Dependencies	[1]	INFO	|10:37:53 Maxtimestamp for s_1_1.txt.foo.align = 1417775872000 
+bpipe.Dependencies	[1]	INFO	|10:37:53 There are 3 output groups 
+bpipe.Dependencies	[1]	INFO	|10:37:53 Subtracting 3 remaining outputs from 3 total outputs 
+bpipe.Dependencies	[1]	INFO	|10:37:53 There are 0 remaining outputs 
+bpipe.Dependencies	[1]	INFO	|10:37:53 There are 0 remaining outputs 
+bpipe.Dependencies	[1]	INFO	|10:37:53 There are 0 remaining outputs 
+bpipe.Dependencies	[1]	INFO	|10:37:53  s_2_1.txt.foo.align / entry 751393215 - 
+bpipe.Dependencies	[1]	INFO	|10:37:53 Input s_2_1.txt.align? true 
+bpipe.Dependencies	[1]	INFO	|10:37:53 s_2_1.txt.foo.align is older than inputs [s_2_1.txt.align / 1417775872000 / 1417775872000 vs 1417775872000] 
+bpipe.Dependencies	[1]	INFO	|10:37:53  s_3_1.txt.foo.align / entry 1461920145  
+bpipe.Dependencies	[1]	INFO	|10:37:53 Input s_3_1.txt.align? true 
+bpipe.Dependencies	[1]	INFO	|10:37:53 s_3_1.txt.foo.align is older than inputs [s_3_1.txt.align / 1417775872000 / 1417775872000 vs 1417775872000] 
+bpipe.Dependencies	[1]	INFO	|10:37:53  s_1_1.txt.foo.align / entry 1131471688  
+bpipe.Dependencies	[1]	INFO	|10:37:53 Input s_1_1.txt.align? true 
+bpipe.Dependencies	[1]	INFO	|10:37:53 s_1_1.txt.foo.align is older than inputs [s_1_1.txt.align / 1417775872000 / 1417775872000 vs 1417775872000] 
+bpipe.Dependencies	[1]	INFO	|10:37:53 ====Finished Output Graph===== 
+bpipe.Dependencies	[1]	INFO	|10:37:53 There are 0 remaining outputs 
+bpipe.Dependencies	[1]	INFO	|10:37:53 There are 0 remaining outputs 
+bpipe.Dependencies	[1]	INFO	|10:37:53 There are 0 remaining outputs 
+bpipe.Dependencies	[1]	INFO	|10:37:53 -- s_2_1.txt.align / entry 676966031 --- 
+bpipe.Dependencies	[1]	INFO	|10:37:53 s_2_1.txt.align is newer than input files 
+bpipe.Dependencies	[1]	INFO	|10:37:53 -- s_3_1.txt.align / entry 399721211 --- 
+bpipe.Dependencies	[1]	INFO	|10:37:53 s_3_1.txt.align is newer than input files 
+bpipe.Dependencies	[1]	INFO	|10:37:53 -- s_1_1.txt.align / entry 785545461 --- 
+bpipe.Dependencies	[1]	INFO	|10:37:53 s_1_1.txt.align is newer than input files 
+bpipe.Dependencies	[1]	INFO	|10:37:53 ====Finished Output Graph===== 
+bpipe.Pipeline	[1]	INFO	|10:37:53 Outputs are: 
+		s_2_1.txt.foo.align
+		s_3_1.txt.foo.align
+		s_1_1.txt.foo.align 
+bpipe.Runner	[9]	INFO	|10:37:53 Deleting job file /nfs/users/nfs_c/cgppipe/.bpipedb/jobs/20454 

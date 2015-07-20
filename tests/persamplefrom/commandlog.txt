@@ -1,0 +1,38 @@
+
+####################################################################################################
+# Starting pipeline at Wed Nov 26 10:30:39 GMT 2014
+# Input files:  [s_1_1.txt, s_1_2.txt, s_2_1.txt, s_2_2.txt, s_3_1.txt, s_3_2.txt]
+# Output Log:  .bpipe/logs/25442.log
+# Stage align [3]
+# Stage align [2]
+# Stage align [1]
+cat s_1_1.txt s_1_2.txt > s_1_1.txt.align
+cat s_2_1.txt s_2_2.txt > s_2_1.txt.align
+cat s_3_1.txt s_3_2.txt > s_3_1.txt.align
+# Stage dedupe [3]
+# Stage dedupe [1]
+# Stage dedupe [2]
+cp s_1_1.txt s_1_1.foo.txt
+cp s_3_1.txt s_3_1.foo.txt
+cp s_2_1.txt s_2_1.foo.txt
+# ################ Finished at Wed Nov 26 10:30:41 GMT 2014 Duration = 1.381 seconds #################
+
+
+####################################################################################################
+# Starting pipeline at Fri Dec 05 10:42:50 GMT 2014
+# Input files:  [s_1_1.txt, s_1_2.txt, s_2_1.txt, s_2_2.txt, s_3_1.txt, s_3_2.txt]
+# Output Log:  .bpipe/logs/27939.log
+# Stage align [1]
+# Stage align [2]
+# Stage align [3]
+cat s_1_1.txt s_1_2.txt > s_1_1.txt.align
+cat s_2_1.txt s_2_2.txt > s_2_1.txt.align
+cat s_3_1.txt s_3_2.txt > s_3_1.txt.align
+# Stage dedupe [3]
+# Stage dedupe [1]
+# Stage dedupe [2]
+cp s_1_1.txt s_1_1.foo.txt
+cp s_3_1.txt s_3_1.foo.txt
+cp s_2_1.txt s_2_1.foo.txt
+# ################ Finished at Fri Dec 05 10:42:51 GMT 2014 Duration = 1.407 seconds #################
+

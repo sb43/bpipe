@@ -1,0 +1,255 @@
+bpipe.Runner	[1]	INFO	|10:47:21 Starting 
+bpipe.Runner	[1]	INFO	|10:47:21 OS: Linux (2.6.32-44-server) Java: 1.7.0_25 Vendor: Oracle Corporation 
+bpipe.Runner	[1]	INFO	|10:47:21 Initializing plugins ... 
+bpipe.Config	[1]	INFO	|10:47:21 No plugins directory found: /lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/forward_multi/.bpipe/plugins 
+bpipe.Runner	[1]	INFO	|10:47:21 Reading user config ...  
+bpipe.Config	[1]	INFO	|10:47:21 No configuration file found in same dir as pipeline file 
+bpipe.Config	[1]	INFO	|10:47:21 No local configuration file found 
+bpipe.Utils	[10]	INFO	|10:47:22 Read config from /nfs/users/nfs_c/cgppipe/canpipe/software/bpipe_git/tests/forward_multi/../../bin/../src/main/config/bpipe.config executed in 0.327 seconds 
+bpipe.Utils	[1]	INFO	|10:47:22 Read user config executed in 0.554 seconds 
+bpipe.Runner	[1]	INFO	|10:47:22 Loading tool database ...  
+bpipe.ToolDatabase	[11]	INFO	|10:47:22 Loading tool database from user configuration 
+bpipe.NotificationManager	[14]	INFO	|10:47:22 Configuring notifications 
+bpipe.Concurrency	[13]	INFO	|10:47:22 Creating thread pool with 32 threads to execute parallel pipelines 
+bpipe.NotificationManager	[14]	INFO	|10:47:22 Trying class name file for notification channel file 
+bpipe.Tool	[11]	INFO	|10:47:22 Configured meta data about tool samtools 
+bpipe.Tool	[11]	INFO	|10:47:22 Configured meta data about tool bwa 
+bpipe.Tool	[11]	INFO	|10:47:22 Configured meta data about tool bowtie 
+bpipe.Tool	[11]	INFO	|10:47:22 Configured meta data about tool fastqc 
+bpipe.Tool	[11]	INFO	|10:47:22 Configured meta data about tool coverageBed 
+bpipe.Tool	[11]	INFO	|10:47:22 Configured meta data about tool fastx_clipper 
+bpipe.Tool	[11]	INFO	|10:47:22 Configured meta data about tool convert2annovar.pl 
+bpipe.Runner	[1]	INFO	|10:47:22 No CLI parameters specified 
+bpipe.Tool	[11]	INFO	|10:47:22 Configured meta data about tool summarize_annovar.pl 
+bpipe.Tool	[11]	INFO	|10:47:22 Configured meta data about tool bowtie2 
+bpipe.Tool	[11]	INFO	|10:47:22 Configured meta data about tool GenomeAnalysisTK 
+bpipe.Tool	[11]	INFO	|10:47:22 Configured meta data about tool MarkDuplicates 
+bpipe.Tool	[11]	INFO	|10:47:22 Configured meta data about tool signalp 
+bpipe.Tool	[11]	INFO	|10:47:22 Configured meta data about tool variant_effect_predictor.pl 
+bpipe.Tool	[11]	INFO	|10:47:22 Configured meta data about tool igvtools 
+bpipe.Tool	[11]	INFO	|10:47:22 Configured meta data about tool ls 
+bpipe.NotificationManager	[14]	INFO	|10:47:22 Unable to create notification channel using class file: java.lang.ClassNotFoundException: file 
+bpipe.NotificationManager	[14]	INFO	|10:47:22 Trying class name bpipe.FILENotificationChannel for notification channel file 
+bpipe.NotificationManager	[14]	INFO	|10:47:22 Unable to create notification channel using class bpipe.FILENotificationChannel: java.lang.ClassNotFoundException: bpipe.FILENotificationChannel 
+bpipe.NotificationManager	[14]	INFO	|10:47:22 Trying class name bpipe.file for notification channel file 
+bpipe.NotificationManager	[14]	INFO	|10:47:22 Unable to create notification channel using class bpipe.file: java.lang.ClassNotFoundException: bpipe.file 
+bpipe.NotificationManager	[14]	INFO	|10:47:22 Trying class name bpipe.FileNotificationChannel for notification channel file 
+bpipe.NotificationManager	[14]	INFO	|10:47:22 Successfully created notification channel using class bpipe.FileNotificationChannel 
+bpipe.Runner	[1]	INFO	|10:47:22 Parsing script ...  
+bpipe.Runner	[1]	INFO	|10:47:22 Run ...  
+bpipe.Pipeline	[1]	INFO	|10:47:22 Running with input [myinput.txt] 
+bpipe.PipelineCategory	[1]	INFO	|10:47:22 Found closure variable testforward 
+bpipe.PipelineCategory	[1]	INFO	|10:47:22 Found closure variable echoInput 
+bpipe.PipelineCategory	[1]	INFO	|10:47:22 Found closure variable echoAgain 
+bpipe.PipelineCategory	[1]	INFO	|10:47:22 Found closure variable end 
+bpipe.Pipeline	[1]	WARNING	|10:47:22 Pipeline folder /nfs/users/nfs_c/cgppipe/bpipes could not be found 
+bpipe.Pipeline	[1]	INFO	|10:47:22 Loaded external reference: args 
+bpipe.Pipeline	[1]	INFO	|10:47:22 External reference args is overridden by local reference 
+bpipe.Pipeline	[1]	INFO	|10:47:22 Loaded external reference: testforward 
+bpipe.Pipeline	[1]	INFO	|10:47:22 External reference testforward is overridden by local reference 
+bpipe.Pipeline	[1]	INFO	|10:47:22 Loaded external reference: echoInput 
+bpipe.Pipeline	[1]	INFO	|10:47:22 External reference echoInput is overridden by local reference 
+bpipe.Pipeline	[1]	INFO	|10:47:22 Loaded external reference: echoAgain 
+bpipe.Pipeline	[1]	INFO	|10:47:22 External reference echoAgain is overridden by local reference 
+bpipe.Pipeline	[1]	INFO	|10:47:22 Loaded external reference: end 
+bpipe.Pipeline	[1]	INFO	|10:47:22 External reference end is overridden by local reference 
+bpipe.Pipeline	[1]	INFO	|10:47:22 Running segment with inputs myinput.txt 
+bpipe.Dependencies	[1]	INFO	|10:47:22 Checking input (s) myinput.txt 
+bpipe.Utils	[1]	INFO	|10:47:22 Output folder scan (concurrency=5) executed in 0.004 seconds 
+bpipe.Dependencies	[1]	INFO	|10:47:22  Checking file myinput.txt 
+bpipe.PipelineDelegate	[1]	INFO	|10:47:22 Setting or creating a delegate for context 1127338654 body 2080023944/java.lang.Class in thread 1 
+bpipe.PipelineDelegate	[1]	INFO	|10:47:22 Created new delegate bpipe.PipelineDelegate@7d2f2ae0 overriding type java.lang.Class in thread 1 
+bpipe.Dependencies	[1]	INFO	|10:47:22 Checking input (s) myinput.txt 
+bpipe.Dependencies	[1]	INFO	|10:47:22  Checking file myinput.txt 
+bpipe.PipelineDelegate	[1]	INFO	|10:47:22 Setting or creating a delegate for context 1101723881 body 1069263533/java.lang.Class in thread 1 
+bpipe.PipelineDelegate	[1]	INFO	|10:47:22 Created new delegate bpipe.PipelineDelegate@39c2648b overriding type java.lang.Class in thread 1 
+bpipe.Dependencies	[1]	INFO	|10:47:22 Checking input (s) myinput.txt 
+bpipe.Dependencies	[1]	INFO	|10:47:22  Checking file myinput.txt 
+bpipe.PipelineDelegate	[1]	INFO	|10:47:22 Setting or creating a delegate for context 1261997579 body 1844812481/java.lang.Class in thread 1 
+bpipe.PipelineDelegate	[1]	INFO	|10:47:22 Created new delegate bpipe.PipelineDelegate@c36d74a overriding type java.lang.Class in thread 1 
+bpipe.Dependencies	[1]	INFO	|10:47:22 Checking input (s) myinput.txt 
+bpipe.Dependencies	[1]	INFO	|10:47:22  Checking file myinput.txt 
+bpipe.ReportStatisticsListener	[1]	INFO	|10:47:22 Annotating stage start time testforward 
+bpipe.PipelineStage	[1]	INFO	|10:47:22 Stage testforward : INPUT=myinput.txt OUTPUT=myinput.txt.testforward 
+bpipe.PipelineDelegate	[1]	INFO	|10:47:22 Setting or creating a delegate for context 520671934 body 1505127599/script1417776442663290493037 in thread 1 
+bpipe.PipelineDelegate	[1]	INFO	|10:47:22 Created new delegate bpipe.PipelineDelegate@395771a2 overriding type script1417776442663290493037 in thread 1 
+bpipe.PipelineContext	[1]	INFO	|10:47:23 No inputs resolved by input wrappers: outputs based on default myinput.txt.testforward 
+bpipe.PipelineContext	[1]	INFO	|10:47:23 Tracking outputs referenced=[[]] inferred=[[myinput.txt.testforward]] for command cp myinput.txt myinput.txt.testforward 
+bpipe.ReportStatisticsListener	[1]	INFO	|10:47:23 Intercepted command check for command cp myinput.txt myinput.txt.testforward 
+bpipe.PipelineContext	[1]	INFO	|10:47:23 Checking actual resolved inputs [myinput.txt] 
+bpipe.Utils	[1]	INFO	|10:47:23 ===== Check myinput.txt.testforward ===== 
+bpipe.Utils	[1]	INFO	|10:47:23 Checking myinput.txt.testforward against inputs [myinput.txt] 
+bpipe.Utils	[1]	INFO	|10:47:23 Check myinput.txt : 1416995052000 >  myinput.txt.testforward : 1416995052000 
+bpipe.Dependencies	[1]	INFO	|10:47:23 No missing / older files from inputs: [myinput.txt.testforward] are up to date 
+bpipe.PipelineContext	[1]	INFO	|10:47:23 Skipping command cp myinput.txt myinput.txt.tes... due to inferred outputs [myinput.txt.testforward] newer than inputs myinput.txt 
+bpipe.PipelineContext	[1]	INFO	|10:47:23 Using non-default output due to input property reference: myinput.txt from resolved inputs [myinput.txt] 
+bpipe.PipelineStage	[1]	INFO	|10:47:23 Stage testforward returned [myinput.txt.testforward, myinput.txt] as default inputs for next stage 
+bpipe.PipelineStage	[1]	INFO	|10:47:23 Using inferred outputs [myinput.txt.testforward] as outputs because no explicit outputs set 
+bpipe.PipelineStage	[1]	INFO	|10:47:23 Setting next inputs [myinput.txt.testforward, myinput.txt] on stage 3446221, context 520671934 in thread 1 
+bpipe.ReportStatisticsListener	[1]	INFO	|10:47:23 Annotating stage end time testforward 
+bpipe.PipelineStage	[1]	INFO	|10:47:23 Checking files: [myinput.txt.testforward] 
+bpipe.Dependencies	[1]	INFO	|10:47:23 Checking output (s) [myinput.txt.testforward] 
+bpipe.Dependencies	[1]	INFO	|10:47:23  Checking file myinput.txt.testforward 
+bpipe.Dependencies	[1]	INFO	|10:47:23 Checking input (s) [myinput.txt.testforward] 
+bpipe.Dependencies	[1]	INFO	|10:47:23  Checking file myinput.txt.testforward 
+bpipe.PipelineCategory	[1]	INFO	|10:47:23 Next inputs from stage = [myinput.txt.testforward, myinput.txt] 
+bpipe.PipelineCategory	[1]	INFO	|10:47:23 Checking inputs for next stage:  [myinput.txt.testforward, myinput.txt] 
+bpipe.Dependencies	[1]	INFO	|10:47:23 Checking input (s) [myinput.txt.testforward, myinput.txt] 
+bpipe.Dependencies	[1]	INFO	|10:47:23  Checking file myinput.txt.testforward 
+bpipe.Dependencies	[1]	INFO	|10:47:23  Checking file myinput.txt 
+bpipe.Dependencies	[1]	INFO	|10:47:23 Checking input (s) [myinput.txt.testforward, myinput.txt] 
+bpipe.Dependencies	[1]	INFO	|10:47:23  Checking file myinput.txt.testforward 
+bpipe.Dependencies	[1]	INFO	|10:47:23  Checking file myinput.txt 
+bpipe.ReportStatisticsListener	[1]	INFO	|10:47:23 Annotating stage start time echoInput 
+bpipe.PipelineStage	[1]	INFO	|10:47:23 Stage echoInput : INPUT=[myinput.txt.testforward, myinput.txt] OUTPUT=myinput.txt.testforward.echoInput 
+bpipe.PipelineDelegate	[1]	INFO	|10:47:23 Setting or creating a delegate for context 2002275007 body 1469678380/script1417776442663290493037 in thread 1 
+bpipe.PipelineDelegate	[1]	INFO	|10:47:23 Created new delegate bpipe.PipelineDelegate@45937ecf overriding type script1417776442663290493037 in thread 1 
+bpipe.PipelineStage	[1]	INFO	|10:47:23 Stage echoInput returned [myinput.txt.testforward] as default inputs for next stage 
+bpipe.PipelineContext	[1]	INFO	|10:47:23 Setting output [myinput.txt.testforward] on context 2002275007 in thread 1 
+bpipe.PipelineStage	[1]	INFO	|10:47:23 Setting next inputs [myinput.txt.testforward] on stage 1501078446, context 2002275007 in thread 1 
+bpipe.ReportStatisticsListener	[1]	INFO	|10:47:23 Annotating stage end time echoInput 
+bpipe.PipelineStage	[1]	INFO	|10:47:23 Checking files: [myinput.txt.testforward] 
+bpipe.Dependencies	[1]	INFO	|10:47:23 Checking output (s) [myinput.txt.testforward] 
+bpipe.Dependencies	[1]	INFO	|10:47:23  Checking file myinput.txt.testforward 
+bpipe.PipelineContext	[1]	INFO	|10:47:23 Setting output [myinput.txt.testforward] on context 1261997579 in thread 1 
+bpipe.PipelineStage	[1]	INFO	|10:47:23 Setting next inputs [myinput.txt.testforward] on stage 529584787, context 1261997579 in thread 1 
+bpipe.PipelineStage	[1]	INFO	|10:47:23 Checking files: [myinput.txt.testforward] 
+bpipe.Dependencies	[1]	INFO	|10:47:23 Checking output (s) [myinput.txt.testforward] 
+bpipe.Dependencies	[1]	INFO	|10:47:23  Checking file myinput.txt.testforward 
+bpipe.Dependencies	[1]	INFO	|10:47:23 Checking input (s) [myinput.txt.testforward] 
+bpipe.Dependencies	[1]	INFO	|10:47:23  Checking file myinput.txt.testforward 
+bpipe.PipelineCategory	[1]	INFO	|10:47:23 Next inputs from stage = [myinput.txt.testforward] 
+bpipe.PipelineCategory	[1]	INFO	|10:47:23 Checking inputs for next stage:  [myinput.txt.testforward] 
+bpipe.Dependencies	[1]	INFO	|10:47:23 Checking input (s) [myinput.txt.testforward] 
+bpipe.Dependencies	[1]	INFO	|10:47:23  Checking file myinput.txt.testforward 
+bpipe.Dependencies	[1]	INFO	|10:47:23 Checking input (s) [myinput.txt.testforward] 
+bpipe.Dependencies	[1]	INFO	|10:47:23  Checking file myinput.txt.testforward 
+bpipe.ReportStatisticsListener	[1]	INFO	|10:47:23 Annotating stage start time echoAgain 
+bpipe.PipelineStage	[1]	INFO	|10:47:23 Stage echoAgain : INPUT=[myinput.txt.testforward] OUTPUT=myinput.txt.testforward.echoAgain 
+bpipe.PipelineDelegate	[1]	INFO	|10:47:23 Setting or creating a delegate for context 123363017 body 527624866/script1417776442663290493037 in thread 1 
+bpipe.PipelineDelegate	[1]	INFO	|10:47:23 Created new delegate bpipe.PipelineDelegate@6209ae8f overriding type script1417776442663290493037 in thread 1 
+bpipe.PipelineContext	[1]	INFO	|10:47:23 No inputs resolved by input wrappers: outputs based on default myinput.txt.testforward.echoAgain 
+bpipe.PipelineContext	[1]	INFO	|10:47:23 Tracking outputs referenced=[[]] inferred=[[myinput.txt.testforward.echoAgain]] for command cp myinput.txt.testforward myinput.txt.testforward.echoAgain 
+bpipe.ReportStatisticsListener	[1]	INFO	|10:47:23 Intercepted command check for command cp myinput.txt.testforward myinput.txt.testforward.echoAgain 
+bpipe.PipelineContext	[1]	INFO	|10:47:23 Checking actual resolved inputs [myinput.txt.testforward] 
+bpipe.Utils	[1]	INFO	|10:47:23 ===== Check myinput.txt.testforward.echoAgain ===== 
+bpipe.Utils	[1]	INFO	|10:47:23 file doesn't exist: myinput.txt.testforward.echoAgain 
+bpipe.Dependencies	[1]	INFO	|10:47:23 Found these missing / older files: [myinput.txt.testforward.echoAgain] 
+bpipe.Dependencies	[1]	INFO	|10:47:23 Some files are outdated : [myinput.txt.testforward.echoAgain] 
+bpipe.Command	[1]	INFO	|10:47:23 Checking for configuration for command cp 
+bpipe.Command	[1]	INFO	|10:47:23 Default command properties: [executor:local] 
+bpipe.CommandManager	[1]	INFO	|10:47:23 Using config [executor:local] for command 
+bpipe.CommandManager	[1]	INFO	|10:47:23 Created bpipe command id 1 
+bpipe.Concurrency	[1]	INFO	|10:47:23 Thread main requesting for 1 concurrency permit(s) type threads with 32 available 
+bpipe.Concurrency	[1]	INFO	|10:47:23 Thread main acquired resource threads in amount 1 
+bpipe.Command	[15]	INFO	|10:47:23 Command 1 changing state from null to RUNNING 
+bpipe.executor.ThrottledDelegatingCommandExecutor	[1]	INFO	|10:47:23 Waiting for command to complete before releasing 1 resources 
+bpipe.Command	[1]	INFO	|10:47:23 Command 1 changing state from RUNNING to COMPLETE 
+bpipe.executor.ThrottledDelegatingCommandExecutor	[1]	INFO	|10:47:23 Releasing 1 resources 
+bpipe.Concurrency	[1]	INFO	|10:47:23 Thread main releasing 1 threads 
+bpipe.executor.ThrottledDelegatingCommandExecutor	[1]	INFO	|10:47:23 Released 1 resources 
+bpipe.PipelineContext	[1]	INFO	|10:47:23 Using non-default output due to input property reference: myinput.txt.testforward from resolved inputs [myinput.txt.testforward] 
+bpipe.PipelineStage	[1]	INFO	|10:47:23 Stage echoAgain returned [myinput.txt.testforward.echoAgain, myinput.txt.testforward] as default inputs for next stage 
+bpipe.PipelineStage	[1]	INFO	|10:47:23 Using inferred outputs [myinput.txt.testforward.echoAgain] as outputs because no explicit outputs set 
+bpipe.PipelineStage	[1]	INFO	|10:47:23 Setting next inputs [myinput.txt.testforward.echoAgain, myinput.txt.testforward] on stage 1050312287, context 123363017 in thread 1 
+bpipe.Dependencies	[1]	INFO	|10:47:23 Context 123363017 for stage echoAgain has resolved inputs [myinput.txt.testforward] 
+bpipe.Dependencies	[1]	INFO	|10:47:23 Saving output file details to file .bpipe/outputs/echoAgain.myinput.txt.testforward.echoAgain.properties for command cp myinput.txt.testf... 
+bpipe.ReportStatisticsListener	[1]	INFO	|10:47:23 Annotating stage end time echoAgain 
+bpipe.PipelineStage	[1]	INFO	|10:47:23 Checking files: [myinput.txt.testforward.echoAgain] 
+bpipe.Dependencies	[1]	INFO	|10:47:23 Checking output (s) [myinput.txt.testforward.echoAgain] 
+bpipe.Dependencies	[1]	INFO	|10:47:23  Checking file myinput.txt.testforward.echoAgain 
+bpipe.PipelineContext	[1]	INFO	|10:47:23 Setting output [myinput.txt.testforward.echoAgain, myinput.txt.testforward] on context 1101723881 in thread 1 
+bpipe.PipelineStage	[1]	INFO	|10:47:23 Setting next inputs [myinput.txt.testforward.echoAgain, myinput.txt.testforward] on stage 952781765, context 1101723881 in thread 1 
+bpipe.PipelineStage	[1]	INFO	|10:47:23 Checking files: [myinput.txt.testforward.echoAgain, myinput.txt.testforward] 
+bpipe.Dependencies	[1]	INFO	|10:47:23 Checking output (s) [myinput.txt.testforward.echoAgain, myinput.txt.testforward] 
+bpipe.Dependencies	[1]	INFO	|10:47:23  Checking file myinput.txt.testforward.echoAgain 
+bpipe.Dependencies	[1]	INFO	|10:47:23  Checking file myinput.txt.testforward 
+bpipe.Dependencies	[1]	INFO	|10:47:23 Checking input (s) [myinput.txt.testforward.echoAgain, myinput.txt.testforward] 
+bpipe.Dependencies	[1]	INFO	|10:47:23  Checking file myinput.txt.testforward.echoAgain 
+bpipe.Dependencies	[1]	INFO	|10:47:23  Checking file myinput.txt.testforward 
+bpipe.PipelineCategory	[1]	INFO	|10:47:23 Next inputs from stage = [myinput.txt.testforward.echoAgain, myinput.txt.testforward] 
+bpipe.PipelineCategory	[1]	INFO	|10:47:23 Checking inputs for next stage:  [myinput.txt.testforward.echoAgain, myinput.txt.testforward] 
+bpipe.Dependencies	[1]	INFO	|10:47:23 Checking input (s) [myinput.txt.testforward.echoAgain, myinput.txt.testforward] 
+bpipe.Dependencies	[1]	INFO	|10:47:23  Checking file myinput.txt.testforward.echoAgain 
+bpipe.Dependencies	[1]	INFO	|10:47:23  Checking file myinput.txt.testforward 
+bpipe.Dependencies	[1]	INFO	|10:47:23 Checking input (s) [myinput.txt.testforward.echoAgain, myinput.txt.testforward] 
+bpipe.Dependencies	[1]	INFO	|10:47:23  Checking file myinput.txt.testforward.echoAgain 
+bpipe.Dependencies	[1]	INFO	|10:47:23  Checking file myinput.txt.testforward 
+bpipe.ReportStatisticsListener	[1]	INFO	|10:47:23 Annotating stage start time end 
+bpipe.PipelineStage	[1]	INFO	|10:47:23 Stage end : INPUT=[myinput.txt.testforward.echoAgain, myinput.txt.testforward] OUTPUT=myinput.txt.testforward.echoAgain.end 
+bpipe.PipelineDelegate	[1]	INFO	|10:47:23 Setting or creating a delegate for context 1708839974 body 831144399/script1417776442663290493037 in thread 1 
+bpipe.PipelineDelegate	[1]	INFO	|10:47:23 Created new delegate bpipe.PipelineDelegate@19e3f08 overriding type script1417776442663290493037 in thread 1 
+bpipe.PipelineContext	[1]	INFO	|10:47:23 Tracking outputs referenced=[[]] inferred=[[]] for command 
+    echo "This is the end: myinput.txt.testforward.echoAgain"
+   
+bpipe.ReportStatisticsListener	[1]	INFO	|10:47:23 Intercepted command check for command 
+    echo "This is the end: myinput.txt.testforward.echoAgain"
+   
+bpipe.PipelineContext	[1]	INFO	|10:47:23 Checking actual resolved inputs [myinput.txt.testforward.echoAgain] 
+bpipe.Command	[1]	INFO	|10:47:23 Checking for configuration for command echo 
+bpipe.Command	[1]	INFO	|10:47:23 Default command properties: [executor:local] 
+bpipe.CommandManager	[1]	INFO	|10:47:23 Using config [executor:local] for command 
+bpipe.CommandManager	[1]	INFO	|10:47:23 Created bpipe command id 2 
+bpipe.Concurrency	[1]	INFO	|10:47:23 Thread main requesting for 1 concurrency permit(s) type threads with 32 available 
+bpipe.Concurrency	[1]	INFO	|10:47:23 Thread main acquired resource threads in amount 1 
+bpipe.Command	[19]	INFO	|10:47:23 Command 2 changing state from null to RUNNING 
+bpipe.executor.ThrottledDelegatingCommandExecutor	[1]	INFO	|10:47:23 Waiting for command to complete before releasing 1 resources 
+bpipe.Command	[1]	INFO	|10:47:23 Command 2 changing state from RUNNING to COMPLETE 
+bpipe.executor.ThrottledDelegatingCommandExecutor	[1]	INFO	|10:47:23 Releasing 1 resources 
+bpipe.Concurrency	[1]	INFO	|10:47:23 Thread main releasing 1 threads 
+bpipe.executor.ThrottledDelegatingCommandExecutor	[1]	INFO	|10:47:23 Released 1 resources 
+bpipe.PipelineStage	[1]	INFO	|10:47:23 Stage end returned null as default inputs for next stage 
+bpipe.PipelineStage	[1]	INFO	|10:47:23 Removing inferred outputs matching [\.bai$, \.log$] 
+bpipe.PipelineStage	[1]	INFO	|10:47:23 Inferring nextInputs from inputs bpipe.PipelineContext@65dad426.@input 
+bpipe.PipelineContext	[1]	INFO	|10:47:23 Setting output [myinput.txt.testforward.echoAgain, myinput.txt.testforward] on context 1708839974 in thread 1 
+bpipe.PipelineStage	[1]	INFO	|10:47:23 Setting next inputs [myinput.txt.testforward.echoAgain, myinput.txt.testforward] on stage 684975258, context 1708839974 in thread 1 
+bpipe.ReportStatisticsListener	[1]	INFO	|10:47:23 Annotating stage end time end 
+bpipe.PipelineStage	[1]	INFO	|10:47:23 Checking files: [myinput.txt.testforward.echoAgain, myinput.txt.testforward] 
+bpipe.Dependencies	[1]	INFO	|10:47:23 Checking output (s) [myinput.txt.testforward.echoAgain, myinput.txt.testforward] 
+bpipe.Dependencies	[1]	INFO	|10:47:23  Checking file myinput.txt.testforward.echoAgain 
+bpipe.Dependencies	[1]	INFO	|10:47:23  Checking file myinput.txt.testforward 
+bpipe.PipelineContext	[1]	INFO	|10:47:23 Setting output [myinput.txt.testforward.echoAgain, myinput.txt.testforward] on context 1127338654 in thread 1 
+bpipe.PipelineStage	[1]	INFO	|10:47:23 Setting next inputs [myinput.txt.testforward.echoAgain, myinput.txt.testforward] on stage 1109639184, context 1127338654 in thread 1 
+bpipe.PipelineStage	[1]	INFO	|10:47:23 Checking files: [myinput.txt.testforward.echoAgain, myinput.txt.testforward] 
+bpipe.Dependencies	[1]	INFO	|10:47:23 Checking output (s) [myinput.txt.testforward.echoAgain, myinput.txt.testforward] 
+bpipe.Dependencies	[1]	INFO	|10:47:23  Checking file myinput.txt.testforward.echoAgain 
+bpipe.Dependencies	[1]	INFO	|10:47:23  Checking file myinput.txt.testforward 
+bpipe.Pipeline	[1]	INFO	|10:47:23 Pipeline segment  in thread 1 has finished normally 
+bpipe.Pipeline	[1]	INFO	|10:47:23 Finished running segment for inputs myinput.txt 
+bpipe.Pipeline	[1]	INFO	|10:47:23 adding stage testforward from pipeline bpipe.Pipeline@1efe2851 
+bpipe.Pipeline	[1]	INFO	|10:47:23 adding stage echoInput from pipeline bpipe.Pipeline@1efe2851 
+bpipe.Pipeline	[1]	INFO	|10:47:23 adding stage echoAgain from pipeline bpipe.Pipeline@1efe2851 
+bpipe.Pipeline	[1]	INFO	|10:47:23 adding stage end from pipeline bpipe.Pipeline@1efe2851 
+bpipe.Dependencies	[22]	INFO	|10:47:23 Reading property file .bpipe/outputs/echoAgain.myinput.txt.testforward.echoAgain.properties 
+bpipe.Utils	[1]	INFO	|10:47:23 Output folder scan (concurrency=5) executed in 0.018 seconds 
+bpipe.Dependencies	[1]	INFO	|10:47:23 External inputs: [[myinput.txt.testforward]] for outputs [myinput.txt.testforward.echoAgain] 
+bpipe.Dependencies	[1]	INFO	|10:47:23 There are 1 output groups 
+bpipe.Dependencies	[1]	INFO	|10:47:23 Subtracting 1 remaining outputs from 1 total outputs 
+bpipe.Dependencies	[1]	INFO	|10:47:23 There are 0 remaining outputs 
+bpipe.Dependencies	[1]	INFO	|10:47:23  myinput.txt.testforward.echoAgain / entry 1184375689  
+bpipe.Dependencies	[1]	INFO	|10:47:23 myinput.txt.testforward.echoAgain is newer than input files 
+bpipe.Dependencies	[1]	INFO	|10:47:23 ====Finished Output Graph===== 
+bpipe.ReportGenerator	[1]	INFO	|10:47:23 Searching for template in /lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/src/main/html/bpipe 
+bpipe.ReportGenerator	[1]	INFO	|10:47:23 Generating report to /lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/tests/forward_multi/doc/index.html 
+bpipe.PipelineContext	[1]	INFO	|10:47:24 Using previously set output: [myinput.txt.testforward] 
+bpipe.PipelineContext	[1]	INFO	|10:47:24 Using previously set output: [myinput.txt.testforward] 
+bpipe.PipelineContext	[1]	INFO	|10:47:24 Using previously set output: [myinput.txt.testforward] 
+bpipe.PipelineContext	[1]	INFO	|10:47:24 Using previously set output: [myinput.txt.testforward] 
+bpipe.PipelineContext	[1]	INFO	|10:47:24 Using previously set output: [myinput.txt.testforward] 
+bpipe.PipelineContext	[1]	INFO	|10:47:24 Using previously set output: [myinput.txt.testforward] 
+bpipe.PipelineContext	[1]	INFO	|10:47:24 Using previously set output: [myinput.txt.testforward.echoAgain] 
+bpipe.PipelineContext	[1]	INFO	|10:47:24 Using previously set output: [myinput.txt.testforward.echoAgain] 
+bpipe.PipelineContext	[1]	INFO	|10:47:24 Using previously set output: [myinput.txt.testforward.echoAgain] 
+bpipe.PipelineContext	[1]	INFO	|10:47:24 Using previously set output: [myinput.txt.testforward.echoAgain, myinput.txt.testforward] 
+bpipe.PipelineContext	[1]	INFO	|10:47:24 Using previously set output: [myinput.txt.testforward.echoAgain, myinput.txt.testforward] 
+bpipe.PipelineContext	[1]	INFO	|10:47:24 Using previously set output: [myinput.txt.testforward.echoAgain, myinput.txt.testforward] 
+bpipe.Dependencies	[23]	INFO	|10:47:24 Reading property file .bpipe/outputs/echoAgain.myinput.txt.testforward.echoAgain.properties 
+bpipe.Utils	[1]	INFO	|10:47:24 Output folder scan (concurrency=5) executed in 0.005 seconds 
+bpipe.Dependencies	[1]	INFO	|10:47:24 External inputs: [[myinput.txt.testforward]] for outputs [myinput.txt.testforward.echoAgain] 
+bpipe.Dependencies	[1]	INFO	|10:47:24 There are 1 output groups 
+bpipe.Dependencies	[1]	INFO	|10:47:24 Subtracting 1 remaining outputs from 1 total outputs 
+bpipe.Dependencies	[1]	INFO	|10:47:24 There are 0 remaining outputs 
+bpipe.Dependencies	[1]	INFO	|10:47:24  myinput.txt.testforward.echoAgain / entry 1213900382  
+bpipe.Dependencies	[1]	INFO	|10:47:24 myinput.txt.testforward.echoAgain is newer than input files 
+bpipe.Dependencies	[1]	INFO	|10:47:24 ====Finished Output Graph===== 
+bpipe.Pipeline	[1]	INFO	|10:47:24 Output is myinput.txt.testforward.echoAgain 

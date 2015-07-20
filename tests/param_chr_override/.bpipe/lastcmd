@@ -1,0 +1,1 @@
+/nfs/users/nfs_c/cgppipe/canpipe/software/bpipe_git/tests/param_chr_override/../../bin/bpipe run -L chr2 test.groovy test.txt

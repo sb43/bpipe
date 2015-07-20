@@ -52,7 +52,11 @@ class Forwarder extends TimerTask {
      * to appear
      */
     static long MAX_FLUSH_WAIT = 10000
-   
+    //bsub job id
+    private String bsubJobid
+    private String CMD_EXIT_FILE 
+    //define error state here if we see EXIT state of job  once it should not be reinitialised to 0
+    private LsfExit = [:]
     /**
      * The list of files that are being 'tailed'
      */
@@ -68,13 +72,20 @@ class Forwarder extends TimerTask {
      */
     Map<File, OutputStream> fileDestinations = [:]
     
-    Forwarder(File f, OutputStream out) {
-        forward(f,out)
-    }
+   // Forwarder(File f, OutputStream out) {
+   //    forward(f,out)
+   //  }
    
-    void forward(File file, OutputStream out) {
+    Forwarder(File f, OutputStream out, String jobid) {
+	forward(f,out,jobid)
+    }
+    void forward(File file, OutputStream out, String jobid) {
+	bsubJobid = jobid
         synchronized(files) {
             files << file
+	    // get file name without extension
+	    CMD_EXIT_FILE=file.absolutePath.lastIndexOf('.').with {it != -1 ? file.absolutePath[0..<it] : file.absolutePath}
+	    //
             fileDestinations[file] = out
             filePositions[file] = file.exists()? file.length() : 0L
         }
@@ -87,7 +98,7 @@ class Forwarder extends TimerTask {
             filePositions.remove(file)
         }
     }
-    
+
     /**
      * Attempt to wait until all the expected files exist, then run forwarding
      */
@@ -115,23 +126,37 @@ class Forwarder extends TimerTask {
         }
         this.run()
     }
-    
     @Override
     public void run() {
         List<File> scanFiles
         synchronized(files) {
             try {
-                scanFiles = files.clone().grep { it.exists() }
+                
+		String FileName="${CMD_EXIT_FILE}.exit"
+		// sb43 method to check bsub status
+		if(bsubJobid && !(new File(FileName).exists() )) {
+			int state_exit = 0
+			int state_run = 0
+			int state_done = 0
+			(state_exit, state_run, state_done)=parseBjobs(bsubJobid,FileName)
+			log.info "Current bsub job[$bsubJobid] status: EXIT:$state_exit RUN:$state_run DONE:$state_done"
+		}
+// check if .exit file exists which is indication of job completion
+		if(new File(FileName).exists()){
+			return
+		}
+		// method call completed 
+		scanFiles = files.clone().grep { it.exists() }
                 byte [] buffer = new byte[8096]
                 log.info "Scanning ${scanFiles.size()} / ${files.size()} files "
                 for(File f in scanFiles) {
                     try {
                         f.withInputStream { ifs ->
                             long skip = filePositions[f]
-                            ifs.skip(skip)
+			    ifs.skip(skip)
                             int count = ifs.read(buffer)
                             if(count < 0) {
-                                log.info "No chars to read from ${f.absolutePath} (size=${f.length()})"
+                                log.info "No chars to read from ${f.absolutePath} (size=${f.length()}) "
                                 return
                             }
                             
@@ -144,6 +169,7 @@ class Forwarder extends TimerTask {
                         }
                     }
                     catch(Exception e) {
+                        //log.warning "Unable to read file $f  $bsubJobid"
                         log.warning "Unable to read file $f"
                         e.printStackTrace()
                     }
@@ -155,4 +181,76 @@ class Forwarder extends TimerTask {
             }
         }
     }
+
+/* 
+* sb43 method to parse bjobs output
+* Takes bjobs output stream a input and parse parse each line to get value of STAT column
+* if stat colum shows EXIT then bpipe will terminate the process only if there is no other 
+* jobs in same array with STAT other than EXIT or DONE present 
+* -w to get bjobs output in one line
+*/
+    def parseBjobs(bsubJobid,FileName) {
+	
+	int counter = 0
+	int state_e = 0 // EXIT
+	int state_r = 0 // RUNNING
+	int state_d = 0 // DONE 
+	
+	def bjobsCmd="bjobs -w "+bsubJobid
+	ProcessBuilder bj = new ProcessBuilder("bash", "-c", bjobsCmd)
+	Process b = bj.start()
+	Utils.withStreams(b) {
+		StringBuilder out = new StringBuilder()
+		StringBuilder err = new StringBuilder()
+		b.waitForProcessOutput(out, err)
+		int exitValue = b.waitFor()
+		// non zero exit value: bsub  not executed
+		if(exitValue != 0) {
+			reportStartError(bjobsCmd, out,err,exitValue)
+			throw new PipelineError("Failed to start command:\n\n$bjobsCmd")
+		}
+		if(err && exitValue == 0) {
+			
+			log.info "bsub job : $bsubJobid job not yet started"
+			
+		}
+		// parse bjobs output
+		if(out && exitValue == 0) {
+		    def job_array=out.toString().split('\n').collect{it as String}
+		    for ( line in job_array) {
+			    counter++
+			    def job_line = line.split().collect{it as String}
+			    if(job_line[2] == "EXIT" && counter > 1 ) {
+			      LsfExit[(line)] = 1
+			      state_e = 1
+			    }
+			    if(job_line[2] != null && job_line[2] != "EXIT" && job_line[2] != "DONE" && counter >1) {
+			      state_r = 1
+			      //one job evidence sufficient to keep bpipe running
+			      break
+			    }
+			    if(job_line[2] == "DONE" && counter >1) {
+			      state_d = 1
+			    }
+		    }
+		    // Create file with exit status non zero if we find one of the array job has non exit status		
+		    if(state_e && !state_r) {
+		      log.info "Exit status written in $FileName"
+		      new File(FileName).write("1")
+		      // print jobs with EXIT status 
+		      LsfExit.each {
+		          	println it.key
+			  }
+		    }
+		    // Create file with exit status zero if we did not see job status EXIT and all the jobs are completed		
+		    if(!state_e && !state_r && state_d) {
+		      log.info "Exit status written in $FileName"
+		      new File(FileName).write("0")
+		    }
+		}
+	}
+	return [state_e, state_r, state_d]
+    }
+// end of bjobs methods
+
 }

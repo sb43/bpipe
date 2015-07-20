@@ -1,0 +1,72 @@
+
+
+
+
+####################################################################################################
+# Starting pipeline at Wed Nov 26 10:25:24 GMT 2014
+# Input files:  null
+# Output Log:  .bpipe/logs/17870.log
+# Stage hello
+echo hello > test.txt
+# Stage world
+echo world > test.world.txt
+# Stage external
+echo "This is an external stage"
+echo external > test.external.txt
+# Stage another
+# Stage jupiter
+echo jupiter > test.jupiter.txt
+# Stage saturn
+echo saturn > test.saturn.txt
+# Stage mars
+echo mars > test.mars.txt
+# ################ Finished at Wed Nov 26 10:25:26 GMT 2014 Duration = 1.542 seconds #################
+
+
+
+
+
+####################################################################################################
+# Starting pipeline at Fri Dec 05 10:24:53 GMT 2014
+# Input files:  null
+# Output Log:  .bpipe/logs/1483.log
+# Stage hello
+echo hello > test.txt
+# Stage world
+echo world > test.world.txt
+# Stage external
+echo "This is an external stage"
+echo external > test.external.txt
+# Stage another
+# Stage jupiter
+echo jupiter > test.jupiter.txt
+# Stage saturn
+echo saturn > test.saturn.txt
+# Stage mars
+echo mars > test.mars.txt
+# ################ Finished at Fri Dec 05 10:24:54 GMT 2014 Duration = 1.495 seconds #################
+
+
+
+
+
+####################################################################################################
+# Starting pipeline at Fri Dec 05 10:37:38 GMT 2014
+# Input files:  null
+# Output Log:  .bpipe/logs/20108.log
+# Stage hello
+echo hello > test.txt
+# Stage world
+echo world > test.world.txt
+# Stage external
+echo "This is an external stage"
+echo external > test.external.txt
+# Stage another
+# Stage jupiter
+echo jupiter > test.jupiter.txt
+# Stage saturn
+echo saturn > test.saturn.txt
+# Stage mars
+echo mars > test.mars.txt
+# ################ Finished at Fri Dec 05 10:37:39 GMT 2014 Duration = 1.558 seconds #################
+

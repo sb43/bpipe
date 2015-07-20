@@ -1,0 +1,1 @@
+/nfs/users/nfs_c/cgppipe/canpipe/software/bpipe_git/tests/resource_limit/../../bin/bpipe run -l db=1 test.groovy

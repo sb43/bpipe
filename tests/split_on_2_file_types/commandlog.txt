@@ -1,0 +1,22 @@
+
+####################################################################################################
+# Starting pipeline at Wed Nov 26 10:28:12 GMT 2014
+# Input files:  [s1_macs_sort.macs.bed, s2_macs_sort.macs.bed, s1_ccat_sort.ccat.peak, s2_ccat_sort.ccat.peak]
+# Output Log:  .bpipe/logs/21666.log
+# Stage intersectBed [s2]
+# Stage intersectBed [s1]
+cat s2_macs_sort.macs.bed s2_ccat_sort.ccat.peak > s2_macs_sort.macs.intersect.bed
+cat s1_macs_sort.macs.bed s1_ccat_sort.ccat.peak > s1_macs_sort.macs.intersect.bed
+# ################ Finished at Wed Nov 26 10:28:13 GMT 2014 Duration = 0.996 seconds #################
+
+
+####################################################################################################
+# Starting pipeline at Fri Dec 05 10:40:26 GMT 2014
+# Input files:  [s1_macs_sort.macs.bed, s2_macs_sort.macs.bed, s1_ccat_sort.ccat.peak, s2_ccat_sort.ccat.peak]
+# Output Log:  .bpipe/logs/23953.log
+# Stage intersectBed [s2]
+# Stage intersectBed [s1]
+cat s1_macs_sort.macs.bed s1_ccat_sort.ccat.peak > s1_macs_sort.macs.intersect.bed
+cat s2_macs_sort.macs.bed s2_ccat_sort.ccat.peak > s2_macs_sort.macs.intersect.bed
+# ################ Finished at Fri Dec 05 10:40:27 GMT 2014 Duration = 1.119 seconds #################
+

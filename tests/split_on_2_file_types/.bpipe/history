@@ -1,0 +1,1 @@
+23953	bpipe run -r test.groovy s1_macs_sort.macs.bed s2_macs_sort.macs.bed s1_ccat_sort.ccat.peak s2_ccat_sort.ccat.peak

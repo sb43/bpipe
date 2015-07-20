@@ -1,0 +1,18 @@
+
+####################################################################################################
+# Starting pipeline at Wed Nov 26 10:28:16 GMT 2014
+# Input files:  test.txt
+# Output Log:  .bpipe/logs/21749.log
+# Stage hello
+mkdir -p foo; cp test.txt foo/test.out.txt
+# ################ Finished at Wed Nov 26 10:28:17 GMT 2014 Duration = 0.585 seconds #################
+
+
+####################################################################################################
+# Starting pipeline at Fri Dec 05 10:40:30 GMT 2014
+# Input files:  test.txt
+# Output Log:  .bpipe/logs/24049.log
+# Stage hello
+mkdir -p foo; cp test.txt foo/test.out.txt
+# ################ Finished at Fri Dec 05 10:40:30 GMT 2014 Duration = 0.597 seconds #################
+

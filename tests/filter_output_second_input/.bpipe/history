@@ -1,0 +1,1 @@
+29715	bpipe run -r test.groovy test.vcf test.bam
