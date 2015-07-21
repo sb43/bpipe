@@ -1,1 +1,0 @@
-/nfs/users/nfs_c/cgppipe/canpipe/software/bpipe_git/tests/from_plus_prior_input/../../bin/bpipe run -r test.groovy test.vcf test.bam

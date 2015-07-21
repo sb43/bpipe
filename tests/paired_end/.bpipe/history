@@ -1,1 +1,0 @@
-23022	bpipe run -r test.groovy test1.fastq test2.fastq ref.fa

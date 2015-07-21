@@ -1,4 +1,0 @@
-13416	bpipe run -r test.groovy test1.gz test2.gz
-13523	bpipe run -r test.groovy test1.gz test2.gz
-13610	bpipe run -r test.groovy test1.gz test2.gz
-13711	bpipe run -r test.groovy test1.gz test2.gz

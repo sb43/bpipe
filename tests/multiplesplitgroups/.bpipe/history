@@ -1,1 +1,0 @@
-19852	bpipe run -r test.groovy s_1_ignore_a_1.txt s_1_ignore_a_2.txt s_1_ignore_b_1.txt s_1_ignore_b_2.txt s_2_ignore_a_1.txt s_2_ignore_a_2.txt s_2_ignore_b_1.txt s_2_ignore_b_2.txt

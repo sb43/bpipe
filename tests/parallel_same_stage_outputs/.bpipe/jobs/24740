@@ -1,1 +1,0 @@
-/nfs/users/nfs_c/cgppipe/canpipe/software/bpipe_git/tests/parallel_same_stage_outputs/../../bin/bpipe run -n 1 test.groovy s_1.txt
