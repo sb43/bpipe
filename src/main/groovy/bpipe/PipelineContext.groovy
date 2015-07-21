@@ -1342,7 +1342,10 @@ class PipelineContext {
      * @see #async(Closure, String)
      */
     void exec(String cmd, boolean joinNewLines, String config=null) {
-        
+      // added to trap the signal from LSF sb43@sanger.ac.uk
+      //def trap_exit = '; trap \'\' 2 3 9 15'
+      //cmd = cmd + trap_exit
+      //end of my editing
       log.info "Tracking outputs referenced=[$referencedOutputs] inferred=[$inferredOutputs] for command $cmd" 
       
       this.referencedOutputs += inferredOutputs

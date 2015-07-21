@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 =========== Changes for Bpipe Version 0.9.8.8 ============
 
    - fix: commands run using torque / pbs not using -e flag for bash,
@@ -167,6 +168,15 @@
     
    - Performance optimisations for systems where canonicalPath is
      very slow, better logging to resolve dependency issues 
+=======
+========== This is local release for CanPipe 0.9.8.6c2 =======
+	- Compiled and cleaned build folder
+
+========== This is local release for CanPipe 0.9.8.6c1 =======
+	- added LSF array job support
+
+	- Lsf exit status properly handled
+>>>>>>> dev
 
 =========== Changes for Bpipe Version 0.9.8.6 ============
 

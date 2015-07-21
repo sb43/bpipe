@@ -109,15 +109,24 @@ class LsfCommandExecutor implements CommandExecutor {
 		
 		/*
 		 * Create 'cmd.sh' wrapper used by the 'bsub' command
+		 *
+		 * cmdWrapperScript.text =  
+		 *	"""\
+		 *	#!/bin/bash
+		 *	(${cmd}) > $jobDir/$CMD_OUT_FILENAME
+		 *	result=\$?
+		 *	echo -n \$result > $jobDir/$CMD_EXIT_FILENAME
+		 *	exit \$result
+		 *	"""
+		 *	.stripIndent()
 		 */
 		def cmdWrapperScript = new File(jobDir, CMD_SCRIPT_FILENAME)
 		cmdWrapperScript.text =  
 			"""\
-			#!/bin/sh
+			#!/bin/bash
+			set -exu
+      set -o pipefail
 			(${cmd}) > $jobDir/$CMD_OUT_FILENAME
-			result=\$?
-			echo -n \$result > $jobDir/$CMD_EXIT_FILENAME
-			exit \$result
 			"""
 			.stripIndent()
             
@@ -194,15 +203,17 @@ class LsfCommandExecutor implements CommandExecutor {
 				
 			log.info "Started command with id $commandId"
 		}
-
-
+	
         // After starting the process, we launch a background thread that waits for the error
         // and output files to appear and then forward those inputs
-        forward("$jobDir/$CMD_OUT_FILENAME", System.out)
-        forward("$jobDir/$CMD_ERR_FILENAME", System.err)
-		
+	// sb43: pass commandId to monitor job arrays
+	
+	//forward("$jobDir/$CMD_OUT_FILENAME_BSUB",System.out)
+	//forward("$jobDir/$CMD_EXIT_FILENAME_BSUB",System.err)
+        forward("$jobDir/$CMD_OUT_FILENAME", System.out, commandId)
+        forward("$jobDir/$CMD_ERR_FILENAME", System.err, commandId)
+			
     }
-
 
     static final Pattern JOB_PATTERN = Pattern.compile('^Job <(\\d+)> .*$');
 
@@ -260,7 +271,7 @@ class LsfCommandExecutor implements CommandExecutor {
 		return CommandStatus.COMPLETE
 		
     }
-
+		
     /**
      * Wait for the sub termination
      * @return The program exit code. Zero when everything is OK or a non-zero on error
@@ -297,6 +308,9 @@ class LsfCommandExecutor implements CommandExecutor {
         return -1
     }
 
+
+	
+
     /**
      * Kill the job execution
      *
@@ -310,7 +324,7 @@ class LsfCommandExecutor implements CommandExecutor {
 
 
 		String cmd = "bkill $commandId"
-		log.info "Executing command to stop command $id: $cmd"
+		log.info "Executing command to stop command $id bsubid $commandId : $cmd"
 
 		int exitValue
 		StringBuilder err

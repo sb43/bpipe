@@ -287,8 +287,7 @@ class Dependencies {
      * 
      * @param outputs
      * @param inputs
-     * @return  true iff file is newer than all inputs, but older than all 
-     *          non-up-to-date outputs
+     * @return
      */
     boolean checkUpToDate(def outputs, def inputs) {
         
@@ -320,22 +319,14 @@ class Dependencies {
             log.info "Found these missing / older files: " + older
         }
         
-        GraphEntry graph = this.getOutputGraph()
+        def graph = this.getOutputGraph()
         
-        def outDated = older.collect { it.canonicalPath }.grep { out ->
+        def outDated = older.collect { it.name }.grep { out ->
              def p = graph.propertiesFor(out); 
-             if(!p || !p.cleaned)  {
-                 if(!p)
-                     log.info "Output properties file is not available for $out: assume NOT cleaned up"
-                 else
-                     log.info "Output properties are available, indicating file was NOT cleaned up"
-                     
+             if(!p || !p.cleaned) 
                  return true 
-             }
-             else {
-                 log.info "File $out has output properties available: upToDate=$p.upToDate"
+             else 
                  return !p.upToDate
-             }
         }
         
         if(!outDated) {
@@ -505,7 +496,6 @@ class Dependencies {
             p.outputFile = p.outputFile.path
             
         File outputFile = new File(p.outputFile)
-        
         if(outputFile.exists())    
             p.timestamp = String.valueOf(outputFile.lastModified())
         else
@@ -895,15 +885,15 @@ class Dependencies {
 //                
 //                log.info "Values: " + entry.parents*.values
 //                
-                def newerInputs = findNewerInputs(p, inputValues)
-                
+                def newerInputs = inputValues.grep { 
+                    log.info "Input $it.outputPath? " + p.inputs.contains(it.outputPath)
+                    p.inputs.contains(it.outputPath) && it?.maxTimestamp >= p.timestamp
+                }
                 if(newerInputs) {
                     p.upToDate = false
-                    log.info "$p.outputFile is older than inputs " +
-                       (newerInputs.collect { it.outputFile.name + ' / ' + it.timestamp + ' / ' + it.maxTimestamp + ' vs ' + p.timestamp })
+                    log.info "$p.outputFile is older than inputs " + (newerInputs.collect { it.outputFile.name + ' / ' + it.timestamp + ' / ' + it.maxTimestamp + ' vs ' + p.timestamp })
                     continue
                 }
-                
                 log.info "$p.outputPath is newer than input files"
 
                 // The entry may still not be up to date if it
