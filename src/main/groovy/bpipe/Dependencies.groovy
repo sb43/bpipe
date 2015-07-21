@@ -26,9 +26,9 @@
 package bpipe
 
 import groovy.util.logging.Log;
-
 import groovyx.gpars.GParsPool
 import groovy.time.TimeCategory;
+import groovy.transform.CompileStatic;
 
 /**
  * A node in the dependency graph representing a set of outputs
@@ -43,6 +43,13 @@ class GraphEntry {
     List<GraphEntry> parents = []
     List<GraphEntry> children = []
     
+    /**
+     * An optional index to speed up lookups by canonical path - not populated by default,
+     * but can be populated by using index()
+     */
+    Map<String, GraphEntry> index = null
+    
+    @CompileStatic
     GraphEntry findBy(Closure c) {
         if(this.values != null && values.any { c(it) })
             return this
@@ -51,6 +58,20 @@ class GraphEntry {
            def result = child.findBy(c)
            if(result)
                return result;
+        }
+    }
+    
+    @CompileStatic
+    void index(int sizeHint) {
+        Utils.time("Index output graph") {
+            Map<String, GraphEntry> indexTmp = new HashMap(sizeHint)
+            depthFirst { GraphEntry e ->
+                if(e.values) {
+                    for(Properties p in e.values) {
+                        indexTmp[(String)p.canonicalPath] = e
+                    }
+                }
+            }
         }
     }
     
@@ -73,10 +94,37 @@ class GraphEntry {
     /**
      * Search the graph for entry with given outputfile
      */
-    GraphEntry entryFor(String outputFile) {
+    @CompileStatic
+    GraphEntry entryFor(File outputFile) {
         // In case of non-default output directory, the outputFile itself may be in a directory
-        File outputFileFile = new File(outputFile)
-        findBy { it.outputFile.canonicalPath == outputFileFile.canonicalPath }
+        final String outputFilePath = outputFile.canonicalPath
+        return entryForCanonicalPath(outputFilePath)
+    }
+    
+    @CompileStatic
+    GraphEntry entryForCanonicalPath(String canonicalPath) {
+        GraphEntry entry = index?.get(canonicalPath)
+        if(entry)
+            return entry
+        // In case of non-default output directory, the outputFile itself may be in a directory
+        findBy { Properties p -> canonicalPathFor(p) == canonicalPath  }
+    }
+    
+     /**
+     * getCanonicalPath can be very slow on some systems, so 
+     * this method caches them in the property file itself.
+     * 
+     * @param p
+     * @return
+     */
+    @CompileStatic
+    static String canonicalPathFor(Properties p) {
+        synchronized(p) {
+            if(p.containsKey("canonicalPath"))
+                return p["canonicalPath"]        
+                
+            p["canonicalPath"] = ((File)p["outputFile"]).canonicalPath
+        }
     }
     
     /**
@@ -84,13 +132,13 @@ class GraphEntry {
      */
     Properties propertiesFor(String outputFile) { 
        // In case of non-default output directory, the outputFile itself may be in a directory
-       File outputFileFile = new File(outputFile)
-       def values = entryFor(outputFile)?.values
+       String outputFilePath = new File(outputFile).canonicalPath
+       def values = entryForCanonicalPath(outputFilePath)?.values
        if(!values)
            return null
            
        for(def o in values) {
-           if(o.outputFile.canonicalPath == outputFileFile.canonicalPath) {
+           if(canonicalPathFor(o) == outputFilePath) {
                return o
            }
        }
@@ -115,7 +163,7 @@ class GraphEntry {
      * Filter the graph so that only paths containing the specified output remain
      */
     GraphEntry filter(String output) {
-        GraphEntry outputEntry = this.entryFor(output)
+        GraphEntry outputEntry = this.entryFor(new File(output))
         
         if(!outputEntry)
             return null
@@ -299,19 +347,20 @@ class Dependencies {
      *
      * @param f     a String or collection of Strings representing file names
      */
-    void checkFiles(def fileNames, type="input") {
+    void checkFiles(def fileNames, Aliases aliases, type="input") {
         
         log.info "Checking $type (s) " + fileNames
         
         GraphEntry graph = this.getOutputGraph()
-        List missing = Utils.box(fileNames).grep { String.valueOf(it) != "null" }.collect { new File(it.toString()) }.grep { File f ->
+        List missing = Utils.box(fileNames).grep { String.valueOf(it) != "null" }.collect { new File(aliases[it.toString()]) }.grep { File f ->
             
             log.info " Checking file $f"
-            if(f.exists())
-                return false
+            if(Utils.fileExists(f))
+                return false // not missing
                 
             Properties p = graph.propertiesFor(f.path)
             if(!p) {
+                log.info "There are no properties for $f.path and file is missing"
                 return true
             }
             
@@ -331,8 +380,11 @@ class Dependencies {
 
     
     synchronized GraphEntry getOutputGraph() {
-        if(this.outputGraph == null)
-            this.outputGraph = computeOutputGraph(scanOutputFolder())
+        if(this.outputGraph == null) {
+            List<Properties> propertiesFiles = scanOutputFolder()
+            this.outputGraph = computeOutputGraph(propertiesFiles)
+            this.outputGraph.index(propertiesFiles.size()*2)
+        }
         return this.outputGraph
     }
     
@@ -346,6 +398,7 @@ class Dependencies {
      * if the pipeline is re-executed.
      */
     synchronized void saveOutputs(PipelineContext context, List<File> oldFiles, Map<File,Long> timestamps, List<String> inputs) {
+
         GraphEntry root = getOutputGraph()
         
         // Get the full branch path of this pipeline stage
@@ -384,7 +437,7 @@ class Dependencies {
                 
                 Properties p = new Properties()
                 if(file.exists()) {
-                    p = readOutputPropertyFile(file)
+                    p = readOutputPropertyFile(file)?:p
                 }
                 
                 String hash = Utils.sha1(cmd+"_"+o)
@@ -401,6 +454,8 @@ class Dependencies {
                 p.propertyFile = file.name
                 p.inputs = allInputs.join(',')?:''
                 p.outputFile = o
+                p.basePath = Runner.runDirectory
+                p.canonicalPath = new File(o).canonicalPath
                 p.fingerprint = hash
                 
                 p.tools = context.documentation["tools"].collect { name, Tool tool -> tool.fullName + ":"+tool.version }.join(",")
@@ -488,6 +543,7 @@ class Dependencies {
         def graph
         Thread t = new Thread({
           graph = computeOutputGraph(outputs)
+          graph.index(outputs.size()*2)
         })
         t.start()
         
@@ -858,9 +914,14 @@ class Dependencies {
                 log.info "$p.outputFile was cleaned"
                 log.info "Checking  " + entry.children*.values*.outputPath + " from " + entry.children.size() + " children"
                 if(entry.children) {
-                    p.upToDate = entry.children.every { it.values*.upToDate.every() }
+                    
+                    List<GraphEntry> outOfDateChildren = entry.children.grep { c -> c.values.grep { !it.upToDate }*.outputPath  }.flatten()
+                    
+//                    p.upToDate = entry.children.every { it.values*.upToDate.every() }
+                    p.upToDate = outOfDateChildren.empty
+                    
                     if(!p.upToDate)
-                        log.info "Output $p.outputFile is not up to date because one or more children are not up to date"
+                        log.info "Output $p.outputFile is not up to date because ${outOfDateChildren*.values*.outputFile} are not up to date"
                     else
                         log.info "Output $p.outputFile is up to date because all its children are"
                 }
@@ -876,6 +937,41 @@ class Dependencies {
         return rootTree
     }
     
+    List<Properties> findNewerInputs(Properties p, List<Properties> inputValues) {
+        inputValues.grep { Properties inputProps ->
+                    
+            if(!p.inputs.contains(inputProps.outputPath)) // Not an input used to produce this output
+                return false
+                        
+            log.info "Checking timestamp of $p.outputFile vs input $inputProps.outputPath"
+            if(inputProps?.maxTimestamp < p.timestamp) { // inputs unambiguously older than output 
+                return false
+            }
+                    
+            if(inputProps?.maxTimestamp > p.timestamp) // inputs unambiguously newer than output
+                return true
+            
+            // Problem: many file systems only record timestamps at a very coarse level. 
+            // 1 second resolution is common, but even 1 minute is possible. In these cases
+            // commands that run fast enough produce output files that have equal timestamps
+            // To differentiate these cases we check the start and stop times of the 
+            // actual commands that produced the file
+            if(!inputProps.stopTimeMs)
+                return true // we don't know when the command that produced the input finished
+                            // so have to assume the input could have come after
+                
+            if(!p.createTimeMs) 
+                return false // don't know when the command that produced this output started,
+                             // so have to assume the command that made the input might have
+                             // done it after
+                
+            // Return true if the command that made the input stopped after the command that 
+            // created the output. ie: that means the input is newer, even though it has the
+            // same timestamp
+            return inputProps.stopTimeMs >= p.createTimeMs
+       } 
+    }
+    
     /**
      * Read all the properties files in the output folder
      * @return
@@ -885,10 +981,17 @@ class Dependencies {
         List result = []
         Utils.time("Output folder scan (concurrency=$concurrency)") {
             GParsPool.withPool(concurrency) { 
-                List<File> files = new File(PipelineContext.OUTPUT_METADATA_DIR).listFiles()?.toList()
+                List<File> files = 
+                               new File(PipelineContext.OUTPUT_METADATA_DIR).listFiles()
+                               ?.toList()
+                                .grep { !it.name.startsWith(".") && !it.isDirectory() } // ignore files starting with ., 
+                                                                   // added as a convenience because I occasionally
+                                                                   // edit files in output folder when debugging and it causes
+                                                                   // Bpipe to fail!
+                                
                 if(!files)
                     return []
-                result.addAll(files.collectParallel { readOutputPropertyFile(it) }.sort { it.timestamp })
+                result.addAll(files.collectParallel { readOutputPropertyFile(it) }.grep { it != null }.sort { it.timestamp })
             }
         }
         return result
@@ -904,14 +1007,18 @@ class Dependencies {
         new FileInputStream(f).withStream { p.load(it) }
         p.inputs = p.inputs?p.inputs.split(",") as List : []
         p.cleaned = p.containsKey('cleaned')?Boolean.parseBoolean(p.cleaned) : false
-        if(!p.outputFile)
-            throw new IllegalStateException("Error: output meta data property file $f is missing essential information.")
+        if(!p.outputFile)  {
+            log.warning("Error: output meta data property file $f is missing essential outputFile property")
+            System.err.println ("Error: output meta data property file $f is missing essential outputFile property")
+            System.err.println ("Properties are: " + p)
+            return null
+        }
             
         p.outputFile = new File(p.outputFile)
         
         // Normalizing the slashes in the path is necessary for Cygwin compatibility
         p.outputPath = p.outputFile.path.replaceAll("\\\\","/")
-
+        
         // If the file exists then we should get the timestamp from there
         // Otherwise just use the timestamp recorded
         if(p.outputFile.exists())
@@ -919,6 +1026,13 @@ class Dependencies {
         else
             p.timestamp = Long.parseLong(p.timestamp)
 
+        // The properties file may have a cached version of the "canonical path" to the
+        // output file. However this is an absolute path, so we can only use it if the
+        // base directory is still the same as when this property file was saved.
+        if(!p.containsKey("basePath") || (p["basePath"] != Runner.runDirectory)) {
+            p.remove("canonicalPath")
+        }
+        
         if(!p.containsKey('preserve'))
             p.preserve = 'false'
             

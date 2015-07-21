@@ -31,14 +31,15 @@ import java.util.concurrent.TimeUnit;
 
 import bpipe.Config;
 import bpipe.EventManager;
+import bpipe.NodeListCategory;
+import bpipe.Pipeline;
 import bpipe.PipelineContext;
 import bpipe.PipelineEvent;
 import bpipe.PipelineEventListener;
 import bpipe.PipelineStage;
-
+import bpipe.Runner;
 import groovy.json.JsonOutput;
 import groovy.util.logging.Log;
-
 import static PipelineEvent.*
 
 /**
@@ -187,7 +188,7 @@ class WorxEventListener implements PipelineEventListener {
             log.info "Response: $response"
         }
         catch(Exception e) {
-            log.severe "Failed to send event $this"
+            log.severe "Failed to send event to $socket $this"
             e.printStackTrace()
         }
       
@@ -203,7 +204,11 @@ class WorxEventListener implements PipelineEventListener {
             // Ignore
         }
         
-        String configUrl = Config.userConfig["worx.url"]?:"http://127.0.0.1:8888/"
+        log.info "Config is ${Config.userConfig}"
+        
+        String configUrl = Config.userConfig["worx"]?.url?:"http://127.0.0.1:8888/"
+        log.info "Connecting to $configUrl"
+        
         URL url = new URL(configUrl)
         socket = new Socket(url.host, url.port) 
         
@@ -216,6 +221,7 @@ class WorxEventListener implements PipelineEventListener {
              PipelineEvent.STARTED,
              PipelineEvent.STAGE_STARTED,
              PipelineEvent.STAGE_COMPLETED, 
+             PipelineEvent.FINISHED,
              PipelineEvent.SHUTDOWN
         ].each { EventManager.instance.addListener(it,this) } 
         
@@ -241,12 +247,28 @@ class WorxEventListener implements PipelineEventListener {
         if(!ctx)
             ctx = details.ctx
        
-        if(eventType == STARTED) {
-            if(details.pipeline) {
-                details.pipeline = groovy.json.JsonOutput.toJson(details.pipeline)
+        File scriptFile = new File(Config.config.script)
+        if(eventType == STARTED || eventType == FINISHED) {
+            if(details.pipeline && eventType == STARTED) {
+                use(NodeListCategory) {
+                    details.pipeline = groovy.json.JsonOutput.toJson(details.pipeline.toMap())
+                    log.info "Sending pipeline structure: $details.pipeline"
+                } 
             }
+            else {
+                details.remove("pipeline")
+            }
+            
+            details.title = Pipeline.documentation.title
+            if(!details.title)
+                details.title = scriptFile.name.replaceAll('\\.[^\\.]*?$', '').capitalize()
+            details.dir = Runner.runDirectory
         }
         
+        // All events
+        details.script = scriptFile.canonicalPath
+        details.host = InetAddress.getLocalHost().hostName
+            
         WorxEventJob job = new WorxEventJob(event:eventType, properties: [desc: desc] + details)
         
         this.service.submit(job);

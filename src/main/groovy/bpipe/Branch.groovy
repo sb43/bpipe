@@ -35,7 +35,9 @@ import groovy.transform.CompileStatic;
  * 
  * @author simon.sadedin@mcri.edu.au
  */
-class Branch extends Expando {
+class Branch extends Expando implements Serializable {
+    
+    public static final long serialVersionUID = 0L
     
     @Delegate
     String name = ""
@@ -58,10 +60,24 @@ class Branch extends Expando {
         parent.properties.each { entry ->
             this.setProperty(entry.key, entry.value)
         }
+        this.parent = parent
     }
     
     @Override
     String toString() {
         name
+    }
+    
+    void setProperty(String name, Object value) {
+        if((name in PipelineCategory.closureNames.values()) && !(value instanceof Closure)) {
+            throw new PipelineError("""
+                Attempt to define a branch variable $name with same name as a pipeline stage. 
+            
+                Please ensure that pipeline stages have different names to branch variables.
+            """.stripIndent())
+        }
+        else {
+            super.setProperty(name,value)
+        }
     }
 }

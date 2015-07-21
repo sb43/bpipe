@@ -100,6 +100,20 @@ class Utils {
         }
     }
     
+    static boolean fileExists(File f) {
+        
+       if(f.exists())
+           return true
+           
+       if(!f.exists()) {
+           log.info "File $f does not appear to exist: listing directory to flush file system"
+           try { f.absoluteFile.parentFile.listFiles() } catch(Exception e) { log.warning("Failed to list files of parent directory of $f"); }
+           if(f.exists())
+               log.info("File $f revealed by listing directory")
+       } 
+       return f.exists()
+    }
+    
     /**
      * Attempt to delete all of the specified outputs, if any
      * 
@@ -112,34 +126,40 @@ class Utils {
             return
             
         List<String> failed = []
-        box(outputs).collect { new File(it) }.each { File f -> if(f.exists()) {  
-            // it.delete() 
-            File trashDir = new File(".bpipe/trash")
-            if(!trashDir.exists())
-                trashDir.mkdirs()
-                
-            File dest = new File(trashDir, f.name)
-            if(!Runner.opts.t) {
-                int count = 1;
-                while(dest.exists()) {
-                    dest = new File(trashDir, f.name + ".$count")
-                    ++count
+        box(outputs).collect { new File(it) }.each { File f -> 
+            
+            if(fileExists(f)) {  
+                // it.delete() 
+                File trashDir = new File(".bpipe/trash")
+                if(!trashDir.exists())
+                    trashDir.mkdirs()
+                    
+                File dest = new File(trashDir, f.name)
+                if(!Runner.opts.t) {
+                    int count = 1;
+                    while(dest.exists()) {
+                        dest = new File(trashDir, f.name + ".$count")
+                        ++count
+                    }
+                    
+                    if(!f.renameTo(dest) && f.exists()) {
+                        println "WARNING: failed to clean up file $f"
+                        log.severe("Unable to cleanup file ${f.absolutePath} by moving it to ${dest.absolutePath}. Creating dirty file record.")
+                        failed.add(f.canonicalFile.absolutePath)
+                    }
+                    else {
+                        println "Cleaned up file $f to $dest" 
+                        log.info("Cleaned up file ${f.absolutePath} by moving it to ${dest.absolutePath}")
+                    }
+                    
                 }
-                
-                if(!f.renameTo(dest) && f.exists()) {
-                    println "WARNING: failed to clean up file $f"
-                    log.severe("Unable to cleanup file ${f.absolutePath} by moving it to ${dest.absolutePath}. Creating dirty file record.")
-                    failed.add(f.canonicalFile.absolutePath)
-                }
-                else {
-                    println "Cleaned up file $f to $dest" 
-                    log.info("Cleaned up file ${f.absolutePath} by moving it to ${dest.absolutePath}")
-                }
-                
+                else
+                    println "[TEST MODE] Would clean up file $f to $dest" 
             }
-            else
-                println "[TEST MODE] Would clean up file $f to $dest" 
-        }}
+            else {
+                log.info "Not cleaning up file $f because it does not exist"
+            }
+        }
         return failed
     }
     

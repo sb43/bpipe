@@ -38,6 +38,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 import groovy.util.logging.Log;
+
 import java.util.regex.Pattern;
 
 import org.codehaus.groovy.runtime.StackTraceUtils;
@@ -107,6 +108,27 @@ class PipelineCategory {
     static String quote(String value) {
         Utils.quote(value)
     }
+    
+    static Object plus(List l, Closure c) {
+        def j = {
+            return it
+        }
+        Pipeline.currentUnderConstructionPipeline.joiners << j
+        return plus(j, l) + c
+    }
+    
+    
+    static Object plus(List l, List other) {
+        if(!l.empty && !other.empty && l[0] instanceof Closure && other[1] instanceof Closure) {
+            def j = {
+                return it
+            }
+            Pipeline.currentUnderConstructionPipeline.joiners << j
+            return plus(j, l) + other
+        }
+        else
+            return org.codehaus.groovy.runtime.DefaultGroovyMethods.plus(l,other)
+    }
 	
      /**
      * Joins two closures representing pipeline stages together by
@@ -114,6 +136,8 @@ class PipelineCategory {
      * basis of Bpipes's + syntax for joining sequential pipeline stages.
      */
     static Object plus(Closure c, Closure other) {
+        
+        // log.info "Closure["+PipelineCategory.closureNames[c] + "] + Closure[" + PipelineCategory.closureNames[other] + "]"
         
         // What we return is actually a closure to be executed later
         // when the pipeline is run.  
@@ -125,7 +149,9 @@ class PipelineCategory {
             pipeline.addStage(currentStage)
             currentStage.context.setInput(input1)
             currentStage.run()
-            Dependencies.instance.checkFiles(currentStage.context.@output)
+            
+            log.info "Checking that outputs ${currentStage.context.@output} exist"
+            Dependencies.instance.checkFiles(currentStage.context.@output, pipeline.aliases)
                     
             // If the stage did not return any outputs then we assume
             // that the inputs to the next stage are the same as the inputs
@@ -137,13 +163,13 @@ class PipelineCategory {
             }
                 
             log.info "Checking inputs for next stage:  $nextInputs"
-            Dependencies.instance.checkFiles(nextInputs)
+            Dependencies.instance.checkFiles(nextInputs, pipeline.aliases)
                 
             currentStage = new PipelineStage(pipeline.createContext(), other)
             currentStage.context.@input = nextInputs
             pipeline.addStage(currentStage)
             currentStage.run()
-            return currentStage.context.nextInputs?:currentStage.context.output
+            return currentStage.context.nextInputs?:currentStage.context.@output
         }
         Pipeline.currentUnderConstructionPipeline.joiners << result
         return result
@@ -159,11 +185,12 @@ class PipelineCategory {
         Closure mul = splitOnFiles("*", segments, false, false)
         def plusImplementation =  { input1 ->
             
-            def currentStage = new PipelineStage(Pipeline.currentRuntimePipeline.get().createContext(), other)
-            Pipeline.currentRuntimePipeline.get().addStage(currentStage)
+            Pipeline runtimePipeline = Pipeline.currentRuntimePipeline.get()
+            def currentStage = new PipelineStage(runtimePipeline.createContext(), other)
+            runtimePipeline.addStage(currentStage)
             currentStage.context.setInput(input1)
             currentStage.run()
-            Dependencies.instance.checkFiles(currentStage.context.output)
+            Dependencies.instance.checkFiles(currentStage.context.@output, runtimePipeline.aliases)
                     
             // If the stage did not return any outputs then we assume
             // that the inputs to the next stage are the same as the inputs
@@ -172,7 +199,7 @@ class PipelineCategory {
             if(nextInputs == null)
                 nextInputs = currentStage.context.@input
                 
-            Dependencies.instance.checkFiles(nextInputs)
+            Dependencies.instance.checkFiles(nextInputs, runtimePipeline.aliases)
             
             return mul(nextInputs)
         }
@@ -182,6 +209,10 @@ class PipelineCategory {
     
     static Object multiply(List objs, List segments) {
         multiply(objs.collect { String.valueOf(it) } as Set, segments)
+    }
+    
+    static Object multiply(String pattern, Closure c) {
+        throw new PipelineError("Multiply syntax requires a list of stages")
     }
     
     static Object multiply(Set objs, List segments) {
@@ -259,6 +290,7 @@ class PipelineCategory {
                                     
                                 if(!childInputs) {
                                     println "MSG: Skipping region ${chr.name} because no matching inputs were found"
+                                    Concurrency.instance.unregisterResourceRequestor(child)
                                     return
                                 }
                             }
@@ -278,6 +310,7 @@ class PipelineCategory {
                         catch(Exception e) {
                             log.log(Level.SEVERE,"Pipeline segment in thread " + Thread.currentThread().name + " failed with internal error: " + e.message, e)
                             Runner.reportExceptionToUser(e)
+                            Concurrency.instance.unregisterResourceRequestor(child)
                             child.failed = true
                         }
                     } as Runnable
@@ -319,7 +352,7 @@ class PipelineCategory {
             // Map filteredBranches = branches.keySet().collectEntries { key -> 
             //   [key, Utils.box(branches[key]).removeAll { !(it in inputs) }]
             //}
-            splitOnMap(branches,segments)
+            splitOnMap(input, branches,segments)
         }
         
         log.info "Joiners for pipeline " + pipeline.hashCode() + " = " + pipeline.joiners
@@ -461,18 +494,38 @@ class PipelineCategory {
     
     static runAndWaitFor(PipelineStage currentStage, List<Pipeline> pipelines, List<Runnable> threads) {
             // Start all the threads
-            Concurrency.instance.execute(threads)
+        
+            Pipeline current = Pipeline.currentRuntimePipeline.get()
+            
+            pipelines.each { 
+                Concurrency.instance.registerResourceRequestor(it)
+            }
+            
+            try {
+                current.isIdle = true
+                Concurrency.instance.execute(threads, current.branchPath.size())
+            }
+            finally {
+                current.isIdle = false
+            }
             
             if(pipelines.any { it.failed }) {
                 def messages = summarizeErrors(pipelines)
                 
-                Pipeline current = Pipeline.currentRuntimePipeline.get()
                 for(Pipeline p in pipelines.grep { it.failed }) {
-                    current.failExceptions.addAll(p.failExceptions)
+                    // current.failExceptions.addAll(p.failExceptions)
                 }
                 current.failReason = messages
                 
-                throw new PipelineError("One or more parallel stages aborted. The following messages were reported: \n\n" + messages)
+                Exception e
+                if(pipelines.every { p -> p.failExceptions.every { it instanceof PipelineTestAbort } }) {
+                   e = new PipelineTestAbort()
+                }
+                else {
+                    e = new PipelineError("One or more parallel stages aborted. The following messages were reported: \n" + messages)
+                }
+                e.summary = true
+                throw e
             }
             else {
                 if(pipelines.every { it.aborted }) {
@@ -580,6 +633,24 @@ class PipelineCategory {
     }
     
     static String summarizeErrors(List<Pipeline> pipelines) {
+        
+        // Need to associate each exception to a pipeline
+        Map<Throwable,Pipeline> exPipelines = [:]
+        pipelines.each { Pipeline p -> p.failExceptions.each { ex -> exPipelines[ex] = p } }
+        
+        pipelines*.failExceptions.flatten().groupBy { it.message }.collect { String msg, List<Throwable> t ->
+            
+            List<String> branches = t.collect { exPipelines[it] }*.branchPath.flatten()
+            
+            List<String> stages = t.grep { it instanceof PipelineError && it.ctx != null }.collect { it.ctx.stageName }.unique()
+            
+            """
+                Branch${branches.size()>1?'es':''} ${branches.join(", ")} in stage${stages.size()>1?'s':''} ${stages.join(", ")} reported message:
+
+           """.stripIndent() + msg 
+        }.join("\n")
+        
+        /*
         pipelines.collect { 
                     if(it.failReason && it.failReason!="Unknown") 
                         return it.failReason
@@ -589,6 +660,7 @@ class PipelineCategory {
                     else
                     return null
         }.grep { it }.flatten().unique().join('\n') 
+        */
     }
     
     static void addStages(Binding binding) {

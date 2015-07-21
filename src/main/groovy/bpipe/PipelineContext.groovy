@@ -27,6 +27,7 @@ package bpipe
 
 import groovy.util.logging.Log;
 import groovy.xml.MarkupBuilder
+
 import java.util.regex.Matcher
 import java.util.regex.Pattern;
 
@@ -97,9 +98,10 @@ class PipelineContext {
         this.threadId = Thread.currentThread().getId()
         this.branch = branch
         def pipeline = Pipeline.currentRuntimePipeline.get()
-        if(pipeline)
+        if(pipeline) {
             this.applyName = pipeline.name && !pipeline.nameApplied
-         
+            this.aliases = pipeline.aliases 
+        }
         this.outputLog = new OutputLog(branch.name)
     }
     
@@ -149,6 +151,11 @@ class PipelineContext {
     Set<String> outputMask = ['\\.bai$', '\\.log$'] as Set
 
     File uncleanFilePath
+    
+    /**
+     * Set of aliases to use for mapping file names
+     */
+    Aliases aliases = null
    
     /**
      * Documentation attributes for the the pipeline stage
@@ -610,15 +617,18 @@ class PipelineContext {
     */
    PipelineInput getInputByIndex(int i) {
        
-       def boxed = Utils.box(input)
-       if(boxed.size()<i)
-           throw new PipelineError("Expected $i or more inputs but fewer provided")
-           
-       this.allResolvedInputs << input[i]
        
-       PipelineInput wrapper = new PipelineInput(this.@input, pipelineStages)
+       PipelineInput wrapper = new PipelineInput(this.@input, pipelineStages, this.aliases)
        wrapper.currentFilter = currentFilter
        wrapper.defaultValueIndex = i
+       
+       def boxed = Utils.box(input)
+       if(boxed.size()<i) {
+           wrapper.parentError = new InputMissingError("Stage '$stageName' expected $i or more inputs but fewer provided", this)
+       }
+       else {
+           this.allResolvedInputs << input[i]
+       }
        
        if(!inputWrapper) 
          this.inputWrapper = wrapper
@@ -640,10 +650,10 @@ class PipelineContext {
     */
    def getInput() {
        if(this.@input == null || Utils.isContainer(this.@input) && this.@input.size() == 0) {
-           throw new PipelineError("Input expected but not provided")
+           throw new InputMissingError("Stage '$stageName' expects an input but none are available", this)
        }
        if(!inputWrapper || inputWrapper instanceof MultiPipelineInput) {
-           inputWrapper = new PipelineInput(this.@input, pipelineStages)
+           inputWrapper = new PipelineInput(this.@input, pipelineStages, this.aliases)
            this.allUsedInputWrappers[0] = inputWrapper
        }
        inputWrapper.currentFilter = currentFilter    
@@ -656,7 +666,7 @@ class PipelineContext {
    
    def getInputs() {
        if(!inputWrapper || !(inputWrapper instanceof MultiPipelineInput)) {
-           this.inputWrapper = new MultiPipelineInput(this.@input, pipelineStages)
+           this.inputWrapper = new MultiPipelineInput(this.@input, pipelineStages, this.aliases)
            this.allUsedInputWrappers[0] = inputWrapper
        }
        inputWrapper.currentFilter = currentFilter    
@@ -1172,23 +1182,29 @@ class PipelineContext {
     void uses(Map resourceSpec, Closure block) {
         List<ResourceUnit> res = resourceSpec.collect { e ->
             String name = e.key
-            int n
+            int n = 1
+            int max = 0
             try {
                 if(e.value instanceof String)
                     n = Integer.parseInt(e.value)
-                else
-                    n = e.value
+                else 
+                if(e.value instanceof IntRange) {
+                    n = e.value.from 
+                    max = e.value.to 
+                }
+                else 
+                    n = e.value as Integer
             }
             catch(NumberFormatException f) {
                 throw new PipelineError("The value for resource $e.key ($e.value) couldn't be parsed as a number")
             }
             
             if(name == "GB") {
-                return new ResourceUnit(key: "memory", amount: (n as Integer) * 1024)
+                name = "memory"
+                n = n * 1024
             }
-            else {
-                return new ResourceUnit(key: name, amount: n as Integer)
-            }
+            
+            new ResourceUnit(key: name, amount: n, maxAmount: max)
         }
         resources(res, block)
     }
@@ -1343,8 +1359,11 @@ class PipelineContext {
       
       c.outputs = commandReferencedOutputs
      
-      int exitResult = c.executor.waitFor()
-      if(exitResult != 0) {
+      c.exitCode = c.executor.waitFor()
+      if(c.stopTimeMs <= 0)
+          c.stopTimeMs = System.currentTimeMillis()
+          
+      if(c.exitCode != 0) {
         // Output is still spooling from the process.  By waiting a bit we ensure
         // that we don't interleave the exception trace with the output
         Thread.sleep(200)
@@ -1352,7 +1371,7 @@ class PipelineContext {
         if(!this.probeMode)
             this.commandManager.cleanup(c)
             
-        throw new CommandFailedException("Command failed with exit status = $exitResult : \n\n$c.command")
+        throw new CommandFailedException("Command failed with exit status = $c.exitCode : \n\n$c.command")
       }
       
       if(!this.probeMode)
@@ -1376,7 +1395,7 @@ class PipelineContext {
         }
         
         if(!inputWrapper)
-           inputWrapper = new PipelineInput(this.@input, pipelineStages)
+           inputWrapper = new PipelineInput(this.@input, pipelineStages, this.aliases)
            
            
        // On OSX and Linux, R actively attaches to and listens to signals on the
@@ -1412,6 +1431,14 @@ class PipelineContext {
        }
     }
     
+    /**
+     * Undocumented feature: run a command and capture its output into a pipeline variable
+     * This currently just runs the command directly.
+     * 
+     * @TODO run it properly through the CommandManager
+     * @param cmd
+     * @return
+     */
     String capture(String cmd) {
       if(probeMode)
           return ""
@@ -1419,11 +1446,15 @@ class PipelineContext {
       CommandLog.cmdLog.write(cmd)
       def joined = ""
       cmd.eachLine { joined += " " + it }
-      
       Process p = Runtime.getRuntime().exec((String[])(['bash','-c',"$joined"].toArray()))
       StringWriter outputBuffer = new StringWriter()
-      p.consumeProcessOutput(outputBuffer,System.err)
-      p.waitFor()
+      Thread t1 = p.consumeProcessOutputStream(outputBuffer)
+      Thread t2 = p.consumeProcessOutputStream(System.err)
+      int exitCode = p.waitFor()
+      try { t1.join(); } catch(Exception e) {}
+      try { t2.join(); } catch(Exception e) {}
+      if(exitCode != 0)
+          throw new PipelineError("Command $cmd failed with error $exitCode")
       return outputBuffer.toString()
     }
     
@@ -1432,10 +1463,13 @@ class PipelineContext {
     }
     
     class CommandThread extends Thread {
-        int exitStatus = -1
-        CommandExecutor toWaitFor
+        Command toWaitFor
+        Pipeline pipeline
         void run() {
-            exitStatus = toWaitFor.waitFor()
+
+            Pipeline.currentRuntimePipeline.set(pipeline)
+
+            toWaitFor.exitCode = toWaitFor.executor.waitFor()
         }
     }
     
@@ -1478,9 +1512,9 @@ class PipelineContext {
         
         try {
           def aborts = []
-          List<CommandExecutor> execs = cmds.collect { 
+          List<Command> execCmds = cmds.collect { 
               try {
-                async(it,true,null,true).executor 
+                async(it,true,null,true)
               }
               catch(PipelineTestAbort e) {
                  aborts << e 
@@ -1492,11 +1526,11 @@ class PipelineContext {
           }
           
           List<Integer> exitValues = []
-          List<CommandThread> threads = execs.collect { new CommandThread(toWaitFor:it) }
+          List<CommandThread> threads = execCmds.collect { new CommandThread(toWaitFor:it, pipeline:Pipeline.currentRuntimePipeline.get()) }
           threads*.start()
           
           while(true) {
-              int stillRunning = threads.count { it.exitStatus == -1 }
+              int stillRunning = threads.count { it.toWaitFor.exitCode == -1 }
               if(stillRunning) {
                   log.info "Waiting for $stillRunning commands in multi block"
               }
@@ -1505,7 +1539,7 @@ class PipelineContext {
               Thread.sleep(2000)
           }
          
-          List<String> failed = [cmds,threads*.exitStatus].transpose().grep { it[1] }
+          List<String> failed = [cmds,threads*.toWaitFor*.exitCode].transpose().grep { it[1] }
           if(failed) {
               throw new PipelineError("Command(s) failed: \n\n" + failed.collect { "\t" + it[0] + "\n\t(Exit status = ${it[1]})\n"}.join("\n"))
           }
@@ -1541,28 +1575,37 @@ class PipelineContext {
       // after we have resolved the right thread / procs value
       Command command = new Command(command:joined, configName:config)
       
-      // Replacement of magic $thread variable with real value 
+      // Work out how many threads to request
       String actualThreads = this.usedResources['threads'].amount as String  
       
       // If the config itself specifies procs, it should override the auto-thread magic variable
       // which may get given a crazy high number of threads
+      String configThreads = null
       if(config) {
           def procs = command.getConfig(Utils.box(this.input)).procs
           if(procs) {
+              int maxProcs = 0
               if(procs instanceof String) {
                  // Allow range of integers
-                 procs = procs.replaceAll(" *-.*\$","")
+                 def intRangeMatch = (procs =~ /([0-9]*) *- *([0-9]*)$/)
+                 if(intRangeMatch) {
+                     procs = intRangeMatch[0][1].toInteger()
+                     maxProcs = intRangeMatch[0][2].toInteger()
+                 }
+                 else {
+                     procs = procs.trim().toInteger()
+                 }
               }
               else
               if(procs instanceof IntRange) {
-                  procs = procs.to
+                  procs = procs.from
+                  maxProcs = procs.to
               }
-              log.info "Found procs value $procs to override computed threads value of $actualThreads"
-              actualThreads = String.valueOf(Math.min(procs.toInteger(), actualThreads.toInteger()))
+              log.info "Found procs value $procs (maxProcs = $maxProcs) to override computed threads value of $actualThreads"
+              this.usedResources['threads'].amount = procs
+              this.usedResources['threads'].maxAmount = maxProcs
           }
       }
-      
-      command.command = joined.replaceAll(THREAD_LAZY_VALUE, actualThreads)
       
       // Inferred outputs are outputs that are picked up through the user's use of 
       // $ouput.<ext> form in their commands. These are intercepted at string evaluation time
@@ -1604,12 +1647,15 @@ class PipelineContext {
             if(toolsDiscovered)
                 this.doc(["tools" : toolsDiscovered])
           }
+          
 
           command.branch = this.branch
-          command.executor = 
-              commandManager.start(stageName, command, config, Utils.box(this.input), 
+          command.outputs = checkOutputs.unique()
+          commandManager.start(stageName, command, config, Utils.box(this.input), 
                                    new File(outputDirectory), this.usedResources,
                                    deferred, this.outputLog)
+          // log.info "Command $command.id started with resources " + this.usedResources
+          
           trackedOutputs[command.id] = command              
           List outputFilter = command.executor.ignorableOutputs
           if(outputFilter) {
@@ -1654,7 +1700,7 @@ class PipelineContext {
        
        log.info "From clause searching for inputs matching spec $exts"
        
-       if(!exts)
+       if(!exts || exts.every { it == null })
            throw new PipelineError("A call to 'from' was invoked with an empty or null argument. From requires a list of file patterns to match.")
        
        def orig = exts
@@ -1801,8 +1847,18 @@ class PipelineContext {
     */
     void forwardImpl(List values) {
        this.nextInputs = values.flatten().collect {
-           String.valueOf(it)
-       }
+           if(it instanceof MultiPipelineInput) {
+               it.input
+           }
+           else
+               String.valueOf(it)
+       }.flatten()
+       
+       log.info("Forwarding ${nextInputs.size()} inputs ${nextInputs}")
+   }
+    
+   Aliaser alias(def value) {
+       new Aliaser(this.aliases, String.valueOf(value))
    }
    
    /**
@@ -1822,6 +1878,8 @@ class PipelineContext {
             UNCLEAN_FILE_PATH.mkdirs()
             
         this.uncleanFilePath = new File(UNCLEAN_FILE_PATH, String.valueOf(Thread.currentThread().id))   
+        if(uncleanFilePath.exists())
+            this.uncleanFilePath.delete()
         this.uncleanFilePath.text = ""
     }
     
@@ -1863,8 +1921,20 @@ class PipelineContext {
         File outputsDir = new File(OUTPUT_METADATA_DIR)
         if(!outputsDir.exists()) 
             outputsDir.mkdirs()
+            
+        String outputPath = new File(outputFile).path
         
-        return  new File(outputsDir,this.stageName + "." + new File(outputFile).path.replaceAll("[/\\\\]", "_") + ".properties")
+        // If the output path starts with the run directory, trim it off
+        if(outputPath.indexOf(Runner.canonicalRunDirectory)==0) {
+            outputPath = outputPath.substring(Runner.canonicalRunDirectory.size()+1)
+        }
+        
+        if(outputPath.startsWith("./"))
+            outputPath = outputPath.substring(2)
+        
+//        println "output path = " + outputPath
+        
+        return  new File(outputsDir,this.stageName + "." + outputPath.replaceAll("[/\\\\]", "_") + ".properties")
     }
     
     /**
@@ -1898,7 +1968,13 @@ class PipelineContext {
             }
             
             try {
-                this.usedResources['threads'].amount = Math.max((int)1, (int)maxThreads / childCount)
+                  // Old logic: divide by numer of branches - overly conservative
+                  // this.usedResources['threads'].amount = Math.max((int)1, (int)maxThreads / childCount)
+                  // The actual value is not resolved now until resources are negotiated inside Concurrency.allocateResources
+                
+                // Note the value 1 here is interpreted as "default" or "unset by the user" by 
+                // the ThrottledDelegatingCommandExecutor
+                this.usedResources['threads'].amount = 1
             }
             catch(Exception e) {
                 e.printStackTrace()
@@ -2091,6 +2167,83 @@ class PipelineContext {
         this.onNewOutputReferenced(null, value)
         this.@output = Utils.box(this.@output) + value
         return value
+    }
+    
+    /**
+     * Cleanup outputs matching the specified patterns from the current 
+     * file output hierarchy (ie: resolvable within current branch).
+     * <p>
+     * The list of patterns can contain Strings (or any object coerceable to a string)
+     * or it can contain regular expression Pattern objects (eg, created using ~"....")
+     * or a mixture of both. The Strings will be treated as file extensions, while the 
+     * patterns will be treated as end-matching patterns on the outputs visible to this 
+     * pipeline stage.
+     * 
+     * @param patterns
+     */
+    void cleanup(java.lang.Object... patterns) {
+        
+        // This is used as a way to resolve inputs correctly in the same way
+        // that we would look for inputs (following branch semantics)
+        PipelineInput inp = getInput()
+        
+        List<String> exts = patterns.grep { !(it instanceof Pattern) }.collect { val ->
+            val.toString()
+        }
+        
+        List results = []
+        if(exts) {
+            results = inp.resolveInputsEndingWith(exts)
+            log.info "Resolved upstream outputs matching $exts for cleanup : $results"
+        }
+        
+        List<String> pats = patterns.grep { (it instanceof Pattern) }.collect { val ->
+            val.toString()
+        }
+        
+        if(pats) {
+            List patResults = inp.resolveInputsEndingWithPatterns(pats, pats)
+            log.info "Resolved upstream outputs matching $pats for cleanup : $results"
+            results.addAll(patResults)
+        }
+        
+        log.info "Removing outputs that were aliased from cleanup targets: aliased = $aliases"
+        
+        results = results.grep { !aliases.isAliased(it) }
+        
+        // Finally, cleanup all these files
+        log.info "Attempting to cleanup files: $results"
+        if(results) {
+            
+            List resultFiles = results.collect { new File(it) }
+            
+            List<Properties> props = Dependencies.instance.scanOutputFolder()
+            
+            List<File> cleaned = []
+            for(File result in resultFiles) {
+                
+                // Note we protect attempt to resolve canonical path with 
+                // the file name equality because it is very slow!
+                Properties resultProps = props.find { (it.outputFile.name == result.name) && (GraphEntry.canonicalPathFor(it) == result.canonicalPath) }
+                
+                if(resultProps == null) {
+                    log.warning "Unable to file matching known output $result.name"
+                    System.err.println("WARNING: unable to cleanup output $result because meta data file could not be resolved")
+                }
+                else
+                if(resultProps.cleaned) {
+                    log.info "File $result already cleaned"
+                }
+                else {
+                    Dependencies.instance.removeOutputFile(resultProps)
+                    cleaned.add(result)
+                }
+            }
+            
+            if(cleaned) {
+                println "MSG: The following files were cleaned: " + cleaned.join(",")
+            }
+        }
     }
 }
 

@@ -48,12 +48,12 @@ class LocalCommandExecutor implements CommandExecutor {
     /**
      * The output log to which stdout will be written
      */
-	transient Appendable outputLog = System.out
+    transient Appendable outputLog = System.out
     
     /**
      * The output log to which stderr will be written
      */
-	transient Appendable errorLog = System.err
+    transient Appendable errorLog = System.err
     
     /**
      * The exit code returned by the process, only
@@ -77,8 +77,8 @@ class LocalCommandExecutor implements CommandExecutor {
     
     transient Command command
     
-	LocalCommandExecutor() {
-	}
+    LocalCommandExecutor() {
+    }
     
     void start(Map cfg, Command command, File outputDirectory) {
         
@@ -87,35 +87,47 @@ class LocalCommandExecutor implements CommandExecutor {
       new Thread({
           
           // Special case for Windows / Cygwin
-		  // On Windows Java detects spaces in arguments and if it finds them
-		  // wraps the whole argument in double quotes.  However it doesn't 
-		  // escape quotes embedded in the argument body, so it actually 
-		  // creates invalid arguments
+          // On Windows Java detects spaces in arguments and if it finds them
+          // wraps the whole argument in double quotes.  However it doesn't 
+          // escape quotes embedded in the argument body, so it actually 
+          // creates invalid arguments
           if(Utils.isWindows()) {
               // See java.lang.ProcessImpl for this test. It is not really correct
-			  // but it is important for it to be the same as what is in the Java src
+              // but it is important for it to be the same as what is in the Java src
               String origCmd = cmd
-			  if(cmd.indexOf(' ') >=0 || cmd.indexOf('\t') >=0) {
+              if(cmd.indexOf(' ') >=0 || cmd.indexOf('\t') >=0) {
                   cmd = cmd.replaceAll(/"/, /\\"/)
-			  }
+              }
               log.info "Converted $origCmd to $cmd to account for broken Java argument escaping"
-		  }
+          }
           
           this.runningCommand = cmd
           this.startedAt = new Date()
-	      process = Runtime.getRuntime().exec((String[])(['bash','-e','-c',"echo \$\$ > ${CommandManager.DEFAULT_COMMAND_DIR}/${command.id}.pid;\n$cmd"].toArray()))
+          process = Runtime.getRuntime().exec((String[])(['bash','-e','-c',"echo \$\$ > ${CommandManager.DEFAULT_COMMAND_DIR}/${command.id}.pid;\n$cmd"].toArray()))
           this.command.status = CommandStatus.RUNNING.name()
           this.command.startTimeMs = System.currentTimeMillis()
-	      process.consumeProcessOutput(outputLog, errorLog)
+
+          Thread t1 = process.consumeProcessOutputStream(outputLog);
+          Thread t2 = process.consumeProcessErrorStream(errorLog)
           exitValue = process.waitFor()
+
+          // Make sure to wait until the output streams are actually closed
+          try { t1.join(); } catch(Exception e) {}
+          try { t2.join(); } catch(Exception e) {}
+
+          // Once we know the streams are closed, THEN destroy the process
+          // This guarantees that file handles are cleaned up, even if
+          // other things above went horribly wrong
+          try { this.process.destroy() } catch(Throwable t) {}
+
           this.command.stopTimeMs = System.currentTimeMillis()
           this.id = command.id.toInteger()
           synchronized(this) {
-	          this.notifyAll()
+              this.notifyAll()
           }
       }).start()
       while(!process) 
-	    Thread.sleep(100)
+        Thread.sleep(100)
     }
     
     String status() {

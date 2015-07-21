@@ -44,6 +44,20 @@ tmsg() {
 }
 
 #----------------------------------------------------------
+# A variety of commands run in the foreground. These can be 
+# launched in a simpler manner than running a pipeline, which
+# needs to run in the background. The "launch mode" is the
+# command that is to be run, the Bpipe Runner interprets this
+# system property (bpipe.mode) to decide what to run.
+#----------------------------------------------------------
+launch_in_foreground() {
+    LAUNCH_MODE="$1"
+    shift 1
+    exec java -Xmx${MAX_JAVA_MEM} -classpath "$CP" $BPIPEDEBUG -Dbpipe.home="$JVM_BPIPE_HOME" -Dbpipe.mode=$LAUNCH_MODE bpipe.Runner $* 
+    exit
+}
+
+#----------------------------------------------------------
 # Kill a whole tree of processes in a cross platform way.
 # Note, in some situations killing the parent process is 
 # sufficient ot kill the children, however this doesn't
@@ -132,7 +146,7 @@ is_running() {
     fi
 
     # Has been run, is it finished?
-    kill -0 $LAST_PID > /dev/null 2>&1
+    kill -0 $LAST_PID > /dev/null 2>&1 || [ -e /proc/$LAST_PID ]
 }
 
 #----------------------------------------------------------
@@ -188,7 +202,7 @@ cleanup() {
                       mkdir -p .bpipe/trash
                   fi
                   count=1
-                  realtarget="$target"
+                  realtarget="`basename $target`"
                   while [ -e "$realtarget" ];
                   do
                     realtarget="${target}.${count}"
@@ -368,7 +382,7 @@ display_log() {
 # symbolic link on OSX.
 #----------------------------------------------------------
 function python_readlink() {
-    python -c 'import os,sys; print os.path.realpath(sys.argv[1])' "$1"
+    python -c 'from __future__ import print_function;import os,sys; print(os.path.realpath(sys.argv[1]))' "$1"
 }
 
 #----------------------------------------------------------
@@ -438,37 +452,16 @@ then
         echo
     fi
     exit
-elif [ "$COMMAND" == "cleanup" ];
+elif [ "$COMMAND" == "cleanup" ] || \
+         [ "$COMMAND" == "register" ] || \
+         [ "$COMMAND" == "status" ] || \
+         [ "$COMMAND" == "query" ] || \
+         [ "$COMMAND" == "preserve" ] || \
+         [ "$COMMAND" == "diagram" ] || \
+         [ "$COMMAND" == "diagrameditor" ]  || \
+         [ "$COMMAND" == "documentation" ];
 then
-    shift 1
-    exec java -Xmx${MAX_JAVA_MEM} -classpath "$CP" $BPIPEDEBUG -Dbpipe.home="$JVM_BPIPE_HOME" -Dbpipe.mode=cleanup bpipe.Runner $* 
-elif [ "$COMMAND" == "status" ];
-then
-    shift 1
-    exec java -Xmx${MAX_JAVA_MEM} -classpath "$CP"  $BPIPEDEBUG -Dbpipe.home="$JVM_BPIPE_HOME" -Dbpipe.mode=status bpipe.Runner $* 
-elif [ "$COMMAND" == "query" ];
-then
-    shift 1
-    exec java -Xmx${MAX_JAVA_MEM} -classpath "$CP"  $BPIPEDEBUG -Dbpipe.home="$JVM_BPIPE_HOME" -Dbpipe.mode=query bpipe.Runner $* 
-elif [ "$COMMAND" == "preserve" ];
-then
-    shift 1
-    exec java -Xmx${MAX_JAVA_MEM} -classpath "$CP"  $BPIPEDEBUG -Dbpipe.home="$JVM_BPIPE_HOME" -Dbpipe.mode=preserve bpipe.Runner $* 
-elif [ "$COMMAND" == "diagram" ];
-then
-    shift 1
-    java -Xmx${MAX_JAVA_MEM} -classpath "$CP" -Dbpipe.home="$JVM_BPIPE_HOME" -Dbpipe.mode=diagram bpipe.Runner $* 
-    exit
-#elif [ "$COMMAND" == "documentation" ];
-#then
-#    shift 1
-#    java -Xmx${MAX_JAVA_MEM} -classpath "$CP" -Dbpipe.mode=documentation bpipe.Runner $* 
-#    exit
-elif [ "$COMMAND" == "diagrameditor" ];
-then
-    shift 1
-    java -Xmx${MAX_JAVA_MEM} -classpath "$CP" -Dbpipe.home="$JVM_BPIPE_HOME" -Dbpipe.mode=diagrameditor bpipe.Runner $* 
-    exit
+    launch_in_foreground $*
 elif [ "$COMMAND" == "log" ];
 then
     shift 1
@@ -575,6 +568,8 @@ tmsg " Starting"
 # Don't keep history if no arguments provided
 if [ ! -z "$*" ] && [ "$COMMAND" != "retry" ];
 then
+    # Note: delete explicitly because permissions may allow delete but not overwrite
+    rm -f .bpipe/lastcmd
     echo "$0 $COMMAND $*" > .bpipe/lastcmd &
     
     # Used to append to history here, but now the Java code does it
@@ -603,9 +598,36 @@ done
 # have java launch with its standard output captured to a log
 # file that contains its own PID.  
 tmsg " Launching Java"
-nohup echo 'printf $$ > .bpipe.'$LAUNCHER_PID'.run.pid &
-      exec java -Xmx'${MAX_JAVA_MEM}' -noverify -classpath "'"$CP"'" '$BPIPEDEBUG' '$MODEFLAG' -Dbpipe.pid='$LAUNCHER_PID' -Dbpipe.home='"$JVM_BPIPE_HOME"' -Dbpipe.version='$VERSION' -Dbpipe.builddate='$BUILDDATE' org.codehaus.groovy.tools.GroovyStarter --classpath "'"$CP"'" --main bpipe.Runner '$TESTMODE' '$BPIPE_ARGS' > .bpipe/logs/$$.log 2>&1' \
-     2>&1 | bash - > /dev/null 2>&1 &
+
+# Disable wildcard expansion, in case the user supplied arguments 
+# containing escaped '*' or other wildcards that they intended
+# to pass through to Bpipe
+set -f
+
+LAUNCH_CMD='
+   printf $$ > .bpipe.'$LAUNCHER_PID'.run.pid &
+   exec java -Xmx'${MAX_JAVA_MEM}' \
+             -noverify \
+             -classpath "'"$CP"'" '$BPIPEDEBUG' '$MODEFLAG' \
+             -Dbpipe.pid='$LAUNCHER_PID' \
+             -Dbpipe.home='"$JVM_BPIPE_HOME"' \
+             -Dbpipe.version='$VERSION' \
+             -Dbpipe.builddate='$BUILDDATE' \
+                 org.codehaus.groovy.tools.GroovyStarter \
+                    --classpath "'"$CP"'" \
+                    --main bpipe.Runner '$TESTMODE' '$BPIPE_ARGS' > .bpipe/logs/$$.log 2>&1
+'
+
+$SHOWDEBUG && {
+    echo "LAUNCH_CMD: $LAUNCH_CMD"
+}
+
+nohup bash -c "$LAUNCH_CMD" \
+    > /dev/null 2>&1 &
+
+# Re-enable wildcard expansion: don't want it turned off in case it's 
+# needed somewhere else in this script
+set +f
 
 tmsg " Waiting for pid to be created"
 while [ ! -e .bpipe.$LAUNCHER_PID.run.pid ];
@@ -718,3 +740,12 @@ To run with all files in the local directory as input, use:
 fi
 
 clean_job_files
+
+# Use grep -q as the last command to cause this script to return an exit code
+# reflecting whether the run succeeded or not
+# Make sure this stays as the LAST command in this script
+if [ -e .bpipe/results/$BPIPE_PID.xml ];
+then
+    grep -q '<succeeded>true</succeeded>' .bpipe/results/$BPIPE_PID.xml
+fi
+

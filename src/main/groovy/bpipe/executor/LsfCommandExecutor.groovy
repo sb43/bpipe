@@ -25,6 +25,7 @@
 package bpipe.executor
 
 import groovy.util.logging.Log
+
 import java.util.regex.Pattern
 import java.util.regex.Matcher
 
@@ -71,6 +72,8 @@ class LsfCommandExecutor implements CommandExecutor {
 	private static String CMD_SCRIPT_FILENAME = "cmd.sh"
 
     private static String CMD_OUT_FILENAME = "cmd.out"
+
+    private static String CMD_LSF_OUT_FILENAME = "cmd.lsf.out"
 
     private static String CMD_ERR_FILENAME = "cmd.err"
 
@@ -150,7 +153,7 @@ class LsfCommandExecutor implements CommandExecutor {
 		 * Note: since LSF append a noise report information to the standard out
 		 * we suppress it, and save the 'cmd' output in the above script
 		 */
-		def startCmd = "bsub $cwdOption -o /dev/null -e $jobDir/$CMD_ERR_FILENAME "
+		def startCmd = "bsub $cwdOption -o $jobDir/$CMD_LSF_OUT_FILENAME -e $jobDir/$CMD_ERR_FILENAME "
         
 		// add other parameters (if any)
 		if(config?.queue) {
@@ -161,8 +164,12 @@ class LsfCommandExecutor implements CommandExecutor {
             startCmd += "-J ${config.jobname} "
         }
         
+        if(config?.walltime) {
+            startCmd += "-W ${config.walltime} "
+        }
+                
         if(config?.procs) {
-            startCmd += "-n $config.procs"
+            startCmd += "-n $config.procs "
         }
 
         if( config?.lsf_request_options ) {
@@ -355,5 +362,10 @@ class LsfCommandExecutor implements CommandExecutor {
     List<String> getIgnorableOutputs() {
 		//TODO ?? 
         return null 
+    }
+
+    @Override
+    public String statusMessage() {
+        return "LSF [$name] JobID: $commandId, command: $cmd"
     }
 }
