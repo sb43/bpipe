@@ -1,7 +1,10 @@
-========== This is local release for CanPipe 0.9.8.6c1 =======
- - added LSF array job support
+========== This is local release for CanPipe 0.9.8.6c2 =======
+	- Compiled and cleaned build folder
 
- - Lsf exit status properly handled
+========== This is local release for CanPipe 0.9.8.6c1 =======
+	- added LSF array job support
+
+	- Lsf exit status properly handled
 
 =========== Changes for Bpipe Version 0.9.8.6 ============
 
