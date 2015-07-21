@@ -133,12 +133,14 @@ class Forwarder extends TimerTask {
             try {
                 
 		String FileName="${CMD_EXIT_FILE}.exit"
+		// sb43 This file stores status for LSF exited jobs if any
+		String FileNameExit="${CMD_EXIT_FILE}.lsf"
 		// sb43 method to check bsub status
 		if(bsubJobid && !(new File(FileName).exists() )) {
 			int state_exit = 0
 			int state_run = 0
 			int state_done = 0
-			(state_exit, state_run, state_done)=parseBjobs(bsubJobid,FileName)
+			(state_exit, state_run, state_done)=parseBjobs(bsubJobid,FileName,FileNameExit)
 			log.info "Current bsub job[$bsubJobid] status: EXIT:$state_exit RUN:$state_run DONE:$state_done"
 		}
 // check if .exit file exists which is indication of job completion
@@ -189,7 +191,7 @@ class Forwarder extends TimerTask {
 * jobs in same array with STAT other than EXIT or DONE present 
 * -w to get bjobs output in one line
 */
-    def parseBjobs(bsubJobid,FileName) {
+  def parseBjobs(bsubJobid,FileName,FileNameExit) {
 	
 	int counter = 0
 	int state_e = 0 // EXIT
@@ -220,9 +222,10 @@ class Forwarder extends TimerTask {
 		    for ( line in job_array) {
 			    counter++
 			    def job_line = line.split().collect{it as String}
-			    if(job_line[2] == "EXIT" && counter > 1 ) {
-			      LsfExit[(line)] = 1
-			      state_e = 1
+			    if(!(new File(FileNameExit).exists()) && job_line[2] == "EXIT" && counter > 1 ) {
+			    		new File(FileNameExit).write("1")			
+			      	LsfExit[(line)] = 1
+			      	state_e = 1
 			    }
 			    if(job_line[2] != null && job_line[2] != "EXIT" && job_line[2] != "DONE" && counter >1) {
 			      state_r = 1
@@ -234,7 +237,7 @@ class Forwarder extends TimerTask {
 			    }
 		    }
 		    // Create file with exit status non zero if we find one of the array job has non exit status		
-		    if(state_e && !state_r) {
+		    if( (new File(FileNameExit).exists()) && !state_r) {
 		      log.info "Exit status written in $FileName"
 		      new File(FileName).write("1")
 		      // print jobs with EXIT status 
@@ -243,7 +246,7 @@ class Forwarder extends TimerTask {
 			  }
 		    }
 		    // Create file with exit status zero if we did not see job status EXIT and all the jobs are completed		
-		    if(!state_e && !state_r && state_d) {
+		    if(!(new File(FileNameExit).exists()) && !state_r && state_d) {
 		      log.info "Exit status written in $FileName"
 		      new File(FileName).write("0")
 		    }
