@@ -121,6 +121,8 @@ class LsfCommandExecutor implements CommandExecutor {
 		cmdWrapperScript.text =  
 			"""\
 			#!/bin/bash
+			set -exu
+      set -o pipefail
 			(${cmd}) > $jobDir/$CMD_OUT_FILENAME
 			"""
 			.stripIndent()

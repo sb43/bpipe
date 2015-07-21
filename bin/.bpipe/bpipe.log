@@ -1,4 +1,0 @@
-bpipe.Runner	[1]	INFO	|10:21:26 Starting 
-bpipe.Runner	[1]	INFO	|10:21:26 OS: Linux (2.6.32-44-server) Java: 1.7.0_25 Vendor: Oracle Corporation 
-bpipe.Runner	[1]	INFO	|10:21:26 Initializing plugins ... 
-bpipe.Config	[1]	INFO	|10:21:26 No plugins directory found: /lustre/scratch112/sanger/cgppipe/canPipe/software/bpipe_git/bin/.bpipe/plugins 
