@@ -1,1 +1,0 @@
-22296	bpipe run -p batch_name=testsim -p sample_info=samples.txt test.groovy

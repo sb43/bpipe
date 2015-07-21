@@ -1,1 +1,0 @@
-/nfs/users/nfs_c/cgppipe/canpipe/software/bpipe_git/tests/parallel_parallel/../../bin/bpipe run -r test.groovy test1.txt test2.txt test1.csv test2.csv

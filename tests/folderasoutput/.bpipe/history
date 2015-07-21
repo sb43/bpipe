@@ -1,2 +1,0 @@
-26968	bpipe run -r test.groovy test.txt
-27090	bpipe run -r test.groovy test.txt

@@ -1,2 +1,0 @@
-20915	bpipe run -r test.groovy test.txt test1.xml test2.xml
-21021	bpipe run -r test.groovy test.txt test1.xml test2.xml

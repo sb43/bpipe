@@ -1,2 +1,0 @@
-13809	bpipe run test.groovy
-13887	bpipe run -p planet=mars test.groovy

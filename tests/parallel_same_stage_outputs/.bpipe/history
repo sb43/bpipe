@@ -1,1 +1,0 @@
-24740	bpipe run -n 1 test.groovy s_1.txt
