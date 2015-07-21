@@ -1,1 +1,0 @@
-19519	bpipe run -L chr2 test.groovy test.txt

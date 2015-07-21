@@ -1,1 +1,0 @@
-22814	bpipe run -r test.groovy foo/test.txt bar/test.txt

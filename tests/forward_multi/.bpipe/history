@@ -1,1 +1,0 @@
-32200	bpipe run -r test.groovy myinput.txt

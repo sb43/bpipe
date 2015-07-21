@@ -1,1 +1,0 @@
-29882	bpipe run -r test.groovy test1.txt test2.txt test1.csv test2.csv

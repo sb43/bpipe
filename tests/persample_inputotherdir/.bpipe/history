@@ -1,1 +1,0 @@
-27671	bpipe run -r test.groovy childdir/s_1_1.txt childdir/s_1_2.txt childdir/s_2_1.txt childdir/s_2_2.txt
