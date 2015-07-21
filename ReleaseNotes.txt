@@ -1,10 +1,8 @@
-	========== This is local release for CanPipe 0.9.8.6c2 =======
-		- Compiled and cleaned build folder
-
-	========== This is local release for CanPipe 0.9.8.6c1 =======
+	=========== Changes for Bpipe Version 0.9.8.8 ============
 		- added LSF array job support
 
-		- Lsf exit status properly handled
+		- LSF exit status properly handled
+
 	=========== Changes for Bpipe Version 0.9.8.8 ============
 
 		 - fix: commands run using torque / pbs not using -e flag for bash,
